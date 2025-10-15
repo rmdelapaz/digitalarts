@@ -1,0 +1,2525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Master professional file management, organization systems, and export techniques that work across all digital art software including Krita, Photoshop, Procreate, and more.">
+    <meta name="author" content="Digital Artistry Course">
+    <title>File Management & Export - Universal Digital Art Course</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-to-main">Skip to main content</a>
+    
+    <!-- Progress indicator -->
+    <div class="progress-indicator" role="progressbar" aria-label="Page scroll progress">
+        <div class="progress-bar"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">🎨 Digital Artistry</a>
+            <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-expanded="false" aria-controls="nav-links">
+                ☰
+            </button>
+            <div class="nav-links" id="nav-links" aria-hidden="false">
+                <a href="index.html">Home</a>
+                <a href="index.html#modules">All Lessons</a>
+                <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#modules">Technique Module</a></li>
+            <li aria-current="page">File Management & Export</li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <div class="container">
+            <!-- Lesson Header -->
+            <header>
+                <h1>📁 File Management & Export</h1>
+                <p class="lead">Welcome to the unsung hero of digital artistry! File management might not be as exciting as painting a dragon or mastering lighting, but it's the invisible foundation that separates hobbyists from professionals. In this lesson, you'll learn the systems and habits that will save you countless hours of frustration, protect your work from disaster, and make you more organized than 90% of artists out there. These aren't just best practices—they're career-savers that will serve you for decades!</p>
+                
+                <!-- Learning objectives -->
+                <div class="card">
+                    <h2>🎯 What You'll Learn</h2>
+                    <p>By the end of this lesson, you'll be able to:</p>
+                    <ul>
+                        <li>Create and maintain a professional folder structure for your artwork</li>
+                        <li>Develop effective file naming conventions that make finding work easy</li>
+                        <li>Understand different file formats and when to use each</li>
+                        <li>Save work files with proper layer preservation across software</li>
+                        <li>Export finished artwork for web, print, and portfolio use</li>
+                        <li>Implement version control and backup strategies</li>
+                        <li>Organize reference materials and resources efficiently</li>
+                        <li>Manage large project files and assets</li>
+                        <li>Archive completed projects properly</li>
+                        <li>Troubleshoot common file management problems</li>
+                    </ul>
+                </div>
+
+                <!-- Universal Approach Card -->
+                <div class="card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+                    <h3 style="color: white; margin-top: 0;">🌍 Universal File Management</h3>
+                    <p><strong>Great news:</strong> File management principles are the <em>same</em> regardless of which software you use! These lessons apply universally to:</p>
+                    <ul style="columns: 2; column-gap: 2rem;">
+                        <li>✅ Adobe Photoshop</li>
+                        <li>✅ Krita (free!)</li>
+                        <li>✅ Procreate (iPad)</li>
+                        <li>✅ Clip Studio Paint</li>
+                        <li>✅ Corel Painter</li>
+                        <li>✅ PaintStorm Studio</li>
+                        <li>✅ Affinity Photo</li>
+                        <li>✅ Any digital painting app!</li>
+                    </ul>
+                    <p style="margin-bottom: 0;"><strong>The principles are timeless:</strong> Good organization is good organization, whether you're saving PSDs, KRA files, or Procreate documents. Master these systems once, use them forever!</p>
+                </div>
+
+                <!-- Why File Management Matters -->
+                <div class="card" style="background: #fff3e0;">
+                    <h3>💡 Why This Lesson Matters More Than You Think</h3>
+                    <p>Let's be honest: nobody gets into digital art because they're excited about file organization. But here's the reality check:</p>
+                    
+                    <h4 style="color: #d32f2f;">❌ Without Good File Management</h4>
+                    <ul>
+                        <li>Spend 20 minutes searching for files you created last week</li>
+                        <li>Accidentally overwrite finished work with early sketches</li>
+                        <li>Lose everything when hard drive fails (and it will)</li>
+                        <li>Client asks for revisions—but you only have flattened JPEG</li>
+                        <li>Can't find references when you need them</li>
+                        <li>Stress, frustration, and lost work haunt your art career</li>
+                    </ul>
+
+                    <h4 style="color: #2e7d32;">✅ With Professional File Management</h4>
+                    <ul>
+                        <li>Find any file in under 30 seconds—every time</li>
+                        <li>Confidently work on old projects without fear</li>
+                        <li>Sleep soundly knowing backups protect your work</li>
+                        <li>Easily make client revisions months later</li>
+                        <li>Reference library always organized and accessible</li>
+                        <li>Professional confidence and peace of mind</li>
+                    </ul>
+
+                    <p><strong>Bottom line:</strong> Good file management is invisible—you never think about it because everything just works. That's the goal, and you'll achieve it in the next 30 minutes!</p>
+                </div>
+            </header>
+
+            <!-- Table of Contents -->
+            <nav class="card" aria-label="Table of Contents">
+                <h2 style="cursor: pointer; user-select: none; display: flex; justify-content: space-between; align-items: center;" onclick="toggleTOC()">
+                    <span>📑 Table of Contents</span>
+                    <span id="toc-toggle-icon" style="transition: transform 0.3s;">▼</span>
+                </h2>
+                <ol id="toc-list" style="overflow: hidden; transition: max-height 0.3s ease-out; max-height: 1000px; margin: 0; padding-left: 1.5rem;">
+                    <li><a href="#the-mindset" class="toc-link">The File Management Mindset</a></li>
+                    <li><a href="#folder-structure" class="toc-link">Creating a Professional Folder Structure</a></li>
+                    <li><a href="#naming-conventions" class="toc-link">File Naming Conventions That Work</a></li>
+                    <li><a href="#file-formats" class="toc-link">Understanding File Formats</a></li>
+                    <li><a href="#saving-work-files" class="toc-link">Saving Work Files with Layers</a></li>
+                    <li><a href="#version-control" class="toc-link">Version Control for Artists</a></li>
+                    <li><a href="#exporting-finished" class="toc-link">Exporting Finished Artwork</a></li>
+                    <li><a href="#reference-management" class="toc-link">Managing References and Resources</a></li>
+                    <li><a href="#backup-strategies" class="toc-link">Backup Strategies That Actually Work</a></li>
+                    <li><a href="#troubleshooting" class="toc-link">Troubleshooting Common Problems</a></li>
+                </ol>
+            </nav>
+
+            <!-- Section 1: The File Management Mindset -->
+            <section id="the-mindset" class="lesson-section">
+                <h2>The File Management Mindset 🧠</h2>
+                
+                <p>Before we dive into specific systems and techniques, let's establish the right mindset. File management isn't about being obsessive-compulsive or wasting time on organization for its own sake—it's about creating systems that work automatically so you can focus on art.</p>
+
+                <h3>The Five Core Principles</h3>
+
+                <div class="card">
+                    <h4>1. File Management is Part of the Creative Process</h4>
+                    <p>It's not separate from making art—it's an integral part of being a professional artist. Just like cleaning your brushes or organizing your workspace in traditional media, digital file management is a core skill.</p>
+                    <ul>
+                        <li><strong>Mindset shift:</strong> Don't think "I'll organize later"—that never happens</li>
+                        <li><strong>Integration:</strong> Make organization automatic with every project</li>
+                        <li><strong>Professionalism:</strong> Clients and employers notice good file practices</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>2. Systems Beat Intentions</h4>
+                    <p>"I'll remember where I saved it" is a lie we tell ourselves. You need systems that work automatically, not willpower that requires constant effort.</p>
+                    <ul>
+                        <li><strong>Bad approach:</strong> Relying on memory and good intentions</li>
+                        <li><strong>Good approach:</strong> Repeatable systems that become habit</li>
+                        <li><strong>Result:</strong> Organization happens naturally, without thinking</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>3. Future You Will Thank Present You</h4>
+                    <p>Every minute you spend organizing now saves ten minutes of searching later. Think of file management as a gift to your future self.</p>
+                    <ul>
+                        <li><strong>Time investment:</strong> 30 seconds to save properly vs 20 minutes to search later</li>
+                        <li><strong>Compound benefits:</strong> Good habits build on themselves</li>
+                        <li><strong>Stress reduction:</strong> Never worry "where did I save that?"</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>4. Consistency is Everything</h4>
+                    <p>A mediocre system used consistently beats a perfect system used sporadically. Pick a system and stick with it.</p>
+                    <ul>
+                        <li><strong>Don't overthink:</strong> Good enough now beats perfect someday</li>
+                        <li><strong>Start simple:</strong> You can always expand later</li>
+                        <li><strong>Stick to it:</strong> Consistency creates muscle memory</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>5. Backup or It Doesn't Exist</h4>
+                    <p>If you don't have a backup, you don't really have the file. Hard drives fail. Computers crash. Laptops get stolen. Backups are non-negotiable.</p>
+                    <ul>
+                        <li><strong>Hard truth:</strong> It's not "if" your drive fails, it's "when"</li>
+                        <li><strong>Protection:</strong> Backups are insurance for your career</li>
+                        <li><strong>Peace of mind:</strong> Work without fear of losing everything</li>
+                    </ul>
+                </div>
+
+                <h3>The Workflow Cycle</h3>
+
+                <p>Every project—from quick sketch to finished masterpiece—follows this cycle. Make this your automatic routine:</p>
+
+                <div class="mermaid">
+                    graph TD
+                        A[Start New Project] --> B[Create in Proper Folder]
+                        B --> C[Use Clear File Name]
+                        C --> D[Work on Art]
+                        D --> E[Save Incrementally]
+                        E --> F{Major Milestone?}
+                        F -->|Yes| G[Create Backup Version]
+                        F -->|No| D
+                        G --> H{Project Complete?}
+                        H -->|No| D
+                        H -->|Yes| I[Export Final Files]
+                        I --> J[Archive Project]
+                        J --> K[Update Portfolio]
+                        
+                        style A fill:#667eea,stroke:#333,stroke-width:2px,color:#fff
+                        style K fill:#43e97b,stroke:#333,stroke-width:2px,color:#fff
+                        style G fill:#f093fb,stroke:#333,stroke-width:2px,color:#fff
+                        style J fill:#f5576c,stroke:#333,stroke-width:2px,color:#fff
+                </div>
+
+                <p class="caption">The ideal file management workflow—every project follows this cycle</p>
+
+                <div class="card" style="background: #e3f2fd;">
+                    <h4>🎯 The Goal: Invisible Organization</h4>
+                    <p>Professional file management is invisible—you never think about it because everything just works. Here's what that looks like:</p>
+                    <ul>
+                        <li><strong>No searching:</strong> Need a file? You know exactly where it is</li>
+                        <li><strong>No panic:</strong> Computer dies? Backups have you covered</li>
+                        <li><strong>No regrets:</strong> Need to revise old work? Source files are ready</li>
+                        <li><strong>No stress:</strong> Everything is organized, nothing is lost</li>
+                        <li><strong>Pure focus:</strong> Mind free to create, not worry about files</li>
+                    </ul>
+                    <p><strong>That's where we're headed—let's build your system!</strong></p>
+                </div>
+
+            </section>
+
+            <!-- Section 2: Creating a Professional Folder Structure -->
+            <section id="folder-structure" class="lesson-section">
+                <h2>Creating a Professional Folder Structure 🗂️</h2>
+                
+                <p>A good folder structure is the foundation of file management. It should be logical, scalable, and consistent. Here's a system that works for artists at any level, from hobbyist to professional studio.</p>
+
+                <h3>The Master Art Folder Structure</h3>
+
+                <p>Start with a single master folder for all your digital art. This might be in your Documents folder, on a dedicated art drive, or in a cloud storage service. Whatever location you choose, everything art-related should live here.</p>
+
+                <div class="code-block">
+                    <pre><code>📁 Digital Art/
+├── 📁 Work In Progress/
+├── 📁 Completed/
+├── 📁 Archive/
+├── 📁 References/
+├── 📁 Resources/
+├── 📁 Brushes/
+├── 📁 Textures/
+├── 📁 Portfolio/
+└── 📁 Personal/</code></pre>
+                </div>
+
+                <h3>Breaking Down Each Folder</h3>
+
+                <div class="card">
+                    <h4>📁 Work In Progress</h4>
+                    <p><strong>Purpose:</strong> All active projects you're currently working on</p>
+                    <p><strong>Organization:</strong> Each project gets its own subfolder with a clear name</p>
+                    <p><strong>Contents:</strong> Working files, work-in-progress exports, project-specific references</p>
+                    <p><strong>Example structure:</strong></p>
+                    <div class="code-block">
+                        <pre><code>📁 Work In Progress/
+├── 📁 2025-10-dragon-portrait/
+│   ├── dragon-portrait_v01.psd
+│   ├── dragon-portrait_v02.psd
+│   ├── dragon-portrait_sketch.jpg
+│   └── references/
+├── 📁 2025-09-fantasy-landscape/
+└── 📁 2025-10-character-sheet-commission/</code></pre>
+                    </div>
+                    <p><strong>Pro tip:</strong> Keep only active projects here—move to Completed when done</p>
+                </div>
+
+                <div class="card">
+                    <h4>📁 Completed</h4>
+                    <p><strong>Purpose:</strong> Finished projects from the past 6-12 months</p>
+                    <p><strong>Organization:</strong> Organized by year and/or type</p>
+                    <p><strong>Contents:</strong> Final working file, exported finals, relevant references</p>
+                    <p><strong>Why keep separate from Archive:</strong> Quick access to recent work for portfolio updates or client revisions</p>
+                    <div class="code-block">
+                        <pre><code>📁 Completed/
+├── 📁 2025/
+│   ├── 📁 Portraits/
+│   ├── 📁 Landscapes/
+│   ├── 📁 Commissions/
+│   └── 📁 Personal-Work/
+└── 📁 2024/</code></pre>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h4>📁 Archive</h4>
+                    <p><strong>Purpose:</strong> Older completed work (older than 6-12 months)</p>
+                    <p><strong>Organization:</strong> By year, then by project or type</p>
+                    <p><strong>Contents:</strong> Everything from completed projects, but possibly compressed</p>
+                    <p><strong>Storage:</strong> Consider external backup or cloud storage for archives</p>
+                    <p><strong>Pro tip:</strong> Archive frees up main drive space while keeping work accessible</p>
+                </div>
+
+                <div class="card">
+                    <h4>📁 References</h4>
+                    <p><strong>Purpose:</strong> General reference images you use frequently</p>
+                    <p><strong>Organization:</strong> By category (anatomy, lighting, materials, nature, etc.)</p>
+                    <div class="code-block">
+                        <pre><code>📁 References/
+├── 📁 Anatomy/
+│   ├── 📁 Hands/
+│   ├── 📁 Faces/
+│   └── 📁 Poses/
+├── 📁 Lighting/
+├── 📁 Materials/
+│   ├── 📁 Fabric/
+│   ├── 📁 Metal/
+│   └── 📁 Skin/
+└── 📁 Nature/</code></pre>
+                    </div>
+                    <p><strong>Note:</strong> Project-specific references go in project folders, general references go here</p>
+                </div>
+
+                <div class="card">
+                    <h4>📁 Resources</h4>
+                    <p><strong>Purpose:</strong> Tutorials, articles, color palettes, inspiration</p>
+                    <p><strong>Organization:</strong> By type and topic</p>
+                    <p><strong>Contents:</strong> PDFs, saved articles, tutorial notes, color palette files</p>
+                    <p><strong>Examples:</strong> "Color Theory.pdf", "Lighting-Tutorial.mp4", "Master-Studies"</p>
+                </div>
+
+                <div class="card">
+                    <h4>📁 Brushes</h4>
+                    <p><strong>Purpose:</strong> Custom and downloaded brush sets</p>
+                    <p><strong>Organization:</strong> By type or source</p>
+                    <p><strong>Tip:</strong> Keep separate from software's default brush location so you can easily backup or transfer</p>
+                    <p><strong>Examples:</strong> "Texture-Brushes", "Kyle-Webster-Brushes", "My-Custom-Brushes"</p>
+                </div>
+
+                <div class="card">
+                    <h4>📁 Textures</h4>
+                    <p><strong>Purpose:</strong> Texture libraries for use in paintings</p>
+                    <p><strong>Organization:</strong> By material type</p>
+                    <p><strong>Examples:</strong> Paper textures, fabric, stone, metal, organic materials</p>
+                </div>
+
+                <div class="card">
+                    <h4>📁 Portfolio</h4>
+                    <p><strong>Purpose:</strong> Curated best work for showing clients/employers</p>
+                    <p><strong>Organization:</strong> By category or chronological</p>
+                    <p><strong>Contents:</strong> Only your absolute best, properly exported and formatted</p>
+                    <p><strong>Note:</strong> Keep this separate and intentionally curated—not everything you make belongs here</p>
+                </div>
+
+                <div class="card">
+                    <h4>📁 Personal</h4>
+                    <p><strong>Purpose:</strong> Experiments, practice, sketches, fun projects</p>
+                    <p><strong>Organization:</strong> However you want—this is your playground</p>
+                    <p><strong>Why separate:</strong> Keeps experimental work from cluttering professional projects</p>
+                </div>
+
+                <h3>Scaling the System</h3>
+
+                <p>This structure scales beautifully from beginner to professional:</p>
+
+                <table style="width: 100%; margin-top: 1rem;">
+                    <thead>
+                        <tr>
+                            <th style="width: 25%;">Level</th>
+                            <th style="width: 35%;">Start Simple</th>
+                            <th style="width: 40%;">Add As You Grow</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Beginner</strong></td>
+                            <td>Just WIP, Completed, References</td>
+                            <td>Everything in one level</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Intermediate</strong></td>
+                            <td>Add Archive, Resources, Portfolio</td>
+                            <td>Organize by year and type</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Advanced</strong></td>
+                            <td>Full system with subfolders</td>
+                            <td>Client folders, project templates</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Professional</strong></td>
+                            <td>Multiple drives/locations</td>
+                            <td>Asset management software, cloud sync, team access</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <blockquote style="margin-top: 1rem;">
+                    <strong>💡 Getting Started Tip:</strong> If this seems overwhelming, start with just three folders: "Working On", "Done", and "References". You can expand the system as your needs grow. The key is to start organizing <em>right now</em>, not to build the perfect system before you begin.
+                </blockquote>
+
+                <h3>Individual Project Structure</h3>
+
+                <p>Within each project folder (inside Work In Progress or Completed), use a consistent structure:</p>
+
+                <div class="code-block">
+                    <pre><code>📁 2025-10-dragon-portrait/
+├── 📄 dragon-portrait_final.psd        (main working file)
+├── 📄 dragon-portrait_sketch.jpg       (initial sketch)
+├── 📁 versions/                         (earlier versions)
+│   ├── dragon-portrait_v01.psd
+│   ├── dragon-portrait_v02.psd
+│   └── dragon-portrait_v03.psd
+├── 📁 exports/                          (all exported versions)
+│   ├── dragon-portrait_web.jpg
+│   ├── dragon-portrait_print.png
+│   └── dragon-portrait_portfolio.png
+├── 📁 references/                       (project-specific refs)
+│   ├── dragon_anatomy_ref.jpg
+│   └── lighting_study.jpg
+└── 📄 project-notes.txt                 (optional: notes, client feedback)</code></pre>
+                </div>
+
+                <p>This project structure ensures you can always find what you need, and six months later when you need to revise the piece, everything is in one place.</p>
+
+                <div class="card" style="background: #e8f5e9;">
+                    <h4>🎯 Action Step: Set Up Your Folder Structure Today</h4>
+                    <ol>
+                        <li>Create your master "Digital Art" folder right now</li>
+                        <li>Create the main subfolders (at minimum: WIP, Completed, References)</li>
+                        <li>Move any existing artwork into the appropriate folders</li>
+                        <li>From this day forward, save ALL new artwork in this structure</li>
+                    </ol>
+                    <p><strong>Time investment:</strong> 15-30 minutes now saves hundreds of hours over your career</p>
+                </div>
+
+            </section>
+
+            <!-- Section 3: File Naming Conventions That Work -->
+            <section id="naming-conventions" class="lesson-section">
+                <h2>File Naming Conventions That Work 📝</h2>
+                
+                <p>A good file name tells you everything you need to know at a glance: what it is, when it was made, and what version it is. A bad file name is "untitled-1-final-FINAL-final-actually-final-v2.psd" (we've all been there).</p>
+
+                <h3>The Universal File Naming Formula</h3>
+
+                <p>Here's a naming convention that works across all operating systems, software, and situations:</p>
+
+                <div class="card" style="background: #e3f2fd;">
+                    <h4>📝 Standard Formula</h4>
+                    <p style="font-size: 1.2rem; text-align: center; margin: 1rem 0; font-family: monospace; background: white; padding: 1rem; border-radius: 4px;">
+                        <strong>YYYY-MM-project-name_version.extension</strong>
+                    </p>
+                    <p><strong>Example:</strong> <code>2025-10-dragon-portrait_v03.psd</code></p>
+                    
+                    <h5>Breaking it down:</h5>
+                    <ul>
+                        <li><strong>YYYY-MM</strong> — Year and month (sorts chronologically automatically)</li>
+                        <li><strong>project-name</strong> — Clear, descriptive name (use hyphens, not spaces)</li>
+                        <li><strong>_version</strong> — Version identifier (underscore separates from name)</li>
+                        <li><strong>.extension</strong> — File format (.psd, .kra, .clip, etc.)</li>
+                    </ul>
+                </div>
+
+                <h3>Why This Format Works</h3>
+
+                <div class="card">
+                    <h4>✅ Advantages</h4>
+                    <ul>
+                        <li><strong>Automatic sorting:</strong> Files sort by date automatically in any file browser</li>
+                        <li><strong>Cross-platform:</strong> No spaces means no issues on Windows, Mac, or Linux</li>
+                        <li><strong>Searchable:</strong> Easy to find by date or name</li>
+                        <li><strong>Clear versions:</strong> Version number is obvious at a glance</li>
+                        <li><strong>Readable:</strong> Hyphens make names easy to read</li>
+                        <li><strong>Future-proof:</strong> Works with any software or system</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="background: #ffebee;">
+                    <h4>❌ What to Avoid</h4>
+                    <ul>
+                        <li><strong>Spaces:</strong> "my painting.psd" → problems on some systems, URLs</li>
+                        <li><strong>Special characters:</strong> Avoid / \ : * ? " &lt; &gt; |</li>
+                        <li><strong>Vague names:</strong> "untitled", "new", "final", "test"</li>
+                        <li><strong>Random version naming:</strong> "final", "final2", "actualfinal", "finalFINAL"</li>
+                        <li><strong>Too long:</strong> Keep under 50 characters if possible</li>
+                        <li><strong>All lowercase no separators:</strong> "mydragonpainting" → hard to read</li>
+                    </ul>
+                </div>
+
+<!-- END OF FRAGMENT A -->
+<!-- PART B STARTS HERE -->
+
+                <h3>Version Naming Strategies</h3>
+
+                <div class="card">
+                    <h4>📊 Common Version Systems</h4>
+
+                    <h5>Simple Sequential (Recommended for Most Artists)</h5>
+                    <ul>
+                        <li><strong>Format:</strong> _v01, _v02, _v03, etc.</li>
+                        <li><strong>Example:</strong> dragon-portrait_v01.psd, dragon-portrait_v02.psd</li>
+                        <li><strong>Pros:</strong> Simple, clear, easy to understand</li>
+                        <li><strong>Cons:</strong> No indication of what changed</li>
+                        <li><strong>Best for:</strong> Personal work, most situations</li>
+                    </ul>
+
+                    <h5>Milestone-Based</h5>
+                    <ul>
+                        <li><strong>Format:</strong> _sketch, _values, _color, _final</li>
+                        <li><strong>Example:</strong> portrait_sketch.psd, portrait_values.psd, portrait_color.psd</li>
+                        <li><strong>Pros:</strong> Immediately know which stage file represents</li>
+                        <li><strong>Cons:</strong> Less flexible if you iterate within stages</li>
+                        <li><strong>Best for:</strong> Educational work, process documentation</li>
+                    </ul>
+
+                    <h5>Date-Based</h5>
+                    <ul>
+                        <li><strong>Format:</strong> _YYYYMMDD or _MMDD</li>
+                        <li><strong>Example:</strong> character_20251015.psd, character_1015.psd</li>
+                        <li><strong>Pros:</strong> Know exactly when file was created</li>
+                        <li><strong>Cons:</strong> Multiple saves same day get confusing</li>
+                        <li><strong>Best for:</strong> Long-term projects, client work</li>
+                    </ul>
+
+                    <h5>Hybrid Approach (Professional)</h5>
+                    <ul>
+                        <li><strong>Format:</strong> Combine methods for maximum clarity</li>
+                        <li><strong>Example:</strong> 2025-10-dragon-portrait_v03_color.psd</li>
+                        <li><strong>Components:</strong> Date + name + version + stage (optional)</li>
+                        <li><strong>Pros:</strong> Maximum information at a glance</li>
+                        <li><strong>Cons:</strong> Longer filenames</li>
+                        <li><strong>Best for:</strong> Professional client work, team projects</li>
+                    </ul>
+                </div>
+
+                <h3>Real-World Examples</h3>
+
+                <div class="card" style="background: #e3f2fd;">
+                    <h4>✅ Good File Names</h4>
+                    <ul>
+                        <li><code>2025-10-cyberpunk-street_v01.psd</code> — Clear, dated, versioned</li>
+                        <li><code>2025-09-character-design_final.kra</code> — Indicates final version</li>
+                        <li><code>2025-10-landscape-study_sketch.procreate</code> — Stage indicated</li>
+                        <li><code>commission-jones-portrait_v03.clip</code> — Client name included</li>
+                        <li><code>2025-10-texture-practice_metal.psd</code> — Subject clear</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="background: #ffebee;">
+                    <h4>❌ Bad File Names</h4>
+                    <ul>
+                        <li><code>untitled-1.psd</code> — No information whatsoever</li>
+                        <li><code>final FINAL actually final.psd</code> — Version chaos</li>
+                        <li><code>my painting.kra</code> — Spaces cause problems, too vague</li>
+                        <li><code>asdfkjh.procreate</code> — Random characters, unusable</li>
+                        <li><code>New Project 47.clip</code> — Generic, no meaningful name</li>
+                        <li><code>portrait!!!!!.psd</code> — Special characters, not descriptive</li>
+                    </ul>
+                </div>
+
+                <h3>Special Naming Cases</h3>
+
+                <div class="card">
+                    <h4>🎨 Client Work</h4>
+                    <p><strong>Formula:</strong> <code>client-name_project-name_version.ext</code></p>
+                    <p><strong>Example:</strong> <code>acme-corp_logo-design_v05.psd</code></p>
+                    <ul>
+                        <li>Include client name for easy identification</li>
+                        <li>Use project name or deliverable type</li>
+                        <li>Version important for revision tracking</li>
+                        <li>Consider: <code>acme-corp_logo_v05_approved.psd</code> for final</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>📚 Studies and Practice</h4>
+                    <p><strong>Formula:</strong> <code>YYYY-MM-study-type_subject.ext</code></p>
+                    <p><strong>Example:</strong> <code>2025-10-value-study_hands.psd</code></p>
+                    <ul>
+                        <li>Indicate it's a study in the name</li>
+                        <li>Subject helps you find reference later</li>
+                        <li>Date helps track your progress over time</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>🏆 Portfolio Pieces</h4>
+                    <p><strong>Formula:</strong> <code>YYYY-MM-descriptive-title_portfolio.ext</code></p>
+                    <p><strong>Example:</strong> <code>2025-10-warrior-queen_portfolio.psd</code></p>
+                    <ul>
+                        <li>Descriptive title that sounds professional</li>
+                        <li>Adding "portfolio" helps you find portfolio-worthy pieces</li>
+                        <li>Consider having separate export: <code>warrior-queen_web.jpg</code></li>
+                    </ul>
+                </div>
+
+                <h3>Quick Reference Guide</h3>
+
+                <table style="width: 100%; margin-top: 1rem;">
+                    <thead>
+                        <tr>
+                            <th style="width: 30%;">Situation</th>
+                            <th style="width: 35%;">Naming Pattern</th>
+                            <th style="width: 35%;">Example</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Personal artwork</strong></td>
+                            <td>YYYY-MM-subject_v##.ext</td>
+                            <td>2025-10-dragon_v03.psd</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Client work</strong></td>
+                            <td>client_project_v##.ext</td>
+                            <td>smith-family_portrait_v02.psd</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Practice/study</strong></td>
+                            <td>YYYY-MM-study_subject.ext</td>
+                            <td>2025-10-study_lighting.kra</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Commission</strong></td>
+                            <td>commission-name_v##.ext</td>
+                            <td>commission-jones_v04.clip</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Series work</strong></td>
+                            <td>series-name_##_title.ext</td>
+                            <td>fantasy-creatures_03_griffin.psd</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Final export</strong></td>
+                            <td>title_format.ext</td>
+                            <td>dragon-portrait_web.jpg</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <blockquote style="margin-top: 1.5rem;">
+                    <strong>💡 Pro Habit:</strong> Rename your file properly <em>when you create it</em>, not later. Future you will thank present you every single time you need to find that file!
+                </blockquote>
+
+            </section>
+
+            <!-- Section 4: Understanding File Formats -->
+            <section id="file-formats" class="lesson-section">
+                <h2>Understanding File Formats 📄</h2>
+                
+                <p>Not all file formats are created equal! Understanding which format to use for which purpose is crucial for preserving your work and sharing it effectively. Let's demystify the alphabet soup of file extensions.</p>
+
+                <h3>The Two Categories of Files</h3>
+
+                <div class="card" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); color: #1a1a1a;">
+                    <h4 style="color: #1a1a1a; margin-top: 0;">🎯 Work Files vs Export Files</h4>
+                    
+                    <h5 style="color: #1a1a1a;">Work Files (Editing Files)</h5>
+                    <ul>
+                        <li><strong>Purpose:</strong> Ongoing work with all layers, effects, and editability preserved</li>
+                        <li><strong>Keep:</strong> Save forever, these are your source files</li>
+                        <li><strong>Size:</strong> Large (often 100MB to several GB)</li>
+                        <li><strong>Examples:</strong> .PSD, .KRA, .PROCREATE, .CLIP, .RIF</li>
+                        <li><strong>Never lose these!</strong> You can always recreate exports from work files</li>
+                    </ul>
+
+                    <h5 style="color: #1a1a1a;">Export Files (Delivery Files)</h5>
+                    <ul>
+                        <li><strong>Purpose:</strong> Sharing online, printing, showing to clients</li>
+                        <li><strong>Keep:</strong> Can be regenerated from work files if needed</li>
+                        <li><strong>Size:</strong> Small to medium (usually under 20MB)</li>
+                        <li><strong>Examples:</strong> .JPG, .PNG, .PDF, .TIFF</li>
+                        <li><strong>Flattened:</strong> All layers merged, not editable</li>
+                    </ul>
+
+                    <p style="margin-bottom: 0;"><strong>Golden Rule:</strong> Always keep your work files. You can recreate exports anytime, but you can't un-flatten a JPEG!</p>
+                </div>
+
+                <h3>Work File Formats (Software-Specific)</h3>
+
+                <div class="card">
+                    <h4>Adobe Photoshop - .PSD / .PSB</h4>
+                    <ul>
+                        <li><strong>.PSD:</strong> Standard Photoshop document (up to 2GB, 30,000x30,000px)</li>
+                        <li><strong>.PSB:</strong> Large Document Format (files larger than 2GB)</li>
+                        <li><strong>Preserves:</strong> Layers, masks, adjustment layers, blend modes, effects, text</li>
+                        <li><strong>Compatibility:</strong> Can be opened in Affinity Photo, partially in other software</li>
+                        <li><strong>Tip:</strong> Industry standard, good for cross-software work</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>Krita - .KRA</h4>
+                    <ul>
+                        <li><strong>Format:</strong> Krita's native format</li>
+                        <li><strong>Preserves:</strong> Layers, masks, filters, assistants, animation frames</li>
+                        <li><strong>Compatibility:</strong> Krita only (can export to PSD for other software)</li>
+                        <li><strong>Benefit:</strong> Optimized for Krita's features</li>
+                        <li><strong>Tip:</strong> Always keep .KRA for Krita work, export to PSD for sharing</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>Procreate - .PROCREATE</h4>
+                    <ul>
+                        <li><strong>Format:</strong> Procreate's native format (iPad)</li>
+                        <li><strong>Preserves:</strong> Layers, blend modes, masks, time-lapse recording</li>
+                        <li><strong>Compatibility:</strong> Procreate only (can export to PSD)</li>
+                        <li><strong>Backup:</strong> Transfer to computer regularly—iPad storage is limited!</li>
+                        <li><strong>Tip:</strong> Export PSD version for editing on desktop software</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>Clip Studio Paint - .CLIP / .LIP</h4>
+                    <ul>
+                        <li><strong>.CLIP:</strong> Standard format with layers and effects</li>
+                        <li><strong>.LIP:</strong> Compressed archive format (smaller file size)</li>
+                        <li><strong>Preserves:</strong> Layers, tones, vector layers, 3D layers, text</li>
+                        <li><strong>Compatibility:</strong> Clip Studio only (export to PSD for sharing)</li>
+                        <li><strong>Tip:</strong> Great for comics and illustration work</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>Corel Painter - .RIF / .RIFF</h4>
+                    <ul>
+                        <li><strong>Format:</strong> Painter's native format</li>
+                        <li><strong>Preserves:</strong> Layers, channels, masks, watercolor layers</li>
+                        <li><strong>Compatibility:</strong> Painter only</li>
+                        <li><strong>Tip:</strong> Export to PSD or TIFF for use in other applications</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>Affinity Photo - .AFPHOTO</h4>
+                    <ul>
+                        <li><strong>Format:</strong> Affinity Photo native format</li>
+                        <li><strong>Preserves:</strong> Layers, adjustments, effects, macros</li>
+                        <li><strong>Compatibility:</strong> Affinity Photo (can open/save PSD too)</li>
+                        <li><strong>Note:</strong> Good PSD compatibility for cross-software work</li>
+                    </ul>
+                </div>
+
+                <h3>Universal Export Formats</h3>
+
+                <div class="card" style="background: #fff3e0;">
+                    <h4>🖼️ JPEG (.JPG / .JPEG)</h4>
+                    <h5 style="color: #2e7d32;">✅ Best For:</h5>
+                    <ul>
+                        <li>Web sharing (social media, portfolio websites)</li>
+                        <li>Emailing artwork to clients</li>
+                        <li>Photographs or complex paintings with many colors</li>
+                        <li>When file size needs to be small</li>
+                    </ul>
+                    <h5 style="color: #d32f2f;">❌ Don't Use For:</h5>
+                    <ul>
+                        <li>Anything with transparency (JPEG doesn't support it)</li>
+                        <li>Text or line art (compression creates artifacts)</li>
+                        <li>Files you'll edit later (lossy compression degrades quality)</li>
+                        <li>Print work (use TIFF or PNG instead)</li>
+                    </ul>
+                    <h5>⚙️ Settings:</h5>
+                    <ul>
+                        <li><strong>Quality:</strong> 85-95% for web, 100% for important work</li>
+                        <li><strong>Color space:</strong> sRGB for web</li>
+                        <li><strong>Embed profile:</strong> Yes (maintains color accuracy)</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="background: #fff3e0;">
+                    <h4>🎨 PNG (.PNG)</h4>
+                    <h5 style="color: #2e7d32;">✅ Best For:</h5>
+                    <ul>
+                        <li>Images with transparency (logos, game assets, overlays)</li>
+                        <li>Line art, text, or graphics with sharp edges</li>
+                        <li>Web graphics that need crisp quality</li>
+                        <li>Anything you want to preserve exactly (lossless)</li>
+                    </ul>
+                    <h5 style="color: #d32f2f;">❌ Don't Use For:</h5>
+                    <ul>
+                        <li>Photographs (JPEG is smaller and looks just as good)</li>
+                        <li>Very large images (file sizes get huge)</li>
+                        <li>Print work at professional level (use TIFF)</li>
+                    </ul>
+                    <h5>⚙️ Settings:</h5>
+                    <ul>
+                        <li><strong>Bit depth:</strong> 8-bit for web (smaller), 16-bit for quality</li>
+                        <li><strong>Transparency:</strong> Enable if needed</li>
+                        <li><strong>Compression:</strong> PNG is always lossless</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="background: #fff3e0;">
+                    <h4>📄 TIFF (.TIF / .TIFF)</h4>
+                    <h5 style="color: #2e7d32;">✅ Best For:</h5>
+                    <ul>
+                        <li>Professional printing (magazines, books, posters)</li>
+                        <li>Archival purposes (long-term storage)</li>
+                        <li>High-quality image exchange between professionals</li>
+                        <li>When you need maximum quality and editability</li>
+                    </ul>
+                    <h5 style="color: #d32f2f;">❌ Don't Use For:</h5>
+                    <ul>
+                        <li>Web sharing (files too large)</li>
+                        <li>Social media (won't upload or will be converted)</li>
+                        <li>Emailing (files too big)</li>
+                    </ul>
+                    <h5>⚙️ Settings:</h5>
+                    <ul>
+                        <li><strong>Compression:</strong> LZW or ZIP (lossless), or none</li>
+                        <li><strong>Bit depth:</strong> 8-bit or 16-bit</li>
+                        <li><strong>Color space:</strong> CMYK for print, RGB for digital</li>
+                        <li><strong>Layers:</strong> Can preserve layers in some software</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="background: #fff3e0;">
+                    <h4>📋 PDF (.PDF)</h4>
+                    <h5 style="color: #2e7d32;">✅ Best For:</h5>
+                    <ul>
+                        <li>Presentations and portfolios</li>
+                        <li>Multi-page documents</li>
+                        <li>Print-ready files for commercial printing</li>
+                        <li>Contracts and client deliverables</li>
+                    </ul>
+                    <h5 style="color: #d32f2f;">❌ Don't Use For:</h5>
+                    <ul>
+                        <li>Web graphics or social media</li>
+                        <li>Single images (other formats more appropriate)</li>
+                        <li>Situations where you need transparency</li>
+                    </ul>
+                    <h5>⚙️ Settings:</h5>
+                    <ul>
+                        <li><strong>Standard:</strong> PDF/X for print, standard for general use</li>
+                        <li><strong>Quality:</strong> High for print, medium for screen</li>
+                        <li><strong>Compression:</strong> Adjust based on use case</li>
+                    </ul>
+                </div>
+
+                <h3>Format Decision Tree</h3>
+
+                <div class="mermaid">
+                    graph TD
+                        A[What's the purpose?] --> B{Working on it?}
+                        B -->|Yes - Still editing| C[Use Work File Format]
+                        C --> C1[Photoshop: .PSD]
+                        C --> C2[Krita: .KRA]
+                        C --> C3[Procreate: .PROCREATE]
+                        C --> C4[Clip Studio: .CLIP]
+                        
+                        B -->|No - Sharing/delivery| D{What's it for?}
+                        D -->|Web/Social Media| E{Has transparency?}
+                        E -->|Yes| F[PNG]
+                        E -->|No| G[JPEG 85-95%]
+                        
+                        D -->|Professional Print| H[TIFF or PDF]
+                        D -->|Portfolio Document| I[PDF]
+                        D -->|Email to client| J{File size?}
+                        J -->|Keep small| G
+                        J -->|Quality priority| K[PNG or small TIFF]
+                        
+                        style C fill:#667eea,stroke:#333,stroke-width:2px,color:#fff
+                        style F fill:#43e97b,stroke:#333,stroke-width:2px
+                        style G fill:#43e97b,stroke:#333,stroke-width:2px
+                        style H fill:#f093fb,stroke:#333,stroke-width:2px
+                </div>
+
+                <h3>Format Quick Reference</h3>
+
+                <table style="width: 100%; margin-top: 1.5rem;">
+                    <thead>
+                        <tr>
+                            <th style="width: 20%;">Format</th>
+                            <th style="width: 25%;">Best Use</th>
+                            <th style="width: 20%;">Transparency</th>
+                            <th style="width: 15%;">Quality</th>
+                            <th style="width: 20%;">File Size</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>PSD/KRA/etc</strong></td>
+                            <td>Working files with layers</td>
+                            <td>Yes</td>
+                            <td>Perfect</td>
+                            <td>Large</td>
+                        </tr>
+                        <tr>
+                            <td><strong>JPEG</strong></td>
+                            <td>Web, social media, photos</td>
+                            <td>No</td>
+                            <td>Good</td>
+                            <td>Small</td>
+                        </tr>
+                        <tr>
+                            <td><strong>PNG</strong></td>
+                            <td>Transparency, line art, web</td>
+                            <td>Yes</td>
+                            <td>Perfect</td>
+                            <td>Medium-Large</td>
+                        </tr>
+                        <tr>
+                            <td><strong>TIFF</strong></td>
+                            <td>Print, archival</td>
+                            <td>Yes</td>
+                            <td>Perfect</td>
+                            <td>Very Large</td>
+                        </tr>
+                        <tr>
+                            <td><strong>PDF</strong></td>
+                            <td>Documents, portfolios, print</td>
+                            <td>Optional</td>
+                            <td>Adjustable</td>
+                            <td>Medium</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <blockquote style="margin-top: 1.5rem;">
+                    <strong>💡 Pro Rule:</strong> When in doubt, keep both! Save your work file (.PSD, .KRA, etc.) and export a PNG or JPEG. Storage is cheap, lost work is expensive.
+                </blockquote>
+
+            </section>
+
+            <!-- Section 5: Saving Work Files with Layers -->
+            <section id="saving-work-files" class="lesson-section">
+                <h2>Saving Work Files with Layers 💾</h2>
+                
+                <p>Knowing <em>when</em> and <em>how</em> to save your work files properly is just as important as having a good folder structure. Let's establish saving habits that prevent lost work and maintain maximum flexibility.</p>
+
+                <h3>The Save-Often Mindset</h3>
+
+                <div class="card" style="background: #ffebee;">
+                    <h4>⚠️ The Reality of Software Crashes</h4>
+                    <p>Every digital artist has a horror story:</p>
+                    <ul>
+                        <li>"I worked for 3 hours and forgot to save—then Photoshop crashed"</li>
+                        <li>"Power went out and I lost everything"</li>
+                        <li>"My computer froze and I hadn't saved in an hour"</li>
+                        <li>"Accidentally closed without saving—all work gone"</li>
+                    </ul>
+                    <p><strong>The solution is simple:</strong> Save early, save often, save incrementally.</p>
+                </div>
+
+                <h3>The 15-Minute Rule</h3>
+
+                <div class="card" style="background: #e8f5e9;">
+                    <h4>✅ Automatic Saving Habit</h4>
+                    <p><strong>Rule:</strong> Save your file every 10-15 minutes, no exceptions.</p>
+                    
+                    <h5>Implementation:</h5>
+                    <ul>
+                        <li><strong>Set a timer:</strong> Phone timer, computer reminder, or Apple Watch</li>
+                        <li><strong>Use shortcuts:</strong> Ctrl/Cmd+S becomes muscle memory</li>
+                        <li><strong>After major changes:</strong> Always save after completing a significant step</li>
+                        <li><strong>Before risky operations:</strong> Save before trying something experimental</li>
+                    </ul>
+
+                    <h5>Software Auto-Save Features:</h5>
+                    <ul>
+                        <li><strong>Photoshop:</strong> Auto-Save enabled by default (recovers crashed files)</li>
+                        <li><strong>Krita:</strong> Edit → Preferences → General → Auto-save (enable and set interval)</li>
+                        <li><strong>Procreate:</strong> Saves automatically after every change</li>
+                        <li><strong>Clip Studio:</strong> File → Auto-save Settings</li>
+                        <li><strong>Note:</strong> Auto-save is backup, not replacement for manual saving!</li>
+                    </ul>
+                </div>
+
+                <h3>Incremental Saving Strategy</h3>
+
+                <p>The professional approach: don't just save over the same file repeatedly. Save incremental versions!</p>
+
+                <div class="card">
+                    <h4>📈 Save Incremental Versions At:</h4>
+
+                    <h5>Major Milestones</h5>
+                    <ul>
+                        <li><strong>After sketch stage:</strong> dragon_v01_sketch.psd</li>
+                        <li><strong>After value block-in:</strong> dragon_v02_values.psd</li>
+                        <li><strong>After color application:</strong> dragon_v03_color.psd</li>
+                        <li><strong>After rendering:</strong> dragon_v04_render.psd</li>
+                        <li><strong>Before major changes:</strong> Save current before experimenting</li>
+                    </ul>
+
+                    <h5>Before Risky Operations</h5>
+                    <ul>
+                        <li>Before flattening layers</li>
+                        <li>Before applying destructive filters</li>
+                        <li>Before major composition changes</li>
+                        <li>Before trying new technique you're unsure about</li>
+                    </ul>
+
+                    <h5>End of Session</h5>
+                    <ul>
+                        <li>Save before taking a break</li>
+                        <li>Save before closing software</li>
+                        <li>Save before shutting down computer</li>
+                        <li>"I'll just close and not save" = Recipe for regret</li>
+                    </ul>
+                </div>
+
+                <h3>Save Command Shortcuts</h3>
+
+                <div class="card">
+                    <h4>⌨️ Universal Keyboard Shortcuts</h4>
+                    <table style="width: 100%; margin-top: 1rem;">
+                        <thead>
+                            <tr>
+                                <th style="width: 40%;">Action</th>
+                                <th style="width: 30%;">Windows</th>
+                                <th style="width: 30%;">Mac</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Save (same file)</strong></td>
+                                <td>Ctrl + S</td>
+                                <td>Cmd + S</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Save As (new file)</strong></td>
+                                <td>Ctrl + Shift + S</td>
+                                <td>Cmd + Shift + S</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Save a Copy</strong></td>
+                                <td>Ctrl + Alt + S</td>
+                                <td>Cmd + Option + S</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <p style="margin-top: 1rem;"><strong>Pro tip:</strong> Get so used to Ctrl/Cmd+S that your fingers do it automatically every few minutes. It should become as natural as breathing!</p>
+                </div>
+
+                <h3>What to Save vs What to Discard</h3>
+
+                <div class="card">
+                    <h4>💚 Always Keep</h4>
+                    <ul>
+                        <li><strong>Final work file:</strong> The completed painting with all layers</li>
+                        <li><strong>Major milestone versions:</strong> Sketch, values, color, render stages</li>
+                        <li><strong>Client-approved versions:</strong> Never delete approved work</li>
+                        <li><strong>Portfolio pieces:</strong> Keep source files for all portfolio work</li>
+                        <li><strong>Commissioned work:</strong> Keep for at least 1-2 years after delivery</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>🗑️ Can Delete (Eventually)</h4>
+                    <ul>
+                        <li><strong>In-between versions:</strong> Once milestone reached, delete v01, v02 leading up to it</li>
+                        <li><strong>Failed experiments:</strong> Paintings you abandoned and won't return to</li>
+                        <li><strong>Old practice sketches:</strong> After 6-12 months, if you haven't referenced them</li>
+                        <li><strong>Duplicate files:</strong> Exact copies you accidentally made</li>
+                        <li><strong>Auto-save backups:</strong> After confirming final save is good</li>
+                    </ul>
+                    <p><strong>Caution:</strong> When in doubt, keep it! Storage is cheap.</p>
+                </div>
+
+                <h3>Software-Specific Saving Tips</h3>
+
+                <div class="card">
+                    <h4>Adobe Photoshop</h4>
+                    <ul>
+                        <li><strong>Format:</strong> Save as .PSD for full layer support</li>
+                        <li><strong>Compatibility:</strong> "Maximize Compatibility" for opening in other software</li>
+                        <li><strong>Large files:</strong> Use .PSB for files over 2GB</li>
+                        <li><strong>Cloud:</strong> Creative Cloud auto-saves if enabled</li>
+                        <li><strong>Recovery:</strong> Check Edit → Auto Recovery for crash recovery</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>Krita</h4>
+                    <ul>
+                        <li><strong>Format:</strong> Save as .KRA for native format</li>
+                        <li><strong>Backup:</strong> Enable auto-save in preferences (5-10 min intervals)</li>
+                        <li><strong>Versions:</strong> Krita doesn't auto-version, you must save manually</li>
+                        <li><strong>Recovery:</strong> Check Documents folder for auto-saved versions after crash</li>
+                        <li><strong>Export:</strong> Use File → Export to create PSD for other software</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>Procreate</h4>
+                    <ul>
+                        <li><strong>Format:</strong> .PROCREATE is native format</li>
+                        <li><strong>Auto-save:</strong> Saves automatically after every stroke—no manual save needed!</li>
+                        <li><strong>Duplicating:</strong> Swipe left on artwork → Duplicate (creates instant backup)</li>
+                        <li><strong>Export:</strong> Share → PSD to transfer to desktop software with layers intact</li>
+                        <li><strong>Backup:</strong> Regularly export to computer or cloud—iPad storage is limited</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>Clip Studio Paint</h4>
+                    <ul>
+                        <li><strong>Format:</strong> .CLIP for standard, .LIP for compressed</li>
+                        <li><strong>Auto-save:</strong> File → Auto-save Settings → enable</li>
+                        <li><strong>Backup:</strong> Saves backup file automatically</li>
+                        <li><strong>Multi-page:</strong> Great for comics—saves all pages in one file</li>
+                        <li><strong>Export:</strong> File → Export Single Layer for PSD compatibility</li>
+                    </ul>
+                </div>
+
+                <blockquote style="margin-top: 1.5rem;">
+                    <strong>⚡ The Ultimate Save Habit:</strong> Ctrl/Cmd+S should become so automatic that you do it without thinking. Professional artists save hundreds of times per painting session. Make it muscle memory!
+                </blockquote>
+
+            </section>
+
+<!-- END OF FRAGMENT B -->
+<!-- PART C STARTS HERE -->
+
+            <!-- Section 6: Version Control for Artists -->
+            <section id="version-control" class="lesson-section">
+                <h2>Version Control for Artists 🔄</h2>
+                
+                <p>Version control isn't just for programmers! Artists need systematic ways to track changes, preserve options, and maintain the ability to backtrack. Let's build a version control system that works for creative work.</p>
+
+                <h3>Why Version Control Matters</h3>
+
+                <div class="card" style="background: #fff3e0;">
+                    <h4>💡 Real-World Scenarios</h4>
+
+                    <h5>Scenario 1: The Client Change</h5>
+                    <p><strong>Situation:</strong> Client approves painting. Two weeks later: "Can we see it with a blue background instead of orange?"</p>
+                    <ul>
+                        <li><strong>Without version control:</strong> "I merged all layers, I'd have to repaint it..."</li>
+                        <li><strong>With version control:</strong> Open v04, change background layer, export. Done in 5 minutes.</li>
+                    </ul>
+
+                    <h5>Scenario 2: The Experiment Gone Wrong</h5>
+                    <p><strong>Situation:</strong> You try a new technique, it ruins the painting, and you saved over the good version.</p>
+                    <ul>
+                        <li><strong>Without version control:</strong> Hours of work lost, starting over from scratch</li>
+                        <li><strong>With version control:</strong> Open previous version (v03), continue from there</li>
+                    </ul>
+
+                    <h5>Scenario 3: The Portfolio Evolution</h5>
+                    <p><strong>Situation:</strong> Six months later, you want to improve an old portfolio piece with new skills.</p>
+                    <ul>
+                        <li><strong>Without version control:</strong> Only have flattened JPEG, can't improve it</li>
+                        <li><strong>With version control:</strong> Open original layered file, apply new techniques</li>
+                    </ul>
+                </div>
+
+                <h3>The Version Control System</h3>
+
+                <p>Here's a simple, effective system every artist can implement:</p>
+
+                <div class="card">
+                    <h4>📊 The Three-Tier Version System</h4>
+
+                    <h5>Tier 1: Working File (Current Active)</h5>
+                    <ul>
+                        <li><strong>Filename:</strong> project-name_working.psd (or just the main filename)</li>
+                        <li><strong>Purpose:</strong> The file you're actively working on</li>
+                        <li><strong>Location:</strong> Work In Progress folder</li>
+                        <li><strong>Save frequency:</strong> Every 10-15 minutes</li>
+                        <li><strong>Keep:</strong> Until project is complete</li>
+                    </ul>
+
+                    <h5>Tier 2: Milestone Versions</h5>
+                    <ul>
+                        <li><strong>Filename:</strong> project-name_v01, v02, v03, etc.</li>
+                        <li><strong>Purpose:</strong> Snapshots at major stages of completion</li>
+                        <li><strong>Location:</strong> Project folder → versions subfolder</li>
+                        <li><strong>When to create:</strong> After each major stage (sketch, values, color, render)</li>
+                        <li><strong>Keep:</strong> Major milestones permanently, interim versions can be deleted</li>
+                    </ul>
+
+                    <h5>Tier 3: Final Archive</h5>
+                    <ul>
+                        <li><strong>Filename:</strong> project-name_final.psd + all exports</li>
+                        <li><strong>Purpose:</strong> The completed, approved version</li>
+                        <li><strong>Location:</strong> Completed folder (then Archive after 6-12 months)</li>
+                        <li><strong>Keep:</strong> Forever—this is your source file</li>
+                    </ul>
+                </div>
+
+                <h3>When to Create a New Version</h3>
+
+                <div class="card" style="background: #e8f5e9;">
+                    <h4>✅ Always Create New Version Before:</h4>
+                    <ul>
+                        <li><strong>Major composition changes:</strong> Moving or removing large elements</li>
+                        <li><strong>Experimenting:</strong> Trying new techniques or effects you're unsure about</li>
+                        <li><strong>Flattening layers:</strong> Once merged, can't separate again</li>
+                        <li><strong>Applying destructive edits:</strong> Filters, transformations that can't be undone</li>
+                        <li><strong>Client review:</strong> Save version before sending to client</li>
+                        <li><strong>Major color changes:</strong> Changing entire palette or mood</li>
+                        <li><strong>End of work session:</strong> Save version if significant progress made</li>
+                        <li><strong>Before breaks:</strong> Taking multi-day break? Save a version first</li>
+                    </ul>
+                </div>
+
+                <h3>Version Naming Conventions</h3>
+
+                <div class="card">
+                    <h4>📝 Effective Version Naming</h4>
+
+                    <h5>Basic Sequential (Most Common)</h5>
+                    <div class="code-block">
+                        <pre><code>dragon-portrait_v01.psd    (initial sketch)
+dragon-portrait_v02.psd    (values blocked in)
+dragon-portrait_v03.psd    (color applied)
+dragon-portrait_v04.psd    (rendering started)
+dragon-portrait_v05.psd    (final details)
+dragon-portrait_final.psd  (completed, approved)</code></pre>
+                    </div>
+
+                    <h5>Stage-Labeled (Educational/Process)</h5>
+                    <div class="code-block">
+                        <pre><code>character_sketch.psd
+character_values.psd
+character_color.psd
+character_render.psd
+character_final.psd</code></pre>
+                    </div>
+
+                    <h5>Date-Based (Long Projects)</h5>
+                    <div class="code-block">
+                        <pre><code>mural-project_2025-10-01.psd
+mural-project_2025-10-08.psd
+mural-project_2025-10-15.psd
+mural-project_final.psd</code></pre>
+                    </div>
+
+                    <h5>Client Iteration (Professional)</h5>
+                    <div class="code-block">
+                        <pre><code>logo-acme_v01_initial.psd
+logo-acme_v02_client-feedback.psd
+logo-acme_v03_revisions.psd
+logo-acme_v04_approved.psd</code></pre>
+                    </div>
+                </div>
+
+                <h3>The Version Control Workflow</h3>
+
+                <div class="mermaid">
+                    graph TD
+                        A[Start New Project] --> B[Create Working File]
+                        B --> C[Work on Art]
+                        C --> D{Reached Milestone?}
+                        D -->|No| E{Major Change Ahead?}
+                        E -->|No| C
+                        E -->|Yes| F[Save As New Version]
+                        F --> C
+                        D -->|Yes| G[Save Milestone Version]
+                        G --> H{Project Complete?}
+                        H -->|No| C
+                        H -->|Yes| I[Save as FINAL]
+                        I --> J[Export All Formats]
+                        J --> K[Move to Completed Folder]
+                        K --> L[Optional: Delete Interim Versions]
+                        
+                        style A fill:#667eea,stroke:#333,stroke-width:2px,color:#fff
+                        style I fill:#43e97b,stroke:#333,stroke-width:2px,color:#fff
+                        style F fill:#f093fb,stroke:#333,stroke-width:2px,color:#fff
+                        style G fill:#f5576c,stroke:#333,stroke-width:2px,color:#fff
+                </div>
+
+                <h3>Managing Version Clutter</h3>
+
+                <p>Too many versions can become overwhelming. Here's how to keep it manageable:</p>
+
+                <div class="card">
+                    <h4>🗂️ Version Management Strategy</h4>
+
+                    <h5>During Active Work</h5>
+                    <ul>
+                        <li><strong>Keep all versions:</strong> While actively working, keep everything</li>
+                        <li><strong>Organize in subfolder:</strong> Put older versions in /versions subfolder</li>
+                        <li><strong>Working file at top level:</strong> Current file stays in main project folder</li>
+                    </ul>
+
+                    <h5>After Completion</h5>
+                    <ul>
+                        <li><strong>Keep:</strong> Initial sketch, major milestones, final version</li>
+                        <li><strong>Delete:</strong> Interim versions between milestones (v02, v03 if you have v04)</li>
+                        <li><strong>Archive:</strong> Move to completed folder with only essential versions</li>
+                    </ul>
+
+                    <h5>Long-Term Storage</h5>
+                    <ul>
+                        <li><strong>Essential only:</strong> Final version + maybe one or two key milestones</li>
+                        <li><strong>Compress:</strong> ZIP older versions for space savings</li>
+                        <li><strong>External backup:</strong> Move archives to external drive or cloud</li>
+                    </ul>
+                </div>
+
+                <h3>Version Control Best Practices</h3>
+
+                <div class="card" style="background: #e3f2fd;">
+                    <h4>💎 Professional Version Control Habits</h4>
+
+                    <h5>1. Save Before, Not After</h5>
+                    <p>Create new version <em>before</em> making risky changes, not after you realize you need to go back.</p>
+
+                    <h5>2. Use Consistent Naming</h5>
+                    <p>Pick one version naming system and stick with it for all projects. Consistency makes finding files easier.</p>
+
+                    <h5>3. Don't Skip Numbers</h5>
+                    <p>v01, v02, v03... don't jump to v10 because you think it's "more final." Numbers should be sequential.</p>
+
+                    <h5>4. Final Means Final</h5>
+                    <p>Only use "_final" for actually completed, approved work. Not "final-final" or "final2"—that defeats the purpose!</p>
+
+                    <h5>5. Document Client Approvals</h5>
+                    <p>Save version when client approves: logo_v03_approved.psd. Protects you if they claim changes later.</p>
+
+                    <h5>6. Clean Up Periodically</h5>
+                    <p>Every month, review old projects and delete unnecessary interim versions. Keep it manageable.</p>
+
+                    <h5>7. Test Your Versions</h5>
+                    <p>Occasionally open an old version to verify it still works. Corrupted files happen—better to know now!</p>
+                </div>
+
+                <h3>Version Control for Different Project Types</h3>
+
+                <table style="width: 100%; margin-top: 1.5rem;">
+                    <thead>
+                        <tr>
+                            <th style="width: 25%;">Project Type</th>
+                            <th style="width: 35%;">Version Strategy</th>
+                            <th style="width: 40%;">What to Keep</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Quick Sketch</strong></td>
+                            <td>Minimal versioning, maybe 1-2 versions</td>
+                            <td>Final only</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Personal Painting</strong></td>
+                            <td>Major milestone versions (4-6 versions)</td>
+                            <td>Sketch, values, final</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Portfolio Piece</strong></td>
+                            <td>Detailed versioning at each stage</td>
+                            <td>All major milestones + final</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Client Commission</strong></td>
+                            <td>Version after each client interaction</td>
+                            <td>Everything until project complete + 1 year</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Series/Sequential</strong></td>
+                            <td>Template version + individual piece versions</td>
+                            <td>Template + finals of each piece</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <blockquote style="margin-top: 1.5rem;">
+                    <strong>💡 The Golden Rule:</strong> It takes 10 seconds to save a version. It takes hours to recreate lost work. Always err on the side of too many versions rather than too few!
+                </blockquote>
+
+            </section>
+
+            <!-- Section 7: Exporting Finished Artwork -->
+            <section id="exporting-finished" class="lesson-section">
+                <h2>Exporting Finished Artwork 📤</h2>
+                
+                <p>Your painting is finished! But the work isn't done until you've properly exported it for its intended use. Different platforms and purposes require different export settings. Let's make sure your artwork looks its absolute best everywhere it appears.</p>
+
+                <h3>The Export Workflow</h3>
+
+                <div class="mermaid">
+                    graph LR
+                        A[Finished Painting] --> B{Purpose?}
+                        B -->|Social Media| C[Web Export]
+                        B -->|Portfolio| D[High Quality Export]
+                        B -->|Print| E[Print Export]
+                        B -->|Client Delivery| F[Multiple Formats]
+                        
+                        C --> C1[JPEG 2000-3000px<br/>sRGB, 85-95% quality]
+                        D --> D1[PNG or JPEG 3000-4000px<br/>sRGB, high quality]
+                        E --> E1[TIFF or PDF<br/>CMYK, 300 DPI]
+                        F --> F1[Source + Web + Print]
+                        
+                        style A fill:#667eea,stroke:#333,stroke-width:2px,color:#fff
+                        style C1 fill:#43e97b,stroke:#333,stroke-width:2px
+                        style D1 fill:#4facfe,stroke:#333,stroke-width:2px
+                        style E1 fill:#f093fb,stroke:#333,stroke-width:2px
+                        style F1 fill:#f5576c,stroke:#333,stroke-width:2px
+                </div>
+
+                <h3>Export Settings by Purpose</h3>
+
+                <div class="card">
+                    <h4>🌐 Web & Social Media</h4>
+                    
+                    <h5>Instagram / Facebook / Twitter</h5>
+                    <ul>
+                        <li><strong>Format:</strong> JPEG</li>
+                        <li><strong>Size:</strong> 2000-3000px on longest side</li>
+                        <li><strong>Aspect ratio:</strong> 1:1 (square), 4:5 (portrait), or 1.91:1 (landscape)</li>
+                        <li><strong>Quality:</strong> 85-95%</li>
+                        <li><strong>Color space:</strong> sRGB</li>
+                        <li><strong>Sharpening:</strong> Slight output sharpening recommended</li>
+                        <li><strong>Pro tip:</strong> Instagram compresses—start at 95% quality, test before posting</li>
+                    </ul>
+
+                    <h5>ArtStation / Behance / Portfolio Sites</h5>
+                    <ul>
+                        <li><strong>Format:</strong> JPEG or PNG</li>
+                        <li><strong>Size:</strong> 3000-4000px on longest side</li>
+                        <li><strong>Quality:</strong> 90-95% (higher for portfolio pieces)</li>
+                        <li><strong>Color space:</strong> sRGB</li>
+                        <li><strong>Aspect ratio:</strong> Any, but 16:9 or 3:2 display well</li>
+                        <li><strong>Pro tip:</strong> These sites support larger files—show your best quality</li>
+                    </ul>
+
+                    <h5>Personal Website / Blog</h5>
+                    <ul>
+                        <li><strong>Format:</strong> JPEG (PNG if transparency needed)</li>
+                        <li><strong>Size:</strong> 1500-2500px wide (optimize for loading speed)</li>
+                        <li><strong>Quality:</strong> 80-90%</li>
+                        <li><strong>Color space:</strong> sRGB</li>
+                        <li><strong>Optimization:</strong> Use tools like TinyJPG or ImageOptim for smaller file sizes</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>🖨️ Print</h4>
+                    
+                    <h5>Home/Office Printer (Inkjet)</h5>
+                    <ul>
+                        <li><strong>Format:</strong> JPEG or PDF</li>
+                        <li><strong>Resolution:</strong> 300 DPI minimum at final print size</li>
+                        <li><strong>Size calculation:</strong> 8x10" print = 2400x3000px at 300 DPI</li>
+                        <li><strong>Color space:</strong> RGB (most home printers use RGB)</li>
+                        <li><strong>Quality:</strong> Maximum (100%)</li>
+                        <li><strong>Pro tip:</strong> Do a test print on plain paper first to check colors</li>
+                    </ul>
+
+                    <h5>Professional/Commercial Print</h5>
+                    <ul>
+                        <li><strong>Format:</strong> TIFF or PDF</li>
+                        <li><strong>Resolution:</strong> 300 DPI (minimum), 600 DPI for line art</li>
+                        <li><strong>Color space:</strong> CMYK (ask printer for their ICC profile)</li>
+                        <li><strong>Bleed:</strong> Add 0.125" (3mm) bleed if going to edge</li>
+                        <li><strong>Compression:</strong> None or lossless (LZW, ZIP)</li>
+                        <li><strong>Crop marks:</strong> Include if printer requests</li>
+                        <li><strong>Pro tip:</strong> Always communicate with printer about their requirements first!</li>
+                    </ul>
+
+                    <h5>Large Format (Posters, Canvas)</h5>
+                    <ul>
+                        <li><strong>Format:</strong> TIFF or high-quality JPEG</li>
+                        <li><strong>Resolution:</strong> 150-300 DPI (150 acceptable for large prints viewed from distance)</li>
+                        <li><strong>Size:</strong> Final print dimensions (24x36" = 3600x5400px at 150 DPI)</li>
+                        <li><strong>Color space:</strong> As requested by print shop</li>
+                        <li><strong>Pro tip:</strong> Larger prints can use lower DPI—viewing distance matters</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>💼 Client Delivery</h4>
+                    
+                    <h5>Standard Client Package</h5>
+                    <ul>
+                        <li><strong>Web version:</strong> JPEG, 2000-3000px, sRGB, 90% quality</li>
+                        <li><strong>Print version:</strong> TIFF or PDF, 300 DPI, CMYK or RGB as needed</li>
+                        <li><strong>Source file:</strong> Your working file (PSD, etc.) with all layers—charge extra for this!</li>
+                        <li><strong>Multiple sizes:</strong> Sometimes provide various dimensions for different uses</li>
+                        <li><strong>Documentation:</strong> Text file with specs and usage guidelines</li>
+                    </ul>
+
+                    <h5>Logo/Branding Delivery</h5>
+                    <ul>
+                        <li><strong>Vector:</strong> AI, EPS, or SVG (if created in vector software)</li>
+                        <li><strong>Raster high-res:</strong> PNG with transparency, 4000px+, 300 DPI</li>
+                        <li><strong>Raster web:</strong> PNG, 512px, 1024px, 2048px versions</li>
+                        <li><strong>Color variations:</strong> Full color, white, black versions</li>
+                        <li><strong>File formats:</strong> Multiple formats for maximum compatibility</li>
+                    </ul>
+                </div>
+
+                <h3>Software-Specific Export Settings</h3>
+
+                <div class="card">
+                    <h4>Adobe Photoshop Export</h4>
+                    
+                    <h5>File → Export → Export As (Modern Method)</h5>
+                    <ul>
+                        <li><strong>Pros:</strong> Preview, multiple formats, optimized workflow</li>
+                        <li><strong>Format options:</strong> PNG, JPEG, GIF</li>
+                        <li><strong>Settings:</strong> Can adjust quality, transparency, size in one dialog</li>
+                        <li><strong>Multiple artboards:</strong> Export all artboards at once</li>
+                    </ul>
+
+                    <h5>File → Save As (Traditional Method)</h5>
+                    <ul>
+                        <li><strong>For:</strong> TIFF, PDF, and when you need more control</li>
+                        <li><strong>Options:</strong> More format choices and detailed settings</li>
+                        <li><strong>Layers:</strong> Some formats preserve layers (TIFF, PDF)</li>
+                    </ul>
+
+                    <h5>File → Save for Web (Legacy)</h5>
+                    <ul>
+                        <li><strong>Best for:</strong> Optimizing file size for web</li>
+                        <li><strong>Format:</strong> JPEG, PNG-8, PNG-24, GIF</li>
+                        <li><strong>Preview:</strong> See file size and quality before saving</li>
+                        <li><strong>Note:</strong> Being phased out in favor of Export As</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>Krita Export</h4>
+                    <ul>
+                        <li><strong>Method:</strong> File → Export</li>
+                        <li><strong>Formats:</strong> PNG, JPEG, TIFF, PDF, and many others</li>
+                        <li><strong>Settings:</strong> Choose format, then set compression/quality</li>
+                        <li><strong>PNG:</strong> Supports transparency and high quality</li>
+                        <li><strong>JPEG:</strong> Adjustable quality slider (1-100)</li>
+                        <li><strong>Flatten:</strong> Automatically flattens on export (source .KRA preserved)</li>
+                        <li><strong>Pro tip:</strong> Export to PSD first if transferring to Photoshop for client</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>Procreate Export</h4>
+                    <ul>
+                        <li><strong>Method:</strong> Tap Actions (wrench icon) → Share</li>
+                        <li><strong>Formats available:</strong>
+                            <ul>
+                                <li><strong>Procreate:</strong> Native format with layers</li>
+                                <li><strong>PSD:</strong> Photoshop format with layers</li>
+                                <li><strong>PDF:</strong> High-quality vector/raster hybrid</li>
+                                <li><strong>JPEG:</strong> Flattened, adjustable quality</li>
+                                <li><strong>PNG:</strong> Flattened, lossless</li>
+                                <li><strong>TIFF:</strong> High-quality flattened</li>
+                            </ul>
+                        </li>
+                        <li><strong>Maximum size:</strong> Can export up to 16k pixels (depending on layers)</li>
+                        <li><strong>Batch export:</strong> Share multiple artworks from Gallery view</li>
+                        <li><strong>Pro tip:</strong> Export PSD to continue work on desktop</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>Clip Studio Paint Export</h4>
+                    <ul>
+                        <li><strong>Method:</strong> File → Export (Single Layer) or File → Export (Multi Page)</li>
+                        <li><strong>Formats:</strong> BMP, JPEG, PNG, TIFF, TGA, PDF, PSD</li>
+                        <li><strong>Settings:</strong> Output size, resolution, color depth</li>
+                        <li><strong>Multiple pages:</strong> Great for comics—exports all pages</li>
+                        <li><strong>Scale on export:</strong> Can change size during export</li>
+                        <li><strong>Expression color:</strong> Can convert color type during export</li>
+                    </ul>
+                </div>
+
+                <h3>Export Checklist</h3>
+
+                <div class="card" style="background: #e8f5e9;">
+                    <h4>✅ Before Exporting, Verify:</h4>
+                    <ul>
+                        <li>☐ <strong>Spelling check:</strong> Any text layers free of typos?</li>
+                        <li>☐ <strong>Hidden layers:</strong> Turned off anything that shouldn't export?</li>
+                        <li>☐ <strong>Crop/canvas:</strong> Canvas size correct for final output?</li>
+                        <li>☐ <strong>Resolution:</strong> High enough for intended use?</li>
+                        <li>☐ <strong>Color mode:</strong> RGB for web, CMYK for print (if needed)?</li>
+                        <li>☐ <strong>Sharpening:</strong> Applied output sharpening if needed?</li>
+                        <li>☐ <strong>Watermark:</strong> Added if posting publicly (optional)?</li>
+                        <li>☐ <strong>Filename:</strong> Clear, professional name ready?</li>
+                        <li>☐ <strong>Test:</strong> View export before sharing—looks correct?</li>
+                    </ul>
+                </div>
+
+                <h3>Common Export Mistakes</h3>
+
+                <div class="card" style="background: #ffebee;">
+                    <h4>❌ Export Pitfalls to Avoid</h4>
+
+                    <h5>1. Wrong Color Space</h5>
+                    <p><strong>Problem:</strong> Colors look different on web/phone than on your monitor</p>
+                    <p><strong>Solution:</strong> Always use sRGB for web, ask printer about CMYK profiles for print</p>
+
+                    <h5>2. Insufficient Resolution</h5>
+                    <p><strong>Problem:</strong> Image looks pixelated when printed or zoomed</p>
+                    <p><strong>Solution:</strong> 300 DPI minimum for print, 2000px+ for web portfolio</p>
+
+                    <h5>3. Over-Compression</h5>
+                    <p><strong>Problem:</strong> Visible artifacts, banding, quality loss</p>
+                    <p><strong>Solution:</strong> JPEG quality 85% minimum, 90-95% for important work</p>
+
+                    <h5>4. Wrong Format</h5>
+                    <p><strong>Problem:</strong> Transparency lost (saved as JPEG instead of PNG)</p>
+                    <p><strong>Solution:</strong> PNG for transparency, JPEG for photos/paintings</p>
+
+                    <h5>5. Forgotten Hidden Layers</h5>
+                    <p><strong>Problem:</strong> Hidden layer contains mistakes or sensitive info</p>
+                    <p><strong>Solution:</strong> Check all layers before flattening/exporting</p>
+
+                    <h5>6. No Output Sharpening</h5>
+                    <p><strong>Problem:</strong> Image looks slightly soft compared to working file</p>
+                    <p><strong>Solution:</strong> Apply subtle sharpening for output (0.3-0.5px radius)</p>
+                </div>
+
+                <h3>Quick Export Reference</h3>
+
+                <table style="width: 100%; margin-top: 1.5rem;">
+                    <thead>
+                        <tr>
+                            <th style="width: 25%;">Use Case</th>
+                            <th style="width: 15%;">Format</th>
+                            <th style="width: 20%;">Size</th>
+                            <th style="width: 15%;">Quality</th>
+                            <th style="width: 25%;">Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Instagram</strong></td>
+                            <td>JPEG</td>
+                            <td>2000-3000px</td>
+                            <td>90-95%</td>
+                            <td>sRGB, 1:1 or 4:5 ratio</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Portfolio site</strong></td>
+                            <td>JPEG/PNG</td>
+                            <td>3000-4000px</td>
+                            <td>90-95%</td>
+                            <td>sRGB, zoomable quality</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Email to client</strong></td>
+                            <td>JPEG</td>
+                            <td>2000-2500px</td>
+                            <td>85-90%</td>
+                            <td>Balance quality/file size</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Home print 8x10"</strong></td>
+                            <td>JPEG/PDF</td>
+                            <td>2400x3000px</td>
+                            <td>100%</td>
+                            <td>300 DPI, RGB</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Pro print</strong></td>
+                            <td>TIFF/PDF</td>
+                            <td>As specified</td>
+                            <td>Lossless</td>
+                            <td>300 DPI, CMYK, with bleed</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Transparency</strong></td>
+                            <td>PNG</td>
+                            <td>As needed</td>
+                            <td>Lossless</td>
+                            <td>Logo, overlay, asset</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <blockquote style="margin-top: 1.5rem;">
+                    <strong>💡 Pro Practice:</strong> Create an "exports" subfolder in each project folder. Store all exported versions there with clear names (web, print, instagram, etc.). You'll thank yourself when you need to re-post or re-send!
+                </blockquote>
+
+            </section>
+
+<!-- END OF FRAGMENT C -->
+<!-- PART D STARTS HERE -->
+
+            <!-- Section 8: Managing References and Resources -->
+            <section id="reference-management" class="lesson-section">
+                <h2>Managing References and Resources 📚</h2>
+                
+                <p>References are essential to creating great art, but they can quickly become a disorganized mess if you don't have a system. Let's build a reference library that's actually useful when you need it.</p>
+
+                <h3>Why Reference Organization Matters</h3>
+
+                <div class="card" style="background: #fff3e0;">
+                    <h4>💡 The Reference Problem</h4>
+                    <p><strong>Scenario:</strong> You're painting a hand. You know you saved a great hand reference photo... somewhere. You spend 20 minutes searching through hundreds of unsorted images, get frustrated, and paint from imagination instead. The hand looks wrong, you know it looks wrong, but you can't find that reference!</p>
+                    
+                    <p><strong>With organized references:</strong> Open References → Anatomy → Hands folder. Find exactly what you need in 10 seconds. Paint confident, accurate hand. Move on with your life.</p>
+                </div>
+
+                <h3>The Reference Folder System</h3>
+
+                <p>Back in our folder structure, we created a References folder. Now let's organize it properly:</p>
+
+                <div class="card">
+                    <h4>📁 Recommended Reference Structure</h4>
+                    <div class="code-block">
+                        <pre><code>📁 References/
+├── 📁 Anatomy/
+│   ├── 📁 Hands/
+│   ├── 📁 Feet/
+│   ├── 📁 Faces/
+│   ├── 📁 Eyes/
+│   ├── 📁 Ears/
+│   ├── 📁 Hair/
+│   ├── 📁 Muscles/
+│   ├── 📁 Poses/
+│   └── 📁 Full-Body/
+├── 📁 Animals/
+│   ├── 📁 Dogs/
+│   ├── 📁 Cats/
+│   ├── 📁 Birds/
+│   ├── 📁 Horses/
+│   └── 📁 Wildlife/
+├── 📁 Environments/
+│   ├── 📁 Architecture/
+│   ├── 📁 Interior/
+│   ├── 📁 Nature/
+│   ├── 📁 Urban/
+│   └── 📁 Skies/
+├── 📁 Materials/
+│   ├── 📁 Fabric/
+│   ├── 📁 Metal/
+│   ├── 📁 Wood/
+│   ├── 📁 Stone/
+│   └── 📁 Glass/
+├── 📁 Lighting/
+│   ├── 📁 Natural-Light/
+│   ├── 📁 Studio-Lighting/
+│   ├── 📁 Dramatic-Light/
+│   └── 📁 Time-of-Day/
+├── 📁 Color-Palettes/
+├── 📁 Composition/
+├── 📁 Effects/
+└── 📁 Inspiration/</code></pre>
+                    </div>
+
+                    <p><strong>Customize:</strong> Adjust categories based on what you actually paint! Fantasy artist? Add Dragons, Magic, Armor. Landscape artist? Expand Environments section.</p>
+                </div>
+
+                <h3>Reference Collection Best Practices</h3>
+
+                <div class="card">
+                    <h4>✅ Good Reference Habits</h4>
+
+                    <h5>1. Save Immediately to Correct Folder</h5>
+                    <ul>
+                        <li>Don't dump everything in Downloads—organize as you collect</li>
+                        <li>Right-click → Save As → Navigate to proper folder</li>
+                        <li>Takes 5 extra seconds now, saves 20 minutes later</li>
+                    </ul>
+
+                    <h5>2. Use Descriptive Filenames</h5>
+                    <ul>
+                        <li><strong>Bad:</strong> IMG_3847.jpg, photo.jpg, reference.jpg</li>
+                        <li><strong>Good:</strong> hand-clenched-fist-angle1.jpg, sunset-dramatic-clouds.jpg</li>
+                        <li>Include key details: subject, angle, lighting, mood</li>
+                    </ul>
+
+                    <h5>3. Delete Bad References</h5>
+                    <ul>
+                        <li>Blurry photos? Delete them. You'll never use them.</li>
+                        <li>Wrong angle or lighting? Not helpful—delete.</li>
+                        <li>Keep only references you'd actually use</li>
+                        <li>Quality over quantity—100 great refs beats 1000 mediocre ones</li>
+                    </ul>
+
+                    <h5>4. Create Sub-Collections for Projects</h5>
+                    <ul>
+                        <li>Specific project? Make subfolder with all relevant references</li>
+                        <li>Or use project-specific references folder in project folder</li>
+                        <li>Don't mix general library with project-specific refs</li>
+                    </ul>
+
+                    <h5>5. Tag or Rate Important References</h5>
+                    <ul>
+                        <li>Star/favorite the best references in your file manager</li>
+                        <li>Some artists prepend filename with "AAA_" to sort best refs to top</li>
+                        <li>Quick way to find your go-to references</li>
+                    </ul>
+                </div>
+
+                <h3>Reference Viewing Tools</h3>
+
+                <div class="card">
+                    <h4>🛠️ Tools for Managing References</h4>
+
+                    <h5>PureRef (Highly Recommended - Free)</h5>
+                    <ul>
+                        <li><strong>What it is:</strong> Dedicated reference image viewer with infinite canvas</li>
+                        <li><strong>Why it's amazing:</strong> Always-on-top window, stays visible while you paint</li>
+                        <li><strong>Features:</strong> Drag images anywhere, resize, crop, arrange intuitively</li>
+                        <li><strong>Workflow:</strong> Collect refs for each project on infinite canvas, save board per project</li>
+                        <li><strong>Download:</strong> pureref.com (Windows, Mac, Linux)</li>
+                        <li><strong>Cost:</strong> Pay-what-you-want (free with nagware, or support development)</li>
+                    </ul>
+
+                    <h5>Your Operating System (Built-in)</h5>
+                    <ul>
+                        <li><strong>Windows:</strong> File Explorer with large thumbnails/icons view</li>
+                        <li><strong>Mac:</strong> Finder with Gallery View or Quick Look (spacebar)</li>
+                        <li><strong>Pros:</strong> Already have it, fast for browsing folders</li>
+                        <li><strong>Cons:</strong> Doesn't stay on top while painting</li>
+                    </ul>
+
+                    <h5>Second Monitor / iPad / Phone</h5>
+                    <ul>
+                        <li><strong>Setup:</strong> Display references on second screen or device</li>
+                        <li><strong>Pros:</strong> Doesn't compete for screen space with painting software</li>
+                        <li><strong>iPad/Tablet:</strong> Use as dedicated reference display via sidecar or third-party app</li>
+                        <li><strong>Phone:</strong> Prop up phone with photo gallery open—simple and effective</li>
+                    </ul>
+
+                    <h5>Pinterest / Eagle / Inboard (Digital Asset Managers)</h5>
+                    <ul>
+                        <li><strong>Pinterest:</strong> Cloud-based, great for collecting web images, searchable</li>
+                        <li><strong>Eagle:</strong> Paid software, powerful tagging and searching</li>
+                        <li><strong>Inboard:</strong> Mac only, similar to Eagle</li>
+                        <li><strong>Pros:</strong> Advanced organization, tags, search, AI features</li>
+                        <li><strong>Cons:</strong> Learning curve, some cost money</li>
+                    </ul>
+                </div>
+
+                <h3>Legal and Ethical Reference Use</h3>
+
+                <div class="card" style="background: #ffebee;">
+                    <h4>⚠️ Copyright and References</h4>
+                    
+                    <h5>Understanding Reference Use</h5>
+                    <ul>
+                        <li><strong>References are for learning:</strong> Study form, light, anatomy, composition</li>
+                        <li><strong>Not for copying:</strong> Don't trace or copy someone else's photo/art directly</li>
+                        <li><strong>Transformation is key:</strong> Use multiple references, combine elements, interpret in your style</li>
+                    </ul>
+
+                    <h5>Safe Reference Sources</h5>
+                    <ul>
+                        <li><strong>Your own photos:</strong> Always safe—you own the copyright</li>
+                        <li><strong>Stock photo sites:</strong> Unsplash, Pexels, Pixabay (check license)</li>
+                        <li><strong>Creative Commons:</strong> Many allow use with attribution</li>
+                        <li><strong>Pose reference sites:</strong> Line of Action, Croquis Cafe, Proko (made for artists)</li>
+                        <li><strong>Public domain:</strong> Very old works, explicitly marked public domain</li>
+                    </ul>
+
+                    <h5>What to Avoid</h5>
+                    <ul>
+                        <li><strong>Direct copies:</strong> Tracing or closely copying someone's photo</li>
+                        <li><strong>Copyrighted art:</strong> Using another artist's work as reference</li>
+                        <li><strong>Single reference dependence:</strong> Painting exclusively from one photo</li>
+                        <li><strong>Commercial use without license:</strong> Using copyrighted refs for paid work</li>
+                    </ul>
+
+                    <p><strong>Golden Rule:</strong> If your painting looks identical to the reference photo, you're too close. Transform, interpret, and make it your own!</p>
+                </div>
+
+                <h3>Organizing Non-Image Resources</h3>
+
+                <div class="card">
+                    <h4>📖 Other Resources to Organize</h4>
+
+                    <h5>Tutorials and Articles</h5>
+                    <ul>
+                        <li><strong>Folder:</strong> Resources → Tutorials</li>
+                        <li><strong>Organize by:</strong> Topic (color-theory, anatomy, lighting, etc.)</li>
+                        <li><strong>Name clearly:</strong> Tutorial-lighting-basics-ctrlpaint.pdf</li>
+                        <li><strong>Video courses:</strong> Note video location or bookmark URLs</li>
+                    </ul>
+
+                    <h5>Color Palettes</h5>
+                    <ul>
+                        <li><strong>Folder:</strong> Resources → Color-Palettes</li>
+                        <li><strong>Save as:</strong> Small PNG or create swatch files</li>
+                        <li><strong>Name by mood/theme:</strong> autumn-warm.png, cyberpunk-neon.png</li>
+                        <li><strong>Screenshot palettes:</strong> From favorite artworks or movies</li>
+                    </ul>
+
+                    <h5>Brushes and Tools</h5>
+                    <ul>
+                        <li><strong>Folder:</strong> Resources → Brushes (separate from software default location)</li>
+                        <li><strong>Organize by:</strong> Type or artist/source</li>
+                        <li><strong>Keep originals:</strong> Downloaded brush packs—keep ZIP for reinstall</li>
+                        <li><strong>Document settings:</strong> Note which brushes you use most</li>
+                    </ul>
+
+                    <h5>Inspiration Collections</h5>
+                    <ul>
+                        <li><strong>Folder:</strong> References → Inspiration</li>
+                        <li><strong>Save:</strong> Art you love, screenshots from films, master paintings</li>
+                        <li><strong>Purpose:</strong> Mood boards, style inspiration, composition studies</li>
+                        <li><strong>Not for direct reference:</strong> Study, don't copy</li>
+                    </ul>
+                </div>
+
+                <h3>Reference Management Maintenance</h3>
+
+                <div class="card" style="background: #e8f5e9;">
+                    <h4>🧹 Quarterly Reference Cleanup</h4>
+                    <p>Every 3-6 months, spend an hour organizing references:</p>
+
+                    <h5>Cleanup Checklist</h5>
+                    <ul>
+                        <li>☐ Delete duplicate images</li>
+                        <li>☐ Remove low-quality or blurry references</li>
+                        <li>☐ Move project-specific refs to project folders or archive</li>
+                        <li>☐ Recategorize any misplaced images</li>
+                        <li>☐ Add new subfolders for reference types you're collecting</li>
+                        <li>☐ Rename vague filenames to descriptive ones</li>
+                        <li>☐ Back up entire reference library to external drive</li>
+                    </ul>
+
+                    <p><strong>Investment:</strong> 1 hour of cleanup saves dozens of hours of searching over the next months!</p>
+                </div>
+
+                <blockquote style="margin-top: 1.5rem;">
+                    <strong>💡 Pro Mindset:</strong> Your reference library is a professional tool, just like your brushes or tablet. Maintain it with the same care, and it will serve you for your entire career!
+                </blockquote>
+
+            </section>
+
+            <!-- Section 9: Backup Strategies That Actually Work -->
+            <section id="backup-strategies" class="lesson-section">
+                <h2>Backup Strategies That Actually Work 💾</h2>
+                
+                <p>Let's get real: if you don't have a backup, you don't really have the file. Hard drives fail. Computers get stolen. Ransomware happens. Coffee spills. The only question is not "will I lose data?" but "when will I lose data?"—and whether you'll be prepared.</p>
+
+                <h3>The Backup Mindset</h3>
+
+                <div class="card" style="background: #ffebee;">
+                    <h4>💔 Real Artist Horror Stories</h4>
+                    <ul>
+                        <li>"My laptop was stolen—lost 5 years of artwork with no backup"</li>
+                        <li>"Hard drive failed. Clicked noise, then nothing. Everything gone."</li>
+                        <li>"Ransomware encrypted all my files. Couldn't pay, lost everything."</li>
+                        <li>"House fire. Computer destroyed, no cloud backup, career work gone."</li>
+                        <li>"Accidentally deleted folder. Emptied recycle bin. No way to recover."</li>
+                    </ul>
+                    <p><strong>Every one of these is preventable with proper backups.</strong></p>
+                </div>
+
+                <h3>The 3-2-1 Backup Rule</h3>
+
+                <p>This is the gold standard for data protection, used by professionals worldwide:</p>
+
+                <div class="card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+                    <h4 style="color: white; margin-top: 0;">📊 3-2-1 Rule Explained</h4>
+                    
+                    <h5 style="color: white;">3 = Three Copies of Your Data</h5>
+                    <ul>
+                        <li><strong>Original:</strong> Your working files on your computer</li>
+                        <li><strong>Backup 1:</strong> External hard drive or NAS</li>
+                        <li><strong>Backup 2:</strong> Cloud storage or offsite backup</li>
+                    </ul>
+
+                    <h5 style="color: white;">2 = Two Different Media Types</h5>
+                    <ul>
+                        <li><strong>Example 1:</strong> Internal SSD + External HDD</li>
+                        <li><strong>Example 2:</strong> Computer HDD + Cloud storage</li>
+                        <li><strong>Why:</strong> Different failure modes—cloud survives house fire, local drive survives internet outage</li>
+                    </ul>
+
+                    <h5 style="color: white;">1 = One Copy Offsite</h5>
+                    <ul>
+                        <li><strong>Offsite means:</strong> Physically different location from your computer</li>
+                        <li><strong>Options:</strong> Cloud storage, drive at friend's house, bank safety deposit box</li>
+                        <li><strong>Why:</strong> Protects against fire, flood, theft, natural disasters</li>
+                    </ul>
+
+                    <p style="margin-bottom: 0;"><strong>Follow this rule and your data is virtually indestructible!</strong></p>
+                </div>
+
+                <h3>Backup Solutions for Artists</h3>
+
+                <div class="card">
+                    <h4>💻 Local Backup (On-Site)</h4>
+
+                    <h5>External Hard Drive (Recommended for Beginners)</h5>
+                    <ul>
+                        <li><strong>What:</strong> USB hard drive you plug into computer</li>
+                        <li><strong>Capacity:</strong> 1-4TB typical (plenty for most artists)</li>
+                        <li><strong>Cost:</strong> $50-150</li>
+                        <li><strong>Pros:</strong> Fast, cheap, you control it, no monthly fees</li>
+                        <li><strong>Cons:</strong> Can fail, can be stolen with computer, requires manual backup</li>
+                        <li><strong>Recommendation:</strong> WD My Passport, Seagate Backup Plus</li>
+                        <li><strong>Backup frequency:</strong> Weekly or after finishing major projects</li>
+                    </ul>
+
+                    <h5>NAS (Network Attached Storage)</h5>
+                    <ul>
+                        <li><strong>What:</strong> Always-on storage device on your home network</li>
+                        <li><strong>Capacity:</strong> 2TB to 20TB+</li>
+                        <li><strong>Cost:</strong> $200-800+ (device + hard drives)</li>
+                        <li><strong>Pros:</strong> Automatic backups, RAID protection, accessible from any device</li>
+                        <li><strong>Cons:</strong> Expensive, more complex setup</li>
+                        <li><strong>Best for:</strong> Professional artists, home studios, multiple computers</li>
+                        <li><strong>Brands:</strong> Synology, QNAP</li>
+                    </ul>
+
+                    <h5>Time Machine / Windows Backup (Built-in)</h5>
+                    <ul>
+                        <li><strong>Mac:</strong> Time Machine (System Preferences → Time Machine)</li>
+                        <li><strong>Windows:</strong> File History or Backup and Restore</li>
+                        <li><strong>What:</strong> Operating system's built-in backup</li>
+                        <li><strong>Pros:</strong> Free, automatic, built-in</li>
+                        <li><strong>Cons:</strong> Requires external drive, only backs up to one location</li>
+                        <li><strong>Setup:</strong> Connect external drive, enable, forget about it</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>☁️ Cloud Backup (Off-Site)</h4>
+
+                    <h5>Backblaze (Recommended for Artists)</h5>
+                    <ul>
+                        <li><strong>What:</strong> Unlimited cloud backup for one computer</li>
+                        <li><strong>Cost:</strong> ~$9/month or ~$99/year</li>
+                        <li><strong>Pros:</strong> Unlimited storage, automatic, offsite, very reliable</li>
+                        <li><strong>Cons:</strong> Initial upload can take days/weeks, monthly cost</li>
+                        <li><strong>Best for:</strong> Set-it-and-forget-it full computer backup</li>
+                    </ul>
+
+                    <h5>Google Drive / Dropbox / OneDrive</h5>
+                    <ul>
+                        <li><strong>What:</strong> Cloud sync and storage</li>
+                        <li><strong>Cost:</strong> $10-20/month for 2TB</li>
+                        <li><strong>Pros:</strong> Sync across devices, easy sharing, accessible anywhere</li>
+                        <li><strong>Cons:</strong> Limited storage (not unlimited), can sync deletions</li>
+                        <li><strong>Best for:</strong> Active project backup, sharing with clients</li>
+                        <li><strong>Pro tip:</strong> Don't rely solely on sync services—they sync mistakes too!</li>
+                    </ul>
+
+                    <h5>Crashplan / Carbonite</h5>
+                    <ul>
+                        <li><strong>What:</strong> Backup services similar to Backblaze</li>
+                        <li><strong>Cost:</strong> $10-15/month</li>
+                        <li><strong>Features:</strong> Automatic backup, unlimited storage</li>
+                        <li><strong>Note:</strong> Compare features with Backblaze for best fit</li>
+                    </ul>
+                </div>
+
+                <h3>Backup Workflow</h3>
+
+                <div class="card" style="background: #e8f5e9;">
+                    <h4>✅ Practical Backup Schedule</h4>
+
+                    <h5>Every Day (Automatic)</h5>
+                    <ul>
+                        <li><strong>Cloud backup:</strong> Backblaze runs continuously in background</li>
+                        <li><strong>Sync services:</strong> Dropbox/Google Drive sync active projects</li>
+                        <li><strong>No action needed:</strong> Happens automatically</li>
+                    </ul>
+
+                    <h5>Every Week (Manual)</h5>
+                    <ul>
+                        <li><strong>External drive backup:</strong> Copy entire Digital Art folder to external drive</li>
+                        <li><strong>Time:</strong> 10-30 minutes depending on changes</li>
+                        <li><strong>Schedule it:</strong> Sunday evening, end of work week, whatever works</li>
+                    </ul>
+
+                    <h5>Every Month (Archive)</h5>
+                    <ul>
+                        <li><strong>Archive completed projects:</strong> Move from Completed to Archive</li>
+                        <li><strong>Verify backups:</strong> Spot-check that backups are working</li>
+                        <li><strong>Off-site backup:</strong> If using second external drive, swap with offsite copy</li>
+                    </ul>
+
+                    <h5>After Major Milestones (Immediate)</h5>
+                    <ul>
+                        <li><strong>Finished commission:</strong> Backup immediately before delivery</li>
+                        <li><strong>Completed portfolio piece:</strong> Back up source files right away</li>
+                        <li><strong>Multiple backups:</strong> Really important work? Copy to multiple locations</li>
+                    </ul>
+                </div>
+
+                <h3>What to Back Up</h3>
+
+                <div class="card">
+                    <h4>📦 Backup Priority Levels</h4>
+
+                    <h5>Priority 1: Irreplaceable (Back Up Everywhere)</h5>
+                    <ul>
+                        <li>Original artwork source files (PSD, KRA, etc.)</li>
+                        <li>Portfolio pieces</li>
+                        <li>Client commissioned work</li>
+                        <li>Personal projects you care about</li>
+                        <li><strong>These are your livelihood—triple backup!</strong></li>
+                    </ul>
+
+                    <h5>Priority 2: Important (Back Up Regularly)</h5>
+                    <ul>
+                        <li>Reference library</li>
+                        <li>Custom brushes</li>
+                        <li>Tutorials and resources</li>
+                        <li>Software settings/presets</li>
+                        <li><strong>Takes time to rebuild—back up at least weekly</strong></li>
+                    </ul>
+
+                    <h5>Priority 3: Replaceable (Optional Backup)</h5>
+                    <ul>
+                        <li>Practice sketches</li>
+                        <li>Experimental work</li>
+                        <li>Quick studies</li>
+                        <li>Downloaded software installers (can re-download)</li>
+                        <li><strong>Nice to have backed up, but not critical</strong></li>
+                    </ul>
+                </div>
+
+                <h3>Testing Your Backups</h3>
+
+                <div class="card" style="background: #fff3e0;">
+                    <h4>⚠️ A Backup You Haven't Tested is Worthless</h4>
+                    <p>Many people think they have backups... until they need them and discover they don't work!</p>
+
+                    <h5>How to Test Your Backups</h5>
+                    <ol>
+                        <li><strong>Pick a random file:</strong> Choose a work file from your computer</li>
+                        <li><strong>Try to restore it:</strong> From cloud, from external drive, from each backup location</li>
+                        <li><strong>Open the restored file:</strong> Verify it actually opens and has all layers</li>
+                        <li><strong>Check the date:</strong> Is backup recent, or from 6 months ago?</li>
+                        <li><strong>Test quarterly:</strong> Verify backups work every 3 months</li>
+                    </ol>
+
+                    <p><strong>If you can't restore a file, your backup system isn't working. Fix it now, before disaster strikes!</strong></p>
+                </div>
+
+                <h3>Backup Best Practices</h3>
+
+                <div class="card">
+                    <h4>💎 Professional Backup Habits</h4>
+
+                    <h5>1. Automate Everything Possible</h5>
+                    <p>Manual backups require discipline. Automatic backups just work. Set up automatic systems and forget about them.</p>
+
+                    <h5>2. Keep External Drives Disconnected</h5>
+                    <p>After backing up to external drive, unplug it. If ransomware hits, it can't encrypt disconnected drives.</p>
+
+                    <h5>3. Version Your Backups</h5>
+                    <p>Good backup systems keep multiple versions, not just one copy. This lets you recover from accidental deletions or file corruption.</p>
+
+                    <h5>4. Encrypt Sensitive Backups</h5>
+                    <p>Cloud backups and external drives can be encrypted. Protects client work and personal information.</p>
+
+                    <h5>5. Document Your System</h5>
+                    <p>Write down your backup process. If computer dies, stressed future-you will thank calm present-you for the documentation.</p>
+
+                    <h5>6. Budget for Storage</h5>
+                    <p>$10-20/month for cloud backup is cheaper than losing years of work. It's insurance for your career.</p>
+                </div>
+
+                <h3>Quick Start Backup Plan</h3>
+
+                <div class="card" style="background: #e3f2fd;">
+                    <h4>🚀 Get Protected Today</h4>
+                    
+                    <h5>Minimum Viable Backup (Do This Now)</h5>
+                    <ol>
+                        <li><strong>Buy external hard drive:</strong> 1-2TB, $50-80</li>
+                        <li><strong>Enable Time Machine or Windows Backup:</strong> Connect drive, turn on, done</li>
+                        <li><strong>Sign up for Backblaze:</strong> $9/month, install, let it run</li>
+                        <li><strong>Total cost:</strong> ~$60 one-time + $9/month</li>
+                        <li><strong>Time investment:</strong> 30 minutes setup</li>
+                        <li><strong>Result:</strong> Your art is now protected</li>
+                    </ol>
+
+                    <h5>Upgrade When Budget Allows</h5>
+                    <ul>
+                        <li>Add second external drive for offsite rotation</li>
+                        <li>Upgrade to NAS for automatic network backup</li>
+                        <li>Add Google Drive for active project sync</li>
+                    </ul>
+
+                    <p><strong>The best backup system is the one you actually implement. Start simple, upgrade later!</strong></p>
+                </div>
+
+                <blockquote style="margin-top: 1.5rem;">
+                    <strong>💡 The Backup Guarantee:</strong> You will lose data at some point in your career. The only question is whether it will be a minor inconvenience (restore from backup) or a career-ending disaster (no backup). Choose wisely!
+                </blockquote>
+
+            </section>
+
+            <!-- Section 10: Troubleshooting Common Problems -->
+            <section id="troubleshooting" class="lesson-section">
+                <h2>Troubleshooting Common Problems 🔧</h2>
+                
+                <p>Even with good file management, problems happen. Here are solutions to the most common file-related issues artists encounter.</p>
+
+                <h3>File Won't Open</h3>
+
+                <div class="card">
+                    <h4>Problem: "File is corrupted" or won't open</h4>
+                    
+                    <h5>Possible Causes & Solutions</h5>
+                    <ul>
+                        <li><strong>Software version mismatch:</strong> File created in newer version than you have
+                            <ul>
+                                <li><strong>Solution:</strong> Update software, or ask creator to "Save As" in older format</li>
+                            </ul>
+                        </li>
+                        <li><strong>Incomplete download:</strong> File didn't finish downloading
+                            <ul>
+                                <li><strong>Solution:</strong> Re-download the file, check file size matches expected</li>
+                            </ul>
+                        </li>
+                        <li><strong>Drive failure:</strong> Storage device is failing
+                            <ul>
+                                <li><strong>Solution:</strong> Try opening from backup, recover what you can, replace drive</li>
+                            </ul>
+                        </li>
+                        <li><strong>Wrong software:</strong> Trying to open PSD in software that doesn't support it
+                            <ul>
+                                <li><strong>Solution:</strong> Use native software or convert to compatible format</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <h5>Recovery Attempts</h5>
+                    <ol>
+                        <li>Try opening in different software (e.g., PSD in Krita or GIMP)</li>
+                        <li>Check for auto-save or recovery files in software</li>
+                        <li>Look for backup versions in your backup system</li>
+                        <li>Try file repair tools (specific to file format)</li>
+                        <li>If critical: Consider professional data recovery service</li>
+                    </ol>
+                </div>
+
+                <h3>File Size Problems</h3>
+
+                <div class="card">
+                    <h4>Problem: File is huge / running out of storage</h4>
+                    
+                    <h5>Why Files Get Large</h5>
+                    <ul>
+                        <li>High resolution (4000x6000px is 4x larger than 2000x3000px)</li>
+                        <li>Many layers (each layer adds size)</li>
+                        <li>16-bit color depth (double the size of 8-bit)</li>
+                        <li>Uncompressed format</li>
+                    </ul>
+
+                    <h5>Solutions</h5>
+                    <ul>
+                        <li><strong>Flatten unnecessary layers:</strong> Merge layers you're done editing</li>
+                        <li><strong>Delete hidden layers:</strong> Layers you're not using but forgot to delete</li>
+                        <li><strong>Reduce resolution:</strong> If working larger than needed</li>
+                        <li><strong>Use compressed formats:</strong> .KRA instead of .PSD for Krita (smaller)</li>
+                        <li><strong>Archive old projects:</strong> Compress finished projects, move to external drive</li>
+                        <li><strong>Upgrade storage:</strong> Add external drive or larger internal drive</li>
+                    </ul>
+                </div>
+
+                <h3>Can't Find File</h3>
+
+                <div class="card">
+                    <h4>Problem: "I know I saved it somewhere!"</h4>
+                    
+                    <h5>Search Strategies</h5>
+                    <ol>
+                        <li><strong>Use system search:</strong>
+                            <ul>
+                                <li>Windows: Press Windows key, type filename</li>
+                                <li>Mac: Press Cmd+Space, type filename</li>
+                            </ul>
+                        </li>
+                        <li><strong>Search by date:</strong>
+                            <ul>
+                                <li>Search for files modified "last week" or specific date</li>
+                                <li>Sort folders by "Date Modified" to find recent work</li>
+                            </ul>
+                        </li>
+                        <li><strong>Search by file type:</strong>
+                            <ul>
+                                <li>Search for *.psd or *.kra to find all files of that type</li>
+                            </ul>
+                        </li>
+                        <li><strong>Check Recent Files:</strong>
+                            <ul>
+                                <li>Most software: File → Open Recent</li>
+                                <li>Shows recently opened files even if you forgot where they are</li>
+                            </ul>
+                        </li>
+                        <li><strong>Check default save locations:</strong>
+                            <ul>
+                                <li>Documents folder</li>
+                                <li>Desktop (sadly common)</li>
+                                <li>Downloads folder</li>
+                                <li>Software's default save location</li>
+                            </ul>
+                        </li>
+                    </ol>
+
+                    <h5>Prevention</h5>
+                    <p><strong>This is why we have folder structure and naming conventions!</strong> Follow the system and you'll never lose files again.</p>
+                </div>
+
+                <h3>Accidentally Deleted File</h3>
+
+                <div class="card">
+                    <h4>Problem: "I deleted it by accident!"</h4>
+                    
+                    <h5>Recovery Steps (In Order)</h5>
+                    <ol>
+                        <li><strong>Check Recycle Bin / Trash:</strong>
+                            <ul>
+                                <li>Windows: Recycle Bin on desktop</li>
+                                <li>Mac: Trash in Dock</li>
+                                <li>If there: Right-click → Restore</li>
+                            </ul>
+                        </li>
+                        <li><strong>Check cloud sync service:</strong>
+                            <ul>
+                                <li>Dropbox/Google Drive often keep deleted files for 30 days</li>
+                                <li>Log into web interface, check "Deleted files"</li>
+                            </ul>
+                        </li>
+                        <li><strong>Restore from backup:</strong>
+                            <ul>
+                                <li>Time Machine: Browse backups for that file</li>
+                                <li>Windows Backup: Restore previous versions</li>
+                                <li>Cloud backup: Restore from backup service</li>
+                            </ul>
+                        </li>
+                        <li><strong>File recovery software:</strong>
+                            <ul>
+                                <li>Recuva (Windows), Disk Drill (Mac)</li>
+                                <li>Works if file not overwritten yet</li>
+                                <li>Stop using computer immediately to maximize chance</li>
+                            </ul>
+                        </li>
+                    </ol>
+
+                    <p><strong>Success rate decreases with time. Act fast!</strong></p>
+                </div>
+
+                <h3>Software Crashes / Won't Save</h3>
+
+                <div class="card">
+                    <h4>Problem: Software crashed, didn't save</h4>
+                    
+                    <h5>Immediate Actions</h5>
+                    <ol>
+                        <li><strong>Don't panic:</strong> Many programs have auto-recovery</li>
+                        <li><strong>Restart software:</strong> Often prompts to recover unsaved work</li>
+                        <li><strong>Check auto-save location:</strong>
+                            <ul>
+                                <li>Photoshop: Look for auto-recovery files</li>
+                                <li>Krita: Check Documents folder for auto-saved versions</li>
+                                <li>Location varies by software—check preferences</li>
+                            </ul>
+                        </li>
+                    </ol>
+
+                    <h5>Prevention</h5>
+                    <ul>
+                        <li>Save frequently (Ctrl/Cmd+S every 10-15 minutes)</li>
+                        <li>Enable auto-save in preferences</li>
+                        <li>Create incremental versions at milestones</li>
+                        <li>Don't rely on auto-save alone—manual save is safer</li>
+                    </ul>
+                </div>
+
+                <h3>Colors Look Different on Other Devices</h3>
+
+                <div class="card">
+                    <h4>Problem: Artwork looks different on phone/web/print</h4>
+                    
+                    <h5>Causes</h5>
+                    <ul>
+                        <li><strong>Wrong color space:</strong> Working in Adobe RGB but web needs sRGB</li>
+                        <li><strong>Uncalibrated monitor:</strong> Your screen shows colors incorrectly</li>
+                        <li><strong>No embedded color profile:</strong> Export doesn't include color info</li>
+                        <li><strong>Brightness/contrast differs:</strong> Phone screens are brighter</li>
+                    </ul>
+
+                    <h5>Solutions</h5>
+                    <ul>
+                        <li><strong>Always use sRGB for web:</strong> Edit → Convert to Profile → sRGB before exporting</li>
+                        <li><strong>Embed color profile:</strong> Check "Embed Color Profile" when saving</li>
+                        <li><strong>Test on multiple devices:</strong> View on phone, tablet, different monitor</li>
+                        <li><strong>Calibrate monitor:</strong> Use calibration tool (expensive) or adjust by eye to match other devices</li>
+                        <li><strong>For print:</strong> Work with printer on color profiles (CMYK)</li>
+                    </ul>
+                </div>
+
+                <blockquote style="margin-top: 1.5rem;">
+                    <strong>💡 Prevention is Better Than Recovery:</strong> 90% of file problems are preventable with good habits: save often, back up regularly, organize properly, and name files clearly!
+                </blockquote>
+
+            </section>
+
+            <!-- Summary & Key Takeaways -->
+            <section class="lesson-section" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; border-radius: 8px; margin-top: 3rem;">
+                <h2 style="color: white;">📋 Key Takeaways</h2>
+                <p><strong>Congratulations!</strong> You now have professional file management skills that will serve you throughout your entire art career. Let's recap the essentials:</p>
+
+                <h3 style="color: white;">The Core Principles</h3>
+                <ul>
+                    <li><strong>Organization = Freedom:</strong> Good systems free your mind to focus on art</li>
+                    <li><strong>Future You is Counting on Present You:</strong> Organize now, benefit forever</li>
+                    <li><strong>Backup or It Doesn't Exist:</strong> Your work is only as safe as your backups</li>
+                    <li><strong>Consistency Beats Perfection:</strong> A simple system used always beats a complex system used sometimes</li>
+                </ul>
+
+                <h3 style="color: white;">Must-Do Actions</h3>
+                <ol>
+                    <li>✅ Create your folder structure (Work In Progress, Completed, Archive, References, Portfolio)</li>
+                    <li>✅ Adopt the YYYY-MM-project-name_v## naming convention</li>
+                    <li>✅ Save work files in native format (.PSD, .KRA, .PROCREATE, etc.)</li>
+                    <li>✅ Save every 10-15 minutes and create versions at milestones</li>
+                    <li>✅ Set up 3-2-1 backup: Local + Cloud + Off-site</li>
+                    <li>✅ Export properly for each use case (web/social/print)</li>
+                    <li>✅ Organize references for easy access</li>
+                </ol>
+
+                <h3 style="color: white;">Remember</h3>
+                <p style="margin-bottom: 0;">File management isn't exciting, but it's the invisible foundation of a professional art career. Implement these systems today, and you'll never lose work, never waste time searching, and never face that sinking feeling of "where did I save that file?" Your future self will thank you!</p>
+            </section>
+
+            <!-- Additional Resources -->
+            <section class="lesson-section">
+                <h2>📚 Additional Resources</h2>
+
+                <div class="card">
+                    <h3>Backup Services</h3>
+                    <ul>
+                        <li><strong>Backblaze:</strong> <a href="https://www.backblaze.com" target="_blank">backblaze.com</a> - Unlimited cloud backup</li>
+                        <li><strong>Google Drive:</strong> <a href="https://www.google.com/drive/" target="_blank">google.com/drive</a> - Cloud storage and sync</li>
+                        <li><strong>Dropbox:</strong> <a href="https://www.dropbox.com" target="_blank">dropbox.com</a> - File sync and backup</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>Reference Management Tools</h3>
+                    <ul>
+                        <li><strong>PureRef:</strong> <a href="https://www.pureref.com" target="_blank">pureref.com</a> - Free reference image viewer (highly recommended!)</li>
+                        <li><strong>Eagle:</strong> <a href="https://eagle.cool" target="_blank">eagle.cool</a> - Digital asset manager</li>
+                        <li><strong>Pinterest:</strong> <a href="https://www.pinterest.com" target="_blank">pinterest.com</a> - Online reference collection</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>Reference Photo Resources (Legal/Free)</h3>
+                    <ul>
+                        <li><strong>Unsplash:</strong> <a href="https://unsplash.com" target="_blank">unsplash.com</a> - Free high-quality photos</li>
+                        <li><strong>Pexels:</strong> <a href="https://www.pexels.com" target="_blank">pexels.com</a> - Free stock photos</li>
+                        <li><strong>Line of Action:</strong> <a href="https://line-of-action.com" target="_blank">line-of-action.com</a> - Gesture drawing references</li>
+                        <li><strong>Croquis Cafe:</strong> <a href="https://www.croquis.cafe" target="_blank">croquis.cafe</a> - Figure drawing videos</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>File Organization Articles</h3>
+                    <ul>
+                        <li><strong>Ctrl+Paint:</strong> Digital art fundamentals and organization</li>
+                        <li><strong>Proko:</strong> Professional artist workflow videos</li>
+                        <li><strong>Your software's documentation:</strong> Check official docs for file format details</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- What's Next -->
+            <section class="lesson-section" style="background: #f8f9fa; padding: 2rem; border-radius: 8px;">
+                <h2>🎯 What's Next?</h2>
+                <p>Congratulations on completing the Technique Module! You now have a complete digital painting workflow from start to finish, including the often-overlooked but crucial skills of file management.</p>
+
+                <h3>Next Steps in Your Journey</h3>
+                <p>Continue to <strong>Module 4: Advanced Topics</strong> where you'll learn:</p>
+                <ul>
+                    <li><strong>Advanced Brush Customization:</strong> Create custom brushes for your unique style</li>
+                    <li><strong>Speed Painting Techniques:</strong> Work faster without sacrificing quality</li>
+                    <li><strong>Software Comparison:</strong> Understand differences between applications</li>
+                    <li><strong>Troubleshooting:</strong> Solve common digital art problems</li>
+                </ul>
+
+                <p><strong>But First:</strong> Take action on today's lesson! Set up your folder structure, implement your backup system, and organize your references. These aren't optional—they're professional fundamentals that will protect your work for years to come.</p>
+            </section>
+
+            <!-- Lesson Navigation -->
+            <nav class="lesson-nav" aria-label="Lesson navigation">
+                <a href="texture_detail.html" class="lesson-nav-button prev">
+                    ← Previous: Texture & Detail Techniques
+                </a>
+                <a href="index.html#module-4" class="lesson-nav-button next">
+                    Next Module: Advanced Topics →
+                </a>
+            </nav>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Digital Artistry Foundations. Part of the Universal Digital Art Course.</p>
+            <p>
+                <a href="index.html">Home</a> |
+                <a href="index.html#modules">All Lessons</a> |
+                <a href="resources.html">Resources</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/clipboard.js"></script>
+    <script src="js/course-enhancements.js"></script>
+    <script>
+        // Table of Contents toggle
+        function toggleTOC() {
+            const tocList = document.getElementById('toc-list');
+            const tocIcon = document.getElementById('toc-toggle-icon');
+            if (tocList.style.maxHeight === '0px' || tocList.style.maxHeight === '') {
+                tocList.style.maxHeight = '1000px';
+                tocIcon.style.transform = 'rotate(180deg)';
+            } else {
+                tocList.style.maxHeight = '0px';
+                tocIcon.style.transform = 'rotate(0deg)';
+            }
+        }
+    </script>
+</body>
+</html>

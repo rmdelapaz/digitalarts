@@ -1,0 +1,1136 @@
+ {"lessonDetails": {
+    "painting_workflow": {
+      "fullTitle": "Digital Painting Workflow",
+      "lessonNumber": "3-1",
+      "module": "Technique Module",
+      "status": "complete",
+      "fragments": {
+        "total": 5,
+        "completed": ["a", "b", "c", "d", "e"],
+        "inProgress": null
+      },
+      "contentOutline": [
+        {
+          "section": "The Complete Workflow Overview",
+          "topics": [
+            "The six stages of digital painting",
+            "Stage-by-stage breakdown",
+            "The non-linear reality",
+            "Time investment by stage",
+            "The workflow mindset"
+          ]
+        },
+        {
+          "section": "Stage 1: Planning & Preparation",
+          "topics": [
+            "Why planning matters",
+            "Define your concept",
+            "Gather references",
+            "Canvas setup",
+            "Reference board setup",
+            "Planning stage checklist"
+          ]
+        },
+        {
+          "section": "Stage 2: Initial Sketch & Composition",
+          "topics": [
+            "Purpose of the sketch stage",
+            "Composition fundamentals",
+            "The sketching process",
+            "Common sketch stage mistakes",
+            "Sketching techniques by software",
+            "Sketch completion checklist"
+          ]
+        },
+        {
+          "section": "Stage 3: Value Block-In",
+          "topics": [
+            "Why values matter more than color",
+            "Understanding the value scale",
+            "The value block-in process",
+            "Value painting techniques",
+            "Common value stage mistakes",
+            "The squint test",
+            "Value stage completion checklist"
+          ]
+        },
+        {
+          "section": "Stage 4: Color Application",
+          "topics": [
+            "Color-over-values advantage",
+            "Color application methods",
+            "The color application process",
+            "Color harmony strategies",
+            "Common color stage mistakes",
+            "Software-specific color tips",
+            "Testing your colors",
+            "Color stage completion checklist"
+          ]
+        },
+        {
+          "section": "Stage 5: Rendering & Detail",
+          "topics": [
+            "Understanding rendering",
+            "The focal point strategy",
+            "The rendering process",
+            "Rendering techniques by subject",
+            "Common rendering mistakes",
+            "Professional rendering techniques",
+            "Rendering completion checklist",
+            "Avoiding burnout during rendering"
+          ]
+        },
+        {
+          "section": "Stage 6: Finishing Touches",
+          "topics": [
+            "The purpose of finishing",
+            "The finishing toolkit",
+            "The finishing process",
+            "Knowing when to stop",
+            "Finishing checklist"
+          ]
+        },
+        {
+          "section": "Layer Organization Strategies",
+          "topics": [
+            "Professional layer structure",
+            "Layer naming conventions",
+            "Layer management tips"
+          ]
+        },
+        {
+          "section": "Workflow Variations by Genre",
+          "topics": [
+            "Portrait workflow",
+            "Landscape workflow",
+            "Creature/fantasy workflow",
+            "Concept art workflow",
+            "Stylized/anime workflow"
+          ]
+        },
+        {
+          "section": "Troubleshooting Common Problems",
+          "topics": [
+            "Problem-solution guide",
+            "Flat paintings",
+            "Muddy colors",
+            "Weak focal points",
+            "Lack of energy",
+            "Proportions issues",
+            "Overworking"
+          ]
+        },
+        {
+          "section": "Professional Efficiency Tips",
+          "topics": [
+            "Keyboard shortcuts",
+            "Custom workspaces",
+            "Brush presets",
+            "Reference setup",
+            "Time boxing",
+            "Decision making",
+            "Building speed over time"
+          ]
+        }
+      ],
+      "learningObjectives": [
+        "Understand the complete digital painting process from start to finish",
+        "Plan and prepare canvas and references effectively",
+        "Create strong initial sketches and compositions",
+        "Block in values and establish form efficiently",
+        "Refine details without losing sight of the big picture",
+        "Apply professional finishing techniques",
+        "Organize layers and files for maximum flexibility",
+        "Develop personalized workflow variations",
+        "Troubleshoot common workflow problems",
+        "Work efficiently across any digital painting software"
+      ],
+      "keyTerminology": [
+        "Workflow",
+        "Planning",
+        "Composition",
+        "Value block-in",
+        "Color application",
+        "Rendering",
+        "Finishing",
+        "Focal point",
+        "Detail hierarchy",
+        "Non-destructive workflow",
+        "Layer organization",
+        "Squint test",
+        "Dodge and burn",
+        "Color grading",
+        "Vignette",
+        "Edge quality"
+      ],
+      "exercises": [
+        {
+          "title": "Complete Workflow Practice",
+          "description": "Create one painting following all six stages exactly as taught"
+        },
+        {
+          "title": "Value Study Series",
+          "description": "Complete 5 grayscale paintings focusing only on stages 1-3"
+        },
+        {
+          "title": "Workflow Timing",
+          "description": "Time yourself through each stage, track where you spend most time"
+        },
+        {
+          "title": "Genre Variation",
+          "description": "Apply workflow to portrait, landscape, and creature—note differences"
+        },
+        {
+          "title": "10 Painting Challenge",
+          "description": "Complete 10 paintings using workflow—watch it become automatic"
+        }
+      ],
+      "commonMistakes": [
+        "Skipping planning stage",
+        "Not spending enough time on sketch",
+        "Adding color before values are solid",
+        "Detailing everything equally",
+        "Working too zoomed in during rendering",
+        "Not knowing when to stop",
+        "Poor layer organization",
+        "Rushing through stages"
+      ],
+      "proTips": [
+        "10 minutes planning saves hours of fixing",
+        "Value does 80% of heavy lifting",
+        "80% of detail in 20% of painting (focal point)",
+        "Zoom out every 5-10 minutes during rendering",
+        "Take breaks between stages for fresh perspective",
+        "Done is better than perfect",
+        "Name layers as you create them",
+        "Save versions at each major stage"
+      ]
+    },
+    "lighting_form": {
+      "fullTitle": "Lighting & Form Fundamentals",
+      "lessonNumber": "3-2",
+      "module": "Technique Module",
+      "status": "complete",
+      "fragments": {
+        "total": 4,
+        "completed": ["a", "b", "c", "d"],
+        "inProgress": null
+      },
+      "contentOutline": [
+        {
+          "section": "Understanding Light: The Basics",
+          "topics": [
+            "What is light",
+            "How light behaves",
+            "Local value vs light effect"
+          ]
+        },
+        {
+          "section": "The Form Principle",
+          "topics": [
+            "How we perceive form",
+            "Gradient-to-form relationship",
+            "The five basic forms",
+            "The terminator"
+          ]
+        },
+        {
+          "section": "Components of Light & Shadow",
+          "topics": [
+            "The seven components system",
+            "Light side components",
+            "Shadow side components",
+            "Value hierarchy"
+          ]
+        },
+        {
+          "section": "Types of Light Sources",
+          "topics": [
+            "Hard light vs soft light",
+            "Natural light sources",
+            "Artificial light sources",
+            "Multiple light sources"
+          ]
+        },
+        {
+          "section": "Color Temperature in Lighting",
+          "topics": [
+            "What is color temperature",
+            "Warm light cool shadow principle",
+            "Applying color temperature",
+            "Color temperature mistakes",
+            "Color temperature by mood"
+          ]
+        },
+        {
+          "section": "How Light Interacts with Surfaces",
+          "topics": [
+            "Material properties spectrum",
+            "Common material types",
+            "Subsurface scattering",
+            "Material quick reference"
+          ]
+        },
+        {
+          "section": "Rendering Basic Forms",
+          "topics": [
+            "Rendering a sphere",
+            "Rendering cylinder, cube, cone, plane"
+          ]
+        },
+        {
+          "section": "Using Light for Mood & Atmosphere",
+          "topics": [
+            "Lighting patterns and moods",
+            "Atmospheric effects"
+          ]
+        },
+        {
+          "section": "Common Lighting Mistakes",
+          "topics": [
+            "Top lighting pitfalls",
+            "Solutions for each mistake"
+          ]
+        },
+        {
+          "section": "Training Your Eye to See Light",
+          "topics": [
+            "Observation exercises",
+            "Daily practice routine",
+            "Using photography to study light"
+          ]
+        }
+      ],
+      "learningObjectives": [
+        "Understand how light behaves in the physical world",
+        "Identify and render the core components of light and shadow",
+        "Create convincing three-dimensional form through value",
+        "Work with different types of light sources",
+        "Apply color temperature to lighting",
+        "Render various surface materials accurately",
+        "Use lighting to create mood and atmosphere",
+        "Avoid common lighting mistakes",
+        "See light like an artist in everyday life",
+        "Apply lighting principles across any style or subject"
+      ],
+      "keyTerminology": [
+        "Light",
+        "Form",
+        "Value",
+        "Local value",
+        "Highlight",
+        "Direct light",
+        "Terminator",
+        "Core shadow",
+        "Reflected light",
+        "Cast shadow",
+        "Occlusion shadow",
+        "Hard light",
+        "Soft light",
+        "Color temperature",
+        "Subsurface scattering",
+        "Specular reflection",
+        "Diffuse reflection",
+        "Atmospheric perspective"
+      ],
+      "exercises": [
+        {
+          "title": "Five Basic Forms Study",
+          "description": "Render sphere, cylinder, cube, cone, and plane with proper lighting"
+        },
+        {
+          "title": "Sphere Marathon",
+          "description": "Paint 20 spheres with different light sources and materials"
+        },
+        {
+          "title": "Color Temperature Study",
+          "description": "Paint same object with warm light/cool shadow and cool light/warm shadow"
+        },
+        {
+          "title": "Material Studies",
+          "description": "Paint same sphere as matte, glossy, metal, and glass"
+        },
+        {
+          "title": "Real-World Observation",
+          "description": "Identify all seven light components in 10 real-world objects"
+        }
+      ],
+      "commonMistakes": [
+        "No defined light source",
+        "Reflected light too bright",
+        "Pure black shadows",
+        "Highlights everywhere",
+        "Ignoring cast shadows",
+        "Inconsistent light direction",
+        "Wrong terminator softness",
+        "Ignoring color temperature"
+      ],
+      "proTips": [
+        "Form is created by value transitions, not lines",
+        "The terminator is the most important edge",
+        "Reflected light is always darker than midtones",
+        "Warm light creates cool shadows (and vice versa)",
+        "Paint 20 spheres to master lighting fundamentals",
+        "Observe light in daily life constantly",
+        "Get the terminator right, everything else follows",
+        "Squint to see big value shapes"
+      ]
+    },
+    "layer_workflows": {
+      "fullTitle": "Layer Workflows & Compositing",
+      "lessonNumber": "2-2",
+      "module": "Core Skills Module",
+      "status": "complete",
+      "fragments": {
+        "total": 6,
+        "completed": ["a", "b", "c", "d", "e", "f"],
+        "inProgress": null
+      },
+      "contentOutline": [
+        {
+          "section": "Introduction to Layers",
+          "topics": [
+            "What are layers and why they matter",
+            "Layer concept across all software",
+            "Traditional vs digital workflow",
+            "Layer panel/stack navigation"
+          ]
+        },
+        {
+          "section": "Layer Operations",
+          "topics": [
+            "Creating, duplicating, deleting layers",
+            "Renaming and organizing layers",
+            "Layer visibility and locking",
+            "Layer opacity and fill",
+            "Layer ordering and stacking"
+          ]
+        },
+        {
+          "section": "Layer Types",
+          "topics": [
+            "Paint/Raster layers",
+            "Adjustment layers",
+            "Fill layers",
+            "Smart objects (where available)",
+            "Vector layers",
+            "Text layers"
+          ]
+        },
+        {
+          "section": "Blend Modes",
+          "topics": [
+            "Understanding blend mode categories",
+            "Normal and dissolve",
+            "Darken modes (Multiply, Darken, Color Burn)",
+            "Lighten modes (Screen, Lighten, Color Dodge)",
+            "Contrast modes (Overlay, Soft Light, Hard Light)",
+            "Comparative modes (Difference, Exclusion)",
+            "Color modes (Hue, Saturation, Color, Luminosity)",
+            "Practical applications of each mode"
+          ]
+        },
+        {
+          "section": "Layer Organization",
+          "topics": [
+            "Layer groups/folders",
+            "Naming conventions",
+            "Color coding layers",
+            "Layer search and filtering",
+            "Professional organization strategies"
+          ]
+        },
+        {
+          "section": "Non-Destructive Editing",
+          "topics": [
+            "What is non-destructive editing",
+            "Benefits of non-destructive workflow",
+            "Layer masks vs erasing",
+            "Adjustment layers vs direct editing",
+            "Smart objects and filters",
+            "Preserving original artwork"
+          ]
+        },
+        {
+          "section": "Compositing Basics",
+          "topics": [
+            "Building complex images from layers",
+            "Foreground, midground, background",
+            "Depth and atmosphere with layers",
+            "Integrating elements seamlessly",
+            "Color matching across layers"
+          ]
+        },
+        {
+          "section": "Practical Workflows",
+          "topics": [
+            "Portrait painting layer structure",
+            "Landscape painting organization",
+            "Concept art workflow",
+            "Illustration compositing",
+            "Troubleshooting common layer issues"
+          ]
+        }
+      ],
+      "learningObjectives": [
+        "Understand the fundamental concept of layers across all digital art software",
+        "Create, organize, and manage complex layer structures efficiently",
+        "Master all major blend modes and know when to use each",
+        "Implement non-destructive editing workflows",
+        "Composite multiple elements into cohesive artwork",
+        "Develop professional layer organization habits",
+        "Apply layer techniques to real-world painting scenarios"
+      ],
+      "keyTerminology": [
+        "Layer",
+        "Layer stack",
+        "Opacity",
+        "Fill",
+        "Blend mode",
+        "Layer mask",
+        "Clipping mask/layer",
+        "Layer group/folder",
+        "Adjustment layer",
+        "Smart object",
+        "Non-destructive editing",
+        "Compositing",
+        "Alpha channel",
+        "Transparency",
+        "Layer order"
+      ],
+      "softwareComparisons": {
+        "layerPanel": {
+          "photoshop": "Layers Panel (F7)",
+          "krita": "Layers Docker",
+          "procreate": "Layers Menu (stacked squares icon)",
+          "clipStudio": "Layer Palette",
+          "painter": "Layers Panel",
+          "affinity": "Layers Panel"
+        },
+        "blendModeLocation": {
+          "photoshop": "Dropdown at top of Layers Panel",
+          "krita": "Blending Mode dropdown in Layers Docker",
+          "procreate": "Layer menu > Blend Mode",
+          "clipStudio": "Blending Mode in Layer Palette",
+          "painter": "Composite Method in Layers Panel"
+        },
+        "layerGroups": {
+          "photoshop": "Layer > New > Group (Ctrl+G)",
+          "krita": "Group Layers",
+          "procreate": "Swipe right on multiple layers > Group",
+          "clipStudio": "Layer > Create Folder",
+          "painter": "Layer Sets"
+        }
+      },
+      "exercises": [
+        {
+          "title": "Layer Fundamentals Practice",
+          "description": "Create a simple composition using at least 5 layers with different blend modes"
+        },
+        {
+          "title": "Non-Destructive Portrait Edit",
+          "description": "Edit a portrait using only adjustment layers and masks - no direct painting"
+        },
+        {
+          "title": "Blend Mode Exploration",
+          "description": "Create a texture study using each major blend mode category"
+        },
+        {
+          "title": "Professional Layer Organization",
+          "description": "Organize a complex artwork with proper naming, grouping, and color coding"
+        }
+      ],
+      "commonMistakes": [
+        "Painting on wrong layer",
+        "Not naming layers (layer 1, layer 2, etc.)",
+        "Too many layers causing confusion",
+        "Not using groups for organization",
+        "Destructive editing (erasing instead of masking)",
+        "Not understanding blend mode categories",
+        "Merging layers too early",
+        "Not locking layers when needed"
+      ],
+      "proTips": [
+        "Use Ctrl/Cmd+Click on layer thumbnail to select layer contents",
+        "Alt+Click layer visibility to solo that layer",
+        "Use blend mode keyboard shortcuts (Shift+ or Shift-)",
+        "Create a 'master group' for major sections",
+        "Keep a 'backup' group with flattened versions at key stages",
+        "Use adjustment layers instead of direct color correction",
+        "Name layers as you create them, not later",
+        "Use clipping masks for contained effects"
+      ]
+    },
+    "color_science": {
+      "fullTitle": "Color Science for Digital Artists",
+      "lessonNumber": "2-3",
+      "module": "Core Skills Module",
+      "status": "complete",
+      "fragments": {
+        "total": 6,
+        "completed": ["a", "b", "c", "d", "e", "f"],
+        "inProgress": null
+      },
+      "contentOutline": [
+        {
+          "section": "Color Fundamentals",
+          "topics": [
+            "What is color - physics and perception",
+            "The visible spectrum",
+            "How we see color",
+            "Color vs light"
+          ]
+        },
+        {
+          "section": "Color Models and Systems",
+          "topics": [
+            "RGB (additive color)",
+            "CMYK (subtractive color)",
+            "HSB/HSV/HSL systems",
+            "Color spaces and profiles",
+            "Digital vs traditional color"
+          ]
+        },
+        {
+          "section": "Color Properties",
+          "topics": [
+            "Hue - the color itself",
+            "Saturation/Chroma - color intensity",
+            "Value/Brightness - lightness and darkness",
+            "Temperature - warm vs cool"
+          ]
+        },
+        {
+          "section": "The Color Wheel",
+          "topics": [
+            "Primary, secondary, tertiary colors",
+            "Color relationships",
+            "Complementary colors",
+            "Analogous colors",
+            "Triadic and tetradic schemes"
+          ]
+        },
+        {
+          "section": "Color Harmony",
+          "topics": [
+            "Monochromatic schemes",
+            "Analogous harmonies",
+            "Complementary contrasts",
+            "Split-complementary",
+            "Triadic and square harmonies",
+            "The 60-30-10 rule"
+          ]
+        },
+        {
+          "section": "Digital Color Mixing",
+          "topics": [
+            "How digital mixing works",
+            "Additive vs subtractive mixing",
+            "Creating clean mixes",
+            "Avoiding muddy colors",
+            "Color picker strategies",
+            "Sampling and eyedropper techniques"
+          ]
+        },
+        {
+          "section": "Creating Palettes",
+          "topics": [
+            "Limited palettes vs full spectrum",
+            "Building a master palette",
+            "Extracting palettes from references",
+            "Color palette tools and resources",
+            "Testing palette effectiveness"
+          ]
+        },
+        {
+          "section": "Color Psychology and Mood",
+          "topics": [
+            "Emotional associations of colors",
+            "Cultural color meanings",
+            "Using color for storytelling",
+            "Creating atmosphere with color",
+            "Color symbolism in art"
+          ]
+        },
+        {
+          "section": "Practical Color Application",
+          "topics": [
+            "Skin tone mixing",
+            "Natural color in landscapes",
+            "Lighting and color temperature",
+            "Atmospheric perspective",
+            "Color grading and mood",
+            "Common color mistakes"
+          ]
+        }
+      ],
+      "learningObjectives": [
+        "Understand the science behind how we perceive color",
+        "Master RGB, HSB, and other digital color models",
+        "Identify and use color relationships effectively",
+        "Create harmonious color schemes using color theory",
+        "Mix colors digitally to achieve desired results",
+        "Build and apply limited color palettes",
+        "Use color psychology to enhance artwork",
+        "Avoid common digital color mistakes"
+      ],
+      "keyTerminology": [
+        "Hue",
+        "Saturation",
+        "Value",
+        "Chroma",
+        "Brightness",
+        "Temperature",
+        "RGB",
+        "CMYK",
+        "HSB/HSV/HSL",
+        "Color wheel",
+        "Primary colors",
+        "Secondary colors",
+        "Tertiary colors",
+        "Complementary",
+        "Analogous",
+        "Triadic",
+        "Monochromatic",
+        "Color harmony",
+        "Color palette",
+        "Additive color",
+        "Subtractive color",
+        "Color space",
+        "Gamut"
+      ],
+      "softwareComparisons": {
+        "colorPicker": {
+          "photoshop": "Color Picker dialog (click foreground/background color)",
+          "krita": "Advanced Color Selector docker",
+          "procreate": "Color panel (disc icon)",
+          "clipStudio": "Color Wheel palette",
+          "painter": "Color Picker panel",
+          "paintstorm": "Color Wheel and Mixer"
+        },
+        "colorWheelAccess": {
+          "photoshop": "Extensions > Adobe Color Themes, or external",
+          "krita": "Built-in Advanced Color Selector",
+          "procreate": "Color disc (HSB wheel)",
+          "clipStudio": "Color Wheel palette window",
+          "painter": "Multiple color wheel options in preferences"
+        },
+        "paletteManagement": {
+          "photoshop": "Swatches panel",
+          "krita": "Palette Docker",
+          "procreate": "Palettes panel",
+          "clipStudio": "Color Set palette",
+          "painter": "Color Sets panel"
+        }
+      },
+      "exercises": [
+        {
+          "title": "Color Wheel Exploration",
+          "description": "Create a complete color wheel by hand, identifying primary, secondary, and tertiary colors"
+        },
+        {
+          "title": "Harmony Swatches",
+          "description": "Create 5 different color harmony schemes (monochromatic, analogous, complementary, triadic, square)"
+        },
+        {
+          "title": "Limited Palette Painting",
+          "description": "Create a simple painting using only 3-5 colors to understand color mixing"
+        },
+        {
+          "title": "Mood Studies",
+          "description": "Paint the same scene in 3 different color schemes to evoke different emotions"
+        },
+        {
+          "title": "Palette Extraction",
+          "description": "Extract and recreate a color palette from a master painting or photograph"
+        }
+      ],
+      "commonMistakes": [
+        "Oversaturating everything (too much chroma)",
+        "Ignoring value relationships",
+        "Using too many colors (lack of harmony)",
+        "Mixing complementary colors directly (creates mud)",
+        "Not considering color temperature",
+        "Neglecting atmospheric perspective",
+        "Using pure black for shadows",
+        "Not testing palettes before painting"
+      ],
+      "proTips": [
+        "Value is more important than hue - get your lights/darks right first",
+        "Limited palettes create more cohesive artwork",
+        "Add a 'mother color' (tiny bit of one color in everything) for unity",
+        "Cool colors recede, warm colors advance (use for depth)",
+        "Grays and desaturated colors make saturated colors pop",
+        "Study master paintings to learn color relationships",
+        "Test your palette in grayscale to check value structure",
+        "Sample colors from your own work to maintain consistency"
+      ]
+    },
+    "masking_selection": {
+      "fullTitle": "Masking & Selection Techniques",
+      "lessonNumber": "2-4",
+      "module": "Core Skills Module",
+      "status": "complete",
+      "fragments": {
+        "total": 5,
+        "completed": ["a", "b", "c", "d", "e"],
+        "inProgress": null
+      },
+      "contentOutline": [
+        {
+          "section": "Introduction to Masking",
+          "topics": [
+            "What are masks and why they matter",
+            "Masks vs erasers",
+            "Non-destructive editing with masks",
+            "Layer masks across all software"
+          ]
+        },
+        {
+          "section": "Layer Masks Fundamentals",
+          "topics": [
+            "Creating layer masks",
+            "Painting on masks",
+            "Mask properties and settings",
+            "Viewing and editing masks",
+            "Disabling and deleting masks"
+          ]
+        },
+        {
+          "section": "Advanced Selection Tools",
+          "topics": [
+            "All selection tools overview",
+            "Marquee tools (rectangular, elliptical)",
+            "Lasso tools (standard, polygonal, magnetic)",
+            "Magic wand and quick selection",
+            "Color range selection",
+            "Select and mask workflow"
+          ]
+        },
+        {
+          "section": "Selection Refinement",
+          "topics": [
+            "Feathering edges",
+            "Expanding and contracting",
+            "Smoothing selections",
+            "Refining edges for hair and fur",
+            "Quick mask mode",
+            "Alpha channels"
+          ]
+        },
+        {
+          "section": "Clipping Masks",
+          "topics": [
+            "What are clipping masks",
+            "Creating clipping masks",
+            "Practical uses",
+            "Clipping vs layer masks"
+          ]
+        },
+        {
+          "section": "Vector Masks",
+          "topics": [
+            "Vector vs raster masks",
+            "Creating vector masks",
+            "When to use vector masks",
+            "Editing vector paths"
+          ]
+        },
+        {
+          "section": "Mask-Based Workflows",
+          "topics": [
+            "Non-destructive editing workflow",
+            "Complex compositing with masks",
+            "Adjustment layer masks",
+            "Combining multiple masks",
+            "Professional masking techniques"
+          ]
+        },
+        {
+          "section": "Practical Applications",
+          "topics": [
+            "Removing backgrounds",
+            "Blending images seamlessly",
+            "Selective color adjustments",
+            "Creating custom shapes",
+            "Photo manipulation",
+            "Digital painting with masks"
+          ]
+        }
+      ],
+      "learningObjectives": [
+        "Master layer masks for non-destructive editing",
+        "Use all selection tools effectively",
+        "Refine complex selections (hair, fur, soft edges)",
+        "Understand clipping masks and their uses",
+        "Apply masks in professional workflows",
+        "Combine masks and selections for complex edits",
+        "Remove backgrounds cleanly",
+        "Work non-destructively across projects"
+      ],
+      "keyTerminology": [
+        "Layer mask",
+        "Clipping mask",
+        "Vector mask",
+        "Selection",
+        "Marquee",
+        "Lasso",
+        "Magic wand",
+        "Quick selection",
+        "Feather",
+        "Refine edge",
+        "Select and mask",
+        "Quick mask mode",
+        "Alpha channel",
+        "Mask density",
+        "Mask feather",
+        "Invert mask",
+        "Apply mask"
+      ],
+      "softwareComparisons": {
+        "layerMask": {
+          "photoshop": "Click mask icon in Layers panel",
+          "krita": "Right-click layer → Add → Transparency Mask",
+          "procreate": "Layer menu → Mask",
+          "clipStudio": "Layer → Layer Mask → Mask Selection",
+          "affinity": "Layer → Add Mask Layer"
+        },
+        "selectionTools": {
+          "photoshop": "Marquee (M), Lasso (L), Magic Wand (W), Quick Selection (W)",
+          "krita": "Selection tools in toolbox, similar shortcuts",
+          "procreate": "Selection tool with automatic, freehand, rectangle, ellipse modes",
+          "clipStudio": "Selection tools with various modes"
+        },
+        "refineEdge": {
+          "photoshop": "Select and Mask button/workspace",
+          "krita": "Select → Feather Selection, Grow/Shrink Selection",
+          "procreate": "Feather slider in selection options",
+          "clipStudio": "Select menu refinement options"
+        }
+      },
+      "exercises": [
+        {
+          "title": "Basic Layer Mask Practice",
+          "description": "Create a simple composition using only layer masks - no eraser!"
+        },
+        {
+          "title": "Complex Selection Challenge",
+          "description": "Select and isolate a person with complex hair from a busy background"
+        },
+        {
+          "title": "Clipping Mask Workflow",
+          "description": "Create a photo frame effect using clipping masks"
+        },
+        {
+          "title": "Non-Destructive Edit",
+          "description": "Apply complex color adjustments using adjustment layer masks"
+        },
+        {
+          "title": "Background Removal",
+          "description": "Remove backgrounds from 5 different images with varying complexity"
+        }
+      ],
+      "commonMistakes": [
+        "Using eraser instead of masks",
+        "Not feathering selection edges",
+        "Forgetting to invert mask when needed",
+        "Making selections too tight (no room for refinement)",
+        "Not using Select and Mask for complex edges",
+        "Deleting masks instead of disabling them",
+        "Painting on layer instead of mask",
+        "Not viewing mask in isolation"
+      ],
+      "proTips": [
+        "Always use masks instead of erasing - stay non-destructive",
+        "Alt-click mask thumbnail to view mask in isolation",
+        "Shift-click mask thumbnail to disable temporarily",
+        "Use soft brushes on masks for natural edges",
+        "Refine Edge/Select and Mask is magic for hair",
+        "Save complex selections as alpha channels",
+        "Use Multiply blend mode on masks for gradual transparency",
+        "Ctrl/Cmd + click mask thumbnail to load as selection"
+      ]
+    },
+    "texture_detail": {
+      "fullTitle": "Texture & Detail Techniques",
+      "lessonNumber": "3-3",
+      "module": "Technique Module",
+      "status": "complete",
+      "fragments": {
+        "total": 5,
+        "completed": ["a", "b", "c", "d", "e"],
+        "inProgress": null
+      },
+      "contentOutline": [
+        {
+          "section": "Understanding Texture: Visual and Tactile",
+          "topics": [
+            "What is texture",
+            "Why texture matters",
+            "How we perceive texture",
+            "Texture rendering mindset",
+            "Texture in different art styles"
+          ]
+        },
+        {
+          "section": "The Three Fundamentals of Texture Rendering",
+          "topics": [
+            "Value structure",
+            "Edge quality",
+            "Pattern and variation",
+            "The 70-30 rule"
+          ]
+        },
+        {
+          "section": "Core Texture Techniques",
+          "topics": [
+            "Hatching and cross-hatching",
+            "Stippling and pointillism",
+            "Scumbling and dry brush",
+            "Gradient mesh and form painting",
+            "Texture stamping and custom brushes",
+            "Layering and blending modes",
+            "Combining techniques"
+          ]
+        },
+        {
+          "section": "Material Properties Fundamentals",
+          "topics": [
+            "The four core properties",
+            "Roughness vs smoothness",
+            "Reflectivity (metallic vs dielectric)",
+            "Translucency vs opacity",
+            "Absorption and color",
+            "Material property chart",
+            "Applying material properties"
+          ]
+        },
+        {
+          "section": "Fabric & Clothing Textures",
+          "topics": [
+            "Fabric types and properties",
+            "The seven types of folds",
+            "Fabric texture techniques",
+            "Software-specific fabric techniques",
+            "Common fabric mistakes"
+          ]
+        },
+        {
+          "section": "Metal & Reflective Surfaces",
+          "topics": [
+            "Metal types and properties",
+            "Painting metal step-by-step",
+            "Environmental reflection strategy",
+            "Polished vs brushed vs rusted",
+            "Glass and transparent materials"
+          ]
+        },
+        {
+          "section": "Organic Textures",
+          "topics": [
+            "Skin texture",
+            "Wood texture",
+            "Stone and rock texture",
+            "Bark and tree texture"
+          ]
+        },
+        {
+          "section": "Weathering & Aging Effects",
+          "topics": [
+            "Types of weathering",
+            "Painting rust",
+            "Edge wear and chipping",
+            "Dirt and grime accumulation",
+            "Creating age hierarchy"
+          ]
+        },
+        {
+          "section": "Detail Hierarchy & Strategic Detail Placement",
+          "topics": [
+            "The three detail zones",
+            "Where to focus detail",
+            "Detail application techniques",
+            "Common detail mistakes",
+            "Detail management by art style"
+          ]
+        }
+      ],
+      "learningObjectives": [
+        "Understand what texture is and how it's perceived visually",
+        "Master fundamental texture rendering techniques",
+        "Create realistic textures for common materials",
+        "Build custom texture brushes and tools",
+        "Apply detail strategically without overworking",
+        "Use photographic textures professionally",
+        "Develop stylized texture approaches",
+        "Troubleshoot common texture problems",
+        "Work efficiently with texture resources",
+        "Apply techniques across all software"
+      ],
+      "keyTerminology": [
+        "Texture",
+        "Visual texture",
+        "Tactile texture",
+        "Value structure",
+        "Edge quality",
+        "Pattern variation",
+        "Hatching",
+        "Stippling",
+        "Scumbling",
+        "Material properties",
+        "Roughness",
+        "Reflectivity",
+        "Metallic",
+        "Dielectric",
+        "Translucency",
+        "Subsurface scattering",
+        "Weathering",
+        "Detail hierarchy",
+        "Focal point"
+      ],
+      "exercises": [
+        {
+          "title": "Material Study Series",
+          "description": "Paint 10 different materials as simple spheres or cubes"
+        },
+        {
+          "title": "Texture Observation Journal",
+          "description": "Photograph and study 5 textures daily for one week"
+        },
+        {
+          "title": "Detail Hierarchy Challenge",
+          "description": "Create painting with clear focal (100%), support (50%), background (20%) detail"
+        },
+        {
+          "title": "Weathering Studies",
+          "description": "Paint one object in five states from pristine to ruined"
+        },
+        {
+          "title": "Single Texture Focus Week",
+          "description": "Spend one week painting only fabric (or metal, organic, etc.)"
+        }
+      ],
+      "commonMistakes": [
+        "Texture looks flat/unconvincing",
+        "Texture too noisy/overwhelming",
+        "Material doesn't read correctly",
+        "Weathering looks random/fake",
+        "Detail taking too long",
+        "Uniform detail everywhere",
+        "Over-texturing",
+        "Wrong focus areas"
+      ],
+      "proTips": [
+        "Value structure comes before color or detail",
+        "Edge control is one of the most powerful tools",
+        "70% consistency + 30% variation = natural texture",
+        "Metal highlights are colored, non-metal highlights are white",
+        "Fabric behavior comes first, texture second",
+        "Metal shows environment, not itself",
+        "Organic textures are never uniform",
+        "Weathering follows physical logic",
+        "80% of detail in 20% of canvas (focal areas)",
+        "Suggestion is often more powerful than explicit rendering"
+      ]
+    }
+  }}
