@@ -1,0 +1,2671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Master color theory, digital color mixing, and harmonious palette creation - Universal color science for all digital art software">
+    <meta name="author" content="Digital Artistry Course">
+    <title>Color Science for Digital Artists - Universal Digital Art Course</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-to-main">Skip to main content</a>
+    
+    <!-- Progress indicator -->
+    <div class="progress-indicator" role="progressbar" aria-label="Page scroll progress">
+        <div class="progress-bar"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">🎨 Digital Artistry</a>
+            <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-expanded="false" aria-controls="nav-links">
+                ☰
+            </button>
+            <div class="nav-links" id="nav-links" aria-hidden="false">
+                <a href="index.html">Home</a>
+                <a href="index.html#modules">All Lessons</a>
+                <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#modules">Core Skills Module</a></li>
+            <li aria-current="page">Color Science for Digital Artists</li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <div class="container">
+            <!-- Lesson Header -->
+            <header>
+                <h1>🌈 Color Science for Digital Artists</h1>
+                <p class="lead">Color is the emotional language of art! It can whisper or shout, soothe or energize, create harmony or discord. Understanding color theory transforms your artwork from technically correct to emotionally powerful. Let's unlock the science and art of color!</p>
+                
+                <!-- Learning objectives -->
+                <div class="card">
+                    <h2>🎯 What You'll Master</h2>
+                    <p>By the end of this lesson, you'll be able to:</p>
+                    <ul>
+                        <li>Understand the science behind how we perceive and process color</li>
+                        <li>Master RGB, HSB, and other digital color models used in software</li>
+                        <li>Identify and apply color relationships for maximum impact</li>
+                        <li>Create harmonious color schemes using proven color theory</li>
+                        <li>Mix digital colors effectively to achieve any color you envision</li>
+                        <li>Build and apply limited color palettes that create unity</li>
+                        <li>Use color psychology to evoke specific emotions in viewers</li>
+                        <li>Avoid the most common color mistakes that plague beginners</li>
+                    </ul>
+                </div>
+
+                <!-- Universal Approach -->
+                <div class="card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+                    <h3 style="color: white; margin-top: 0;">🌍 Universal Color Knowledge</h3>
+                    <p>Color theory works the same in EVERY digital art program! The principles are universal - only the interface differs.</p>
+                    <p><strong>Color tools covered across:</strong></p>
+                    <ul style="columns: 2; column-gap: 2rem;">
+                        <li>🎨 Adobe Photoshop</li>
+                        <li>🎨 Krita (Free)</li>
+                        <li>🎨 Procreate (iPad)</li>
+                        <li>🎨 Clip Studio Paint</li>
+                        <li>🎨 Corel Painter</li>
+                        <li>🎨 PaintStorm Studio</li>
+                        <li>🎨 Affinity Photo</li>
+                        <li>🎨 And more!</li>
+                    </ul>
+                    <p style="margin-bottom: 0;"><strong>Learn once, apply everywhere!</strong> Color science transcends software.</p>
+                </div>
+            </header>
+
+            <!-- Table of Contents -->
+            <nav class="card" aria-label="Table of Contents">
+                <h2 style="cursor: pointer; user-select: none; display: flex; justify-content: space-between; align-items: center;" onclick="toggleTOC()">
+                    <span>📑 Table of Contents</span>
+                    <span id="toc-toggle-icon" style="transition: transform 0.3s;">▼</span>
+                </h2>
+                <ol id="toc-list" style="overflow: hidden; transition: max-height 0.3s ease-out; max-height: 1200px; margin: 0; padding-left: 1.5rem;">
+                    <li><a href="#color-fundamentals" class="toc-link">Color Fundamentals: What IS Color?</a></li>
+                    <li><a href="#color-models" class="toc-link">Digital Color Models (RGB, HSB, CMYK)</a></li>
+                    <li><a href="#color-properties" class="toc-link">The Three Properties of Color</a></li>
+                    <li><a href="#color-wheel" class="toc-link">The Color Wheel & Relationships</a></li>
+                    <li><a href="#color-harmony" class="toc-link">Color Harmony Schemes</a></li>
+                    <li><a href="#digital-mixing" class="toc-link">Digital Color Mixing Techniques</a></li>
+                    <li><a href="#palette-creation" class="toc-link">Creating Effective Palettes</a></li>
+                    <li><a href="#color-psychology" class="toc-link">Color Psychology & Mood</a></li>
+                    <li><a href="#practical-application" class="toc-link">Practical Color Application</a></li>
+                </ol>
+            </nav>
+
+            <script>
+                function toggleTOC() {
+                    const tocList = document.getElementById('toc-list');
+                    const tocIcon = document.getElementById('toc-toggle-icon');
+                    
+                    if (tocList.style.maxHeight === '0px') {
+                        tocList.style.maxHeight = '1200px';
+                        tocIcon.style.transform = 'rotate(0deg)';
+                    } else {
+                        tocList.style.maxHeight = '0px';
+                        tocIcon.style.transform = 'rotate(-90deg)';
+                    }
+                }
+            </script>
+
+            <!-- Section 1: Color Fundamentals -->
+            <section id="color-fundamentals" class="lesson-section">
+                <h2>Color Fundamentals: What IS Color? 🔬</h2>
+                
+                <p>Before diving into color theory, let's understand what color actually is. This foundation will make everything else click into place!</p>
+
+                <h3>The Physics of Color</h3>
+
+                <div class="card" style="background: #e8f5e9;">
+                    <h4>💡 Color is Light</h4>
+                    
+                    <p><strong>The scientific truth:</strong> Color doesn't exist in objects - it exists in light!</p>
+
+                    <p><strong>Here's what actually happens:</strong></p>
+                    <ol>
+                        <li><strong>Light source emits photons</strong> (sun, light bulb, screen)</li>
+                        <li><strong>Light hits an object</strong> (apple, painting, your canvas)</li>
+                        <li><strong>Object absorbs some wavelengths, reflects others</strong></li>
+                        <li><strong>Reflected light enters your eye</strong></li>
+                        <li><strong>Your brain interprets those wavelengths as "color"</strong></li>
+                    </ol>
+
+                    <blockquote>
+                        <strong>🤯 Mind-Bending Fact:</strong> A "red" apple isn't red. It absorbs all colors EXCEPT red, which it reflects. We see the rejected light! The apple is actually "everything BUT red"!
+                    </blockquote>
+                </div>
+
+                <h3>The Visible Spectrum</h3>
+
+                <canvas id="spectrum-canvas" width="800" height="150" style="max-width: 100%; height: auto; border: 2px solid #ddd; border-radius: 8px; margin: 1.5rem 0; display: block;"></canvas>
+
+                <script>
+                    (function() {
+                        const canvas = document.getElementById('spectrum-canvas');
+                        if (!canvas) return;
+                        const ctx = canvas.getContext('2d');
+                        
+                        const scale = window.devicePixelRatio || 1;
+                        canvas.width = 800 * scale;
+                        canvas.height = 150 * scale;
+                        ctx.scale(scale, scale);
+                        
+                        // Draw spectrum gradient
+                        const gradient = ctx.createLinearGradient(50, 0, 750, 0);
+                        const colors = [
+                            '#8B00FF', // Violet
+                            '#4B0082', // Indigo  
+                            '#0000FF', // Blue
+                            '#00FF00', // Green
+                            '#FFFF00', // Yellow
+                            '#FF7F00', // Orange
+                            '#FF0000'  // Red
+                        ];
+                        
+                        colors.forEach((color, i) => {
+                            gradient.addColorStop(i / (colors.length - 1), color);
+                        });
+                        
+                        ctx.fillStyle = gradient;
+                        ctx.fillRect(50, 30, 700, 60);
+                        
+                        // Border
+                        ctx.strokeStyle = '#333';
+                        ctx.lineWidth = 2;
+                        ctx.strokeRect(50, 30, 700, 60);
+                        
+                        // Labels
+                        ctx.fillStyle = '#333';
+                        ctx.font = 'bold 14px Arial';
+                        ctx.textAlign = 'center';
+                        
+                        const labels = [
+                            {x: 50, text: '380nm', sub: 'Violet'},
+                            {x: 200, text: '450nm', sub: 'Blue'},
+                            {x: 350, text: '520nm', sub: 'Green'},
+                            {x: 500, text: '570nm', sub: 'Yellow'},
+                            {x: 650, text: '620nm', sub: 'Orange'},
+                            {x: 750, text: '750nm', sub: 'Red'}
+                        ];
+                        
+                        labels.forEach(label => {
+                            ctx.fillText(label.text, label.x, 20);
+                            ctx.font = '12px Arial';
+                            ctx.fillText(label.sub, label.x, 110);
+                            ctx.font = 'bold 14px Arial';
+                        });
+                        
+                        // Title
+                        ctx.font = 'bold 16px Arial';
+                        ctx.fillText('The Visible Spectrum', 400, 140);
+                    })();
+                </script>
+
+                <div class="card">
+                    <h4>🌈 Understanding the Spectrum</h4>
+                    
+                    <p><strong>Wavelengths and color:</strong></p>
+                    <ul>
+                        <li><strong>Violet/Purple:</strong> Shortest wavelength (380-450nm) - highest energy</li>
+                        <li><strong>Blue:</strong> 450-495nm</li>
+                        <li><strong>Green:</strong> 495-570nm - middle of visible spectrum</li>
+                        <li><strong>Yellow:</strong> 570-590nm</li>
+                        <li><strong>Orange:</strong> 590-620nm</li>
+                        <li><strong>Red:</strong> 620-750nm - longest wavelength, lowest energy</li>
+                    </ul>
+
+                    <p><strong>Beyond visible light:</strong></p>
+                    <ul>
+                        <li><strong>Ultraviolet (UV):</strong> Shorter than violet - we can't see it (bees can!)</li>
+                        <li><strong>Infrared (IR):</strong> Longer than red - we can't see it (snakes can!)</li>
+                    </ul>
+
+                    <p><strong>Why this matters for artists:</strong></p>
+                    <ul>
+                        <li>Red and violet are at opposite ends - that's why they're "complementary"</li>
+                        <li>The spectrum's natural order creates the color wheel</li>
+                        <li>Understanding wavelengths explains why colors mix the way they do</li>
+                    </ul>
+                </div>
+
+                <h3>How We See Color</h3>
+
+                <div class="mermaid">
+                    graph TD
+                        A["Light Source"]
+                        A --> B["Light Hits Object"]
+                        B --> C["Object Absorbs<br/>Some Wavelengths"]
+                        B --> D["Object Reflects<br/>Other Wavelengths"]
+                        D --> E["Light Enters Eye"]
+                        E --> F["Cone Cells<br/>Detect Color"]
+                        F --> G["Brain Processes<br/>Information"]
+                        G --> H["We Perceive<br/>COLOR!"]
+                        
+                        style A fill:#f39c12,stroke:#333,stroke-width:2px
+                        style B fill:#3498db,stroke:#333,stroke-width:2px
+                        style D fill:#2ecc71,stroke:#333,stroke-width:2px
+                        style F fill:#e74c3c,stroke:#333,stroke-width:2px
+                        style H fill:#9b59b6,stroke:#333,stroke-width:2px,color:#fff
+                </div>
+
+                <div class="card" style="background: #e3f2fd;">
+                    <h4>👁️ The Biology of Color Vision</h4>
+
+                    <h5>Cone Cells - Your Color Detectors:</h5>
+                    <p>Your eyes have three types of cone cells, each sensitive to different wavelengths:</p>
+                    <ul>
+                        <li><strong>S-cones (Short wavelength):</strong> Detect blue-violet light (~420nm)</li>
+                        <li><strong>M-cones (Medium wavelength):</strong> Detect green-yellow light (~530nm)</li>
+                        <li><strong>L-cones (Long wavelength):</strong> Detect yellow-red light (~560nm)</li>
+                    </ul>
+
+                    <p><strong>This is why RGB (Red, Green, Blue) works!</strong> Digital displays use RGB because it matches our biology - three types of light for three types of cones.</p>
+
+                    <h5>Color is Relative:</h5>
+                    <ul>
+                        <li><strong>Context changes perception:</strong> Same color looks different on different backgrounds</li>
+                        <li><strong>Adaptation:</strong> Your eyes adjust to lighting (indoor vs outdoor)</li>
+                        <li><strong>Simultaneous contrast:</strong> Colors influence their neighbors</li>
+                        <li><strong>No "true" color:</strong> Color exists in the eye/brain, not in objects</li>
+                    </ul>
+
+                    <blockquote>
+                        <strong>🎨 Artist's Truth:</strong> Because color is perceptual, not absolute, you can "cheat" reality! A blue that looks warm next to cooler blues can be your "warm" highlight, even though it's still technically blue. It's all relative!
+                    </blockquote>
+                </div>
+
+                <h3>Digital vs Physical Color</h3>
+
+                <div class="card" style="background: #fff3e0;">
+                    <h4>💻 vs 🎨 Two Different Systems</h4>
+
+                    <table style="width: 100%;">
+                        <thead>
+                            <tr>
+                                <th>Aspect</th>
+                                <th>Physical (Paint)</th>
+                                <th>Digital (Screen)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Light type</strong></td>
+                                <td>Reflected light</td>
+                                <td>Emitted light</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Color system</strong></td>
+                                <td>Subtractive (CMYK)</td>
+                                <td>Additive (RGB)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Mixing colors</strong></td>
+                                <td>Mix gets darker</td>
+                                <td>Mix gets lighter</td>
+                            </tr>
+                            <tr>
+                                <td><strong>All colors mixed</strong></td>
+                                <td>Black/dark gray</td>
+                                <td>White</td>
+                            </tr>
+                            <tr>
+                                <td><strong>No color</strong></td>
+                                <td>White (paper/canvas)</td>
+                                <td>Black (no light)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Primary colors</strong></td>
+                                <td>Cyan, Magenta, Yellow</td>
+                                <td>Red, Green, Blue</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Brightness</strong></td>
+                                <td>Depends on lighting</td>
+                                <td>Adjustable (screen)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Color range</strong></td>
+                                <td>Limited by pigments</td>
+                                <td>Wider (but still limited)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h5>Why This Matters:</h5>
+                    <ul>
+                        <li><strong>Intuition doesn't transfer:</strong> Traditional painters must relearn mixing</li>
+                        <li><strong>Digital is more flexible:</strong> Can achieve colors impossible in paint</li>
+                        <li><strong>Print vs screen:</strong> Colors look different when printed (RGB→CMYK conversion)</li>
+                        <li><strong>Understanding both:</strong> Makes you a better digital artist</li>
+                    </ul>
+                </div>
+
+                <blockquote>
+                    <strong>⚠️ Important for Beginners:</strong> If you come from traditional art, digital color mixing will feel "wrong" at first. That's normal! You're switching from subtractive (paint) to additive (light). Give yourself time to adapt - it's a different system, not a broken one!
+                </blockquote>
+            </section>
+
+            <!-- PART A ENDS HERE -->
+            <!-- PART B STARTS HERE -->
+
+            <!-- Section 2: Digital Color Models -->
+            <section id="color-models" class="lesson-section">
+                <h2>Digital Color Models 🖥️</h2>
+                
+                <p>Different color models organize color in different ways. Understanding these models helps you use your software's color picker effectively and think about color systematically!</p>
+
+                <div class="mermaid">
+                    graph TB
+                        A["Digital Color Models"]
+                        A --> B["RGB<br/>(Additive)"]
+                        A --> C["CMYK<br/>(Subtractive)"]
+                        A --> D["HSB/HSV/HSL<br/>(Intuitive)"]
+                        
+                        B --> B1["Red + Green + Blue<br/>Light-based<br/>Screens"]
+                        C --> C1["Cyan + Magenta + Yellow + Black<br/>Pigment-based<br/>Printing"]
+                        D --> D1["Hue + Saturation + Brightness<br/>Artist-friendly<br/>Color pickers"]
+                        
+                        style A fill:#667eea,stroke:#333,stroke-width:3px,color:#fff
+                        style B fill:#e74c3c,stroke:#333,stroke-width:2px
+                        style C fill:#3498db,stroke:#333,stroke-width:2px
+                        style D fill:#f39c12,stroke:#333,stroke-width:2px
+                </div>
+
+                <h3>RGB: The Additive Model</h3>
+
+                <div class="card" style="background: #ffebee;">
+                    <h4>🔴🟢🔵 RGB - How Screens Create Color</h4>
+
+                    <p><strong>What it is:</strong> RGB stands for Red, Green, Blue - the three colors of light that mix to create all other colors on screens.</p>
+
+                    <h5>How RGB Works:</h5>
+                    <ul>
+                        <li><strong>Three light channels:</strong> Every pixel has tiny red, green, and blue lights</li>
+                        <li><strong>Additive mixing:</strong> Add more light = brighter color</li>
+                        <li><strong>Values 0-255:</strong> Each channel can be off (0) to full brightness (255)</li>
+                        <li><strong>16.7 million colors:</strong> 256 × 256 × 256 = 16,777,216 possible combinations</li>
+                    </ul>
+
+                    <h5>RGB Color Examples:</h5>
+                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 1rem 0;">
+                        <div style="text-align: center;">
+                            <div style="width: 100%; height: 80px; background: rgb(255, 0, 0); border: 2px solid #333; border-radius: 4px;"></div>
+                            <p style="margin-top: 0.5rem; font-size: 0.9rem;"><strong>Pure Red</strong><br/>R:255 G:0 B:0</p>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="width: 100%; height: 80px; background: rgb(255, 255, 0); border: 2px solid #333; border-radius: 4px;"></div>
+                            <p style="margin-top: 0.5rem; font-size: 0.9rem;"><strong>Yellow</strong><br/>R:255 G:255 B:0</p>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="width: 100%; height: 80px; background: rgb(255, 255, 255); border: 2px solid #333; border-radius: 4px;"></div>
+                            <p style="margin-top: 0.5rem; font-size: 0.9rem;"><strong>White</strong><br/>R:255 G:255 B:255</p>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="width: 100%; height: 80px; background: rgb(0, 255, 255); border: 2px solid #333; border-radius: 4px;"></div>
+                            <p style="margin-top: 0.5rem; font-size: 0.9rem;"><strong>Cyan</strong><br/>R:0 G:255 B:255</p>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="width: 100%; height: 80px; background: rgb(128, 128, 128); border: 2px solid #333; border-radius: 4px;"></div>
+                            <p style="margin-top: 0.5rem; font-size: 0.9rem;"><strong>Gray</strong><br/>R:128 G:128 B:128</p>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="width: 100%; height: 80px; background: rgb(0, 0, 0); border: 2px solid #333; border-radius: 4px;"></div>
+                            <p style="margin-top: 0.5rem; font-size: 0.9rem;"><strong>Black</strong><br/>R:0 G:0 B:0</p>
+                        </div>
+                    </div>
+
+                    <h5>RGB Mixing Rules:</h5>
+                    <ul>
+                        <li><strong>Red + Green = Yellow</strong></li>
+                        <li><strong>Green + Blue = Cyan</strong></li>
+                        <li><strong>Blue + Red = Magenta</strong></li>
+                        <li><strong>All three at full = White</strong></li>
+                        <li><strong>All three at zero = Black</strong></li>
+                        <li><strong>Equal values = Gray</strong> (R:128 G:128 B:128)</li>
+                    </ul>
+
+                    <blockquote>
+                        <strong>🎓 Pro Understanding:</strong> This is why yellow seems "bright" on screen but not in paint. Red + Green light = Yellow light (additive). But red + green paint = muddy brown (subtractive). Different systems!
+                    </blockquote>
+                </div>
+
+                <h3>CMYK: The Subtractive Model</h3>
+
+                <div class="card" style="background: #e3f2fd;">
+                    <h4>🖨️ CMYK - How Printing Works</h4>
+
+                    <p><strong>What it is:</strong> CMYK stands for Cyan, Magenta, Yellow, and Key (black) - the inks used in printing.</p>
+
+                    <h5>How CMYK Works:</h5>
+                    <ul>
+                        <li><strong>Subtractive mixing:</strong> Ink absorbs (subtracts) light wavelengths</li>
+                        <li><strong>Four ink colors:</strong> CMY for color, K (black) for depth and text</li>
+                        <li><strong>Percentage values:</strong> Each ink 0-100%</li>
+                        <li><strong>White paper:</strong> No ink = white (the paper itself)</li>
+                        <li><strong>More ink = darker:</strong> Opposite of RGB!</li>
+                    </ul>
+
+                    <h5>Why K (Black)?</h5>
+                    <ul>
+                        <li>Mixing CMY 100% should make black, but actually creates muddy brown</li>
+                        <li>Pure black ink gives true black and saves colored ink</li>
+                        <li>Better for text and fine details</li>
+                        <li>"K" not "B" to avoid confusion with Blue</li>
+                    </ul>
+
+                    <h5>For Digital Artists:</h5>
+                    <ul>
+                        <li><strong>Work in RGB:</strong> Screens use RGB, so work in RGB mode</li>
+                        <li><strong>Convert for print:</strong> Only convert to CMYK when preparing for printing</li>
+                        <li><strong>Colors will shift:</strong> RGB has wider gamut (range) than CMYK</li>
+                        <li><strong>Some RGB colors can't print:</strong> Bright blues, vibrant greens often shift</li>
+                        <li><strong>Soft proof:</strong> Preview CMYK conversion before printing</li>
+                    </ul>
+
+                    <blockquote>
+                        <strong>⚠️ Print Warning:</strong> That gorgeous neon blue on your screen might print as dull purple! RGB can show colors that CMYK inks can't reproduce. Always check CMYK preview before sending to print.
+                    </blockquote>
+                </div>
+
+                <h3>HSB/HSV/HSL: The Artist-Friendly Model</h3>
+
+                <div class="card" style="background: #fff3e0;">
+                    <h4>🎨 HSB - How Artists Think About Color</h4>
+
+                    <p><strong>What it is:</strong> HSB (Hue, Saturation, Brightness) organizes color the way artists naturally think - by color type, intensity, and lightness.</p>
+
+                    <p><strong>Alternative names:</strong> HSV (Value instead of Brightness), HSL (Lightness instead of Brightness). Slightly different math, same concept.</p>
+
+                    <h5>The Three Components:</h5>
+
+                    <div style="margin: 1.5rem 0;">
+                        <h6>1. Hue (The Color Itself)</h6>
+                        <ul>
+                            <li><strong>What it is:</strong> The actual color - red, blue, green, etc.</li>
+                            <li><strong>Measured in degrees:</strong> 0-360° around the color wheel</li>
+                            <li><strong>0° = Red, 120° = Green, 240° = Blue</strong></li>
+                            <li><strong>It's circular:</strong> 360° wraps back to 0° (red)</li>
+                        </ul>
+
+                        <h6>2. Saturation (Color Intensity)</h6>
+                        <ul>
+                            <li><strong>What it is:</strong> How pure/vivid vs gray the color is</li>
+                            <li><strong>Measured in percentage:</strong> 0-100%</li>
+                            <li><strong>0% = Gray</strong> (no color)</li>
+                            <li><strong>100% = Pure, vivid color</strong></li>
+                            <li><strong>Also called "chroma"</strong> in some contexts</li>
+                        </ul>
+
+                        <h6>3. Brightness/Value (Lightness)</h6>
+                        <ul>
+                            <li><strong>What it is:</strong> How light or dark the color is</li>
+                            <li><strong>Measured in percentage:</strong> 0-100%</li>
+                            <li><strong>0% = Black</strong> (no light)</li>
+                            <li><strong>100% = Full brightness</strong></li>
+                            <li><strong>Also called "lightness" or "luminosity"</strong></li>
+                        </ul>
+                    </div>
+
+                    <h5>HSB Examples:</h5>
+                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 1rem 0;">
+                        <div style="text-align: center;">
+                            <div style="width: 100%; height: 80px; background: hsl(0, 100%, 50%); border: 2px solid #333; border-radius: 4px;"></div>
+                            <p style="margin-top: 0.5rem; font-size: 0.9rem;"><strong>Pure Red</strong><br/>H:0° S:100% B:100%</p>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="width: 100%; height: 80px; background: hsl(0, 50%, 50%); border: 2px solid #333; border-radius: 4px;"></div>
+                            <p style="margin-top: 0.5rem; font-size: 0.9rem;"><strong>Desaturated Red</strong><br/>H:0° S:50% B:100%</p>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="width: 100%; height: 80px; background: hsl(0, 100%, 25%); border: 2px solid #333; border-radius: 4px;"></div>
+                            <p style="margin-top: 0.5rem; font-size: 0.9rem;"><strong>Dark Red</strong><br/>H:0° S:100% B:50%</p>
+                        </div>
+                    </div>
+
+                    <h5>Why HSB is Great for Artists:</h5>
+                    <ul>
+                        <li><strong>Intuitive:</strong> Matches how artists describe color naturally</li>
+                        <li><strong>Easy adjustments:</strong> "Make it more blue" = adjust hue</li>
+                        <li><strong>"Make it less intense":</strong> = lower saturation</li>
+                        <li><strong>"Make it darker":</strong> = lower brightness</li>
+                        <li><strong>Color harmony:</strong> Easy to find related colors (same hue, different sat/bright)</li>
+                    </ul>
+
+                    <p style="padding: 1rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 8px; margin-top: 1rem;">
+                        <strong>🎓 Pro Tip:</strong> Most digital art software defaults to HSB/HSV color pickers because it's more intuitive for artists. You can usually switch between RGB and HSB modes - use whichever feels more natural to you!
+                    </p>
+                </div>
+
+                <h3>Hexadecimal Color Codes</h3>
+
+                <div class="card">
+                    <h4>🔢 Hex Codes - The Web Standard</h4>
+
+                    <p><strong>What they are:</strong> Six-character codes that represent RGB values, commonly used in web design.</p>
+
+                    <h5>How Hex Codes Work:</h5>
+                    <ul>
+                        <li><strong>Format:</strong> #RRGGBB (Red-Red Green-Green Blue-Blue)</li>
+                        <li><strong>Hexadecimal:</strong> Base-16 numbering (0-9, A-F)</li>
+                        <li><strong>00 = 0, FF = 255</strong> in decimal</li>
+                        <li><strong>Example:</strong> #FF0000 = Red (255,0,0 in RGB)</li>
+                    </ul>
+
+                    <h5>Common Hex Colors:</h5>
+                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 1rem 0;">
+                        <div style="text-align: center;">
+                            <div style="width: 100%; height: 60px; background: #FF0000; border: 2px solid #333; border-radius: 4px;"></div>
+                            <code style="font-size: 0.9rem;">#FF0000</code>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="width: 100%; height: 60px; background: #00FF00; border: 2px solid #333; border-radius: 4px;"></div>
+                            <code style="font-size: 0.9rem;">#00FF00</code>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="width: 100%; height: 60px; background: #0000FF; border: 2px solid #333; border-radius: 4px;"></div>
+                            <code style="font-size: 0.9rem;">#0000FF</code>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="width: 100%; height: 60px; background: #FFFFFF; border: 2px solid #333; border-radius: 4px;"></div>
+                            <code style="font-size: 0.9rem;">#FFFFFF</code>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="width: 100%; height: 60px; background: #000000; border: 2px solid #333; border-radius: 4px;"></div>
+                            <code style="font-size: 0.9rem;">#000000</code>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="width: 100%; height: 60px; background: #808080; border: 2px solid #333; border-radius: 4px;"></div>
+                            <code style="font-size: 0.9rem;">#808080</code>
+                        </div>
+                    </div>
+
+                    <h5>For Digital Artists:</h5>
+                    <ul>
+                        <li><strong>Good for sharing:</strong> Easy to copy/paste exact colors</li>
+                        <li><strong>Web work:</strong> Essential for HTML/CSS</li>
+                        <li><strong>Color libraries:</strong> Many palette sites use hex codes</li>
+                        <li><strong>Not intuitive:</strong> Hard to predict color from code</li>
+                        <li><strong>Most software supports:</strong> Can paste hex codes into color picker</li>
+                    </ul>
+                </div>
+
+                <h3>Color Spaces and Gamuts</h3>
+
+                <div class="card" style="background: #f3e5f5;">
+                    <h4>🌈 Color Spaces - The Full Picture</h4>
+
+                    <p><strong>What they are:</strong> Color spaces define the range of colors a device can display or reproduce.</p>
+
+                    <h5>Common Color Spaces:</h5>
+
+                    <div style="margin: 1rem 0;">
+                        <h6>sRGB (Standard RGB)</h6>
+                        <ul>
+                            <li><strong>Most common:</strong> Standard for web and most screens</li>
+                            <li><strong>Narrower gamut:</strong> Can't show all colors</li>
+                            <li><strong>Universal compatibility:</strong> Works everywhere</li>
+                            <li><strong>Recommended for:</strong> Web, social media, general digital art</li>
+                        </ul>
+
+                        <h6>Adobe RGB</h6>
+                        <ul>
+                            <li><strong>Wider gamut:</strong> More colors, especially greens</li>
+                            <li><strong>Better for print:</strong> Closer to CMYK range</li>
+                            <li><strong>Professional work:</strong> Photography, print design</li>
+                            <li><strong>Warning:</strong> Looks dull on non-calibrated monitors</li>
+                        </ul>
+
+                        <h6>ProPhoto RGB</h6>
+                        <ul>
+                            <li><strong>Widest gamut:</strong> Contains colors beyond human vision!</li>
+                            <li><strong>Professional photography:</strong> Maximum editing latitude</li>
+                            <li><strong>Rarely needed:</strong> Overkill for most digital art</li>
+                            <li><strong>File size:</strong> Requires 16-bit to avoid banding</li>
+                        </ul>
+                    </div>
+
+                    <h5>Practical Advice:</h5>
+                    <ul>
+                        <li><strong>Default to sRGB:</strong> For 95% of digital art</li>
+                        <li><strong>Use Adobe RGB if:</strong> Preparing for professional printing</li>
+                        <li><strong>Embed color profiles:</strong> So others see correct colors</li>
+                        <li><strong>Calibrate your monitor:</strong> See colors accurately</li>
+                        <li><strong>Test on multiple devices:</strong> Colors vary between screens</li>
+                    </ul>
+
+                    <blockquote>
+                        <strong>💡 Simple Rule:</strong> If you're posting online, use sRGB. If you're printing professionally, ask the printer which color space they want. When in doubt, sRGB is safe!
+                    </blockquote>
+                </div>
+
+                <h3>Using Color Models in Your Software</h3>
+
+                <div class="card">
+                    <h4>🛠️ Accessing Color Pickers</h4>
+
+                    <table style="width: 100%;">
+                        <thead>
+                            <tr>
+                                <th>Software</th>
+                                <th>Color Picker Access</th>
+                                <th>Default Model</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Photoshop</strong></td>
+                                <td>Click foreground/background color square</td>
+                                <td>HSB (can switch to RGB)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Krita</strong></td>
+                                <td>Advanced Color Selector docker</td>
+                                <td>HSV wheel + triangle</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Procreate</strong></td>
+                                <td>Tap color disc icon</td>
+                                <td>HSB disc</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Clip Studio</strong></td>
+                                <td>Color Wheel palette</td>
+                                <td>HSV wheel</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Painter</strong></td>
+                                <td>Color Picker panel</td>
+                                <td>Configurable (multiple options)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Affinity Photo</strong></td>
+                                <td>Color panel/picker</td>
+                                <td>RGB/HSB switchable</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h5>Tips for Using Color Pickers:</h5>
+                    <ul>
+                        <li><strong>Learn your software's picker:</strong> Each has unique features</li>
+                        <li><strong>Switch between models:</strong> Use HSB for intuitive picking, RGB for precision</li>
+                        <li><strong>Save swatches:</strong> Store colors you use frequently</li>
+                        <li><strong>Use eyedropper (I key):</strong> Sample from your painting or references</li>
+                        <li><strong>Keyboard shortcuts:</strong> X swaps foreground/background in most software</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- PART B ENDS HERE -->
+            <!-- PART C STARTS HERE -->
+
+            <!-- Section 3: Color Properties -->
+            <section id="color-properties" class="lesson-section">
+                <h2>The Three Properties of Color 🎨</h2>
+                
+                <p>Every color can be described using three fundamental properties. Understanding these properties gives you complete control over color in your artwork!</p>
+
+                <div class="card" style="background: linear-gradient(135deg, #f5576c 0%, #ffa07a 100%); color: white;">
+                    <h3 style="color: white; margin-top: 0;">🎯 The Three Dimensions of Color</h3>
+                    <p>Just as you need X, Y, and Z to describe a position in 3D space, you need three properties to fully describe any color:</p>
+                    <ol style="font-size: 1.1rem;">
+                        <li><strong>HUE</strong> - What color is it? (Red, blue, green, etc.)</li>
+                        <li><strong>SATURATION</strong> - How intense/pure is it? (Vivid vs gray)</li>
+                        <li><strong>VALUE</strong> - How light or dark is it? (Bright vs dim)</li>
+                    </ol>
+                    <p style="margin-bottom: 0;"><strong>Master these three, and you control all color!</strong></p>
+                </div>
+
+                <h3>Property 1: Hue</h3>
+
+                <div class="card" style="background: #ffe6e6;">
+                    <h4>🌈 Hue - The Color Itself</h4>
+
+                    <p><strong>Definition:</strong> Hue is what we commonly call "color" - red, orange, yellow, green, blue, purple, etc.</p>
+
+                    <h5>Understanding Hue:</h5>
+                    <ul>
+                        <li><strong>Pure spectral colors:</strong> The colors of the rainbow</li>
+                        <li><strong>Position on color wheel:</strong> Measured in degrees (0-360°)</li>
+                        <li><strong>Independent of lightness/darkness:</strong> Dark red and light pink share the same hue</li>
+                        <li><strong>Independent of purity:</strong> Vivid red and grayish red share the same hue</li>
+                    </ul>
+
+                    <h5>Hue Around the Color Wheel:</h5>
+                    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.5rem; margin: 1rem 0;">
+                        <div style="text-align: center;">
+                            <div style="width: 100%; height: 60px; background: hsl(0, 100%, 50%); border: 2px solid #333; border-radius: 4px;"></div>
+                            <p style="margin-top: 0.3rem; font-size: 0.85rem;"><strong>0°</strong><br/>Red</p>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="width: 100%; height: 60px; background: hsl(30, 100%, 50%); border: 2px solid #333; border-radius: 4px;"></div>
+                            <p style="margin-top: 0.3rem; font-size: 0.85rem;"><strong>30°</strong><br/>Orange</p>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="width: 100%; height: 60px; background: hsl(60, 100%, 50%); border: 2px solid #333; border-radius: 4px;"></div>
+                            <p style="margin-top: 0.3rem; font-size: 0.85rem;"><strong>60°</strong><br/>Yellow</p>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="width: 100%; height: 60px; background: hsl(120, 100%, 50%); border: 2px solid #333; border-radius: 4px;"></div>
+                            <p style="margin-top: 0.3rem; font-size: 0.85rem;"><strong>120°</strong><br/>Green</p>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="width: 100%; height: 60px; background: hsl(180, 100%, 50%); border: 2px solid #333; border-radius: 4px;"></div>
+                            <p style="margin-top: 0.3rem; font-size: 0.85rem;"><strong>180°</strong><br/>Cyan</p>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="width: 100%; height: 60px; background: hsl(240, 100%, 50%); border: 2px solid #333; border-radius: 4px;"></div>
+                            <p style="margin-top: 0.3rem; font-size: 0.85rem;"><strong>240°</strong><br/>Blue</p>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="width: 100%; height: 60px; background: hsl(300, 100%, 50%); border: 2px solid #333; border-radius: 4px;"></div>
+                            <p style="margin-top: 0.3rem; font-size: 0.85rem;"><strong>300°</strong><br/>Magenta</p>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="width: 100%; height: 60px; background: hsl(330, 100%, 50%); border: 2px solid #333; border-radius: 4px;"></div>
+                            <p style="margin-top: 0.3rem; font-size: 0.85rem;"><strong>330°</strong><br/>Rose</p>
+                        </div>
+                    </div>
+
+                    <blockquote>
+                        <strong>🎓 Artist Insight:</strong> When people say "I don't like that color," they usually mean the hue. But changing saturation or value can make the same hue work beautifully! A garish yellow at full saturation becomes elegant gold when desaturated and darkened.
+                    </blockquote>
+                </div>
+
+                <h3>Property 2: Saturation</h3>
+
+                <div class="card" style="background: #e3f2fd;">
+                    <h4>💎 Saturation - Color Intensity</h4>
+
+                    <p><strong>Definition:</strong> Saturation (also called chroma or intensity) is how pure, vivid, or intense a color is - from completely gray to maximally vibrant.</p>
+
+                    <h5>Understanding Saturation:</h5>
+                    <ul>
+                        <li><strong>0% saturation:</strong> Pure gray (no color at all)</li>
+                        <li><strong>100% saturation:</strong> Maximum color purity and vibrancy</li>
+                        <li><strong>Neutral axis:</strong> Low saturation = near gray, high saturation = far from gray</li>
+                        <li><strong>Natural variation:</strong> Real world has mostly medium-low saturation</li>
+                    </ul>
+
+                    <h5>Saturation Scale (Same Red Hue):</h5>
+                    <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.5rem; margin: 1rem 0;">
+                        <div style="text-align: center;">
+                            <div style="width: 100%; height: 80px; background: hsl(0, 0%, 50%); border: 2px solid #333; border-radius: 4px;"></div>
+                            <p style="margin-top: 0.3rem; font-size: 0.85rem;"><strong>0%</strong><br/>Gray</p>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="width: 100%; height: 80px; background: hsl(0, 25%, 50%); border: 2px solid #333; border-radius: 4px;"></div>
+                            <p style="margin-top: 0.3rem; font-size: 0.85rem;"><strong>25%</strong><br/>Muted</p>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="width: 100%; height: 80px; background: hsl(0, 50%, 50%); border: 2px solid #333; border-radius: 4px;"></div>
+                            <p style="margin-top: 0.3rem; font-size: 0.85rem;"><strong>50%</strong><br/>Medium</p>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="width: 100%; height: 80px; background: hsl(0, 75%, 50%); border: 2px solid #333; border-radius: 4px;"></div>
+                            <p style="margin-top: 0.3rem; font-size: 0.85rem;"><strong>75%</strong><br/>Vivid</p>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="width: 100%; height: 80px; background: hsl(0, 100%, 50%); border: 2px solid #333; border-radius: 4px;"></div>
+                            <p style="margin-top: 0.3rem; font-size: 0.85rem;"><strong>100%</strong><br/>Pure</p>
+                        </div>
+                    </div>
+
+                    <h5>Saturation in Art:</h5>
+                    <ul>
+                        <li><strong>High saturation:</strong> Eye-catching, energetic, can be overwhelming</li>
+                        <li><strong>Low saturation:</strong> Sophisticated, natural, easier on the eyes</li>
+                        <li><strong>Mixed saturation:</strong> Most professional art uses variety</li>
+                        <li><strong>Focal points:</strong> Highest saturation draws the eye</li>
+                        <li><strong>Atmospheric perspective:</strong> Distance = lower saturation</li>
+                    </ul>
+
+                    <p style="padding: 1rem; background: linear-gradient(135deg, #3498db 0%, #2980b9 100%); color: white; border-radius: 8px; margin-top: 1rem;">
+                        <strong>🎓 Pro Secret:</strong> Beginners oversaturate everything! Professional artists use mostly medium-to-low saturation, reserving high saturation for small areas of emphasis. A little neon goes a long way!
+                    </p>
+                </div>
+
+                <h3>Property 3: Value</h3>
+
+                <div class="card" style="background: #fff3e0;">
+                    <h4>🔆 Value - Lightness and Darkness</h4>
+
+                    <p><strong>Definition:</strong> Value (also called brightness, lightness, or luminosity) is how light or dark a color is - from black to white.</p>
+
+                    <h5>Understanding Value:</h5>
+                    <ul>
+                        <li><strong>0% value:</strong> Pure black (no light)</li>
+                        <li><strong>100% value:</strong> Maximum brightness</li>
+                        <li><strong>Independent of hue:</strong> Can have light red or dark red</li>
+                        <li><strong>Most important property:</strong> Value structure defines form!</li>
+                    </ul>
+
+                    <h5>Value Scale (Same Red Hue):</h5>
+                    <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.5rem; margin: 1rem 0;">
+                        <div style="text-align: center;">
+                            <div style="width: 100%; height: 80px; background: hsl(0, 100%, 10%); border: 2px solid #333; border-radius: 4px;"></div>
+                            <p style="margin-top: 0.3rem; font-size: 0.85rem;"><strong>Dark</strong><br/>20% Value</p>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="width: 100%; height: 80px; background: hsl(0, 100%, 30%); border: 2px solid #333; border-radius: 4px;"></div>
+                            <p style="margin-top: 0.3rem; font-size: 0.85rem;"><strong>Low</strong><br/>40% Value</p>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="width: 100%; height: 80px; background: hsl(0, 100%, 50%); border: 2px solid #333; border-radius: 4px;"></div>
+                            <p style="margin-top: 0.3rem; font-size: 0.85rem;"><strong>Mid</strong><br/>50% Value</p>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="width: 100%; height: 80px; background: hsl(0, 100%, 70%); border: 2px solid #333; border-radius: 4px;"></div>
+                            <p style="margin-top: 0.3rem; font-size: 0.85rem;"><strong>Light</strong><br/>70% Value</p>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="width: 100%; height: 80px; background: hsl(0, 100%, 90%); border: 2px solid #333; border-radius: 4px;"></div>
+                            <p style="margin-top: 0.3rem; font-size: 0.85rem;"><strong>Very Light</strong><br/>90% Value</p>
+                        </div>
+                    </div>
+
+                    <h5>Why Value is King:</h5>
+                    <ul>
+                        <li><strong>Defines form:</strong> Light and shadow create 3D illusion</li>
+                        <li><strong>Creates depth:</strong> Value contrast = sense of space</li>
+                        <li><strong>Guides the eye:</strong> Viewers look at value contrasts first</li>
+                        <li><strong>Works in grayscale:</strong> Good value structure works without color</li>
+                        <li><strong>Color is secondary:</strong> Wrong hue with right value = acceptable. Right hue with wrong value = doesn't work!</li>
+                    </ul>
+
+                    <blockquote>
+                        <strong>🎓 The Golden Rule:</strong> VALUE BEATS HUE EVERY TIME! If your painting doesn't work in grayscale, it won't work in color. Fix your values first, then worry about color choices. This is the #1 lesson that transforms beginners into professionals!
+                    </blockquote>
+                </div>
+
+                <h3>Property 4: Temperature (Bonus!)</h3>
+
+                <div class="card" style="background: #f3e5f5;">
+                    <h4>🌡️ Temperature - Warm vs Cool</h4>
+
+                    <p><strong>What it is:</strong> Temperature isn't a technical color property like hue/sat/value, but it's crucial for artists! It describes the psychological warmth or coolness of a color.</p>
+
+                    <h5>Warm Colors:</h5>
+                    <div style="display: flex; gap: 0.5rem; margin: 1rem 0; flex-wrap: wrap;">
+                        <div style="width: 80px; height: 80px; background: hsl(0, 100%, 50%); border: 2px solid #333; border-radius: 4px;"></div>
+                        <div style="width: 80px; height: 80px; background: hsl(30, 100%, 50%); border: 2px solid #333; border-radius: 4px;"></div>
+                        <div style="width: 80px; height: 80px; background: hsl(60, 100%, 50%); border: 2px solid #333; border-radius: 4px;"></div>
+                    </div>
+                    <ul>
+                        <li><strong>Reds, oranges, yellows</strong></li>
+                        <li><strong>Associated with:</strong> Fire, sun, heat, energy</li>
+                        <li><strong>Emotional effect:</strong> Energizing, exciting, passionate</li>
+                        <li><strong>Spatial effect:</strong> Advance forward (seem closer)</li>
+                        <li><strong>Common in:</strong> Highlights, sunlit areas, foregrounds</li>
+                    </ul>
+
+                    <h5>Cool Colors:</h5>
+                    <div style="display: flex; gap: 0.5rem; margin: 1rem 0; flex-wrap: wrap;">
+                        <div style="width: 80px; height: 80px; background: hsl(180, 100%, 50%); border: 2px solid #333; border-radius: 4px;"></div>
+                        <div style="width: 80px; height: 80px; background: hsl(240, 100%, 50%); border: 2px solid #333; border-radius: 4px;"></div>
+                        <div style="width: 80px; height: 80px; background: hsl(270, 100%, 50%); border: 2px solid #333; border-radius: 4px;"></div>
+                    </div>
+                    <ul>
+                        <li><strong>Blues, greens, purples</strong></li>
+                        <li><strong>Associated with:</strong> Water, sky, ice, calm</li>
+                        <li><strong>Emotional effect:</strong> Calming, peaceful, somber</li>
+                        <li><strong>Spatial effect:</strong> Recede backward (seem farther)</li>
+                        <li><strong>Common in:</strong> Shadows, distance, backgrounds</li>
+                    </ul>
+
+                    <h5>Temperature is Relative!</h5>
+                    <ul>
+                        <li><strong>Context matters:</strong> A yellow-green is warm next to blue, cool next to red</li>
+                        <li><strong>No absolute temperature:</strong> It's about relationships</li>
+                        <li><strong>Even within hue:</strong> Can have warm reds (orange-red) and cool reds (purple-red)</li>
+                        <li><strong>Creates depth:</strong> Warm foreground + cool background = instant depth</li>
+                    </ul>
+
+                    <p style="padding: 1rem; background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%); color: white; border-radius: 8px; margin-top: 1rem;">
+                        <strong>🎓 Pro Technique:</strong> Use temperature shifts for light and shadow! Warm light = cool shadows. Cool light = warm shadows. This creates natural, vibrant lighting that feels alive. Sunlight (warm) creates blue-purple shadows (cool). Overcast light (cool) creates warmer shadows.
+                    </p>
+                </div>
+
+                <h3>Putting It All Together</h3>
+
+                <div class="card">
+                    <h4>🎯 Controlling All Properties</h4>
+
+                    <p><strong>To fully describe any color, specify all three properties (or four if counting temperature):</strong></p>
+
+                    <div style="margin: 1.5rem 0;">
+                        <h5>Example Color Descriptions:</h5>
+                        <ul>
+                            <li><strong>"A muted, dark blue"</strong>
+                                <ul>
+                                    <li>Hue: Blue (~240°)</li>
+                                    <li>Saturation: Low-medium (muted)</li>
+                                    <li>Value: Low (dark)</li>
+                                    <li>Temperature: Cool</li>
+                                </ul>
+                            </li>
+                            <li><strong>"A vivid, light orange"</strong>
+                                <ul>
+                                    <li>Hue: Orange (~30°)</li>
+                                    <li>Saturation: High (vivid)</li>
+                                    <li>Value: High (light)</li>
+                                    <li>Temperature: Warm</li>
+                                </ul>
+                            </li>
+                            <li><strong>"A desaturated medium green"</strong>
+                                <ul>
+                                    <li>Hue: Green (~120°)</li>
+                                    <li>Saturation: Low (desaturated)</li>
+                                    <li>Value: Medium</li>
+                                    <li>Temperature: Cool-neutral</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <h5>Interactive Exercise:</h5>
+                    <div style="background: #f8f9fa; padding: 1rem; border-radius: 8px; border: 2px solid #dee2e6;">
+                        <p><strong>Try this in your software:</strong></p>
+                        <ol>
+                            <li>Pick any color in your color picker</li>
+                            <li>Now isolate each property:
+                                <ul>
+                                    <li>Keep hue constant, vary saturation - see it go from gray to vivid</li>
+                                    <li>Keep saturation constant, vary value - see it go from dark to light</li>
+                                    <li>Keep sat/value constant, vary hue - see it change color</li>
+                                </ul>
+                            </li>
+                            <li>Notice how you can create infinite variations of the same base color!</li>
+                        </ol>
+                        <p><strong>This control is your superpower!</strong> You can take any color and make it work in any context by adjusting these three properties.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 4: The Color Wheel -->
+            <section id="color-wheel" class="lesson-section">
+                <h2>The Color Wheel & Relationships 🎡</h2>
+                
+                <p>The color wheel is your roadmap to color harmony! It shows how colors relate to each other and helps you create pleasing combinations.</p>
+
+                <h3>Building the Color Wheel</h3>
+
+                <div class="card" style="background: #e8f5e9;">
+                    <h4>🎨 Primary, Secondary, and Tertiary Colors</h4>
+
+                    <h5>Primary Colors (The Foundation)</h5>
+                    <div style="display: flex; gap: 1rem; margin: 1rem 0; flex-wrap: wrap; justify-content: center;">
+                        <div style="text-align: center;">
+                            <div style="width: 100px; height: 100px; background: hsl(0, 100%, 50%); border: 3px solid #333; border-radius: 50%;"></div>
+                            <p style="margin-top: 0.5rem;"><strong>Red</strong></p>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="width: 100px; height: 100px; background: hsl(60, 100%, 50%); border: 3px solid #333; border-radius: 50%;"></div>
+                            <p style="margin-top: 0.5rem;"><strong>Yellow</strong></p>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="width: 100px; height: 100px; background: hsl(240, 100%, 50%); border: 3px solid #333; border-radius: 50%;"></div>
+                            <p style="margin-top: 0.5rem;"><strong>Blue</strong></p>
+                        </div>
+                    </div>
+                    <ul>
+                        <li><strong>Traditional RYB primaries:</strong> Red, Yellow, Blue</li>
+                        <li><strong>Cannot be mixed:</strong> These are the "pure" colors in traditional art</li>
+                        <li><strong>Mix to create all others:</strong> Foundation of the color wheel</li>
+                    </ul>
+
+                    <p><strong>Note:</strong> RGB and CMYK have different primaries (as we learned), but the traditional color wheel uses RYB for artists!</p>
+
+                    <h5>Secondary Colors (Mix Two Primaries)</h5>
+                    <div style="display: flex; gap: 1rem; margin: 1rem 0; flex-wrap: wrap; justify-content: center;">
+                        <div style="text-align: center;">
+                            <div style="width: 100px; height: 100px; background: hsl(30, 100%, 50%); border: 3px solid #333; border-radius: 50%;"></div>
+                            <p style="margin-top: 0.5rem;"><strong>Orange</strong><br/><small>(Red + Yellow)</small></p>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="width: 100px; height: 100px; background: hsl(120, 100%, 35%); border: 3px solid #333; border-radius: 50%;"></div>
+                            <p style="margin-top: 0.5rem;"><strong>Green</strong><br/><small>(Yellow + Blue)</small></p>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="width: 100px; height: 100px; background: hsl(280, 100%, 50%); border: 3px solid #333; border-radius: 50%;"></div>
+                            <p style="margin-top: 0.5rem;"><strong>Purple</strong><br/><small>(Blue + Red)</small></p>
+                        </div>
+                    </div>
+                    <ul>
+                        <li><strong>Orange:</strong> Red + Yellow</li>
+                        <li><strong>Green:</strong> Yellow + Blue</li>
+                        <li><strong>Purple/Violet:</strong> Blue + Red</li>
+                    </ul>
+
+                    <h5>Tertiary Colors (Mix Primary + Secondary)</h5>
+                    <p><strong>Six tertiary colors:</strong></p>
+                    <ul>
+                        <li><strong>Red-Orange</strong> (Vermillion)</li>
+                        <li><strong>Yellow-Orange</strong> (Amber)</li>
+                        <li><strong>Yellow-Green</strong> (Chartreuse)</li>
+                        <li><strong>Blue-Green</strong> (Teal/Cyan)</li>
+                        <li><strong>Blue-Purple</strong> (Violet)</li>
+                        <li><strong>Red-Purple</strong> (Magenta)</li>
+                    </ul>
+
+                    <blockquote>
+                        <strong>💡 Total Count:</strong> 3 primary + 3 secondary + 6 tertiary = 12 colors on the traditional color wheel!
+                    </blockquote>
+                </div>
+
+                <h3>Color Relationships</h3>
+
+                <div class="card" style="background: #e3f2fd;">
+                    <h4>🔗 How Colors Relate on the Wheel</h4>
+
+                    <h5>Complementary Colors</h5>
+                    <p><strong>Definition:</strong> Colors directly opposite each other on the color wheel.</p>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 1rem 0;">
+                        <div style="text-align: center;">
+                            <div style="display: flex; height: 80px;">
+                                <div style="flex: 1; background: hsl(0, 100%, 50%); border: 2px solid #333;"></div>
+                                <div style="flex: 1; background: hsl(120, 100%, 35%); border: 2px solid #333;"></div>
+                            </div>
+                            <p style="margin-top: 0.3rem; font-size: 0.9rem;"><strong>Red & Green</strong></p>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="display: flex; height: 80px;">
+                                <div style="flex: 1; background: hsl(240, 100%, 50%); border: 2px solid #333;"></div>
+                                <div style="flex: 1; background: hsl(30, 100%, 50%); border: 2px solid #333;"></div>
+                            </div>
+                            <p style="margin-top: 0.3rem; font-size: 0.9rem;"><strong>Blue & Orange</strong></p>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="display: flex; height: 80px;">
+                                <div style="flex: 1; background: hsl(60, 100%, 50%); border: 2px solid #333;"></div>
+                                <div style="flex: 1; background: hsl(280, 100%, 50%); border: 2px solid #333;"></div>
+                            </div>
+                            <p style="margin-top: 0.3rem; font-size: 0.9rem;"><strong>Yellow & Purple</strong></p>
+                        </div>
+                    </div>
+
+                    <p><strong>Characteristics:</strong></p>
+                    <ul>
+                        <li><strong>Maximum contrast:</strong> Most different from each other</li>
+                        <li><strong>Vibrant when combined:</strong> Make each other "pop"</li>
+                        <li><strong>Create visual energy:</strong> Dynamic, exciting</li>
+                        <li><strong>Mix to gray/brown:</strong> Cancel each other out when mixed</li>
+                        <li><strong>Classic combinations:</strong> Blue/orange sunsets, red/green Christmas</li>
+                    </ul>
+
+                    <h5>Analogous Colors</h5>
+                    <p><strong>Definition:</strong> Colors next to each other on the color wheel (usually 2-4 adjacent colors).</p>
+                    
+                    <div style="display: flex; gap: 0.3rem; margin: 1rem 0; flex-wrap: wrap;">
+                        <div style="width: 70px; height: 70px; background: hsl(0, 100%, 50%); border: 2px solid #333;"></div>
+                        <div style="width: 70px; height: 70px; background: hsl(15, 100%, 50%); border: 2px solid #333;"></div>
+                        <div style="width: 70px; height: 70px; background: hsl(30, 100%, 50%); border: 2px solid #333;"></div>
+                        <div style="width: 70px; height: 70px; background: hsl(45, 100%, 50%); border: 2px solid #333;"></div>
+                    </div>
+                    <p style="text-align: center; margin-top: 0.5rem;"><strong>Example: Red → Red-Orange → Orange → Yellow-Orange</strong></p>
+
+                    <p><strong>Characteristics:</strong></p>
+                    <ul>
+                        <li><strong>Harmonious:</strong> Naturally go together</li>
+                        <li><strong>Low contrast:</strong> Peaceful, cohesive</li>
+                        <li><strong>Common in nature:</strong> Sunsets, foliage, water</li>
+                        <li><strong>Easy to work with:</strong> Hard to mess up!</li>
+                        <li><strong>Can lack variety:</strong> May need accent color</li>
+                    </ul>
+
+                    <h5>Triadic Colors</h5>
+                    <p><strong>Definition:</strong> Three colors evenly spaced around the wheel (120° apart).</p>
+                    
+                    <div style="display: flex; gap: 1rem; margin: 1rem 0; justify-content: center;">
+                        <div style="width: 80px; height: 80px; background: hsl(0, 100%, 50%); border: 2px solid #333; border-radius: 50%;"></div>
+                        <div style="width: 80px; height: 80px; background: hsl(120, 100%, 35%); border: 2px solid #333; border-radius: 50%;"></div>
+                        <div style="width: 80px; height: 80px; background: hsl(240, 100%, 50%); border: 2px solid #333; border-radius: 50%;"></div>
+                    </div>
+                    <p style="text-align: center; margin-top: 0.5rem;"><strong>Example: Red, Yellow, Blue (the primaries!)</strong></p>
+
+                    <p><strong>Characteristics:</strong></p>
+                    <ul>
+                        <li><strong>Vibrant and balanced:</strong> Energetic but harmonious</li>
+                        <li><strong>High contrast:</strong> But not as extreme as complementary</li>
+                        <li><strong>Versatile:</strong> Works for many moods</li>
+                        <li><strong>Popular in design:</strong> Logos, flags, sports teams</li>
+                    </ul>
+
+                    <p style="padding: 1rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 8px; margin-top: 1rem;">
+                        <strong>🎓 Pro Tip:</strong> Don't use these relationships at full saturation! A common beginner mistake is using pure, bright complements or triads. Instead, vary the saturation and value - maybe one color bright, others muted. This creates sophistication!
+                    </p>
+                </div>
+            </section>
+
+            <!-- PART C ENDS HERE -->
+            <!-- PART D STARTS HERE -->
+
+            <!-- Section 5: Color Harmony Schemes -->
+            <section id="color-harmony" class="lesson-section">
+                <h2>Color Harmony Schemes 🎼</h2>
+                
+                <p>Color harmony is when colors work together to create a pleasing, balanced effect. Just like musical chords, certain color combinations naturally harmonize. Let's learn the proven formulas that create beautiful color schemes!</p>
+
+                <div class="card" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white;">
+                    <h3 style="color: white; margin-top: 0;">🎯 What Makes Colors Harmonious?</h3>
+                    <p>Harmonious colors create a sense of order and balance. They "belong together" and feel intentional rather than random.</p>
+                    <p><strong>Key principles:</strong></p>
+                    <ul>
+                        <li>Colors have a clear relationship (geometric on the wheel)</li>
+                        <li>One color typically dominates (not equal amounts)</li>
+                        <li>Variation in saturation and value creates interest</li>
+                        <li>Limited palette = more cohesive than using every color</li>
+                    </ul>
+                    <p style="margin-bottom: 0;"><strong>Let's explore the classic harmony schemes!</strong></p>
+                </div>
+
+                <h3>Monochromatic Harmony</h3>
+
+                <div class="card" style="background: #e8f5e9;">
+                    <h4>🎨 One Hue, Many Variations</h4>
+
+                    <p><strong>What it is:</strong> Using a single hue with variations in saturation and value.</p>
+
+                    <h5>Monochromatic Example (Blue):</h5>
+                    <div style="display: flex; gap: 0.5rem; margin: 1rem 0; flex-wrap: wrap;">
+                        <div style="width: 90px; height: 90px; background: hsl(240, 100%, 20%); border: 2px solid #333; border-radius: 4px;"></div>
+                        <div style="width: 90px; height: 90px; background: hsl(240, 80%, 35%); border: 2px solid #333; border-radius: 4px;"></div>
+                        <div style="width: 90px; height: 90px; background: hsl(240, 100%, 50%); border: 2px solid #333; border-radius: 4px;"></div>
+                        <div style="width: 90px; height: 90px; background: hsl(240, 60%, 65%); border: 2px solid #333; border-radius: 4px;"></div>
+                        <div style="width: 90px; height: 90px; background: hsl(240, 30%, 80%); border: 2px solid #333; border-radius: 4px;"></div>
+                    </div>
+                    <p style="text-align: center;"><em>All blue (240°), but different saturation and value</em></p>
+
+                    <h5>Characteristics:</h5>
+                    <ul>
+                        <li><strong>Extremely cohesive:</strong> Can't clash when it's all one color!</li>
+                        <li><strong>Peaceful and calming:</strong> No color tension</li>
+                        <li><strong>Easy to create:</strong> Foolproof for beginners</li>
+                        <li><strong>Sophisticated:</strong> Shows restraint and control</li>
+                        <li><strong>Risk:</strong> Can be monotonous if not varied enough</li>
+                    </ul>
+
+                    <h5>When to Use:</h5>
+                    <ul>
+                        <li>Minimalist or elegant designs</li>
+                        <li>When you want calm, unity, or simplicity</li>
+                        <li>Portraits focusing on form over color variety</li>
+                        <li>Night scenes, underwater scenes (limited light = limited hue)</li>
+                        <li>When learning color - removes hue as a variable</li>
+                    </ul>
+
+                    <h5>Pro Tips:</h5>
+                    <ul>
+                        <li><strong>Vary value widely:</strong> Use very dark to very light</li>
+                        <li><strong>Vary saturation:</strong> Mix pure color with grays</li>
+                        <li><strong>Add neutrals:</strong> Black, white, gray don't break monochromatic</li>
+                        <li><strong>Consider temperature shifts:</strong> Slight warm/cool variations within the hue</li>
+                    </ul>
+                </div>
+
+                <h3>Analogous Harmony</h3>
+
+                <div class="card" style="background: #fff3e0;">
+                    <h4>🌅 Neighboring Colors</h4>
+
+                    <p><strong>What it is:</strong> Using 2-4 colors that are adjacent on the color wheel.</p>
+
+                    <h5>Analogous Example (Warm Sunset):</h5>
+                    <div style="display: flex; gap: 0.5rem; margin: 1rem 0; flex-wrap: wrap;">
+                        <div style="width: 100px; height: 100px; background: hsl(0, 100%, 50%); border: 2px solid #333; border-radius: 4px;"></div>
+                        <div style="width: 100px; height: 100px; background: hsl(20, 100%, 50%); border: 2px solid #333; border-radius: 4px;"></div>
+                        <div style="width: 100px; height: 100px; background: hsl(40, 100%, 50%); border: 2px solid #333; border-radius: 4px;"></div>
+                        <div style="width: 100px; height: 100px; background: hsl(60, 100%, 50%); border: 2px solid #333; border-radius: 4px;"></div>
+                    </div>
+                    <p style="text-align: center;"><em>Red → Red-Orange → Orange → Yellow-Orange</em></p>
+
+                    <h5>Another Example (Cool Ocean):</h5>
+                    <div style="display: flex; gap: 0.5rem; margin: 1rem 0; flex-wrap: wrap;">
+                        <div style="width: 100px; height: 100px; background: hsl(180, 100%, 50%); border: 2px solid #333; border-radius: 4px;"></div>
+                        <div style="width: 100px; height: 100px; background: hsl(200, 100%, 50%); border: 2px solid #333; border-radius: 4px;"></div>
+                        <div style="width: 100px; height: 100px; background: hsl(220, 100%, 50%); border: 2px solid #333; border-radius: 4px;"></div>
+                        <div style="width: 100px; height: 100px; background: hsl(240, 100%, 50%); border: 2px solid #333; border-radius: 4px;"></div>
+                    </div>
+                    <p style="text-align: center;"><em>Cyan → Sky Blue → Azure → Blue</em></p>
+
+                    <h5>Characteristics:</h5>
+                    <ul>
+                        <li><strong>Naturally harmonious:</strong> Colors "flow" together</li>
+                        <li><strong>Common in nature:</strong> Think sunsets, forests, oceans</li>
+                        <li><strong>Unified temperature:</strong> All warm or all cool</li>
+                        <li><strong>Low contrast:</strong> Peaceful, easy on the eyes</li>
+                        <li><strong>Versatile:</strong> Works for many subjects</li>
+                    </ul>
+
+                    <h5>When to Use:</h5>
+                    <ul>
+                        <li>Landscapes and nature scenes</li>
+                        <li>When you want harmony without monotony</li>
+                        <li>Sunset/sunrise scenes (warm analogs)</li>
+                        <li>Underwater or night scenes (cool analogs)</li>
+                        <li>Establishing mood (warm = cozy, cool = calm)</li>
+                    </ul>
+
+                    <h5>Pro Tips:</h5>
+                    <ul>
+                        <li><strong>Pick a dominant color:</strong> Use 60-70% of one color</li>
+                        <li><strong>Vary saturation:</strong> Not all at full intensity</li>
+                        <li><strong>Use 3-4 colors max:</strong> More can become muddy</li>
+                        <li><strong>Add accent:</strong> Small touch of complementary for interest</li>
+                    </ul>
+                </div>
+
+                <h3>Complementary Harmony</h3>
+
+                <div class="card" style="background: #e3f2fd;">
+                    <h4>⚖️ Opposite Attraction</h4>
+
+                    <p><strong>What it is:</strong> Using colors directly opposite on the color wheel.</p>
+
+                    <h5>Complementary Examples:</h5>
+                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 1rem 0;">
+                        <div style="text-align: center;">
+                            <div style="display: flex; height: 100px;">
+                                <div style="flex: 1; background: hsl(0, 100%, 50%); border: 2px solid #333;"></div>
+                                <div style="flex: 1; background: hsl(120, 100%, 35%); border: 2px solid #333;"></div>
+                            </div>
+                            <p style="margin-top: 0.5rem;"><strong>Red & Green</strong><br/><small>Christmas, bold</small></p>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="display: flex; height: 100px;">
+                                <div style="flex: 1; background: hsl(240, 100%, 50%); border: 2px solid #333;"></div>
+                                <div style="flex: 1; background: hsl(30, 100%, 50%); border: 2px solid #333;"></div>
+                            </div>
+                            <p style="margin-top: 0.5rem;"><strong>Blue & Orange</strong><br/><small>Sunset, popular</small></p>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="display: flex; height: 100px;">
+                                <div style="flex: 1; background: hsl(60, 100%, 50%); border: 2px solid #333;"></div>
+                                <div style="flex: 1; background: hsl(280, 100%, 50%); border: 2px solid #333;"></div>
+                            </div>
+                            <p style="margin-top: 0.5rem;"><strong>Yellow & Purple</strong><br/><small>Vibrant, regal</small></p>
+                        </div>
+                    </div>
+
+                    <h5>Characteristics:</h5>
+                    <ul>
+                        <li><strong>Maximum contrast:</strong> Most different colors possible</li>
+                        <li><strong>High energy:</strong> Dynamic and exciting</li>
+                        <li><strong>Make each other "pop":</strong> Intensify each other</li>
+                        <li><strong>Attention-grabbing:</strong> Hard to ignore</li>
+                        <li><strong>Risk:</strong> Can be jarring if not balanced</li>
+                    </ul>
+
+                    <h5>When to Use:</h5>
+                    <ul>
+                        <li>Action or sports illustrations</li>
+                        <li>Eye-catching designs (posters, logos)</li>
+                        <li>When you want drama and energy</li>
+                        <li>Highlighting a focal point (complement = opposite = stands out)</li>
+                        <li>Creating visual interest in simple compositions</li>
+                    </ul>
+
+                    <h5>Pro Tips:</h5>
+                    <ul>
+                        <li><strong>Don't use equal amounts:</strong> 70/30 or 80/20 split works better</li>
+                        <li><strong>Desaturate one color:</strong> Prevents overwhelming vibrancy</li>
+                        <li><strong>Vary the values:</strong> Light blue + dark orange = more sophisticated</li>
+                        <li><strong>Add neutrals:</strong> Gray between complements reduces tension</li>
+                        <li><strong>Use temperatures:</strong> Cool red + warm green = more nuanced</li>
+                    </ul>
+
+                    <blockquote>
+                        <strong>⚠️ Beginner Warning:</strong> Full-saturation complements (pure red + pure green) can vibrate and hurt the eyes! Always adjust - make one lighter, darker, or less saturated. Professional artists rarely use pure complements at equal intensity.
+                    </blockquote>
+                </div>
+
+                <h3>Split-Complementary Harmony</h3>
+
+                <div class="card" style="background: #f3e5f5;">
+                    <h4>🎨 Softer Contrast</h4>
+
+                    <p><strong>What it is:</strong> Use a base color plus the two colors adjacent to its complement.</p>
+
+                    <h5>Split-Complementary Example (Blue base):</h5>
+                    <div style="display: flex; gap: 1rem; margin: 1rem 0; justify-content: center;">
+                        <div style="text-align: center;">
+                            <div style="width: 100px; height: 100px; background: hsl(240, 100%, 50%); border: 3px solid #333; border-radius: 50%;"></div>
+                            <p style="margin-top: 0.5rem;"><strong>Blue</strong><br/><small>(Base)</small></p>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="width: 100px; height: 100px; background: hsl(15, 100%, 50%); border: 2px solid #333; border-radius: 50%;"></div>
+                            <p style="margin-top: 0.5rem;"><strong>Red-Orange</strong></p>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="width: 100px; height: 100px; background: hsl(45, 100%, 50%); border: 2px solid #333; border-radius: 50%;"></div>
+                            <p style="margin-top: 0.5rem;"><strong>Yellow-Orange</strong></p>
+                        </div>
+                    </div>
+                    <p style="text-align: center;"><em>Blue + the neighbors of Orange (its complement)</em></p>
+
+                    <h5>Characteristics:</h5>
+                    <ul>
+                        <li><strong>Contrast without tension:</strong> Softer than pure complementary</li>
+                        <li><strong>More versatile:</strong> Easier to balance than complements</li>
+                        <li><strong>Rich and varied:</strong> Three distinct colors</li>
+                        <li><strong>Sophisticated:</strong> Less obvious than complementary</li>
+                        <li><strong>Good compromise:</strong> Harmony + contrast</li>
+                    </ul>
+
+                    <h5>When to Use:</h5>
+                    <ul>
+                        <li>When complements feel too harsh</li>
+                        <li>Character design with accent colors</li>
+                        <li>Complex illustrations needing variety</li>
+                        <li>More nuanced mood than pure complements</li>
+                    </ul>
+
+                    <h5>Pro Tips:</h5>
+                    <ul>
+                        <li><strong>Base color dominant:</strong> Use it for 60%+ of the composition</li>
+                        <li><strong>Split colors as accents:</strong> Use sparingly for interest</li>
+                        <li><strong>Vary intensity:</strong> Not all at same saturation</li>
+                    </ul>
+                </div>
+
+                <h3>Triadic Harmony</h3>
+
+                <div class="card" style="background: #ffebee;">
+                    <h4>🔺 Three-Way Balance</h4>
+
+                    <p><strong>What it is:</strong> Three colors evenly spaced around the color wheel (120° apart).</p>
+
+                    <h5>Triadic Examples:</h5>
+                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin: 1rem 0;">
+                        <div style="text-align: center;">
+                            <div style="display: flex; gap: 0.5rem; justify-content: center; margin-bottom: 0.5rem;">
+                                <div style="width: 80px; height: 80px; background: hsl(0, 100%, 50%); border: 2px solid #333; border-radius: 50%;"></div>
+                                <div style="width: 80px; height: 80px; background: hsl(120, 100%, 35%); border: 2px solid #333; border-radius: 50%;"></div>
+                                <div style="width: 80px; height: 80px; background: hsl(240, 100%, 50%); border: 2px solid #333; border-radius: 50%;"></div>
+                            </div>
+                            <p><strong>Primary Triad</strong><br/><small>Red, Yellow, Blue</small></p>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="display: flex; gap: 0.5rem; justify-content: center; margin-bottom: 0.5rem;">
+                                <div style="width: 80px; height: 80px; background: hsl(30, 100%, 50%); border: 2px solid #333; border-radius: 50%;"></div>
+                                <div style="width: 80px; height: 80px; background: hsl(150, 100%, 35%); border: 2px solid #333; border-radius: 50%;"></div>
+                                <div style="width: 80px; height: 80px; background: hsl(270, 100%, 50%); border: 2px solid #333; border-radius: 50%;"></div>
+                            </div>
+                            <p><strong>Secondary Triad</strong><br/><small>Orange, Green, Purple</small></p>
+                        </div>
+                    </div>
+
+                    <h5>Characteristics:</h5>
+                    <ul>
+                        <li><strong>Vibrant and balanced:</strong> Energetic without being harsh</li>
+                        <li><strong>High contrast:</strong> But more balanced than complementary</li>
+                        <li><strong>Rich and varied:</strong> Three distinct color families</li>
+                        <li><strong>Playful:</strong> Often feels youthful or fun</li>
+                        <li><strong>Challenge:</strong> Hard to balance three strong colors</li>
+                    </ul>
+
+                    <h5>When to Use:</h5>
+                    <ul>
+                        <li>Playful or energetic subjects</li>
+                        <li>Children's illustrations</li>
+                        <li>Logos and branding (memorable and balanced)</li>
+                        <li>Sports teams (red/yellow/blue uniforms)</li>
+                        <li>When you want variety without chaos</li>
+                    </ul>
+
+                    <h5>Pro Tips:</h5>
+                    <ul>
+                        <li><strong>One color dominates:</strong> 60% one, 30% second, 10% third</li>
+                        <li><strong>Vary saturation:</strong> Don't use all at full intensity</li>
+                        <li><strong>Vary value:</strong> Light, medium, dark creates hierarchy</li>
+                        <li><strong>Use temperature:</strong> Warm version of one, cool of another</li>
+                    </ul>
+                </div>
+
+                <h3>Square (Tetradic) Harmony</h3>
+
+                <div class="card" style="background: #e8f5e9;">
+                    <h4>⬛ Four-Color Balance</h4>
+
+                    <p><strong>What it is:</strong> Four colors evenly spaced around the wheel (90° apart), or two complementary pairs.</p>
+
+                    <h5>Square Example:</h5>
+                    <div style="display: flex; gap: 0.5rem; margin: 1rem 0; justify-content: center;">
+                        <div style="width: 80px; height: 80px; background: hsl(0, 100%, 50%); border: 2px solid #333; border-radius: 50%;"></div>
+                        <div style="width: 80px; height: 80px; background: hsl(90, 100%, 40%); border: 2px solid #333; border-radius: 50%;"></div>
+                        <div style="width: 80px; height: 80px; background: hsl(180, 100%, 50%); border: 2px solid #333; border-radius: 50%;"></div>
+                        <div style="width: 80px; height: 80px; background: hsl(270, 100%, 50%); border: 2px solid #333; border-radius: 50%;"></div>
+                    </div>
+                    <p style="text-align: center;"><em>Red, Yellow-Green, Cyan, Purple</em></p>
+
+                    <h5>Characteristics:</h5>
+                    <ul>
+                        <li><strong>Maximum variety:</strong> Four distinct color families</li>
+                        <li><strong>Complex and rich:</strong> Lots of options</li>
+                        <li><strong>Balanced:</strong> No single color dominates naturally</li>
+                        <li><strong>Challenge:</strong> Very difficult to balance well</li>
+                        <li><strong>Risk:</strong> Can easily become chaotic</li>
+                    </ul>
+
+                    <h5>When to Use:</h5>
+                    <ul>
+                        <li>Complex illustrations with many elements</li>
+                        <li>When maximum variety is needed</li>
+                        <li>Rarely - this is an advanced scheme!</li>
+                    </ul>
+
+                    <h5>Pro Tips:</h5>
+                    <ul>
+                        <li><strong>Reserve for advanced work:</strong> Challenging to balance</li>
+                        <li><strong>One must dominate:</strong> Use others as accents</li>
+                        <li><strong>Heavily desaturate some:</strong> Can't all be vivid</li>
+                        <li><strong>Consider simpler schemes first:</strong> Square is usually overkill</li>
+                    </ul>
+                </div>
+
+                <h3>The 60-30-10 Rule</h3>
+
+                <div class="card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+                    <h4 style="color: white; margin-top: 0;">📐 The Golden Ratio for Color Balance</h4>
+
+                    <p><strong>What it is:</strong> A design rule that creates natural balance using three colors in specific proportions.</p>
+
+                    <h5 style="color: white;">The Breakdown:</h5>
+                    <ul>
+                        <li><strong>60% - Dominant color:</strong> The main color, usually neutral or subdued</li>
+                        <li><strong>30% - Secondary color:</strong> Supports the dominant, adds interest</li>
+                        <li><strong>10% - Accent color:</strong> The "pop" - draws attention to important areas</li>
+                    </ul>
+
+                    <h5 style="color: white;">Visual Example:</h5>
+                    <div style="display: flex; height: 100px; border: 3px solid white; border-radius: 8px; overflow: hidden; margin: 1rem 0;">
+                        <div style="flex: 60; background: hsl(200, 30%, 60%); display: flex; align-items: center; justify-content: center; color: #333; font-weight: bold;">60% Dominant</div>
+                        <div style="flex: 30; background: hsl(200, 50%, 40%); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">30% Secondary</div>
+                        <div style="flex: 10; background: hsl(30, 100%, 50%); display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">10% Accent</div>
+                    </div>
+
+                    <h5 style="color: white;">Real-World Applications:</h5>
+                    <ul>
+                        <li><strong>Portraits:</strong> 60% skin/clothing, 30% background, 10% eye color/jewelry</li>
+                        <li><strong>Landscapes:</strong> 60% sky/land, 30% trees/elements, 10% focal point color</li>
+                        <li><strong>Interior design:</strong> 60% walls, 30% furniture, 10% decorations</li>
+                        <li><strong>Logos:</strong> 60% primary brand color, 30% supporting, 10% accent</li>
+                    </ul>
+
+                    <h5 style="color: white;">Why It Works:</h5>
+                    <ul>
+                        <li><strong>Natural hierarchy:</strong> Clear visual priority</li>
+                        <li><strong>Prevents monotony:</strong> Variety without chaos</li>
+                        <li><strong>Guides the eye:</strong> 10% accent becomes focal point</li>
+                        <li><strong>Professional polish:</strong> Looks intentional, not random</li>
+                    </ul>
+
+                    <p style="margin-bottom: 0;"><strong>💡 Pro Tip:</strong> This rule works with ANY of the harmony schemes above! Use it to balance your monochromatic, analogous, complementary, or any other scheme.</p>
+                </div>
+
+                <h3>Choosing the Right Harmony</h3>
+
+                <div class="card">
+                    <h4>🎯 Which Scheme to Use When?</h4>
+
+                    <table style="width: 100%;">
+                        <thead>
+                            <tr>
+                                <th>If you want...</th>
+                                <th>Use this scheme</th>
+                                <th>Best for</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Maximum unity</strong></td>
+                                <td>Monochromatic</td>
+                                <td>Elegant, simple, calm</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Natural harmony</strong></td>
+                                <td>Analogous</td>
+                                <td>Landscapes, nature</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Maximum contrast</strong></td>
+                                <td>Complementary</td>
+                                <td>Eye-catching, dynamic</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Softer contrast</strong></td>
+                                <td>Split-Complementary</td>
+                                <td>Balanced variety</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Vibrant balance</strong></td>
+                                <td>Triadic</td>
+                                <td>Playful, energetic</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Maximum variety</strong></td>
+                                <td>Square/Tetradic</td>
+                                <td>Complex illustrations</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h5>General Advice:</h5>
+                    <ul>
+                        <li><strong>Start simple:</strong> Monochromatic or analogous while learning</li>
+                        <li><strong>Add complexity gradually:</strong> Master one before trying another</li>
+                        <li><strong>Study masters:</strong> Analyze color schemes in professional artwork</li>
+                        <li><strong>Experiment:</strong> Try the same subject in different schemes</li>
+                        <li><strong>Trust your eye:</strong> Rules are guidelines, not laws</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- PART D ENDS HERE -->
+            <!-- PART E STARTS HERE -->
+
+            <!-- Section 6: Digital Color Mixing -->
+            <section id="digital-mixing" class="lesson-section">
+                <h2>Digital Color Mixing Techniques 🎨</h2>
+                
+                <p>Digital color mixing works differently than physical paint! Understanding how to create clean, vibrant mixes will elevate your digital art instantly.</p>
+
+                <div class="card" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); color: white;">
+                    <h3 style="color: white; margin-top: 0;">🔬 How Digital Mixing Works</h3>
+                    <p>Unlike paint (subtractive), digital screens use light (additive). This fundamentally changes how colors combine!</p>
+                    <p><strong>Key differences:</strong></p>
+                    <ul>
+                        <li>Mixing light = gets lighter (opposite of paint)</li>
+                        <li>All colors mixed = white (not muddy brown)</li>
+                        <li>Can achieve colors impossible in physical paint</li>
+                        <li>No "dirty brush" - each stroke starts fresh</li>
+                        <li>Infinite "paint" - never runs out!</li>
+                    </ul>
+                    <p style="margin-bottom: 0;"><strong>Let's master digital mixing!</strong></p>
+                </div>
+
+                <h3>Understanding Digital Mixing Methods</h3>
+
+                <div class="card" style="background: #e8f5e9;">
+                    <h4>🖌️ Three Ways to Mix Colors Digitally</h4>
+
+                    <h5>1. Color Picker Mixing (Pre-mixing)</h5>
+                    <p><strong>What it is:</strong> Choosing your color before painting, using the color picker.</p>
+                    <ul>
+                        <li><strong>Pros:</strong> Precise, clean, predictable, no accidents</li>
+                        <li><strong>Cons:</strong> Less spontaneous, requires planning</li>
+                        <li><strong>Best for:</strong> Controlled work, specific color schemes, beginners</li>
+                        <li><strong>How:</strong> Adjust HSB sliders or click on color wheel before painting</li>
+                    </ul>
+
+                    <h5>2. Brush Mixing (On-Canvas)</h5>
+                    <p><strong>What it is:</strong> Painting one color over another and blending on the canvas.</p>
+                    <ul>
+                        <li><strong>Pros:</strong> Natural feel, happy accidents, smooth transitions</li>
+                        <li><strong>Cons:</strong> Can get muddy, less predictable</li>
+                        <li><strong>Best for:</strong> Painterly work, smooth gradients, impressionistic style</li>
+                        <li><strong>Requires:</strong> Brush with opacity/flow control and mixing settings</li>
+                    </ul>
+
+                    <h5>3. Layer Mixing (Blend Modes)</h5>
+                    <p><strong>What it is:</strong> Using layer blend modes (Multiply, Screen, Overlay, Color, etc.) to mix colors.</p>
+                    <ul>
+                        <li><strong>Pros:</strong> Non-destructive, adjustable, unique effects</li>
+                        <li><strong>Cons:</strong> Less intuitive at first, indirect</li>
+                        <li><strong>Best for:</strong> Lighting effects, color grading, shadows/highlights</li>
+                        <li><strong>How:</strong> Paint on layers set to different blend modes</li>
+                    </ul>
+
+                    <blockquote>
+                        <strong>🎓 Pro Strategy:</strong> Use all three methods! Color picker for base colors, brush mixing for smooth transitions, and layer mixing for lighting. Professionals combine techniques for maximum control and natural results.
+                    </blockquote>
+                </div>
+
+                <h3>Creating Clean Mixes</h3>
+
+                <div class="card" style="background: #e3f2fd;">
+                    <h4>✨ Avoiding Muddy Colors</h4>
+
+                    <p><strong>The Problem:</strong> Digital artists often create muddy, grayish, lifeless colors by mixing incorrectly.</p>
+
+                    <h5>Rules for Clean Mixes:</h5>
+
+                    <div style="margin: 1.5rem 0;">
+                        <h6>Rule 1: Don't Mix Opposite Colors Directly</h6>
+                        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 1rem 0;">
+                            <div style="text-align: center;">
+                                <div style="height: 60px; background: hsl(0, 100%, 50%); border: 2px solid #333;"></div>
+                                <p style="margin: 0.3rem 0; font-size: 0.9rem;">Red</p>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="height: 60px; background: hsl(0, 20%, 40%); border: 2px solid #333;"></div>
+                                <p style="margin: 0.3rem 0; font-size: 0.9rem; color: #e74c3c;">❌ Red + Green = Mud</p>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="height: 60px; background: hsl(120, 100%, 35%); border: 2px solid #333;"></div>
+                                <p style="margin: 0.3rem 0; font-size: 0.9rem;">Green</p>
+                            </div>
+                        </div>
+                        <p><strong>Why:</strong> Complementary colors neutralize each other, creating gray/brown.</p>
+                        <p><strong>Solution:</strong> Mix around the wheel, not across it. Red → Orange → Yellow, not Red → Green.</p>
+
+                        <h6>Rule 2: Limit Your Mixing Steps</h6>
+                        <ul>
+                            <li><strong>2-3 colors maximum:</strong> Each addition muddies the mix</li>
+                            <li><strong>Fewer = cleaner:</strong> Direct path on color wheel</li>
+                            <li><strong>More = grayer:</strong> More complex mixes lose saturation</li>
+                        </ul>
+
+                        <h6>Rule 3: Stay in Similar Value Range</h6>
+                        <ul>
+                            <li><strong>Light + Light:</strong> Clean, bright mixes</li>
+                            <li><strong>Dark + Dark:</strong> Clean, rich mixes</li>
+                            <li><strong>Light + Dark:</strong> Often creates muddy mid-tones</li>
+                        </ul>
+
+                        <h6>Rule 4: Watch Your Saturation</h6>
+                        <ul>
+                            <li><strong>Saturated + Saturated:</strong> Can work but intense</li>
+                            <li><strong>Saturated + Gray:</strong> Mutes the color</li>
+                            <li><strong>Gray + Gray:</strong> Stays neutral</li>
+                        </ul>
+
+                        <h6>Rule 5: Use the Eyedropper</h6>
+                        <ul>
+                            <li><strong>Sample mid-mix:</strong> Pick intermediate colors while painting</li>
+                            <li><strong>Build gradually:</strong> Small steps = cleaner results</li>
+                            <li><strong>Adjust in picker:</strong> Tweak sampled color instead of adding more paint</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3>Color Picker Strategies</h3>
+
+                <div class="card" style="background: #fff3e0;">
+                    <h4>🎯 Efficient Color Selection</h4>
+
+                    <h5>Strategy 1: The Triangle Method (HSB Pickers)</h5>
+                    <p>Most software shows HSB as a wheel + triangle:</p>
+                    <ul>
+                        <li><strong>Outer wheel:</strong> Select hue (what color)</li>
+                        <li><strong>Triangle/Square:</strong> Select saturation + value</li>
+                        <li><strong>Top corner:</strong> Pure, bright color</li>
+                        <li><strong>Bottom corners:</strong> Black (left) and gray/white (right)</li>
+                        <li><strong>Center:</strong> Medium saturation and value</li>
+                    </ul>
+
+                    <h5>Strategy 2: The Sampling Workflow</h5>
+                    <ol>
+                        <li><strong>Start with base color:</strong> Pick your main color</li>
+                        <li><strong>Paint a stroke</strong></li>
+                        <li><strong>Sample it (I key):</strong> Eyedropper your own paint</li>
+                        <li><strong>Adjust in picker:</strong> Shift hue/sat/value slightly</li>
+                        <li><strong>Paint next stroke</strong></li>
+                        <li><strong>Repeat:</strong> Build color gradually</li>
+                    </ol>
+                    <p><strong>Result:</strong> Smooth transitions, cohesive colors, natural progression</p>
+
+                    <h5>Strategy 3: The Swatch Sheet</h5>
+                    <ol>
+                        <li><strong>Create a new layer:</strong> For color testing</li>
+                        <li><strong>Paint swatches:</strong> Test colors before committing</li>
+                        <li><strong>Compare side-by-side:</strong> See relationships</li>
+                        <li><strong>Sample the winners:</strong> Pick best colors for your palette</li>
+                        <li><strong>Delete test layer:</strong> Keep canvas clean</li>
+                    </ol>
+
+                    <h5>Strategy 4: The Value-First Method</h5>
+                    <ol>
+                        <li><strong>Paint in grayscale first:</strong> Get values right</li>
+                        <li><strong>Use Color mode layer:</strong> Add color without changing values</li>
+                        <li><strong>Adjust as needed:</strong> Fine-tune colors</li>
+                        <li><strong>Result:</strong> Strong value structure, guaranteed success</li>
+                    </ol>
+
+                    <p style="padding: 1rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 8px; margin-top: 1rem;">
+                        <strong>🎓 Pro Secret:</strong> The fastest way to improve your color? Fix your values first! Spend 80% of your effort getting light/dark right, only 20% on hue choices. A painting with perfect values and "wrong" hues still works. Perfect hues with wrong values never works.
+                    </p>
+                </div>
+
+                <h3>Eyedropper Techniques</h3>
+
+                <div class="card" style="background: #f3e5f5;">
+                    <h4>💧 Mastering the Eyedropper Tool</h4>
+
+                    <p><strong>What it is:</strong> The eyedropper (usually I key) samples colors from your canvas or references.</p>
+
+                    <h5>Eyedropper Best Practices:</h5>
+
+                    <div style="margin: 1.5rem 0;">
+                        <h6>Sample Your Own Work</h6>
+                        <ul>
+                            <li><strong>Build cohesion:</strong> Reuse colors from your painting</li>
+                            <li><strong>Sample mid-transition:</strong> Pick colors between strokes</li>
+                            <li><strong>Create harmony:</strong> Reused colors = unified palette</li>
+                        </ul>
+
+                        <h6>Sample References Carefully</h6>
+                        <ul>
+                            <li><strong>Don't copy exactly:</strong> Photos have different lighting</li>
+                            <li><strong>Sample multiple spots:</strong> Average the color</li>
+                            <li><strong>Adjust after sampling:</strong> Make it work for your art</li>
+                            <li><strong>Learn, don't steal:</strong> Understand why colors work</li>
+                        </ul>
+
+                        <h6>Sample Radius Settings</h6>
+                        <ul>
+                            <li><strong>Point sample:</strong> Exact pixel (precise but noisy)</li>
+                            <li><strong>3x3 or 5x5 average:</strong> Better for photos (smoother)</li>
+                            <li><strong>Larger average:</strong> General area color</li>
+                        </ul>
+
+                        <h6>Sample Smart</h6>
+                        <ul>
+                            <li><strong>Sample edges:</strong> Where colors meet for smooth blending</li>
+                            <li><strong>Sample shadows:</strong> Learn how your highlights become shadows</li>
+                            <li><strong>Sample mid-tones:</strong> The transition colors are gold</li>
+                        </ul>
+                    </div>
+
+                    <blockquote>
+                        <strong>⚠️ Sampling Trap:</strong> Don't over-rely on eyedropper! It's a tool, not a crutch. Challenge yourself to pick colors without sampling occasionally. This builds your color intuition and understanding.
+                    </blockquote>
+                </div>
+
+                <h3>Common Mixing Mistakes</h3>
+
+                <div class="card" style="background: #ffebee;">
+                    <h4>🚫 What NOT to Do</h4>
+
+                    <table style="width: 100%;">
+                        <thead>
+                            <tr>
+                                <th>Mistake</th>
+                                <th>Why It Fails</th>
+                                <th>Fix</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Adding black to darken</strong></td>
+                                <td>Creates dead, lifeless colors</td>
+                                <td>Lower value in HSB, or add complement</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Adding white to lighten</strong></td>
+                                <td>Washes out and desaturates</td>
+                                <td>Raise value, keep saturation up</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Mixing all colors together</strong></td>
+                                <td>Everything becomes muddy gray</td>
+                                <td>Limit palette, mix deliberately</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Oversaturating everything</strong></td>
+                                <td>Looks garish and amateur</td>
+                                <td>Use medium saturation, reserve bright for accents</td>
+                            </tr>
+                            <tr>
+                                <td><strong>No value contrast</strong></td>
+                                <td>Flat, undefined forms</td>
+                                <td>Exaggerate light/dark differences</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Picking random colors</strong></td>
+                                <td>No cohesion or harmony</td>
+                                <td>Plan palette, use color schemes</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Not testing mixes first</strong></td>
+                                <td>Unexpected muddy results</td>
+                                <td>Test on separate layer first</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>Practical Mixing Exercise</h3>
+
+                <div class="card exercise-card">
+                    <h4>🏋️ Practice: Create a Color Gradient</h4>
+
+                    <p><strong>Goal:</strong> Learn to mix smooth color transitions without muddiness.</p>
+
+                    <h5>Exercise Steps:</h5>
+                    <ol>
+                        <li><strong>Choose two colors:</strong> Start with analogous colors (e.g., blue to purple)</li>
+                        <li><strong>Paint Color A on left</strong></li>
+                        <li><strong>Paint Color B on right</strong></li>
+                        <li><strong>Now create 5 steps between them:</strong>
+                            <ul>
+                                <li>Sample Color A</li>
+                                <li>Adjust slightly toward Color B in picker</li>
+                                <li>Paint</li>
+                                <li>Repeat, gradually shifting toward Color B</li>
+                            </ul>
+                        </li>
+                        <li><strong>Result:</strong> Smooth gradient with no muddy middle!</li>
+                    </ol>
+
+                    <h5>Advanced Version:</h5>
+                    <ul>
+                        <li>Try with complementary colors (harder!)</li>
+                        <li>Create a 2D gradient (color + value changes)</li>
+                        <li>Build a full value scale in one hue</li>
+                        <li>Create saturation scale in one hue</li>
+                    </ul>
+
+                    <p><strong>Time investment:</strong> 15-20 minutes. This exercise builds color intuition faster than anything else!</p>
+                </div>
+            </section>
+
+            <!-- Section 7: Creating Color Palettes -->
+            <section id="palette-creation" class="lesson-section">
+                <h2>Creating Effective Palettes 🎨</h2>
+                
+                <p>A well-planned color palette is the secret to cohesive, professional artwork. Let's learn how to build palettes that work!</p>
+
+                <h3>Limited vs Unlimited Palettes</h3>
+
+                <div class="card" style="background: #e8f5e9;">
+                    <h4>🎨 The Power of Limitation</h4>
+
+                    <h5>Limited Palettes (3-7 colors)</h5>
+                    <div style="display: flex; gap: 0.5rem; margin: 1rem 0; flex-wrap: wrap;">
+                        <div style="width: 70px; height: 70px; background: hsl(200, 70%, 40%); border: 2px solid #333;"></div>
+                        <div style="width: 70px; height: 70px; background: hsl(200, 50%, 60%); border: 2px solid #333;"></div>
+                        <div style="width: 70px; height: 70px; background: hsl(200, 30%, 80%); border: 2px solid #333;"></div>
+                        <div style="width: 70px; height: 70px; background: hsl(30, 80%, 60%); border: 2px solid #333;"></div>
+                        <div style="width: 70px; height: 70px; background: hsl(30, 60%, 80%); border: 2px solid #333;"></div>
+                    </div>
+                    <p><strong>Advantages:</strong></p>
+                    <ul>
+                        <li><strong>Automatic cohesion:</strong> Limited choices = natural harmony</li>
+                        <li><strong>Forces creativity:</strong> Mix variations from few colors</li>
+                        <li><strong>Faster workflow:</strong> Less decision paralysis</li>
+                        <li><strong>Professional look:</strong> Intentional, sophisticated</li>
+                        <li><strong>Easier to balance:</strong> Fewer colors = easier relationships</li>
+                    </ul>
+
+                    <h5>Unlimited Palettes</h5>
+                    <p><strong>Disadvantages:</strong></p>
+                    <ul>
+                        <li><strong>Overwhelming choices:</strong> Analysis paralysis</li>
+                        <li><strong>Easy to create discord:</strong> Random colors clash</li>
+                        <li><strong>Lacks unity:</strong> Too much variety = chaos</li>
+                        <li><strong>Beginner trap:</strong> Seems easier but isn't</li>
+                    </ul>
+
+                    <blockquote>
+                        <strong>🎓 Pro Truth:</strong> Every master artist uses limited palettes! Even paintings that look colorful often use just 5-8 base colors. The variety comes from mixing, not from using 50 different colors. Limit your palette and watch your art improve overnight!
+                    </blockquote>
+                </div>
+
+                <h3>Building a Master Palette</h3>
+
+                <div class="card" style="background: #e3f2fd;">
+                    <h4>🖌️ Your Go-To Color Set</h4>
+
+                    <p><strong>What it is:</strong> A personal set of 8-15 colors you use across multiple projects.</p>
+
+                    <h5>Building Your Master Palette:</h5>
+                    <ol>
+                        <li><strong>Start with a warm and cool of each primary:</strong>
+                            <ul>
+                                <li>Warm Red (orange-red) + Cool Red (purple-red)</li>
+                                <li>Warm Yellow (orange-yellow) + Cool Yellow (green-yellow)</li>
+                                <li>Warm Blue (green-blue) + Cool Blue (purple-blue)</li>
+                            </ul>
+                        </li>
+                        <li><strong>Add earth tones:</strong>
+                            <ul>
+                                <li>Raw Umber (warm brown)</li>
+                                <li>Burnt Sienna (reddish brown)</li>
+                                <li>Yellow Ochre (muted yellow-brown)</li>
+                            </ul>
+                        </li>
+                        <li><strong>Add neutrals:</strong>
+                            <ul>
+                                <li>Warm gray</li>
+                                <li>Cool gray</li>
+                                <li>Off-white (slightly warm)</li>
+                            </ul>
+                        </li>
+                        <li><strong>Add 1-2 signature colors:</strong>
+                            <ul>
+                                <li>Your favorite color</li>
+                                <li>Colors you use frequently</li>
+                            </ul>
+                        </li>
+                    </ol>
+
+                    <h5>Benefits of a Master Palette:</h5>
+                    <ul>
+                        <li><strong>Consistency:</strong> Your work has a cohesive look</li>
+                        <li><strong>Speed:</strong> Don't reinvent the wheel each time</li>
+                        <li><strong>Mastery:</strong> Know your colors intimately</li>
+                        <li><strong>Mixing knowledge:</strong> Learn how your colors interact</li>
+                    </ul>
+                </div>
+
+                <h3>Extracting Palettes from References</h3>
+
+                <div class="card" style="background: #fff3e0;">
+                    <h4>🖼️ Learning from Master Works</h4>
+
+                    <p><strong>Why extract palettes?</strong> Study how masters use color and apply those principles to your work.</p>
+
+                    <h5>How to Extract a Palette:</h5>
+                    <ol>
+                        <li><strong>Find inspiration:</strong> Master painting, photo, movie still, etc.</li>
+                        <li><strong>Identify dominant colors:</strong> What's the main 60% color?</li>
+                        <li><strong>Sample 5-8 key colors:</strong>
+                            <ul>
+                                <li>Dominant color</li>
+                                <li>Secondary color</li>
+                                <li>Accent color</li>
+                                <li>Highlight color</li>
+                                <li>Shadow color</li>
+                                <li>1-3 supporting colors</li>
+                            </ul>
+                        </li>
+                        <li><strong>Create swatches:</strong> Paint them in your software</li>
+                        <li><strong>Analyze relationships:</strong> Why do these work together?</li>
+                        <li><strong>Apply to your work:</strong> Use the palette for your own painting</li>
+                    </ol>
+
+                    <h5>Color Palette Tools:</h5>
+                    <ul>
+                        <li><strong>Adobe Color:</strong> Upload image, extracts palette automatically</li>
+                        <li><strong>Coolors:</strong> Generate and save palettes</li>
+                        <li><strong>Paletton:</strong> Color scheme designer</li>
+                        <li><strong>Color Hunt:</strong> Browse curated palettes</li>
+                        <li><strong>Movies in Color:</strong> Palettes from films</li>
+                        <li><strong>Manual sampling:</strong> Eyedropper in your art software</li>
+                    </ul>
+
+                    <blockquote>
+                        <strong>💡 Learning Tip:</strong> Don't just copy palettes - analyze WHY they work! What's the harmony scheme? What's the 60-30-10 breakdown? How is saturation varied? Understanding the principles lets you create your own successful palettes.
+                    </blockquote>
+                </div>
+
+                <h3>Project-Specific Palettes</h3>
+
+                <div class="card" style="background: #f3e5f5;">
+                    <h4>🎯 Custom Palettes for Each Artwork</h4>
+
+                    <h5>Creating a Project Palette:</h5>
+                    <ol>
+                        <li><strong>Determine mood:</strong> What emotion should this convey?</li>
+                        <li><strong>Choose harmony scheme:</strong> Monochromatic? Complementary? Analogous?</li>
+                        <li><strong>Select 3-7 colors:</strong> Following your chosen scheme</li>
+                        <li><strong>Test together:</strong> Paint swatches side-by-side</li>
+                        <li><strong>Adjust as needed:</strong> Tweak saturation/value</li>
+                        <li><strong>Save the palette:</strong> In your software's swatch panel</li>
+                    </ol>
+
+                    <h5>Palette Organization Methods:</h5>
+
+                    <div style="margin: 1.5rem 0;">
+                        <h6>Method 1: By Function</h6>
+                        <ul>
+                            <li>Skin base, shadow, highlight</li>
+                            <li>Sky base, clouds, horizon</li>
+                            <li>Vegetation base, shadow, highlight</li>
+                        </ul>
+
+                        <h6>Method 2: By Value</h6>
+                        <ul>
+                            <li>Row 1: Darks (shadows)</li>
+                            <li>Row 2: Mids (midtones)</li>
+                            <li>Row 3: Lights (highlights)</li>
+                        </ul>
+
+                        <h6>Method 3: By Temperature</h6>
+                        <ul>
+                            <li>Column 1: Warm colors</li>
+                            <li>Column 2: Neutral colors</li>
+                            <li>Column 3: Cool colors</li>
+                        </ul>
+                    </div>
+
+                    <h5>Saving Palettes in Software:</h5>
+                    <table style="width: 100%; font-size: 0.9rem;">
+                        <thead>
+                            <tr>
+                                <th>Software</th>
+                                <th>How to Save Palette</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Photoshop</strong></td>
+                                <td>Swatches panel → Add colors → Save Swatches</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Krita</strong></td>
+                                <td>Palette Docker → Add colors → Save palette</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Procreate</strong></td>
+                                <td>Palettes panel → + New Palette → Add colors</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Clip Studio</strong></td>
+                                <td>Color Set palette → Add colors → Save</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>Testing Your Palette</h3>
+
+                <div class="card">
+                    <h4>✅ Does Your Palette Work?</h4>
+
+                    <h5>Quick Palette Tests:</h5>
+
+                    <div style="margin: 1.5rem 0;">
+                        <h6>Test 1: Value Check</h6>
+                        <ol>
+                            <li>Paint all your palette colors as swatches</li>
+                            <li>Convert to grayscale (desaturate)</li>
+                            <li>Do you have darks, mids, AND lights?</li>
+                            <li>❌ All similar gray = needs more value range</li>
+                            <li>✅ Clear dark/mid/light = good value structure</li>
+                        </ol>
+
+                        <h6>Test 2: Thumbnail Test</h6>
+                        <ol>
+                            <li>Create quick thumbnail using only palette colors</li>
+                            <li>View from distance or squint</li>
+                            <li>Does it read clearly?</li>
+                            <li>Are relationships obvious?</li>
+                            <li>Does it match your intended mood?</li>
+                        </ol>
+
+                        <h6>Test 3: Harmony Check</h6>
+                        <ol>
+                            <li>Plot palette colors on color wheel</li>
+                            <li>Do they form a recognized harmony pattern?</li>
+                            <li>Or are they random?</li>
+                            <li>Adjust to create clearer relationships</li>
+                        </ol>
+
+                        <h6>Test 4: Saturation Balance</h6>
+                        <ol>
+                            <li>Are most colors medium saturation?</li>
+                            <li>Only 1-2 high saturation accent colors?</li>
+                            <li>Some desaturated neutrals?</li>
+                            <li>❌ All highly saturated = will be garish</li>
+                            <li>✅ Varied saturation = professional look</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="card exercise-card" style="margin-top: 1.5rem;">
+                    <h4>🏋️ Exercise: Build Your First Limited Palette</h4>
+
+                    <p><strong>Challenge:</strong> Create a 5-color palette and paint something with ONLY those colors!</p>
+
+                    <h5>Steps:</h5>
+                    <ol>
+                        <li><strong>Choose a subject:</strong> Simple is best (apple, cup, face)</li>
+                        <li><strong>Select harmony scheme:</strong> Start with analogous (easiest)</li>
+                        <li><strong>Pick 5 colors:</strong>
+                            <ul>
+                                <li>3 analogous colors (e.g., yellow-orange-red)</li>
+                                <li>1 complement for accents</li>
+                                <li>1 neutral (gray or brown)</li>
+                            </ul>
+                        </li>
+                        <li><strong>Paint ONLY using these 5:</strong> No adding colors!</li>
+                        <li><strong>Mix variations:</strong> Adjust value/saturation as needed</li>
+                        <li><strong>Observe results:</strong> Notice how limited = cohesive</li>
+                    </ol>
+
+                    <p><strong>Bonus challenge:</strong> Paint the same subject with 3 different 5-color palettes. See how dramatically color changes the mood!</p>
+                </div>
+            </section>
+
+            <!-- PART E ENDS HERE -->
+
+            <!-- PART F STARTS HERE - FINAL FRAGMENT -->
+
+            <!-- Section 8: Color Psychology & Mood -->
+            <section id="color-psychology" class="lesson-section">
+                <h2>Color Psychology & Mood 🎭</h2>
+                
+                <p>Colors aren't just visual - they're emotional! Understanding color psychology lets you deliberately evoke feelings and tell stories through color choices.</p>
+
+                <div class="card" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white;">
+                    <h3 style="color: white; margin-top: 0;">🧠 The Emotional Language of Color</h3>
+                    <p>Colors trigger psychological and emotional responses. This isn't random - it's based on biology, culture, and learned associations.</p>
+                    <p><strong>Key concepts:</strong></p>
+                    <ul>
+                        <li>Colors communicate faster than words</li>
+                        <li>Emotional impact is immediate and subconscious</li>
+                        <li>Cultural context changes meanings</li>
+                        <li>Context within artwork affects interpretation</li>
+                        <li>Artists use this deliberately to control viewer response</li>
+                    </ul>
+                    <p style="margin-bottom: 0;"><strong>Let's decode color's emotional language!</strong></p>
+                </div>
+
+                <h3>Individual Color Meanings</h3>
+
+                <div class="card" style="background: #ffebee;">
+                    <h4>❤️ Red - Energy, Passion, Danger</h4>
+                    <div style="width: 100%; height: 80px; background: linear-gradient(90deg, hsl(0, 100%, 30%) 0%, hsl(0, 100%, 50%) 50%, hsl(0, 100%, 70%) 100%); border: 2px solid #333; border-radius: 8px; margin: 1rem 0;"></div>
+                    
+                    <p><strong>Positive associations:</strong> Love, passion, energy, excitement, power, courage, determination</p>
+                    <p><strong>Negative associations:</strong> Danger, aggression, violence, anger, warning</p>
+                    <p><strong>Physical effects:</strong> Increases heart rate, creates urgency, stimulates appetite</p>
+                    <p><strong>Cultural notes:</strong> Luck in China, danger in West, passion universally</p>
+                    <p><strong>Use for:</strong> Action scenes, romance, warnings, focal points, drama</p>
+                    <p><strong>Avoid:</strong> Peaceful/calming scenes, backgrounds (too demanding)</p>
+                </div>
+
+                <div class="card" style="background: #fff3e0;">
+                    <h4>🟠 Orange - Warmth, Creativity, Energy</h4>
+                    <div style="width: 100%; height: 80px; background: linear-gradient(90deg, hsl(30, 100%, 30%) 0%, hsl(30, 100%, 50%) 50%, hsl(30, 100%, 70%) 100%); border: 2px solid #333; border-radius: 8px; margin: 1rem 0;"></div>
+                    
+                    <p><strong>Positive associations:</strong> Warmth, enthusiasm, creativity, fun, friendliness, success</p>
+                    <p><strong>Negative associations:</strong> Frivolity, superficiality, impatience</p>
+                    <p><strong>Physical effects:</strong> Stimulating, increases oxygen to brain, energizing</p>
+                    <p><strong>Cultural notes:</strong> Sacred in Buddhism, autumn/harvest in West</p>
+                    <p><strong>Use for:</strong> Sunsets, autumn, playful subjects, warmth, creativity</p>
+                    <p><strong>Avoid:</strong> Serious/somber work, professional/corporate</p>
+                </div>
+
+                <div class="card" style="background: #fffde7;">
+                    <h4>🟡 Yellow - Happiness, Optimism, Attention</h4>
+                    <div style="width: 100%; height: 80px; background: linear-gradient(90deg, hsl(60, 100%, 40%) 0%, hsl(60, 100%, 50%) 50%, hsl(60, 100%, 70%) 100%); border: 2px solid #333; border-radius: 8px; margin: 1rem 0;"></div>
+                    
+                    <p><strong>Positive associations:</strong> Happiness, optimism, sunshine, joy, intellect, energy</p>
+                    <p><strong>Negative associations:</strong> Cowardice, caution, anxiety, sickness (in some contexts)</p>
+                    <p><strong>Physical effects:</strong> Stimulates mental activity, generates muscle energy</p>
+                    <p><strong>Cultural notes:</strong> Imperial color in China, caution universally</p>
+                    <p><strong>Use for:</strong> Sunlight, happiness, spring, children's work, attention</p>
+                    <p><strong>Avoid:</strong> Large areas (eye strain), serious/somber moods</p>
+                </div>
+
+                <div class="card" style="background: #e8f5e9;">
+                    <h4>🟢 Green - Nature, Growth, Harmony</h4>
+                    <div style="width: 100%; height: 80px; background: linear-gradient(90deg, hsl(120, 60%, 25%) 0%, hsl(120, 60%, 35%) 50%, hsl(120, 60%, 60%) 100%); border: 2px solid #333; border-radius: 8px; margin: 1rem 0;"></div>
+                    
+                    <p><strong>Positive associations:</strong> Nature, growth, harmony, freshness, safety, money, renewal</p>
+                    <p><strong>Negative associations:</strong> Envy, sickness, inexperience, misfortune</p>
+                    <p><strong>Physical effects:</strong> Most restful for eyes, reduces stress, calming</p>
+                    <p><strong>Cultural notes:</strong> Islam sacred color, go/safe universally</p>
+                    <p><strong>Use for:</strong> Nature, plants, health, peace, balance, environment</p>
+                    <p><strong>Avoid:</strong> Rarely avoided - very versatile color</p>
+                </div>
+
+                <div class="card" style="background: #e3f2fd;">
+                    <h4>🔵 Blue - Calm, Trust, Depth</h4>
+                    <div style="width: 100%; height: 80px; background: linear-gradient(90deg, hsl(240, 100%, 30%) 0%, hsl(240, 100%, 50%) 50%, hsl(240, 100%, 70%) 100%); border: 2px solid #333; border-radius: 8px; margin: 1rem 0;"></div>
+                    
+                    <p><strong>Positive associations:</strong> Calm, trust, loyalty, wisdom, confidence, stability, depth</p>
+                    <p><strong>Negative associations:</strong> Coldness, aloofness, sadness (feeling blue)</p>
+                    <p><strong>Physical effects:</strong> Slows metabolism, lowers blood pressure, calming</p>
+                    <p><strong>Cultural notes:</strong> Most universally liked color, corporate favorite</p>
+                    <p><strong>Use for:</strong> Sky, water, peace, professionalism, technology, trust</p>
+                    <p><strong>Avoid:</strong> Food (suppresses appetite), overly warm scenes</p>
+                </div>
+
+                <div class="card" style="background: #f3e5f5;">
+                    <h4>🟣 Purple - Royalty, Mystery, Spirituality</h4>
+                    <div style="width: 100%; height: 80px; background: linear-gradient(90deg, hsl(280, 100%, 30%) 0%, hsl(280, 100%, 50%) 50%, hsl(280, 100%, 70%) 100%); border: 2px solid #333; border-radius: 8px; margin: 1rem 0;"></div>
+                    
+                    <p><strong>Positive associations:</strong> Royalty, luxury, mystery, magic, spirituality, wisdom</p>
+                    <p><strong>Negative associations:</strong> Excess, arrogance, mourning (some cultures)</p>
+                    <p><strong>Physical effects:</strong> Uplifting, calming to mind and nerves</p>
+                    <p><strong>Cultural notes:</strong> Historical royalty (expensive dye), spirituality</p>
+                    <p><strong>Use for:</strong> Fantasy, magic, luxury, sophistication, mystery</p>
+                    <p><strong>Avoid:</strong> Earthy/natural scenes, extreme realism</p>
+                </div>
+
+                <div class="card" style="background: #fce4ec;">
+                    <h4>🩷 Pink - Sweetness, Romance, Playfulness</h4>
+                    <div style="width: 100%; height: 80px; background: linear-gradient(90deg, hsl(340, 100%, 50%) 0%, hsl(340, 100%, 70%) 50%, hsl(340, 100%, 90%) 100%); border: 2px solid #333; border-radius: 8px; margin: 1rem 0;"></div>
+                    
+                    <p><strong>Positive associations:</strong> Love, sweetness, romance, innocence, playfulness, femininity</p>
+                    <p><strong>Negative associations:</strong> Immaturity, weakness, over-sentimentality</p>
+                    <p><strong>Physical effects:</strong> Calming, nurturing feeling</p>
+                    <p><strong>Cultural notes:</strong> Gender associations vary by culture and era</p>
+                    <p><strong>Use for:</strong> Romance, children's art, sweetness, softness</p>
+                    <p><strong>Avoid:</strong> Masculine themes (culturally dependent), serious subjects</p>
+                </div>
+
+                <div class="card" style="background: #efebe9;">
+                    <h4>🟤 Brown - Earth, Stability, Reliability</h4>
+                    <div style="width: 100%; height: 80px; background: linear-gradient(90deg, hsl(30, 50%, 20%) 0%, hsl(30, 50%, 35%) 50%, hsl(30, 50%, 60%) 100%); border: 2px solid #333; border-radius: 8px; margin: 1rem 0;"></div>
+                    
+                    <p><strong>Positive associations:</strong> Earth, wood, stability, reliability, comfort, security</p>
+                    <p><strong>Negative associations:</strong> Dirtiness, dullness, boredom</p>
+                    <p><strong>Physical effects:</strong> Grounding, creates sense of wholesomeness</p>
+                    <p><strong>Cultural notes:</strong> Widely neutral, natural associations</p>
+                    <p><strong>Use for:</strong> Earth, wood, historical pieces, naturalism, grounding</p>
+                    <p><strong>Avoid:</strong> Modern/clean themes, bright cheerful work</p>
+                </div>
+
+                <div class="card" style="background: #fafafa;">
+                    <h4>⚪ White - Purity, Simplicity, Cleanliness</h4>
+                    <div style="width: 100%; height: 80px; background: linear-gradient(90deg, hsl(0, 0%, 75%) 0%, hsl(0, 0%, 90%) 50%, hsl(0, 0%, 100%) 100%); border: 2px solid #333; border-radius: 8px; margin: 1rem 0;"></div>
+                    
+                    <p><strong>Positive associations:</strong> Purity, innocence, cleanliness, simplicity, peace, safety</p>
+                    <p><strong>Negative associations:</strong> Sterility, coldness, emptiness</p>
+                    <p><strong>Physical effects:</strong> Creates sense of space and openness</p>
+                    <p><strong>Cultural notes:</strong> Weddings in West, mourning in some Asian cultures</p>
+                    <p><strong>Use for:</strong> Highlights, cleanliness, minimalism, snow, light sources</p>
+                    <p><strong>Avoid:</strong> Rarely pure white - usually tinted slightly</p>
+                </div>
+
+                <div class="card" style="background: #424242; color: white;">
+                    <h4 style="color: white; margin-top: 0;">⚫ Black - Power, Mystery, Elegance</h4>
+                    <div style="width: 100%; height: 80px; background: linear-gradient(90deg, hsl(0, 0%, 0%) 0%, hsl(0, 0%, 20%) 50%, hsl(0, 0%, 40%) 100%); border: 2px solid #666; border-radius: 8px; margin: 1rem 0;"></div>
+                    
+                    <p><strong>Positive associations:</strong> Power, elegance, sophistication, mystery, formality</p>
+                    <p><strong>Negative associations:</strong> Death, evil, mourning, fear, depression</p>
+                    <p><strong>Physical effects:</strong> Creates sense of weight and depth</p>
+                    <p><strong>Cultural notes:</strong> Mourning in West, formality universally</p>
+                    <p><strong>Use for:</strong> Shadows, night, sophistication, drama, depth</p>
+                    <p><strong>Avoid:</strong> Pure black in shadows (unrealistic - use dark colors instead)</p>
+                </div>
+
+                <h3>Creating Mood with Color</h3>
+
+                <div class="card" style="background: #e8f5e9;">
+                    <h4>🎨 Color Moods in Practice</h4>
+
+                    <h5>Warm Color Moods:</h5>
+                    <ul>
+                        <li><strong>Reds, Oranges, Yellows</strong> - Energy, passion, excitement, warmth</li>
+                        <li><strong>Use for:</strong> Action, romance, summer, daytime, fire, intensity</li>
+                        <li><strong>Viewer effect:</strong> Stimulating, energizing, attention-grabbing</li>
+                        <li><strong>Example:</strong> Sunset scene = warm oranges/reds = nostalgic warmth</li>
+                    </ul>
+
+                    <h5>Cool Color Moods:</h5>
+                    <ul>
+                        <li><strong>Blues, Greens, Purples</strong> - Calm, peace, sadness, distance</li>
+                        <li><strong>Use for:</strong> Water, night, winter, tranquility, mystery</li>
+                        <li><strong>Viewer effect:</strong> Calming, somber, introspective</li>
+                        <li><strong>Example:</strong> Moonlit scene = cool blues = melancholy peace</li>
+                    </ul>
+
+                    <h5>Neutral Color Moods:</h5>
+                    <ul>
+                        <li><strong>Grays, Browns, Beiges</strong> - Stability, earthiness, timelessness</li>
+                        <li><strong>Use for:</strong> Historical, serious, grounded, natural</li>
+                        <li><strong>Viewer effect:</strong> Calming, sophisticated, professional</li>
+                        <li><strong>Example:</strong> Muted palette = contemplative, serious tone</li>
+                    </ul>
+
+                    <p style="padding: 1rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 8px; margin-top: 1rem;">
+                        <strong>🎓 Pro Secret:</strong> The fastest way to change mood? Change color temperature! Same scene painted warm = inviting and energetic. Same scene cool = melancholic and distant. This is why professional colorists are so valuable in film - they control the emotional tone entirely through color temperature!
+                    </p>
+                </div>
+
+                <h3>Cultural Color Considerations</h3>
+
+                <div class="card" style="background: #fff3e0;">
+                    <h4>🌍 Color Meanings Around the World</h4>
+
+                    <p><strong>Important:</strong> Color meanings vary significantly by culture! What's positive in one culture may be negative in another.</p>
+
+                    <table style="width: 100%;">
+                        <thead>
+                            <tr>
+                                <th>Color</th>
+                                <th>Western Cultures</th>
+                                <th>Eastern/Other Cultures</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Red</strong></td>
+                                <td>Danger, passion, love</td>
+                                <td>Luck, prosperity, celebration (China)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>White</strong></td>
+                                <td>Purity, weddings, innocence</td>
+                                <td>Death, mourning (China, India)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Black</strong></td>
+                                <td>Mourning, death, formality</td>
+                                <td>Also mourning, but wealth in some contexts</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Yellow</strong></td>
+                                <td>Happiness, caution, cowardice</td>
+                                <td>Sacred, imperial (China), courage (Japan)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Green</strong></td>
+                                <td>Nature, go, envy</td>
+                                <td>Sacred (Islam), fertility, new life</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Purple</strong></td>
+                                <td>Royalty, luxury, spirituality</td>
+                                <td>Mourning (Brazil, Thailand)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <p><strong>For artists:</strong> Consider your audience! Global audience = stick to more universal meanings. Specific cultural context = research that culture's color associations.</p>
+                </div>
+
+            </section>
+
+            <!-- Section 9: Practical Color Application -->
+            <section id="practical-application" class="lesson-section">
+                <h2>Practical Color Application 🎯</h2>
+                
+                <p>Let's apply everything you've learned to real painting scenarios!</p>
+
+                <h3>Common Color Challenges</h3>
+
+                <div class="card" style="background: #ffebee;">
+                    <h4>🎨 Skin Tones</h4>
+
+                    <p><strong>The challenge:</strong> Skin is complex - not just "peach" or "brown"!</p>
+
+                    <h5>Skin Tone Principles:</h5>
+                    <ul>
+                        <li><strong>Never one color:</strong> Skin has undertones, variations, transitions</li>
+                        <li><strong>Base + Red:</strong> All skin has red from blood</li>
+                        <li><strong>Base + Yellow:</strong> Most skin has warm yellow undertones</li>
+                        <li><strong>Base + Blue/Green:</strong> Cool undertones in shadows</li>
+                        <li><strong>Reflected light:</strong> Skin picks up colors from environment</li>
+                    </ul>
+
+                    <h5>Skin Tone Strategy:</h5>
+                    <ol>
+                        <li><strong>Start with base:</strong> Orange-pink to dark brown depending on subject</li>
+                        <li><strong>Add red to warm areas:</strong> Cheeks, nose, ears, knuckles</li>
+                        <li><strong>Add yellow/green to shadows:</strong> Cooler undertones</li>
+                        <li><strong>Add blue/purple to deep shadows:</strong> Color temperature shift</li>
+                        <li><strong>Add environment color:</strong> Blue from sky, green from grass reflection</li>
+                        <li><strong>Vary saturation:</strong> Higher in blood-rich areas, lower in bony areas</li>
+                    </ol>
+
+                    <blockquote>
+                        <strong>💡 Skin Tip:</strong> The most common mistake is using the same color for all skin. Professional portraits use dozens of color variations! Cheeks are redder, shadows are cooler, highlights are warmer. This variety creates life!
+                    </blockquote>
+                </div>
+
+                <div class="card" style="background: #e8f5e9;">
+                    <h4>🌳 Natural Landscapes</h4>
+
+                    <h5>Common Landscape Colors:</h5>
+                    <ul>
+                        <li><strong>Sky:</strong> Not pure blue! Lighter at horizon, darker overhead. Add yellows/pinks near sun.</li>
+                        <li><strong>Grass:</strong> Not pure green! Mix yellows (sunlit) and blues (shadow). Add browns for dead grass.</li>
+                        <li><strong>Trees:</strong> Vary greens - yellow-green sunlit, blue-green shadow, brown-green trunks</li>
+                        <li><strong>Water:</strong> Reflects sky color! Usually blue-green, darker in depths</li>
+                        <li><strong>Mountains:</strong> Blue-gray distance (atmospheric perspective)</li>
+                        <li><strong>Clouds:</strong> Not white! Gray undersides, warm edges near sun</li>
+                    </ul>
+
+                    <h5>Landscape Color Rules:</h5>
+                    <ol>
+                        <li><strong>Atmospheric perspective:</strong> Farther = cooler, lighter, less saturated</li>
+                        <li><strong>Warm light = cool shadows:</strong> Sunlight creates blue-purple shadows</li>
+                        <li><strong>Variety within type:</strong> Not all grass same green!</li>
+                        <li><strong>Time of day changes everything:</strong> Golden hour = warm, noon = cool</li>
+                    </ol>
+                </div>
+
+                <div class="card" style="background: #e3f2fd;">
+                    <h4>💡 Lighting and Color Temperature</h4>
+
+                    <h5>Light Source = Color Temperature:</h5>
+                    <table style="width: 100%;">
+                        <thead>
+                            <tr>
+                                <th>Light Source</th>
+                                <th>Color Temperature</th>
+                                <th>Shadow Color</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Sunlight (noon)</strong></td>
+                                <td>Slightly warm white-yellow</td>
+                                <td>Cool blue-purple</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Sunlight (sunset)</strong></td>
+                                <td>Very warm orange-red</td>
+                                <td>Cool blue-violet</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Overcast</strong></td>
+                                <td>Cool gray-blue</td>
+                                <td>Warm gray</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Indoor tungsten</strong></td>
+                                <td>Very warm yellow-orange</td>
+                                <td>Cool blue-green</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Fluorescent</strong></td>
+                                <td>Cool blue-green</td>
+                                <td>Neutral to warm</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Candle/fire</strong></td>
+                                <td>Very warm orange-red</td>
+                                <td>Deep blue-purple</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <p><strong>The golden rule:</strong> Warm light = cool shadows. Cool light = warm shadows. This creates vibrant, natural lighting!</p>
+                </div>
+
+                <h3>Color Grading Your Artwork</h3>
+
+                <div class="card" style="background: #f3e5f5;">
+                    <h4>🎬 Final Color Polish</h4>
+
+                    <p><strong>Color grading:</strong> Adjusting overall color mood after painting, like in films.</p>
+
+                    <h5>Quick Color Grade Methods:</h5>
+
+                    <div style="margin: 1.5rem 0;">
+                        <h6>Method 1: Color Balance Adjustment</h6>
+                        <ol>
+                            <li>Add Color Balance adjustment layer at top</li>
+                            <li>Shift highlights toward warm or cool</li>
+                            <li>Shift shadows opposite direction</li>
+                            <li>Subtle shifts create huge mood changes</li>
+                        </ol>
+
+                        <h6>Method 2: Gradient Map</h6>
+                        <ol>
+                            <li>Add Gradient Map adjustment layer</li>
+                            <li>Set to low opacity (10-30%)</li>
+                            <li>Choose mood gradient (warm sunset, cool night, etc.)</li>
+                            <li>Instantly unifies colors</li>
+                        </ol>
+
+                        <h6>Method 3: Color Layer</h6>
+                        <ol>
+                            <li>New layer filled with color</li>
+                            <li>Set to Overlay or Color mode</li>
+                            <li>Lower opacity to taste (10-20%)</li>
+                            <li>Tints entire image with chosen color</li>
+                        </ol>
+
+                        <h6>Method 4: Curves Adjustment</h6>
+                        <ol>
+                            <li>Add Curves adjustment layer</li>
+                            <li>Adjust individual RGB channels</li>
+                            <li>Lift shadows, shift midtones, adjust highlights</li>
+                            <li>Most powerful but requires practice</li>
+                        </ol>
+                    </div>
+
+                    <p><strong>When to color grade:</strong> After painting is essentially complete. Color grading is the final polish that ties everything together!</p>
+                </div>
+            </section>
+
+            <!-- Summary Section -->
+            <section id="summary" class="lesson-section">
+                <h2>Summary: Mastering Color 🎓</h2>
+                
+                <div class="card" style="background: #e8f5e9; border-left: 4px solid #4CAF50;">
+                    <h3>🎉 Key Takeaways</h3>
+                    
+                    <h4>The Essential Color Truths:</h4>
+                    <ol>
+                        <li><strong>Value beats hue every time</strong> - Get your lights/darks right before worrying about color</li>
+                        <li><strong>Limited palettes = cohesion</strong> - Fewer colors, mixed well, beats many random colors</li>
+                        <li><strong>Temperature creates depth</strong> - Warm advances, cool recedes</li>
+                        <li><strong>Complementary colors create energy</strong> - But desaturate one to avoid vibration</li>
+                        <li><strong>Colors are relative</strong> - Context changes everything</li>
+                        <li><strong>Natural = varied</strong> - Real objects aren't single colors</li>
+                        <li><strong>Saturation sparingly</strong> - Most pros use medium-low saturation</li>
+                        <li><strong>Warm light = cool shadows</strong> - Create vibrant, natural lighting</li>
+                    </ol>
+                </div>
+
+                <h3>Your Color Journey Action Plan</h3>
+
+                <div class="card" style="background: #e3f2fd;">
+                    <h4>🚀 Next Steps</h4>
+
+                    <h5>This Week:</h5>
+                    <ul>
+                        <li>Create one painting in only 5 colors (limited palette practice)</li>
+                        <li>Do the color gradient exercise (smooth mixing practice)</li>
+                        <li>Analyze 3 master paintings - identify their color schemes</li>
+                        <li>Build your personal master palette (8-12 colors)</li>
+                    </ul>
+
+                    <h5>This Month:</h5>
+                    <ul>
+                        <li>Paint same subject in 3 different color schemes</li>
+                        <li>Practice value studies - paint in grayscale first</li>
+                        <li>Extract and recreate 5 palettes from master works</li>
+                        <li>Experiment with all harmony schemes</li>
+                    </ul>
+
+                    <h5>Long-term Goals:</h5>
+                    <ul>
+                        <li>Develop intuition for color relationships</li>
+                        <li>Build library of successful palettes</li>
+                        <li>Master color grading techniques</li>
+                        <li>Use color deliberately for storytelling</li>
+                    </ul>
+                </div>
+
+                <h3>Common Questions Answered</h3>
+
+                <div class="card" style="background: #fff3e0;">
+                    <h4>❓ FAQ</h4>
+
+                    <details>
+                        <summary><strong>Q: How do I know if my colors are "right"?</strong></summary>
+                        <p><strong>A:</strong> There's no objectively "right" color - only colors that work for your intent! Check: Does it convey the right mood? Do values read clearly in grayscale? Is there a clear harmony scheme? Do colors support the focal point? If yes, they're right!</p>
+                    </details>
+
+                    <details>
+                        <summary><strong>Q: Why do my colors look muddy?</strong></summary>
+                        <p><strong>A:</strong> Common causes: 1) Mixing complementary colors directly, 2) Too many color steps in mix, 3) Oversaturating everything, 4) Poor value structure. Fix: Mix fewer colors, limit palette, check values first, use medium saturation.</p>
+                    </details>
+
+                    <details>
+                        <summary><strong>Q: How many colors should I use?</strong></summary>
+                        <p><strong>A:</strong> Start with 5-7 colors in your palette. Professional paintings often use just 5-8 base colors, creating variety through mixing and value changes. More isn't better - restraint creates cohesion!</p>
+                    </details>
+
+                    <details>
+                        <summary><strong>Q: Should I work in grayscale first?</strong></summary>
+                        <p><strong>A:</strong> It's an excellent technique, especially while learning! Paint in grayscale to nail values, then add color using Color blend mode layer. This guarantees strong value structure. But it's not mandatory - do what feels natural.</p>
+                    </details>
+
+                    <details>
+                        <summary><strong>Q: How do I make colors look more vibrant?</strong></summary>
+                        <p><strong>A:</strong> Paradoxically, use LESS saturation overall! Surround your focal colors with desaturated neutrals. The contrast makes focal colors pop. Also ensure good value contrast - vibrant color with poor values still looks flat.</p>
+                    </details>
+
+                    <details>
+                        <summary><strong>Q: What's the fastest way to improve color skills?</strong></summary>
+                        <p><strong>A:</strong> 1) Master values first (paint in grayscale), 2) Use limited palettes exclusively for a month, 3) Study master colorists' work, 4) Do color gradient exercises daily. The limited palette practice alone will transform your color sense!</p>
+                    </details>
+                </div>
+
+                <blockquote>
+                    <strong>🎨 Final Wisdom:</strong> Color theory gives you the map, but your artistic intuition is the compass. Learn these principles deeply, practice deliberately, then trust your eye. The "rules" are tools to help you achieve your vision - not chains to restrict creativity. Master the science, then embrace the art. Your unique color voice will emerge!
+                </blockquote>
+            </section>
+
+            <!-- What's Next Section -->
+            <section class="lesson-section">
+                <h2>🌟 What's Next?</h2>
+                
+                <div class="card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+                    <h3 style="color: white; margin-top: 0;">Continue Your Digital Art Journey</h3>
+                    <p>With color mastery unlocked, you're ready for advanced techniques!</p>
+
+                    <h4 style="color: white;">Coming Up in This Course:</h4>
+                    <ul>
+                        <li><strong>Masking & Selection Techniques</strong> - Precise control over what you paint</li>
+                        <li><strong>Digital Painting Workflow</strong> - From blank canvas to finished masterpiece</li>
+                        <li><strong>Lighting & Form Fundamentals</strong> - Creating dimension and believability</li>
+                        <li><strong>Texture & Detail Techniques</strong> - Adding surface quality and realism</li>
+                    </ul>
+
+                    <p style="margin-bottom: 0;"><strong>Everything builds on color!</strong> These future lessons will show you how to apply your color knowledge in complete paintings.</p>
+                </div>
+            </section>
+
+            <!-- Lesson Navigation -->
+            <nav class="lesson-nav" aria-label="Lesson Navigation">
+                <a href="layer_workflows.html" class="prev-lesson">← Previous: Layer Workflows</a>
+                <a href="index.html" class="home-link">🏠 Home</a>
+                <a href="masking_selection.html" class="next-lesson">Next: Masking & Selection →</a>
+            </nav>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer style="text-align: center; padding: 2rem; margin-top: 4rem; border-top: 1px solid var(--border-color);">
+        <p>&copy; 2024 Digital Artistry Course. All rights reserved.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #666;">
+            <a href="index.html">Home</a> | 
+            <a href="index.html#modules">All Lessons</a> | 
+            <a href="mailto:contact@digitalartistry.course">Contact</a>
+        </p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/clipboard.js"></script>
+    <script src="js/course-enhancements.js"></script>
+</body>
+</html>

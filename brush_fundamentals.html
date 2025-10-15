@@ -1,0 +1,2576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Master digital brush fundamentals - Understanding brush dynamics, settings, and techniques that work across Krita, Photoshop, Procreate, and all major painting software">
+    <meta name="author" content="Digital Artistry Course">
+    <title>Brush Fundamentals - Universal Digital Art Course</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-to-main">Skip to main content</a>
+    
+    <!-- Progress indicator -->
+    <div class="progress-indicator" role="progressbar" aria-label="Page scroll progress">
+        <div class="progress-bar"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">🎨 Digital Artistry</a>
+            <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-expanded="false" aria-controls="nav-links">
+                ☰
+            </button>
+            <div class="nav-links" id="nav-links" aria-hidden="false">
+                <a href="index.html">Home</a>
+                <a href="index.html#modules">All Lessons</a>
+                <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#modules">Foundation Module</a></li>
+            <li aria-current="page">Brush Fundamentals</li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <div class="container">
+            <!-- Lesson Header -->
+            <header>
+                <h1>🖌️ Brush Fundamentals</h1>
+                <p class="lead">The brush is your primary creative instrument in digital art. Understanding how brushes work—their anatomy, dynamics, and settings—will transform your painting from awkward to expressive. This lesson covers universal brush concepts that apply to ALL digital painting software!</p>
+                
+                <!-- Learning objectives -->
+                <div class="card">
+                    <h2>🎯 What You'll Learn</h2>
+                    <p>By the end of this lesson, you'll be able to:</p>
+                    <ul>
+                        <li>Understand how digital brushes work fundamentally (stamp system, spacing, flow)</li>
+                        <li>Master essential brush settings (size, opacity, flow, hardness)</li>
+                        <li>Use pressure dynamics and tablet settings effectively</li>
+                        <li>Choose the right brush for different techniques and effects</li>
+                        <li>Create and customize brushes in any software</li>
+                        <li>Understand brush terminology across different programs</li>
+                        <li>Develop efficient brush workflows for painting</li>
+                    </ul>
+                </div>
+
+                <!-- Universal Approach -->
+                <div class="card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+                    <h3 style="color: white; margin-top: 0;">🌍 Universal Brush Knowledge</h3>
+                    <p>Digital brushes work the same way in every program—they're all built on the same core principles!</p>
+                    <p><strong>Programs covered in this lesson:</strong></p>
+                    <ul style="columns: 2; column-gap: 2rem;">
+                        <li>🎨 Adobe Photoshop</li>
+                        <li>🎨 Krita (Free)</li>
+                        <li>🎨 Procreate (iPad)</li>
+                        <li>🎨 Clip Studio Paint</li>
+                        <li>🎨 Corel Painter</li>
+                        <li>🎨 PaintStorm Studio</li>
+                        <li>🎨 Affinity Photo</li>
+                        <li>🎨 And more!</li>
+                    </ul>
+                    <p style="margin-bottom: 0;"><strong>The concepts are identical—only the button names change!</strong></p>
+                </div>
+            </header>
+
+            <!-- Table of Contents -->
+            <nav class="card" aria-label="Table of Contents">
+                <h2 style="cursor: pointer; user-select: none; display: flex; justify-content: space-between; align-items: center;" onclick="toggleTOC()">
+                    <span>📑 Table of Contents</span>
+                    <span id="toc-toggle-icon" style="transition: transform 0.3s;">▼</span>
+                </h2>
+                <ol id="toc-list" style="overflow: hidden; transition: max-height 0.3s ease-out; max-height: 900px; margin: 0; padding-left: 1.5rem;">
+                    <li><a href="#understanding-brushes" class="toc-link">Understanding Digital Brushes</a></li>
+                    <li><a href="#brush-anatomy" class="toc-link">Anatomy of a Digital Brush</a></li>
+                    <li><a href="#core-settings" class="toc-link">Core Brush Settings</a></li>
+                    <li><a href="#pressure-dynamics" class="toc-link">Pressure and Dynamics</a></li>
+                    <li><a href="#brush-types" class="toc-link">Essential Brush Types</a></li>
+                    <li><a href="#creating-brushes" class="toc-link">Creating Custom Brushes</a></li>
+                    <li><a href="#brush-techniques" class="toc-link">Brush Techniques and Workflows</a></li>
+                    <li><a href="#cross-software" class="toc-link">Cross-Software Brush Guide</a></li>
+                    <li><a href="#common-problems" class="toc-link">Common Brush Problems</a></li>
+                </ol>
+            </nav>
+
+            <!-- Section 1: Understanding Digital Brushes -->
+            <section id="understanding-brushes" class="lesson-section">
+                <h2>Understanding Digital Brushes 🎨</h2>
+                
+                <p>Before diving into settings, let's understand what a digital brush actually IS. This foundational knowledge will make everything else click into place!</p>
+                
+                <blockquote>
+                    <strong>🌟 Paradigm Shift:</strong> A digital brush isn't trying to be a "worse" version of a real brush. It's an entirely new instrument with capabilities impossible in traditional media. Once you embrace this, the creative possibilities become endless!
+                </blockquote>
+
+                <h3>How Digital Brushes Actually Work</h3>
+
+                <div class="card" style="background: #e8f5e9;">
+                    <h4>🎯 The Stamp System</h4>
+                    <p>Every digital brush is fundamentally a "stamp" that gets repeated along your stroke path:</p>
+                    
+                    <ol>
+                        <li><strong>You move your stylus/mouse</strong> across the canvas</li>
+                        <li><strong>Software samples your path</strong> at regular intervals</li>
+                        <li><strong>At each sample point,</strong> it places a "stamp" of the brush tip</li>
+                        <li><strong>The stamps blend together</strong> creating the appearance of a continuous stroke</li>
+                        <li><strong>Dynamics modify each stamp</strong> based on pressure, tilt, speed, etc.</li>
+                    </ol>
+
+                    <p><strong>Key insight:</strong> When you see a "smooth" brush stroke, you're actually seeing hundreds of stamps placed very close together!</p>
+                </div>
+
+                <div class="mermaid">
+                    graph TB
+                        A["Your Input"]
+                        B["Brush Engine"]
+                        C["Canvas Result"]
+                        
+                        A --> A1["Stylus Position"]
+                        A --> A2["Pressure Level"]
+                        A --> A3["Tilt Angle"]
+                        A --> A4["Movement Speed"]
+                        
+                        B --> B1["Generate Stamp"]
+                        B --> B2["Apply Spacing"]
+                        B --> B3["Calculate Dynamics"]
+                        B --> B4["Apply Texture"]
+                        B --> B5["Blend with Canvas"]
+                        
+                        A --> B
+                        B --> C
+                        
+                        C --> C1["Beautiful Stroke!"]
+                        
+                        style A fill:#43e97b,stroke:#333,stroke-width:2px
+                        style B fill:#667eea,stroke:#333,stroke-width:2px,color:#fff
+                        style C fill:#f093fb,stroke:#333,stroke-width:2px
+                </div>
+
+                <h3>Interactive Brush Demo</h3>
+
+                <canvas id="brush-demo" width="800" height="300" style="max-width: 100%; height: auto; border: 2px solid #ddd; border-radius: 8px; background: white; cursor: crosshair; margin: 1.5rem 0;"></canvas>
+                
+                <p style="text-align: center; color: #666; margin-bottom: 2rem;"><em>👆 Interactive Demo: Click and drag to see how brush stamps work! Notice the individual stamps that make up the stroke.</em></p>
+                
+                <script>
+                    const brushDemo = document.getElementById('brush-demo');
+                    const bdCtx = brushDemo.getContext('2d');
+                    let isDrawingDemo = false;
+                    let lastX = 0;
+                    let lastY = 0;
+                    
+                    // Handle high DPI
+                    const bdScale = window.devicePixelRatio || 1;
+                    brushDemo.width = 800 * bdScale;
+                    brushDemo.height = 300 * bdScale;
+                    bdCtx.scale(bdScale, bdScale);
+                    
+                    // Draw initial instruction
+                    bdCtx.fillStyle = '#999';
+                    bdCtx.font = '16px Arial';
+                    bdCtx.textAlign = 'center';
+                    bdCtx.fillText('Click and drag to paint! Watch the individual stamps appear.', 400, 150);
+                    
+                    brushDemo.addEventListener('mousedown', (e) => {
+                        isDrawingDemo = true;
+                        const rect = brushDemo.getBoundingClientRect();
+                        lastX = (e.clientX - rect.left) * (800 / rect.width);
+                        lastY = (e.clientY - rect.top) * (300 / rect.height);
+                        
+                        // Clear instructions on first click
+                        bdCtx.clearRect(0, 0, 800, 300);
+                    });
+                    
+                    brushDemo.addEventListener('mousemove', (e) => {
+                        if (!isDrawingDemo) return;
+                        
+                        const rect = brushDemo.getBoundingClientRect();
+                        const currentX = (e.clientX - rect.left) * (800 / rect.width);
+                        const currentY = (e.clientY - rect.top) * (300 / rect.height);
+                        
+                        // Calculate distance
+                        const distance = Math.sqrt(Math.pow(currentX - lastX, 2) + Math.pow(currentY - lastY, 2));
+                        
+                        // Spacing between stamps (this is a key brush setting!)
+                        const spacing = 12;
+                        const steps = Math.max(1, Math.floor(distance / spacing));
+                        
+                        for (let i = 0; i <= steps; i++) {
+                            const t = i / steps;
+                            const x = lastX + (currentX - lastX) * t;
+                            const y = lastY + (currentY - lastY) * t;
+                            
+                            // Draw stamp with transparency (this is opacity + flow)
+                            bdCtx.globalAlpha = 0.4;
+                            bdCtx.fillStyle = '#3498db';
+                            bdCtx.beginPath();
+                            bdCtx.arc(x, y, 12, 0, Math.PI * 2);
+                            bdCtx.fill();
+                            
+                            // Show stamp outline so you can see individual stamps
+                            bdCtx.globalAlpha = 0.8;
+                            bdCtx.strokeStyle = '#2c3e50';
+                            bdCtx.lineWidth = 1;
+                            bdCtx.stroke();
+                        }
+                        
+                        bdCtx.globalAlpha = 1;
+                        lastX = currentX;
+                        lastY = currentY;
+                    });
+                    
+                    brushDemo.addEventListener('mouseup', () => {
+                        isDrawingDemo = false;
+                    });
+                    
+                    brushDemo.addEventListener('mouseleave', () => {
+                        isDrawingDemo = false;
+                    });
+                    
+                    // Touch support
+                    brushDemo.addEventListener('touchstart', (e) => {
+                        e.preventDefault();
+                        const touch = e.touches[0];
+                        const mouseEvent = new MouseEvent('mousedown', {
+                            clientX: touch.clientX,
+                            clientY: touch.clientY
+                        });
+                        brushDemo.dispatchEvent(mouseEvent);
+                    });
+                    
+                    brushDemo.addEventListener('touchmove', (e) => {
+                        e.preventDefault();
+                        const touch = e.touches[0];
+                        const mouseEvent = new MouseEvent('mousemove', {
+                            clientX: touch.clientX,
+                            clientY: touch.clientY
+                        });
+                        brushDemo.dispatchEvent(mouseEvent);
+                    });
+                    
+                    brushDemo.addEventListener('touchend', (e) => {
+                        e.preventDefault();
+                        const mouseEvent = new MouseEvent('mouseup', {});
+                        brushDemo.dispatchEvent(mouseEvent);
+                    });
+
+                    // Clear button
+                    const clearBtn = document.createElement('button');
+                    clearBtn.textContent = 'Clear Canvas';
+                    clearBtn.style.cssText = 'display: block; margin: 1rem auto; padding: 0.5rem 1rem; background: #3498db; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 14px;';
+                    clearBtn.addEventListener('click', () => {
+                        bdCtx.clearRect(0, 0, 800, 300);
+                        bdCtx.fillStyle = '#999';
+                        bdCtx.font = '16px Arial';
+                        bdCtx.textAlign = 'center';
+                        bdCtx.fillText('Click and drag to paint! Watch the individual stamps appear.', 400, 150);
+                    });
+                    brushDemo.parentNode.insertBefore(clearBtn, brushDemo.nextSibling);
+                </script>
+
+                <h3>Why This Matters</h3>
+
+                <div class="card">
+                    <h4>🧠 Understanding the System Unlocks Everything</h4>
+                    <p>Once you understand brushes are made of stamps, many brush behaviors make perfect sense:</p>
+
+                    <ul>
+                        <li><strong>Spacing:</strong> Controls distance between stamps (tight = smooth, loose = dotted)</li>
+                        <li><strong>Opacity:</strong> How see-through each stamp is</li>
+                        <li><strong>Flow:</strong> How much paint each stamp deposits</li>
+                        <li><strong>Size:</strong> How big each stamp is</li>
+                        <li><strong>Texture:</strong> Pattern applied to each stamp</li>
+                        <li><strong>Dynamics:</strong> How stamps change based on your input</li>
+                    </ul>
+
+                    <p><strong>Pro insight:</strong> Every brush setting is really just controlling what happens to these stamps!</p>
+                </div>
+
+                <h3>Digital vs Traditional Brushes</h3>
+
+                <div class="card" style="background: #fff3e0;">
+                    <h4>⚖️ Key Differences to Embrace</h4>
+
+                    <table style="width: 100%;">
+                        <thead>
+                            <tr>
+                                <th>Aspect</th>
+                                <th>Traditional Brush</th>
+                                <th>Digital Brush</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Paint Source</strong></td>
+                                <td>Runs out, must reload</td>
+                                <td>Infinite paint!</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Color Mixing</strong></td>
+                                <td>Mixes on palette/canvas</td>
+                                <td>Can be pure or mixing, you choose</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Texture</strong></td>
+                                <td>From bristles + surface</td>
+                                <td>From stamp shape + texture setting</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Undo</strong></td>
+                                <td>Not possible (permanent)</td>
+                                <td>Infinite undo!</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Drying Time</strong></td>
+                                <td>Must wait for paint to dry</td>
+                                <td>Instant, or can simulate drying</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Cleanup</strong></td>
+                                <td>Wash brushes, dispose paint</td>
+                                <td>Just close the program!</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Pressure Response</strong></td>
+                                <td>Natural physics</td>
+                                <td>Perfectly customizable curves</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Brush Switching</strong></td>
+                                <td>Physical process</td>
+                                <td>Instant (keyboard shortcut)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <p><strong>The takeaway:</strong> Digital brushes aren't "worse" than traditional—they're DIFFERENT, with unique advantages and creative possibilities!</p>
+                </div>
+
+                <blockquote>
+                    <strong>💭 Mindset Shift:</strong> Stop trying to make digital brushes behave exactly like real brushes. Instead, learn what digital brushes can do that real brushes CAN'T—paint with light, switch colors instantly, undo mistakes, apply impossible textures, etc. That's where the magic lives!
+                </blockquote>
+
+            </section>
+
+            <!-- Section 2: Anatomy of a Digital Brush -->
+            <section id="brush-anatomy" class="lesson-section">
+                <h2>Anatomy of a Digital Brush 🔬</h2>
+                
+                <p>Let's dissect a digital brush to understand all its components. Think of this as learning the "organs" of your primary creative tool!</p>
+
+                <canvas id="anatomy-canvas" width="800" height="500" style="max-width: 100%; height: auto; border: 2px solid #ddd; border-radius: 8px; background: #f8f9fa; margin: 1.5rem 0;"></canvas>
+                
+                <script>
+                    const anatomyCanvas = document.getElementById('anatomy-canvas');
+                    const aCtx = anatomyCanvas.getContext('2d');
+                    
+                    // Handle high DPI
+                    const aScale = window.devicePixelRatio || 1;
+                    anatomyCanvas.width = 800 * aScale;
+                    anatomyCanvas.height = 500 * aScale;
+                    aCtx.scale(aScale, aScale);
+                    
+                    // Title
+                    aCtx.fillStyle = '#333';
+                    aCtx.font = 'bold 20px Arial';
+                    aCtx.textAlign = 'center';
+                    aCtx.fillText('Digital Brush Anatomy', 400, 35);
+                    
+                    // Draw central brush representation
+                    const centerX = 400;
+                    const centerY = 250;
+                    
+                    // Main brush circle with texture
+                    const gradient = aCtx.createRadialGradient(centerX, centerY, 0, centerX, centerY, 60);
+                    gradient.addColorStop(0, '#3498db');
+                    gradient.addColorStop(1, '#2c3e50');
+                    aCtx.fillStyle = gradient;
+                    aCtx.beginPath();
+                    aCtx.arc(centerX, centerY, 60, 0, Math.PI * 2);
+                    aCtx.fill();
+                    
+                    // Add texture pattern overlay
+                    aCtx.globalAlpha = 0.3;
+                    aCtx.fillStyle = '#ecf0f1';
+                    for(let i = 0; i < 12; i++) {
+                        for(let j = 0; j < 12; j++) {
+                            if(Math.random() > 0.6) {
+                                const x = centerX - 55 + i * 9;
+                                const y = centerY - 55 + j * 9;
+                                const dist = Math.sqrt(Math.pow(x - centerX, 2) + Math.pow(y - centerY, 2));
+                                if(dist < 60) {
+                                    aCtx.fillRect(x, y, 6, 6);
+                                }
+                            }
+                        }
+                    }
+                    aCtx.globalAlpha = 1;
+                    
+                    // Component labels with arrows
+                    const components = [
+                        { x: 200, y: 100, toX: centerX - 45, toY: centerY - 45, label: 'TIP SHAPE', desc: 'Basic form' },
+                        { x: 600, y: 100, toX: centerX + 45, toY: centerY - 45, label: 'SIZE', desc: 'Diameter' },
+                        { x: 150, y: 250, toX: centerX - 65, toY: centerY, label: 'HARDNESS', desc: 'Edge softness' },
+                        { x: 650, y: 250, toX: centerX + 65, toY: centerY, label: 'OPACITY', desc: 'Transparency' },
+                        { x: 200, y: 400, toX: centerX - 45, toY: centerY + 45, label: 'SPACING', desc: 'Stamp distance' },
+                        { x: 600, y: 400, toX: centerX + 45, toY: centerY + 45, label: 'TEXTURE', desc: 'Surface pattern' }
+                    ];
+                    
+                    components.forEach(comp => {
+                        // Draw arrow line
+                        aCtx.strokeStyle = '#e74c3c';
+                        aCtx.lineWidth = 2;
+                        aCtx.beginPath();
+                        aCtx.moveTo(comp.x, comp.y);
+                        aCtx.lineTo(comp.toX, comp.toY);
+                        aCtx.stroke();
+                        
+                        // Draw arrowhead
+                        const angle = Math.atan2(comp.toY - comp.y, comp.toX - comp.x);
+                        aCtx.beginPath();
+                        aCtx.moveTo(comp.toX, comp.toY);
+                        aCtx.lineTo(comp.toX - 10 * Math.cos(angle - Math.PI/6), comp.toY - 10 * Math.sin(angle - Math.PI/6));
+                        aCtx.lineTo(comp.toX - 10 * Math.cos(angle + Math.PI/6), comp.toY - 10 * Math.sin(angle + Math.PI/6));
+                        aCtx.closePath();
+                        aCtx.fillStyle = '#e74c3c';
+                        aCtx.fill();
+                        
+                        // Draw label background
+                        aCtx.fillStyle = '#e74c3c';
+                        aCtx.fillRect(comp.x - 60, comp.y - 25, 120, 35);
+                        
+                        // Draw label text
+                        aCtx.fillStyle = 'white';
+                        aCtx.font = 'bold 12px Arial';
+                        aCtx.textAlign = 'center';
+                        aCtx.fillText(comp.label, comp.x, comp.y - 10);
+                        aCtx.font = '10px Arial';
+                        aCtx.fillText(comp.desc, comp.x, comp.y + 3);
+                    });
+                </script>
+
+                <h3>The Six Core Components</h3>
+
+                <div class="card">
+                    <h4>1. 🎯 Tip Shape (The Foundation)</h4>
+                    <p><strong>What it is:</strong> The basic form of the stamp that gets repeated</p>
+                    <p><strong>Common shapes:</strong></p>
+                    <ul>
+                        <li><strong>Round:</strong> Most versatile, mimics traditional round brushes</li>
+                        <li><strong>Flat/Square:</strong> Good for hard edges, architectural details</li>
+                        <li><strong>Textured:</strong> Contains built-in texture pattern</li>
+                        <li><strong>Custom:</strong> Any image can be a brush tip (leaves, stars, etc.)</li>
+                    </ul>
+                    <p><strong>How to change:</strong> Brush settings panel → Shape/Tip dropdown</p>
+                </div>
+
+                <div class="card" style="margin-top: 1rem;">
+                    <h4>2. 📏 Size (The Scale)</h4>
+                    <p><strong>What it is:</strong> Diameter of the brush in pixels</p>
+                    <p><strong>Range:</strong> Usually 1px - 5000px (depends on software)</p>
+                    <p><strong>When to use what:</strong></p>
+                    <ul>
+                        <li><strong>Tiny (1-5px):</strong> Fine details, eyelashes, hair strands</li>
+                        <li><strong>Small (5-20px):</strong> Eyes, nose details, small features</li>
+                        <li><strong>Medium (20-100px):</strong> General painting, faces, objects</li>
+                        <li><strong>Large (100-300px):</strong> Backgrounds, base colors, large forms</li>
+                        <li><strong>Huge (300+px):</strong> Skies, gradients, atmospheric effects</li>
+                    </ul>
+                    <p><strong>Quick adjust:</strong> [ = smaller, ] = larger (universal shortcut)</p>
+                </div>
+
+                <div class="card" style="margin-top: 1rem;">
+                    <h4>3. 🌫️ Hardness (The Edge Quality)</h4>
+                    <p><strong>What it is:</strong> How sharp or soft the brush edge is</p>
+                    <p><strong>Range:</strong> 0% (super soft) to 100% (crisp edge)</p>
+                    <p><strong>Practical uses:</strong></p>
+                    <ul>
+                        <li><strong>0-20% (Very Soft):</strong> Atmosphere, fog, soft shadows, airbrushing</li>
+                        <li><strong>30-50% (Medium):</strong> General painting, skin, organic forms</li>
+                        <li><strong>60-80% (Firm):</strong> Defined edges, hair, clothing folds</li>
+                        <li><strong>90-100% (Hard):</strong> Sharp lines, graphic design, pixel art</li>
+                    </ul>
+                    <p><strong>Pro tip:</strong> Most painting happens with 30-70% hardness brushes!</p>
+                </div>
+
+                <div class="card" style="margin-top: 1rem;">
+                    <h4>4. 👻 Opacity (The Transparency)</h4>
+                    <p><strong>What it is:</strong> How see-through your paint is</p>
+                    <p><strong>Range:</strong> 0% (invisible) to 100% (solid)</p>
+                    <p><strong>Painting strategies:</strong></p>
+                    <ul>
+                        <li><strong>10-30%:</strong> Glazing, subtle tints, atmospheric effects</li>
+                        <li><strong>40-60%:</strong> Building up color gradually (traditional approach)</li>
+                        <li><strong>70-90%:</strong> Strong color application, most painting</li>
+                        <li><strong>100%:</strong> Full coverage, blocking in, final highlights</li>
+                    </ul>
+                    <p><strong>Quick adjust:</strong> Number keys (1 = 10%, 2 = 20%, ..., 0 = 100%)</p>
+                </div>
+
+                <div class="card" style="margin-top: 1rem;">
+                    <h4>5. 📍 Spacing (The Stamp Distance)</h4>
+                    <p><strong>What it is:</strong> Distance between individual stamps in a stroke</p>
+                    <p><strong>Range:</strong> 1% (ultra smooth) to 200%+ (very dotted)</p>
+                    <p><strong>Effect on strokes:</strong></p>
+                    <ul>
+                        <li><strong>1-10%:</strong> Perfectly smooth, continuous line</li>
+                        <li><strong>15-25%:</strong> Standard painting (most brushes here)</li>
+                        <li><strong>30-50%:</strong> Visible texture, painterly effect</li>
+                        <li><strong>75-100%:</strong> Stamps barely touch, textured look</li>
+                        <li><strong>100%+:</strong> Individual stamps visible, stippling effect</li>
+                    </ul>
+                    <p><strong>Performance note:</strong> Lower spacing = more stamps = more processing power needed</p>
+                </div>
+
+                <div class="card" style="margin-top: 1rem;">
+                    <h4>6. 🧱 Texture (The Surface Pattern)</h4>
+                    <p><strong>What it is:</strong> Pattern applied to brush stamps for surface feel</p>
+                    <p><strong>Common textures:</strong></p>
+                    <ul>
+                        <li><strong>Canvas:</strong> Simulates canvas weave</li>
+                        <li><strong>Paper:</strong> Various paper grains</li>
+                        <li><strong>Noise:</strong> Random grain for organic feel</li>
+                        <li><strong>Custom:</strong> Import any image as texture</li>
+                    </ul>
+                    <p><strong>Texture settings:</strong></p>
+                    <ul>
+                        <li><strong>Scale:</strong> How big texture pattern is</li>
+                        <li><strong>Depth:</strong> How strongly texture affects brush</li>
+                        <li><strong>Mode:</strong> How texture interacts with brush tip</li>
+                    </ul>
+                </div>
+
+                <blockquote style="margin-top: 1.5rem;">
+                    <strong>🎓 Master Tip:</strong> You don't need to understand all settings at once! Start by mastering Size, Opacity, and Hardness. These three alone will cover 90% of your painting needs. Add complexity gradually as you grow more comfortable.
+                </blockquote>
+
+            </section>
+
+            <!-- PART A ENDS HERE -->
+            <!-- Section 3: Core Brush Settings -->
+            <section id="core-settings" class="lesson-section">
+                <h2>Core Brush Settings ⚙️</h2>
+                
+                <p>Let's go deeper into the settings that have the biggest impact on your painting. Understanding these will give you precise control over your brushwork!</p>
+
+                <h3>The Big Four: Size, Opacity, Flow, Hardness</h3>
+
+                <div class="mermaid">
+                    graph TD
+                        A["Essential Brush Settings"]
+                        A --> B["Size"]
+                        A --> C["Opacity"]
+                        A --> D["Flow"]
+                        A --> E["Hardness"]
+                        
+                        B --> B1["Controls diameter<br/>[ ] keys"]
+                        C --> C1["Controls transparency<br/>Number keys"]
+                        D --> D1["Controls paint deposit<br/>Shift + Number"]
+                        E --> E1["Controls edge softness<br/>Settings panel"]
+                        
+                        style A fill:#667eea,stroke:#333,stroke-width:2px,color:#fff
+                        style B fill:#43e97b,stroke:#333,stroke-width:2px
+                        style C fill:#f093fb,stroke:#333,stroke-width:2px
+                        style D fill:#4facfe,stroke:#333,stroke-width:2px
+                        style E fill:#f5576c,stroke:#333,stroke-width:2px
+                </div>
+
+                <h3>Visual Settings Comparison</h3>
+
+                <canvas id="settings-comparison" width="800" height="600" style="max-width: 100%; height: auto; border: 2px solid #ddd; border-radius: 8px; background: white; margin: 1.5rem 0;"></canvas>
+                
+                <script>
+                    const settingsCanvas = document.getElementById('settings-comparison');
+                    const sCtx = settingsCanvas.getContext('2d');
+                    
+                    // Handle high DPI
+                    const sScale = window.devicePixelRatio || 1;
+                    settingsCanvas.width = 800 * sScale;
+                    settingsCanvas.height = 600 * sScale;
+                    sCtx.scale(sScale, sScale);
+                    
+                    // Title
+                    sCtx.fillStyle = '#333';
+                    sCtx.font = 'bold 18px Arial';
+                    sCtx.textAlign = 'center';
+                    sCtx.fillText('How Settings Affect Your Strokes', 400, 30);
+                    
+                    // SIZE comparison
+                    sCtx.textAlign = 'left';
+                    sCtx.font = 'bold 16px Arial';
+                    sCtx.fillStyle = '#333';
+                    sCtx.fillText('SIZE:', 30, 70);
+                    
+                    const sizes = [5, 15, 30, 50];
+                    sizes.forEach((size, i) => {
+                        sCtx.fillStyle = '#3498db';
+                        sCtx.beginPath();
+                        sCtx.arc(150 + i * 120, 70, size, 0, Math.PI * 2);
+                        sCtx.fill();
+                        
+                        sCtx.fillStyle = '#666';
+                        sCtx.font = '12px Arial';
+                        sCtx.textAlign = 'center';
+                        sCtx.fillText(size + 'px', 150 + i * 120, 110);
+                    });
+                    
+                    // OPACITY comparison
+                    sCtx.textAlign = 'left';
+                    sCtx.font = 'bold 16px Arial';
+                    sCtx.fillStyle = '#333';
+                    sCtx.fillText('OPACITY:', 30, 180);
+                    
+                    const opacities = [0.25, 0.5, 0.75, 1.0];
+                    opacities.forEach((opacity, i) => {
+                        sCtx.globalAlpha = opacity;
+                        sCtx.fillStyle = '#e74c3c';
+                        sCtx.fillRect(130 + i * 120, 150, 60, 50);
+                        
+                        sCtx.globalAlpha = 1;
+                        sCtx.fillStyle = '#666';
+                        sCtx.font = '12px Arial';
+                        sCtx.textAlign = 'center';
+                        sCtx.fillText(Math.round(opacity * 100) + '%', 160 + i * 120, 220);
+                    });
+                    
+                    // FLOW comparison
+                    sCtx.textAlign = 'left';
+                    sCtx.font = 'bold 16px Arial';
+                    sCtx.fillStyle = '#333';
+                    sCtx.fillText('FLOW (buildup):', 30, 290);
+                    
+                    const flows = [0.2, 0.4, 0.7, 1.0];
+                    flows.forEach((flow, i) => {
+                        // Simulate flow buildup by layering
+                        const baseX = 160 + i * 120;
+                        const baseY = 280;
+                        
+                        for(let j = 0; j < 8; j++) {
+                            sCtx.globalAlpha = flow * 0.25;
+                            sCtx.fillStyle = '#2ecc71';
+                            sCtx.beginPath();
+                            sCtx.arc(baseX + j * 4, baseY, 20, 0, Math.PI * 2);
+                            sCtx.fill();
+                        }
+                        
+                        sCtx.globalAlpha = 1;
+                        sCtx.fillStyle = '#666';
+                        sCtx.font = '12px Arial';
+                        sCtx.textAlign = 'center';
+                        sCtx.fillText(Math.round(flow * 100) + '%', baseX, 330);
+                    });
+                    
+                    // HARDNESS comparison
+                    sCtx.textAlign = 'left';
+                    sCtx.font = 'bold 16px Arial';
+                    sCtx.fillStyle = '#333';
+                    sCtx.fillText('HARDNESS:', 30, 400);
+                    
+                    const hardnesses = [0, 40, 70, 100];
+                    hardnesses.forEach((hardness, i) => {
+                        const baseX = 160 + i * 120;
+                        const baseY = 400;
+                        
+                        if (hardness === 0) {
+                            // Super soft
+                            const grad = sCtx.createRadialGradient(baseX, baseY, 0, baseX, baseY, 30);
+                            grad.addColorStop(0, '#9b59b6');
+                            grad.addColorStop(0.4, 'rgba(155, 89, 182, 0.5)');
+                            grad.addColorStop(1, 'rgba(155, 89, 182, 0)');
+                            sCtx.fillStyle = grad;
+                            sCtx.fillRect(baseX - 30, baseY - 30, 60, 60);
+                        } else if (hardness === 40) {
+                            // Medium soft
+                            const grad = sCtx.createRadialGradient(baseX, baseY, 0, baseX, baseY, 25);
+                            grad.addColorStop(0, '#9b59b6');
+                            grad.addColorStop(0.7, 'rgba(155, 89, 182, 0.5)');
+                            grad.addColorStop(1, 'rgba(155, 89, 182, 0)');
+                            sCtx.fillStyle = grad;
+                            sCtx.fillRect(baseX - 25, baseY - 25, 50, 50);
+                        } else if (hardness === 70) {
+                            // Medium hard
+                            const grad = sCtx.createRadialGradient(baseX, baseY, 0, baseX, baseY, 22);
+                            grad.addColorStop(0, '#9b59b6');
+                            grad.addColorStop(0.85, '#9b59b6');
+                            grad.addColorStop(1, 'rgba(155, 89, 182, 0)');
+                            sCtx.fillStyle = grad;
+                            sCtx.beginPath();
+                            sCtx.arc(baseX, baseY, 22, 0, Math.PI * 2);
+                            sCtx.fill();
+                        } else {
+                            // Hard edge
+                            sCtx.fillStyle = '#9b59b6';
+                            sCtx.beginPath();
+                            sCtx.arc(baseX, baseY, 20, 0, Math.PI * 2);
+                            sCtx.fill();
+                        }
+                        
+                        sCtx.fillStyle = '#666';
+                        sCtx.font = '12px Arial';
+                        sCtx.textAlign = 'center';
+                        sCtx.fillText(hardness + '%', baseX, 450);
+                    });
+                    
+                    // SPACING comparison
+                    sCtx.textAlign = 'left';
+                    sCtx.font = 'bold 16px Arial';
+                    sCtx.fillStyle = '#333';
+                    sCtx.fillText('SPACING:', 30, 520);
+                    
+                    const spacings = [5, 20, 50, 100];
+                    spacings.forEach((spacing, i) => {
+                        const baseX = 140 + i * 120;
+                        const baseY = 520;
+                        const stampSize = 10;
+                        const numStamps = 6;
+                        
+                        sCtx.fillStyle = '#f39c12';
+                        for(let j = 0; j < numStamps; j++) {
+                            sCtx.beginPath();
+                            sCtx.arc(baseX + j * (spacing/2.5), baseY, stampSize, 0, Math.PI * 2);
+                            sCtx.fill();
+                        }
+                        
+                        sCtx.fillStyle = '#666';
+                        sCtx.font = '12px Arial';
+                        sCtx.textAlign = 'center';
+                        sCtx.fillText(spacing + '%', baseX + 30, 560);
+                    });
+                    
+                    sCtx.globalAlpha = 1;
+                </script>
+
+                <h3>Deep Dive: Opacity vs Flow</h3>
+
+                <div class="card" style="background: #e3f2fd;">
+                    <h4>🤔 The Confusing Pair: What's the Difference?</h4>
+                    <p>This is THE most confusing concept for beginners. Let's make it crystal clear!</p>
+
+                    <h5>Opacity (Master Transparency):</h5>
+                    <ul>
+                        <li><strong>What it controls:</strong> Overall transparency of the stroke</li>
+                        <li><strong>Key behavior:</strong> Doesn't build up when you paint over the same spot</li>
+                        <li><strong>Think of it as:</strong> How transparent your brush is in one pass</li>
+                        <li><strong>Example:</strong> 50% opacity = stroke is 50% see-through, period</li>
+                    </ul>
+
+                    <h5>Flow (Paint Release Rate):</h5>
+                    <ul>
+                        <li><strong>What it controls:</strong> How much paint releases per stamp</li>
+                        <li><strong>Key behavior:</strong> DOES build up when you paint over the same spot</li>
+                        <li><strong>Think of it as:</strong> How "loaded" your brush is with paint</li>
+                        <li><strong>Example:</strong> 50% flow = releases half the paint, but builds up to 100% if you keep painting</li>
+                    </ul>
+
+                    <h5>The Practical Difference:</h5>
+                    <table style="width: 100%; margin-top: 1rem;">
+                        <thead>
+                            <tr>
+                                <th>Scenario</th>
+                                <th>With Opacity</th>
+                                <th>With Flow</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Paint once</td>
+                                <td>50% transparent</td>
+                                <td>50% transparent</td>
+                            </tr>
+                            <tr>
+                                <td>Paint over same spot</td>
+                                <td>Still 50% transparent</td>
+                                <td>Builds up darker!</td>
+                            </tr>
+                            <tr>
+                                <td>Best for</td>
+                                <td>Glazing, consistent coverage</td>
+                                <td>Traditional painting feel, building up</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="card" style="background: #fff3e0; margin-top: 1.5rem;">
+                    <h4>🎨 When to Use What?</h4>
+
+                    <h5>Use LOW Opacity (10-40%) when:</h5>
+                    <ul>
+                        <li>Glazing transparent color layers</li>
+                        <li>Creating subtle gradients</li>
+                        <li>Soft shadows and highlights</li>
+                        <li>Atmospheric effects (fog, haze)</li>
+                        <li>You want consistent, even coverage</li>
+                    </ul>
+
+                    <h5>Use LOW Flow (10-40%) when:</h5>
+                    <ul>
+                        <li>Want traditional painting feel</li>
+                        <li>Building up color gradually</li>
+                        <li>Creating smooth transitions by layering</li>
+                        <li>Textured, painterly effects</li>
+                        <li>You want buildup control</li>
+                    </ul>
+
+                    <h5>Use BOTH Low when:</h5>
+                    <ul>
+                        <li>Ultra-subtle color adjustments</li>
+                        <li>Soft, atmospheric painting</li>
+                        <li>Maximum control over buildup</li>
+                    </ul>
+
+                    <h5>Use BOTH High (80-100%) when:</h5>
+                    <ul>
+                        <li>Blocking in base colors</li>
+                        <li>Strong, decisive marks</li>
+                        <li>Final details and highlights</li>
+                        <li>Opaque, graphic style</li>
+                    </ul>
+                </div>
+
+                <blockquote>
+                    <strong>💡 Pro Secret:</strong> Most professional digital painters keep opacity at 100% and vary flow instead. This gives you the traditional painting experience where colors build up naturally. Try it!
+                </blockquote>
+
+                <h3>Hardness: The Edge Controller</h3>
+
+                <div class="card">
+                    <h4>🌫️ Understanding Edge Quality</h4>
+                    <p>Hardness determines how sharp or soft your brush edge is. This is CRUCIAL for different painting needs!</p>
+
+                    <h5>The Hardness Scale:</h5>
+                    <ul>
+                        <li><strong>0-10% (Ultra Soft):</strong>
+                            <ul>
+                                <li>Extremely diffuse, almost invisible edge</li>
+                                <li>Perfect for: Clouds, atmosphere, soft light</li>
+                                <li>Behaves like: Airbrush spray</li>
+                            </ul>
+                        </li>
+                        <li><strong>20-40% (Soft):</strong>
+                            <ul>
+                                <li>Gentle transition to transparency</li>
+                                <li>Perfect for: Skin, organic forms, blending</li>
+                                <li>Behaves like: Soft round brush</li>
+                            </ul>
+                        </li>
+                        <li><strong>50-70% (Medium):</strong>
+                            <ul>
+                                <li>Visible edge but still blends nicely</li>
+                                <li>Perfect for: General painting, most subjects</li>
+                                <li>Behaves like: Standard artist brush</li>
+                            </ul>
+                        </li>
+                        <li><strong>80-95% (Hard):</strong>
+                            <ul>
+                                <li>Crisp, defined edge with slight softness</li>
+                                <li>Perfect for: Hair, sharp details, clothing edges</li>
+                                <li>Behaves like: Firm detail brush</li>
+                            </ul>
+                        </li>
+                        <li><strong>100% (Razor Sharp):</strong>
+                            <ul>
+                                <li>Perfectly crisp edge, no transition</li>
+                                <li>Perfect for: Graphic design, pixel art, technical work</li>
+                                <li>Behaves like: Digital pen tool</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <h5>Hardness Painting Strategy:</h5>
+                    <p><strong>The 3-Brush Method:</strong></p>
+                    <ol>
+                        <li><strong>Soft brush (30-40%):</strong> Your main painting brush for 80% of work</li>
+                        <li><strong>Medium brush (60-70%):</strong> For defining edges and sharpening forms</li>
+                        <li><strong>Hard brush (90-100%):</strong> For final sharp details, highlights, fine lines</li>
+                    </ol>
+                    <p>Having these three ready lets you switch between them quickly based on what you're painting!</p>
+                </div>
+
+                <h3>Spacing: The Hidden Performance Setting</h3>
+
+                <div class="card" style="background: #f3e5f5;">
+                    <h4>📍 Spacing Impacts Everything</h4>
+                    <p>Spacing is often overlooked, but it dramatically affects both appearance AND performance!</p>
+
+                    <h5>How Spacing Works:</h5>
+                    <ul>
+                        <li><strong>Measured as percentage</strong> of brush size</li>
+                        <li><strong>10% spacing</strong> = stamps placed every 10% of brush diameter</li>
+                        <li><strong>Lower spacing</strong> = more stamps = smoother line BUT slower</li>
+                        <li><strong>Higher spacing</strong> = fewer stamps = texture BUT faster</li>
+                    </ul>
+
+                    <h5>Spacing Sweet Spots:</h5>
+                    <table style="width: 100%;">
+                        <thead>
+                            <tr>
+                                <th>Spacing</th>
+                                <th>Appearance</th>
+                                <th>Best For</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1-5%</td>
+                                <td>Perfectly smooth</td>
+                                <td>Inking, line art, smooth painting</td>
+                            </tr>
+                            <tr>
+                                <td>10-20%</td>
+                                <td>Smooth with slight texture</td>
+                                <td>General painting (most common)</td>
+                            </tr>
+                            <tr>
+                                <td>25-50%</td>
+                                <td>Visible brush marks</td>
+                                <td>Painterly effects, visible brushwork</td>
+                            </tr>
+                            <tr>
+                                <td>60-90%</td>
+                                <td>Stamps barely overlapping</td>
+                                <td>Dry brush, rough texture</td>
+                            </tr>
+                            <tr>
+                                <td>100%+</td>
+                                <td>Individual stamps visible</td>
+                                <td>Stippling, scatter brushes, special effects</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h5>Performance Impact:</h5>
+                    <p><strong>If your software feels slow while painting:</strong></p>
+                    <ul>
+                        <li>Increase spacing from 10% to 20% (huge performance boost!)</li>
+                        <li>You'll barely notice visual difference</li>
+                        <li>Computer has to render 50% fewer stamps</li>
+                        <li>Smoother painting experience</li>
+                    </ul>
+                </div>
+
+                <blockquote style="margin-top: 1.5rem;">
+                    <strong>⚡ Performance Tip:</strong> If painting feels laggy, check your spacing first! Many artists use 1-5% spacing unnecessarily. Bumping it to 15-20% makes virtually no visual difference but DOUBLES performance!
+                </blockquote>
+
+            </section>
+
+            <!-- Section 4: Pressure and Dynamics -->
+            <section id="pressure-dynamics" class="lesson-section">
+                <h2>Pressure and Dynamics 🎮</h2>
+                
+                <p>This is where digital painting becomes truly expressive! Pressure dynamics make your brush respond to how you move your stylus, creating natural, organic strokes.</p>
+
+                <h3>Understanding Tablet Pressure</h3>
+
+                <div class="card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+                    <h4 style="color: white; margin-top: 0;">✏️ What Your Tablet Tells the Software</h4>
+                    <p>Modern drawing tablets send multiple types of data with every movement:</p>
+                    
+                    <ul>
+                        <li><strong>Pressure (0-8192 levels):</strong> How hard you're pressing
+                            <ul>
+                                <li>Light touch = low pressure value</li>
+                                <li>Heavy press = high pressure value</li>
+                                <li>Most tablets: 2048-8192 levels of sensitivity</li>
+                            </ul>
+                        </li>
+                        <li><strong>Tilt (X and Y angles):</strong> Angle of your stylus
+                            <ul>
+                                <li>Vertical = 90 degrees</li>
+                                <li>Angled = less than 90 degrees</li>
+                                <li>Great for calligraphy and shading</li>
+                            </ul>
+                        </li>
+                        <li><strong>Rotation (0-360°):</strong> Twist of your stylus barrel
+                            <ul>
+                                <li>Only on special pens (Art Pen, Pro Pen 3D)</li>
+                                <li>Great for flat brushes</li>
+                            </ul>
+                        </li>
+                        <li><strong>Speed:</strong> How fast you're moving
+                            <ul>
+                                <li>Software calculates this from position changes</li>
+                                <li>Useful for expressive, gestural strokes</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <h3>Pressure-Controlled Properties</h3>
+
+                <div class="mermaid">
+                    graph TD
+                        A["Pressure Input"]
+                        A --> B["Size"]
+                        A --> C["Opacity"]
+                        A --> D["Flow"]
+                        A --> E["Color"]
+                        A --> F["Texture"]
+                        
+                        B --> B1["Light = thin<br/>Hard = thick"]
+                        C --> C1["Light = transparent<br/>Hard = opaque"]
+                        D --> D1["Light = less paint<br/>Hard = more paint"]
+                        E --> E1["Light = Color A<br/>Hard = Color B"]
+                        F --> F1["Light = smooth<br/>Hard = textured"]
+                        
+                        style A fill:#e74c3c,stroke:#333,stroke-width:2px,color:#fff
+                        style B fill:#3498db,stroke:#333,stroke-width:2px
+                        style C fill:#2ecc71,stroke:#333,stroke-width:2px
+                        style D fill:#f39c12,stroke:#333,stroke-width:2px
+                        style E fill:#9b59b6,stroke:#333,stroke-width:2px
+                        style F fill:#1abc9c,stroke:#333,stroke-width:2px
+                </div>
+
+                <h3>Common Dynamics Setups</h3>
+
+                <div class="card">
+                    <h4>🎯 Professional Brush Configurations</h4>
+                    
+                    <table style="width: 100%;">
+                        <thead>
+                            <tr>
+                                <th>Brush Type</th>
+                                <th>Pressure → Size</th>
+                                <th>Pressure → Opacity</th>
+                                <th>Pressure → Flow</th>
+                                <th>Result</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Sketching Pencil</strong></td>
+                                <td>✅ Medium</td>
+                                <td>✅ High</td>
+                                <td>❌ None</td>
+                                <td>Natural pencil feel with varying darkness and width</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Inking Pen</strong></td>
+                                <td>✅ High</td>
+                                <td>❌ None</td>
+                                <td>❌ None</td>
+                                <td>Clean lines with varying thickness, consistent darkness</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Soft Painting Brush</strong></td>
+                                <td>✅ Low-Med</td>
+                                <td>✅ Medium</td>
+                                <td>❌ None</td>
+                                <td>Painterly with subtle size and opacity variation</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Airbrush</strong></td>
+                                <td>✅ Low</td>
+                                <td>❌ None</td>
+                                <td>✅ High</td>
+                                <td>Spray effect with buildup based on pressure</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Watercolor</strong></td>
+                                <td>❌ None</td>
+                                <td>✅ High</td>
+                                <td>✅ High</td>
+                                <td>Wet, fluid paint with natural buildup</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Charcoal</strong></td>
+                                <td>✅ Medium</td>
+                                <td>✅ Medium</td>
+                                <td>✅ Low</td>
+                                <td>Gritty, builds up like real charcoal</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Flat Painting Brush</strong></td>
+                                <td>❌ None</td>
+                                <td>❌ None</td>
+                                <td>❌ None</td>
+                                <td>Consistent coverage, like digital bucket fill</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>Setting Up Dynamics</h3>
+
+                <div class="card" style="background: #e8f5e9;">
+                    <h4>⚙️ How to Configure Pressure Response</h4>
+                    <p>The exact location varies by software, but the concept is universal:</p>
+
+                    <h5>General Process:</h5>
+                    <ol>
+                        <li><strong>Open brush settings</strong> (usually F5 or in brush panel)</li>
+                        <li><strong>Find dynamics section</strong> (may be called "Brush Dynamics", "Pen Pressure", "Transfer", etc.)</li>
+                        <li><strong>For each property</strong> (Size, Opacity, Flow):
+                            <ul>
+                                <li>Enable pressure control (checkbox or dropdown)</li>
+                                <li>Adjust the curve (if available)</li>
+                                <li>Test the feel</li>
+                            </ul>
+                        </li>
+                        <li><strong>Save your brush</strong> once you like the feel</li>
+                    </ol>
+
+                    <h5>Software-Specific Locations:</h5>
+                    <ul>
+                        <li><strong>Photoshop:</strong> Brush Settings (F5) → Shape Dynamics, Transfer</li>
+                        <li><strong>Krita:</strong> Brush Editor → Opacity, Size, Flow tabs</li>
+                        <li><strong>Procreate:</strong> Brush Studio → Dynamics section (Apple Pencil tab)</li>
+                        <li><strong>Clip Studio:</strong> Sub Tool Detail → Brush Size, Opacity</li>
+                        <li><strong>PaintStorm:</strong> Brush Settings → Bristles, Behavior tabs</li>
+                    </ul>
+                </div>
+
+                <h3>Pressure Curves: Fine-Tuning Your Feel</h3>
+
+                <div class="card">
+                    <h4>📈 Understanding Pressure Curves</h4>
+                    <p>Most software lets you adjust HOW pressure affects properties using curves:</p>
+
+                    <canvas id="pressure-curves" width="800" height="400" style="max-width: 100%; height: auto; border: 2px solid #ddd; border-radius: 8px; background: #f8f9fa; margin: 1rem 0;"></canvas>
+                    
+                    <script>
+                        const pcCanvas = document.getElementById('pressure-curves');
+                        const pcCtx = pcCanvas.getContext('2d');
+                        
+                        // Handle high DPI
+                        const pcScale = window.devicePixelRatio || 1;
+                        pcCanvas.width = 800 * pcScale;
+                        pcCanvas.height = 400 * pcScale;
+                        pcCtx.scale(pcScale, pcScale);
+                        
+                        // Title
+                        pcCtx.fillStyle = '#333';
+                        pcCtx.font = 'bold 16px Arial';
+                        pcCtx.textAlign = 'center';
+                        pcCtx.fillText('Pressure Curve Examples', 400, 25);
+                        
+                        // Draw three curve examples
+                        const curves = [
+                            {x: 150, y: 200, name: 'Linear (Default)', points: [[0,0], [1,1]]},
+                            {x: 400, y: 200, name: 'Soft (Light touch)', points: [[0,0], [0.3, 0.7], [1,1]]},
+                            {x: 650, y: 200, name: 'Firm (Heavy press)', points: [[0,0], [0.7, 0.3], [1,1]]}
+                        ];
+                        
+                        curves.forEach(curve => {
+                            // Draw graph background
+                            pcCtx.fillStyle = 'white';
+                            pcCtx.fillRect(curve.x - 80, curve.y - 80, 160, 160);
+                            pcCtx.strokeStyle = '#ddd';
+                            pcCtx.lineWidth = 1;
+                            pcCtx.strokeRect(curve.x - 80, curve.y - 80, 160, 160);
+                            
+                            // Draw grid
+                            pcCtx.strokeStyle = '#eee';
+                            for(let i = 1; i < 4; i++) {
+                                pcCtx.beginPath();
+                                pcCtx.moveTo(curve.x - 80, curve.y - 80 + i * 40);
+                                pcCtx.lineTo(curve.x + 80, curve.y - 80 + i * 40);
+                                pcCtx.stroke();
+                                
+                                pcCtx.beginPath();
+                                pcCtx.moveTo(curve.x - 80 + i * 40, curve.y - 80);
+                                pcCtx.lineTo(curve.x - 80 + i * 40, curve.y + 80);
+                                pcCtx.stroke();
+                            }
+                            
+                            // Draw curve
+                            pcCtx.strokeStyle = '#e74c3c';
+                            pcCtx.lineWidth = 3;
+                            pcCtx.beginPath();
+                            
+                            for(let t = 0; t <= 1; t += 0.01) {
+                                let x, y;
+                                if(curve.points.length === 2) {
+                                    // Linear
+                                    x = curve.x - 80 + t * 160;
+                                    y = curve.y + 80 - t * 160;
+                                } else {
+                                    // Quadratic bezier
+                                    const p0 = curve.points[0];
+                                    const p1 = curve.points[1];
+                                    const p2 = curve.points[2];
+                                    const mt = 1 - t;
+                                    const bx = mt * mt * p0[0] + 2 * mt * t * p1[0] + t * t * p2[0];
+                                    const by = mt * mt * p0[1] + 2 * mt * t * p1[1] + t * t * p2[1];
+                                    x = curve.x - 80 + bx * 160;
+                                    y = curve.y + 80 - by * 160;
+                                }
+                                
+                                if(t === 0) {
+                                    pcCtx.moveTo(x, y);
+                                } else {
+                                    pcCtx.lineTo(x, y);
+                                }
+                            }
+                            pcCtx.stroke();
+                            
+                            // Label
+                            pcCtx.fillStyle = '#333';
+                            pcCtx.font = '12px Arial';
+                            pcCtx.textAlign = 'center';
+                            pcCtx.fillText(curve.name, curve.x, curve.y + 100);
+                            
+                            // Axis labels
+                            pcCtx.font = '10px Arial';
+                            pcCtx.fillStyle = '#666';
+                            pcCtx.fillText('Pressure →', curve.x, curve.y + 115);
+                            
+                            pcCtx.save();
+                            pcCtx.translate(curve.x - 100, curve.y);
+                            pcCtx.rotate(-Math.PI / 2);
+                            pcCtx.fillText('Output →', 0, 0);
+                            pcCtx.restore();
+                        });
+                    </script>
+
+                    <h5>Curve Meanings:</h5>
+                    <ul>
+                        <li><strong>Linear (Diagonal line):</strong> Direct 1:1 relationship. Press 50% = 50% output. Natural feel.</li>
+                        <li><strong>Soft (Curved upward):</strong> Light touches produce more output. Good if you press lightly.</li>
+                        <li><strong>Firm (Curved downward):</strong> Need more pressure for output. Good if you press hard.</li>
+                        <li><strong>S-Curve:</strong> Subtle at light/heavy, sensitive in middle. Advanced control.</li>
+                    </ul>
+
+                    <h5>When to Adjust Curves:</h5>
+                    <ul>
+                        <li><strong>Brush feels too sensitive:</strong> Use firm curve (lower)</li>
+                        <li><strong>Brush feels unresponsive:</strong> Use soft curve (higher)</li>
+                        <li><strong>Want more control in light touches:</strong> Steepen curve at start</li>
+                        <li><strong>Want more control in heavy presses:</strong> Steepen curve at end</li>
+                    </ul>
+                </div>
+
+                <h3>Calibrating Your Tablet</h3>
+
+                <div class="card" style="background: #fff3e0;">
+                    <h4>⚖️ Getting the Perfect Pressure Feel</h4>
+
+                    <h5>Step 1: Test Your Natural Pressure</h5>
+                    <ol>
+                        <li>Open a blank canvas</li>
+                        <li>Make several strokes at your normal, comfortable pressure</li>
+                        <li>Note how thick/dark they are</li>
+                        <li>This is your baseline</li>
+                    </ol>
+
+                    <h5>Step 2: Identify Issues</h5>
+                    <ul>
+                        <li><strong>Lines too thin:</strong> You press lightly, need softer curve</li>
+                        <li><strong>Lines too thick:</strong> You press hard, need firmer curve</li>
+                        <li><strong>No variation:</strong> Pressure dynamics not enabled!</li>
+                        <li><strong>Jumpy response:</strong> Tablet driver issue or too extreme curve</li>
+                    </ul>
+
+                    <h5>Step 3: Adjust Settings</h5>
+                    <p><strong>In software:</strong></p>
+                    <ul>
+                        <li>Find pressure curve settings</li>
+                        <li>Adjust curve based on your needs</li>
+                        <li>Test and iterate</li>
+                    </ul>
+                    
+                    <p><strong>In tablet driver (Wacom, Huion, etc.):</strong></p>
+                    <ul>
+                        <li>Open tablet properties/settings</li>
+                        <li>Find "Pen Pressure" or "Pressure Curve"</li>
+                        <li>Adjust global pressure (affects all software)</li>
+                        <li>Test in multiple programs</li>
+                    </ul>
+
+                    <h5>Step 4: Create Presets</h5>
+                    <ul>
+                        <li>Save different pressure settings for different styles</li>
+                        <li>"Sketching" preset = very sensitive</li>
+                        <li>"Painting" preset = medium sensitivity</li>
+                        <li>"Inking" preset = controlled, less sensitive</li>
+                    </ul>
+                </div>
+
+                <blockquote>
+                    <strong>💪 Pro Practice:</strong> Spend 30 minutes JUST practicing pressure control. Draw lines from light to heavy, circles with varying thickness, gradients using only pressure. This muscle memory is the foundation of expressive digital painting!
+                </blockquote>
+
+            </section>
+
+            <!-- PART B ENDS HERE -->
+            <!-- Section 5: Essential Brush Types -->
+            <section id="brush-types" class="lesson-section">
+                <h2>Essential Brush Types 🖌️</h2>
+                
+                <p>Not all brushes are created equal! Different brush types serve different purposes. Let's explore the essential categories every digital artist should have in their toolkit.</p>
+
+                <h3>The Core Brush Library</h3>
+
+                <div class="mermaid">
+                    graph TB
+                        A["Essential Brush Types"]
+                        A --> B["Basic Brushes"]
+                        A --> C["Painting Brushes"]
+                        A --> D["Texture Brushes"]
+                        A --> E["Special Effect Brushes"]
+                        
+                        B --> B1["Round<br/>Square<br/>Hard/Soft"]
+                        C --> C1["Oil<br/>Watercolor<br/>Acrylic"]
+                        D --> D1["Canvas<br/>Paper<br/>Grunge"]
+                        E --> E1["Smudge<br/>Blend<br/>Scatter"]
+                        
+                        style A fill:#667eea,stroke:#333,stroke-width:2px,color:#fff
+                        style B fill:#43e97b,stroke:#333,stroke-width:2px
+                        style C fill:#f093fb,stroke:#333,stroke-width:2px
+                        style D fill:#4facfe,stroke:#333,stroke-width:2px
+                        style E fill:#f5576c,stroke:#333,stroke-width:2px
+                </div>
+
+                <h3>1. Basic Brushes (Your Foundation)</h3>
+
+                <div class="card" style="background: #e8f5e9;">
+                    <h4>⚫ Round Brush (The Workhorse)</h4>
+                    <p><strong>What it is:</strong> Circular tip, usually with pressure sensitivity</p>
+                    <p><strong>Characteristics:</strong></p>
+                    <ul>
+                        <li>Simple, predictable behavior</li>
+                        <li>Size varies with pressure</li>
+                        <li>Can be soft or hard edged</li>
+                        <li>Universal across all software</li>
+                    </ul>
+                    <p><strong>When to use:</strong></p>
+                    <ul>
+                        <li>90% of your painting!</li>
+                        <li>Sketching and line work</li>
+                        <li>Base colors and blocking in</li>
+                        <li>Blending and smoothing</li>
+                        <li>Details and finishing</li>
+                    </ul>
+                    <p><strong>Variations to have:</strong></p>
+                    <ul>
+                        <li><strong>Hard Round (90-100% hardness):</strong> Crisp lines, details</li>
+                        <li><strong>Soft Round (30-50% hardness):</strong> General painting</li>
+                        <li><strong>Very Soft Round (0-20% hardness):</strong> Blending, atmosphere</li>
+                    </ul>
+                    <blockquote>
+                        <strong>💡 Pro Insight:</strong> You could create entire paintings with just a soft round brush and nothing else. It's the most important brush in digital art!
+                    </blockquote>
+                </div>
+
+                <div class="card" style="margin-top: 1.5rem;">
+                    <h4>⬜ Square/Flat Brush</h4>
+                    <p><strong>What it is:</strong> Rectangular or square tip shape</p>
+                    <p><strong>Characteristics:</strong></p>
+                    <ul>
+                        <li>Straight edges</li>
+                        <li>Can be rotated with stylus tilt/rotation</li>
+                        <li>Mimics traditional flat brushes</li>
+                    </ul>
+                    <p><strong>When to use:</strong></p>
+                    <ul>
+                        <li>Architectural elements</li>
+                        <li>Hard edges and geometric forms</li>
+                        <li>Blocking in large areas</li>
+                        <li>Creating brush stroke texture</li>
+                        <li>Calligraphy and lettering</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="margin-top: 1.5rem;">
+                    <h4>✏️ Pencil Brush</h4>
+                    <p><strong>What it is:</strong> Mimics traditional pencil with texture</p>
+                    <p><strong>Characteristics:</strong></p>
+                    <ul>
+                        <li>Grainy, textured appearance</li>
+                        <li>Builds up with multiple strokes</li>
+                        <li>Usually has high spacing for texture</li>
+                        <li>Often uses paper texture overlay</li>
+                    </ul>
+                    <p><strong>When to use:</strong></p>
+                    <ul>
+                        <li>Sketching and concept work</li>
+                        <li>Traditional art look</li>
+                        <li>Texture and grain effects</li>
+                        <li>Rough drawings and studies</li>
+                    </ul>
+                </div>
+
+                <h3>2. Painting Brushes (Artistic Effects)</h3>
+
+                <div class="card" style="background: #f3e5f5;">
+                    <h4>🎨 Oil Paint Brush</h4>
+                    <p><strong>What it is:</strong> Simulates thick, textured oil paint</p>
+                    <p><strong>Characteristics:</strong></p>
+                    <ul>
+                        <li>Visible brush stroke texture</li>
+                        <li>Color smearing and mixing</li>
+                        <li>Impasto effects (thick paint texture)</li>
+                        <li>Often has bristle patterns</li>
+                    </ul>
+                    <p><strong>When to use:</strong></p>
+                    <ul>
+                        <li>Painterly, traditional look</li>
+                        <li>Portrait and figure painting</li>
+                        <li>Landscapes with visible brushwork</li>
+                        <li>When you want texture and "life"</li>
+                    </ul>
+                    <p><strong>Settings to look for:</strong></p>
+                    <ul>
+                        <li>Color mixing on canvas</li>
+                        <li>Bristle dynamics</li>
+                        <li>Texture strength control</li>
+                        <li>Loading (how much paint on brush)</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="margin-top: 1.5rem;">
+                    <h4>💧 Watercolor Brush</h4>
+                    <p><strong>What it is:</strong> Simulates fluid, transparent watercolor</p>
+                    <p><strong>Characteristics:</strong></p>
+                    <ul>
+                        <li>Semi-transparent layers</li>
+                        <li>Color bleeding and spreading</li>
+                        <li>Wet-on-wet effects</li>
+                        <li>Edge darkening (pigment pooling)</li>
+                    </ul>
+                    <p><strong>When to use:</strong></p>
+                    <ul>
+                        <li>Loose, fluid paintings</li>
+                        <li>Atmospheric illustrations</li>
+                        <li>Stylized art</li>
+                        <li>Children's book illustration style</li>
+                    </ul>
+                    <p><strong>Technique tips:</strong></p>
+                    <ul>
+                        <li>Work in layers, light to dark</li>
+                        <li>Let "paper" show through</li>
+                        <li>Use low opacity, high flow</li>
+                        <li>Embrace the unpredictability</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="margin-top: 1.5rem;">
+                    <h4>✨ Airbrush</h4>
+                    <p><strong>What it is:</strong> Soft spray paint effect</p>
+                    <p><strong>Characteristics:</strong></p>
+                    <ul>
+                        <li>Very soft edges (0-10% hardness)</li>
+                        <li>Gradual buildup</li>
+                        <li>Smooth gradients</li>
+                        <li>No visible brush marks</li>
+                    </ul>
+                    <p><strong>When to use:</strong></p>
+                    <ul>
+                        <li>Soft shading and highlights</li>
+                        <li>Atmospheric effects (fog, glow)</li>
+                        <li>Smooth color transitions</li>
+                        <li>Makeup and beauty retouching</li>
+                        <li>Sci-fi and fantasy lighting</li>
+                    </ul>
+                    <p><strong>Warning:</strong> Easy to overuse! Airbrush can make art look "plastic" or "muddy" if not used carefully.</p>
+                </div>
+
+                <h3>3. Texture Brushes (Surface Quality)</h3>
+
+                <div class="card" style="background: #fff3e0;">
+                    <h4>🧱 Canvas/Paper Texture Brushes</h4>
+                    <p><strong>What they are:</strong> Brushes that interact with surface texture</p>
+                    <p><strong>Characteristics:</strong></p>
+                    <ul>
+                        <li>Reveal underlying texture pattern</li>
+                        <li>Skip across "peaks" of texture</li>
+                        <li>Create traditional media feel</li>
+                        <li>Depend on texture settings</li>
+                    </ul>
+                    <p><strong>When to use:</strong></p>
+                    <ul>
+                        <li>Adding surface quality to paintings</li>
+                        <li>Creating traditional art look</li>
+                        <li>Breaking up smooth digital appearance</li>
+                        <li>Final texture pass on paintings</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="margin-top: 1.5rem;">
+                    <h4>🌿 Scatter/Particle Brushes</h4>
+                    <p><strong>What they are:</strong> Brushes that stamp multiple elements randomly</p>
+                    <p><strong>Characteristics:</strong></p>
+                    <ul>
+                        <li>Multiple stamps per click</li>
+                        <li>Random position scatter</li>
+                        <li>Size and rotation variation</li>
+                        <li>Great for organic elements</li>
+                    </ul>
+                    <p><strong>Common types:</strong></p>
+                    <ul>
+                        <li><strong>Foliage brushes:</strong> Leaves, grass, trees</li>
+                        <li><strong>Particle brushes:</strong> Sparkles, stars, snow</li>
+                        <li><strong>Texture brushes:</strong> Grunge, dirt, dust</li>
+                        <li><strong>Hair brushes:</strong> Fur, hair strands</li>
+                    </ul>
+                    <p><strong>When to use:</strong></p>
+                    <ul>
+                        <li>Backgrounds (trees, grass, etc.)</li>
+                        <li>Special effects (magic, sparkles)</li>
+                        <li>Quick environment details</li>
+                        <li>Time-saving for repetitive elements</li>
+                    </ul>
+                    <blockquote>
+                        <strong>⚠️ Caution:</strong> Scatter brushes can look "stamped" if overused. Use sparingly and vary them!
+                    </blockquote>
+                </div>
+
+                <h3>4. Special Effect Brushes</h3>
+
+                <div class="card" style="background: #e3f2fd;">
+                    <h4>🌀 Smudge/Blend Brush</h4>
+                    <p><strong>What it is:</strong> Pushes and mixes existing colors</p>
+                    <p><strong>How it works:</strong></p>
+                    <ul>
+                        <li>Doesn't add new color</li>
+                        <li>Drags existing pixels along stroke path</li>
+                        <li>Blends colors together</li>
+                        <li>Strength controls how much it moves pixels</li>
+                    </ul>
+                    <p><strong>When to use:</strong></p>
+                    <ul>
+                        <li>Softening edges between colors</li>
+                        <li>Creating smooth transitions</li>
+                        <li>Hair flow and direction</li>
+                        <li>Fur texture</li>
+                        <li>Blending harsh lines</li>
+                    </ul>
+                    <p><strong>Technique tips:</strong></p>
+                    <ul>
+                        <li>Use low strength (20-40%) for subtle blending</li>
+                        <li>Follow form direction (not random)</li>
+                        <li>Don't over-blend (kills texture)</li>
+                        <li>Combine with regular painting for best results</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="margin-top: 1.5rem;">
+                    <h4>🔥 Color Mixer Brush</h4>
+                    <p><strong>What it is:</strong> Mixes colors on canvas like real paint</p>
+                    <p><strong>Characteristics:</strong></p>
+                    <ul>
+                        <li>Simulates wet paint mixing</li>
+                        <li>Creates realistic color transitions</li>
+                        <li>Has "paint reservoir" that depletes</li>
+                        <li>Can "pick up" color from canvas</li>
+                    </ul>
+                    <p><strong>When to use:</strong></p>
+                    <ul>
+                        <li>Traditional painting workflow</li>
+                        <li>Realistic color blending</li>
+                        <li>Portrait painting</li>
+                        <li>When you want "happy accidents"</li>
+                    </ul>
+                </div>
+
+                <h3>Building Your Brush Set</h3>
+
+                <div class="card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+                    <h4 style="color: white; margin-top: 0;">🎯 The Essential 10 Brush Kit</h4>
+                    <p>You don't need 500 brushes! Here's a professional starter set:</p>
+                    
+                    <ol>
+                        <li><strong>Hard Round (100% hardness):</strong> Lines, details, crisp edges</li>
+                        <li><strong>Soft Round (40% hardness):</strong> Main painting brush</li>
+                        <li><strong>Very Soft Round (10% hardness):</strong> Blending, atmosphere</li>
+                        <li><strong>Textured Round:</strong> Painterly effects, visible brushwork</li>
+                        <li><strong>Flat Brush:</strong> Geometric shapes, hard edges</li>
+                        <li><strong>Airbrush:</strong> Soft shading, gradients</li>
+                        <li><strong>Smudge Tool:</strong> Blending colors</li>
+                        <li><strong>Texture Brush:</strong> Canvas/paper feel</li>
+                        <li><strong>Scatter Brush:</strong> Particles, foliage (one versatile one)</li>
+                        <li><strong>Your Custom Brush:</strong> Personal favorite you create!</li>
+                    </ol>
+                    
+                    <p style="margin-bottom: 0;"><strong>Truth:</strong> Most professional artists use 3-5 brushes for 95% of their work. Master a few rather than collecting hundreds!</p>
+                </div>
+
+                <blockquote style="margin-top: 1.5rem;">
+                    <strong>📚 Brush Collection Wisdom:</strong> Don't be a "brush hoarder"! Having 1,000 brushes won't make you a better artist. Master 5-10 brushes completely, and you'll paint better than someone with 1,000 they barely understand.
+                </blockquote>
+
+            </section>
+
+            <!-- Section 6: Creating Custom Brushes -->
+            <section id="creating-brushes" class="lesson-section">
+                <h2>Creating Custom Brushes 🛠️</h2>
+                
+                <p>Ready to make your own brushes? Custom brushes let you create unique effects and optimize your workflow. Let's learn how!</p>
+
+                <h3>Why Create Custom Brushes?</h3>
+
+                <div class="card">
+                    <h4>💡 Benefits of Custom Brushes</h4>
+                    <ul>
+                        <li><strong>Personal workflow optimization:</strong> Create brushes that match YOUR painting style</li>
+                        <li><strong>Unique artistic signature:</strong> Develop brushes no one else has</li>
+                        <li><strong>Time-saving:</strong> One brush that does exactly what you need</li>
+                        <li><strong>Consistency:</strong> Same settings every time</li>
+                        <li><strong>Special effects:</strong> Achieve looks impossible with preset brushes</li>
+                    </ul>
+                </div>
+
+                <h3>Basic Custom Brush Creation</h3>
+
+                <div class="card" style="background: #e8f5e9;">
+                    <h4>🎨 Method 1: Modifying Existing Brushes</h4>
+                    <p><strong>The easiest approach for beginners!</strong></p>
+                    
+                    <h5>Step-by-Step Process:</h5>
+                    <ol>
+                        <li><strong>Start with a similar brush:</strong> Find a preset close to what you want</li>
+                        <li><strong>Adjust core settings:</strong>
+                            <ul>
+                                <li>Size, opacity, flow, hardness</li>
+                                <li>Spacing for desired texture</li>
+                                <li>Pressure dynamics</li>
+                            </ul>
+                        </li>
+                        <li><strong>Test thoroughly:</strong> Paint with it for 10+ minutes</li>
+                        <li><strong>Refine:</strong> Tweak settings based on feel</li>
+                        <li><strong>Save as new brush:</strong> Give it a descriptive name</li>
+                    </ol>
+
+                    <h5>Naming Convention Tips:</h5>
+                    <ul>
+                        <li>Include hardness: "Soft Round 40%"</li>
+                        <li>Include purpose: "Portrait Base Color"</li>
+                        <li>Include texture: "Canvas Texture 25%"</li>
+                        <li>Add your initials: "JD Painting Brush"</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="margin-top: 1.5rem; background: #f3e5f5;">
+                    <h4>🖼️ Method 2: Custom Brush Tips from Images</h4>
+                    <p><strong>Create unique stamps and textures!</strong></p>
+                    
+                    <h5>What Makes a Good Brush Tip Image:</h5>
+                    <ul>
+                        <li>High contrast black and white</li>
+                        <li>Clear silhouette</li>
+                        <li>Interesting shape or texture</li>
+                        <li>Square format works best (512x512, 1024x1024)</li>
+                        <li>PNG format with transparency</li>
+                    </ul>
+
+                    <h5>Creating Brush Tips:</h5>
+                    <ol>
+                        <li><strong>Create or find your image:</strong>
+                            <ul>
+                                <li>Draw it yourself</li>
+                                <li>Photograph textures (leaves, splatters, etc.)</li>
+                                <li>Use free texture resources</li>
+                            </ul>
+                        </li>
+                        <li><strong>Process the image:</strong>
+                            <ul>
+                                <li>Convert to black and white</li>
+                                <li>Increase contrast</li>
+                                <li>Clean up edges</li>
+                                <li>Resize to square format</li>
+                            </ul>
+                        </li>
+                        <li><strong>Import as brush tip:</strong>
+                            <ul>
+                                <li><strong>Photoshop:</strong> Edit → Define Brush Preset</li>
+                                <li><strong>Krita:</strong> Brush Settings → Predefined → Choose Image</li>
+                                <li><strong>Procreate:</strong> Import image, tap for options → Use as Brush Shape</li>
+                                <li><strong>Clip Studio:</strong> Create Material → Register as Brush Tip</li>
+                            </ul>
+                        </li>
+                        <li><strong>Configure settings:</strong>
+                            <ul>
+                                <li>Spacing (usually 100%+ for stamp brushes)</li>
+                                <li>Scatter for randomness</li>
+                                <li>Rotation dynamics</li>
+                                <li>Size variation</li>
+                            </ul>
+                        </li>
+                    </ol>
+
+                    <h5>Popular Custom Brush Ideas:</h5>
+                    <ul>
+                        <li><strong>Foliage:</strong> Single leaf = instant tree brush</li>
+                        <li><strong>Clouds:</strong> Fluffy cloud shape for quick skies</li>
+                        <li><strong>Stars:</strong> Various star shapes for night sky</li>
+                        <li><strong>Splatters:</strong> Paint splatter for grunge effects</li>
+                        <li><strong>Grass:</strong> Grass tuft for ground cover</li>
+                        <li><strong>Hair strands:</strong> Multiple hair lines for quick hair texture</li>
+                    </ul>
+                </div>
+
+                <h3>Advanced Brush Settings</h3>
+
+                <div class="card">
+                    <h4>⚙️ Power User Settings</h4>
+                    <p>Once you're comfortable with basics, explore these advanced options:</p>
+
+                    <h5>Shape Dynamics:</h5>
+                    <ul>
+                        <li><strong>Size Jitter:</strong> Random size variation per stamp</li>
+                        <li><strong>Angle Jitter:</strong> Random rotation</li>
+                        <li><strong>Roundness Jitter:</strong> Squash brush randomly</li>
+                        <li><strong>Minimum Diameter:</strong> How small brush can get at light pressure</li>
+                    </ul>
+
+                    <h5>Scattering:</h5>
+                    <ul>
+                        <li><strong>Scatter Amount:</strong> How far stamps deviate from stroke path</li>
+                        <li><strong>Scatter Both Axes:</strong> Random in all directions vs just perpendicular</li>
+                        <li><strong>Count:</strong> Number of stamps per spacing interval</li>
+                    </ul>
+
+                    <h5>Color Dynamics:</h5>
+                    <ul>
+                        <li><strong>Hue Jitter:</strong> Subtle color shifts per stamp</li>
+                        <li><strong>Saturation Jitter:</strong> Vibrant to desaturated variation</li>
+                        <li><strong>Brightness Jitter:</strong> Light to dark variation</li>
+                        <li><strong>Foreground/Background Jitter:</strong> Mix between two colors</li>
+                    </ul>
+
+                    <h5>Dual Brush (Photoshop/some apps):</h5>
+                    <ul>
+                        <li>Combines two brush tips</li>
+                        <li>Creates complex textures</li>
+                        <li>Second brush acts as mask</li>
+                        <li>Advanced technique for unique effects</li>
+                    </ul>
+                </div>
+
+                <h3>Brush Organization</h3>
+
+                <div class="card" style="background: #fff3e0;">
+                    <h4>📁 Keeping Your Brushes Manageable</h4>
+
+                    <h5>Organization Strategies:</h5>
+                    <ul>
+                        <li><strong>Create categories/folders:</strong>
+                            <ul>
+                                <li>Basics (rounds, flats)</li>
+                                <li>Painting (oil, watercolor)</li>
+                                <li>Texture (canvas, paper)</li>
+                                <li>Effects (scatter, particles)</li>
+                                <li>Custom (your creations)</li>
+                                <li>Favorites (most-used)</li>
+                            </ul>
+                        </li>
+                        <li><strong>Use descriptive names:</strong> "Soft Portrait 40% Flow" > "Brush 27"</li>
+                        <li><strong>Delete unused brushes:</strong> If you haven't used it in 6 months, delete it</li>
+                        <li><strong>Tag/favorite system:</strong> Mark your go-to brushes</li>
+                        <li><strong>Regular cleanup:</strong> Monthly brush library maintenance</li>
+                    </ul>
+
+                    <h5>Backup Your Brushes:</h5>
+                    <ul>
+                        <li><strong>Export brush files:</strong> Most software lets you export .abr, .gbr, etc.</li>
+                        <li><strong>Cloud storage:</strong> Keep backups online</li>
+                        <li><strong>Version control:</strong> Save different versions as you improve them</li>
+                        <li><strong>Documentation:</strong> Note what each custom brush does</li>
+                    </ul>
+                </div>
+
+                <blockquote>
+                    <strong>🎨 Brush Philosophy:</strong> A custom brush should solve a specific problem or save you time. Don't create brushes "just because." Every brush in your library should earn its place!
+                </blockquote>
+
+            </section>
+
+            <!-- Section 7: Brush Techniques and Workflows (Part 1) -->
+            <section id="brush-techniques" class="lesson-section">
+                <h2>Brush Techniques and Workflows 🎭</h2>
+                
+                <p>Now that you understand brushes, let's learn how to USE them effectively! These techniques will transform your painting.</p>
+
+                <h3>Fundamental Brush Techniques</h3>
+
+                <div class="card" style="background: #e3f2fd;">
+                    <h4>✏️ Technique 1: The Pressure Control Exercise</h4>
+                    <p><strong>Goal:</strong> Develop pressure sensitivity muscle memory</p>
+                    
+                    <h5>Exercise:</h5>
+                    <ol>
+                        <li>Draw a horizontal line, going from lightest touch to full pressure</li>
+                        <li>The line should gradually thicken from left to right</li>
+                        <li>Repeat 20 times</li>
+                        <li>Try vertical, diagonal, curved versions</li>
+                    </ol>
+                    
+                    <h5>Success Criteria:</h5>
+                    <ul>
+                        <li>Smooth transition (no jumps in thickness)</li>
+                        <li>Full range from barely visible to max size</li>
+                        <li>Consistent control across multiple attempts</li>
+                    </ul>
+                    
+                    <p><strong>Practice daily:</strong> 5 minutes of this builds incredible control!</p>
+                </div>
+
+                <div class="card" style="margin-top: 1.5rem;">
+                    <h4>🎨 Technique 2: The Layering Method</h4>
+                    <p><strong>Goal:</strong> Build up color gradually for natural results</p>
+                    
+                    <h5>How It Works:</h5>
+                    <ul>
+                        <li>Use low opacity (30-50%) or low flow (30-50%)</li>
+                        <li>Paint multiple light layers</li>
+                        <li>Colors build up naturally</li>
+                        <li>More forgiving than one heavy pass</li>
+                    </ul>
+                    
+                    <h5>When to Use:</h5>
+                    <ul>
+                        <li>Portraits and skin tones</li>
+                        <li>Realistic lighting and shadows</li>
+                        <li>Smooth gradients</li>
+                        <li>When you're unsure of final color</li>
+                    </ul>
+                    
+                    <h5>Pro Tips:</h5>
+                    <ul>
+                        <li>Work from light to dark</li>
+                        <li>Let layers "breathe" (don't over-blend)</li>
+                        <li>Sample your own work as you go (Alt key)</li>
+                        <li>Build up slowly—you can always add more</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="margin-top: 1.5rem;">
+                    <h4>🖌️ Technique 3: The Block-In Method</h4>
+                    <p><strong>Goal:</strong> Establish major forms and colors quickly</p>
+                    
+                    <h5>Process:</h5>
+                    <ol>
+                        <li><strong>Use large brush (100-300px)</strong></li>
+                        <li><strong>Paint big shapes</strong> with 80-100% opacity</li>
+                        <li><strong>Focus on major color areas:</strong> Don't worry about details</li>
+                        <li><strong>Establish value structure:</strong> Lights, mids, darks</li>
+                        <li><strong>Work loosely:</strong> This is the foundation, not the final</li>
+                    </ol>
+                    
+                    <h5>Why It Works:</h5>
+                    <ul>
+                        <li>Prevents getting lost in details too early</li>
+                        <li>Establishes composition quickly</li>
+                        <li>Easy to make big changes</li>
+                        <li>Professional workflow standard</li>
+                    </ul>
+                    
+                    <p><strong>Golden Rule:</strong> Big brush → medium brush → small brush. Never start with details!</p>
+                </div>
+
+                <div class="card" style="margin-top: 1.5rem;">
+                    <h4>🌊 Technique 4: The Smudge-Blend Method</h4>
+                    <p><strong>Goal:</strong> Create smooth transitions between colors</p>
+                    
+                    <h5>Two Approaches:</h5>
+                    
+                    <p><strong>A. Smudge Tool:</strong></p>
+                    <ul>
+                        <li>Paint two colors next to each other</li>
+                        <li>Switch to smudge tool (20-40% strength)</li>
+                        <li>Drag along the edge where colors meet</li>
+                        <li>Follow form direction</li>
+                    </ul>
+                    
+                    <p><strong>B. Soft Brush Blend:</strong></p>
+                    <ul>
+                        <li>Paint first color</li>
+                        <li>Paint second color nearby</li>
+                        <li>Switch to soft round brush (very low opacity: 10-20%)</li>
+                        <li>Paint over the edge, sampling colors as you go (Alt key)</li>
+                        <li>Build up smooth transition</li>
+                    </ul>
+                    
+                    <h5>Common Mistakes:</h5>
+                    <ul>
+                        <li>❌ Over-blending (loses form and texture)</li>
+                        <li>❌ Blending in random directions (follow form!)</li>
+                        <li>❌ Using too high strength on smudge</li>
+                        <li>❌ Blending too much—some edges should stay sharp!</li>
+                    </ul>
+                </div>
+
+                <h3>Brush Workflow Strategies</h3>
+
+                <div class="card" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); color: #1a1a1a;">
+                    <h4 style="color: #1a1a1a; margin-top: 0;">⚡ Workflow 1: The Three-Brush System</h4>
+                    <p><strong>Concept:</strong> Use only three brushes for entire painting</p>
+                    
+                    <h5 style="color: #1a1a1a;">The Trio:</h5>
+                    <ol>
+                        <li><strong>Blocker (large, hard, 100% opacity):</strong> Block in major shapes and values</li>
+                        <li><strong>Renderer (medium, soft, pressure-sensitive):</strong> Do 80% of actual painting</li>
+                        <li><strong>Detailer (small, hard, 100% opacity):</strong> Final details and highlights</li>
+                    </ol>
+                    
+                    <h5 style="color: #1a1a1a;">Workflow:</h5>
+                    <ul>
+                        <li>Phase 1: Blocker brush - establish composition (30 min)</li>
+                        <li>Phase 2: Renderer brush - develop forms and details (2-3 hours)</li>
+                        <li>Phase 3: Detailer brush - final touches (30 min)</li>
+                    </ul>
+                    
+                    <p><strong>Why it works:</strong> Forces discipline, prevents brush-hopping, builds mastery!</p>
+                </div>
+
+                <div class="card" style="margin-top: 1.5rem; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: #1a1a1a;">
+                    <h4 style="color: #1a1a1a; margin-top: 0;">⚡ Workflow 2: The Opacity Dance</h4>
+                    <p><strong>Concept:</strong> Never touch opacity slider—use number keys exclusively</p>
+                    
+                    <h5 style="color: #1a1a1a;">The Pattern:</h5>
+                    <ul>
+                        <li><strong>Press 1:</strong> 10% opacity - Initial lay-in, super subtle</li>
+                        <li><strong>Press 3:</strong> 30% opacity - Building up forms</li>
+                        <li><strong>Press 5:</strong> 50% opacity - Middle development</li>
+                        <li><strong>Press 7:</strong> 70% opacity - Strong color application</li>
+                        <li><strong>Press 0:</strong> 100% opacity - Final highlights and details</li>
+                    </ul>
+                    
+                    <h5 style="color: #1a1a1a;">Practice Drill:</h5>
+                    <ol>
+                        <li>Paint a sphere using ONLY these five opacity values</li>
+                        <li>Build up from 10% shadows to 100% highlights</li>
+                        <li>No other opacities allowed!</li>
+                        <li>Repeat until it becomes reflex</li>
+                    </ol>
+                    
+                    <p><strong>Benefit:</strong> Opacity changes become unconscious—your hand just KNOWS!</p>
+                </div>
+
+                <blockquote style="margin-top: 1.5rem;">
+                    <strong>🎯 The Mastery Principle:</strong> Constraints breed creativity. Limiting yourself to 3-5 brushes will make you a better painter than having 500 brushes. Master your tools, don't collect them!
+                </blockquote>
+
+            </section>
+
+            <!-- PART C ENDS HERE -->
+            <!-- Section 7: Brush Techniques and Workflows (Part 2) -->
+            
+                <h3>Advanced Brush Techniques</h3>
+
+                <div class="card">
+                    <h4>🎭 Technique 5: The Shape Language Method</h4>
+                    <p><strong>Goal:</strong> Use deliberate brush strokes to enhance form and interest</p>
+                    
+                    <h5>Core Principle:</h5>
+                    <p>Your brush strokes should follow and enhance the form you're painting, not fight against it.</p>
+                    
+                    <h5>Shape Language Rules:</h5>
+                    <ul>
+                        <li><strong>Round forms:</strong> Curved, flowing brush strokes</li>
+                        <li><strong>Angular forms:</strong> Sharp, directional strokes</li>
+                        <li><strong>Organic forms:</strong> Irregular, varied strokes</li>
+                        <li><strong>Mechanical forms:</strong> Clean, consistent strokes</li>
+                    </ul>
+                    
+                    <h5>Practical Application:</h5>
+                    <ul>
+                        <li><strong>Painting fabric:</strong> Strokes follow cloth folds</li>
+                        <li><strong>Painting hair:</strong> Strokes follow hair flow direction</li>
+                        <li><strong>Painting skin:</strong> Strokes follow muscle structure</li>
+                        <li><strong>Painting metal:</strong> Sharp, reflective strokes</li>
+                    </ul>
+                    
+                    <blockquote>
+                        <strong>Artist Secret:</strong> Visible, confident brush strokes add life and energy to your work. Don't over-blend everything smooth!
+                    </blockquote>
+                </div>
+
+                <div class="card" style="margin-top: 1.5rem;">
+                    <h4>🌈 Technique 6: Color Sampling Workflow</h4>
+                    <p><strong>Goal:</strong> Create natural color variation and harmony</p>
+                    
+                    <h5>The Alt-Key Dance:</h5>
+                    <ol>
+                        <li>Paint a stroke with your chosen color</li>
+                        <li><strong>Hold Alt</strong> → eyedropper activates</li>
+                        <li>Sample the color you just painted</li>
+                        <li>Release Alt → painting brush returns</li>
+                        <li>Adjust color slightly (shift hue, lighten, or darken)</li>
+                        <li>Paint next stroke</li>
+                        <li>Repeat constantly!</li>
+                    </ol>
+                    
+                    <h5>Why This Works:</h5>
+                    <ul>
+                        <li>Creates natural color variation (not flat)</li>
+                        <li>Colors relate to each other organically</li>
+                        <li>Prevents "picking from air" (disconnected colors)</li>
+                        <li>Builds color harmony automatically</li>
+                        <li>This is THE #1 technique of pro digital painters!</li>
+                    </ul>
+                    
+                    <h5>Practice Exercise:</h5>
+                    <ul>
+                        <li>Paint a simple sphere</li>
+                        <li>Start with one color</li>
+                        <li>Use ONLY Alt-sampling + slight adjustments</li>
+                        <li>Never pick colors from color wheel</li>
+                        <li>See how cohesive it becomes!</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="margin-top: 1.5rem;">
+                    <h4>⚡ Technique 7: The Speed Painting Approach</h4>
+                    <p><strong>Goal:</strong> Break perfectionism, build confidence</p>
+                    
+                    <h5>Rules:</h5>
+                    <ul>
+                        <li>Set a timer: 15-30 minutes</li>
+                        <li>Paint a complete piece before timer ends</li>
+                        <li>Large brushes only (50px minimum)</li>
+                        <li>No zooming in (paint at 50-100% view)</li>
+                        <li>No erasing (paint over mistakes)</li>
+                        <li>Focus on big shapes and values</li>
+                    </ul>
+                    
+                    <h5>Benefits:</h5>
+                    <ul>
+                        <li>Breaks detail-obsession habit</li>
+                        <li>Teaches efficient brush use</li>
+                        <li>Develops decision-making speed</li>
+                        <li>Reduces overthinking</li>
+                        <li>Builds brush confidence</li>
+                    </ul>
+                    
+                    <p><strong>Challenge:</strong> Do one 20-minute speed painting daily for a month. Your brush work will transform!</p>
+                </div>
+
+                <h3>Troubleshooting Brush Feel</h3>
+
+                <div class="card" style="background: #fff3e0;">
+                    <h4>🔧 Common "Feel" Issues and Fixes</h4>
+                    
+                    <h5>Problem: "Brush feels mushy/unresponsive"</h5>
+                    <p><strong>Likely causes:</strong></p>
+                    <ul>
+                        <li>Flow too low (try 80-100%)</li>
+                        <li>Pressure curve too gentle</li>
+                        <li>Too much smoothing/stabilization</li>
+                        <li>Hardness too soft for your needs</li>
+                    </ul>
+                    
+                    <h5>Problem: "Brush feels too harsh/sharp"</h5>
+                    <p><strong>Likely causes:</strong></p>
+                    <ul>
+                        <li>Opacity at 100% (try 70-80%)</li>
+                        <li>Hardness too high (try 40-60%)</li>
+                        <li>No pressure sensitivity enabled</li>
+                        <li>Spacing too tight (increase to 15-20%)</li>
+                    </ul>
+                    
+                    <h5>Problem: "Can't get smooth lines"</h5>
+                    <p><strong>Likely causes:</strong></p>
+                    <ul>
+                        <li>Spacing too high (try 10-15%)</li>
+                        <li>Need smoothing/stabilization</li>
+                        <li>Drawing too fast</li>
+                        <li>Tablet calibration issue</li>
+                    </ul>
+                    
+                    <h5>Problem: "Brush lags/stutters"</h5>
+                    <p><strong>Performance fixes:</strong></p>
+                    <ul>
+                        <li>Increase spacing (20-25%)</li>
+                        <li>Reduce brush size</li>
+                        <li>Simplify brush (remove dual brush, complex dynamics)</li>
+                        <li>Close other programs</li>
+                        <li>Lower canvas resolution</li>
+                    </ul>
+                </div>
+
+            </section>
+
+            <!-- Section 8: Cross-Software Brush Guide -->
+            <section id="cross-software" class="lesson-section">
+                <h2>Cross-Software Brush Guide 🔄</h2>
+                
+                <p>Let's translate brush concepts across different programs. The fundamentals are identical—only the terminology changes!</p>
+
+                <h3>Brush Settings Translation Table</h3>
+
+                <div class="card">
+                    <h4>📊 Universal Settings Across Software</h4>
+                    
+                    <table style="width: 100%; font-size: 0.9em;">
+                        <thead>
+                            <tr>
+                                <th>Concept</th>
+                                <th>Photoshop</th>
+                                <th>Krita</th>
+                                <th>Procreate</th>
+                                <th>Clip Studio</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Brush Size</strong></td>
+                                <td>Size slider / [ ]</td>
+                                <td>Size slider / [ ]</td>
+                                <td>Size slider</td>
+                                <td>Brush Size / [ ]</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Opacity</strong></td>
+                                <td>Opacity / Number keys</td>
+                                <td>Opacity / Number keys</td>
+                                <td>Opacity slider</td>
+                                <td>Opacity / Number keys</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Flow</strong></td>
+                                <td>Flow slider</td>
+                                <td>Flow slider</td>
+                                <td>N/A (use opacity)</td>
+                                <td>N/A (use opacity)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Hardness</strong></td>
+                                <td>Hardness slider</td>
+                                <td>Brush tip softness</td>
+                                <td>Streamline (different!)</td>
+                                <td>Hardness slider</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Spacing</strong></td>
+                                <td>Brush Settings → Spacing</td>
+                                <td>Brush Editor → Spacing</td>
+                                <td>Grain (affects spacing)</td>
+                                <td>Brush Tip → Spacing</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Pressure → Size</strong></td>
+                                <td>Shape Dynamics → Size Jitter</td>
+                                <td>Size → Pressure</td>
+                                <td>Apple Pencil → Size</td>
+                                <td>Brush Size → Pen Pressure</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Pressure → Opacity</strong></td>
+                                <td>Transfer → Opacity</td>
+                                <td>Opacity → Pressure</td>
+                                <td>Apple Pencil → Opacity</td>
+                                <td>Opacity → Pen Pressure</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Smudge Tool</strong></td>
+                                <td>Smudge Tool</td>
+                                <td>Smudge Brush</td>
+                                <td>Smudge Tool</td>
+                                <td>Blend Tool</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Mixer Brush</strong></td>
+                                <td>Mixer Brush Tool</td>
+                                <td>Color Smudge Engine</td>
+                                <td>N/A</td>
+                                <td>Watercolor brushes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>Software-Specific Features</h3>
+
+                <div class="card" style="background: #e8f5e9; margin-top: 1.5rem;">
+                    <h4>🎨 Adobe Photoshop</h4>
+                    <h5>Unique Strengths:</h5>
+                    <ul>
+                        <li><strong>Mixer Brush:</strong> Realistic paint mixing on canvas</li>
+                        <li><strong>Bristle Brushes:</strong> 3D bristle simulation</li>
+                        <li><strong>Dual Brush:</strong> Combine two brush tips</li>
+                        <li><strong>Brush Presets:</strong> Extensive default library</li>
+                    </ul>
+                    <h5>Access Brush Settings:</h5>
+                    <ul>
+                        <li>F5 or Window → Brush Settings</li>
+                        <li>Extensive control over every parameter</li>
+                        <li>Can save tool presets (brush + all settings)</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="background: #e3f2fd; margin-top: 1.5rem;">
+                    <h4>🖌️ Krita (Free)</h4>
+                    <h5>Unique Strengths:</h5>
+                    <ul>
+                        <li><strong>Brush Engines:</strong> Multiple rendering methods (Pixel, Color Smudge, Particle, etc.)</li>
+                        <li><strong>Highly Customizable:</strong> Deep control over every aspect</li>
+                        <li><strong>Community Brush Packs:</strong> Thousands of free brushes</li>
+                        <li><strong>Assistants:</strong> Perspective and symmetry helpers</li>
+                    </ul>
+                    <h5>Access Brush Settings:</h5>
+                    <ul>
+                        <li>F5 or Settings → Dockers → Brush Editor</li>
+                        <li>Different "engines" for different effects</li>
+                        <li>Resource manager for importing brushes</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="background: #f3e5f5; margin-top: 1.5rem;">
+                    <h4>📱 Procreate (iPad)</h4>
+                    <h5>Unique Strengths:</h5>
+                    <ul>
+                        <li><strong>Touch-Optimized:</strong> Gestures and touch controls</li>
+                        <li><strong>Streamline:</strong> Smooths lines (similar to stabilizer)</li>
+                        <li><strong>QuickShape:</strong> Auto-completes shapes</li>
+                        <li><strong>Simplified Interface:</strong> Less overwhelming</li>
+                    </ul>
+                    <h5>Access Brush Settings:</h5>
+                    <ul>
+                        <li>Tap brush icon → Brush Studio</li>
+                        <li>More visual/intuitive than desktop apps</li>
+                        <li>Apple Pencil integration is excellent</li>
+                    </ul>
+                    <h5>Note on Flow:</h5>
+                    <p>Procreate doesn't have a separate Flow setting—just use Opacity for similar effect!</p>
+                </div>
+
+                <div class="card" style="background: #fff3e0; margin-top: 1.5rem;">
+                    <h4>🎭 Clip Studio Paint</h4>
+                    <h5>Unique Strengths:</h5>
+                    <ul>
+                        <li><strong>Comic/Manga Tools:</strong> Specialized brushes for line art</li>
+                        <li><strong>Vector Layers:</strong> Edit lines after drawing</li>
+                        <li><strong>3D Models:</strong> Posable references integrated</li>
+                        <li><strong>Materials:</strong> Huge library of premade assets</li>
+                    </ul>
+                    <h5>Access Brush Settings:</h5>
+                    <ul>
+                        <li>Window → Sub Tool Detail</li>
+                        <li>Excellent for illustration and comics</li>
+                        <li>Strong community asset sharing</li>
+                    </ul>
+                </div>
+
+                <h3>Brush Importing/Exporting</h3>
+
+                <div class="card">
+                    <h4>🔄 Sharing Brushes Between Software</h4>
+                    
+                    <h5>Common Brush Formats:</h5>
+                    <ul>
+                        <li><strong>.ABR:</strong> Photoshop brush file (widely supported)</li>
+                        <li><strong>.GBR:</strong> GIMP brush (Krita can import)</li>
+                        <li><strong>.BRUSH:</strong> Procreate brush bundle</li>
+                        <li><strong>.SUT:</strong> Clip Studio sub-tool</li>
+                        <li><strong>Image files (PNG/JPG):</strong> Universal brush tips</li>
+                    </ul>
+
+                    <h5>Cross-Compatibility:</h5>
+                    <table style="width: 100%;">
+                        <thead>
+                            <tr>
+                                <th>From</th>
+                                <th>To</th>
+                                <th>Compatibility</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Photoshop (.ABR)</td>
+                                <td>Krita</td>
+                                <td>✅ Good (can import directly)</td>
+                            </tr>
+                            <tr>
+                                <td>Photoshop (.ABR)</td>
+                                <td>Procreate</td>
+                                <td>✅ Good (can import, some features lost)</td>
+                            </tr>
+                            <tr>
+                                <td>Krita</td>
+                                <td>Photoshop</td>
+                                <td>⚠️ Limited (export as .ABR loses some features)</td>
+                            </tr>
+                            <tr>
+                                <td>Procreate</td>
+                                <td>Desktop apps</td>
+                                <td>❌ Poor (very different system)</td>
+                            </tr>
+                            <tr>
+                                <td>Any → Any</td>
+                                <td>Via PNG tip</td>
+                                <td>✅ Works (but need to reconfigure settings)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h5>Best Practice:</h5>
+                    <p>Instead of importing brushes, learn to <strong>recreate the effect</strong> in your target software. This teaches you more and gives you better control!</p>
+                </div>
+
+                <blockquote>
+                    <strong>🌉 Translation Wisdom:</strong> Don't memorize where every setting is in every program. Instead, understand WHAT you need, then search the menu or documentation for that concept. Every program has the same fundamentals!
+                </blockquote>
+
+            </section>
+
+            <!-- Section 9: Common Brush Problems -->
+            <section id="common-problems" class="lesson-section">
+                <h2>Common Brush Problems ⚠️</h2>
+                
+                <p>Everyone encounters these issues! Here are the most common problems and their solutions.</p>
+
+                <div class="card" style="border-left: 4px solid #e74c3c;">
+                    <h4>❌ Problem 1: "Brush has no pressure sensitivity!"</h4>
+                    <p><strong>Symptoms:</strong> Lines are same thickness regardless of pressure</p>
+                    <p><strong>Causes & Solutions:</strong></p>
+                    <ul>
+                        <li><strong>Pressure not enabled:</strong> Check brush settings, enable "Pressure → Size"</li>
+                        <li><strong>Tablet driver issue:</strong> Update/reinstall tablet drivers</li>
+                        <li><strong>Mouse selected:</strong> Make sure tablet is recognized (check Input preferences)</li>
+                        <li><strong>Windows Ink:</strong> Disable Windows Ink in tablet settings (common issue)</li>
+                        <li><strong>USB issue:</strong> Try different USB port</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="border-left: 4px solid #e74c3c; margin-top: 1rem;">
+                    <h4>❌ Problem 2: "Brush is painting weird colors/textures"</h4>
+                    <p><strong>Possible causes:</strong></p>
+                    <ul>
+                        <li><strong>Wrong blend mode:</strong> Check if brush is set to Multiply, Overlay, etc. Change to Normal</li>
+                        <li><strong>Texture applied:</strong> Brush has texture pattern enabled, disable in settings</li>
+                        <li><strong>Color dynamics:</strong> Brush has hue jitter or color variation enabled</li>
+                        <li><strong>Layer blend mode:</strong> The LAYER might have unusual blend mode</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="border-left: 4px solid #e74c3c; margin-top: 1rem;">
+                    <h4>❌ Problem 3: "Brush strokes are jaggy/pixelated"</h4>
+                    <p><strong>Causes & Solutions:</strong></p>
+                    <ul>
+                        <li><strong>Canvas resolution too low:</strong> Work at 300 DPI minimum for print, 150 DPI for screen</li>
+                        <li><strong>Brush too small:</strong> At low resolution, small brushes pixelate</li>
+                        <li><strong>Anti-aliasing disabled:</strong> Enable anti-aliasing in brush settings</li>
+                        <li><strong>Hardness at 100%:</strong> Reduce hardness to 80-90% for smoother edges</li>
+                        <li><strong>Zoomed in too far:</strong> Zoom out—it might look fine at actual size</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="border-left: 4px solid #e74c3c; margin-top: 1rem;">
+                    <h4>❌ Problem 4: "Can't paint anything / brush not working"</h4>
+                    <p><strong>Checklist:</strong></p>
+                    <ul>
+                        <li>✅ Is opacity above 0%? (check number keys or slider)</li>
+                        <li>✅ Is layer locked? (check for lock icon in Layers panel)</li>
+                        <li>✅ Is there an active selection? (Ctrl/Cmd + D to deselect)</li>
+                        <li>✅ Are you on the right layer? (check Layers panel)</li>
+                        <li>✅ Is layer visibility on? (eye icon)</li>
+                        <li>✅ Is foreground color different from background? (might be painting invisible white on white)</li>
+                        <li>✅ Is brush size above 0? (might be 1px and invisible)</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="border-left: 4px solid #f39c12; margin-top: 1rem;">
+                    <h4>⚠️ Problem 5: "Brush feels 'wrong' but can't identify why"</h4>
+                    <p><strong>Systematic debugging:</strong></p>
+                    <ol>
+                        <li>Reset brush to default settings</li>
+                        <li>Test if default feels better</li>
+                        <li>If yes, add back settings one at a time until you find the culprit</li>
+                        <li>Common culprits: spacing too high, dual brush, complex dynamics</li>
+                    </ol>
+                    <p><strong>Quick fixes to try:</strong></p>
+                    <ul>
+                        <li>Spacing: Set to 10-15%</li>
+                        <li>Smoothing/Stabilization: Try turning off</li>
+                        <li>Pressure curve: Reset to linear</li>
+                        <li>Flow: Set to 100%</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="border-left: 4px solid #9b59b6; margin-top: 1rem;">
+                    <h4>🐌 Problem 6: "Brush lags/program slow"</h4>
+                    <p><strong>Performance optimizations:</strong></p>
+                    <ul>
+                        <li><strong>Increase spacing:</strong> From 10% to 20% = 50% fewer brush stamps!</li>
+                        <li><strong>Simplify brush:</strong> Remove dual brush, complex textures</li>
+                        <li><strong>Reduce canvas size:</strong> Work at lower resolution</li>
+                        <li><strong>Reduce layers:</strong> Merge unnecessary layers</li>
+                        <li><strong>Close other programs:</strong> Free up RAM</li>
+                        <li><strong>Reduce brush size:</strong> Smaller = faster rendering</li>
+                        <li><strong>Turn off layer effects:</strong> Temporarily disable drop shadows, etc.</li>
+                        <li><strong>Purge history:</strong> Clear undo history to free memory</li>
+                    </ul>
+                </div>
+
+                <blockquote style="margin-top: 1.5rem;">
+                    <strong>🔧 Debugging Mindset:</strong> When brush problems arise, think systematically. Check settings one by one, test in a new document, restart the program. 90% of issues are simple setting misconfigurations!
+                </blockquote>
+
+            </section>
+
+            <!-- Lesson Summary -->
+            <section class="lesson-summary">
+                <h2>🎓 Lesson Complete!</h2>
+                
+                <p>Congratulations! You now have comprehensive knowledge of digital brushes. Let's recap what you've mastered!</p>
+
+                <div class="card">
+                    <h3>What You've Learned</h3>
+                    <ul>
+                        <li>✅ <strong>How brushes work:</strong> The stamp system, spacing, and rendering</li>
+                        <li>✅ <strong>Brush anatomy:</strong> All components (tip, size, hardness, opacity, flow, spacing, texture)</li>
+                        <li>✅ <strong>Core settings mastery:</strong> Size, opacity, flow, hardness, spacing—and when to use each</li>
+                        <li>✅ <strong>Pressure dynamics:</strong> Setting up pressure sensitivity and calibrating your tablet</li>
+                        <li>✅ <strong>Essential brush types:</strong> Basic, painting, texture, and special effect brushes</li>
+                        <li>✅ <strong>Custom brush creation:</strong> Modifying brushes and creating from scratch</li>
+                        <li>✅ <strong>Professional techniques:</strong> Layering, blocking in, color sampling, and more</li>
+                        <li>✅ <strong>Cross-software translation:</strong> How brushes work in different programs</li>
+                        <li>✅ <strong>Problem-solving:</strong> Troubleshooting common brush issues</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; margin-top: 1.5rem;">
+                    <h3 style="color: white; margin-top: 0;">🎯 Key Takeaways</h3>
+                    <ul>
+                        <li><strong>Brushes are stamps:</strong> Understanding this unlocks everything</li>
+                        <li><strong>Master 3-5 brushes:</strong> Better than having 500 you don't understand</li>
+                        <li><strong>Alt-key is your friend:</strong> Sample colors constantly while painting</li>
+                        <li><strong>Opacity vs Flow:</strong> Opacity doesn't build up, Flow does</li>
+                        <li><strong>Pressure is everything:</strong> Practice pressure control daily</li>
+                        <li><strong>Start big, finish small:</strong> Large brush → medium → small</li>
+                        <li><strong>Settings are universal:</strong> Concepts transfer between all software</li>
+                    </ul>
+                </div>
+
+                <blockquote style="margin-top: 1.5rem;">
+                    <strong>🎨 Remember:</strong> Your brush is just a tool. What matters is your artistic vision, understanding of form, color, and light. Master the fundamentals of art first—the brush is just how you express them!
+                </blockquote>
+
+                <div class="card" style="background: #e3f2fd; margin-top: 1.5rem;">
+                    <h4>📚 Practice Exercises</h4>
+                    <p>Solidify your learning with these hands-on exercises:</p>
+                    
+                    <h5>Exercise 1: The Pressure Challenge (10 minutes daily)</h5>
+                    <ul>
+                        <li>Draw 20 lines going from lightest to heaviest pressure</li>
+                        <li>Goal: Smooth transition, no jumps</li>
+                        <li>Try horizontal, vertical, diagonal, curved</li>
+                        <li>After one week, your control will be dramatically better</li>
+                    </ul>
+
+                    <h5>Exercise 2: The Three-Brush Painting (1-2 hours)</h5>
+                    <ul>
+                        <li>Paint a still life using ONLY three brushes</li>
+                        <li>Soft round (40% hardness), Hard round (90%), Very soft (10%)</li>
+                        <li>Complete the entire painting without touching other brushes</li>
+                        <li>Teaches you what's actually possible with simple tools</li>
+                    </ul>
+
+                    <h5>Exercise 3: Alt-Key Discipline (30 minutes)</h5>
+                    <ul>
+                        <li>Paint a portrait or object</li>
+                        <li>Rule: You can ONLY pick colors by Alt-sampling what you've painted</li>
+                        <li>Never touch the color picker</li>
+                        <li>Forces you to build color relationships properly</li>
+                    </ul>
+
+                    <h5>Exercise 4: Custom Brush Creation (1 hour)</h5>
+                    <ul>
+                        <li>Create three custom brushes from scratch</li>
+                        <li>One for sketching, one for painting, one for special effect</li>
+                        <li>Configure dynamics, spacing, everything</li>
+                        <li>Use them in a real painting</li>
+                        <li>Iterate until they feel RIGHT</li>
+                    </ul>
+
+                    <h5>Exercise 5: Settings Exploration (30 minutes per setting)</h5>
+                    <ul>
+                        <li>Pick one setting (e.g., Spacing)</li>
+                        <li>Paint the same stroke at 5%, 25%, 50%, 100%, 200%</li>
+                        <li>Really UNDERSTAND what each value does</li>
+                        <li>Repeat for all core settings</li>
+                        <li>Builds deep intuition</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="background: #fff3e0; margin-top: 1.5rem;">
+                    <h4>⏭️ What's Next?</h4>
+                    <p>Now that you understand brushes, you're ready for:</p>
+                    <ul>
+                        <li><strong>Layer Techniques:</strong> Advanced layer workflows, masks, blend modes</li>
+                        <li><strong>Color Theory:</strong> Understanding color for digital painting</li>
+                        <li><strong>Lighting Fundamentals:</strong> How light works and how to paint it</li>
+                        <li><strong>Form and Volume:</strong> Creating the illusion of 3D</li>
+                        <li><strong>Painting Workflows:</strong> Complete painting process from start to finish</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); color: #1a1a1a; margin-top: 1.5rem;">
+                    <h4 style="color: #1a1a1a; margin-top: 0;">💪 Brush Mastery Checklist</h4>
+                    <p>You're ready to move on when you can confidently:</p>
+                    <ul>
+                        <li>☐ Draw smooth lines with varying thickness using pressure</li>
+                        <li>☐ Explain the difference between opacity and flow</li>
+                        <li>☐ Switch between brushes using only keyboard shortcuts</li>
+                        <li>☐ Sample colors while painting without breaking flow (Alt key)</li>
+                        <li>☐ Adjust size, opacity in under 2 seconds</li>
+                        <li>☐ Create a custom brush from scratch</li>
+                        <li>☐ Complete a painting using only 3-5 brushes</li>
+                        <li>☐ Troubleshoot when a brush "feels wrong"</li>
+                        <li>☐ Understand how to translate brush settings between software</li>
+                        <li>☐ Paint confidently without constantly fiddling with settings</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="background: #f3e5f5; margin-top: 1.5rem;">
+                    <h4>🌟 Final Wisdom</h4>
+                    <p><em>"A master can create a masterpiece with a single brush. A beginner with 1,000 brushes will still create beginner work."</em></p>
+                    <p>Your goal isn't to collect every brush ever made. Your goal is to deeply understand how brushes work, master a small set of them, and use that knowledge to express your artistic vision.</p>
+                    <p><strong>The brush doesn't make the artist. The artist makes the art.</strong></p>
+                    <p>Now go forth and paint! 🎨✨</p>
+                </div>
+            </section>
+
+            <!-- Lesson Navigation -->
+            <nav class="lesson-nav">
+                <a href="essential_digital_tools.html" class="btn btn-secondary">← Previous: Essential Digital Tools</a>
+                <a href="layer_fundamentals.html" class="btn btn-primary">Next Lesson: Layer Fundamentals →</a>
+            </nav>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Universal Digital Art Course. All rights reserved.</p>
+            <p>Made with ❤️ for aspiring digital artists everywhere.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/main.js"></script>
+    <script>
+        // Toggle TOC
+        function toggleTOC() {
+            const tocList = document.getElementById('toc-list');
+            const tocIcon = document.getElementById('toc-toggle-icon');
+            
+            if (tocList.style.maxHeight === '0px' || tocList.style.maxHeight === '') {
+                tocList.style.maxHeight = '900px';
+                tocIcon.style.transform = 'rotate(0deg)';
+            } else {
+                tocList.style.maxHeight = '0px';
+                tocIcon.style.transform = 'rotate(-90deg)';
+            }
+        }
+    </script>
+</body>
+</html>

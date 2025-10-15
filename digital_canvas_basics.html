@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Master digital canvas fundamentals - Learn about resolution, canvas size, color modes, and file formats for digital art">
+    <meta name="author" content="Digital Artistry Course">
+    <title>Understanding Your Digital Canvas - Universal Digital Art Course</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-to-main">Skip to main content</a>
+    
+    <!-- Progress indicator -->
+    <div class="progress-indicator" role="progressbar" aria-label="Page scroll progress">
+        <div class="progress-bar"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">🎨 Digital Artistry</a>
+            <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-expanded="false" aria-controls="nav-links">
+                ☰
+            </button>
+            <div class="nav-links" id="nav-links" aria-hidden="false">
+                <a href="index.html">Home</a>
+                <a href="index.html#modules">All Lessons</a>
+                <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#modules">Foundation Module</a></li>
+            <li aria-current="page">Understanding Your Digital Canvas</li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <div class="container">
+            <!-- Lesson Header -->
+            <header>
+                <h1>📐 Understanding Your Digital Canvas</h1>
+                <p class="lead">Before you paint your first masterpiece, you need to understand your canvas! Think of this lesson as learning about the paper before you start drawing. We'll demystify resolution, canvas size, color modes, and file formats—the foundation that will save you countless headaches later!</p>
+                
+                <!-- Learning objectives -->
+                <div class="card">
+                    <h2>🎯 What You'll Learn</h2>
+                    <p>By the end of this lesson, you'll be able to:</p>
+                    <ul>
+                        <li>Understand what pixels and resolution really mean</li>
+                        <li>Choose the perfect canvas size for any project</li>
+                        <li>Know when to use different color modes (RGB vs CMYK)</li>
+                        <li>Select the right file format for saving and exporting</li>
+                        <li>Set up professional-quality canvases with confidence</li>
+                        <li>Avoid common beginner mistakes that waste hours later</li>
+                    </ul>
+                </div>
+            </header>
+
+            <!-- Table of Contents -->
+            <nav class="card" aria-label="Table of Contents">
+                <h2 style="cursor: pointer; user-select: none; display: flex; justify-content: space-between; align-items: center;" onclick="toggleTOC()">
+                    <span>📑 Table of Contents</span>
+                    <span id="toc-toggle-icon" style="transition: transform 0.3s;">▼</span>
+                </h2>
+                <ol id="toc-list" style="overflow: hidden; transition: max-height 0.3s ease-out; max-height: 600px; margin: 0; padding-left: 1.5rem;">
+                    <li><a href="#pixels" class="toc-link">Pixels: The Building Blocks</a></li>
+                    <li><a href="#resolution" class="toc-link">Resolution Demystified</a></li>
+                    <li><a href="#canvas-size" class="toc-link">Choosing Canvas Size</a></li>
+                    <li><a href="#aspect-ratio" class="toc-link">Aspect Ratios Explained</a></li>
+                    <li><a href="#color-modes" class="toc-link">Color Modes (RGB vs CMYK)</a></li>
+                    <li><a href="#bit-depth" class="toc-link">Bit Depth & Color Quality</a></li>
+                    <li><a href="#file-formats" class="toc-link">File Formats Guide</a></li>
+                    <li><a href="#practical-setup" class="toc-link">Setting Up Your Canvas</a></li>
+                    <li><a href="#common-mistakes" class="toc-link">Common Mistakes to Avoid</a></li>
+                </ol>
+            </nav>
+
+            <!-- Section 1: Pixels - The Building Blocks -->
+            <section id="pixels" class="lesson-section">
+                <h2>Pixels: The Building Blocks 🧱</h2>
+                
+                <p>Let's start with the absolute basics: <strong>What is a pixel?</strong></p>
+
+                <p>A pixel (short for "picture element") is a tiny square of color. Think of it like a tile in a mosaic, or a bead in a bead art project. Your entire digital canvas is made up of thousands or millions of these tiny colored squares arranged in a grid.</p>
+
+                <h3>The Mosaic Analogy</h3>
+                
+                <p>Imagine creating a mosaic portrait using tiny colored tiles. The more tiles you have, the more detail you can create, right? If you only have 100 tiles, your portrait will look blocky and simple. But if you have 10,000 tiles, you can create smooth gradients and fine details.</p>
+
+                <p><strong>Digital art works exactly the same way!</strong> More pixels = more potential detail.</p>
+
+                <canvas id="pixel-demo-canvas" width="800" height="400" style="max-width: 100%; height: auto; border: 2px solid #ddd; border-radius: 8px; background: white;"></canvas>
+                
+                <script>
+                    const pixCanvas = document.getElementById('pixel-demo-canvas');
+                    const pixCtx = pixCanvas.getContext('2d');
+                    
+                    // Handle high DPI
+                    const pixScale = window.devicePixelRatio || 1;
+                    pixCanvas.width = 800 * pixScale;
+                    pixCanvas.height = 400 * pixScale;
+                    pixCtx.scale(pixScale, pixScale);
+                    
+                    // Title
+                    pixCtx.fillStyle = '#333';
+                    pixCtx.font = 'bold 18px Arial';
+                    pixCtx.textAlign = 'center';
+                    pixCtx.fillText('The Same Image at Different Resolutions', 400, 30);
+                    
+                    // Function to draw pixelated circle
+                    function drawPixelatedCircle(x, y, size, pixelSize, label) {
+                        const centerX = x + size / 2;
+                        const centerY = y + size / 2;
+                        const radius = size / 2 - pixelSize;
+                        
+                        // Draw background
+                        pixCtx.fillStyle = '#f0f0f0';
+                        pixCtx.fillRect(x, y, size, size);
+                        
+                        // Draw pixelated circle
+                        for (let py = 0; py < size; py += pixelSize) {
+                            for (let px = 0; px < size; px += pixelSize) {
+                                const testX = x + px + pixelSize / 2;
+                                const testY = y + py + pixelSize / 2;
+                                const distance = Math.sqrt(
+                                    Math.pow(testX - centerX, 2) + 
+                                    Math.pow(testY - centerY, 2)
+                                );
+                                
+                                if (distance < radius) {
+                                    // Create gradient color
+                                    const colorValue = Math.floor(255 - (distance / radius) * 100);
+                                    pixCtx.fillStyle = `rgb(${colorValue}, 100, 200)`;
+                                    pixCtx.fillRect(x + px, y + py, pixelSize, pixelSize);
+                                }
+                            }
+                        }
+                        
+                        // Draw grid to show pixels
+                        if (pixelSize > 3) {
+                            pixCtx.strokeStyle = 'rgba(0, 0, 0, 0.1)';
+                            pixCtx.lineWidth = 0.5;
+                            for (let i = 0; i <= size; i += pixelSize) {
+                                pixCtx.beginPath();
+                                pixCtx.moveTo(x + i, y);
+                                pixCtx.lineTo(x + i, y + size);
+                                pixCtx.stroke();
+                                
+                                pixCtx.beginPath();
+                                pixCtx.moveTo(x, y + i);
+                                pixCtx.lineTo(x + size, y + i);
+                                pixCtx.stroke();
+                            }
+                        }
+                        
+                        // Label
+                        pixCtx.fillStyle = '#333';
+                        pixCtx.font = '14px Arial';
+                        pixCtx.textAlign = 'center';
+                        pixCtx.fillText(label, x + size / 2, y + size + 20);
+                    }
+                    
+                    // Draw three versions
+                    drawPixelatedCircle(50, 60, 150, 15, 'Low Resolution\n(10x10 pixels)');
+                    drawPixelatedCircle(325, 60, 150, 5, 'Medium Resolution\n(30x30 pixels)');
+                    drawPixelatedCircle(600, 60, 150, 2, 'High Resolution\n(75x75 pixels)');
+                    
+                    // Bottom explanation
+                    pixCtx.font = 'italic 14px Arial';
+                    pixCtx.fillStyle = '#666';
+                    pixCtx.fillText('Notice how more pixels create smoother, more detailed images', 400, 380);
+                </script>
+
+                <blockquote style="margin-top: 2rem;">
+                    <strong>🎨 Real World Example:</strong> When you zoom really close on a digital photo on your phone, you can see individual pixels—little squares of color. When you zoom out, your eye blends them together and you see a smooth image. That's the magic of pixels!
+                </blockquote>
+
+                <h3>Key Pixel Facts</h3>
+
+                <div class="card">
+                    <ul>
+                        <li>📏 <strong>Pixels are square</strong> - Each one has the same width and height</li>
+                        <li>🎨 <strong>Each pixel holds one color</strong> - That color can be any of millions of shades</li>
+                        <li>📱 <strong>Different screens have different pixel densities</strong> - An iPhone screen has TINY pixels packed tightly. An old computer monitor has larger, more visible pixels</li>
+                        <li>🔢 <strong>More pixels = bigger file size</strong> - This is important to remember!</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Section 2: Resolution Demystified -->
+            <section id="resolution" class="lesson-section">
+                <h2>Resolution Demystified 🔍</h2>
+                
+                <p>Now that you understand pixels, let's talk about <strong>resolution</strong>—one of the most misunderstood concepts in digital art!</p>
+
+                <h3>What Resolution Really Means</h3>
+                
+                <p>Resolution is simply <strong>how many pixels fit in a given space</strong>. We measure it in two ways:</p>
+
+                <div class="card" style="background: #e3f2fd;">
+                    <h4>1. Total Pixel Dimensions</h4>
+                    <p>Example: "1920 × 1080 pixels"</p>
+                    <p>This means your canvas is 1920 pixels wide and 1080 pixels tall. Multiply these together and you get the total: 2,073,600 pixels (about 2 megapixels).</p>
+                    
+                    <p><strong>Think of it as:</strong> How many tiles wide × how many tiles tall your mosaic is.</p>
+                </div>
+
+                <div class="card" style="background: #f3e5f5; margin-top: 1rem;">
+                    <h4>2. Pixels Per Inch (PPI) or Dots Per Inch (DPI)</h4>
+                    <p>Example: "300 DPI" or "72 PPI"</p>
+                    <p>This tells you how many pixels are crammed into each inch when printed or displayed.</p>
+                    
+                    <p><strong>Think of it as:</strong> How tightly packed your mosaic tiles are.</p>
+                </div>
+
+                <h3>The Resolution Confusion</h3>
+
+                <p>Here's what trips people up: A 1920 × 1080 image can be printed at DIFFERENT sizes depending on its DPI!</p>
+
+                <div class="mermaid">
+                    graph TD
+                        A["1920 x 1080 pixels"]
+                        B["72 DPI"]
+                        C["150 DPI"]
+                        D["300 DPI"]
+                        E["26.7 x 15 inches"]
+                        F["12.8 x 7.2 inches"]
+                        G["6.4 x 3.6 inches"]
+                        
+                        A --> B
+                        A --> C
+                        A --> D
+                        B --> E
+                        C --> F
+                        D --> G
+                        
+                        style A fill:#667eea,stroke:#333,stroke-width:2px,color:#fff
+                        style E fill:#43e97b,stroke:#333,stroke-width:2px
+                        style F fill:#f093fb,stroke:#333,stroke-width:2px
+                        style G fill:#f5576c,stroke:#333,stroke-width:2px
+                </div>
+
+                <blockquote>
+                    <strong>💡 Key Insight:</strong> Same number of pixels, different print sizes! Higher DPI means pixels are packed tighter, so the physical print is smaller but looks sharper up close.
+                </blockquote>
+
+                <h3>Screen vs Print Resolution</h3>
+
+                <div class="card">
+                    <h4>For Screen Display (Web, Social Media, Digital Portfolios)</h4>
+                    <ul>
+                        <li>🖥️ <strong>72-96 PPI is standard</strong> - Most screens display at this range</li>
+                        <li>📱 <strong>Retina displays are 2x or 3x</strong> - But the browser handles this automatically</li>
+                        <li>✨ <strong>Total pixel dimensions matter most</strong> - A 1920 × 1080 image will look the same on any screen of that resolution</li>
+                        <li>📊 <strong>Common screen sizes:</strong>
+                            <ul>
+                                <li>HD: 1920 × 1080 (1080p)</li>
+                                <li>4K: 3840 × 2160</li>
+                                <li>Instagram: 1080 × 1080 (square posts)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card" style="margin-top: 1.5rem;">
+                    <h4>For Print (Books, Posters, Merchandise)</h4>
+                    <ul>
+                        <li>📄 <strong>300 DPI is the gold standard</strong> - This looks crisp and professional when printed</li>
+                        <li>📰 <strong>150-200 DPI for posters/billboards</strong> - Viewed from farther away, so you can go lower</li>
+                        <li>🎨 <strong>600 DPI for fine art prints</strong> - Museum quality</li>
+                        <li>⚠️ <strong>Below 150 DPI looks pixelated</strong> - Don't go lower for professional work</li>
+                    </ul>
+                </div>
+
+                <h3>The Simple Resolution Rule</h3>
+
+                <div class="card" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); color: white;">
+                    <h4 style="color: white; margin-top: 0;">🎯 Easy Formula for Print</h4>
+                    <p style="font-size: 1.2rem;"><strong>Pixels Needed = (Inches × DPI) for each dimension</strong></p>
+                    
+                    <p><strong>Example:</strong> You want to print an 8 × 10 inch photo at 300 DPI.</p>
+                    <ul>
+                        <li>Width: 8 inches × 300 DPI = 2,400 pixels</li>
+                        <li>Height: 10 inches × 300 DPI = 3,000 pixels</li>
+                        <li>Your canvas should be: 2,400 × 3,000 pixels</li>
+                    </ul>
+                </div>
+
+                <blockquote style="margin-top: 2rem;">
+                    <strong>🚀 Pro Tip:</strong> Always work at a HIGHER resolution than you need, then scale down. You can always make images smaller, but making them bigger results in blurry, pixelated messes. Start big, think big!
+                </blockquote>
+            </section>
+
+            <!-- Section 3: Choosing Canvas Size -->
+            <section id="canvas-size" class="lesson-section">
+                <h2>Choosing Canvas Size 📏</h2>
+                
+                <p>Now for the million-dollar question: <strong>What size should my canvas be?</strong></p>
+
+                <p>The answer depends on what you're creating! Let's break it down by use case.</p>
+
+                <h3>Quick Reference Guide</h3>
+
+                <div class="card">
+                    <table style="width: 100%;">
+                        <thead>
+                            <tr>
+                                <th>Project Type</th>
+                                <th>Recommended Size</th>
+                                <th>Why</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Social Media Post</strong></td>
+                                <td>1080 × 1080 px<br/>(Instagram)</td>
+                                <td>Displays perfectly on mobile, loads fast</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Digital Portfolio</strong></td>
+                                <td>2000-3000 px<br/>(longest side)</td>
+                                <td>Looks sharp on any screen, reasonable file size</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Concept Art</strong></td>
+                                <td>3000-4000 px<br/>(longest side)</td>
+                                <td>Enough detail for client presentations and prints</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Book Cover</strong></td>
+                                <td>1800 × 2700 px<br/>(6×9" at 300 DPI)</td>
+                                <td>Standard paperback size, print-ready</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Poster (18×24")</strong></td>
+                                <td>5400 × 7200 px<br/>(at 300 DPI)</td>
+                                <td>Professional print quality</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Desktop Wallpaper</strong></td>
+                                <td>1920 × 1080 px<br/>(or higher)</td>
+                                <td>Standard HD display resolution</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Practice/Sketches</strong></td>
+                                <td>1500-2000 px<br/>(longest side)</td>
+                                <td>Large enough to practice, not overwhelming</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>The "Start Big" Philosophy</h3>
+
+                <p>When in doubt, here's my advice: <strong>Go bigger than you think you need.</strong></p>
+
+                <div class="card" style="background: #fff3e0;">
+                    <h4>Why Start with Larger Canvases?</h4>
+                    <ul>
+                        <li>✅ You can always scale down (looks great)</li>
+                        <li>❌ You can't scale up without losing quality (looks terrible)</li>
+                        <li>🎨 More room for fine details if you want them</li>
+                        <li>📸 Flexibility to crop different aspect ratios later</li>
+                        <li>🖨️ Options to print if you decide to later</li>
+                        <li>💪 Builds good professional habits</li>
+                    </ul>
+                </div>
+
+                <blockquote>
+                    <strong>⚠️ But wait!</strong> "Bigger is better" has limits. Super huge canvases (6000+ pixels) can:
+                    <ul>
+                        <li>Slow down your software (laggy brushes = frustration)</li>
+                        <li>Use tons of RAM (might crash your computer)</li>
+                        <li>Create huge file sizes (hundreds of megabytes)</li>
+                        <li>Be overkill for what you actually need</li>
+                    </ul>
+                    <p><strong>Sweet spot for most work:</strong> 2500-4000 pixels on the longest side at 300 DPI.</p>
+                </blockquote>
+
+                <canvas id="canvas-size-visual" width="800" height="350" style="max-width: 100%; height: auto; border: 2px solid #ddd; border-radius: 8px; background: #f8f9fa; margin: 2rem 0;"></canvas>
+                
+                <script>
+                    const csCanvas = document.getElementById('canvas-size-visual');
+                    const csCtx = csCanvas.getContext('2d');
+                    
+                    // Handle high DPI
+                    const csScale = window.devicePixelRatio || 1;
+                    csCanvas.width = 800 * csScale;
+                    csCanvas.height = 350 * csScale;
+                    csCtx.scale(csScale, csScale);
+                    
+                    // Title
+                    csCtx.fillStyle = '#333';
+                    csCtx.font = 'bold 16px Arial';
+                    csCtx.textAlign = 'center';
+                    csCtx.fillText('Canvas Size Impact', 400, 25);
+                    
+                    // Draw three canvas sizes
+                    const sizes = [
+                        { width: 60, height: 80, x: 100, y: 100, label: 'Too Small\n1000px', color: '#e74c3c' },
+                        { width: 120, height: 160, x: 340, y: 70, label: 'Just Right\n3000px', color: '#43e97b' },
+                        { width: 180, height: 240, x: 600, y: 30, label: 'Too Large*\n8000px', color: '#f39c12' }
+                    ];
+                    
+                    sizes.forEach(size => {
+                        // Shadow
+                        csCtx.fillStyle = 'rgba(0, 0, 0, 0.1)';
+                        csCtx.fillRect(size.x + 5, size.y + 5, size.width, size.height);
+                        
+                        // Canvas
+                        csCtx.fillStyle = 'white';
+                        csCtx.fillRect(size.x, size.y, size.width, size.height);
+                        
+                        // Border with color
+                        csCtx.strokeStyle = size.color;
+                        csCtx.lineWidth = 3;
+                        csCtx.strokeRect(size.x, size.y, size.width, size.height);
+                        
+                        // Label
+                        csCtx.fillStyle = '#333';
+                        csCtx.font = '12px Arial';
+                        csCtx.textAlign = 'center';
+                        const lines = size.label.split('\n');
+                        lines.forEach((line, i) => {
+                            csCtx.fillText(line, size.x + size.width / 2, size.y + size.height + 20 + (i * 15));
+                        });
+                    });
+                    
+                    // Note at bottom
+                    csCtx.font = 'italic 11px Arial';
+                    csCtx.fillStyle = '#666';
+                    csCtx.fillText('*Unless you need it for large-format printing or extremely detailed work', 400, 330);
+                </script>
+            </section>
+
+            <!-- Continue to Part B -->
+            <!-- Section 4: Aspect Ratios Explained -->
+            <section id="aspect-ratio" class="lesson-section">
+                <h2>Aspect Ratios Explained 📺</h2>
+                
+                <p>You've probably heard terms like "16:9" or "4:3" thrown around. These are <strong>aspect ratios</strong>—the relationship between width and height of your canvas.</p>
+
+                <h3>What Is Aspect Ratio?</h3>
+                
+                <p>Think of aspect ratio as the <strong>shape</strong> of your canvas. A square is 1:1 (same width and height). A wide rectangle might be 16:9 (16 units wide for every 9 units tall).</p>
+
+                <canvas id="aspect-ratio-canvas" width="800" height="500" style="max-width: 100%; height: auto; border: 2px solid #ddd; border-radius: 8px; background: #f8f9fa; margin: 2rem 0;"></canvas>
+                
+                <script>
+                    const arCanvas = document.getElementById('aspect-ratio-canvas');
+                    const arCtx = arCanvas.getContext('2d');
+                    
+                    // Handle high DPI
+                    const arScale = window.devicePixelRatio || 1;
+                    arCanvas.width = 800 * arScale;
+                    arCanvas.height = 500 * arScale;
+                    arCtx.scale(arScale, arScale);
+                    
+                    // Title
+                    arCtx.fillStyle = '#333';
+                    arCtx.font = 'bold 18px Arial';
+                    arCtx.textAlign = 'center';
+                    arCtx.fillText('Common Aspect Ratios', 400, 30);
+                    
+                    const ratios = [
+                        { ratio: '1:1', width: 120, height: 120, x: 80, y: 80, label: '1:1 Square\n(Instagram, profile pics)', color: '#e74c3c' },
+                        { ratio: '4:3', width: 160, height: 120, x: 240, y: 80, label: '4:3 Standard\n(Old TV, iPad)', color: '#3498db' },
+                        { ratio: '16:9', width: 200, height: 112, x: 440, y: 84, label: '16:9 Widescreen\n(HD video, monitors)', color: '#2ecc71' },
+                        { ratio: '21:9', width: 200, height: 86, x: 80, y: 260, label: '21:9 Ultrawide\n(Cinematic)', color: '#9b59b6' },
+                        { ratio: '9:16', width: 90, height: 160, x: 320, y: 240, label: '9:16 Portrait\n(Phone screens, Stories)', color: '#e67e22' },
+                        { ratio: '2:3', width: 100, height: 150, x: 460, y: 240, label: '2:3 Portrait\n(Book covers)', color: '#1abc9c' },
+                        { ratio: 'A4', width: 100, height: 141, x: 610, y: 240, label: 'A4 Paper\n(1:1.414)', color: '#34495e' }
+                    ];
+                    
+                    ratios.forEach(item => {
+                        // Shadow
+                        arCtx.fillStyle = 'rgba(0, 0, 0, 0.1)';
+                        arCtx.fillRect(item.x + 3, item.y + 3, item.width, item.height);
+                        
+                        // Canvas
+                        arCtx.fillStyle = 'white';
+                        arCtx.fillRect(item.x, item.y, item.width, item.height);
+                        
+                        // Border
+                        arCtx.strokeStyle = item.color;
+                        arCtx.lineWidth = 3;
+                        arCtx.strokeRect(item.x, item.y, item.width, item.height);
+                        
+                        // Ratio label on canvas
+                        arCtx.fillStyle = item.color;
+                        arCtx.font = 'bold 14px Arial';
+                        arCtx.textAlign = 'center';
+                        arCtx.fillText(item.ratio, item.x + item.width / 2, item.y + item.height / 2 + 5);
+                        
+                        // Description below
+                        arCtx.fillStyle = '#333';
+                        arCtx.font = '11px Arial';
+                        const lines = item.label.split('\n');
+                        lines.forEach((line, i) => {
+                            arCtx.fillText(line, item.x + item.width / 2, item.y + item.height + 15 + (i * 13));
+                        });
+                    });
+                </script>
+
+                <h3>Common Aspect Ratios & Their Uses</h3>
+
+                <div class="card">
+                    <table style="width: 100%;">
+                        <thead>
+                            <tr>
+                                <th>Aspect Ratio</th>
+                                <th>Description</th>
+                                <th>Best For</th>
+                                <th>Example Sizes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>1:1 (Square)</strong></td>
+                                <td>Equal width and height</td>
+                                <td>Instagram posts, profile pictures, icons</td>
+                                <td>1080×1080, 2000×2000</td>
+                            </tr>
+                            <tr>
+                                <td><strong>4:3 (Standard)</strong></td>
+                                <td>Traditional format</td>
+                                <td>Older displays, presentations, iPad</td>
+                                <td>1600×1200, 2048×1536</td>
+                            </tr>
+                            <tr>
+                                <td><strong>16:9 (Widescreen)</strong></td>
+                                <td>Modern standard</td>
+                                <td>HD video, computer monitors, YouTube</td>
+                                <td>1920×1080, 3840×2160</td>
+                            </tr>
+                            <tr>
+                                <td><strong>21:9 (Ultrawide)</strong></td>
+                                <td>Extra wide cinematic</td>
+                                <td>Cinematic art, panoramas</td>
+                                <td>2560×1080, 3440×1440</td>
+                            </tr>
+                            <tr>
+                                <td><strong>9:16 (Portrait)</strong></td>
+                                <td>Vertical format</td>
+                                <td>Mobile content, Instagram Stories, TikTok</td>
+                                <td>1080×1920, 1440×2560</td>
+                            </tr>
+                            <tr>
+                                <td><strong>2:3 or 4:6</strong></td>
+                                <td>Portrait orientation</td>
+                                <td>Book covers, posters, portraits</td>
+                                <td>2000×3000, 1600×2400</td>
+                            </tr>
+                            <tr>
+                                <td><strong>A4 (1:1.414)</strong></td>
+                                <td>International paper</td>
+                                <td>Documents, prints, flyers</td>
+                                <td>2480×3508 (at 300 DPI)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <blockquote>
+                    <strong>💡 Pro Tip:</strong> When in doubt, use 16:9 for horizontal work and 9:16 for vertical work. These are the most versatile modern formats and work well for both screen display and most print applications.
+                </blockquote>
+
+                <h3>Maintaining Aspect Ratio When Resizing</h3>
+
+                <p>Here's something crucial: When you resize your canvas, you want to maintain the aspect ratio to avoid distortion. Most software has a "lock aspect ratio" or "constrain proportions" checkbox—<strong>always use it!</strong></p>
+
+                <div class="card" style="background: #fff3e0;">
+                    <h4>⚠️ What Happens If You Don't?</h4>
+                    <p>Imagine you have a square canvas (1000×1000) and you resize it to 1000×500 without maintaining aspect ratio. Everything gets squished! Circles become ovals, faces get compressed, and your beautiful art looks like a funhouse mirror reflection.</p>
+                    
+                    <p><strong>Always maintain aspect ratio when scaling!</strong> The only time you'd break this rule is if you're intentionally creating a distorted effect for artistic purposes.</p>
+                </div>
+            </section>
+
+            <!-- Section 5: Color Modes (RGB vs CMYK) -->
+            <section id="color-modes" class="lesson-section">
+                <h2>Color Modes: RGB vs CMYK 🎨</h2>
+                
+                <p>This is where things get interesting! Not all colors are created equal in digital art. We have different <strong>color modes</strong> depending on whether your art will be viewed on screens or printed on paper.</p>
+
+                <h3>The Two Main Color Modes</h3>
+
+                <div class="mermaid">
+                    graph TD
+                        A["Your Artwork"]
+                        B{"Where will it be seen?"}
+                        C["RGB Mode"]
+                        D["CMYK Mode"]
+                        
+                        E["Red Green Blue Light"]
+                        F["Cyan Magenta Yellow Black Ink"]
+                        G["Websites and Displays"]
+                        H["Magazines and Prints"]
+                        
+                        A --> B
+                        B -->|Screen| C
+                        B -->|Print| D
+                        C --> E
+                        D --> F
+                        E --> G
+                        F --> H
+                        
+                        style C fill:#667eea,stroke:#333,stroke-width:2px,color:#fff
+                        style D fill:#e74c3c,stroke:#333,stroke-width:2px,color:#fff
+                </div>
+
+                <h3>RGB: The Language of Light</h3>
+
+                <div class="card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+                    <h4 style="color: white; margin-top: 0;">💡 RGB (Red, Green, Blue)</h4>
+                    
+                    <p><strong>How it works:</strong> RGB creates colors by mixing different intensities of red, green, and blue light. Think of three colored flashlights shining together!</p>
+                    
+                    <ul>
+                        <li>🔴 Red light + 🟢 Green light = 🟡 Yellow</li>
+                        <li>🔴 Red light + 🔵 Blue light = 🟣 Magenta</li>
+                        <li>🟢 Green light + 🔵 Blue light = 🔵 Cyan</li>
+                        <li>🔴 Red + 🟢 Green + 🔵 Blue all together = ⚪ White!</li>
+                        <li>No light at all = ⚫ Black</li>
+                    </ul>
+                    
+                    <p><strong>Use RGB for:</strong></p>
+                    <ul>
+                        <li>Digital art portfolios</li>
+                        <li>Social media posts</li>
+                        <li>Website graphics</li>
+                        <li>Video game art</li>
+                        <li>Anything displayed on screens</li>
+                        <li>Photography editing</li>
+                    </ul>
+                    
+                    <p><strong>Fun fact:</strong> Your computer monitor has millions of tiny RGB pixels. Look really close with a magnifying glass and you'll see red, green, and blue dots!</p>
+                </div>
+
+                <h3>CMYK: The Language of Ink</h3>
+
+                <div class="card" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; margin-top: 1.5rem;">
+                    <h4 style="color: white; margin-top: 0;">🖨️ CMYK (Cyan, Magenta, Yellow, Key/Black)</h4>
+                    
+                    <p><strong>How it works:</strong> CMYK creates colors by layering inks on white paper. Each ink absorbs (subtracts) certain wavelengths of light.</p>
+                    
+                    <ul>
+                        <li>🔵 Cyan + 🔴 Magenta = Blue</li>
+                        <li>🔵 Cyan + 🟡 Yellow = Green</li>
+                        <li>🔴 Magenta + 🟡 Yellow = Red</li>
+                        <li>🔵 Cyan + 🔴 Magenta + 🟡 Yellow = Dark brown (not pure black, which is why we add K)</li>
+                        <li>⚫ K (Key/Black) = True black for text and shadows</li>
+                    </ul>
+                    
+                    <p><strong>Use CMYK for:</strong></p>
+                    <ul>
+                        <li>Magazine covers</li>
+                        <li>Business cards</li>
+                        <li>Posters and flyers</li>
+                        <li>Book covers and interiors</li>
+                        <li>Product packaging</li>
+                        <li>Anything that will be professionally printed</li>
+                    </ul>
+                    
+                    <p><strong>Important:</strong> CMYK has a smaller color range than RGB. Some bright, vibrant RGB colors simply cannot be printed!</p>
+                </div>
+
+                <h3>The Great Color Mode Debate</h3>
+
+                <p>Here's the big question beginners always ask: <strong>"Which mode should I work in?"</strong></p>
+
+                <div class="card">
+                    <h4>🎯 The Simple Answer</h4>
+                    <p><strong>Always work in RGB unless you have a specific reason not to.</strong></p>
+                    
+                    <p><strong>Why?</strong></p>
+                    <ul>
+                        <li>✅ RGB has more colors available (wider gamut)</li>
+                        <li>✅ Most digital art software works best in RGB</li>
+                        <li>✅ You can convert RGB to CMYK later if needed</li>
+                        <li>✅ Converting CMYK to RGB loses very little</li>
+                        <li>✅ If unsure about final output, RGB is safer</li>
+                        <li>✅ Print shops can convert your RGB files to CMYK</li>
+                    </ul>
+                    
+                    <p><strong>Exception:</strong> If you're creating artwork that you <em>know for certain</em> will only be printed (like a magazine illustration commissioned for print), and you want to see exactly what colors will print, work in CMYK from the start.</p>
+                </div>
+
+                <blockquote>
+                    <strong>⚠️ The Color Shift Problem:</strong> That brilliant neon blue that looks amazing on your screen? It might turn muddy and dull when converted to CMYK for printing. This is called being "out of gamut." Professional print software will warn you about this, but it's better to know upfront!
+                </blockquote>
+
+                <h3>Other Color Modes You Might See</h3>
+
+                <div class="card">
+                    <h4>Grayscale</h4>
+                    <p>Only black, white, and shades of gray. Perfect for black-and-white illustrations or when you want to focus on values without color distraction.</p>
+                    
+                    <h4>LAB Color</h4>
+                    <p>A super technical color mode used in advanced photo editing. You probably won't need this as a beginner, but it has the widest color gamut of all modes.</p>
+                    
+                    <h4>Indexed Color</h4>
+                    <p>Limited palette mode (like 256 colors max). Used for GIFs and retro pixel art. Not common in modern digital painting.</p>
+                </div>
+            </section>
+
+            <!-- Section 6: Bit Depth & Color Quality -->
+            <section id="bit-depth" class="lesson-section">
+                <h2>Bit Depth & Color Quality 🎨</h2>
+                
+                <p>Okay, this might sound technical, but stick with me—it's actually pretty simple and knowing this will level up your work!</p>
+
+                <h3>What Is Bit Depth?</h3>
+                
+                <p><strong>Bit depth</strong> tells you how many color variations each pixel can have. Think of it like this:</p>
+
+                <ul>
+                    <li>A coloring book with 8 crayons = low bit depth</li>
+                    <li>A professional art supply store with 10,000 paint colors = high bit depth</li>
+                </ul>
+
+                <p>In digital art, we measure this in "bits per channel."</p>
+
+                <div class="card" style="background: #e3f2fd;">
+                    <h4>8-bit Color (Most Common)</h4>
+                    <p><strong>What it means:</strong> Each color channel (Red, Green, Blue) has 256 possible values (0-255).</p>
+                    <p><strong>Total colors:</strong> 256 × 256 × 256 = 16.7 million colors</p>
+                    
+                    <p><strong>Pros:</strong></p>
+                    <ul>
+                        <li>✅ More than enough for most artwork</li>
+                        <li>✅ Smaller file sizes</li>
+                        <li>✅ Works everywhere (all software, all formats)</li>
+                        <li>✅ Fast performance</li>
+                    </ul>
+                    
+                    <p><strong>Use for:</strong> Pretty much everything! Social media, web, most prints, game art, illustrations.</p>
+                </div>
+
+                <div class="card" style="background: #f3e5f5; margin-top: 1.5rem;">
+                    <h4>16-bit Color (Professional)</h4>
+                    <p><strong>What it means:</strong> Each color channel has 65,536 possible values.</p>
+                    <p><strong>Total colors:</strong> Way more than your eye can distinguish!</p>
+                    
+                    <p><strong>Pros:</strong></p>
+                    <ul>
+                        <li>✅ Smoother gradients (no banding)</li>
+                        <li>✅ Better for heavy editing and color correction</li>
+                        <li>✅ More flexibility when adjusting</li>
+                        <li>✅ Professional photo editing standard</li>
+                    </ul>
+                    
+                    <p><strong>Cons:</strong></p>
+                    <ul>
+                        <li>❌ Files are 2x larger</li>
+                        <li>❌ Slower performance</li>
+                        <li>❌ Some filters/effects don't work in 16-bit</li>
+                        <li>❌ Must convert to 8-bit for most final outputs</li>
+                    </ul>
+                    
+                    <p><strong>Use for:</strong> Professional photo editing, high-end print work, when you need maximum color flexibility.</p>
+                </div>
+
+                <div class="card" style="background: #fff3e0; margin-top: 1.5rem;">
+                    <h4>32-bit Color (Extreme)</h4>
+                    <p><strong>What it means:</strong> Massive color precision, uses floating-point numbers.</p>
+                    
+                    <p><strong>Use for:</strong> 3D rendering, HDR photography, scientific imaging. Overkill for painting!</p>
+                </div>
+
+                <h3>What Should You Use?</h3>
+
+                <div class="card" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); color: white;">
+                    <h4 style="color: white; margin-top: 0;">🎯 Quick Decision Guide</h4>
+                    
+                    <p><strong>Use 8-bit when:</strong></p>
+                    <ul>
+                        <li>You're creating illustrations, concept art, or digital paintings</li>
+                        <li>You're working on art for games, web, or social media</li>
+                        <li>File size and performance matter</li>
+                        <li>You're a beginner (don't overthink it!)</li>
+                    </ul>
+                    
+                    <p><strong>Use 16-bit when:</strong></p>
+                    <ul>
+                        <li>You're doing serious photo manipulation</li>
+                        <li>You'll be making heavy color/lighting adjustments</li>
+                        <li>You need the absolute highest quality for fine art prints</li>
+                        <li>You're working professionally and client requires it</li>
+                    </ul>
+                    
+                    <p><strong>Honest truth:</strong> 99% of the time, 8-bit is perfectly fine. Don't let anyone make you feel bad for using it!</p>
+                </div>
+
+                <blockquote>
+                    <strong>🎨 Real Talk:</strong> Some of the most beautiful digital art you've ever seen was created in 8-bit color. Bit depth matters, but it's not the secret to great art. Your skill, creativity, and vision matter WAY more than whether you're working in 8-bit or 16-bit!
+                </blockquote>
+            </section>
+
+              <!-- Section 7: File Formats Guide -->
+            <section id="file-formats" class="lesson-section">
+                <h2>File Formats Guide 💾</h2>
+                
+                <p>You've created your masterpiece—now how do you save it? Choosing the right file format is crucial because different formats serve different purposes. Let's decode the alphabet soup of file extensions!</p>
+
+                <h3>Working Files vs Export Files</h3>
+
+                <p>First, understand this important distinction:</p>
+
+                <div class="card" style="background: #e3f2fd;">
+                    <h4>📂 Working Files (Save Your Progress)</h4>
+                    <p>These preserve <strong>everything</strong>—layers, effects, text, adjustments. Think of them as your "original recipe" that you can edit later.</p>
+                    <ul>
+                        <li><strong>PSD</strong> (Photoshop Document)</li>
+                        <li><strong>XCF</strong> (GIMP)</li>
+                        <li><strong>CLIP</strong> (Clip Studio Paint)</li>
+                        <li><strong>KRITA</strong> (Krita)</li>
+                        <li><strong>PROCREATE</strong> (Procreate on iPad)</li>
+                    </ul>
+                    <p><strong>Always keep your working file!</strong> You'll thank yourself later when you need to make changes.</p>
+                </div>
+
+                <div class="card" style="background: #f3e5f5; margin-top: 1.5rem;">
+                    <h4>📤 Export Files (Share Your Work)</h4>
+                    <p>These are flattened or compressed versions optimized for sharing, printing, or web use. They're smaller and more compatible, but you lose the ability to edit layers.</p>
+                    <ul>
+                        <li><strong>JPG/JPEG</strong> - Photos, web images</li>
+                        <li><strong>PNG</strong> - Graphics with transparency</li>
+                        <li><strong>TIFF</strong> - High-quality prints</li>
+                        <li><strong>PDF</strong> - Documents, print-ready files</li>
+                        <li><strong>GIF</strong> - Simple animations</li>
+                    </ul>
+                </div>
+
+                <h3>The Essential Export Formats</h3>
+
+                <div class="card">
+                    <h4>JPG/JPEG (Joint Photographic Experts Group)</h4>
+                    
+                    <p><strong>Best for:</strong> Photographs, digital paintings, web images, social media</p>
+                    
+                    <p><strong>Pros:</strong></p>
+                    <ul>
+                        <li>✅ Small file size (great for web)</li>
+                        <li>✅ Universal compatibility (opens everywhere)</li>
+                        <li>✅ Millions of colors</li>
+                        <li>✅ Adjustable quality/compression</li>
+                    </ul>
+                    
+                    <p><strong>Cons:</strong></p>
+                    <ul>
+                        <li>❌ No transparency support</li>
+                        <li>❌ Lossy compression (quality degrades each save)</li>
+                        <li>❌ Not ideal for text or sharp edges</li>
+                    </ul>
+                    
+                    <p><strong>When to use:</strong> Instagram posts, Facebook uploads, website photos, email attachments, portfolio thumbnails</p>
+                    
+                    <p><strong>Quality settings:</strong> Use 80-90% quality for web (good balance), 95-100% for archival or print sources</p>
+                </div>
+
+                <div class="card" style="margin-top: 1.5rem;">
+                    <h4>PNG (Portable Network Graphics)</h4>
+                    
+                    <p><strong>Best for:</strong> Logos, graphics with transparency, illustrations with hard edges</p>
+                    
+                    <p><strong>Pros:</strong></p>
+                    <ul>
+                        <li>✅ Supports transparency (alpha channel)</li>
+                        <li>✅ Lossless compression (perfect quality)</li>
+                        <li>✅ Great for sharp edges and text</li>
+                        <li>✅ Web-friendly</li>
+                    </ul>
+                    
+                    <p><strong>Cons:</strong></p>
+                    <ul>
+                        <li>❌ Larger file sizes than JPG</li>
+                        <li>❌ Not ideal for photographs (use JPG instead)</li>
+                        <li>❌ Some older systems have limited support</li>
+                    </ul>
+                    
+                    <p><strong>When to use:</strong> Logos, icons, graphics with transparent backgrounds, game assets, screenshots, web graphics with text</p>
+                    
+                    <p><strong>PNG-8 vs PNG-24:</strong> PNG-8 has 256 colors (like GIF), PNG-24 has millions of colors. Use PNG-24 for most digital art.</p>
+                </div>
+
+                <div class="card" style="margin-top: 1.5rem;">
+                    <h4>TIFF/TIF (Tagged Image File Format)</h4>
+                    
+                    <p><strong>Best for:</strong> Professional printing, archival, high-quality storage</p>
+                    
+                    <p><strong>Pros:</strong></p>
+                    <ul>
+                        <li>✅ Lossless quality (perfect for prints)</li>
+                        <li>✅ Supports layers (in some programs)</li>
+                        <li>✅ Industry standard for print</li>
+                        <li>✅ Can store color profiles</li>
+                    </ul>
+                    
+                    <p><strong>Cons:</strong></p>
+                    <ul>
+                        <li>❌ Very large file sizes</li>
+                        <li>❌ Not web-friendly</li>
+                        <li>❌ Overkill for casual use</li>
+                    </ul>
+                    
+                    <p><strong>When to use:</strong> Submitting to print shops, professional magazines, archival storage, when client specifically requests it</p>
+                </div>
+
+                <div class="card" style="margin-top: 1.5rem;">
+                    <h4>PDF (Portable Document Format)</h4>
+                    
+                    <p><strong>Best for:</strong> Multi-page documents, print-ready files, presentations</p>
+                    
+                    <p><strong>Pros:</strong></p>
+                    <ul>
+                        <li>✅ Universal compatibility</li>
+                        <li>✅ Preserves fonts and layout</li>
+                        <li>✅ Can contain multiple pages</li>
+                        <li>✅ Print shop standard</li>
+                    </ul>
+                    
+                    <p><strong>Cons:</strong></p>
+                    <ul>
+                        <li>❌ Not for editing artwork</li>
+                        <li>❌ Can be large if not optimized</li>
+                    </ul>
+                    
+                    <p><strong>When to use:</strong> Portfolio presentations, print-ready book covers, client deliverables, documents with text and images</p>
+                </div>
+
+                <div class="card" style="margin-top: 1.5rem;">
+                    <h4>GIF (Graphics Interchange Format)</h4>
+                    
+                    <p><strong>Best for:</strong> Simple animations, pixel art, memes</p>
+                    
+                    <p><strong>Pros:</strong></p>
+                    <ul>
+                        <li>✅ Supports animation</li>
+                        <li>✅ Very small file sizes</li>
+                        <li>✅ Universal web support</li>
+                    </ul>
+                    
+                    <p><strong>Cons:</strong></p>
+                    <ul>
+                        <li>❌ Limited to 256 colors</li>
+                        <li>❌ Poor quality for complex images</li>
+                        <li>❌ No audio support</li>
+                    </ul>
+                    
+                    <p><strong>When to use:</strong> Simple animations, reaction images, pixel art. For high-quality video, use MP4 instead.</p>
+                </div>
+
+                <h3>Quick Decision Chart</h3>
+
+                <div class="card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+                    <h4 style="color: white; margin-top: 0;">🎯 "What format should I use?"</h4>
+                    
+                    <p><strong>For web/social media photos:</strong> JPG (80-90% quality)</p>
+                    <p><strong>For logos or transparent graphics:</strong> PNG</p>
+                    <p><strong>For professional printing:</strong> TIFF or high-quality PDF</p>
+                    <p><strong>For your editable working file:</strong> Your software's native format (PSD, CLIP, etc.)</p>
+                    <p><strong>For simple animations:</strong> GIF or MP4</p>
+                    <p><strong>For client deliverables:</strong> Ask them! (Usually PDF or high-res JPG)</p>
+                </div>
+
+                <blockquote>
+                    <strong>💾 Pro Tip:</strong> Never delete your working file! Save it as PSD/native format first, then export copies in other formats. Think of your working file as the "negatives" and exports as "prints"—you always want to keep the original.
+                </blockquote>
+            </section>
+
+            <!-- Section 8: Setting Up Your Canvas (Practical) -->
+            <section id="practical-setup" class="lesson-section">
+                <h2>Setting Up Your Canvas: Practical Guide 🎨</h2>
+                
+                <p>Okay, enough theory! Let's walk through actually setting up a canvas. While specific steps vary by software, the core concepts are universal.</p>
+
+                <h3>The Universal Canvas Setup Checklist</h3>
+
+                <div class="card">
+                    <h4>Step 1: Determine Your End Goal</h4>
+                    <p>Before touching any settings, ask yourself:</p>
+                    <ul>
+                        <li>Where will this be displayed? (Screen or print?)</li>
+                        <li>What's the final output size?</li>
+                        <li>Will it need to be resized for multiple uses?</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="margin-top: 1.5rem;">
+                    <h4>Step 2: Choose Your Dimensions</h4>
+                    <p>Based on your goal:</p>
+                    <ul>
+                        <li><strong>For screen:</strong> Pixel dimensions (e.g., 1920 × 1080)</li>
+                        <li><strong>For print:</strong> Physical size + DPI (e.g., 8 × 10 inches at 300 DPI)</li>
+                        <li><strong>When uncertain:</strong> Go bigger (3000-4000px on longest side)</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="margin-top: 1.5rem;">
+                    <h4>Step 3: Set Resolution/DPI</h4>
+                    <ul>
+                        <li><strong>Screen-only:</strong> 72-96 DPI (doesn't really matter for digital display)</li>
+                        <li><strong>Print or flexible:</strong> 300 DPI (always safe)</li>
+                        <li><strong>Large format print:</strong> 150-200 DPI (posters viewed from distance)</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="margin-top: 1.5rem;">
+                    <h4>Step 4: Select Color Mode</h4>
+                    <ul>
+                        <li><strong>Default choice:</strong> RGB, 8-bit</li>
+                        <li><strong>For serious photo editing:</strong> RGB, 16-bit</li>
+                        <li><strong>Only if print-only:</strong> CMYK (rare)</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="margin-top: 1.5rem;">
+                    <h4>Step 5: Set Background</h4>
+                    <ul>
+                        <li><strong>White:</strong> Most common, good for print-destined work</li>
+                        <li><strong>Transparent:</strong> For logos, stickers, assets with no background</li>
+                        <li><strong>Custom color:</strong> Match your intended final background</li>
+                    </ul>
+                </div>
+
+                <h3>Common Canvas Setups (Copy These!)</h3>
+
+                <div class="card" style="background: #fff3e0;">
+                    <h4>📱 Instagram Post</h4>
+                    <ul>
+                        <li><strong>Dimensions:</strong> 1080 × 1080 pixels (square) or 1080 × 1350 (portrait)</li>
+                        <li><strong>Resolution:</strong> 72 DPI</li>
+                        <li><strong>Color Mode:</strong> RGB, 8-bit</li>
+                        <li><strong>Background:</strong> White or transparent</li>
+                        <li><strong>Save as:</strong> JPG (80-90% quality)</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="background: #e8f5e9; margin-top: 1rem;">
+                    <h4>🖼️ Digital Art Portfolio Piece</h4>
+                    <ul>
+                        <li><strong>Dimensions:</strong> 3000 × 4000 pixels (portrait) or 4000 × 3000 (landscape)</li>
+                        <li><strong>Resolution:</strong> 300 DPI</li>
+                        <li><strong>Color Mode:</strong> RGB, 8-bit (or 16-bit for flexibility)</li>
+                        <li><strong>Background:</strong> White</li>
+                        <li><strong>Save as:</strong> PSD/native for working, JPG for sharing</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="background: #fce4ec; margin-top: 1rem;">
+                    <h4>📖 Book Cover (6 × 9 inch)</h4>
+                    <ul>
+                        <li><strong>Dimensions:</strong> 1800 × 2700 pixels (or 6 × 9 inches)</li>
+                        <li><strong>Resolution:</strong> 300 DPI</li>
+                        <li><strong>Color Mode:</strong> RGB, 8-bit</li>
+                        <li><strong>Background:</strong> White</li>
+                        <li><strong>Save as:</strong> PDF or TIFF for print, JPG for preview</li>
+                        <li><strong>Note:</strong> Add bleed (usually 0.125 inches on all sides)</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="background: #e1f5fe; margin-top: 1rem;">
+                    <h4>🎮 Game Character Concept</h4>
+                    <ul>
+                        <li><strong>Dimensions:</strong> 2000 × 3000 pixels</li>
+                        <li><strong>Resolution:</strong> 300 DPI</li>
+                        <li><strong>Color Mode:</strong> RGB, 8-bit</li>
+                        <li><strong>Background:</strong> Transparent or neutral gray</li>
+                        <li><strong>Save as:</strong> PSD for working, PNG for delivery</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="background: #f3e5f5; margin-top: 1rem;">
+                    <h4>🪧 Poster (18 × 24 inches)</h4>
+                    <ul>
+                        <li><strong>Dimensions:</strong> 5400 × 7200 pixels (or 18 × 24 inches)</li>
+                        <li><strong>Resolution:</strong> 300 DPI (or 200 DPI for large format)</li>
+                        <li><strong>Color Mode:</strong> RGB, 8-bit</li>
+                        <li><strong>Background:</strong> White</li>
+                        <li><strong>Save as:</strong> PDF or TIFF for print shop</li>
+                    </ul>
+                </div>
+
+                <blockquote>
+                    <strong>🎨 Pro Workflow:</strong> Many artists create a "templates" folder with pre-configured canvas setups for their common projects. Set up once, use forever!
+                </blockquote>
+            </section>
+
+            <!-- Section 9: Common Mistakes to Avoid -->
+            <section id="common-mistakes" class="lesson-section">
+                <h2>Common Mistakes to Avoid ⚠️</h2>
+                
+                <p>Learn from others' mistakes! Here are the most common canvas setup errors beginners make (and how to avoid them).</p>
+
+                <div class="card" style="border-left: 4px solid #e74c3c;">
+                    <h4>❌ Mistake #1: Starting Too Small</h4>
+                    <p><strong>The Problem:</strong> "I'll just make it 800 × 600 for Instagram, that's all I need!"</p>
+                    <p><strong>Why it's bad:</strong> Later you want to print it, use it on different platforms, or crop it differently—but you can't scale up without losing quality.</p>
+                    <p><strong>The Fix:</strong> Start bigger than you think you need. You can always scale down, but never up.</p>
+                </div>
+
+                <div class="card" style="border-left: 4px solid #e74c3c; margin-top: 1.5rem;">
+                    <h4>❌ Mistake #2: Wrong DPI for Print</h4>
+                    <p><strong>The Problem:</strong> Creating art at 72 DPI and then trying to print it.</p>
+                    <p><strong>Why it's bad:</strong> It'll look pixelated and unprofessional when printed.</p>
+                    <p><strong>The Fix:</strong> If there's ANY chance you'll print it, use 300 DPI. Storage is cheap; redoing artwork is expensive.</p>
+                </div>
+
+                <div class="card" style="border-left: 4px solid #e74c3c; margin-top: 1.5rem;">
+                    <h4>❌ Mistake #3: Not Saving the Working File</h4>
+                    <p><strong>The Problem:</strong> Flattening layers and only keeping the JPG.</p>
+                    <p><strong>Why it's bad:</strong> Client wants changes? Need to fix a typo? Tough luck—you'll have to start over.</p>
+                    <p><strong>The Fix:</strong> ALWAYS save your layered working file (PSD, CLIP, etc.) in addition to exports. Hard drives are cheap; your time isn't.</p>
+                </div>
+
+                <div class="card" style="border-left: 4px solid #e74c3c; margin-top: 1.5rem;">
+                    <h4>❌ Mistake #4: Using JPG for Logos/Transparency</h4>
+                    <p><strong>The Problem:</strong> Saving a logo as JPG with a white background.</p>
+                    <p><strong>Why it's bad:</strong> It won't work on colored backgrounds, and looks unprofessional.</p>
+                    <p><strong>The Fix:</strong> Use PNG for any graphics that need transparency. JPG is for photos only.</p>
+                </div>
+
+                <div class="card" style="border-left: 4px solid #e74c3c; margin-top: 1.5rem;">
+                    <h4>❌ Mistake #5: Wrong Aspect Ratio</h4>
+                    <p><strong>The Problem:</strong> Creating a square image for a 16:9 video thumbnail, or vice versa.</p>
+                    <p><strong>Why it's bad:</strong> Important parts get cropped out, or you get awkward letterboxing.</p>
+                    <p><strong>The Fix:</strong> Check the required aspect ratio BEFORE starting. Different platforms need different sizes.</p>
+                </div>
+
+                <div class="card" style="border-left: 4px solid #e74c3c; margin-top: 1.5rem;">
+                    <h4>❌ Mistake #6: Ignoring Color Mode</h4>
+                    <p><strong>The Problem:</strong> Creating beautiful vibrant art in RGB, then being shocked when prints look dull.</p>
+                    <p><strong>Why it's bad:</strong> CMYK has a smaller color range. That electric blue won't print the same.</p>
+                    <p><strong>The Fix:</strong> Work in RGB (it's fine!), but do a test CMYK conversion before sending to print. Adjust colors if needed.</p>
+                </div>
+
+                <div class="card" style="border-left: 4px solid #e74c3c; margin-top: 1.5rem;">
+                    <h4>❌ Mistake #7: Not Considering Bleed for Print</h4>
+                    <p><strong>The Problem:</strong> Designing exactly to size with no bleed area.</p>
+                    <p><strong>Why it's bad:</strong> When the print shop cuts your poster, important elements might get chopped off.</p>
+                    <p><strong>The Fix:</strong> Add 0.125-0.25 inches of bleed on all sides for anything that will be professionally printed.</p>
+                </div>
+
+                <div class="card" style="border-left: 4px solid #e74c3c; margin-top: 1.5rem;">
+                    <h4>❌ Mistake #8: Overthinking Bit Depth</h4>
+                    <p><strong>The Problem:</strong> Beginners working in 16-bit or 32-bit "because it's better."</p>
+                    <p><strong>Why it's bad:</strong> Slower performance, compatibility issues, and most people can't tell the difference anyway.</p>
+                    <p><strong>The Fix:</strong> 8-bit is fine for 99% of work. Only use higher bit depth if you have a specific professional need.</p>
+                </div>
+
+                <h3>The Golden Rules</h3>
+
+                <div class="card" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); color: white;">
+                    <h4 style="color: white; margin-top: 0;">✅ Remember These Always</h4>
+                    <ol>
+                        <li><strong>Start big, export small</strong> - You can always scale down</li>
+                        <li><strong>Save the working file</strong> - Your layers are precious</li>
+                        <li><strong>300 DPI for print</strong> - Non-negotiable for quality</li>
+                        <li><strong>RGB for digital</strong> - Unless you have a specific reason otherwise</li>
+                        <li><strong>PNG for transparency, JPG for photos</strong> - Simple rule</li>
+                        <li><strong>Check requirements first</strong> - Know your canvas specs before starting</li>
+                        <li><strong>Keep backups</strong> - Multiple copies, different locations</li>
+                    </ol>
+                </div>
+            </section>
+
+            <!-- Lesson Summary & Navigation -->
+            <section class="lesson-summary">
+                <h2>🎓 Lesson Complete!</h2>
+                
+                <p>Congratulations! You now understand the fundamentals of digital canvases. Let's recap what you've learned:</p>
+
+                <div class="card">
+                    <ul>
+                        <li>✅ <strong>Pixels</strong> are the building blocks of digital art</li>
+                        <li>✅ <strong>Resolution</strong> determines quality and print size</li>
+                        <li>✅ <strong>Canvas size</strong> should match your end goal</li>
+                        <li>✅ <strong>Aspect ratios</strong> define the shape of your canvas</li>
+                        <li>✅ <strong>RGB</strong> for screens, <strong>CMYK</strong> for print (but work in RGB)</li>
+                        <li>✅ <strong>8-bit color</strong> is perfectly fine for most work</li>
+                        <li>✅ <strong>File formats</strong> serve different purposes</li>
+                        <li>✅ <strong>Always save your working file</strong> with layers</li>
+                    </ul>
+                </div>
+
+                <blockquote>
+                    <strong>🎨 Final Wisdom:</strong> Don't let technical details paralyze you! These are guidelines, not unbreakable laws. The best way to learn is to start creating. Set up a canvas, start painting, and adjust as needed. You've got this!
+                </blockquote>
+            </section>
+
+            <!-- Lesson Navigation -->
+            <nav class="lesson-nav">
+                <a href="index.html#modules" class="btn btn-secondary">← Back to All Lessons</a>
+                <a href="digital_workspace_setup.html" class="btn btn-primary">Next Lesson: Workspace Setup →</a>
+            </nav>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Universal Digital Art Course. All rights reserved.</p>
+            <p>Made with ❤️ for aspiring digital artists everywhere.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/main.js"></script>
+    <script>
+        // Toggle TOC
+        function toggleTOC() {
+            const tocList = document.getElementById('toc-list');
+            const tocIcon = document.getElementById('toc-toggle-icon');
+            
+            if (tocList.style.maxHeight === '0px' || tocList.style.maxHeight === '') {
+                tocList.style.maxHeight = '600px';
+                tocIcon.style.transform = 'rotate(0deg)';
+            } else {
+                tocList.style.maxHeight = '0px';
+                tocIcon.style.transform = 'rotate(-90deg)';
+            }
+        }
+    </script>
+</body>
+</html>

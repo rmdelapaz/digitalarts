@@ -1,0 +1,1227 @@
+{
+  "course": {
+    "title": "Universal Digital Artistry Foundations",
+    "subtitle": "Software-Independent Digital Painting Course",
+    "description": "Master digital art fundamentals that work across all major painting software including Krita, Photoshop, Procreate, Painter, PaintStorm Studio, and more. Learn universal concepts, techniques, and workflows that transcend any single application.",
+    "author": {
+      "name": "Digital Artistry Course",
+      "email": "contact@digitalartistry.course",
+      "website": "https://digitalartistry.course",
+      "bio": "Comprehensive digital art education focused on universal principles and cross-platform skills"
+    },
+    "version": "1.0.0",
+    "lastUpdated": "2024-10-14",
+    "language": "en",
+    "difficulty": "beginner",
+    "estimatedHours": 25,
+    "tags": ["digital art", "digital painting", "krita", "photoshop", "procreate", "painter", "brush techniques", "color theory", "layers", "software independent"]
+  },
+  
+  "branding": {
+    "primaryColor": "#667eea",
+    "secondaryColor": "#f8fafc",
+    "accentColor": "#764ba2",
+    "fontFamily": "Trebuchet MS, Arial, sans-serif",
+    "logo": "images/logo.png",
+    "favicon": "favicon.ico"
+  },
+  
+  "navigation": {
+    "showBreadcrumbs": true,
+    "showProgressBar": true,
+    "showLessonNav": true,
+    "showSearch": true,
+    "showThemeToggle": true,
+    "keyboardShortcuts": true
+  },
+  
+  "modules": [
+    {
+      "id": "module-1",
+      "title": "Foundation Module",
+      "description": "Essential digital art concepts that work across all software",
+      "icon": "🚀",
+      "color": "#f5576c",
+      "lessons": [
+        {
+          "id": "lesson-1-1",
+          "title": "Welcome to Digital Artistry",
+          "filename": "welcome_digital_art.html",
+          "duration": "15 minutes",
+          "difficulty": "beginner",
+          "description": "Introduction to digital art, what makes it unique, and what you'll learn"
+        },
+        {
+          "id": "lesson-1-2",
+          "title": "Understanding Your Digital Canvas",
+          "filename": "digital_canvas_basics.html",
+          "duration": "30 minutes",
+          "difficulty": "beginner",
+          "description": "Resolution, canvas size, color modes, and file formats across all software"
+        },
+        {
+          "id": "lesson-1-3",
+          "title": "Interface Fundamentals",
+          "filename": "interface_fundamentals.html",
+          "duration": "40 minutes",
+          "difficulty": "beginner",
+          "description": "Universal interface concepts and navigation patterns in digital art software"
+        },
+        {
+          "id": "lesson-1-4",
+          "title": "Essential Digital Tools",
+          "filename": "essential_digital_tools.html",
+          "duration": "45 minutes",
+          "difficulty": "beginner",
+          "description": "Selection, transform, move, and other universal tools across platforms"
+        }
+      ]
+    },
+    {
+      "id": "module-2",
+      "title": "Core Skills Module",
+      "description": "Build your digital painting foundation with universal techniques",
+      "icon": "🎨",
+      "color": "#4facfe",
+      "lessons": [
+        {
+          "id": "lesson-2-1",
+          "title": "Brush Theory & Dynamics",
+          "filename": "brush_theory.html",
+          "duration": "50 minutes",
+          "difficulty": "beginner",
+          "description": "Understanding digital brushes, pressure sensitivity, and dynamics across all apps"
+        },
+        {
+          "id": "lesson-2-2",
+          "title": "Layer Workflows & Compositing",
+          "filename": "layer_workflows.html",
+          "duration": "45 minutes",
+          "difficulty": "beginner",
+          "description": "Mastering layers, blend modes, and non-destructive editing techniques"
+        },
+        {
+          "id": "lesson-2-3",
+          "title": "Color Science for Digital Artists",
+          "filename": "color_science.html",
+          "duration": "55 minutes",
+          "difficulty": "intermediate",
+          "description": "Color theory, digital color mixing, and creating harmonious palettes"
+        },
+        {
+          "id": "lesson-2-4",
+          "title": "Masking & Selection Techniques",
+          "filename": "masking_selection.html",
+          "duration": "40 minutes",
+          "difficulty": "intermediate",
+          "description": "Advanced selection methods and mask-based workflows"
+        }
+      ]
+    },
+    {
+      "id": "module-3",
+      "title": "Technique Module",
+      "description": "Professional digital painting workflows and techniques",
+      "icon": "🖼️",
+      "color": "#43e97b",
+      "lessons": [
+        {
+          "id": "lesson-3-1",
+          "title": "Digital Painting Workflow",
+          "filename": "painting_workflow.html",
+          "duration": "60 minutes",
+          "difficulty": "intermediate",
+          "description": "Complete process from sketch to finished artwork across any software"
+        },
+        {
+          "id": "lesson-3-2",
+          "title": "Lighting & Form Fundamentals",
+          "filename": "lighting_form.html",
+          "duration": "50 minutes",
+          "difficulty": "intermediate",
+          "description": "Understanding and rendering light, shadow, and three-dimensional form"
+        },
+        {
+          "id": "lesson-3-3",
+          "title": "Texture & Detail Techniques",
+          "filename": "texture_detail.html",
+          "duration": "45 minutes",
+          "difficulty": "intermediate",
+          "description": "Creating realistic and stylized textures digitally"
+        },
+        {
+          "id": "lesson-3-4",
+          "title": "File Management & Export",
+          "filename": "file_management.html",
+          "duration": "30 minutes",
+          "difficulty": "beginner",
+          "description": "Organizing, saving, and exporting your artwork professionally"
+        }
+      ]
+    },
+    {
+      "id": "module-4",
+      "title": "Advanced Topics",
+      "description": "Professional techniques and cross-software workflows",
+      "icon": "⚡",
+      "color": "#f093fb",
+      "lessons": [
+        {
+          "id": "lesson-4-1",
+          "title": "Advanced Brush Customization",
+          "filename": "advanced_brushes.html",
+          "duration": "50 minutes",
+          "difficulty": "advanced",
+          "description": "Creating and fine-tuning custom brushes for your unique style"
+        },
+        {
+          "id": "lesson-4-2",
+          "title": "Speed Painting Techniques",
+          "filename": "speed_painting.html",
+          "duration": "45 minutes",
+          "difficulty": "advanced",
+          "description": "Efficient workflows and shortcuts for faster painting"
+        },
+        {
+          "id": "lesson-4-3",
+          "title": "Software Comparison & Migration",
+          "filename": "software_comparison.html",
+          "duration": "40 minutes",
+          "difficulty": "intermediate",
+          "description": "Detailed comparison and tips for switching between applications"
+        },
+        {
+          "id": "lesson-4-4",
+          "title": "Troubleshooting Common Issues",
+          "filename": "troubleshooting.html",
+          "duration": "35 minutes",
+          "difficulty": "beginner",
+          "description": "Solutions to universal digital art challenges and technical problems"
+        }
+      ]
+    }
+  ],
+  
+  "prerequisites": [
+    "Basic computer literacy",
+    "A graphics tablet with pressure sensitivity (highly recommended)",
+    "One or more digital painting applications installed (Krita, Photoshop, Procreate, Painter, PaintStorm Studio, etc.)",
+    "Willingness to practice and experiment",
+    "No prior art experience required!"
+  ],
+  
+  "learningObjectives": [
+    "Understand fundamental digital art concepts that apply to all software",
+    "Master brush dynamics, pressure sensitivity, and digital mark-making",
+    "Create professional artwork using layers, masks, and blend modes",
+    "Apply color theory to create harmonious and impactful artwork",
+    "Develop efficient workflows that work across multiple applications",
+    "Build confidence in your digital artistry regardless of software choice"
+  ],
+  
+  "supportedSoftware": [
+    {
+      "name": "Krita",
+      "free": true,
+      "platforms": ["Windows", "macOS", "Linux"],
+      "url": "https://krita.org"
+    },
+    {
+      "name": "Adobe Photoshop",
+      "free": false,
+      "platforms": ["Windows", "macOS"],
+      "url": "https://www.adobe.com/products/photoshop.html"
+    },
+    {
+      "name": "Procreate",
+      "free": false,
+      "platforms": ["iPad"],
+      "url": "https://procreate.art"
+    },
+    {
+      "name": "Corel Painter",
+      "free": false,
+      "platforms": ["Windows", "macOS"],
+      "url": "https://www.painterartist.com"
+    },
+    {
+      "name": "PaintStorm Studio",
+      "free": false,
+      "platforms": ["Windows", "macOS", "Linux"],
+      "url": "https://paintstormstudio.com"
+    },
+    {
+      "name": "Clip Studio Paint",
+      "free": false,
+      "platforms": ["Windows", "macOS", "iPad", "Android"],
+      "url": "https://www.clipstudio.net"
+    },
+    {
+      "name": "Affinity Photo",
+      "free": false,
+      "platforms": ["Windows", "macOS", "iPad"],
+      "url": "https://affinity.serif.com/photo"
+    }
+  ],
+  
+  "resources": {
+    "documentation": [
+      {
+        "title": "Krita Documentation",
+        "url": "https://docs.krita.org",
+        "description": "Official Krita user manual and tutorials"
+      },
+      {
+        "title": "Adobe Photoshop Learn & Support",
+        "url": "https://helpx.adobe.com/photoshop/tutorials.html",
+        "description": "Official Adobe tutorials and documentation"
+      },
+      {
+        "title": "Procreate Handbook",
+        "url": "https://procreate.art/handbook",
+        "description": "Complete Procreate user guide"
+      }
+    ],
+    "communities": [
+      {
+        "name": "r/DigitalPainting",
+        "platform": "Reddit",
+        "url": "https://reddit.com/r/DigitalPainting",
+        "description": "Active community for digital artists"
+      },
+      {
+        "name": "Krita Artists",
+        "platform": "Forum",
+        "url": "https://krita-artists.org",
+        "description": "Official Krita community forum"
+      },
+      {
+        "name": "ConceptArt.org",
+        "platform": "Forum",
+        "url": "https://conceptart.org",
+        "description": "Professional concept art community"
+      }
+    ],
+    "books": [
+      {
+        "title": "Color and Light: A Guide for the Realist Painter",
+        "author": "James Gurney",
+        "isbn": "978-0740797712",
+        "description": "Essential color theory for artists"
+      },
+      {
+        "title": "Drawing on the Right Side of the Brain",
+        "author": "Betty Edwards",
+        "isbn": "978-1585429202",
+        "description": "Fundamental drawing and observation skills"
+      }
+    ],
+    "tools": [
+      {
+        "name": "Adobe Color",
+        "url": "https://color.adobe.com",
+        "description": "Color palette generator and explorer"
+      },
+      {
+        "name": "Coolors",
+        "url": "https://coolors.co",
+        "description": "Fast color scheme generator"
+      },
+      {
+        "name": "PureRef",
+        "url": "https://www.pureref.com",
+        "description": "Reference image organizer for artists"
+      }
+    ]
+  },
+  
+  "assessment": {
+    "quizzes": true,
+    "exercises": true,
+    "projects": true,
+    "certification": false,
+    "passingScore": 80
+  },
+  
+  "features": {
+    "codeHighlighting": false,
+    "copyCodeButton": false,
+    "progressTracking": true,
+    "offlineSupport": false,
+    "responsiveDesign": true,
+    "accessibility": true,
+    "printFriendly": true,
+    "searchEnabled": true,
+    "analytics": true,
+    "softwareComparison": true,
+    "interactiveDemos": true
+  },
+  
+  "seo": {
+    "metaDescription": "Learn digital art with this comprehensive software-independent course. Master techniques that work in Krita, Photoshop, Procreate, Painter, and all major digital painting applications.",
+    "keywords": ["digital art", "digital painting", "learn digital art", "krita tutorial", "photoshop painting", "procreate tutorial", "brush techniques", "color theory", "layers tutorial", "digital art beginner"],
+    "ogImage": "images/og-image.png",
+    "twitterCard": "summary_large_image"
+  },
+  
+  "deployment": {
+    "baseUrl": "/",
+    "gaTrackingId": "",
+    "disqusShortname": "",
+    "githubRepo": ""
+  },
+  
+  "lessonCreationProcess": {
+    "overview": "Lessons are created incrementally using a fragment-based approach. Each lesson is broken into multiple HTML fragments (a, b, c, d, etc.) that are later concatenated into a complete lesson file. This allows for iterative review and correction during the creation process.",
+    
+    "fragmentWorkflow": {
+      "description": "The creation process follows a strict iterative cycle",
+      "steps": [
+        "1. AI creates fragment A (e.g., parts/lesson_name_a.html)",
+        "2. AI STOPS and waits for human review",
+        "3. Human reviews fragment A and provides feedback/corrections",
+        "4. AI makes any requested edits to fragment A",
+        "5. Human approves fragment A",
+        "6. AI creates fragment B",
+        "7. Repeat steps 2-6 for fragments C, D, E, etc. until lesson is complete",
+        "8. Concatenate all fragments into final lesson file"
+      ],
+      "criticalRules": [
+        "NEVER create multiple fragments without explicit approval",
+        "ALWAYS stop after creating each fragment",
+        "ALWAYS wait for human review before proceeding",
+        "EDIT existing fragments when changes are needed, don't rewrite",
+        "Ask for clarification if instructions are unclear"
+      ]
+    },
+    
+    "fragmentGuidelines": {
+      "size": {
+        "description": "Each fragment should be manageable in size",
+        "guidelines": [
+          "Typically 300-800 lines of HTML",
+          "1-3 major sections per fragment",
+          "Not so large that review becomes overwhelming",
+          "Not so small that you have 20+ fragments",
+          "Break at logical content boundaries"
+        ]
+      },
+      "namingConvention": {
+        "pattern": "parts/{lesson_filename}_{letter}.html",
+        "examples": [
+          "parts/layer_workflows_a.html",
+          "parts/layer_workflows_b.html",
+          "parts/brush_fundamentals_a.html"
+        ],
+        "rules": [
+          "Use underscores, not hyphens or spaces",
+          "Lowercase only",
+          "Letter suffix (a, b, c, d, etc.) indicates fragment sequence",
+          "Filename matches the lesson's main filename from course-config.json"
+        ]
+      },
+      "contentStructure": {
+        "fragmentA": {
+          "description": "First fragment includes full HTML document setup",
+          "mustInclude": [
+            "<!DOCTYPE html> declaration",
+            "Complete <head> with meta tags, title, CSS links",
+            "Mermaid script import in <head>",
+            "Favicon link: <link rel='icon' type='image/png' href='/favicon.png'>",
+            "<body> opening tag",
+            "Skip-to-content link for accessibility",
+            "Progress indicator",
+            "Full navigation bar",
+            "Breadcrumb navigation",
+            "<main id='main-content'> opening",
+            "Container div",
+            "Lesson header with title and lead paragraph",
+            "Learning objectives card",
+            "Universal approach card (showing supported software)",
+            "Table of Contents with all major sections",
+            "First 1-3 major content sections",
+            "Comment indicating end of fragment A"
+          ]
+        },
+        "fragmentBtoN": {
+          "description": "Middle fragments contain main content sections",
+          "mustInclude": [
+            "Comment indicating start of fragment (e.g., <!-- PART B STARTS HERE -->)",
+            "2-4 major content sections",
+            "Appropriate subsections, examples, and interactive demos",
+            "Comment indicating end of fragment"
+          ],
+          "mustNotInclude": [
+            "HTML doctype or head elements",
+            "Body, nav, or structural opening tags",
+            "Any duplicate navigation or headers"
+          ]
+        },
+        "finalFragment": {
+          "description": "Last fragment includes closing elements",
+          "mustInclude": [
+            "Comment indicating start of final fragment",
+            "Final content sections",
+            "Summary section with key takeaways",
+            "Additional resources section",
+            "What's next section",
+            "Lesson navigation (prev/next links)",
+            "Closing </main> tag",
+            "Footer",
+            "JavaScript includes (clipboard.js, course-enhancements.js)",
+            "Closing </body> and </html> tags"
+          ]
+        }
+      }
+    },
+    
+    "contentRequirements": {
+      "tone": {
+        "description": "Write as an amazing instructor teaching new learners",
+        "characteristics": [
+          "Friendly and accessible",
+          "Encouraging and supportive",
+          "Clear and concise",
+          "Use conversational language",
+          "Include personality and enthusiasm",
+          "Make complex topics approachable"
+        ]
+      },
+      "softwareAgnostic": {
+        "description": "Content must work across ALL major digital art software",
+        "approach": [
+          "Teach universal concepts first",
+          "Explain the underlying principle, not specific buttons",
+          "When showing software-specific info, include multiple programs",
+          "Use comparison tables for software differences",
+          "Focus on 'what' and 'why', not just 'how' in one app"
+        ],
+        "supportedSoftware": [
+          "Adobe Photoshop",
+          "Krita (free)",
+          "Procreate (iPad)",
+          "Clip Studio Paint",
+          "Corel Painter",
+          "PaintStorm Studio",
+          "Affinity Photo"
+        ]
+      },
+      "visualElements": {
+        "mermaidDiagrams": {
+          "when": "Use for workflows, hierarchies, relationships, processes",
+          "requirement": "Must include mermaid script in head",
+          "script": "<script type='module'>\n  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';\n  mermaid.initialize({ startOnLoad: true });\n</script>",
+          "formatting": "Ensure proper escaping of special characters in mermaid syntax"
+        },
+        "canvasInteractive": {
+          "when": "Use for interactive demos, visual demonstrations, hands-on examples",
+          "requirements": [
+            "Each canvas must have unique ID",
+            "Include touch support for mobile",
+            "Handle high DPI displays",
+            "Include clear instructions for user interaction",
+            "Provide fallback text if canvas doesn't work"
+          ]
+        },
+        "svgGraphics": {
+          "when": "Use for scalable illustrations, icons, diagrams",
+          "benefit": "Vector graphics scale perfectly on all devices"
+        },
+        "emojis": {
+          "when": "Use throughout for visual interest and clarity",
+          "examples": "🎨 for art topics, 💡 for tips, ⚠️ for warnings, 🎯 for objectives"
+        }
+      },
+      "examples": {
+        "description": "Include plenty of real-world examples",
+        "types": [
+          "Practical use cases",
+          "Analogies and metaphors",
+          "Step-by-step demonstrations",
+          "Before/after comparisons",
+          "Common scenarios artists face"
+        ]
+      },
+      "codeAndSamples": {
+        "htmlSamples": "Must be properly escaped using HTML entities",
+        "codeBlocks": "Wrap in <pre><code>...</code></pre>",
+        "noPlaceholders": "Never use [placeholder] or [TODO] - write complete content"
+      }
+    },
+    
+    "structuralElements": {
+      "requiredSections": [
+        "Learning Objectives (at start)",
+        "Table of Contents (collapsible)",
+        "Main content sections (numbered)",
+        "Summary/Key Takeaways (at end)",
+        "Additional Resources (at end)",
+        "What's Next (at end)"
+      ],
+      "organizationalTools": [
+        "Cards (div.card) for important information",
+        "Blockquotes for tips, warnings, insights",
+        "Tables for comparisons and structured data",
+        "Lists (ul/ol) for steps and bullet points",
+        "Headings (h2, h3, h4) for hierarchy"
+      ],
+      "accessibility": [
+        "Skip to content link",
+        "Proper heading hierarchy",
+        "Alt text for images",
+        "ARIA labels where appropriate",
+        "Keyboard navigation support",
+        "Sufficient color contrast"
+      ]
+    },
+    
+    "technicalRequirements": {
+      "mobileFriendly": {
+        "description": "All content must work perfectly on mobile devices",
+        "requirements": [
+          "Responsive design",
+          "Touch-friendly interactive elements",
+          "Readable text sizes",
+          "No horizontal scrolling",
+          "Properly sized tap targets"
+        ]
+      },
+      "fileLinks": {
+        "favicon": "Always link to /favicon.png",
+        "css": "Link to styles/main.css",
+        "javascript": "Link to js/clipboard.js and js/course-enhancements.js",
+        "images": "Use images/ directory for lesson images"
+      },
+      "htmlFormatting": {
+        "doctype": "Always use <!DOCTYPE html>",
+        "indentation": "Use consistent indentation (4 spaces)",
+        "noNumbers": "Do NOT number headings (e.g., write 'Understanding Layers' not '1. Understanding Layers')",
+        "titleFormat": "Titles may include spaces; filenames use underscores only"
+      }
+    },
+    
+    "progressTracking": {
+      "description": "Update course-config.json as lessons are completed",
+      "whenToUpdate": [
+        "After each fragment is approved",
+        "When starting a new lesson",
+        "When completing a lesson"
+      ],
+      "whatToTrack": [
+        "lessonDetails.{lesson_name}.status (not_started, in_progress, complete)",
+        "lessonDetails.{lesson_name}.fragments.completed (array of finished fragments)",
+        "lessonDetails.{lesson_name}.fragments.inProgress (current fragment being worked on)",
+        "lessonDetails.{lesson_name}.fragments.total (total number of fragments when complete)"
+      ]
+    },
+    
+    "qualityStandards": {
+      "beforeSubmitting": [
+        "Verify all HTML is valid and properly nested",
+        "Check that all IDs are unique",
+        "Ensure all interactive demos have clear instructions",
+        "Confirm software-agnostic language throughout",
+        "Verify no placeholder text remains",
+        "Check that all special characters are properly escaped",
+        "Ensure mermaid diagrams are properly formatted",
+        "Confirm mobile-friendly design elements"
+      ],
+      "contentQuality": [
+        "Information is accurate and up-to-date",
+        "Explanations are clear and beginner-friendly",
+        "Examples are relevant and practical",
+        "Tone is consistent and encouraging",
+        "Content flows logically",
+        "Sufficient detail without overwhelming"
+      ]
+    },
+    
+    "exampleFragmentFiles": {
+      "reference": "See existing fragments as templates",
+      "locations": [
+        "parts/brush_fundamentals_a.html (complete first fragment with all setup)",
+        "parts/brush_fundamentals_b.html (middle fragment with content only)",
+        "parts/brush_fundamentals_c.html (another middle fragment)",
+        "parts/brush_fundamentals_d.html (final fragment with closing elements)"
+      ]
+    }
+  },
+  
+  "lessonDetails": {
+    "layer_workflows": {
+      "fullTitle": "Layer Workflows & Compositing",
+      "lessonNumber": "2-2",
+      "module": "Core Skills Module",
+      "status": "complete",
+      "fragments": {
+        "total": 6,
+        "completed": ["a", "b", "c", "d", "e", "f"],
+        "inProgress": null
+      },
+      "contentOutline": [
+        {
+          "section": "Introduction to Layers",
+          "topics": [
+            "What are layers and why they matter",
+            "Layer concept across all software",
+            "Traditional vs digital workflow",
+            "Layer panel/stack navigation"
+          ]
+        },
+        {
+          "section": "Layer Operations",
+          "topics": [
+            "Creating, duplicating, deleting layers",
+            "Renaming and organizing layers",
+            "Layer visibility and locking",
+            "Layer opacity and fill",
+            "Layer ordering and stacking"
+          ]
+        },
+        {
+          "section": "Layer Types",
+          "topics": [
+            "Paint/Raster layers",
+            "Adjustment layers",
+            "Fill layers",
+            "Smart objects (where available)",
+            "Vector layers",
+            "Text layers"
+          ]
+        },
+        {
+          "section": "Blend Modes",
+          "topics": [
+            "Understanding blend mode categories",
+            "Normal and dissolve",
+            "Darken modes (Multiply, Darken, Color Burn)",
+            "Lighten modes (Screen, Lighten, Color Dodge)",
+            "Contrast modes (Overlay, Soft Light, Hard Light)",
+            "Comparative modes (Difference, Exclusion)",
+            "Color modes (Hue, Saturation, Color, Luminosity)",
+            "Practical applications of each mode"
+          ]
+        },
+        {
+          "section": "Layer Organization",
+          "topics": [
+            "Layer groups/folders",
+            "Naming conventions",
+            "Color coding layers",
+            "Layer search and filtering",
+            "Professional organization strategies"
+          ]
+        },
+        {
+          "section": "Non-Destructive Editing",
+          "topics": [
+            "What is non-destructive editing",
+            "Benefits of non-destructive workflow",
+            "Layer masks vs erasing",
+            "Adjustment layers vs direct editing",
+            "Smart objects and filters",
+            "Preserving original artwork"
+          ]
+        },
+        {
+          "section": "Compositing Basics",
+          "topics": [
+            "Building complex images from layers",
+            "Foreground, midground, background",
+            "Depth and atmosphere with layers",
+            "Integrating elements seamlessly",
+            "Color matching across layers"
+          ]
+        },
+        {
+          "section": "Practical Workflows",
+          "topics": [
+            "Portrait painting layer structure",
+            "Landscape painting organization",
+            "Concept art workflow",
+            "Illustration compositing",
+            "Troubleshooting common layer issues"
+          ]
+        }
+      ],
+      "learningObjectives": [
+        "Understand the fundamental concept of layers across all digital art software",
+        "Create, organize, and manage complex layer structures efficiently",
+        "Master all major blend modes and know when to use each",
+        "Implement non-destructive editing workflows",
+        "Composite multiple elements into cohesive artwork",
+        "Develop professional layer organization habits",
+        "Apply layer techniques to real-world painting scenarios"
+      ],
+      "keyTerminology": [
+        "Layer",
+        "Layer stack",
+        "Opacity",
+        "Fill",
+        "Blend mode",
+        "Layer mask",
+        "Clipping mask/layer",
+        "Layer group/folder",
+        "Adjustment layer",
+        "Smart object",
+        "Non-destructive editing",
+        "Compositing",
+        "Alpha channel",
+        "Transparency",
+        "Layer order"
+      ],
+      "softwareComparisons": {
+        "layerPanel": {
+          "photoshop": "Layers Panel (F7)",
+          "krita": "Layers Docker",
+          "procreate": "Layers Menu (stacked squares icon)",
+          "clipStudio": "Layer Palette",
+          "painter": "Layers Panel",
+          "affinity": "Layers Panel"
+        },
+        "blendModeLocation": {
+          "photoshop": "Dropdown at top of Layers Panel",
+          "krita": "Blending Mode dropdown in Layers Docker",
+          "procreate": "Layer menu > Blend Mode",
+          "clipStudio": "Blending Mode in Layer Palette",
+          "painter": "Composite Method in Layers Panel"
+        },
+        "layerGroups": {
+          "photoshop": "Layer > New > Group (Ctrl+G)",
+          "krita": "Group Layers",
+          "procreate": "Swipe right on multiple layers > Group",
+          "clipStudio": "Layer > Create Folder",
+          "painter": "Layer Sets"
+        }
+      },
+      "exercises": [
+        {
+          "title": "Layer Fundamentals Practice",
+          "description": "Create a simple composition using at least 5 layers with different blend modes"
+        },
+        {
+          "title": "Non-Destructive Portrait Edit",
+          "description": "Edit a portrait using only adjustment layers and masks - no direct painting"
+        },
+        {
+          "title": "Blend Mode Exploration",
+          "description": "Create a texture study using each major blend mode category"
+        },
+        {
+          "title": "Professional Layer Organization",
+          "description": "Organize a complex artwork with proper naming, grouping, and color coding"
+        }
+      ],
+      "commonMistakes": [
+        "Painting on wrong layer",
+        "Not naming layers (layer 1, layer 2, etc.)",
+        "Too many layers causing confusion",
+        "Not using groups for organization",
+        "Destructive editing (erasing instead of masking)",
+        "Not understanding blend mode categories",
+        "Merging layers too early",
+        "Not locking layers when needed"
+      ],
+      "proTips": [
+        "Use Ctrl/Cmd+Click on layer thumbnail to select layer contents",
+        "Alt+Click layer visibility to solo that layer",
+        "Use blend mode keyboard shortcuts (Shift+ or Shift-)",
+        "Create a 'master group' for major sections",
+        "Keep a 'backup' group with flattened versions at key stages",
+        "Use adjustment layers instead of direct color correction",
+        "Name layers as you create them, not later",
+        "Use clipping masks for contained effects"
+      ]
+    },
+    "color_science": {
+      "fullTitle": "Color Science for Digital Artists",
+      "lessonNumber": "2-3",
+      "module": "Core Skills Module",
+      "status": "complete",
+      "fragments": {
+        "total": 6,
+        "completed": ["a", "b", "c", "d", "e", "f"],
+        "inProgress": null
+      },
+      "contentOutline": [
+        {
+          "section": "Color Fundamentals",
+          "topics": [
+            "What is color - physics and perception",
+            "The visible spectrum",
+            "How we see color",
+            "Color vs light"
+          ]
+        },
+        {
+          "section": "Color Models and Systems",
+          "topics": [
+            "RGB (additive color)",
+            "CMYK (subtractive color)",
+            "HSB/HSV/HSL systems",
+            "Color spaces and profiles",
+            "Digital vs traditional color"
+          ]
+        },
+        {
+          "section": "Color Properties",
+          "topics": [
+            "Hue - the color itself",
+            "Saturation/Chroma - color intensity",
+            "Value/Brightness - lightness and darkness",
+            "Temperature - warm vs cool"
+          ]
+        },
+        {
+          "section": "The Color Wheel",
+          "topics": [
+            "Primary, secondary, tertiary colors",
+            "Color relationships",
+            "Complementary colors",
+            "Analogous colors",
+            "Triadic and tetradic schemes"
+          ]
+        },
+        {
+          "section": "Color Harmony",
+          "topics": [
+            "Monochromatic schemes",
+            "Analogous harmonies",
+            "Complementary contrasts",
+            "Split-complementary",
+            "Triadic and square harmonies",
+            "The 60-30-10 rule"
+          ]
+        },
+        {
+          "section": "Digital Color Mixing",
+          "topics": [
+            "How digital mixing works",
+            "Additive vs subtractive mixing",
+            "Creating clean mixes",
+            "Avoiding muddy colors",
+            "Color picker strategies",
+            "Sampling and eyedropper techniques"
+          ]
+        },
+        {
+          "section": "Creating Palettes",
+          "topics": [
+            "Limited palettes vs full spectrum",
+            "Building a master palette",
+            "Extracting palettes from references",
+            "Color palette tools and resources",
+            "Testing palette effectiveness"
+          ]
+        },
+        {
+          "section": "Color Psychology and Mood",
+          "topics": [
+            "Emotional associations of colors",
+            "Cultural color meanings",
+            "Using color for storytelling",
+            "Creating atmosphere with color",
+            "Color symbolism in art"
+          ]
+        },
+        {
+          "section": "Practical Color Application",
+          "topics": [
+            "Skin tone mixing",
+            "Natural color in landscapes",
+            "Lighting and color temperature",
+            "Atmospheric perspective",
+            "Color grading and mood",
+            "Common color mistakes"
+          ]
+        }
+      ],
+      "learningObjectives": [
+        "Understand the science behind how we perceive color",
+        "Master RGB, HSB, and other digital color models",
+        "Identify and use color relationships effectively",
+        "Create harmonious color schemes using color theory",
+        "Mix colors digitally to achieve desired results",
+        "Build and apply limited color palettes",
+        "Use color psychology to enhance artwork",
+        "Avoid common digital color mistakes"
+      ],
+      "keyTerminology": [
+        "Hue",
+        "Saturation",
+        "Value",
+        "Chroma",
+        "Brightness",
+        "Temperature",
+        "RGB",
+        "CMYK",
+        "HSB/HSV/HSL",
+        "Color wheel",
+        "Primary colors",
+        "Secondary colors",
+        "Tertiary colors",
+        "Complementary",
+        "Analogous",
+        "Triadic",
+        "Monochromatic",
+        "Color harmony",
+        "Color palette",
+        "Additive color",
+        "Subtractive color",
+        "Color space",
+        "Gamut"
+      ],
+      "softwareComparisons": {
+        "colorPicker": {
+          "photoshop": "Color Picker dialog (click foreground/background color)",
+          "krita": "Advanced Color Selector docker",
+          "procreate": "Color panel (disc icon)",
+          "clipStudio": "Color Wheel palette",
+          "painter": "Color Picker panel",
+          "paintstorm": "Color Wheel and Mixer"
+        },
+        "colorWheelAccess": {
+          "photoshop": "Extensions > Adobe Color Themes, or external",
+          "krita": "Built-in Advanced Color Selector",
+          "procreate": "Color disc (HSB wheel)",
+          "clipStudio": "Color Wheel palette window",
+          "painter": "Multiple color wheel options in preferences"
+        },
+        "paletteManagement": {
+          "photoshop": "Swatches panel",
+          "krita": "Palette Docker",
+          "procreate": "Palettes panel",
+          "clipStudio": "Color Set palette",
+          "painter": "Color Sets panel"
+        }
+      },
+      "exercises": [
+        {
+          "title": "Color Wheel Exploration",
+          "description": "Create a complete color wheel by hand, identifying primary, secondary, and tertiary colors"
+        },
+        {
+          "title": "Harmony Swatches",
+          "description": "Create 5 different color harmony schemes (monochromatic, analogous, complementary, triadic, square)"
+        },
+        {
+          "title": "Limited Palette Painting",
+          "description": "Create a simple painting using only 3-5 colors to understand color mixing"
+        },
+        {
+          "title": "Mood Studies",
+          "description": "Paint the same scene in 3 different color schemes to evoke different emotions"
+        },
+        {
+          "title": "Palette Extraction",
+          "description": "Extract and recreate a color palette from a master painting or photograph"
+        }
+      ],
+      "commonMistakes": [
+        "Oversaturating everything (too much chroma)",
+        "Ignoring value relationships",
+        "Using too many colors (lack of harmony)",
+        "Mixing complementary colors directly (creates mud)",
+        "Not considering color temperature",
+        "Neglecting atmospheric perspective",
+        "Using pure black for shadows",
+        "Not testing palettes before painting"
+      ],
+      "proTips": [
+        "Value is more important than hue - get your lights/darks right first",
+        "Limited palettes create more cohesive artwork",
+        "Add a 'mother color' (tiny bit of one color in everything) for unity",
+        "Cool colors recede, warm colors advance (use for depth)",
+        "Grays and desaturated colors make saturated colors pop",
+        "Study master paintings to learn color relationships",
+        "Test your palette in grayscale to check value structure",
+        "Sample colors from your own work to maintain consistency"
+      ]
+    },
+    "masking_selection": {
+      "fullTitle": "Masking & Selection Techniques",
+      "lessonNumber": "2-4",
+      "module": "Core Skills Module",
+      "status": "complete",
+      "fragments": {
+        "total": 5,
+        "completed": ["a", "b", "c", "d", "e"],
+        "inProgress": null
+      },
+      "contentOutline": [
+        {
+          "section": "Introduction to Masking",
+          "topics": [
+            "What are masks and why they matter",
+            "Masks vs erasers",
+            "Non-destructive editing with masks",
+            "Layer masks across all software"
+          ]
+        },
+        {
+          "section": "Layer Masks Fundamentals",
+          "topics": [
+            "Creating layer masks",
+            "Painting on masks",
+            "Mask properties and settings",
+            "Viewing and editing masks",
+            "Disabling and deleting masks"
+          ]
+        },
+        {
+          "section": "Advanced Selection Tools",
+          "topics": [
+            "All selection tools overview",
+            "Marquee tools (rectangular, elliptical)",
+            "Lasso tools (standard, polygonal, magnetic)",
+            "Magic wand and quick selection",
+            "Color range selection",
+            "Select and mask workflow"
+          ]
+        },
+        {
+          "section": "Selection Refinement",
+          "topics": [
+            "Feathering edges",
+            "Expanding and contracting",
+            "Smoothing selections",
+            "Refining edges for hair and fur",
+            "Quick mask mode",
+            "Alpha channels"
+          ]
+        },
+        {
+          "section": "Clipping Masks",
+          "topics": [
+            "What are clipping masks",
+            "Creating clipping masks",
+            "Practical uses",
+            "Clipping vs layer masks"
+          ]
+        },
+        {
+          "section": "Vector Masks",
+          "topics": [
+            "Vector vs raster masks",
+            "Creating vector masks",
+            "When to use vector masks",
+            "Editing vector paths"
+          ]
+        },
+        {
+          "section": "Mask-Based Workflows",
+          "topics": [
+            "Non-destructive editing workflow",
+            "Complex compositing with masks",
+            "Adjustment layer masks",
+            "Combining multiple masks",
+            "Professional masking techniques"
+          ]
+        },
+        {
+          "section": "Practical Applications",
+          "topics": [
+            "Removing backgrounds",
+            "Blending images seamlessly",
+            "Selective color adjustments",
+            "Creating custom shapes",
+            "Photo manipulation",
+            "Digital painting with masks"
+          ]
+        }
+      ],
+      "learningObjectives": [
+        "Master layer masks for non-destructive editing",
+        "Use all selection tools effectively",
+        "Refine complex selections (hair, fur, soft edges)",
+        "Understand clipping masks and their uses",
+        "Apply masks in professional workflows",
+        "Combine masks and selections for complex edits",
+        "Remove backgrounds cleanly",
+        "Work non-destructively across projects"
+      ],
+      "keyTerminology": [
+        "Layer mask",
+        "Clipping mask",
+        "Vector mask",
+        "Selection",
+        "Marquee",
+        "Lasso",
+        "Magic wand",
+        "Quick selection",
+        "Feather",
+        "Refine edge",
+        "Select and mask",
+        "Quick mask mode",
+        "Alpha channel",
+        "Mask density",
+        "Mask feather",
+        "Invert mask",
+        "Apply mask"
+      ],
+      "softwareComparisons": {
+        "layerMask": {
+          "photoshop": "Click mask icon in Layers panel",
+          "krita": "Right-click layer → Add → Transparency Mask",
+          "procreate": "Layer menu → Mask",
+          "clipStudio": "Layer → Layer Mask → Mask Selection",
+          "affinity": "Layer → Add Mask Layer"
+        },
+        "selectionTools": {
+          "photoshop": "Marquee (M), Lasso (L), Magic Wand (W), Quick Selection (W)",
+          "krita": "Selection tools in toolbox, similar shortcuts",
+          "procreate": "Selection tool with automatic, freehand, rectangle, ellipse modes",
+          "clipStudio": "Selection tools with various modes"
+        },
+        "refineEdge": {
+          "photoshop": "Select and Mask button/workspace",
+          "krita": "Select → Feather Selection, Grow/Shrink Selection",
+          "procreate": "Feather slider in selection options",
+          "clipStudio": "Select menu refinement options"
+        }
+      },
+      "exercises": [
+        {
+          "title": "Basic Layer Mask Practice",
+          "description": "Create a simple composition using only layer masks - no eraser!"
+        },
+        {
+          "title": "Complex Selection Challenge",
+          "description": "Select and isolate a person with complex hair from a busy background"
+        },
+        {
+          "title": "Clipping Mask Workflow",
+          "description": "Create a photo frame effect using clipping masks"
+        },
+        {
+          "title": "Non-Destructive Edit",
+          "description": "Apply complex color adjustments using adjustment layer masks"
+        },
+        {
+          "title": "Background Removal",
+          "description": "Remove backgrounds from 5 different images with varying complexity"
+        }
+      ],
+      "commonMistakes": [
+        "Using eraser instead of masks",
+        "Not feathering selection edges",
+        "Forgetting to invert mask when needed",
+        "Making selections too tight (no room for refinement)",
+        "Not using Select and Mask for complex edges",
+        "Deleting masks instead of disabling them",
+        "Painting on layer instead of mask",
+        "Not viewing mask in isolation"
+      ],
+      "proTips": [
+        "Always use masks instead of erasing - stay non-destructive",
+        "Alt-click mask thumbnail to view mask in isolation",
+        "Shift-click mask thumbnail to disable temporarily",
+        "Use soft brushes on masks for natural edges",
+        "Refine Edge/Select and Mask is magic for hair",
+        "Save complex selections as alpha channels",
+        "Use Multiply blend mode on masks for gradual transparency",
+        "Ctrl/Cmd + click mask thumbnail to load as selection"
+      ]
+    }
+  }
+}

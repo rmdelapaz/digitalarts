@@ -1,0 +1,1870 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Master universal interface concepts for digital art software - Learn navigation, workspace setup, and interface fundamentals that work across Krita, Photoshop, Procreate, and all major painting applications">
+    <meta name="author" content="Digital Artistry Course">
+    <title>Interface Fundamentals - Universal Digital Art Course</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-to-main">Skip to main content</a>
+    
+    <!-- Progress indicator -->
+    <div class="progress-indicator" role="progressbar" aria-label="Page scroll progress">
+        <div class="progress-bar"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">🎨 Digital Artistry</a>
+            <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-expanded="false" aria-controls="nav-links">
+                ☰
+            </button>
+            <div class="nav-links" id="nav-links" aria-hidden="false">
+                <a href="index.html">Home</a>
+                <a href="index.html#modules">All Lessons</a>
+                <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#modules">Foundation Module</a></li>
+            <li aria-current="page">Interface Fundamentals</li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <div class="container">
+            <!-- Lesson Header -->
+            <header>
+                <h1>🖥️ Interface Fundamentals</h1>
+                <p class="lead">Every digital art program looks different on the surface, but they all share core interface concepts. Master these universal principles and you'll feel comfortable in ANY software—whether you're using Krita, Photoshop, Procreate, Painter, or anything else. Think of this as learning to drive: once you understand steering, brakes, and acceleration, you can drive any car!</p>
+                
+                <!-- Learning objectives -->
+                <div class="card">
+                    <h2>🎯 What You'll Learn</h2>
+                    <p>By the end of this lesson, you'll be able to:</p>
+                    <ul>
+                        <li>Identify and navigate universal interface elements across all software</li>
+                        <li>Efficiently zoom, pan, and rotate your canvas in any application</li>
+                        <li>Customize your workspace for maximum productivity</li>
+                        <li>Use keyboard shortcuts to speed up your workflow dramatically</li>
+                        <li>Translate interface concepts between different software platforms</li>
+                        <li>Troubleshoot common interface issues and recover from mishaps</li>
+                        <li>Set up an ergonomic and efficient digital painting workspace</li>
+                    </ul>
+                </div>
+
+                <!-- Software Note -->
+                <div class="card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+                    <h3 style="color: white; margin-top: 0;">📱 Software-Independent Learning</h3>
+                    <p>This lesson teaches <strong>universal concepts</strong> that apply to ALL major digital art software. We'll show you how the same principles work across:</p>
+                    <ul style="columns: 2; column-gap: 2rem;">
+                        <li>🎨 Krita (Free)</li>
+                        <li>🎨 Adobe Photoshop</li>
+                        <li>🎨 Procreate (iPad)</li>
+                        <li>🎨 Corel Painter</li>
+                        <li>🎨 PaintStorm Studio</li>
+                        <li>🎨 Clip Studio Paint</li>
+                        <li>🎨 Affinity Photo</li>
+                        <li>🎨 And many more!</li>
+                    </ul>
+                    <p style="margin-bottom: 0;"><strong>Don't worry if screenshots look different from your software—focus on the concepts, not the specific buttons!</strong></p>
+                </div>
+            </header>
+
+            <!-- Table of Contents -->
+            <nav class="card" aria-label="Table of Contents">
+                <h2 style="cursor: pointer; user-select: none; display: flex; justify-content: space-between; align-items: center;" onclick="toggleTOC()">
+                    <span>📑 Table of Contents</span>
+                    <span id="toc-toggle-icon" style="transition: transform 0.3s;">▼</span>
+                </h2>
+                <ol id="toc-list" style="overflow: hidden; transition: max-height 0.3s ease-out; max-height: 800px; margin: 0; padding-left: 1.5rem;">
+                    <li><a href="#interface-anatomy" class="toc-link">Universal Interface Anatomy</a></li>
+                    <li><a href="#canvas-navigation" class="toc-link">Canvas Navigation Essentials</a></li>
+                    <li><a href="#toolbars-panels" class="toc-link">Toolbars and Panels</a></li>
+                    <li><a href="#workspace-custom" class="toc-link">Workspace Customization</a></li>
+                    <li><a href="#keyboard-shortcuts" class="toc-link">Essential Keyboard Shortcuts</a></li>
+                    <li><a href="#software-comparison" class="toc-link">Cross-Software Comparison</a></li>
+                    <li><a href="#common-issues" class="toc-link">Common Interface Issues</a></li>
+                    <li><a href="#best-practices" class="toc-link">Interface Best Practices</a></li>
+                </ol>
+            </nav>
+
+            <!-- Section 1: Universal Interface Anatomy -->
+            <section id="interface-anatomy" class="lesson-section">
+                <h2>Universal Interface Anatomy 🏗️</h2>
+                
+                <p>Despite looking wildly different on the surface, ALL digital art programs are built around the same basic structure. Once you understand this universal anatomy, you'll never feel lost in a new program again!</p>
+
+                <h3>The Core Components</h3>
+
+                <p>Every digital art interface consists of these fundamental elements:</p>
+
+                <div class="mermaid">
+                    graph TD
+                        A["Digital Art Interface"]
+                        B["Canvas Area"]
+                        C["Toolbars"]
+                        D["Panels/Docks"]
+                        E["Menu Bar"]
+                        F["Status Bar"]
+                        
+                        A --> B
+                        A --> C
+                        A --> D
+                        A --> E
+                        A --> F
+                        
+                        B --> B1["Your artwork lives here"]
+                        C --> C1["Quick access to tools"]
+                        D --> D1["Layers, brushes, colors, etc"]
+                        E --> E1["File, Edit, View, etc"]
+                        F --> F1["Info, zoom level, cursor position"]
+                        
+                        style A fill:#667eea,stroke:#333,stroke-width:2px,color:#fff
+                        style B fill:#43e97b,stroke:#333,stroke-width:2px
+                        style C fill:#f093fb,stroke:#333,stroke-width:2px
+                        style D fill:#4facfe,stroke:#333,stroke-width:2px
+                        style E fill:#f5576c,stroke:#333,stroke-width:2px
+                        style F fill:#feca57,stroke:#333,stroke-width:2px
+                </div>
+
+                <h3>1. Canvas Area (The Heart)</h3>
+
+                <div class="card" style="background: #e8f5e9;">
+                    <h4>🎨 What It Is</h4>
+                    <p>The canvas area is your actual painting surface—where your artwork appears. This is usually the largest part of the screen and typically has a gray or checkered background (representing transparency).</p>
+                    
+                    <h4>Universal Characteristics:</h4>
+                    <ul>
+                        <li><strong>Always visible:</strong> Even in minimal interfaces, the canvas is there</li>
+                        <li><strong>Zoomable:</strong> You can zoom in/out to see details or overview</li>
+                        <li><strong>Rotatable:</strong> Most programs let you rotate the canvas for comfortable drawing angles</li>
+                        <li><strong>Pannable:</strong> Move around your canvas when zoomed in</li>
+                        <li><strong>Scalable:</strong> Displays at different sizes based on zoom level</li>
+                    </ul>
+
+                    <h4>What to Look For:</h4>
+                    <ul>
+                        <li>📐 <strong>Rulers:</strong> Often along the top and left edges</li>
+                        <li>🎯 <strong>Guides:</strong> Non-printing lines to help with alignment</li>
+                        <li>📊 <strong>Grid:</strong> Optional overlay for precision work</li>
+                        <li>🔲 <strong>Canvas bounds:</strong> The edge of your document</li>
+                        <li>🎭 <strong>Transparency checkerboard:</strong> Shows transparent areas</li>
+                    </ul>
+                </div>
+
+                <blockquote>
+                    <strong>💡 Pro Tip:</strong> The canvas area should take up 60-70% of your screen space. If it's too small, you're wasting valuable painting real estate. If it's too large, you can't see your tools!
+                </blockquote>
+
+                <h3>2. Toolbars (Quick Access)</h3>
+
+                <div class="card" style="background: #f3e5f5;">
+                    <h4>🔧 What They Are</h4>
+                    <p>Toolbars contain icons for your most frequently used tools: brushes, erasers, selection tools, move tools, etc. They're designed for fast access without digging through menus.</p>
+                    
+                    <h4>Common Locations:</h4>
+                    <ul>
+                        <li><strong>Left side:</strong> Most common in desktop apps (Photoshop, Krita)</li>
+                        <li><strong>Top:</strong> Common in mobile apps (Procreate)</li>
+                        <li><strong>Floating:</strong> Some apps let you move toolbars anywhere</li>
+                        <li><strong>Radial menus:</strong> Circular tool selectors (Krita, some tablet apps)</li>
+                    </ul>
+
+                    <h4>Universal Tools You'll Find:</h4>
+                    <ul>
+                        <li>🖌️ <strong>Brush/Paint:</strong> Your primary painting tool</li>
+                        <li>🧹 <strong>Eraser:</strong> Removes pixels</li>
+                        <li>✂️ <strong>Selection:</strong> Select areas of your canvas</li>
+                        <li>↔️ <strong>Move:</strong> Reposition layers or selections</li>
+                        <li>🔄 <strong>Transform:</strong> Scale, rotate, distort</li>
+                        <li>🎨 <strong>Color Picker:</strong> Sample colors from canvas</li>
+                        <li>💧 <strong>Fill/Bucket:</strong> Fill areas with color</li>
+                        <li>🔍 <strong>Zoom:</strong> Magnify your view</li>
+                        <li>✋ <strong>Hand/Pan:</strong> Move around canvas</li>
+                    </ul>
+                </div>
+
+                <h3>3. Panels/Docks (Your Control Centers)</h3>
+
+                <div class="card" style="background: #e3f2fd;">
+                    <h4>📋 What They Are</h4>
+                    <p>Panels (also called docks, windows, or palettes) are floating or docked windows that contain detailed controls and information. Think of them as specialized control panels for different aspects of your work.</p>
+                    
+                    <h4>Essential Panels (found in almost every app):</h4>
+                    <ul>
+                        <li><strong>Layers Panel:</strong> Shows all layers, lets you organize them</li>
+                        <li><strong>Brushes Panel:</strong> Select and customize brushes</li>
+                        <li><strong>Color Panel:</strong> Choose colors (wheel, sliders, swatches)</li>
+                        <li><strong>Properties Panel:</strong> Settings for selected tool/layer</li>
+                        <li><strong>History/Undo Panel:</strong> See and navigate your action history</li>
+                        <li><strong>Navigator Panel:</strong> Thumbnail view for quick navigation</li>
+                    </ul>
+
+                    <h4>Panel Behaviors (universal concepts):</h4>
+                    <ul>
+                        <li><strong>Dockable:</strong> Can snap to edges of the screen</li>
+                        <li><strong>Floating:</strong> Can hover anywhere over the canvas</li>
+                        <li><strong>Collapsible:</strong> Can minimize to save space</li>
+                        <li><strong>Tabbed:</strong> Multiple panels in one space, switch with tabs</li>
+                        <li><strong>Resizable:</strong> Drag edges to make bigger/smaller</li>
+                        <li><strong>Show/Hide:</strong> Toggle visibility to reduce clutter</li>
+                    </ul>
+                </div>
+
+                <canvas id="interface-anatomy-canvas" width="800" height="500" style="max-width: 100%; height: auto; border: 2px solid #ddd; border-radius: 8px; background: #2a2a2a; margin: 2rem 0;"></canvas>
+                
+                <script>
+                    const iaCanvas = document.getElementById('interface-anatomy-canvas');
+                    const iaCtx = iaCanvas.getContext('2d');
+                    
+                    // Handle high DPI
+                    const iaScale = window.devicePixelRatio || 1;
+                    iaCanvas.width = 800 * iaScale;
+                    iaCanvas.height = 500 * iaScale;
+                    iaCtx.scale(iaScale, iaScale);
+                    
+                    // Title
+                    iaCtx.fillStyle = 'white';
+                    iaCtx.font = 'bold 18px Arial';
+                    iaCtx.textAlign = 'center';
+                    iaCtx.fillText('Generic Digital Art Interface Layout', 400, 25);
+                    
+                    // Menu Bar (top)
+                    iaCtx.fillStyle = '#34495e';
+                    iaCtx.fillRect(0, 40, 800, 30);
+                    iaCtx.fillStyle = 'white';
+                    iaCtx.font = '12px Arial';
+                    iaCtx.textAlign = 'left';
+                    iaCtx.fillText('File   Edit   View   Layer   Select   Filter   Window   Help', 10, 60);
+                    
+                    // Left Toolbar
+                    iaCtx.fillStyle = '#2c3e50';
+                    iaCtx.fillRect(0, 70, 60, 380);
+                    iaCtx.fillStyle = 'white';
+                    iaCtx.font = '10px Arial';
+                    iaCtx.textAlign = 'center';
+                    const tools = ['🖌️', '🧹', '✂️', '↔️', '🎨', '💧', '🔍', '✋'];
+                    tools.forEach((tool, i) => {
+                        iaCtx.fillText(tool, 30, 95 + (i * 40));
+                    });
+                    iaCtx.fillText('Toolbar', 30, 430);
+                    
+                    // Right Panels
+                    iaCtx.fillStyle = '#2c3e50';
+                    iaCtx.fillRect(640, 70, 160, 380);
+                    
+                    // Panel tabs
+                    iaCtx.fillStyle = '#34495e';
+                    iaCtx.fillRect(640, 70, 160, 25);
+                    iaCtx.fillStyle = 'white';
+                    iaCtx.font = '10px Arial';
+                    iaCtx.textAlign = 'center';
+                    iaCtx.fillText('Layers   Brushes   Color', 720, 85);
+                    
+                    // Panel content area
+                    iaCtx.strokeStyle = '#7f8c8d';
+                    iaCtx.strokeRect(650, 105, 140, 160);
+                    iaCtx.fillStyle = '#95a5a6';
+                    iaCtx.font = '11px Arial';
+                    iaCtx.fillText('Panel Content', 720, 190);
+                    
+                    // Navigator preview
+                    iaCtx.strokeStyle = '#7f8c8d';
+                    iaCtx.strokeRect(650, 280, 140, 100);
+                    iaCtx.fillText('Navigator', 720, 335);
+                    
+                    iaCtx.fillStyle = 'white';
+                    iaCtx.font = '10px Arial';
+                    iaCtx.fillText('Panels/Docks', 720, 440);
+                    
+                    // Canvas Area (center)
+                    iaCtx.fillStyle = '#95a5a6';
+                    iaCtx.fillRect(70, 70, 560, 380);
+                    
+                    // Checkerboard pattern (transparency indicator)
+                    const checkSize = 20;
+                    for (let y = 0; y < 380; y += checkSize) {
+                        for (let x = 0; x < 560; x += checkSize) {
+                            if ((x / checkSize + y / checkSize) % 2 === 0) {
+                                iaCtx.fillStyle = '#bdc3c7';
+                            } else {
+                                iaCtx.fillStyle = '#95a5a6';
+                            }
+                            iaCtx.fillRect(70 + x, 70 + y, checkSize, checkSize);
+                        }
+                    }
+                    
+                    // Canvas label
+                    iaCtx.fillStyle = 'rgba(0, 0, 0, 0.7)';
+                    iaCtx.fillRect(250, 220, 200, 60);
+                    iaCtx.fillStyle = 'white';
+                    iaCtx.font = 'bold 16px Arial';
+                    iaCtx.textAlign = 'center';
+                    iaCtx.fillText('Canvas Area', 350, 245);
+                    iaCtx.font = '12px Arial';
+                    iaCtx.fillText('Your artwork goes here', 350, 265);
+                    
+                    // Status Bar (bottom)
+                    iaCtx.fillStyle = '#34495e';
+                    iaCtx.fillRect(0, 460, 800, 30);
+                    iaCtx.fillStyle = 'white';
+                    iaCtx.font = '11px Arial';
+                    iaCtx.textAlign = 'left';
+                    iaCtx.fillText('Document: 3000x4000px | Zoom: 50% | Tool: Brush | Cursor: 1024, 768', 10, 478);
+                    
+                    // Labels with arrows
+                    iaCtx.strokeStyle = '#f39c12';
+                    iaCtx.lineWidth = 2;
+                    iaCtx.fillStyle = '#f39c12';
+                    iaCtx.font = 'bold 11px Arial';
+                    
+                    // Menu bar label
+                    iaCtx.textAlign = 'right';
+                    iaCtx.fillText('Menu Bar', 760, 55);
+                    
+                    // Status bar label
+                    iaCtx.textAlign = 'right';
+                    iaCtx.fillText('Status Bar', 760, 478);
+                </script>
+
+                <h3>4. Menu Bar (Command Central)</h3>
+
+                <div class="card">
+                    <h4>📜 What It Is</h4>
+                    <p>The menu bar contains organized text menus for ALL functions in the software. It's usually at the very top of the window (or screen on Mac).</p>
+                    
+                    <h4>Universal Menu Structure:</h4>
+                    <ul>
+                        <li><strong>File:</strong> New, Open, Save, Export, Print, Close</li>
+                        <li><strong>Edit:</strong> Undo, Redo, Copy, Paste, Preferences/Settings</li>
+                        <li><strong>View:</strong> Zoom, Show/Hide panels, Full screen</li>
+                        <li><strong>Layer:</strong> New layer, Merge, Layer properties</li>
+                        <li><strong>Select:</strong> Selection tools and operations</li>
+                        <li><strong>Filter/Effects:</strong> Apply effects to artwork</li>
+                        <li><strong>Window:</strong> Show/hide panels, arrange workspace</li>
+                        <li><strong>Help:</strong> Documentation, tutorials, about</li>
+                    </ul>
+
+                    <p><strong>Why it matters:</strong> Even if you can't find a tool button, you can ALWAYS access any function through the menu bar. It's your safety net!</p>
+                </div>
+
+                <h3>5. Status Bar (Information Display)</h3>
+
+                <div class="card">
+                    <h4>ℹ️ What It Is</h4>
+                    <p>The status bar is typically at the bottom of the window and displays useful information about your current document and tool.</p>
+                    
+                    <h4>Common Information Shown:</h4>
+                    <ul>
+                        <li><strong>Zoom level:</strong> Current magnification percentage</li>
+                        <li><strong>Document size:</strong> Canvas dimensions in pixels</li>
+                        <li><strong>Cursor position:</strong> X, Y coordinates on canvas</li>
+                        <li><strong>File size:</strong> How large your document is</li>
+                        <li><strong>Current tool:</strong> Which tool is active</li>
+                        <li><strong>Color mode:</strong> RGB, CMYK, etc.</li>
+                        <li><strong>Memory usage:</strong> RAM being used (in some apps)</li>
+                    </ul>
+
+                    <p><strong>Pro tip:</strong> Many status bars are interactive—clicking on them can change settings quickly!</p>
+                </div>
+
+                <blockquote>
+                    <strong>🎓 Remember:</strong> The NAMES might be different across software, but these ELEMENTS exist in every professional digital art program. Once you understand the concepts, you're just learning new vocabulary, not new ideas!
+                </blockquote>
+            </section>
+
+            <!-- Section 2: Canvas Navigation Essentials -->
+            <section id="canvas-navigation" class="lesson-section">
+                <h2>Canvas Navigation Essentials 🧭</h2>
+                
+                <p>Being able to move around your canvas efficiently is CRUCIAL. You'll be zooming, panning, and rotating constantly while painting. Master these controls and you'll work 10x faster!</p>
+
+                <h3>The Big Three: Zoom, Pan, Rotate</h3>
+
+                <p>Every digital art program has these three fundamental navigation controls. The specific keys or gestures might differ, but the concepts are universal.</p>
+
+                <div class="card" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: #1a1a1a;">
+                    <h4 style="color: #1a1a1a; margin-top: 0;">🔍 Zoom (Magnification)</h4>
+                    
+                    <p><strong>What it does:</strong> Makes your canvas appear larger or smaller so you can see fine details or the full composition.</p>
+                    
+                    <h5 style="color: #1a1a1a;">Universal Zoom Methods:</h5>
+                    <ul>
+                        <li><strong>Mouse wheel:</strong> Scroll up = zoom in, scroll down = zoom out</li>
+                        <li><strong>Keyboard shortcuts:</strong> Usually Ctrl/Cmd + Plus/Minus</li>
+                        <li><strong>Zoom tool:</strong> Click to zoom in, Alt+click to zoom out</li>
+                        <li><strong>Pinch gesture:</strong> On touchscreens and trackpads</li>
+                        <li><strong>View menu:</strong> Zoom to specific percentages (50%, 100%, 200%)</li>
+                    </ul>
+
+                    <h5 style="color: #1a1a1a;">Important Zoom Levels:</h5>
+                    <ul>
+                        <li><strong>Fit to window:</strong> See entire canvas at once</li>
+                        <li><strong>100% (actual pixels):</strong> One canvas pixel = one screen pixel (true size)</li>
+                        <li><strong>200-400%:</strong> Good for detail work</li>
+                        <li><strong>25-50%:</strong> Good for viewing overall composition</li>
+                    </ul>
+
+                    <p><strong>Pro workflow:</strong> Constantly toggle between zoomed in (for details) and zoomed out (for composition). Good artists zoom in/out hundreds of times per painting!</p>
+                </div>
+
+                <div class="card" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); color: #1a1a1a; margin-top: 1.5rem;">
+                    <h4 style="color: #1a1a1a; margin-top: 0;">✋ Pan (Move Around Canvas)</h4>
+                    
+                    <p><strong>What it does:</strong> Moves your view around the canvas when you're zoomed in and can't see everything.</p>
+                    
+                    <h5 style="color: #1a1a1a;">Universal Pan Methods:</h5>
+                    <ul>
+                        <li><strong>Spacebar + drag:</strong> Most common method across all desktop software</li>
+                        <li><strong>Hand tool:</strong> Dedicated tool for panning (usually H key)</li>
+                        <li><strong>Middle mouse button:</strong> Click and drag (some programs)</li>
+                        <li><strong>Two-finger drag:</strong> On touchscreens and tablets</li>
+                        <li><strong>Scrollbars:</strong> Traditional but slow method</li>
+                    </ul>
+
+                    <p><strong>Why it's crucial:</strong> When zoomed in to work on an eye, you need to quickly pan to the other eye, then to the nose, etc. Efficient panning keeps your flow uninterrupted!</p>
+                </div>
+
+                <div class="card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #1a1a1a; margin-top: 1.5rem;">
+                    <h4 style="color: #1a1a1a; margin-top: 0;">🔄 Rotate (Turn the Canvas)</h4>
+                    
+                    <p><strong>What it does:</strong> Rotates your view of the canvas, making it easier to draw at comfortable angles—just like rotating paper on a desk!</p>
+                    
+                    <h5 style="color: #1a1a1a;">Universal Rotate Methods:</h5>
+                    <ul>
+                        <li><strong>Keyboard + drag:</strong> Often R key + drag, or Shift + Spacebar + drag</li>
+                        <li><strong>Rotate tool:</strong> Dedicated rotation tool</li>
+                        <li><strong>Two-finger rotate:</strong> On touchscreens (twist gesture)</li>
+                        <li><strong>Navigator panel:</strong> Rotation slider or dial</li>
+                        <li><strong>View menu:</strong> Rotate by specific degrees (90°, 180°, etc.)</li>
+                    </ul>
+
+                    <h5 style="color: #1a1a1a;">Why Artists Rotate:</h5>
+                    <ul>
+                        <li><strong>Comfort:</strong> Drawing curves is easier when they flow with your natural hand motion</li>
+                        <li><strong>Accuracy:</strong> Some angles are easier to control</li>
+                        <li><strong>Fresh perspective:</strong> Rotating helps spot composition issues</li>
+                        <li><strong>Handedness:</strong> Right-handed artists often rotate differently than left-handed</li>
+                    </ul>
+
+                    <p><strong>Pro tip:</strong> Most programs have a "reset rotation" command (usually pressing Escape or hitting a reset button). Use it to quickly return to 0°!</p>
+                </div>
+
+                <h3>Navigation Best Practices</h3>
+
+                <div class="card" style="background: #fff3e0;">
+                    <h4>⚡ Speed Tips for Efficient Navigation</h4>
+                    <ul>
+                        <li><strong>Learn your spacebar:</strong> Spacebar is your best friend. Hold it + drag to pan in almost every program</li>
+                        <li><strong>Keep one hand on keyboard:</strong> Even with a tablet, keep your other hand ready for shortcuts</li>
+                        <li><strong>Zoom to where you click:</strong> Most programs zoom centered on your cursor position—use this!</li>
+                        <li><strong>Use Fit to Window often:</strong> Quick way to see your whole composition (often the F key)</li>
+                        <li><strong>Don't rely on scrollbars:</strong> They're slow. Master keyboard/mouse navigation</li>
+                        <li><strong>Practice smooth motions:</strong> Zoom, rotate, and pan should feel natural, not clunky</li>
+                    </ul>
+                </div>
+
+                <blockquote>
+                    <strong>🎯 Challenge:</strong> Spend 5 minutes just practicing navigation. Zoom in to 400%, pan around, zoom out to 25%, rotate 45°, reset. Make it feel like second nature. This will pay dividends later!
+                </blockquote>
+
+                <h3>Common Navigation Shortcuts (Cross-Software)</h3>
+
+                <div class="card">
+                    <table style="width: 100%;">
+                        <thead>
+                            <tr>
+                                <th>Action</th>
+                                <th>Common Shortcut</th>
+                                <th>Alternative</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Pan</strong></td>
+                                <td>Spacebar + Drag</td>
+                                <td>H key (Hand tool) + Drag</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Zoom In</strong></td>
+                                <td>Ctrl/Cmd + Plus (+)</td>
+                                <td>Scroll wheel up</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Zoom Out</strong></td>
+                                <td>Ctrl/Cmd + Minus (-)</td>
+                                <td>Scroll wheel down</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Fit to Window</strong></td>
+                                <td>Ctrl/Cmd + 0</td>
+                                <td>F key (some programs)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>100% Zoom</strong></td>
+                                <td>Ctrl/Cmd + 1</td>
+                                <td>Double-click zoom tool</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Rotate Canvas</strong></td>
+                                <td>R + Drag (varies)</td>
+                                <td>Shift + Spacebar + Drag</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Reset Rotation</strong></td>
+                                <td>Esc or view menu</td>
+                                <td>Navigator panel reset</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Flip Horizontal</strong></td>
+                                <td>Varies by software</td>
+                                <td>View menu → Flip</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p><strong>Note:</strong> These are the MOST common shortcuts, but your software might use slightly different keys. Check your program's preferences or help menu for the exact shortcuts!</p>
+
+            </section>
+
+            <!-- PART A ENDS HERE -->
+            <!-- Section 3: Toolbars and Panels Deep Dive -->
+            <section id="toolbars-panels" class="lesson-section">
+                <h2>Toolbars and Panels Deep Dive 🔧</h2>
+                
+                <p>Now that you understand the basic anatomy, let's dive deeper into toolbars and panels—the control centers where most of your work happens. Understanding how these work will make you efficient in ANY software!</p>
+
+                <h3>Understanding Toolbars</h3>
+
+                <p>Toolbars are your quick-access weapon rack. Every tool has a specific job, and knowing what each one does (and when to use it) is fundamental.</p>
+
+                <div class="card" style="background: #e3f2fd;">
+                    <h4>🎨 Primary Tools (The Essential Eight)</h4>
+                    <p>These tools appear in virtually EVERY digital art program. Master these first!</p>
+
+                    <h5>1. Brush/Paintbrush Tool</h5>
+                    <ul>
+                        <li><strong>What it does:</strong> Your primary painting tool. Applies color with pressure sensitivity</li>
+                        <li><strong>Common shortcut:</strong> B key</li>
+                        <li><strong>When to use:</strong> 90% of your painting time</li>
+                        <li><strong>Pro tip:</strong> Right-click/two-finger tap often brings up brush selector</li>
+                    </ul>
+
+                    <h5>2. Eraser Tool</h5>
+                    <ul>
+                        <li><strong>What it does:</strong> Removes pixels, making areas transparent</li>
+                        <li><strong>Common shortcut:</strong> E key</li>
+                        <li><strong>When to use:</strong> Cleaning up edges, removing mistakes</li>
+                        <li><strong>Pro tip:</strong> Many artists just paint with transparency instead of switching to eraser</li>
+                    </ul>
+
+                    <h5>3. Selection Tools</h5>
+                    <ul>
+                        <li><strong>What they do:</strong> Define areas to work on (rectangular, elliptical, lasso, magic wand)</li>
+                        <li><strong>Common shortcuts:</strong> M (marquee), L (lasso), W (magic wand)</li>
+                        <li><strong>When to use:</strong> Isolating areas, masking, cutting/copying</li>
+                        <li><strong>Pro tip:</strong> Hold Shift to add to selection, Alt to subtract</li>
+                    </ul>
+
+                    <h5>4. Move Tool</h5>
+                    <ul>
+                        <li><strong>What it does:</strong> Moves layers or selections around canvas</li>
+                        <li><strong>Common shortcut:</strong> V key</li>
+                        <li><strong>When to use:</strong> Repositioning elements, adjusting composition</li>
+                        <li><strong>Pro tip:</strong> Ctrl/Cmd + click-and-drag moves active layer in most programs</li>
+                    </ul>
+
+                    <h5>5. Transform Tool</h5>
+                    <ul>
+                        <li><strong>What it does:</strong> Scale, rotate, distort, skew layers or selections</li>
+                        <li><strong>Common shortcut:</strong> Ctrl/Cmd + T</li>
+                        <li><strong>When to use:</strong> Resizing elements, adjusting perspective</li>
+                        <li><strong>Pro tip:</strong> Hold Shift while scaling to maintain proportions</li>
+                    </ul>
+
+                    <h5>6. Color Picker / Eyedropper</h5>
+                    <ul>
+                        <li><strong>What it does:</strong> Samples color from your canvas</li>
+                        <li><strong>Common shortcut:</strong> I key, or hold Alt while painting</li>
+                        <li><strong>When to use:</strong> Matching existing colors, color harmony</li>
+                        <li><strong>Pro tip:</strong> Most programs let you sample colors while painting by holding Alt</li>
+                    </ul>
+
+                    <h5>7. Fill / Paint Bucket</h5>
+                    <ul>
+                        <li><strong>What it does:</strong> Fills enclosed areas with color</li>
+                        <li><strong>Common shortcut:</strong> G key</li>
+                        <li><strong>When to use:</strong> Filling large flat areas, base colors</li>
+                        <li><strong>Pro tip:</strong> Adjust tolerance setting to control what gets filled</li>
+                    </ul>
+
+                    <h5>8. Gradient Tool</h5>
+                    <ul>
+                        <li><strong>What it does:</strong> Creates smooth color transitions</li>
+                        <li><strong>Common shortcut:</strong> G key (sometimes shares with fill)</li>
+                        <li><strong>When to use:</strong> Backgrounds, lighting effects, smooth transitions</li>
+                        <li><strong>Pro tip:</strong> Click and drag to define gradient direction and length</li>
+                    </ul>
+                </div>
+
+                <blockquote style="margin-top: 1.5rem;">
+                    <strong>💡 Quick Win:</strong> Focus on mastering Brush, Eraser, Move, and Color Picker first. These four tools handle 80% of digital painting work!
+                </blockquote>
+            </section>
+
+            <!-- PART B ENDS HERE -->
+            <!-- Continuing Section 3: Essential Panels Explained -->
+            <div class="card" style="margin-top: 1.5rem;">
+                <h4>📚 Layers Panel (THE Most Important Panel)</h4>
+                
+                <p>The Layers panel is your project's organizational backbone. If you learn NOTHING else about panels, learn this one!</p>
+
+                <h5>What You'll Find Here:</h5>
+                <ul>
+                    <li><strong>Layer stack:</strong> All your layers listed top to bottom</li>
+                    <li><strong>Visibility toggle:</strong> Eye icon to show/hide layers</li>
+                    <li><strong>Lock controls:</strong> Prevent accidental edits</li>
+                    <li><strong>Opacity slider:</strong> Control layer transparency (0-100%)</li>
+                    <li><strong>Blend modes:</strong> Control how layers interact (Normal, Multiply, Overlay, etc.)</li>
+                    <li><strong>Layer thumbnail:</strong> Small preview of layer content</li>
+                    <li><strong>New layer button:</strong> Create new layers</li>
+                    <li><strong>Delete layer button:</strong> Remove layers</li>
+                    <li><strong>Layer groups/folders:</strong> Organize related layers</li>
+                </ul>
+
+                <h5>Common Layer Panel Actions:</h5>
+                <ul>
+                    <li><strong>Click layer:</strong> Select it (make it active)</li>
+                    <li><strong>Double-click name:</strong> Rename layer</li>
+                    <li><strong>Drag layers:</strong> Reorder them in stack</li>
+                    <li><strong>Right-click layer:</strong> Context menu with options</li>
+                    <li><strong>Ctrl/Cmd + click thumbnail:</strong> Select layer content</li>
+                </ul>
+
+                <h5>Universal Layer Shortcuts:</h5>
+                <ul>
+                    <li><strong>New layer:</strong> Ctrl/Cmd + Shift + N</li>
+                    <li><strong>Delete layer:</strong> Select and press Delete/Backspace</li>
+                    <li><strong>Merge down:</strong> Ctrl/Cmd + E</li>
+                    <li><strong>Flatten image:</strong> Varies by program</li>
+                    <li><strong>Duplicate layer:</strong> Ctrl/Cmd + J</li>
+                </ul>
+            </div>
+
+            <div class="card" style="margin-top: 1.5rem;">
+                <h4>🖌️ Brushes Panel</h4>
+                
+                <p>Your brush library and customization center. This is where you select and modify brushes.</p>
+
+                <h5>Common Features:</h5>
+                <ul>
+                    <li><strong>Brush presets:</strong> Library of saved brushes</li>
+                    <li><strong>Brush preview:</strong> Shows brush stroke example</li>
+                    <li><strong>Size slider:</strong> Adjust brush diameter</li>
+                    <li><strong>Opacity slider:</strong> Control brush transparency</li>
+                    <li><strong>Flow slider:</strong> Control paint application rate</li>
+                    <li><strong>Brush settings:</strong> Deep customization options</li>
+                    <li><strong>Favorites/tags:</strong> Organize your brushes</li>
+                    <li><strong>Import/export:</strong> Share brushes between projects</li>
+                </ul>
+
+                <h5>Quick Access Tips:</h5>
+                <ul>
+                    <li><strong>Bracket keys [ ]:</strong> Decrease/increase brush size in most programs</li>
+                    <li><strong>Number keys 1-9:</strong> Set opacity 10%-90% quickly</li>
+                    <li><strong>Right-click on canvas:</strong> Often shows brush selector</li>
+                </ul>
+            </div>
+
+            <div class="card" style="margin-top: 1.5rem;">
+                <h4>🎨 Color Panel</h4>
+                
+                <p>Where you choose your painting colors. Different programs show this differently, but the concepts are the same.</p>
+
+                <h5>Common Color Picker Types:</h5>
+                <ul>
+                    <li><strong>Color wheel:</strong> Circular hue selector with brightness/saturation triangle or square</li>
+                    <li><strong>HSV/HSL sliders:</strong> Separate controls for Hue, Saturation, Value/Lightness</li>
+                    <li><strong>RGB sliders:</strong> Red, Green, Blue values (0-255)</li>
+                    <li><strong>Color swatches:</strong> Pre-saved color palette</li>
+                    <li><strong>Hex input:</strong> Enter colors as hex codes (#FF5733)</li>
+                </ul>
+
+                <h5>Foreground vs Background Color:</h5>
+                <ul>
+                    <li><strong>Foreground:</strong> Your primary painting color (usually displayed as front square)</li>
+                    <li><strong>Background:</strong> Secondary color (usually displayed as back square)</li>
+                    <li><strong>Swap:</strong> Press X key to switch foreground/background</li>
+                    <li><strong>Default:</strong> Press D key to reset to black/white</li>
+                </ul>
+            </div>
+
+            <div class="card" style="margin-top: 1.5rem;">
+                <h4>⚙️ Tool Properties / Options Panel</h4>
+                
+                <p>Shows settings for whatever tool you currently have selected. This panel changes based on your active tool!</p>
+
+                <h5>What Appears Here:</h5>
+                <ul>
+                    <li><strong>Brush settings:</strong> Size, opacity, flow, hardness when brush is selected</li>
+                    <li><strong>Selection options:</strong> Feather, anti-alias when selection tool active</li>
+                    <li><strong>Fill options:</strong> Pattern, gradient type when fill tool active</li>
+                    <li><strong>Transform options:</strong> Precise rotation/scale values when transforming</li>
+                </ul>
+
+                <p><strong>Pro tip:</strong> Always check this panel when you switch tools—it shows you what options are available!</p>
+            </div>
+
+            <div class="card" style="margin-top: 1.5rem;">
+                <h4>🗺️ Navigator Panel</h4>
+                
+                <p>A bird's-eye view of your entire canvas, even when zoomed in. Incredibly useful for staying oriented!</p>
+
+                <h5>Features:</h5>
+                <ul>
+                    <li><strong>Thumbnail preview:</strong> Shows entire canvas at small size</li>
+                    <li><strong>View box:</strong> Red rectangle shows what's currently visible</li>
+                    <li><strong>Quick navigation:</strong> Click in thumbnail to jump to that area</li>
+                    <li><strong>Zoom slider:</strong> Often integrated into navigator</li>
+                    <li><strong>Rotation display:</strong> Shows current canvas rotation</li>
+                </ul>
+
+                <p><strong>Pro tip:</strong> Keep the Navigator panel visible when working on large, detailed pieces. It helps you stay aware of composition!</p>
+            </div>
+
+            <div class="card" style="margin-top: 1.5rem;">
+                <h4>⏮️ History / Undo Panel</h4>
+                
+                <p>Shows a list of your recent actions. Much more powerful than simple undo/redo!</p>
+
+                <h5>Features:</h5>
+                <ul>
+                    <li><strong>Action list:</strong> Every step you've taken</li>
+                    <li><strong>Step back/forward:</strong> Click any action to jump to that point</li>
+                    <li><strong>Branching history:</strong> Some programs let you explore alternate paths</li>
+                    <li><strong>History states:</strong> Number of undos available (usually 20-100)</li>
+                </ul>
+
+                <h5>Universal Undo Shortcuts:</h5>
+                <ul>
+                    <li><strong>Undo:</strong> Ctrl/Cmd + Z</li>
+                    <li><strong>Redo:</strong> Ctrl/Cmd + Shift + Z (or Ctrl/Cmd + Y)</li>
+                    <li><strong>Step backward:</strong> Ctrl/Cmd + Alt + Z (Photoshop)</li>
+                </ul>
+
+                <p><strong>Important:</strong> History is NOT saved with your file! It's lost when you close the program.</p>
+            </div>
+
+            <blockquote style="margin-top: 1.5rem;">
+                <strong>💡 Panel Power Move:</strong> Don't try to memorize every panel right away. Focus on Layers, Brushes, and Color first. As you get comfortable, gradually explore other panels. You'll naturally discover what you need!
+            </blockquote>
+
+            <h3>Panel Management Tips</h3>
+
+            <div class="card" style="background: #fff3e0;">
+                <h4>🎯 Working Smart with Panels</h4>
+                
+                <h5>Organization Strategies:</h5>
+                <ul>
+                    <li><strong>Dock essential panels:</strong> Keep Layers, Brushes, Color always visible</li>
+                    <li><strong>Tab related panels:</strong> Group Navigator + History, or Color + Swatches</li>
+                    <li><strong>Auto-collapse:</strong> Enable auto-collapse for panels you rarely use</li>
+                    <li><strong>Second monitor:</strong> If you have one, dedicate it to panels</li>
+                    <li><strong>Save workspace:</strong> Once you find a good layout, save it!</li>
+                </ul>
+
+                <h5>Space-Saving Tricks:</h5>
+                <ul>
+                    <li><strong>Collapse to icons:</strong> Most panels can minimize to tiny icons</li>
+                    <li><strong>Tab key:</strong> Often hides ALL panels temporarily (great for full-canvas view)</li>
+                    <li><strong>Float when needed:</strong> Keep rarely-used panels floating, close when done</li>
+                    <li><strong>Use keyboard shortcuts:</strong> Open panels only when needed via shortcuts</li>
+                </ul>
+
+                <h5>Performance Considerations:</h5>
+                <ul>
+                    <li><strong>Close unused panels:</strong> Each open panel uses a bit of memory</li>
+                    <li><strong>Lower preview quality:</strong> Some panels have quality settings for thumbnails</li>
+                    <li><strong>Disable animations:</strong> Panel transitions can slow down older computers</li>
+                </ul>
+            </div>
+
+            <!-- Section 4: Workspace Customization -->
+            <section id="workspace-custom" class="lesson-section">
+                <h2>Workspace Customization 🎨</h2>
+                
+                <p>Here's where you make the software YOURS. A well-organized workspace can literally double your productivity. Let's set you up for success!</p>
+
+                <h3>Understanding Workspaces</h3>
+
+                <p>A "workspace" is a saved arrangement of panels, toolbars, and interface settings. Think of it like saving different desk arrangements for different types of work.</p>
+
+                <div class="card" style="background: #e8f5e9;">
+                    <h4>📐 Why Multiple Workspaces?</h4>
+                    
+                    <p>Different tasks need different tools visible. Professional artists typically have 3-5 workspaces:</p>
+
+                    <h5>1. Painting Workspace</h5>
+                    <ul>
+                        <li><strong>Focus:</strong> Maximum canvas space</li>
+                        <li><strong>Visible panels:</strong> Layers, Brushes, Color, Navigator</li>
+                        <li><strong>Hidden:</strong> Everything else</li>
+                        <li><strong>When to use:</strong> Active painting sessions</li>
+                    </ul>
+
+                    <h5>2. Sketching Workspace</h5>
+                    <ul>
+                        <li><strong>Focus:</strong> Minimal distractions</li>
+                        <li><strong>Visible panels:</strong> Just brushes and basic tools</li>
+                        <li><strong>Hidden:</strong> Complex panels, extra tools</li>
+                        <li><strong>When to use:</strong> Initial concept work, thumbnailing</li>
+                    </ul>
+
+                    <h5>3. Detailing Workspace</h5>
+                    <ul>
+                        <li><strong>Focus:</strong> Precision work</li>
+                        <li><strong>Visible panels:</strong> Navigator (important!), Layers, Tool Options, History</li>
+                        <li><strong>Zoomed view:</strong> Often at 100-400%</li>
+                        <li><strong>When to use:</strong> Fine details, cleanup, finishing touches</li>
+                    </ul>
+
+                    <h5>4. Photo Editing Workspace</h5>
+                    <ul>
+                        <li><strong>Focus:</strong> Adjustment and corrections</li>
+                        <li><strong>Visible panels:</strong> Adjustments, Levels, Curves, History</li>
+                        <li><strong>When to use:</strong> Photo manipulation, color correction</li>
+                    </ul>
+
+                    <h5>5. Full Screen / Presentation</h5>
+                    <ul>
+                        <li><strong>Focus:</strong> Nothing but canvas</li>
+                        <li><strong>Visible panels:</strong> None (or minimal)</li>
+                        <li><strong>When to use:</strong> Showing work to clients, streaming, recording</li>
+                    </ul>
+                </div>
+
+                <h3>Creating Your Perfect Workspace</h3>
+
+                <div class="card">
+                    <h4>🔨 Step-by-Step Workspace Setup</h4>
+                    
+                    <h5>Step 1: Start with Defaults</h5>
+                    <p>Most programs have preset workspaces. Try them first:</p>
+                    <ul>
+                        <li>Go to Window → Workspace (or similar menu)</li>
+                        <li>Try "Default", "Painting", "Digital Painting", etc.</li>
+                        <li>Spend 10 minutes with each to see what you like</li>
+                    </ul>
+
+                    <h5>Step 2: Identify Your Must-Haves</h5>
+                    <p>Ask yourself: "What do I touch most often?"</p>
+                    <ul>
+                        <li>Layers panel? (Probably yes!)</li>
+                        <li>Brushes panel? (Definitely yes!)</li>
+                        <li>Color panel? (Almost certainly!)</li>
+                        <li>Navigator? (If you work large/detailed, yes)</li>
+                        <li>History? (Nice to have, but not critical)</li>
+                    </ul>
+
+                    <h5>Step 3: Position Panels Logically</h5>
+                    <p>Think about your hand movements:</p>
+                    <ul>
+                        <li><strong>Dominant side:</strong> Put frequently-used panels here (easier to reach)</li>
+                        <li><strong>Non-dominant side:</strong> Reference panels (Navigator, Swatches)</li>
+                        <li><strong>Bottom:</strong> Tool options, status info</li>
+                        <li><strong>Top:</strong> Usually leave for menu bar</li>
+                    </ul>
+
+                    <h5>Step 4: Test Your Layout</h5>
+                    <p>Do a real painting session:</p>
+                    <ul>
+                        <li>Paint for at least 30 minutes</li>
+                        <li>Note what feels awkward or far away</li>
+                        <li>Adjust panel positions</li>
+                        <li>Repeat until it feels smooth</li>
+                    </ul>
+
+                    <h5>Step 5: Save Your Workspace</h5>
+                    <p>Once you're happy:</p>
+                    <ul>
+                        <li>Go to Window → Workspace → Save Workspace (or similar)</li>
+                        <li>Give it a descriptive name ("My Painting Setup")</li>
+                        <li>Now you can always return to this arrangement!</li>
+                    </ul>
+                </div>
+
+                <h3>Ergonomics and Efficiency</h3>
+
+                <div class="card" style="background: #fff3e0;">
+                    <h4>💪 Physical Workspace Considerations</h4>
+                    
+                    <p>Your digital workspace isn't just about software—it's about your physical setup too!</p>
+
+                    <h5>Monitor Placement:</h5>
+                    <ul>
+                        <li><strong>Eye level:</strong> Top of monitor at or slightly below eye level</li>
+                        <li><strong>Distance:</strong> Arm's length away (roughly 20-30 inches)</li>
+                        <li><strong>Tilt:</strong> Slight backward tilt (10-20 degrees)</li>
+                        <li><strong>Dual monitors:</strong> Main monitor directly in front, secondary at angle</li>
+                    </ul>
+
+                    <h5>Tablet Positioning:</h5>
+                    <ul>
+                        <li><strong>Screen tablets:</strong> Same guidelines as monitors</li>
+                        <li><strong>Pen tablets:</strong> Flat on desk, comfortable reach</li>
+                        <li><strong>Angle:</strong> Some prefer slight angle (use books or stands)</li>
+                        <li><strong>Active area:</strong> Adjust tablet active area to match screen aspect ratio</li>
+                    </ul>
+
+                    <h5>Seating and Posture:</h5>
+                    <ul>
+                        <li><strong>Chair height:</strong> Feet flat on floor, knees at 90°</li>
+                        <li><strong>Desk height:</strong> Elbows at 90° when hands on keyboard</li>
+                        <li><strong>Back support:</strong> Lumbar support, sit back in chair</li>
+                        <li><strong>Breaks:</strong> Stand and stretch every 45-60 minutes!</li>
+                    </ul>
+
+                    <h5>Lighting:</h5>
+                    <ul>
+                        <li><strong>Avoid glare:</strong> No windows directly behind or in front of monitor</li>
+                        <li><strong>Even lighting:</strong> Ambient light, not harsh spotlights</li>
+                        <li><strong>Color accuracy:</strong> Neutral white light if doing professional color work</li>
+                        <li><strong>Screen brightness:</strong> Match room brightness (not too bright/dark)</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; margin-top: 1.5rem;">
+                    <h4 style="color: white; margin-top: 0;">🎯 Workspace Quick Tips</h4>
+                    <ul>
+                        <li><strong>Less is more:</strong> Start minimal, add panels only as needed</li>
+                        <li><strong>Group by frequency:</strong> Most-used panels get prime real estate</li>
+                        <li><strong>Use Tab key:</strong> Quick toggle to hide/show all panels</li>
+                        <li><strong>Save variations:</strong> "Painting - Laptop" vs "Painting - Desktop" for different setups</li>
+                        <li><strong>Reset anytime:</strong> Messed up your layout? Reset to default and start over</li>
+                        <li><strong>Export your workspace:</strong> Some programs let you save workspace files to share across computers</li>
+                    </ul>
+                </div>
+
+                <blockquote style="margin-top: 1.5rem;">
+                    <strong>💡 Remember:</strong> There's no "perfect" workspace. What works for a landscape painter won't work for a character artist. Experiment, iterate, and find what makes YOU most productive!
+                </blockquote>
+
+                <h3>Workspace Management Across Software</h3>
+
+                <div class="card">
+                    <h4>🔄 How Different Programs Handle Workspaces</h4>
+                    
+                    <table style="width: 100%;">
+                        <thead>
+                            <tr>
+                                <th>Software</th>
+                                <th>How to Save Workspace</th>
+                                <th>Where to Find Presets</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Photoshop</strong></td>
+                                <td>Window → Workspace → New Workspace</td>
+                                <td>Window → Workspace</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Krita</strong></td>
+                                <td>Settings → Dockers → Save Docker Positions</td>
+                                <td>Settings → Workspace (presets available)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Procreate</strong></td>
+                                <td>Limited customization (minimalist by design)</td>
+                                <td>Interface is fixed but clean</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Clip Studio</strong></td>
+                                <td>Window → Workspace → Register Workspace</td>
+                                <td>Window → Workspace</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Corel Painter</strong></td>
+                                <td>Window → Workspace → Save Workspace</td>
+                                <td>Window → Workspace</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Affinity Photo</strong></td>
+                                <td>Window → Studio → Save Studio</td>
+                                <td>Personas (Photo, Liquify, Develop)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <p><strong>Note:</strong> The exact menu names vary, but look for "Window", "Workspace", "Studio", or "Layout" in the menu bar!</p>
+                </div>
+            </section>
+
+            <!-- PART C ENDS HERE -->
+            <!-- Section 5: Essential Keyboard Shortcuts -->
+            <section id="keyboard-shortcuts" class="lesson-section">
+                <h2>Essential Keyboard Shortcuts ⌨️</h2>
+                
+                <p>Keyboard shortcuts are the secret weapon of fast, efficient digital artists. Learning even just 10-15 shortcuts can literally DOUBLE your painting speed. Let's focus on the most impactful ones that work across virtually all software!</p>
+
+                <h3>The Universal Shortcuts (Work Almost Everywhere)</h3>
+
+                <div class="card" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white;">
+                    <h4 style="color: white; margin-top: 0;">🔥 The Power 10: Master These First</h4>
+                    <p>These shortcuts are SO universal and SO useful that you should memorize them TODAY:</p>
+
+                    <table style="width: 100%; color: white;">
+                        <thead>
+                            <tr style="border-bottom: 2px solid rgba(255,255,255,0.3);">
+                                <th>Action</th>
+                                <th>Shortcut</th>
+                                <th>Why It's Essential</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Undo</strong></td>
+                                <td>Ctrl/Cmd + Z</td>
+                                <td>Fix mistakes instantly</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Redo</strong></td>
+                                <td>Ctrl/Cmd + Shift + Z</td>
+                                <td>Undo your undo</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Save</strong></td>
+                                <td>Ctrl/Cmd + S</td>
+                                <td>Never lose your work!</td>
+                            </tr>
+                            <tr>
+                                <td><strong>New Layer</strong></td>
+                                <td>Ctrl/Cmd + Shift + N</td>
+                                <td>Create layers super fast</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Duplicate Layer</strong></td>
+                                <td>Ctrl/Cmd + J</td>
+                                <td>Quick layer copies</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Merge Down</strong></td>
+                                <td>Ctrl/Cmd + E</td>
+                                <td>Combine layers quickly</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Transform</strong></td>
+                                <td>Ctrl/Cmd + T</td>
+                                <td>Scale/rotate anything</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Deselect</strong></td>
+                                <td>Ctrl/Cmd + D</td>
+                                <td>Clear selections fast</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Copy</strong></td>
+                                <td>Ctrl/Cmd + C</td>
+                                <td>Copy selections/layers</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Paste</strong></td>
+                                <td>Ctrl/Cmd + V</td>
+                                <td>Paste copied content</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>Tool Selection Shortcuts</h3>
+
+                <div class="card">
+                    <h4>🔧 Quick Tool Switching</h4>
+                    <p>Stop clicking through toolbars! Press a letter key to switch tools instantly:</p>
+
+                    <table style="width: 100%;">
+                        <thead>
+                            <tr>
+                                <th>Tool</th>
+                                <th>Common Key</th>
+                                <th>Alternative</th>
+                                <th>Remember It As...</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Brush</strong></td>
+                                <td>B</td>
+                                <td>-</td>
+                                <td>"B for Brush"</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Eraser</strong></td>
+                                <td>E</td>
+                                <td>-</td>
+                                <td>"E for Eraser"</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Move</strong></td>
+                                <td>V</td>
+                                <td>-</td>
+                                <td>"V for moVe"</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Hand/Pan</strong></td>
+                                <td>H</td>
+                                <td>Spacebar (hold)</td>
+                                <td>"H for Hand"</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Zoom</strong></td>
+                                <td>Z</td>
+                                <td>Ctrl/Cmd + Space</td>
+                                <td>"Z for Zoom"</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Eyedropper</strong></td>
+                                <td>I</td>
+                                <td>Alt (while painting)</td>
+                                <td>"I for pIck color"</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Gradient</strong></td>
+                                <td>G</td>
+                                <td>-</td>
+                                <td>"G for Gradient"</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Lasso</strong></td>
+                                <td>L</td>
+                                <td>-</td>
+                                <td>"L for Lasso"</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Marquee</strong></td>
+                                <td>M</td>
+                                <td>-</td>
+                                <td>"M for Marquee"</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Text</strong></td>
+                                <td>T</td>
+                                <td>-</td>
+                                <td>"T for Text"</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <p><strong>Pro tip:</strong> Tap the same key multiple times to cycle through related tools (e.g., press M repeatedly to switch between rectangular and elliptical marquee).</p>
+                </div>
+
+                <h3>Brush Control Shortcuts</h3>
+
+                <div class="card" style="background: #e3f2fd;">
+                    <h4>🖌️ Lightning-Fast Brush Adjustments</h4>
+                    <p>These shortcuts let you adjust your brush without ever opening a panel:</p>
+
+                    <table style="width: 100%;">
+                        <thead>
+                            <tr>
+                                <th>Action</th>
+                                <th>Shortcut</th>
+                                <th>What It Does</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Increase Brush Size</strong></td>
+                                <td>] (right bracket)</td>
+                                <td>Makes brush bigger</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Decrease Brush Size</strong></td>
+                                <td>[ (left bracket)</td>
+                                <td>Makes brush smaller</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Increase Hardness</strong></td>
+                                <td>Shift + ]</td>
+                                <td>Harder edges (some apps)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Decrease Hardness</strong></td>
+                                <td>Shift + [</td>
+                                <td>Softer edges (some apps)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Opacity 10%</strong></td>
+                                <td>1</td>
+                                <td>Quick opacity control</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Opacity 20%</strong></td>
+                                <td>2</td>
+                                <td>Use any number 1-9</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Opacity 100%</strong></td>
+                                <td>0</td>
+                                <td>Full opacity</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Sample Color</strong></td>
+                                <td>Alt (hold while painting)</td>
+                                <td>Temporarily switches to eyedropper</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <blockquote>
+                        <strong>🎯 Power Combo:</strong> While painting, hold Alt to sample a color, release to paint with it. This is the #1 most-used shortcut by professional digital painters!
+                    </blockquote>
+                </div>
+
+                <h3>View and Navigation Shortcuts</h3>
+
+                <div class="card">
+                    <h4>🧭 Navigate Like a Pro</h4>
+
+                    <table style="width: 100%;">
+                        <thead>
+                            <tr>
+                                <th>Action</th>
+                                <th>Shortcut</th>
+                                <th>Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Pan Canvas</strong></td>
+                                <td>Spacebar + Drag</td>
+                                <td>Works in 99% of programs</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Zoom In</strong></td>
+                                <td>Ctrl/Cmd + Plus (+)</td>
+                                <td>Or scroll wheel up</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Zoom Out</strong></td>
+                                <td>Ctrl/Cmd + Minus (-)</td>
+                                <td>Or scroll wheel down</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Fit to Window</strong></td>
+                                <td>Ctrl/Cmd + 0</td>
+                                <td>See entire canvas</td>
+                            </tr>
+                            <tr>
+                                <td><strong>100% Zoom</strong></td>
+                                <td>Ctrl/Cmd + 1</td>
+                                <td>Actual pixel size</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Rotate Canvas</strong></td>
+                                <td>R + Drag (varies)</td>
+                                <td>Check your software</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Reset Rotation</strong></td>
+                                <td>Esc (often)</td>
+                                <td>Back to 0 degrees</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Flip Canvas</strong></td>
+                                <td>Varies by software</td>
+                                <td>Fresh perspective trick</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Full Screen</strong></td>
+                                <td>F (or F11)</td>
+                                <td>Maximize canvas space</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Hide/Show UI</strong></td>
+                                <td>Tab</td>
+                                <td>Toggle all panels</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>Color and Swap Shortcuts</h3>
+
+                <div class="card" style="background: #f3e5f5;">
+                    <h4>🎨 Color Management on the Fly</h4>
+
+                    <table style="width: 100%;">
+                        <thead>
+                            <tr>
+                                <th>Action</th>
+                                <th>Shortcut</th>
+                                <th>When to Use</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Swap Foreground/Background</strong></td>
+                                <td>X</td>
+                                <td>Quick color switching</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Default Colors (Black/White)</strong></td>
+                                <td>D</td>
+                                <td>Reset to defaults</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Sample from Canvas</strong></td>
+                                <td>Alt + Click</td>
+                                <td>Pick existing colors</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Fill with Foreground</strong></td>
+                                <td>Alt + Backspace</td>
+                                <td>Fill selection/layer quickly</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Fill with Background</strong></td>
+                                <td>Ctrl + Backspace</td>
+                                <td>Alternative fill</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>Selection Shortcuts</h3>
+
+                <div class="card">
+                    <h4>✂️ Selection Mastery</h4>
+
+                    <table style="width: 100%;">
+                        <thead>
+                            <tr>
+                                <th>Action</th>
+                                <th>Shortcut</th>
+                                <th>Pro Tip</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Select All</strong></td>
+                                <td>Ctrl/Cmd + A</td>
+                                <td>Selects entire canvas</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Deselect</strong></td>
+                                <td>Ctrl/Cmd + D</td>
+                                <td>Clear selection</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Reselect</strong></td>
+                                <td>Ctrl/Cmd + Shift + D</td>
+                                <td>Bring back last selection</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Invert Selection</strong></td>
+                                <td>Ctrl/Cmd + Shift + I</td>
+                                <td>Select opposite</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Add to Selection</strong></td>
+                                <td>Shift + Drag</td>
+                                <td>Expand selection</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Subtract from Selection</strong></td>
+                                <td>Alt + Drag</td>
+                                <td>Remove from selection</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Intersect Selection</strong></td>
+                                <td>Shift + Alt + Drag</td>
+                                <td>Only overlap area</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>Building Your Shortcut Muscle Memory</h3>
+
+                <div class="card" style="background: #fff3e0;">
+                    <h4>🧠 How to Actually Remember Shortcuts</h4>
+                    
+                    <p>Knowing shortcuts intellectually is different from using them instinctively. Here's how to build true muscle memory:</p>
+
+                    <h5>Week 1: The Essential Five</h5>
+                    <p>Focus ONLY on these, force yourself to use them:</p>
+                    <ul>
+                        <li>Ctrl/Cmd + Z (Undo)</li>
+                        <li>Spacebar + Drag (Pan)</li>
+                        <li>[ and ] (Brush size)</li>
+                        <li>Alt + Click (Sample color)</li>
+                        <li>B (Brush tool)</li>
+                    </ul>
+
+                    <h5>Week 2: Add Layer Management</h5>
+                    <ul>
+                        <li>Ctrl/Cmd + Shift + N (New layer)</li>
+                        <li>Ctrl/Cmd + J (Duplicate layer)</li>
+                        <li>Ctrl/Cmd + E (Merge down)</li>
+                    </ul>
+
+                    <h5>Week 3: View Navigation</h5>
+                    <ul>
+                        <li>Ctrl/Cmd + 0 (Fit to window)</li>
+                        <li>Ctrl/Cmd + Plus/Minus (Zoom)</li>
+                        <li>Tab (Hide UI)</li>
+                    </ul>
+
+                    <h5>Week 4: Advanced Efficiency</h5>
+                    <ul>
+                        <li>Number keys for opacity</li>
+                        <li>X (Swap colors)</li>
+                        <li>Tool shortcuts (V, E, M, L, etc.)</li>
+                    </ul>
+
+                    <p><strong>The Secret:</strong> Don't try to learn everything at once! Add 3-5 shortcuts per week. After a month, you'll be dramatically faster.</p>
+                </div>
+
+                <blockquote>
+                    <strong>💪 Challenge:</strong> For the next painting session, put sticky notes on your monitor with your "shortcuts of the week." Every time you reach for the mouse to click a menu, check if there's a shortcut instead. Within days, it'll become automatic!
+                </blockquote>
+
+                <h3>Customizing Shortcuts</h3>
+
+                <div class="card">
+                    <h4>⚙️ Make Shortcuts Work for YOU</h4>
+                    
+                    <p>Most programs let you customize shortcuts. Here's when and how:</p>
+
+                    <h5>When to Customize:</h5>
+                    <ul>
+                        <li><strong>Conflicts:</strong> When default shortcuts clash with OS shortcuts</li>
+                        <li><strong>Ergonomics:</strong> If you find yourself using a function constantly but it has an awkward shortcut</li>
+                        <li><strong>Consistency:</strong> To match shortcuts across different programs you use</li>
+                        <li><strong>Hand position:</strong> If you have a specific hand position on your keyboard</li>
+                    </ul>
+
+                    <h5>How to Customize (General Process):</h5>
+                    <ol>
+                        <li>Go to Edit → Preferences → Keyboard Shortcuts (or similar menu)</li>
+                        <li>Find the function you want to change</li>
+                        <li>Click on it and press your desired key combination</li>
+                        <li>Save/Apply changes</li>
+                        <li>Test it out!</li>
+                    </ol>
+
+                    <h5>Smart Customization Tips:</h5>
+                    <ul>
+                        <li><strong>Use modifier keys:</strong> Ctrl/Cmd, Shift, Alt give you more options</li>
+                        <li><strong>Left hand friendly:</strong> Keep shortcuts on the left side of keyboard for right-handed painting</li>
+                        <li><strong>Logical mnemonics:</strong> F for Flip, R for Rotate, etc.</li>
+                        <li><strong>Don't break standards:</strong> Keep Ctrl+S for Save, Ctrl+Z for Undo, etc.</li>
+                        <li><strong>Export your shortcuts:</strong> Many programs let you save and share shortcut configs</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Section 6: Cross-Software Comparison -->
+            <section id="software-comparison" class="lesson-section">
+                <h2>Cross-Software Comparison Matrix 🔄</h2>
+                
+                <p>Now let's see how interface concepts translate across different programs. This matrix will help you jump between software with confidence!</p>
+
+                <div class="card" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); color: white;">
+                    <h4 style="color: white; margin-top: 0;">🎯 Key Insight</h4>
+                    <p style="margin-bottom: 0;">The concepts are the same, only the vocabulary and exact locations change. Once you understand the WHAT and WHY, learning WHERE in each program is easy!</p>
+                </div>
+
+                <h3>Interface Element Comparison</h3>
+
+                <div class="card">
+                    <h4>📊 Where to Find Key Features</h4>
+                    
+                    <table style="width: 100%; font-size: 0.9em;">
+                        <thead>
+                            <tr>
+                                <th>Feature</th>
+                                <th>Photoshop</th>
+                                <th>Krita</th>
+                                <th>Procreate</th>
+                                <th>Clip Studio</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Layers Panel</strong></td>
+                                <td>Window → Layers</td>
+                                <td>Dockers → Layers</td>
+                                <td>Top right icon</td>
+                                <td>Window → Layer</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Brushes Panel</strong></td>
+                                <td>Window → Brushes</td>
+                                <td>Dockers → Brush Presets</td>
+                                <td>Top brush icon</td>
+                                <td>Window → Brush</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Color Picker</strong></td>
+                                <td>Window → Color</td>
+                                <td>Dockers → Color Selector</td>
+                                <td>Top right color circle</td>
+                                <td>Window → Color Wheel</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Save Workspace</strong></td>
+                                <td>Window → Workspace → New</td>
+                                <td>Settings → Workspace</td>
+                                <td>N/A (fixed interface)</td>
+                                <td>Window → Workspace → Register</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Rotate Canvas</strong></td>
+                                <td>R tool + drag</td>
+                                <td>Shift + Space + drag</td>
+                                <td>Two-finger rotate</td>
+                                <td>Rotate icon or shortcut</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Navigator</strong></td>
+                                <td>Window → Navigator</td>
+                                <td>Dockers → Overview</td>
+                                <td>Canvas → Reference</td>
+                                <td>Window → Navigator</td>
+                            </tr>
+                            <tr>
+                                <td><strong>History Panel</strong></td>
+                                <td>Window → History</td>
+                                <td>Dockers → Undo History</td>
+                                <td>Two-finger tap to undo</td>
+                                <td>Window → History</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>Terminology Translation Guide</h3>
+
+                <div class="card" style="margin-top: 1.5rem;">
+                    <h4>🗣️ Same Thing, Different Names</h4>
+                    
+                    <table style="width: 100%;">
+                        <thead>
+                            <tr>
+                                <th>Concept</th>
+                                <th>Also Called...</th>
+                                <th>What It Means</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Panels</strong></td>
+                                <td>Docks, Dockers, Palettes, Windows</td>
+                                <td>Floating/docked interface windows</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Workspace</strong></td>
+                                <td>Layout, Studio, Interface Preset</td>
+                                <td>Saved panel arrangement</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Brush</strong></td>
+                                <td>Paint Tool, Pen, Drawing Tool</td>
+                                <td>Primary painting instrument</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Opacity</strong></td>
+                                <td>Transparency, Alpha</td>
+                                <td>How see-through something is</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Canvas</strong></td>
+                                <td>Document, Artboard, Image</td>
+                                <td>Your painting surface</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Blend Mode</strong></td>
+                                <td>Blending Mode, Composite Mode</td>
+                                <td>How layers interact</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Selection</strong></td>
+                                <td>Active Area, Masked Area</td>
+                                <td>Isolated region to work on</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Pressure Sensitivity</strong></td>
+                                <td>Pen Pressure, Stylus Pressure</td>
+                                <td>How hard you press affects stroke</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>Platform-Specific Interface Notes</h3>
+
+                <div class="card" style="background: #e8f5e9; margin-top: 1.5rem;">
+                    <h4>💻 Desktop Apps (Photoshop, Krita, Clip Studio, etc.)</h4>
+                    <ul>
+                        <li><strong>Highly customizable:</strong> Can move, resize, dock almost everything</li>
+                        <li><strong>Keyboard-centric:</strong> Designed with shortcuts as primary workflow</li>
+                        <li><strong>Multi-window:</strong> Can have panels floating anywhere, even on second monitor</li>
+                        <li><strong>Menu bar:</strong> Traditional File/Edit/View structure at top</li>
+                        <li><strong>Mouse/tablet hybrid:</strong> Designed for both input methods</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="background: #e3f2fd; margin-top: 1.5rem;">
+                    <h4>📱 Mobile/Tablet Apps (Procreate, etc.)</h4>
+                    <ul>
+                        <li><strong>Minimalist:</strong> Less customization, more streamlined</li>
+                        <li><strong>Gesture-driven:</strong> Touch gestures replace many shortcuts</li>
+                        <li><strong>Fixed layout:</strong> Interface doesn't usually rearrange much</li>
+                        <li><strong>Hidden by default:</strong> UI elements auto-hide to maximize canvas</li>
+                        <li><strong>Touch-optimized:</strong> Buttons sized for fingers, not mouse clicks</li>
+                        <li><strong>Simplified menus:</strong> Fewer options, focus on essentials</li>
+                    </ul>
+                </div>
+
+                <blockquote style="margin-top: 1.5rem;">
+                    <strong>🌉 Bridge Tip:</strong> When switching programs, don't search for "where did they hide X"—instead think "what's the concept?" Layers are always layers, brushes are always brushes. The icon might look different, but the function is identical!
+                </blockquote>
+            </section>
+
+            <!-- Section 7: Common Interface Issues -->
+            <section id="common-issues" class="lesson-section">
+                <h2>Common Interface Issues & Solutions 🔧</h2>
+                
+                <p>Everyone runs into interface problems. Here are the most common ones and how to fix them quickly!</p>
+
+                <div class="card" style="border-left: 4px solid #e74c3c;">
+                    <h4>❌ Problem: "My panels disappeared!"</h4>
+                    <p><strong>Why it happens:</strong> You probably hit Tab (hides all UI) or accidentally closed panels</p>
+                    <p><strong>Solutions:</strong></p>
+                    <ul>
+                        <li>Press Tab key to toggle UI visibility</li>
+                        <li>Go to Window menu and re-check panels you need</li>
+                        <li>Reset workspace to default: Window → Workspace → Reset</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="border-left: 4px solid #e74c3c; margin-top: 1rem;">
+                    <h4>❌ Problem: "I can't draw anything!"</h4>
+                    <p><strong>Common causes:</strong></p>
+                    <ul>
+                        <li><strong>Wrong layer selected:</strong> Check Layers panel—are you on a locked or hidden layer?</li>
+                        <li><strong>Active selection:</strong> Do you have a selection somewhere? Press Ctrl/Cmd+D to deselect</li>
+                        <li><strong>Opacity at 0%:</strong> Check brush opacity (should be visible in toolbar)</li>
+                        <li><strong>Color same as background:</strong> Are you painting white on white?</li>
+                        <li><strong>Layer locked:</strong> Look for lock icon on layer, click to unlock</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="border-left: 4px solid #e74c3c; margin-top: 1rem;">
+                    <h4>❌ Problem: "Canvas rotated and I can't fix it!"</h4>
+                    <p><strong>Solutions:</strong></p>
+                    <ul>
+                        <li>Press Esc key (often resets rotation)</li>
+                        <li>Look for rotation reset button in Navigator panel</li>
+                        <li>View menu → Reset Rotation or Rotate Canvas → 0 degrees</li>
+                        <li>Save and reopen file (last resort)</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="border-left: 4px solid #e74c3c; margin-top: 1rem;">
+                    <h4>❌ Problem: "Brush is painting squares/weird shapes!"</h4>
+                    <p><strong>What happened:</strong> You're using a textured or shape brush instead of normal brush</p>
+                    <p><strong>Solutions:</strong></p>
+                    <ul>
+                        <li>Select a basic round brush from brush panel</li>
+                        <li>Reset brush settings to default</li>
+                        <li>Check if you accidentally loaded a stamp or pattern brush</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="border-left: 4px solid #e74c3c; margin-top: 1rem;">
+                    <h4>❌ Problem: "Interface is HUGE or tiny!"</h4>
+                    <p><strong>Why it happens:</strong> UI scaling doesn't match your display or was accidentally changed</p>
+                    <p><strong>Solutions:</strong></p>
+                    <ul>
+                        <li>Edit → Preferences → Interface → UI Scaling</li>
+                        <li>Adjust to 100% or whatever looks right for your monitor</li>
+                        <li>Restart program after changing</li>
+                        <li>On high-DPI displays, might need 150-200% scaling</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="border-left: 4px solid #e74c3c; margin-top: 1rem;">
+                    <h4>❌ Problem: "Shortcuts don't work!"</h4>
+                    <p><strong>Common causes:</strong></p>
+                    <ul>
+                        <li><strong>Wrong tool selected:</strong> Some shortcuts only work with certain tools</li>
+                        <li><strong>Text tool active:</strong> If text tool is selected, letter keys type instead of shortcuts</li>
+                        <li><strong>NumLock:</strong> Number pad keys affected by NumLock state</li>
+                        <li><strong>Caps Lock:</strong> Some programs treat uppercase differently</li>
+                        <li><strong>OS shortcuts conflict:</strong> Your operating system might be intercepting the shortcut</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="border-left: 4px solid #e74c3c; margin-top: 1rem;">
+                    <h4>❌ Problem: "Pen pressure not working!"</h4>
+                    <p><strong>This is hardware/driver related, but here's the checklist:</strong></p>
+                    <ul>
+                        <li>Check Edit → Preferences → Tablet/Stylus settings</li>
+                        <li>Enable "Use Pen Pressure" or similar option</li>
+                        <li>Update tablet drivers (Wacom, Huion, XP-Pen, etc.)</li>
+                        <li>Restart both program and computer</li>
+                        <li>Test in another program to isolate if it's driver or software issue</li>
+                        <li>Check if brush has pressure dynamics enabled</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="background: #fff3e0; margin-top: 1.5rem;">
+                    <h4>🛟 Universal "Get Unstuck" Strategy</h4>
+                    <ol>
+                        <li><strong>Save your work</strong> (if you can)</li>
+                        <li><strong>Reset workspace:</strong> Window → Workspace → Reset to Default</li>
+                        <li><strong>Close and restart program</strong></li>
+                        <li><strong>If still broken:</strong> Check program preferences/settings</li>
+                        <li><strong>Last resort:</strong> Reset preferences (usually in Edit → Preferences → Reset)</li>
+                    </ol>
+                    <p><strong>Remember:</strong> 90% of interface problems are fixed by resetting workspace or restarting the program!</p>
+                </div>
+            </section>
+
+            <!-- Section 8: Interface Best Practices -->
+            <section id="best-practices" class="lesson-section">
+                <h2>Interface Best Practices 🌟</h2>
+                
+                <p>Let's wrap up with golden rules for maintaining a productive, comfortable digital workspace!</p>
+
+                <div class="card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+                    <h4 style="color: white; margin-top: 0;">✅ The Ten Commandments of Interface Setup</h4>
+                    <ol>
+                        <li><strong>Maximize canvas space</strong> - Your art should take up 60-70% of screen</li>
+                        <li><strong>Keep essentials visible</strong> - Layers, Brushes, Color should always be accessible</li>
+                        <li><strong>Learn 10 shortcuts first</strong> - Don't try to memorize everything at once</li>
+                        <li><strong>Save your workspace</strong> - Once you find a layout you like, save it!</li>
+                        <li><strong>Create task-specific workspaces</strong> - Different setups for painting vs detailing</li>
+                        <li><strong>Use Tab key liberally</strong> - Toggle UI when you need full canvas view</li>
+                        <li><strong>Keep Navigator open for detail work</strong> - Stay oriented when zoomed in</li>
+                        <li><strong>Minimize toolbar clutter</strong> - Only show tools you actually use</li>
+                        <li><strong>Regular workspace cleanup</strong> - Close panels you're not using</li>
+                        <li><strong>Practice good ergonomics</strong> - Your physical setup matters as much as digital!</li>
+                    </ol>
+                </div>
+
+                <div class="card" style="margin-top: 1.5rem;">
+                    <h4>🎯 Productivity Mindset</h4>
+                    <ul>
+                        <li><strong>Master the tools you use 90% of the time</strong> - Don't worry about obscure features yet</li>
+                        <li><strong>Shortcuts beat menus</strong> - If you use it often, learn the shortcut</li>
+                        <li><strong>Less is more</strong> - A clean interface helps you focus on art, not buttons</li>
+                        <li><strong>Consistency across programs</strong> - Try to keep similar layouts in different software</li>
+                        <li><strong>Iterate and improve</strong> - Your workspace should evolve as your skills grow</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="margin-top: 1.5rem;">
+                    <h4>💪 Long-term Success Habits</h4>
+                    <ul>
+                        <li><strong>Weekly: </strong> Review your workflow, identify friction points</li>
+                        <li><strong>Monthly:</strong> Learn 2-3 new shortcuts</li>
+                        <li><strong>Quarterly:</strong> Try a new workspace layout or panel arrangement</li>
+                        <li><strong>Yearly:</strong> Explore features you've been ignoring—you might discover gems!</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Lesson Summary -->
+            <section class="lesson-summary">
+                <h2>🎓 Lesson Complete!</h2>
+                
+                <p>Congratulations! You now have a solid understanding of digital art interfaces. Let's recap the key concepts:</p>
+
+                <div class="card">
+                    <h3>What You've Mastered</h3>
+                    <ul>
+                        <li>✅ <strong>Universal interface anatomy</strong> - Canvas, toolbars, panels, menus work the same everywhere</li>
+                        <li>✅ <strong>Canvas navigation</strong> - Zoom, pan, rotate like a pro</li>
+                        <li>✅ <strong>Essential tools and panels</strong> - Brush, Eraser, Layers, Color, and more</li>
+                        <li>✅ <strong>Workspace customization</strong> - Create efficient layouts for different tasks</li>
+                        <li>✅ <strong>Keyboard shortcuts</strong> - The Power 10 and beyond</li>
+                        <li>✅ <strong>Cross-software translation</strong> - Jump between programs with confidence</li>
+                        <li>✅ <strong>Troubleshooting</strong> - Fix common interface problems quickly</li>
+                        <li>✅ <strong>Best practices</strong> - Maintain productivity and comfort</li>
+                    </ul>
+                </div>
+
+                <blockquote>
+                    <strong>🎨 Remember:</strong> The interface is just a tool to help you create. Don't get so caught up in perfecting your setup that you forget to paint! The best interface is the one that gets out of your way and lets your creativity flow.
+                </blockquote>
+
+                <div class="card" style="background: #e3f2fd; margin-top: 1.5rem;">
+                    <h4>📚 Next Steps</h4>
+                    <p>Now that you understand the interface, you're ready to dive into:</p>
+                    <ul>
+                        <li>Essential Digital Tools (selection, transform, move)</li>
+                        <li>Brush theory and dynamics</li>
+                        <li>Layer workflows and compositing</li>
+                        <li>Actual painting techniques!</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Lesson Navigation -->
+            <nav class="lesson-nav">
+                <a href="digital_canvas_basics.html" class="btn btn-secondary">← Previous: Digital Canvas Basics</a>
+                <a href="essential_digital_tools.html" class="btn btn-primary">Next Lesson: Essential Digital Tools →</a>
+            </nav>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Universal Digital Art Course. All rights reserved.</p>
+            <p>Made with ❤️ for aspiring digital artists everywhere.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/main.js"></script>
+    <script>
+        // Toggle TOC
+        function toggleTOC() {
+            const tocList = document.getElementById('toc-list');
+            const tocIcon = document.getElementById('toc-toggle-icon');
+            
+            if (tocList.style.maxHeight === '0px' || tocList.style.maxHeight === '') {
+                tocList.style.maxHeight = '800px';
+                tocIcon.style.transform = 'rotate(0deg)';
+            } else {
+                tocList.style.maxHeight = '0px';
+                tocIcon.style.transform = 'rotate(-90deg)';
+            }
+        }
+    </script>
+</body>
+</html>

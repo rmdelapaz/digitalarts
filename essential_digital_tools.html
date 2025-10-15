@@ -1,0 +1,2802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Master essential digital art tools - Learn selection, transform, move, and universal tools that work across Krita, Photoshop, Procreate, and all major painting software">
+    <meta name="author" content="Digital Artistry Course">
+    <title>Essential Digital Tools - Universal Digital Art Course</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-to-main">Skip to main content</a>
+    
+    <!-- Progress indicator -->
+    <div class="progress-indicator" role="progressbar" aria-label="Page scroll progress">
+        <div class="progress-bar"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">🎨 Digital Artistry</a>
+            <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-expanded="false" aria-controls="nav-links">
+                ☰
+            </button>
+            <div class="nav-links" id="nav-links" aria-hidden="false">
+                <a href="index.html">Home</a>
+                <a href="index.html#modules">All Lessons</a>
+                <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#modules">Foundation Module</a></li>
+            <li aria-current="page">Essential Digital Tools</li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <div class="container">
+            <!-- Lesson Header -->
+            <header>
+                <h1>🔧 Essential Digital Tools</h1>
+                <p class="lead">Beyond the brush, there's a whole toolkit that every digital artist needs to master. These universal tools—selection, transform, move, and more—are the foundation of efficient digital workflows. Whether you're in Photoshop, Krita, Procreate, or any other software, understanding these tools will transform how you work!</p>
+                
+                <!-- Learning objectives -->
+                <div class="card">
+                    <h2>🎯 What You'll Learn</h2>
+                    <p>By the end of this lesson, you'll be able to:</p>
+                    <ul>
+                        <li>Master all selection tools and when to use each one</li>
+                        <li>Transform artwork with precision (scale, rotate, distort, warp)</li>
+                        <li>Move and align elements like a pro</li>
+                        <li>Use fill, gradient, and color tools effectively</li>
+                        <li>Understand how these tools translate across different software</li>
+                        <li>Combine tools for powerful workflows</li>
+                        <li>Avoid common tool mistakes that waste time</li>
+                    </ul>
+                </div>
+
+                <!-- Tool Philosophy -->
+                <div class="card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+                    <h3 style="color: white; margin-top: 0;">🎨 The Tool Philosophy</h3>
+                    <p>Here's the secret: <strong>These aren't "Photoshop tools" or "Krita tools"—they're CONCEPTS.</strong></p>
+                    <p>Every professional digital art program has:</p>
+                    <ul style="columns: 2; column-gap: 2rem;">
+                        <li>✅ Selection tools</li>
+                        <li>✅ Transform tools</li>
+                        <li>✅ Move tools</li>
+                        <li>✅ Fill tools</li>
+                        <li>✅ Color sampling</li>
+                        <li>✅ Alignment aids</li>
+                    </ul>
+                    <p style="margin-bottom: 0;"><strong>The buttons might look different, but the logic is identical.</strong> Master the concepts here, and you'll be fluent in ANY software!</p>
+                </div>
+            </header>
+
+            <!-- Table of Contents -->
+            <nav class="card" aria-label="Table of Contents">
+                <h2 style="cursor: pointer; user-select: none; display: flex; justify-content: space-between; align-items: center;" onclick="toggleTOC()">
+                    <span>📑 Table of Contents</span>
+                    <span id="toc-toggle-icon" style="transition: transform 0.3s;">▼</span>
+                </h2>
+                <ol id="toc-list" style="overflow: hidden; transition: max-height 0.3s ease-out; max-height: 900px; margin: 0; padding-left: 1.5rem;">
+                    <li><a href="#selection-tools" class="toc-link">Selection Tools Mastery</a></li>
+                    <li><a href="#transform-tools" class="toc-link">Transform Tools Deep Dive</a></li>
+                    <li><a href="#move-align" class="toc-link">Move and Alignment Tools</a></li>
+                    <li><a href="#fill-gradient" class="toc-link">Fill and Gradient Tools</a></li>
+                    <li><a href="#color-tools" class="toc-link">Color and Sampling Tools</a></li>
+                    <li><a href="#measurement-guides" class="toc-link">Measurement and Guide Tools</a></li>
+                    <li><a href="#tool-workflows" class="toc-link">Combining Tools for Power Workflows</a></li>
+                    <li><a href="#cross-software" class="toc-link">Cross-Software Tool Comparison</a></li>
+                    <li><a href="#common-mistakes" class="toc-link">Common Tool Mistakes</a></li>
+                </ol>
+            </nav>
+
+            <!-- Section 1: Selection Tools Mastery -->
+            <section id="selection-tools" class="lesson-section">
+                <h2>Selection Tools Mastery ✂️</h2>
+                
+                <p>Selection tools let you isolate parts of your canvas to work on them independently. Think of them as digital masking tape—you're protecting certain areas while modifying others. <strong>Mastering selections is what separates beginners from pros!</strong></p>
+
+                <h3>Why Selections Matter</h3>
+
+                <div class="card" style="background: #e8f5e9;">
+                    <h4>🎯 What Selections Let You Do</h4>
+                    <ul>
+                        <li><strong>Isolate areas:</strong> Paint only inside a specific shape or region</li>
+                        <li><strong>Move elements:</strong> Select and reposition parts of your artwork</li>
+                        <li><strong>Apply effects:</strong> Blur, adjust, or filter only selected areas</li>
+                        <li><strong>Cut and copy:</strong> Extract portions to new layers</li>
+                        <li><strong>Fill shapes:</strong> Quickly fill complex forms with color</li>
+                        <li><strong>Mask edits:</strong> Protect areas from accidental changes</li>
+                        <li><strong>Create layers:</strong> Turn selections into new layer content</li>
+                    </ul>
+                </div>
+
+                <blockquote>
+                    <strong>💡 Golden Rule:</strong> If you're about to paint or edit something complex, ask yourself: "Should I make a selection first?" The answer is usually YES!
+                </blockquote>
+
+                <h3>The Four Types of Selection Tools</h3>
+
+                <p>Every program organizes selection tools slightly differently, but they all fall into these four categories:</p>
+
+                <div class="mermaid">
+                    graph TD
+                        A["Selection Tools"]
+                        B["Geometric"]
+                        C["Freehand"]
+                        D["Color-Based"]
+                        E["Smart/AI"]
+                        
+                        A --> B
+                        A --> C
+                        A --> D
+                        A --> E
+                        
+                        B --> B1["Rectangular Marquee"]
+                        B --> B2["Elliptical Marquee"]
+                        B --> B3["Single Row/Column"]
+                        
+                        C --> C1["Lasso"]
+                        C --> C2["Polygonal Lasso"]
+                        C --> C3["Magnetic Lasso"]
+                        
+                        D --> D1["Magic Wand"]
+                        D --> D2["Quick Selection"]
+                        D --> D3["Color Range"]
+                        
+                        E --> E1["Subject Select"]
+                        E --> E2["Object Selection"]
+                        E --> E3["Select and Mask"]
+                        
+                        style A fill:#667eea,stroke:#333,stroke-width:2px,color:#fff
+                        style B fill:#43e97b,stroke:#333,stroke-width:2px
+                        style C fill:#f093fb,stroke:#333,stroke-width:2px
+                        style D fill:#4facfe,stroke:#333,stroke-width:2px
+                        style E fill:#f5576c,stroke:#333,stroke-width:2px
+                </div>
+
+                <h3>1. Geometric Selection Tools</h3>
+
+                <div class="card">
+                    <h4>📐 Rectangular Marquee</h4>
+                    <p><strong>What it does:</strong> Creates rectangular or square selections</p>
+                    <p><strong>Common shortcut:</strong> M key</p>
+                    <p><strong>When to use:</strong></p>
+                    <ul>
+                        <li>Selecting rectangular areas, panels, or frames</li>
+                        <li>Cropping images to specific dimensions</li>
+                        <li>Creating geometric design elements</li>
+                        <li>Selecting architectural elements in photos</li>
+                        <li>Quick selections of UI elements</li>
+                    </ul>
+                    <p><strong>Pro tips:</strong></p>
+                    <ul>
+                        <li>Hold <strong>Shift</strong> while dragging to constrain to a perfect square</li>
+                        <li>Hold <strong>Alt/Option</strong> while dragging to draw from center outward</li>
+                        <li>Hold <strong>Shift + Alt</strong> for square from center</li>
+                        <li>Click and drag to define the selection area</li>
+                        <li>After creating, drag from inside to reposition (before confirming)</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="margin-top: 1.5rem;">
+                    <h4>⭕ Elliptical Marquee</h4>
+                    <p><strong>What it does:</strong> Creates circular or elliptical selections</p>
+                    <p><strong>Common shortcut:</strong> M key (cycle through marquee tools)</p>
+                    <p><strong>When to use:</strong></p>
+                    <ul>
+                        <li>Selecting circular objects (buttons, coins, eyes, planets)</li>
+                        <li>Creating vignettes (darkened edges)</li>
+                        <li>Isolating rounded shapes</li>
+                        <li>Making circular masks</li>
+                        <li>Quick moon or sun selections</li>
+                    </ul>
+                    <p><strong>Pro tips:</strong></p>
+                    <ul>
+                        <li>Hold <strong>Shift</strong> to constrain to perfect circle</li>
+                        <li>Hold <strong>Alt/Option</strong> to draw from center</li>
+                        <li>Very useful for portrait work (selecting faces, eyes)</li>
+                        <li>Combine with feathering for soft edges</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="margin-top: 1.5rem;">
+                    <h4>📏 Single Row/Column Selection</h4>
+                    <p><strong>What it does:</strong> Selects a 1-pixel tall row or 1-pixel wide column</p>
+                    <p><strong>When to use:</strong></p>
+                    <ul>
+                        <li>Creating precise lines</li>
+                        <li>Selecting scan lines or pixel rows for editing</li>
+                        <li>Technical work requiring pixel-perfect precision</li>
+                    </ul>
+                    <p><strong>Note:</strong> This is a specialized tool you'll rarely use in painting—mostly for technical image editing.</p>
+                </div>
+
+                <h3>2. Freehand Selection Tools</h3>
+
+                <div class="card" style="background: #f3e5f5;">
+                    <h4>🖱️ Regular Lasso</h4>
+                    <p><strong>What it does:</strong> Freehand selection—draw whatever shape you want</p>
+                    <p><strong>Common shortcut:</strong> L key</p>
+                    <p><strong>When to use:</strong></p>
+                    <ul>
+                        <li>Quick, rough selections</li>
+                        <li>Organic, irregular shapes</li>
+                        <li>When you need speed over precision</li>
+                        <li>Selecting loose, flowing forms</li>
+                        <li>Practice or sketching selections</li>
+                    </ul>
+                    <p><strong>How it works:</strong></p>
+                    <ul>
+                        <li>Click and hold, then drag to draw your selection boundary</li>
+                        <li>Release mouse to complete selection (automatically closes the loop)</li>
+                        <li>Great with a tablet pen for natural drawing motion</li>
+                    </ul>
+                    <p><strong>Pro tips:</strong></p>
+                    <ul>
+                        <li>Works best with a tablet/stylus for smooth control</li>
+                        <li>Don't worry about being perfect—you can refine later</li>
+                        <li>Good for first-pass selections you'll clean up with other tools</li>
+                        <li>Fast but imprecise—best for non-critical selections</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="margin-top: 1.5rem; background: #e3f2fd;">
+                    <h4>📐 Polygonal Lasso</h4>
+                    <p><strong>What it does:</strong> Creates selections with straight edges—click to place points</p>
+                    <p><strong>Common shortcut:</strong> L key (cycle through lasso tools)</p>
+                    <p><strong>When to use:</strong></p>
+                    <ul>
+                        <li><strong>Architectural elements</strong> (buildings, windows, doors)</li>
+                        <li><strong>Hard-edged objects</strong> (boxes, books, screens)</li>
+                        <li><strong>Geometric shapes</strong> with straight sides</li>
+                        <li><strong>Comic panels</strong> and borders</li>
+                        <li>Anything with angular, straight edges</li>
+                    </ul>
+                    <p><strong>How it works:</strong></p>
+                    <ul>
+                        <li>Click to place anchor points—straight lines connect them</li>
+                        <li>Double-click or click on start point to close selection</li>
+                        <li>Press <strong>Backspace/Delete</strong> to remove last point</li>
+                        <li>Press <strong>Esc</strong> to cancel</li>
+                    </ul>
+                    <p><strong>Pro tips:</strong></p>
+                    <ul>
+                        <li>WAY more accurate than regular lasso for hard edges</li>
+                        <li>Zoom in close for pixel-perfect precision</li>
+                        <li>Click frequently around curves to approximate them</li>
+                        <li>This is often the BEST tool for comic art and architecture</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="margin-top: 1.5rem; background: #fff3e0;">
+                    <h4>🧲 Magnetic Lasso (Smart Lasso)</h4>
+                    <p><strong>What it does:</strong> "Snaps" to edges automatically as you drag—combines freehand with edge detection</p>
+                    <p><strong>Common shortcut:</strong> L key (cycle through lasso tools)</p>
+                    <p><strong>When to use:</strong></p>
+                    <ul>
+                        <li>Selecting objects with clear, contrasting edges</li>
+                        <li>Tracing around subjects in photos</li>
+                        <li>When the edge is obvious but the shape is complex</li>
+                        <li>Product photography editing</li>
+                        <li>Cutouts with good edge contrast</li>
+                    </ul>
+                    <p><strong>How it works:</strong></p>
+                    <ul>
+                        <li>Click to start, then move cursor along the edge</li>
+                        <li>Tool automatically detects and snaps to edges</li>
+                        <li>Click manually to add anchor points if needed</li>
+                        <li>Double-click to finish selection</li>
+                    </ul>
+                    <p><strong>Settings to adjust:</strong></p>
+                    <ul>
+                        <li><strong>Width:</strong> How far from cursor it looks for edges (10-40px typical)</li>
+                        <li><strong>Contrast:</strong> How much contrast needed to detect edge (higher = pickier)</li>
+                        <li><strong>Frequency:</strong> How often anchor points are placed (higher = more points)</li>
+                    </ul>
+                    <p><strong>Pro tips:</strong></p>
+                    <ul>
+                        <li>Works GREAT on high-contrast subjects (dark hair on light background)</li>
+                        <li>Works POORLY on low-contrast subjects (white on cream)</li>
+                        <li>Follow the edge slowly—don't rush!</li>
+                        <li>Press <strong>Backspace</strong> to remove last anchor point</li>
+                        <li>If it's not snapping well, switch to polygonal lasso</li>
+                    </ul>
+                </div>
+
+                <blockquote style="margin-top: 1.5rem;">
+                    <strong>🎯 Lasso Decision Tree:</strong><br>
+                    <strong>Straight edges?</strong> → Polygonal Lasso<br>
+                    <strong>High contrast edges?</strong> → Magnetic Lasso<br>
+                    <strong>Organic/quick/rough?</strong> → Regular Lasso<br>
+                    <strong>Perfect shapes?</strong> → Use marquee tools instead
+                </blockquote>
+
+                <h3>3. Color-Based Selection Tools</h3>
+
+                <div class="card" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); color: #1a1a1a;">
+                    <h4 style="color: #1a1a1a; margin-top: 0;">🪄 Magic Wand</h4>
+                    <p><strong>What it does:</strong> Selects all pixels of similar color with one click</p>
+                    <p><strong>Common shortcut:</strong> W key</p>
+                    <p><strong>When to use:</strong></p>
+                    <ul>
+                        <li>Selecting solid color backgrounds</li>
+                        <li>Selecting large areas of similar tone</li>
+                        <li>Quick sky selections</li>
+                        <li>Removing simple backgrounds</li>
+                        <li>Selecting flat-colored areas in illustrations</li>
+                    </ul>
+                    <p><strong>How it works:</strong></p>
+                    <ul>
+                        <li>Click on a color, and it selects all similar pixels</li>
+                        <li>Adjust <strong>Tolerance</strong> (0-255) to control how similar colors must be</li>
+                        <li>Low tolerance (10-20) = very exact color match</li>
+                        <li>High tolerance (50-80) = broader color range</li>
+                    </ul>
+                    <p><strong>Options to check:</strong></p>
+                    <ul>
+                        <li><strong>Contiguous:</strong> ON = only connected pixels | OFF = all matching colors anywhere</li>
+                        <li><strong>Sample All Layers:</strong> Select from visible result of all layers vs current layer only</li>
+                        <li><strong>Anti-alias:</strong> Smooth selection edges (usually keep ON)</li>
+                    </ul>
+                    <p><strong>Pro tips:</strong></p>
+                    <ul>
+                        <li>Start with tolerance around 20-30, then adjust</li>
+                        <li>Use <strong>Shift + click</strong> to ADD to selection</li>
+                        <li>Use <strong>Alt + click</strong> to SUBTRACT from selection</li>
+                        <li>Perfect for removing white/solid backgrounds</li>
+                        <li>If it selects too much, lower tolerance and try again</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="margin-top: 1.5rem;">
+                    <h4>⚡ Quick Selection Tool</h4>
+                    <p><strong>What it does:</strong> "Paint" over areas to select them—combines color and edge detection</p>
+                    <p><strong>Common shortcut:</strong> W key (cycle with Magic Wand)</p>
+                    <p><strong>When to use:</strong></p>
+                    <ul>
+                        <li>Selecting complex subjects quickly</li>
+                        <li>When Magic Wand is too broad, but lasso too manual</li>
+                        <li>Portrait selections (faces, hair)</li>
+                        <li>Organic objects with varying tones</li>
+                        <li>The "middle ground" selection tool</li>
+                    </ul>
+                    <p><strong>How it works:</strong></p>
+                    <ul>
+                        <li>Click and drag to "paint" over the area you want</li>
+                        <li>Tool analyzes colors and edges to expand selection intelligently</li>
+                        <li>Adjust brush size with <strong>[ ]</strong> brackets</li>
+                        <li>Paint more to add, Alt+paint to subtract</li>
+                    </ul>
+                    <p><strong>Pro tips:</strong></p>
+                    <ul>
+                        <li>Start with a LARGE brush for big areas, then SMALL brush for edges</li>
+                        <li>Works incredibly well for most photo selections</li>
+                        <li>Much faster than manually tracing with lasso</li>
+                        <li>If it over-selects, hold Alt and paint to remove</li>
+                        <li>This is the go-to tool for many professional photo editors</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="margin-top: 1.5rem;">
+                    <h4>🎨 Color Range / Select by Color</h4>
+                    <p><strong>What it does:</strong> Opens a dialog to select all pixels within a color range across the entire image</p>
+                    <p><strong>When to use:</strong></p>
+                    <ul>
+                        <li>Selecting specific colors throughout an image</li>
+                        <li>Changing all instances of one color</li>
+                        <li>Selecting all shadows, midtones, or highlights</li>
+                        <li>Advanced color-based masking</li>
+                        <li>Replacing colors across complex images</li>
+                    </ul>
+                    <p><strong>How it works:</strong></p>
+                    <ul>
+                        <li>Opens a preview window showing selection</li>
+                        <li>Click on image to sample color</li>
+                        <li>Adjust <strong>Fuzziness</strong> slider to expand/contract selection</li>
+                        <li>Can also select by: Highlights, Midtones, Shadows</li>
+                    </ul>
+                    <p><strong>Pro tips:</strong></p>
+                    <ul>
+                        <li>More powerful than Magic Wand for complex color work</li>
+                        <li>Preview helps you dial in perfect selection</li>
+                        <li>Great for selecting skies with gradient color</li>
+                        <li>Use with adjustment layers for non-destructive color changes</li>
+                    </ul>
+                </div>
+
+                <h3>Selection Modifiers (Universal Concepts)</h3>
+
+                <div class="card" style="background: #e8f5e9;">
+                    <h4>🔧 Essential Selection Modifiers</h4>
+                    <p>These work with ALL selection tools:</p>
+
+                    <h5>Adding to Selection</h5>
+                    <ul>
+                        <li><strong>Hold Shift</strong> then make new selection</li>
+                        <li>Cursor shows <strong>+</strong> icon</li>
+                        <li>New selection ADDS to existing</li>
+                        <li>Use to build complex shapes from simple ones</li>
+                    </ul>
+
+                    <h5>Subtracting from Selection</h5>
+                    <ul>
+                        <li><strong>Hold Alt/Option</strong> then make new selection</li>
+                        <li>Cursor shows <strong>-</strong> icon</li>
+                        <li>New selection REMOVES from existing</li>
+                        <li>Perfect for cutting holes or refining edges</li>
+                    </ul>
+
+                    <h5>Intersecting Selections</h5>
+                    <ul>
+                        <li><strong>Hold Shift + Alt</strong> then make new selection</li>
+                        <li>Cursor shows <strong>×</strong> icon</li>
+                        <li>Keeps only OVERLAP between selections</li>
+                        <li>Advanced technique for precise selections</li>
+                    </ul>
+
+                    <h5>Moving Selection Boundary</h5>
+                    <ul>
+                        <li><strong>With selection tool active:</strong> Click inside selection and drag</li>
+                        <li>Moves the "marching ants" boundary, NOT the pixels</li>
+                        <li>Useful for repositioning selection before using it</li>
+                    </ul>
+                </div>
+
+                <h3>Selection Refinement</h3>
+
+                <div class="card">
+                    <h4>✨ Feathering Selections</h4>
+                    <p><strong>What it does:</strong> Softens selection edges with a gradient falloff</p>
+                    <p><strong>When to use:</strong></p>
+                    <ul>
+                        <li>Blending pasted elements naturally</li>
+                        <li>Creating soft vignettes</li>
+                        <li>Avoiding harsh, cut-out edges</li>
+                        <li>Portrait retouching</li>
+                        <li>Any time you need soft transitions</li>
+                    </ul>
+                    <p><strong>How to apply:</strong></p>
+                    <ul>
+                        <li><strong>Before selecting:</strong> Set feather radius in tool options (0-250px)</li>
+                        <li><strong>After selecting:</strong> Select → Modify → Feather (enter pixel radius)</li>
+                        <li>Higher radius = softer edge</li>
+                    </ul>
+                    <p><strong>Pro tips:</strong></p>
+                    <ul>
+                        <li>For portraits: 5-15px feather is usually good</li>
+                        <li>For vignettes: 50-150px for smooth falloff</li>
+                        <li>Feathering BEFORE filling/painting creates soft edges</li>
+                        <li>Can't be undone after selection is made—must reselect</li>
+                    </ul>
+                </div>
+
+            </section>
+
+            <!-- PART A ENDS HERE -->
+            <!-- Continuing Section 1: Selection Tools - Smart/AI Tools -->
+            
+                <div class="card" style="margin-top: 1.5rem; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: #1a1a1a;">
+                    <h4 style="color: #1a1a1a; margin-top: 0;">🤖 Smart/AI Selection Tools</h4>
+                    <p><strong>The Future is Here:</strong> Modern software includes AI-powered selection tools that are borderline magical!</p>
+
+                    <h5 style="color: #1a1a1a;">Subject Select / Object Selection (Photoshop, AI-enabled apps)</h5>
+                    <ul>
+                        <li><strong>What it does:</strong> Uses AI to detect and select subjects automatically</li>
+                        <li><strong>How to use:</strong> Select → Subject, or use Object Selection tool and draw rough box around object</li>
+                        <li><strong>When it's amazing:</strong> Clear subjects, portraits, products, animals</li>
+                        <li><strong>When it struggles:</strong> Complex backgrounds, transparent objects, similar colors</li>
+                        <li><strong>Pro tip:</strong> Use as starting point, then refine manually</li>
+                    </ul>
+
+                    <h5 style="color: #1a1a1a;">Select and Mask / Refine Edge</h5>
+                    <ul>
+                        <li><strong>What it does:</strong> Dedicated workspace for perfecting selections, especially hair and fur</li>
+                        <li><strong>When to use:</strong> Any selection that needs fine-tuning</li>
+                        <li><strong>Key features:</strong> Edge refinement, hair detection, edge shifting, smoothing</li>
+                        <li><strong>Access:</strong> After making selection, click "Select and Mask" button</li>
+                        <li><strong>Pro tip:</strong> This is how professionals get perfect cutouts</li>
+                    </ul>
+                </div>
+
+                <h3>Selection Menu Operations</h3>
+
+                <div class="card">
+                    <h4>🎛️ Essential Selection Commands (Found in Select Menu)</h4>
+                    
+                    <table style="width: 100%;">
+                        <thead>
+                            <tr>
+                                <th>Command</th>
+                                <th>Shortcut</th>
+                                <th>What It Does</th>
+                                <th>When to Use</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Select All</strong></td>
+                                <td>Ctrl/Cmd + A</td>
+                                <td>Selects entire canvas</td>
+                                <td>Before copying whole layer, applying filters to all</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Deselect</strong></td>
+                                <td>Ctrl/Cmd + D</td>
+                                <td>Removes selection</td>
+                                <td>After you're done with a selection</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Reselect</strong></td>
+                                <td>Ctrl/Cmd + Shift + D</td>
+                                <td>Brings back last selection</td>
+                                <td>If you accidentally deselected</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Inverse</strong></td>
+                                <td>Ctrl/Cmd + Shift + I</td>
+                                <td>Selects opposite of current selection</td>
+                                <td>Selected subject, want to select background instead</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Expand</strong></td>
+                                <td>-</td>
+                                <td>Makes selection bigger by X pixels</td>
+                                <td>Adding margin around selection</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Contract</strong></td>
+                                <td>-</td>
+                                <td>Makes selection smaller by X pixels</td>
+                                <td>Removing edge pixels from selection</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Feather</strong></td>
+                                <td>-</td>
+                                <td>Softens selection edges</td>
+                                <td>Creating soft transitions</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Smooth</strong></td>
+                                <td>-</td>
+                                <td>Rounds out jagged selection edges</td>
+                                <td>After using lasso tools</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Border</strong></td>
+                                <td>-</td>
+                                <td>Selects just the edge/border of selection</td>
+                                <td>Creating outlines, stroke effects</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Grow</strong></td>
+                                <td>-</td>
+                                <td>Expands selection to similar colors</td>
+                                <td>After Magic Wand, to grab more similar pixels</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Similar</strong></td>
+                                <td>-</td>
+                                <td>Selects all similar colors in image</td>
+                                <td>After Magic Wand, select all matching colors everywhere</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>Selection Power Workflows</h3>
+
+                <div class="card" style="background: #fff3e0;">
+                    <h4>⚡ Professional Selection Techniques</h4>
+
+                    <h5>Technique 1: The Additive Approach</h5>
+                    <p><strong>Problem:</strong> Complex shape that's hard to select in one go</p>
+                    <p><strong>Solution:</strong></p>
+                    <ol>
+                        <li>Start with the easiest selection tool for the main area</li>
+                        <li>Hold <strong>Shift</strong> and add more selections with different tools</li>
+                        <li>Keep adding until complete</li>
+                        <li>Refine edges as needed</li>
+                    </ol>
+                    <p><strong>Example:</strong> Portrait - use Quick Select for face, Lasso for hair, add Elliptical for circular earring</p>
+
+                    <h5>Technique 2: The Subtractive Approach</h5>
+                    <p><strong>Problem:</strong> Need to select everything EXCEPT something</p>
+                    <p><strong>Solution:</strong></p>
+                    <ol>
+                        <li>Select All (Ctrl/Cmd + A)</li>
+                        <li>Hold <strong>Alt</strong> and subtract the areas you don't want</li>
+                        <li>Much faster than selecting complex negative space</li>
+                    </ol>
+                    <p><strong>Example:</strong> Selecting background around a person - Select All, then subtract person</p>
+
+                    <h5>Technique 3: The Channel Method (Advanced)</h5>
+                    <p><strong>Problem:</strong> Need perfect selection of difficult subject (like hair)</p>
+                    <p><strong>Solution:</strong></p>
+                    <ol>
+                        <li>Go to Channels panel</li>
+                        <li>Find channel with highest contrast (usually Blue)</li>
+                        <li>Duplicate channel, increase contrast with Levels</li>
+                        <li>Paint black/white to refine</li>
+                        <li>Load as selection</li>
+                    </ol>
+                    <p><strong>When to use:</strong> Professional cutouts, especially hair and fur</p>
+
+                    <h5>Technique 4: The Quick Mask Mode</h5>
+                    <p><strong>Problem:</strong> Selection needs painting/erasing refinement</p>
+                    <p><strong>Solution:</strong></p>
+                    <ol>
+                        <li>Make rough selection</li>
+                        <li>Enter Quick Mask mode (Q key in many apps)</li>
+                        <li>Paint white to ADD to selection, black to REMOVE</li>
+                        <li>Exit Quick Mask (Q again) to convert back to selection</li>
+                    </ol>
+                    <p><strong>Pro tip:</strong> This lets you use brushes to perfect selections!</p>
+                </div>
+
+                <blockquote style="margin-top: 1.5rem;">
+                    <strong>🎯 Selection Mastery Checklist:</strong><br>
+                    ✅ Know when to use each selection tool<br>
+                    ✅ Master Shift/Alt for add/subtract<br>
+                    ✅ Understand feathering for soft edges<br>
+                    ✅ Use Inverse to flip selections<br>
+                    ✅ Refine edges for professional results<br>
+                    ✅ Combine tools for complex selections
+                </blockquote>
+
+            </section>
+
+            <!-- Section 2: Transform Tools Deep Dive -->
+            <section id="transform-tools" class="lesson-section">
+                <h2>Transform Tools Deep Dive 🔄</h2>
+                
+                <p>Transform tools let you manipulate the size, shape, position, and perspective of your artwork. These are ESSENTIAL for composition, corrections, and creative effects. Every professional artist uses transforms dozens of times per piece!</p>
+
+                <h3>Why Transform Tools Matter</h3>
+
+                <div class="card" style="background: #e3f2fd;">
+                    <h4>🎯 What Transform Tools Enable</h4>
+                    <ul>
+                        <li><strong>Fix compositions:</strong> Resize, reposition, rotate elements that don't work</li>
+                        <li><strong>Create perspective:</strong> Add depth with perspective transforms</li>
+                        <li><strong>Match references:</strong> Scale and rotate to match reference photos</li>
+                        <li><strong>Correct mistakes:</strong> Adjust proportions without redrawing</li>
+                        <li><strong>Speed up workflow:</strong> Duplicate and transform instead of redrawing</li>
+                        <li><strong>Creative effects:</strong> Distortions, warps, liquify for stylization</li>
+                        <li><strong>Non-destructive editing:</strong> Try different arrangements quickly</li>
+                    </ul>
+                </div>
+
+                <blockquote>
+                    <strong>💡 Pro Insight:</strong> Beginners often redraw when something's wrong. Pros just transform it! This single skill saves HOURS of work.
+                </blockquote>
+
+                <h3>Free Transform (The Swiss Army Knife)</h3>
+
+                <div class="card" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); color: #1a1a1a;">
+                    <h4 style="color: #1a1a1a; margin-top: 0;">🔧 Free Transform - Your Most Important Tool</h4>
+                    <p><strong>Shortcut:</strong> Ctrl/Cmd + T (works in almost every program)</p>
+                    <p><strong>What it does:</strong> Activates transform mode with handles to manipulate selected layer/selection</p>
+
+                    <h5 style="color: #1a1a1a;">Free Transform Modes:</h5>
+
+                    <h6><strong>1. Scale (Resize)</strong></h6>
+                    <ul>
+                        <li><strong>How:</strong> Drag corner or side handles</li>
+                        <li><strong>Proportional:</strong> Hold <strong>Shift</strong> while dragging corner (maintains aspect ratio)</li>
+                        <li><strong>From center:</strong> Hold <strong>Alt/Option</strong> (scales from center point)</li>
+                        <li><strong>Both:</strong> Hold <strong>Shift + Alt</strong> (proportional from center)</li>
+                        <li><strong>When to use:</strong> Resizing elements, matching sizes, creating size variations</li>
+                    </ul>
+
+                    <h6><strong>2. Rotate</strong></h6>
+                    <ul>
+                        <li><strong>How:</strong> Move cursor outside bounding box until cursor becomes rotate icon, then drag</li>
+                        <li><strong>15° increments:</strong> Hold <strong>Shift</strong> while rotating</li>
+                        <li><strong>Custom pivot:</strong> Drag the center point anchor to change rotation axis</li>
+                        <li><strong>Precise rotation:</strong> Type angle in options bar (45°, 90°, -30°, etc.)</li>
+                        <li><strong>When to use:</strong> Adjusting angles, creating radial compositions, fixing tilted photos</li>
+                    </ul>
+
+                    <h6><strong>3. Skew (Slant)</strong></h6>
+                    <ul>
+                        <li><strong>How:</strong> Ctrl/Cmd + drag side handle (not corner)</li>
+                        <li><strong>What it does:</strong> Slants the image at an angle</li>
+                        <li><strong>When to use:</strong> Creating italic effects, simulating perspective</li>
+                    </ul>
+
+                    <h6><strong>4. Distort (Free-form)</strong></h6>
+                    <ul>
+                        <li><strong>How:</strong> Ctrl/Cmd + drag corner handle</li>
+                        <li><strong>What it does:</strong> Move any corner independently</li>
+                        <li><strong>When to use:</strong> Matching perspective, creating custom shapes</li>
+                    </ul>
+
+                    <h6><strong>5. Perspective</strong></h6>
+                    <ul>
+                        <li><strong>How:</strong> Right-click → Perspective, or Ctrl/Cmd + Shift + Alt + drag corner</li>
+                        <li><strong>What it does:</strong> Creates realistic perspective (vanishing points)</li>
+                        <li><strong>When to use:</strong> Matching architectural perspective, creating depth illusion</li>
+                    </ul>
+
+                    <h6><strong>6. Warp</strong></h6>
+                    <ul>
+                        <li><strong>How:</strong> Right-click → Warp (or Edit → Transform → Warp)</li>
+                        <li><strong>What it does:</strong> Creates mesh grid with control points for organic distortion</li>
+                        <li><strong>When to use:</strong> Cloth folds, flag waves, organic shapes, text on surfaces</li>
+                    </ul>
+                </div>
+
+                <h3>Transform Controls & Shortcuts</h3>
+
+                <div class="card">
+                    <h4>⌨️ Essential Transform Shortcuts</h4>
+                    
+                    <table style="width: 100%;">
+                        <thead>
+                            <tr>
+                                <th>Action</th>
+                                <th>Shortcut</th>
+                                <th>What It Does</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Enter Transform Mode</strong></td>
+                                <td>Ctrl/Cmd + T</td>
+                                <td>Activates Free Transform</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Confirm Transform</strong></td>
+                                <td>Enter / Double-click</td>
+                                <td>Applies the transformation</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Cancel Transform</strong></td>
+                                <td>Esc</td>
+                                <td>Exits without applying</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Scale Proportionally</strong></td>
+                                <td>Shift + Drag corner</td>
+                                <td>Maintains aspect ratio</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Scale from Center</strong></td>
+                                <td>Alt + Drag</td>
+                                <td>Center stays in place</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Rotate in 15° Increments</strong></td>
+                                <td>Shift + Rotate</td>
+                                <td>Snaps to 0°, 15°, 30°, 45°, etc.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Distort</strong></td>
+                                <td>Ctrl/Cmd + Drag corner</td>
+                                <td>Free-form corner movement</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Skew</strong></td>
+                                <td>Ctrl/Cmd + Drag side</td>
+                                <td>Slant transformation</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Perspective</strong></td>
+                                <td>Ctrl/Cmd + Shift + Alt + Drag corner</td>
+                                <td>Symmetric perspective</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Duplicate While Transforming</strong></td>
+                                <td>Alt + confirm</td>
+                                <td>Creates copy (some programs)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>Specific Transform Tools</h3>
+
+                <div class="card" style="background: #f3e5f5;">
+                    <h4>📐 Dedicated Transform Tools</h4>
+                    <p>Some programs have separate tools for each transform type:</p>
+
+                    <h5>Scale Tool</h5>
+                    <ul>
+                        <li><strong>What it does:</strong> Dedicated resizing tool</li>
+                        <li><strong>Advantage:</strong> Sometimes offers real-time preview or additional options</li>
+                        <li><strong>Common shortcut:</strong> S key (in some programs)</li>
+                    </ul>
+
+                    <h5>Rotate Tool</h5>
+                    <ul>
+                        <li><strong>What it does:</strong> Dedicated rotation tool</li>
+                        <li><strong>Advantage:</strong> May show angle guides, snap to increments</li>
+                        <li><strong>Common shortcut:</strong> R key (varies by program)</li>
+                    </ul>
+
+                    <h5>Perspective Tool</h5>
+                    <ul>
+                        <li><strong>What it does:</strong> Specialized perspective correction</li>
+                        <li><strong>When to use:</strong> Photos with perspective distortion, architectural shots</li>
+                        <li><strong>Pro tip:</strong> Some apps have "Perspective Crop" for automatic correction</li>
+                    </ul>
+
+                    <h5>Cage Transform / Envelope Distort</h5>
+                    <ul>
+                        <li><strong>What it does:</strong> Creates custom cage with movable points for complex distortions</li>
+                        <li><strong>When to use:</strong> Organic distortions, character deformations</li>
+                        <li><strong>Found in:</strong> Krita, GIMP, Affinity Designer</li>
+                    </ul>
+                </div>
+
+                <h3>Warp Tool Deep Dive</h3>
+
+                <div class="card" style="background: #fff3e0;">
+                    <h4>🌊 Warp Transform - The Creative Powerhouse</h4>
+                    <p>Warp is one of the most powerful (and underused) transform tools!</p>
+
+                    <h5>How Warp Works:</h5>
+                    <ul>
+                        <li>Creates a <strong>mesh grid</strong> over your selection/layer</li>
+                        <li>Drag any <strong>control point</strong> to distort that area</li>
+                        <li>Drag grid <strong>lines</strong> for broader distortions</li>
+                        <li>Interior <strong>anchor points</strong> act like pins</li>
+                    </ul>
+
+                    <h5>Common Warp Uses:</h5>
+                    <ul>
+                        <li><strong>Text on surfaces:</strong> Make text follow curves or perspective</li>
+                        <li><strong>Cloth and fabric:</strong> Create realistic folds and draping</li>
+                        <li><strong>Flags and banners:</strong> Wave effects</li>
+                        <li><strong>Hair flow:</strong> Adjust hair shape and movement</li>
+                        <li><strong>Organic shapes:</strong> Subtle shape adjustments</li>
+                        <li><strong>Facial retouching:</strong> Very subtle feature adjustments (use sparingly!)</li>
+                    </ul>
+
+                    <h5>Warp Presets (Photoshop):</h5>
+                    <ul>
+                        <li><strong>Arc:</strong> Arches upward</li>
+                        <li><strong>Arc Lower/Upper:</strong> Arches bottom or top</li>
+                        <li><strong>Arch:</strong> Creates arch shape</li>
+                        <li><strong>Bulge:</strong> Inflates center</li>
+                        <li><strong>Flag:</strong> Wave effect</li>
+                        <li><strong>Fish:</strong> Fisheye distortion</li>
+                        <li><strong>Wave:</strong> Multiple waves</li>
+                        <li><strong>Custom:</strong> Free-form (default)</li>
+                    </ul>
+
+                    <h5>Pro Warp Tips:</h5>
+                    <ul>
+                        <li>Start with subtle movements—warp can look unnatural quickly</li>
+                        <li>Use on smart objects (Photoshop) for non-destructive warping</li>
+                        <li>Increase grid density for more control points (some apps)</li>
+                        <li>Pin areas you DON'T want to distort</li>
+                        <li>Works great combined with layer masks</li>
+                    </ul>
+                </div>
+
+                <h3>Transform Best Practices</h3>
+
+                <div class="card" style="background: #e8f5e9;">
+                    <h4>✅ Professional Transform Habits</h4>
+
+                    <h5>Quality Preservation:</h5>
+                    <ul>
+                        <li><strong>Always scale DOWN, not up:</strong> Scaling up = quality loss (pixelation)</li>
+                        <li><strong>Use smart objects:</strong> (Photoshop) Allows non-destructive transforms</li>
+                        <li><strong>Transform once:</strong> Multiple transforms = cumulative quality loss</li>
+                        <li><strong>Work on copies:</strong> Keep original layer untransformed</li>
+                        <li><strong>High resolution source:</strong> Start with large images for flexibility</li>
+                    </ul>
+
+                    <h5>Workflow Efficiency:</h5>
+                    <ul>
+                        <li><strong>Plan transforms:</strong> Think before applying—can't undo after confirmation</li>
+                        <li><strong>Use guides:</strong> Enable rulers and guides for precise alignment</li>
+                        <li><strong>Numeric input:</strong> Type exact values for precision (W: 500px, H: 500px)</li>
+                        <li><strong>Link proportions:</strong> Lock aspect ratio when needed</li>
+                        <li><strong>Snap to grid:</strong> Enable snap for clean alignments</li>
+                    </ul>
+
+                    <h5>Creative Approach:</h5>
+                    <ul>
+                        <li><strong>Duplicate before transforming:</strong> Keep originals for variations</li>
+                        <li><strong>Combine transforms:</strong> Scale + rotate in one operation</li>
+                        <li><strong>Use perspective for depth:</strong> Even subtle perspective adds realism</li>
+                        <li><strong>Warp for organics:</strong> Don't just scale—warp for natural look</li>
+                        <li><strong>Mirror for symmetry:</strong> Flip horizontal for instant symmetry</li>
+                    </ul>
+                </div>
+
+                <h3>Transform Power Techniques</h3>
+
+                <div class="card">
+                    <h4>⚡ Advanced Transform Workflows</h4>
+
+                    <h5>Technique 1: The Perspective Match</h5>
+                    <p><strong>Problem:</strong> Need to place element into photo with perspective</p>
+                    <p><strong>Solution:</strong></p>
+                    <ol>
+                        <li>Identify vanishing points in base photo</li>
+                        <li>Place element roughly in position</li>
+                        <li>Use Perspective Transform (or Distort) to match angles</li>
+                        <li>Drag corners to align with perspective lines</li>
+                        <li>Fine-tune with Warp if needed</li>
+                    </ol>
+
+                    <h5>Technique 2: The Size Tester</h5>
+                    <p><strong>Problem:</strong> Not sure what size works best</p>
+                    <p><strong>Solution:</strong></p>
+                    <ol>
+                        <li>Duplicate layer 3-4 times</li>
+                        <li>Transform each to different size (50%, 75%, 100%, 125%)</li>
+                        <li>Toggle visibility to compare</li>
+                        <li>Delete versions that don't work</li>
+                        <li>Much faster than undo/redo cycle</li>
+                    </ol>
+
+                    <h5>Technique 3: The Symmetry Shortcut</h5>
+                    <p><strong>Problem:</strong> Need symmetric elements</p>
+                    <p><strong>Solution:</strong></p>
+                    <ol>
+                        <li>Draw one side/half</li>
+                        <li>Duplicate layer</li>
+                        <li>Edit → Transform → Flip Horizontal</li>
+                        <li>Position next to original</li>
+                        <li>Perfect symmetry in seconds!</li>
+                    </ol>
+
+                    <h5>Technique 4: The Smart Resize</h5>
+                    <p><strong>Problem:</strong> Need to resize but preserve proportions of different elements</p>
+                    <p><strong>Solution:</strong> Content-Aware Scale (Photoshop)</p>
+                    <ul>
+                        <li>Edit → Content-Aware Scale</li>
+                        <li>Intelligently resizes while protecting important areas</li>
+                        <li>Can protect skin tones automatically</li>
+                        <li>Great for banner/header resizing</li>
+                    </ul>
+                </div>
+
+                <blockquote style="margin-top: 1.5rem;">
+                    <strong>🎯 Transform Mastery Checklist:</strong><br>
+                    ✅ Ctrl/Cmd + T is muscle memory<br>
+                    ✅ Hold Shift for proportional scaling<br>
+                    ✅ Know when to use Warp vs Distort<br>
+                    ✅ Always work non-destructively when possible<br>
+                    ✅ Use perspective for realistic compositing<br>
+                    ✅ Never scale up repeatedly (quality loss)
+                </blockquote>
+
+            </section>
+
+            <!-- PART B ENDS HERE -->
+            <!-- Section 3: Move and Alignment Tools -->
+            <section id="move-align" class="lesson-section">
+                <h2>Move and Alignment Tools ↔️</h2>
+                
+                <p>Moving and aligning elements precisely is fundamental to good composition. These tools help you position, distribute, and organize layers with pixel-perfect accuracy!</p>
+
+                <h3>The Move Tool</h3>
+
+                <div class="card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #1a1a1a;">
+                    <h4 style="color: #1a1a1a; margin-top: 0;">↔️ Move Tool - Your Positioning Powerhouse</h4>
+                    <p><strong>Common shortcut:</strong> V key</p>
+                    <p><strong>What it does:</strong> Moves layers, selections, or objects around the canvas</p>
+
+                    <h5 style="color: #1a1a1a;">Basic Move Operations:</h5>
+                    <ul>
+                        <li><strong>Move active layer:</strong> Click and drag anywhere</li>
+                        <li><strong>Move selection content:</strong> Drag inside selection (with selection active)</li>
+                        <li><strong>Move multiple layers:</strong> Select multiple in Layers panel, then drag</li>
+                        <li><strong>Constrain to axis:</strong> Hold <strong>Shift</strong> while dragging (horizontal/vertical only)</li>
+                        <li><strong>Duplicate while moving:</strong> Hold <strong>Alt/Option</strong> while dragging (creates copy)</li>
+                    </ul>
+
+                    <h5 style="color: #1a1a1a;">Precision Movement:</h5>
+                    <ul>
+                        <li><strong>Arrow keys:</strong> Move 1 pixel at a time</li>
+                        <li><strong>Shift + Arrow keys:</strong> Move 10 pixels at a time</li>
+                        <li><strong>Numeric input:</strong> Type exact X, Y coordinates in options bar</li>
+                        <li><strong>Relative movement:</strong> Use +/- in coordinate fields (e.g., +50px)</li>
+                    </ul>
+
+                    <h5 style="color: #1a1a1a;">Auto-Select Options:</h5>
+                    <ul>
+                        <li><strong>Auto-Select Layer:</strong> Automatically selects the layer you click on</li>
+                        <li><strong>Auto-Select Group:</strong> Selects entire layer group</li>
+                        <li><strong>Pro tip:</strong> Keep Auto-Select OFF for complex documents (prevents accidental selections)</li>
+                        <li><strong>Alternative:</strong> Ctrl/Cmd + Click to select layer under cursor (when Auto-Select is off)</li>
+                    </ul>
+
+                    <h5 style="color: #1a1a1a;">Show Transform Controls:</h5>
+                    <ul>
+                        <li>Checkbox in options bar (Photoshop)</li>
+                        <li>Shows bounding box around layer for quick scaling</li>
+                        <li>When ON: Move tool doubles as quick transform</li>
+                        <li>When OFF: Cleaner view, less accidental transforms</li>
+                    </ul>
+                </div>
+
+                <h3>Alignment Tools</h3>
+
+                <div class="card" style="background: #e8f5e9;">
+                    <h4>📏 Alignment and Distribution</h4>
+                    <p>Found in: Layer menu, Alignment panel, or toolbar (depends on software)</p>
+
+                    <h5>Alignment Operations:</h5>
+                    <p>Align multiple selected layers relative to each other or to the canvas:</p>
+                    
+                    <h6><strong>Horizontal Alignment:</strong></h6>
+                    <ul>
+                        <li><strong>Align Left Edges:</strong> Lines up left edges of all selected layers</li>
+                        <li><strong>Align Horizontal Centers:</strong> Centers objects vertically on same axis</li>
+                        <li><strong>Align Right Edges:</strong> Lines up right edges</li>
+                    </ul>
+
+                    <h6><strong>Vertical Alignment:</strong></h6>
+                    <ul>
+                        <li><strong>Align Top Edges:</strong> Lines up top edges of all selected layers</li>
+                        <li><strong>Align Vertical Centers:</strong> Centers objects horizontally on same axis</li>
+                        <li><strong>Align Bottom Edges:</strong> Lines up bottom edges</li>
+                    </ul>
+
+                    <h6><strong>Align to Canvas/Selection:</strong></h6>
+                    <ul>
+                        <li><strong>Center to canvas:</strong> Centers layer(s) on entire canvas</li>
+                        <li><strong>Align to selection bounds:</strong> Aligns to selection instead of other layers</li>
+                    </ul>
+
+                    <h5>Distribution Operations:</h5>
+                    <p>Evenly space multiple objects:</p>
+                    <ul>
+                        <li><strong>Distribute Horizontal Centers:</strong> Equal spacing left-to-right</li>
+                        <li><strong>Distribute Vertical Centers:</strong> Equal spacing top-to-bottom</li>
+                        <li><strong>Distribute Left/Right Edges:</strong> Spaces based on edges, not centers</li>
+                        <li><strong>Distribute Top/Bottom Edges:</strong> Spaces based on vertical edges</li>
+                    </ul>
+
+                    <p><strong>Pro tip:</strong> Distribution requires at least 3 objects to work!</p>
+                </div>
+
+                <h3>Guides, Grids, and Snapping</h3>
+
+                <div class="card">
+                    <h4>🧲 Precision Positioning Aids</h4>
+
+                    <h5>Guides (Non-printing reference lines):</h5>
+                    <ul>
+                        <li><strong>Create guide:</strong> Drag from ruler (View → Rulers to enable)</li>
+                        <li><strong>Vertical guide:</strong> Drag from left ruler</li>
+                        <li><strong>Horizontal guide:</strong> Drag from top ruler</li>
+                        <li><strong>Precise placement:</strong> View → New Guide (enter exact position)</li>
+                        <li><strong>Move guide:</strong> Move tool + drag (or dedicated Guide tool)</li>
+                        <li><strong>Delete guide:</strong> Drag back to ruler</li>
+                        <li><strong>Clear all guides:</strong> View → Clear Guides</li>
+                        <li><strong>Lock guides:</strong> View → Lock Guides (prevents accidental movement)</li>
+                    </ul>
+
+                    <h5>Grid:</h5>
+                    <ul>
+                        <li><strong>Show grid:</strong> View → Show Grid</li>
+                        <li><strong>Customize grid:</strong> Edit → Preferences → Guides, Grid & Slices</li>
+                        <li><strong>Grid spacing:</strong> Set in preferences (e.g., every 100px)</li>
+                        <li><strong>Subdivisions:</strong> Lighter lines between major grid lines</li>
+                        <li><strong>When to use:</strong> Technical drawings, UI design, isometric art</li>
+                    </ul>
+
+                    <h5>Snapping (Magnetic alignment):</h5>
+                    <ul>
+                        <li><strong>Snap to Guides:</strong> Layers "stick" to guides when moved nearby</li>
+                        <li><strong>Snap to Grid:</strong> Layers align to grid intersections</li>
+                        <li><strong>Snap to Layers:</strong> Aligns to edges/centers of other layers</li>
+                        <li><strong>Snap to Document Bounds:</strong> Snaps to canvas edges</li>
+                        <li><strong>Toggle snapping:</strong> View → Snap (or Ctrl/Cmd + Shift + ; in some apps)</li>
+                        <li><strong>Temporarily disable:</strong> Hold Ctrl/Cmd while dragging</li>
+                    </ul>
+
+                    <h5>Smart Guides (Photoshop, modern apps):</h5>
+                    <ul>
+                        <li>Automatically appear when layers align</li>
+                        <li>Show spacing between elements</li>
+                        <li>Indicate when objects are same size</li>
+                        <li>Magenta lines that appear dynamically</li>
+                        <li>View → Show → Smart Guides</li>
+                    </ul>
+                </div>
+
+                <h3>Move and Align Workflows</h3>
+
+                <div class="card" style="background: #fff3e0;">
+                    <h4>⚡ Professional Positioning Techniques</h4>
+
+                    <h5>Technique 1: The Centered Layout</h5>
+                    <p><strong>Goal:</strong> Center multiple elements on canvas</p>
+                    <p><strong>Steps:</strong></p>
+                    <ol>
+                        <li>Select all layers to center (Shift+Click in Layers panel)</li>
+                        <li>Make sure no selection active on canvas (Ctrl/Cmd + D)</li>
+                        <li>Use alignment tools: Align Horizontal Centers + Align Vertical Centers</li>
+                        <li>Perfect center alignment!</li>
+                    </ol>
+
+                    <h5>Technique 2: The Even Spacing</h5>
+                    <p><strong>Goal:</strong> Evenly space buttons, icons, or design elements</p>
+                    <p><strong>Steps:</strong></p>
+                    <ol>
+                        <li>Position first and last element where you want them</li>
+                        <li>Place middle elements roughly in between</li>
+                        <li>Select all elements</li>
+                        <li>Use Distribute Horizontal/Vertical Centers</li>
+                        <li>Perfect equal spacing instantly!</li>
+                    </ol>
+
+                    <h5>Technique 3: The Duplication Grid</h5>
+                    <p><strong>Goal:</strong> Create grid of repeated elements</p>
+                    <p><strong>Steps:</strong></p>
+                    <ol>
+                        <li>Position first element where grid starts</li>
+                        <li>Duplicate and move horizontally (Alt+Drag, or Ctrl/Cmd + J then move)</li>
+                        <li>Repeat for desired number of columns</li>
+                        <li>Select all, duplicate and move vertically for rows</li>
+                        <li>Or: Use Step and Repeat feature (some apps)</li>
+                    </ol>
+
+                    <h5>Technique 4: The Guide Setup</h5>
+                    <p><strong>Goal:</strong> Set up layout guides for consistent design</p>
+                    <p><strong>Steps:</strong></p>
+                    <ol>
+                        <li>Enable Rulers (Ctrl/Cmd + R)</li>
+                        <li>Drag guides for margins (e.g., 50px from each edge)</li>
+                        <li>Create center guides (View → New Guide → 50%)</li>
+                        <li>Create rule-of-thirds guides (33.33%, 66.66%)</li>
+                        <li>Lock guides (View → Lock Guides)</li>
+                        <li>Design with snapping enabled</li>
+                    </ol>
+
+                    <h5>Technique 5: The Pixel-Perfect Positioning</h5>
+                    <p><strong>Goal:</strong> Position element at exact coordinates</p>
+                    <p><strong>Steps:</strong></p>
+                    <ol>
+                        <li>Select Move tool (V)</li>
+                        <li>Select layer to position</li>
+                        <li>In options bar, type exact X and Y coordinates</li>
+                        <li>Press Enter</li>
+                        <li>Perfect for repeatable layouts!</li>
+                    </ol>
+                </div>
+
+                <blockquote>
+                    <strong>💡 Pro Insight:</strong> The difference between amateur and professional layouts is often just proper alignment and spacing. Use these tools liberally!
+                </blockquote>
+
+            </section>
+
+            <!-- Section 4: Fill and Gradient Tools -->
+            <section id="fill-gradient" class="lesson-section">
+                <h2>Fill and Gradient Tools 🎨</h2>
+                
+                <p>Fill and gradient tools let you quickly add color to large areas. They're essential for backgrounds, base colors, and lighting effects!</p>
+
+                <h3>Fill Tool (Paint Bucket)</h3>
+
+                <div class="card" style="background: #e3f2fd;">
+                    <h4>🪣 Paint Bucket / Fill Tool</h4>
+                    <p><strong>Common shortcut:</strong> G key</p>
+                    <p><strong>What it does:</strong> Fills contiguous areas with foreground color or pattern</p>
+
+                    <h5>How It Works:</h5>
+                    <ul>
+                        <li>Click on area to fill it with current foreground color</li>
+                        <li>Uses <strong>Tolerance</strong> setting (like Magic Wand)</li>
+                        <li>Low tolerance = fills very similar colors only</li>
+                        <li>High tolerance = fills broader color range</li>
+                    </ul>
+
+                    <h5>Key Settings:</h5>
+                    <ul>
+                        <li><strong>Tolerance (0-255):</strong> How similar colors must be to get filled</li>
+                        <li><strong>Contiguous:</strong> ON = only connected areas | OFF = all matching colors</li>
+                        <li><strong>Anti-alias:</strong> Smooth edges (usually keep ON)</li>
+                        <li><strong>All Layers:</strong> Sample from all layers vs current layer only</li>
+                        <li><strong>Fill:</strong> Foreground color, Background color, or Pattern</li>
+                        <li><strong>Opacity:</strong> Transparency of fill (0-100%)</li>
+                    </ul>
+
+                    <h5>When to Use Fill Tool:</h5>
+                    <ul>
+                        <li>Filling flat color areas in illustrations</li>
+                        <li>Base colors under line art</li>
+                        <li>Quick backgrounds</li>
+                        <li>Coloring comic panels</li>
+                        <li>Filling selections</li>
+                    </ul>
+
+                    <h5>Pro Tips:</h5>
+                    <ul>
+                        <li>Create <strong>closed shapes</strong> first (no gaps!) for clean fills</li>
+                        <li>Fill on separate layer for non-destructive workflow</li>
+                        <li>Adjust tolerance if fill bleeds or misses areas</li>
+                        <li>Use selections to constrain fill area</li>
+                        <li>Check for gaps in line art before filling</li>
+                    </ul>
+                </div>
+
+                <h3>Fill Commands (Keyboard Shortcuts)</h3>
+
+                <div class="card">
+                    <h4>⚡ Quick Fill Shortcuts</h4>
+                    <p>These work WITHOUT selecting fill tool:</p>
+
+                    <table style="width: 100%;">
+                        <thead>
+                            <tr>
+                                <th>Command</th>
+                                <th>Shortcut</th>
+                                <th>What It Does</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Fill with Foreground</strong></td>
+                                <td>Alt + Backspace</td>
+                                <td>Fills selection/layer with foreground color</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Fill with Background</strong></td>
+                                <td>Ctrl + Backspace</td>
+                                <td>Fills with background color</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Fill Dialog</strong></td>
+                                <td>Shift + F5 (or Edit → Fill)</td>
+                                <td>Opens fill options dialog</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Content-Aware Fill</strong></td>
+                                <td>Shift + F5 → Content-Aware</td>
+                                <td>AI fills based on surrounding pixels</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <p><strong>Fill Dialog Options:</strong></p>
+                    <ul>
+                        <li><strong>Foreground/Background Color</strong></li>
+                        <li><strong>Pattern:</strong> Fill with repeating pattern</li>
+                        <li><strong>History:</strong> Fill from history state</li>
+                        <li><strong>Black/White/50% Gray</strong></li>
+                        <li><strong>Content-Aware:</strong> Intelligent fill (Photoshop)</li>
+                        <li><strong>Blend Mode:</strong> How fill interacts with existing pixels</li>
+                        <li><strong>Opacity:</strong> Transparency of fill</li>
+                    </ul>
+                </div>
+
+                <h3>Gradient Tool</h3>
+
+                <div class="card" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: #1a1a1a;">
+                    <h4 style="color: #1a1a1a; margin-top: 0;">🌈 Gradient Tool - Smooth Color Transitions</h4>
+                    <p><strong>Common shortcut:</strong> G key (cycle with Fill tool)</p>
+                    <p><strong>What it does:</strong> Creates smooth color blends from one color to another</p>
+
+                    <h5 style="color: #1a1a1a;">Gradient Types:</h5>
+
+                    <h6><strong>1. Linear Gradient</strong></h6>
+                    <ul>
+                        <li><strong>How:</strong> Click and drag to define start and end points</li>
+                        <li><strong>Effect:</strong> Straight color transition in one direction</li>
+                        <li><strong>When to use:</strong> Backgrounds, lighting, simple shading</li>
+                    </ul>
+
+                    <h6><strong>2. Radial Gradient</strong></h6>
+                    <ul>
+                        <li><strong>How:</strong> Click center and drag outward</li>
+                        <li><strong>Effect:</strong> Circular gradient radiating from center</li>
+                        <li><strong>When to use:</strong> Spotlights, vignettes, circular highlights</li>
+                    </ul>
+
+                    <h6><strong>3. Angular Gradient</strong></h6>
+                    <ul>
+                        <li><strong>How:</strong> Click center and drag for rotation</li>
+                        <li><strong>Effect:</strong> Gradient sweeps around center point</li>
+                        <li><strong>When to use:</strong> Color wheels, rainbow effects, circular patterns</li>
+                    </ul>
+
+                    <h6><strong>4. Reflected Gradient</strong></h6>
+                    <ul>
+                        <li><strong>How:</strong> Like linear, but mirrors on both sides</li>
+                        <li><strong>Effect:</strong> Symmetric gradient from center line</li>
+                        <li><strong>When to use:</strong> Symmetric lighting, metallic effects</li>
+                    </ul>
+
+                    <h6><strong>5. Diamond Gradient</strong></h6>
+                    <ul>
+                        <li><strong>How:</strong> Click center and drag outward</li>
+                        <li><strong>Effect:</strong> Diamond-shaped gradient</li>
+                        <li><strong>When to use:</strong> Geometric effects, unique backgrounds</li>
+                    </ul>
+                </div>
+
+                <h3>Gradient Settings and Controls</h3>
+
+                <div class="card">
+                    <h4>🎛️ Gradient Options</h4>
+
+                    <h5>Gradient Picker:</h5>
+                    <ul>
+                        <li><strong>Click gradient preview</strong> in options bar to open picker</li>
+                        <li>Choose from preset gradients</li>
+                        <li>Or create custom gradients</li>
+                    </ul>
+
+                    <h5>Gradient Editor:</h5>
+                    <ul>
+                        <li><strong>Color stops:</strong> Click below gradient bar to add colors</li>
+                        <li><strong>Opacity stops:</strong> Click above gradient bar to control transparency</li>
+                        <li><strong>Midpoint diamonds:</strong> Adjust transition point between colors</li>
+                        <li><strong>Delete stops:</strong> Drag stop away from bar</li>
+                    </ul>
+
+                    <h5>Common Settings:</h5>
+                    <ul>
+                        <li><strong>Mode:</strong> Blend mode (Normal, Multiply, Overlay, etc.)</li>
+                        <li><strong>Opacity:</strong> Overall transparency of gradient</li>
+                        <li><strong>Reverse:</strong> Flip gradient direction</li>
+                        <li><strong>Dither:</strong> Reduces banding (keep ON for smooth gradients)</li>
+                        <li><strong>Transparency:</strong> Respects opacity stops in gradient</li>
+                    </ul>
+
+                    <h5>Drawing Gradients:</h5>
+                    <ul>
+                        <li><strong>Drag length:</strong> Longer drag = more gradual transition</li>
+                        <li><strong>Short drag:</strong> Shorter drag = sharper transition</li>
+                        <li><strong>Drag angle:</strong> Defines gradient direction (linear)</li>
+                        <li><strong>Hold Shift:</strong> Constrain to 0°, 45°, 90° angles</li>
+                    </ul>
+                </div>
+
+                <h3>Gradient Use Cases</h3>
+
+                <div class="card" style="background: #f3e5f5;">
+                    <h4>🎨 Creative Gradient Applications</h4>
+
+                    <h5>1. Background Gradients</h5>
+                    <ul>
+                        <li><strong>Sky gradients:</strong> Light blue to dark blue (top to bottom)</li>
+                        <li><strong>Sunset gradients:</strong> Orange/yellow to purple/blue</li>
+                        <li><strong>Abstract backgrounds:</strong> Multiple color stops for complexity</li>
+                        <li><strong>Pro tip:</strong> Use subtle gradients—avoid garish rainbow effects</li>
+                    </ul>
+
+                    <h5>2. Lighting Effects</h5>
+                    <ul>
+                        <li><strong>Vignette:</strong> Radial gradient, black to transparent, from edges</li>
+                        <li><strong>Spotlight:</strong> Radial gradient, white to transparent, from center</li>
+                        <li><strong>Rim lighting:</strong> Reflected gradient on edges</li>
+                        <li><strong>Atmospheric haze:</strong> Subtle white gradients for depth</li>
+                    </ul>
+
+                    <h5>3. Shading and Form</h5>
+                    <ul>
+                        <li><strong>Sphere shading:</strong> Radial gradient for 3D effect</li>
+                        <li><strong>Cylinder shading:</strong> Linear gradient for rounded forms</li>
+                        <li><strong>Fabric folds:</strong> Multiple small gradients for dimension</li>
+                        <li><strong>Metallic surfaces:</strong> Reflected gradients for shine</li>
+                    </ul>
+
+                    <h5>4. Color Transitions</h5>
+                    <ul>
+                        <li><strong>Color grading:</strong> Gradient map adjustments</li>
+                        <li><strong>Duotone effects:</strong> Two-color gradients</li>
+                        <li><strong>Gradient maps:</strong> Replace tones with gradient colors</li>
+                    </ul>
+
+                    <h5>5. Special Effects</h5>
+                    <ul>
+                        <li><strong>Gradient overlays:</strong> Color entire layer with blend modes</li>
+                        <li><strong>Gradient masks:</strong> Smooth transitions between layers</li>
+                        <li><strong>Text gradients:</strong> Colorful gradient-filled text</li>
+                        <li><strong>Pattern fades:</strong> Gradients combined with patterns</li>
+                    </ul>
+                </div>
+
+                <h3>Fill and Gradient Best Practices</h3>
+
+                <div class="card" style="background: #fff3e0;">
+                    <h4>✅ Professional Fill Techniques</h4>
+
+                    <h5>Fill Best Practices:</h5>
+                    <ul>
+                        <li><strong>Use separate layers:</strong> Never fill destructively on original art</li>
+                        <li><strong>Check for gaps:</strong> Inspect line art before flooding</li>
+                        <li><strong>Adjust tolerance carefully:</strong> Too low = won't fill fully, too high = bleeds</li>
+                        <li><strong>Use selections:</strong> Constrain fills to specific areas</li>
+                        <li><strong>Clean edges:</strong> Use anti-aliasing for smooth color boundaries</li>
+                    </ul>
+
+                    <h5>Gradient Best Practices:</h5>
+                    <ul>
+                        <li><strong>Subtlety is key:</strong> Slight gradients look more professional</li>
+                        <li><strong>Avoid banding:</strong> Enable dithering, use 16-bit mode for smooth transitions</li>
+                        <li><strong>Use gradient maps:</strong> Non-destructive color grading</li>
+                        <li><strong>Blend modes matter:</strong> Multiply for shadows, Screen for highlights</li>
+                        <li><strong>Layer gradients:</strong> Multiple subtle gradients > one extreme gradient</li>
+                        <li><strong>Match light direction:</strong> Gradients should follow lighting logic</li>
+                    </ul>
+
+                    <h5>Common Mistakes to Avoid:</h5>
+                    <ul>
+                        <li>❌ Using default rainbow gradients (screams amateur)</li>
+                        <li>❌ Over-saturated gradient backgrounds</li>
+                        <li>❌ Visible banding in gradients (use dithering!)</li>
+                        <li>❌ Gradients that don't match scene lighting</li>
+                        <li>❌ Fill tool bleeding into unwanted areas</li>
+                        <li>❌ Forgetting to create new layer before filling</li>
+                    </ul>
+                </div>
+
+                <blockquote>
+                    <strong>🎨 Pro Tip:</strong> The best gradients are the ones you barely notice. Subtle = professional. Obvious = amateur. When in doubt, dial it back by 50%!
+                </blockquote>
+
+            </section>
+
+            <!-- Section 5: Color and Sampling Tools -->
+            <section id="color-tools" class="lesson-section">
+                <h2>Color and Sampling Tools 🎨</h2>
+                
+                <p>Color tools help you select, sample, and adjust colors efficiently. Mastering these will speed up your workflow dramatically!</p>
+
+                <h3>Eyedropper / Color Picker Tool</h3>
+
+                <div class="card" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); color: #1a1a1a;">
+                    <h4 style="color: #1a1a1a; margin-top: 0;">💧 Eyedropper Tool - Sample Colors from Anywhere</h4>
+                    <p><strong>Common shortcut:</strong> I key, or hold Alt while painting</p>
+                    <p><strong>What it does:</strong> Samples color from canvas or screen to use as foreground color</p>
+
+                    <h5 style="color: #1a1a1a;">Basic Operations:</h5>
+                    <ul>
+                        <li><strong>Click to sample:</strong> Sets foreground color to clicked color</li>
+                        <li><strong>Alt + Click:</strong> Sets background color</li>
+                        <li><strong>Hold Alt while painting:</strong> Temporarily activates eyedropper (most useful method!)</li>
+                        <li><strong>Drag to preview:</strong> See color in real-time before releasing</li>
+                    </ul>
+
+                    <h5 style="color: #1a1a1a;">Sample Settings:</h5>
+                    <ul>
+                        <li><strong>Point Sample:</strong> Exact pixel under cursor</li>
+                        <li><strong>3x3 Average:</strong> Average of 3x3 pixel area (recommended)</li>
+                        <li><strong>5x5 Average:</strong> Smoother sampling for noisy images</li>
+                        <li><strong>11x11, 31x31, 51x51:</strong> Broader averages</li>
+                        <li><strong>101x101 Average:</strong> Very broad color sampling</li>
+                    </ul>
+
+                    <h5 style="color: #1a1a1a;">Sample From:</h5>
+                    <ul>
+                        <li><strong>Current Layer:</strong> Only samples from active layer</li>
+                        <li><strong>Current & Below:</strong> Samples from active and layers below</li>
+                        <li><strong>All Layers:</strong> Samples from composite result (most common)</li>
+                    </ul>
+
+                    <h5 style="color: #1a1a1a;">Advanced Features:</h5>
+                    <ul>
+                        <li><strong>Show sampling ring:</strong> Preview color being sampled (some apps)</li>
+                        <li><strong>Sample from screen:</strong> Click and drag outside app to sample desktop/other apps</li>
+                        <li><strong>Copy as HTML:</strong> Get hex code for web design</li>
+                    </ul>
+                </div>
+
+                <h3>Color Swatches and Libraries</h3>
+
+                <div class="card">
+                    <h4>🎨 Color Swatches Panel</h4>
+                    <p><strong>What it is:</strong> A saved palette of frequently-used colors</p>
+
+                    <h5>Using Swatches:</h5>
+                    <ul>
+                        <li><strong>Click swatch:</strong> Sets foreground color</li>
+                        <li><strong>Alt + Click:</strong> Sets background color</li>
+                        <li><strong>Add color:</strong> Click empty area or "New Swatch" button</li>
+                        <li><strong>Delete swatch:</strong> Alt + Click on swatch (or drag to trash)</li>
+                        <li><strong>Name swatch:</strong> Double-click to rename</li>
+                    </ul>
+
+                    <h5>Swatch Libraries:</h5>
+                    <ul>
+                        <li><strong>Save palette:</strong> Save your color scheme for project</li>
+                        <li><strong>Load palette:</strong> Import palettes from other projects</li>
+                        <li><strong>Pantone, Web, etc.:</strong> Standard color libraries</li>
+                        <li><strong>Share palettes:</strong> Export/import .aco, .ase files</li>
+                    </ul>
+
+                    <h5>Organizing Colors:</h5>
+                    <ul>
+                        <li><strong>Group by project:</strong> Create palette per artwork</li>
+                        <li><strong>Character palettes:</strong> Save skin, hair, clothing colors</li>
+                        <li><strong>Brand colors:</strong> Company/brand color consistency</li>
+                        <li><strong>Environmental palettes:</strong> Sky, grass, water sets</li>
+                    </ul>
+
+                    <p><strong>Pro tip:</strong> Always save your project's color palette! It ensures consistency and makes revisions easier.</p>
+                </div>
+
+                <h3>Color Adjustment Tools</h3>
+
+                <div class="card" style="background: #e8f5e9;">
+                    <h4>🔧 Quick Color Modifications</h4>
+
+                    <h5>Hue/Saturation Adjustment:</h5>
+                    <ul>
+                        <li><strong>What it does:</strong> Shifts colors, changes intensity, adjusts brightness</li>
+                        <li><strong>Shortcut:</strong> Ctrl/Cmd + U (Photoshop)</li>
+                        <li><strong>Hue slider:</strong> Rotates through color wheel (-180° to +180°)</li>
+                        <li><strong>Saturation:</strong> Intensity of color (-100 = gray, +100 = vibrant)</li>
+                        <li><strong>Lightness:</strong> Overall brightness (-100 = black, +100 = white)</li>
+                        <li><strong>Colorize:</strong> Tints everything with single hue</li>
+                    </ul>
+
+                    <h5>Color Balance:</h5>
+                    <ul>
+                        <li><strong>What it does:</strong> Adjusts color temperature and tint</li>
+                        <li><strong>Shadows/Midtones/Highlights:</strong> Target specific tonal ranges</li>
+                        <li><strong>Cyan-Red slider:</strong> Warm up or cool down</li>
+                        <li><strong>Magenta-Green slider:</strong> Adjust tint</li>
+                        <li><strong>Yellow-Blue slider:</strong> Control color temperature</li>
+                    </ul>
+
+                    <h5>Curves/Levels:</h5>
+                    <ul>
+                        <li><strong>What they do:</strong> Precise tonal and color control</li>
+                        <li><strong>Levels:</strong> Adjust shadows, midtones, highlights with sliders</li>
+                        <li><strong>Curves:</strong> Fine control with adjustable curve line</li>
+                        <li><strong>Per-channel editing:</strong> Adjust R, G, B individually</li>
+                        <li><strong>When to use:</strong> Color correction, mood setting, professional grading</li>
+                    </ul>
+
+                    <h5>Vibrance/Saturation:</h5>
+                    <ul>
+                        <li><strong>Vibrance:</strong> Smart saturation (protects skin tones)</li>
+                        <li><strong>Saturation:</strong> Uniform color intensity adjustment</li>
+                        <li><strong>Pro tip:</strong> Use Vibrance for portraits, Saturation for everything else</li>
+                    </ul>
+                </div>
+
+                <h3>Color Harmony and Theory Tools</h3>
+
+                <div class="card">
+                    <h4>🌈 Color Relationship Helpers</h4>
+
+                    <h5>Color Wheel Tools:</h5>
+                    <ul>
+                        <li><strong>Complementary:</strong> Opposite colors (red/green, blue/orange)</li>
+                        <li><strong>Analogous:</strong> Adjacent colors (blue, blue-green, green)</li>
+                        <li><strong>Triadic:</strong> Three evenly-spaced colors (120° apart)</li>
+                        <li><strong>Split-complementary:</strong> Base + two adjacent to complement</li>
+                        <li><strong>Tetradic:</strong> Two complementary pairs</li>
+                    </ul>
+
+                    <h5>Adobe Color / Kuler:</h5>
+                    <ul>
+                        <li>Web-based color scheme generator</li>
+                        <li>Explore palettes created by community</li>
+                        <li>Extract colors from photos</li>
+                        <li>Test accessibility (contrast ratios)</li>
+                        <li>Export directly to Adobe apps</li>
+                    </ul>
+
+                    <h5>Coolors / Paletton:</h5>
+                    <ul>
+                        <li>Alternative palette generators</li>
+                        <li>Quick color scheme exploration</li>
+                        <li>Export in various formats</li>
+                    </ul>
+                </div>
+
+                <h3>Color Sampling Workflows</h3>
+
+                <div class="card" style="background: #fff3e0;">
+                    <h4>⚡ Professional Color Techniques</h4>
+
+                    <h5>Technique 1: The Reference Sampling</h5>
+                    <p><strong>Goal:</strong> Match colors from reference photo</p>
+                    <p><strong>Steps:</strong></p>
+                    <ol>
+                        <li>Place reference photo in same document</li>
+                        <li>While painting, hold Alt to temporarily activate eyedropper</li>
+                        <li>Sample from reference frequently</li>
+                        <li>Paint with sampled color</li>
+                        <li>Repeat for accurate color matching</li>
+                    </ol>
+
+                    <h5>Technique 2: The Palette Building</h5>
+                    <p><strong>Goal:</strong> Create cohesive color palette before starting</p>
+                    <p><strong>Steps:</strong></p>
+                    <ol>
+                        <li>Gather inspiration images</li>
+                        <li>Sample key colors from each</li>
+                        <li>Add to Swatches panel</li>
+                        <li>Group related colors</li>
+                        <li>Save palette for project</li>
+                        <li>Stick to palette throughout painting</li>
+                    </ol>
+
+                    <h5>Technique 3: The Color Variation</h5>
+                    <p><strong>Goal:</strong> Create natural color variation (not flat colors)</p>
+                    <p><strong>Steps:</strong></p>
+                    <ol>
+                        <li>Start with base color</li>
+                        <li>Paint a bit</li>
+                        <li>Hold Alt, sample what you just painted</li>
+                        <li>Manually shift hue slightly in color picker</li>
+                        <li>Paint more</li>
+                        <li>Repeat—creates subtle, natural variation</li>
+                    </ol>
+
+                    <h5>Technique 4: The Temperature Control</h5>
+                    <p><strong>Goal:</strong> Maintain consistent color temperature</p>
+                    <p><strong>Tips:</strong></p>
+                    <ul>
+                        <li>Warm light = cool shadows (and vice versa)</li>
+                        <li>Sample and compare temperatures</li>
+                        <li>Use Color Balance to shift entire image</li>
+                        <li>Keep light-temperature relationship consistent</li>
+                    </ul>
+                </div>
+
+                <blockquote>
+                    <strong>🎨 Master Tip:</strong> The Alt+Click eyedropper shortcut while painting is THE most-used shortcut among professional digital artists. Make it muscle memory!
+                </blockquote>
+
+            </section>
+
+            <!-- PART C ENDS HERE -->
+            <!-- Section 6: Measurement and Guide Tools -->
+            <section id="measurement-guides" class="lesson-section">
+                <h2>Measurement and Guide Tools 📏</h2>
+                
+                <p>Precision tools help you measure distances, angles, and ensure accuracy in your work. These are especially important for technical art, UI design, and maintaining consistency!</p>
+
+                <h3>Ruler Tool</h3>
+
+                <div class="card" style="background: #e3f2fd;">
+                    <h4>📐 Ruler / Measurement Tool</h4>
+                    <p><strong>What it does:</strong> Measures distance and angle between two points</p>
+
+                    <h5>How to Use:</h5>
+                    <ul>
+                        <li><strong>Click and drag:</strong> From start point to end point</li>
+                        <li><strong>Info display:</strong> Shows distance (D), angle (A), width (W), height (H)</li>
+                        <li><strong>Units:</strong> Pixels, inches, cm (based on document settings)</li>
+                        <li><strong>Angle measurement:</strong> Degrees from horizontal (0° to 360°)</li>
+                    </ul>
+
+                    <h5>Common Uses:</h5>
+                    <ul>
+                        <li>Checking if objects are same size</li>
+                        <li>Measuring spacing between elements</li>
+                        <li>Verifying angles for technical drawings</li>
+                        <li>Ensuring consistent margins</li>
+                        <li>Double-checking dimensions before export</li>
+                    </ul>
+
+                    <h5>Pro Tips:</h5>
+                    <ul>
+                        <li>Use Info panel to see precise measurements</li>
+                        <li>Hold Shift to constrain to 45° increments</li>
+                        <li>Useful for checking if lines are truly horizontal/vertical</li>
+                        <li>Can be used to straighten images in some programs</li>
+                    </ul>
+                </div>
+
+                <h3>Straighten and Angle Tools</h3>
+
+                <div class="card">
+                    <h4>🎚️ Straightening Tools</h4>
+
+                    <h5>Straighten Tool:</h5>
+                    <ul>
+                        <li><strong>What it does:</strong> Rotates canvas to make line horizontal/vertical</li>
+                        <li><strong>How to use:</strong> Draw line along what should be straight, tool auto-rotates canvas</li>
+                        <li><strong>When to use:</strong> Fixing crooked scans, aligning photos, correcting tilted artwork</li>
+                        <li><strong>Found in:</strong> Crop tool options (Photoshop), dedicated tool (other apps)</li>
+                    </ul>
+
+                    <h5>Angle Display:</h5>
+                    <ul>
+                        <li>Most programs show angle in Info panel or options bar</li>
+                        <li>Useful when rotating for precise angles</li>
+                        <li>Can type exact angle for transform operations</li>
+                    </ul>
+                </div>
+
+                <h3>Count Tool</h3>
+
+                <div class="card" style="background: #f3e5f5;">
+                    <h4>🔢 Count Tool (Photoshop, specialized apps)</h4>
+                    <p><strong>What it does:</strong> Click to place numbered markers for counting objects</p>
+
+                    <h5>How It Works:</h5>
+                    <ul>
+                        <li>Click on objects to number them</li>
+                        <li>Auto-increments count (1, 2, 3...)</li>
+                        <li>Shows total count in options bar</li>
+                        <li>Can have multiple count groups</li>
+                    </ul>
+
+                    <h5>When to Use:</h5>
+                    <ul>
+                        <li>Counting cells in scientific images</li>
+                        <li>Tallying objects in photos</li>
+                        <li>Tracking items in complex compositions</li>
+                        <li>Quality control checks</li>
+                    </ul>
+
+                    <p><strong>Note:</strong> This is a specialized tool—most artists won't need it, but it's invaluable for specific workflows!</p>
+                </div>
+
+                <h3>Notes and Annotation Tools</h3>
+
+                <div class="card">
+                    <h4>📝 Notes and Comments</h4>
+
+                    <h5>Note Tool:</h5>
+                    <ul>
+                        <li><strong>What it does:</strong> Place sticky-note style annotations on canvas</li>
+                        <li><strong>When to use:</strong> Marking areas needing work, leaving notes for collaborators, tracking revisions</li>
+                        <li><strong>How to use:</strong> Click to place note icon, double-click to read/edit</li>
+                        <li><strong>Visibility:</strong> Notes don't print or export (metadata only)</li>
+                    </ul>
+
+                    <h5>Audio Annotation (some apps):</h5>
+                    <ul>
+                        <li>Record voice notes attached to location</li>
+                        <li>Useful for complex feedback</li>
+                        <li>Available in Photoshop and some review apps</li>
+                    </ul>
+
+                    <h5>Text Tool for Annotations:</h5>
+                    <ul>
+                        <li>Can also use regular text tool on separate layer</li>
+                        <li>Mark areas with arrows and text</li>
+                        <li>Delete annotation layer before final export</li>
+                    </ul>
+                </div>
+
+                <h3>Info Panel</h3>
+
+                <div class="card" style="background: #fff3e0;">
+                    <h4>ℹ️ Info Panel - Your Data Dashboard</h4>
+                    <p><strong>What it shows:</strong> Real-time information about your tools and cursor position</p>
+
+                    <h5>Information Displayed:</h5>
+                    <ul>
+                        <li><strong>Cursor position:</strong> X, Y coordinates</li>
+                        <li><strong>Color values:</strong> RGB, CMYK, HSB values under cursor</li>
+                        <li><strong>Selection dimensions:</strong> Width, height when selecting</li>
+                        <li><strong>Transform data:</strong> Scale percentages, rotation angles during transform</li>
+                        <li><strong>Document info:</strong> Canvas size, resolution, color mode</li>
+                        <li><strong>File size:</strong> Current document size in memory</li>
+                    </ul>
+
+                    <h5>Customization:</h5>
+                    <ul>
+                        <li>Click panel menu to choose what info displays</li>
+                        <li>Change measurement units (pixels, inches, cm)</li>
+                        <li>Toggle color readouts between RGB/CMYK/HSB</li>
+                        <li>Some apps allow custom info displays</li>
+                    </ul>
+
+                    <h5>When It's Useful:</h5>
+                    <ul>
+                        <li>Checking exact pixel dimensions</li>
+                        <li>Verifying color values for consistency</li>
+                        <li>Monitoring file size during work</li>
+                        <li>Tracking transform percentages</li>
+                        <li>Technical accuracy requirements</li>
+                    </ul>
+
+                    <p><strong>Pro tip:</strong> Keep Info panel open during technical work, hide it during creative painting.</p>
+                </div>
+
+                <h3>Measurement Workflow Tips</h3>
+
+                <div class="card" style="background: #e8f5e9;">
+                    <h4>📊 Precision Work Strategies</h4>
+
+                    <h5>For UI/Web Design:</h5>
+                    <ul>
+                        <li>Use pixel grid (View → Show → Pixel Grid at 100%+ zoom)</li>
+                        <li>Enable Snap to Pixels for crisp edges</li>
+                        <li>Use Info panel to verify exact dimensions</li>
+                        <li>Work at actual size (100% zoom) to check clarity</li>
+                        <li>Use guides at key measurements (margins, columns)</li>
+                    </ul>
+
+                    <h5>For Print Work:</h5>
+                    <ul>
+                        <li>Set rulers to inches/cm (not pixels)</li>
+                        <li>Enable bleed guides if needed</li>
+                        <li>Check resolution (300 DPI minimum for print)</li>
+                        <li>Verify document dimensions match print specs</li>
+                        <li>Use ruler tool to check critical measurements</li>
+                    </ul>
+
+                    <h5>For Character Consistency:</h5>
+                    <ul>
+                        <li>Measure proportions on first sketch</li>
+                        <li>Use guides to mark key heights (head, shoulders, waist)</li>
+                        <li>Duplicate guides for consistency across views</li>
+                        <li>Save measurements in notes</li>
+                        <li>Reference original measurements when drawing new poses</li>
+                    </ul>
+
+                    <h5>For Architectural/Technical:</h5>
+                    <ul>
+                        <li>Enable grid with appropriate spacing</li>
+                        <li>Use ruler tool constantly for verification</li>
+                        <li>Snap to grid for precision</li>
+                        <li>Work with multiple guides for complex layouts</li>
+                        <li>Double-check angles with Info panel</li>
+                    </ul>
+                </div>
+
+            </section>
+
+            <!-- Section 7: Combining Tools for Power Workflows -->
+            <section id="tool-workflows" class="lesson-section">
+                <h2>Combining Tools for Power Workflows ⚡</h2>
+                
+                <p>The real magic happens when you combine tools strategically. These workflows show how professionals chain tools together for maximum efficiency!</p>
+
+                <h3>Composite Workflows</h3>
+
+                <div class="card" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: #1a1a1a;">
+                    <h4 style="color: #1a1a1a; margin-top: 0;">🎯 Workflow 1: The Perfect Cutout</h4>
+                    <p><strong>Goal:</strong> Extract subject from photo with professional quality</p>
+                    
+                    <h5 style="color: #1a1a1a;">Steps:</h5>
+                    <ol>
+                        <li><strong>Quick Selection:</strong> Use Quick Selection tool to roughly select subject</li>
+                        <li><strong>Refine Edge:</strong> Click "Select and Mask" or "Refine Edge" button</li>
+                        <li><strong>Edge Detection:</strong> Use Refine Edge brush on hair/fur</li>
+                        <li><strong>Decontaminate Colors:</strong> Enable to remove color fringing</li>
+                        <li><strong>Output:</strong> Output to new layer with mask</li>
+                        <li><strong>Cleanup:</strong> Use soft eraser to clean any remaining issues</li>
+                        <li><strong>Final Touch:</strong> Add slight gaussian blur to mask edge if needed</li>
+                    </ol>
+
+                    <p><strong>Tools used:</strong> Quick Selection → Select and Mask → Layer Mask → Eraser</p>
+                    <p><strong>Time saved vs manual:</strong> 80%+</p>
+                </div>
+
+                <div class="card" style="margin-top: 1.5rem; background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); color: #1a1a1a;">
+                    <h4 style="color: #1a1a1a; margin-top: 0;">🎯 Workflow 2: The Perspective Composite</h4>
+                    <p><strong>Goal:</strong> Place object into scene with matching perspective</p>
+                    
+                    <h5 style="color: #1a1a1a;">Steps:</h5>
+                    <ol>
+                        <li><strong>Select Subject:</strong> Use any selection method to isolate object</li>
+                        <li><strong>Copy to Scene:</strong> Ctrl/Cmd + C, then paste into target document</li>
+                        <li><strong>Position Roughly:</strong> Move tool to approximate position</li>
+                        <li><strong>Scale Appropriately:</strong> Ctrl/Cmd + T, scale to match scene</li>
+                        <li><strong>Perspective Match:</strong> Right-click → Perspective, drag corners to match vanishing points</li>
+                        <li><strong>Fine-tune Position:</strong> Exit transform, adjust with Move tool</li>
+                        <li><strong>Warp if Needed:</strong> Edit → Transform → Warp for organic adjustments</li>
+                        <li><strong>Blend:</strong> Adjust opacity, add shadows/highlights to integrate</li>
+                    </ol>
+
+                    <p><strong>Tools used:</strong> Selection → Copy/Paste → Move → Transform → Perspective → Warp</p>
+                </div>
+
+                <div class="card" style="margin-top: 1.5rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #1a1a1a;">
+                    <h4 style="color: #1a1a1a; margin-top: 0;">🎯 Workflow 3: The Color Scheme Application</h4>
+                    <p><strong>Goal:</strong> Apply consistent color palette to entire artwork</p>
+                    
+                    <h5 style="color: #1a1a1a;">Steps:</h5>
+                    <ol>
+                        <li><strong>Sample Reference:</strong> Use eyedropper to sample colors from reference/inspiration</li>
+                        <li><strong>Build Palette:</strong> Add each sampled color to Swatches panel</li>
+                        <li><strong>Organize Swatches:</strong> Arrange by hue or by usage (skin, hair, clothes, environment)</li>
+                        <li><strong>Save Palette:</strong> Save swatch library for this project</li>
+                        <li><strong>Paint with Palette:</strong> Click swatches as you paint, don't manually pick colors</li>
+                        <li><strong>Sample Your Own Work:</strong> Alt+Click to sample and create variations</li>
+                        <li><strong>Global Adjustment:</strong> Use Hue/Saturation or Color Balance for overall shifts</li>
+                    </ol>
+
+                    <p><strong>Tools used:</strong> Eyedropper → Swatches → Color Adjustments</p>
+                    <p><strong>Result:</strong> Cohesive, professional color harmony</p>
+                </div>
+
+                <h3>Technical Workflows</h3>
+
+                <div class="card" style="margin-top: 1.5rem;">
+                    <h4>🎯 Workflow 4: The Symmetric Design</h4>
+                    <p><strong>Goal:</strong> Create perfectly symmetrical artwork</p>
+                    
+                    <h5>Steps:</h5>
+                    <ol>
+                        <li><strong>Set Up Guide:</strong> Drag vertical guide to canvas center</li>
+                        <li><strong>Draw One Side:</strong> Paint one half of the design</li>
+                        <li><strong>Duplicate Layer:</strong> Ctrl/Cmd + J</li>
+                        <li><strong>Flip Horizontal:</strong> Edit → Transform → Flip Horizontal</li>
+                        <li><strong>Align to Center:</strong> Use Move tool + guide snapping to align perfectly</li>
+                        <li><strong>Merge or Keep Separate:</strong> Depending on if you need to edit further</li>
+                    </ol>
+
+                    <p><strong>Alternative:</strong> Use Symmetry mode (Krita, Procreate) to paint both sides simultaneously</p>
+                </div>
+
+                <div class="card" style="margin-top: 1.5rem;">
+                    <h4>🎯 Workflow 5: The Texture Application</h4>
+                    <p><strong>Goal:</strong> Add texture overlay to artwork</p>
+                    
+                    <h5>Steps:</h5>
+                    <ol>
+                        <li><strong>Import Texture:</strong> Place texture image as new layer</li>
+                        <li><strong>Position:</strong> Use Move tool to position</li>
+                        <li><strong>Scale:</strong> Ctrl/Cmd + T to resize to fit</li>
+                        <li><strong>Change Blend Mode:</strong> Try Multiply, Overlay, Soft Light</li>
+                        <li><strong>Adjust Opacity:</strong> Lower to taste (20-40% often ideal)</li>
+                        <li><strong>Add Mask:</strong> Layer → Layer Mask → Reveal All</li>
+                        <li><strong>Paint on Mask:</strong> Black to hide texture in areas, white to reveal</li>
+                        <li><strong>Optional Adjustment:</strong> Hue/Saturation to tint texture</li>
+                    </ol>
+
+                    <p><strong>Tools used:</strong> Move → Transform → Blend Modes → Layer Mask → Brush</p>
+                </div>
+
+                <div class="card" style="margin-top: 1.5rem;">
+                    <h4>🎯 Workflow 6: The Batch Processing</h4>
+                    <p><strong>Goal:</strong> Apply same adjustments to multiple images</p>
+                    
+                    <h5>Steps:</h5>
+                    <ol>
+                        <li><strong>Perfect First Image:</strong> Make all adjustments on one file</li>
+                        <li><strong>Record Action:</strong> Window → Actions → New Action → Record</li>
+                        <li><strong>Apply Adjustments:</strong> Perform your workflow steps</li>
+                        <li><strong>Stop Recording:</strong> Click stop button in Actions panel</li>
+                        <li><strong>Batch Process:</strong> File → Automate → Batch</li>
+                        <li><strong>Select Action:</strong> Choose your recorded action</li>
+                        <li><strong>Choose Source Folder:</strong> Point to folder of images</li>
+                        <li><strong>Set Destination:</strong> Where to save processed files</li>
+                        <li><strong>Run:</strong> Let it process all images automatically</li>
+                    </ol>
+
+                    <p><strong>Tools used:</strong> Actions → Batch Processing</p>
+                    <p><strong>Time saved:</strong> Massive for 10+ images</p>
+                </div>
+
+                <h3>Creative Workflows</h3>
+
+                <div class="card" style="margin-top: 1.5rem; background: #f3e5f5;">
+                    <h4>🎯 Workflow 7: The Quick Composition Test</h4>
+                    <p><strong>Goal:</strong> Try multiple composition variations quickly</p>
+                    
+                    <h5>Steps:</h5>
+                    <ol>
+                        <li><strong>Separate Elements:</strong> Each major element on its own layer</li>
+                        <li><strong>Duplicate Document:</strong> Image → Duplicate (3-4 times)</li>
+                        <li><strong>Variation 1:</strong> Use transform/move to rearrange elements</li>
+                        <li><strong>Variation 2:</strong> Different arrangement in second duplicate</li>
+                        <li><strong>Variation 3:</strong> Third arrangement in third duplicate</li>
+                        <li><strong>Compare:</strong> Tile windows side-by-side to compare</li>
+                        <li><strong>Choose Best:</strong> Pick winner, close others</li>
+                    </ol>
+
+                    <p><strong>Why it works:</strong> Seeing options side-by-side reveals best composition immediately</p>
+                </div>
+
+                <div class="card" style="margin-top: 1.5rem; background: #fff3e0;">
+                    <h4>🎯 Workflow 8: The Reference Match</h4>
+                    <p><strong>Goal:</strong> Match lighting/colors from reference photo</p>
+                    
+                    <h5>Steps:</h5>
+                    <ol>
+                        <li><strong>Import Reference:</strong> Place reference photo in document</li>
+                        <li><strong>Position Next to Art:</strong> Move tool to place side-by-side</li>
+                        <li><strong>Sample Colors:</strong> Alt+Click to sample from reference frequently</li>
+                        <li><strong>Build Palette:</strong> Add sampled colors to swatches</li>
+                        <li><strong>Match Values:</strong> Compare brightness by squinting at both</li>
+                        <li><strong>Adjust if Off:</strong> Use Curves/Levels to match tonal range</li>
+                        <li><strong>Remove Reference:</strong> Hide or delete reference layer when done</li>
+                    </ol>
+
+                    <p><strong>Tools used:</strong> Move → Eyedropper → Swatches → Adjustments</p>
+                </div>
+
+                <blockquote style="margin-top: 1.5rem;">
+                    <strong>💡 Workflow Philosophy:</strong> The best workflows are the ones that become automatic. Practice these until you don't think about the steps—your hands just DO them!
+                </blockquote>
+
+            </section>
+
+            <!-- Section 8: Cross-Software Tool Comparison -->
+            <section id="cross-software" class="lesson-section">
+                <h2>Cross-Software Tool Comparison 🔄</h2>
+                
+                <p>Let's see how these essential tools translate across different programs. Remember: the CONCEPTS are identical, only the names and locations change!</p>
+
+                <h3>Selection Tools Across Software</h3>
+
+                <div class="card">
+                    <h4>✂️ Selection Tool Comparison</h4>
+                    
+                    <table style="width: 100%; font-size: 0.9em;">
+                        <thead>
+                            <tr>
+                                <th>Tool Type</th>
+                                <th>Photoshop</th>
+                                <th>Krita</th>
+                                <th>GIMP</th>
+                                <th>Procreate</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Rectangular Select</strong></td>
+                                <td>Rectangular Marquee (M)</td>
+                                <td>Rectangular Selection (Ctrl+R)</td>
+                                <td>Rectangle Select (R)</td>
+                                <td>Selection → Rectangle</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Elliptical Select</strong></td>
+                                <td>Elliptical Marquee (M)</td>
+                                <td>Elliptical Selection (J)</td>
+                                <td>Ellipse Select (E)</td>
+                                <td>Selection → Ellipse</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Freehand</strong></td>
+                                <td>Lasso (L)</td>
+                                <td>Freehand Selection</td>
+                                <td>Free Select (F)</td>
+                                <td>Selection → Freehand</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Polygonal</strong></td>
+                                <td>Polygonal Lasso (L)</td>
+                                <td>Polygonal Selection</td>
+                                <td>Free Select (F)</td>
+                                <td>N/A</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Magnetic</strong></td>
+                                <td>Magnetic Lasso (L)</td>
+                                <td>Magnetic Selection</td>
+                                <td>Foreground Select</td>
+                                <td>N/A (Auto Select)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Color-Based</strong></td>
+                                <td>Magic Wand (W)</td>
+                                <td>Contiguous Selection (Shift+Ctrl+R)</td>
+                                <td>Fuzzy Select (U)</td>
+                                <td>Automatic</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Quick Select</strong></td>
+                                <td>Quick Selection (W)</td>
+                                <td>Similar Color Selection</td>
+                                <td>Foreground Select</td>
+                                <td>Automatic</td>
+                            </tr>
+                            <tr>
+                                <td><strong>AI Select</strong></td>
+                                <td>Select Subject</td>
+                                <td>N/A</td>
+                                <td>N/A</td>
+                                <td>Automatic (very good!)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>Transform Tools Across Software</h3>
+
+                <div class="card" style="margin-top: 1.5rem;">
+                    <h4>🔄 Transform Tool Comparison</h4>
+                    
+                    <table style="width: 100%;">
+                        <thead>
+                            <tr>
+                                <th>Transform Type</th>
+                                <th>Photoshop</th>
+                                <th>Krita</th>
+                                <th>GIMP</th>
+                                <th>Procreate</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Free Transform</strong></td>
+                                <td>Ctrl/Cmd + T</td>
+                                <td>Ctrl + T</td>
+                                <td>Unified Transform (Shift+T)</td>
+                                <td>Transform tool (arrow icon)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Scale</strong></td>
+                                <td>Free Transform + drag</td>
+                                <td>Transform Tool</td>
+                                <td>Scale Tool (Shift+S)</td>
+                                <td>Uniform / Freeform</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Rotate</strong></td>
+                                <td>Free Transform + rotate</td>
+                                <td>Transform Tool</td>
+                                <td>Rotate Tool (Shift+R)</td>
+                                <td>Two-finger rotate</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Perspective</strong></td>
+                                <td>Edit → Transform → Perspective</td>
+                                <td>Transform → Perspective</td>
+                                <td>Perspective Tool (Shift+P)</td>
+                                <td>Distort mode</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Warp</strong></td>
+                                <td>Edit → Transform → Warp</td>
+                                <td>Transform → Warp / Cage</td>
+                                <td>Cage Transform / iWarp</td>
+                                <td>Liquify</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Flip Horizontal</strong></td>
+                                <td>Edit → Transform → Flip H</td>
+                                <td>Image → Rotate → Mirror H</td>
+                                <td>Image → Transform → Flip H</td>
+                                <td>Actions → Flip H</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Flip Vertical</strong></td>
+                                <td>Edit → Transform → Flip V</td>
+                                <td>Image → Rotate → Mirror V</td>
+                                <td>Image → Transform → Flip V</td>
+                                <td>Actions → Flip V</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>Move and Alignment Across Software</h3>
+
+                <div class="card" style="margin-top: 1.5rem;">
+                    <h4>↔️ Move & Align Tool Comparison</h4>
+                    
+                    <table style="width: 100%;">
+                        <thead>
+                            <tr>
+                                <th>Function</th>
+                                <th>Photoshop</th>
+                                <th>Krita</th>
+                                <th>GIMP</th>
+                                <th>Procreate</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Move Tool</strong></td>
+                                <td>Move Tool (V)</td>
+                                <td>Move Tool (T)</td>
+                                <td>Move Tool (M)</td>
+                                <td>Transform → Uniform</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Alignment</strong></td>
+                                <td>Layer → Align</td>
+                                <td>Tools → Align</td>
+                                <td>Layer → Align Visible Layers</td>
+                                <td>Snapping + Guides</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Guides</strong></td>
+                                <td>Drag from rulers</td>
+                                <td>Drag from rulers</td>
+                                <td>Image → Guides → New Guide</td>
+                                <td>Canvas → Drawing Guide</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Grid</strong></td>
+                                <td>View → Show → Grid</td>
+                                <td>View → Show Grid</td>
+                                <td>View → Show Grid</td>
+                                <td>Canvas → Drawing Guide</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Snapping</strong></td>
+                                <td>View → Snap</td>
+                                <td>View → Snap to...</td>
+                                <td>View → Snap to...</td>
+                                <td>Auto when close</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>Fill and Color Tools Across Software</h3>
+
+                <div class="card" style="margin-top: 1.5rem;">
+                    <h4>🎨 Fill & Color Tool Comparison</h4>
+                    
+                    <table style="width: 100%;">
+                        <thead>
+                            <tr>
+                                <th>Tool</th>
+                                <th>Photoshop</th>
+                                <th>Krita</th>
+                                <th>GIMP</th>
+                                <th>Procreate</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Fill Tool</strong></td>
+                                <td>Paint Bucket (G)</td>
+                                <td>Fill Tool (F)</td>
+                                <td>Bucket Fill (Shift+B)</td>
+                                <td>Automatic (ColorDrop)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Gradient</strong></td>
+                                <td>Gradient Tool (G)</td>
+                                <td>Gradient Tool (G)</td>
+                                <td>Gradient Tool (G)</td>
+                                <td>N/A (use layers)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Eyedropper</strong></td>
+                                <td>Eyedropper (I) or Alt</td>
+                                <td>Color Picker (P) or Ctrl</td>
+                                <td>Color Picker (O)</td>
+                                <td>Hold on canvas</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Swatches</strong></td>
+                                <td>Swatches Panel</td>
+                                <td>Palette Docker</td>
+                                <td>Palettes Dialog</td>
+                                <td>Color panel</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Color Picker</strong></td>
+                                <td>Color Panel / Picker</td>
+                                <td>Advanced Color Selector</td>
+                                <td>Color Dialog</td>
+                                <td>Disc / Classic / Value</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3>Key Differences by Software</h3>
+
+                <div class="card" style="margin-top: 1.5rem; background: #e8f5e9;">
+                    <h4>🔍 Notable Software Quirks</h4>
+
+                    <h5>Photoshop:</h5>
+                    <ul>
+                        <li><strong>Strengths:</strong> Most complete toolset, AI features, industry standard</li>
+                        <li><strong>Unique features:</strong> Content-Aware Fill, Subject Select, Neural Filters</li>
+                        <li><strong>Learning curve:</strong> Moderate-High</li>
+                        <li><strong>Best for:</strong> Professional photo editing, compositing</li>
+                    </ul>
+
+                    <h5>Krita:</h5>
+                    <ul>
+                        <li><strong>Strengths:</strong> Free, painting-focused, customizable, great brushes</li>
+                        <li><strong>Unique features:</strong> Wrap-around mode, mirror tools, animation</li>
+                        <li><strong>Learning curve:</strong> Moderate</li>
+                        <li><strong>Best for:</strong> Digital painting, illustration, concept art</li>
+                        <li><strong>Note:</strong> Some tools have different names but same function</li>
+                    </ul>
+
+                    <h5>GIMP:</h5>
+                    <ul>
+                        <li><strong>Strengths:</strong> Free, powerful, cross-platform</li>
+                        <li><strong>Unique features:</strong> Script-Fu automation</li>
+                        <li><strong>Learning curve:</strong> Moderate-High (different UI paradigm)</li>
+                        <li><strong>Best for:</strong> Photo editing, general graphics</li>
+                        <li><strong>Note:</strong> Interface is different from Adobe paradigm</li>
+                    </ul>
+
+                    <h5>Procreate:</h5>
+                    <ul>
+                        <li><strong>Strengths:</strong> Touch-optimized, intuitive, fast, great gestures</li>
+                        <li><strong>Unique features:</strong> QuickShape, ColorDrop, amazing selection</li>
+                        <li><strong>Learning curve:</strong> Low (very intuitive)</li>
+                        <li><strong>Best for:</strong> Illustration, sketching on-the-go</li>
+                        <li><strong>Note:</strong> Simplified toolset, touch-first design</li>
+                    </ul>
+                </div>
+
+                <blockquote style="margin-top: 1.5rem;">
+                    <strong>🌉 Bridge Wisdom:</strong> When switching software, don't panic when you can't find a tool. Ask yourself: "What CONCEPT do I need?" Then search the menu or web for "how to [concept] in [software]". You'll find it has a different name but identical function!
+                </blockquote>
+
+                <div class="card" style="margin-top: 1.5rem; background: #fff3e0;">
+                    <h4>🔄 Universal Translation Tips</h4>
+
+                    <h5>When Switching Software:</h5>
+                    <ul>
+                        <li><strong>Look for keyboard shortcuts:</strong> Most are standardized (Ctrl+T, V, E, etc.)</li>
+                        <li><strong>Check Edit menu first:</strong> Transform, Fill, Copy/Paste usually here</li>
+                        <li><strong>Search Select menu:</strong> All selection operations in one place</li>
+                        <li><strong>Browse View menu:</strong> Guides, grids, snapping, rulers</li>
+                        <li><strong>Explore Layer menu:</strong> Alignment, arrangement, effects</li>
+                        <li><strong>Right-click everything:</strong> Context menus often have what you need</li>
+                        <li><strong>Use Help/Search:</strong> Most modern apps have searchable command palettes</li>
+                    </ul>
+
+                    <h5>Universal Concepts That Work Everywhere:</h5>
+                    <ul>
+                        <li>Layers are always layers (organization structure is identical)</li>
+                        <li>Selection modifiers (Shift = add, Alt = subtract)</li>
+                        <li>Transform shortcuts (Shift = proportional, Alt = from center)</li>
+                        <li>Eyedropper while painting (Alt key)</li>
+                        <li>Undo/Redo (Ctrl/Cmd + Z, Ctrl/Cmd + Shift + Z)</li>
+                        <li>Save (Ctrl/Cmd + S)</li>
+                        <li>Brush size ([ and ])</li>
+                    </ul>
+                </div>
+
+            </section>
+
+            <!-- PART D ENDS HERE -->
+            <!-- Section 9: Common Tool Mistakes -->
+            <section id="common-mistakes" class="lesson-section">
+                <h2>Common Tool Mistakes ⚠️</h2>
+                
+                <p>Even experienced artists make these mistakes! Learn to recognize and avoid them to level up your efficiency.</p>
+
+                <h3>Selection Mistakes</h3>
+
+                <div class="card" style="border-left: 4px solid #e74c3c;">
+                    <h4>❌ Mistake 1: Forgetting Active Selections</h4>
+                    <p><strong>The Problem:</strong> You have a selection active but can't see it (it's off-screen or very small), and suddenly you can't paint anywhere!</p>
+                    <p><strong>What's happening:</strong> You're painting outside the selection boundary</p>
+                    <p><strong>Solution:</strong></p>
+                    <ul>
+                        <li>Press Ctrl/Cmd + D to deselect</li>
+                        <li>Check if "marching ants" are visible anywhere</li>
+                        <li>View → Show Selection Edges (make sure it's checked)</li>
+                    </ul>
+                    <p><strong>Prevention:</strong> Get in habit of pressing Ctrl/Cmd + D when done with selections</p>
+                </div>
+
+                <div class="card" style="border-left: 4px solid #e74c3c; margin-top: 1rem;">
+                    <h4>❌ Mistake 2: Wrong Selection Tool for the Job</h4>
+                    <p><strong>The Problem:</strong> Using Lasso for straight edges, or Polygonal Lasso for organic shapes</p>
+                    <p><strong>Why it matters:</strong> Takes 10x longer and looks worse</p>
+                    <p><strong>Solution:</strong></p>
+                    <ul>
+                        <li><strong>Straight edges?</strong> Use Polygonal Lasso</li>
+                        <li><strong>Perfect shapes?</strong> Use Marquee tools</li>
+                        <li><strong>High contrast?</strong> Use Magic Wand or Quick Select</li>
+                        <li><strong>Organic freehand?</strong> Use regular Lasso</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="border-left: 4px solid #e74c3c; margin-top: 1rem;">
+                    <h4>❌ Mistake 3: Not Feathering When Needed</h4>
+                    <p><strong>The Problem:</strong> Hard-edged selections that look cut-out and unnatural</p>
+                    <p><strong>Why it happens:</strong> Forgetting to feather before filling/copying</p>
+                    <p><strong>Solution:</strong></p>
+                    <ul>
+                        <li>Select → Modify → Feather (5-15px for portraits)</li>
+                        <li>Or set feather in tool options BEFORE selecting</li>
+                        <li>Rule of thumb: portraits always need feathering</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="border-left: 4px solid #e74c3c; margin-top: 1rem;">
+                    <h4>❌ Mistake 4: Not Using Add/Subtract Modifiers</h4>
+                    <p><strong>The Problem:</strong> Redoing entire selection when you just need to add/remove a bit</p>
+                    <p><strong>Solution:</strong></p>
+                    <ul>
+                        <li><strong>Hold Shift:</strong> Add to selection</li>
+                        <li><strong>Hold Alt:</strong> Subtract from selection</li>
+                        <li>Build complex selections from simple ones</li>
+                    </ul>
+                    <p><strong>Example:</strong> Select circle with Elliptical Marquee, hold Shift, add more circles = flower shape!</p>
+                </div>
+
+                <h3>Transform Mistakes</h3>
+
+                <div class="card" style="border-left: 4px solid #f39c12; margin-top: 1.5rem;">
+                    <h4>❌ Mistake 5: Scaling Up Repeatedly</h4>
+                    <p><strong>The Problem:</strong> Making things bigger destroys quality (pixelation)</p>
+                    <p><strong>Why it's bad:</strong> Each upscale degrades quality permanently</p>
+                    <p><strong>Solution:</strong></p>
+                    <ul>
+                        <li><strong>Always start large:</strong> Work at higher resolution than final</li>
+                        <li><strong>Scale down, not up:</strong> Downscaling is safe, upscaling is not</li>
+                        <li><strong>Use Smart Objects:</strong> (Photoshop) Preserves original resolution</li>
+                        <li><strong>Keep originals:</strong> Never delete high-res versions</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="border-left: 4px solid #f39c12; margin-top: 1rem;">
+                    <h4>❌ Mistake 6: Not Holding Shift When Scaling</h4>
+                    <p><strong>The Problem:</strong> Dragging corner handles freely = distorted proportions</p>
+                    <p><strong>Result:</strong> Squished or stretched artwork</p>
+                    <p><strong>Solution:</strong></p>
+                    <ul>
+                        <li><strong>Always hold Shift</strong> when scaling (maintains proportions)</li>
+                        <li>Make it muscle memory!</li>
+                        <li>Or click "chain link" icon in options bar (locks proportions)</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="border-left: 4px solid #f39c12; margin-top: 1rem;">
+                    <h4>❌ Mistake 7: Transforming Multiple Times</h4>
+                    <p><strong>The Problem:</strong> Transform → Apply → Transform → Apply → Transform...</p>
+                    <p><strong>Why it's bad:</strong> Each transform degrades quality through interpolation</p>
+                    <p><strong>Solution:</strong></p>
+                    <ul>
+                        <li>Do ALL transforms in ONE operation</li>
+                        <li>Scale + rotate + skew all at once, THEN confirm</li>
+                        <li>Plan transforms before executing</li>
+                        <li>Use Smart Objects for non-destructive transforms</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="border-left: 4px solid #f39c12; margin-top: 1rem;">
+                    <h4>❌ Mistake 8: Not Centering Rotation Pivot</h4>
+                    <p><strong>The Problem:</strong> Rotating around wrong point = element swings way off canvas</p>
+                    <p><strong>Solution:</strong></p>
+                    <ul>
+                        <li>Look for the center point anchor (small circle with crosshairs)</li>
+                        <li><strong>Drag it</strong> to where you want rotation center</li>
+                        <li>Often you want it at true center of object</li>
+                        <li>Or at a specific pivot point (like a hinge)</li>
+                    </ul>
+                </div>
+
+                <h3>Move and Alignment Mistakes</h3>
+
+                <div class="card" style="border-left: 4px solid #9b59b6; margin-top: 1.5rem;">
+                    <h4>❌ Mistake 9: Moving Wrong Layer</h4>
+                    <p><strong>The Problem:</strong> Auto-Select is ON, you click to move layer A but accidentally move layer B</p>
+                    <p><strong>Why it happens:</strong> Clicked on layer B's pixels by accident</p>
+                    <p><strong>Solution:</strong></p>
+                    <ul>
+                        <li><strong>Turn OFF Auto-Select</strong> in Move tool options (for complex files)</li>
+                        <li><strong>Manually select layer</strong> in Layers panel first</li>
+                        <li>Or Ctrl/Cmd + Click on pixels to select that layer</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="border-left: 4px solid #9b59b6; margin-top: 1rem;">
+                    <h4>❌ Mistake 10: Manual Alignment Instead of Using Tools</h4>
+                    <p><strong>The Problem:</strong> Trying to manually align elements "by eye"</p>
+                    <p><strong>Why it's bad:</strong> Takes forever, never perfect</p>
+                    <p><strong>Solution:</strong></p>
+                    <ul>
+                        <li>Use Layer → Align tools</li>
+                        <li>Enable Smart Guides (shows when things align)</li>
+                        <li>Use Snap to Grid/Guides</li>
+                        <li>Use Distribution tools for even spacing</li>
+                    </ul>
+                    <p><strong>Time saved:</strong> Alignment tools = 5 seconds. Manual = 5 minutes.</p>
+                </div>
+
+                <div class="card" style="border-left: 4px solid #9b59b6; margin-top: 1rem;">
+                    <h4>❌ Mistake 11: Not Using Guides for Complex Layouts</h4>
+                    <p><strong>The Problem:</strong> Winging it without guides, everything slightly off</p>
+                    <p><strong>Solution:</strong></p>
+                    <ul>
+                        <li><strong>Set up guides first:</strong> Before placing elements</li>
+                        <li>Use New Guide dialog for exact positions</li>
+                        <li>Lock guides so they don't move accidentally</li>
+                        <li>Enable snapping to guides</li>
+                    </ul>
+                </div>
+
+                <h3>Fill and Color Mistakes</h3>
+
+                <div class="card" style="border-left: 4px solid #e67e22; margin-top: 1.5rem;">
+                    <h4>❌ Mistake 12: Fill Tool Bleeding Everywhere</h4>
+                    <p><strong>The Problem:</strong> Paint Bucket fills the entire canvas, not just the shape you wanted</p>
+                    <p><strong>Why it happens:</strong> Tolerance too high, or gaps in line art</p>
+                    <p><strong>Solution:</strong></p>
+                    <ul>
+                        <li><strong>Lower tolerance:</strong> Try 20-30 instead of default</li>
+                        <li><strong>Check for gaps:</strong> Zoom in 400% to find gaps in lines</li>
+                        <li><strong>Close gaps:</strong> Paint over them before filling</li>
+                        <li><strong>Use selections:</strong> Select the shape first, then fill</li>
+                        <li><strong>Contiguous ON:</strong> Only fills connected area</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="border-left: 4px solid #e67e22; margin-top: 1rem;">
+                    <h4>❌ Mistake 13: Destructive Filling</h4>
+                    <p><strong>The Problem:</strong> Filling directly on line art layer = can't change color later</p>
+                    <p><strong>Solution:</strong></p>
+                    <ul>
+                        <li><strong>Always fill on new layer UNDER line art</strong></li>
+                        <li>Keep line art and colors separate</li>
+                        <li>Makes color changes easy</li>
+                        <li>Professional workflow standard</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="border-left: 4px solid #e67e22; margin-top: 1rem;">
+                    <h4>❌ Mistake 14: Garish Gradients</h4>
+                    <p><strong>The Problem:</strong> Using default rainbow gradients or over-saturated colors</p>
+                    <p><strong>Why it's bad:</strong> Screams "amateur"</p>
+                    <p><strong>Solution:</strong></p>
+                    <ul>
+                        <li><strong>Subtle is professional:</strong> Tone it down by 50%</li>
+                        <li><strong>Use analogous colors:</strong> Not extreme opposites</li>
+                        <li><strong>Lower opacity:</strong> 30-60% often better than 100%</li>
+                        <li><strong>Avoid default rainbow:</strong> Create custom gradients</li>
+                        <li><strong>Match scene lighting:</strong> Gradients should have lighting logic</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="border-left: 4px solid #e67e22; margin-top: 1rem;">
+                    <h4>❌ Mistake 15: Not Using Eyedropper Shortcut</h4>
+                    <p><strong>The Problem:</strong> Constantly switching to Eyedropper tool</p>
+                    <p><strong>Time wasted:</strong> Adds up to HOURS over time</p>
+                    <p><strong>Solution:</strong></p>
+                    <ul>
+                        <li><strong>Hold Alt while painting</strong> = temporary eyedropper</li>
+                        <li>Sample → Paint → Sample → Paint (seamless flow)</li>
+                        <li>This is THE most important shortcut!</li>
+                        <li>Make it muscle memory TODAY</li>
+                    </ul>
+                </div>
+
+                <h3>General Tool Mistakes</h3>
+
+                <div class="card" style="border-left: 4px solid #34495e; margin-top: 1.5rem;">
+                    <h4>❌ Mistake 16: Not Learning Keyboard Shortcuts</h4>
+                    <p><strong>The Problem:</strong> Clicking through menus for everything</p>
+                    <p><strong>Time impact:</strong> 10x slower than using shortcuts</p>
+                    <p><strong>Solution:</strong></p>
+                    <ul>
+                        <li>Learn 5 shortcuts per week</li>
+                        <li>Start with: Ctrl+T, V, B, E, Alt-eyedropper, [ ]</li>
+                        <li>Put sticky notes on monitor as reminders</li>
+                        <li>Force yourself to use shortcuts instead of clicking</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="border-left: 4px solid #34495e; margin-top: 1rem;">
+                    <h4>❌ Mistake 17: Working Destructively</h4>
+                    <p><strong>The Problem:</strong> Making permanent changes = can't undo or revise later</p>
+                    <p><strong>Examples:</strong></p>
+                    <ul>
+                        <li>Painting directly on background</li>
+                        <li>Flattening layers too early</li>
+                        <li>Not duplicating before major edits</li>
+                        <li>Deleting instead of hiding</li>
+                    </ul>
+                    <p><strong>Solution:</strong></p>
+                    <ul>
+                        <li><strong>Always use layers:</strong> Each element on separate layer</li>
+                        <li><strong>Duplicate before editing:</strong> Ctrl/Cmd + J</li>
+                        <li><strong>Use layer masks:</strong> Instead of erasing</li>
+                        <li><strong>Save versions:</strong> Keep old versions as you work</li>
+                        <li><strong>Smart Objects:</strong> (Photoshop) for non-destructive edits</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="border-left: 4px solid #34495e; margin-top: 1rem;">
+                    <h4>❌ Mistake 18: Ignoring Tool Options</h4>
+                    <p><strong>The Problem:</strong> Using default settings when tool has useful options</p>
+                    <p><strong>Examples:</strong></p>
+                    <ul>
+                        <li>Not adjusting tolerance on Magic Wand</li>
+                        <li>Missing feather option on selections</li>
+                        <li>Ignoring blend modes on tools</li>
+                        <li>Not customizing brush dynamics</li>
+                    </ul>
+                    <p><strong>Solution:</strong></p>
+                    <ul>
+                        <li><strong>Always check options bar</strong> when selecting tool</li>
+                        <li>Experiment with settings</li>
+                        <li>Look for "More Options" buttons</li>
+                        <li>Read tool tooltips (hover over options)</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="border-left: 4px solid #34495e; margin-top: 1rem;">
+                    <h4>❌ Mistake 19: Not Saving Work Frequently</h4>
+                    <p><strong>The Problem:</strong> Working for hours without saving = risk losing everything</p>
+                    <p><strong>Solution:</strong></p>
+                    <ul>
+                        <li><strong>Ctrl/Cmd + S every 10 minutes</strong> (minimum!)</li>
+                        <li>Enable auto-save if available</li>
+                        <li>Save incremental versions (file_v01, file_v02, etc.)</li>
+                        <li>Use backup software/cloud storage</li>
+                    </ul>
+                    <p><strong>Pro tip:</strong> Make Ctrl+S a reflexive habit. Press it constantly!</p>
+                </div>
+
+                <div class="card" style="border-left: 4px solid #34495e; margin-top: 1rem;">
+                    <h4>❌ Mistake 20: Giving Up on a Tool Too Quickly</h4>
+                    <p><strong>The Problem:</strong> Tool doesn't work perfectly first try, so you abandon it</p>
+                    <p><strong>Reality:</strong> All tools have learning curves</p>
+                    <p><strong>Solution:</strong></p>
+                    <ul>
+                        <li><strong>Practice tools in isolation:</strong> Dedicated practice sessions</li>
+                        <li><strong>Watch tutorials:</strong> See how pros use the tool</li>
+                        <li><strong>Try different settings:</strong> Adjust options and try again</li>
+                        <li><strong>Give it time:</strong> 10+ attempts before judging</li>
+                    </ul>
+                    <p><strong>Remember:</strong> Every pro was once confused by these tools too!</p>
+                </div>
+
+                <blockquote style="margin-top: 1.5rem;">
+                    <strong>💡 Mistake Prevention Mindset:</strong> The best way to avoid mistakes is to work slowly at first. Speed comes naturally with practice. Rushing leads to errors, which waste MORE time than working carefully!
+                </blockquote>
+
+            </section>
+
+            <!-- Lesson Summary -->
+            <section class="lesson-summary">
+                <h2>🎓 Lesson Complete!</h2>
+                
+                <p>Congratulations! You now have a comprehensive understanding of essential digital art tools. These tools are the foundation of efficient digital workflows across all software!</p>
+
+                <div class="card">
+                    <h3>What You've Mastered</h3>
+                    <ul>
+                        <li>✅ <strong>Selection Tools:</strong> All types (geometric, freehand, color-based, AI), modifiers, and refinement techniques</li>
+                        <li>✅ <strong>Transform Tools:</strong> Scale, rotate, distort, perspective, warp, and non-destructive workflows</li>
+                        <li>✅ <strong>Move & Alignment:</strong> Precise positioning, guides, grids, snapping, and distribution</li>
+                        <li>✅ <strong>Fill & Gradient:</strong> Color filling techniques, gradient types, and professional applications</li>
+                        <li>✅ <strong>Color Tools:</strong> Eyedropper mastery, swatches, color adjustments, and sampling workflows</li>
+                        <li>✅ <strong>Measurement Tools:</strong> Rulers, guides, precision techniques</li>
+                        <li>✅ <strong>Combined Workflows:</strong> Professional techniques that chain tools together</li>
+                        <li>✅ <strong>Cross-Software Translation:</strong> How tools work in Photoshop, Krita, GIMP, Procreate</li>
+                        <li>✅ <strong>Common Mistakes:</strong> How to avoid pitfalls that waste time</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; margin-top: 1.5rem;">
+                    <h3 style="color: white; margin-top: 0;">🎯 Key Takeaways</h3>
+                    <ul>
+                        <li><strong>Concepts over buttons:</strong> The ideas are universal; only the interface changes</li>
+                        <li><strong>Shortcuts = speed:</strong> Learning shortcuts is THE fastest way to improve efficiency</li>
+                        <li><strong>Non-destructive workflow:</strong> Always work with layers, masks, and separate elements</li>
+                        <li><strong>Right tool for the job:</strong> Using the appropriate tool saves massive time</li>
+                        <li><strong>Combine tools strategically:</strong> Professional workflows chain tools together</li>
+                        <li><strong>Practice deliberately:</strong> Isolate and practice individual tools until they're automatic</li>
+                    </ul>
+                </div>
+
+                <blockquote style="margin-top: 1.5rem;">
+                    <strong>🎨 Remember:</strong> Tools are like musical instruments—knowing they exist isn't enough. You must practice them until they become extensions of your creativity, not obstacles to it!
+                </blockquote>
+
+                <div class="card" style="background: #e3f2fd; margin-top: 1.5rem;">
+                    <h4>📚 Practice Exercises</h4>
+                    <p>To solidify your learning, try these exercises:</p>
+                    
+                    <h5>Exercise 1: Selection Challenge</h5>
+                    <ul>
+                        <li>Find 5 images online</li>
+                        <li>Practice selecting subjects using different tools</li>
+                        <li>Time yourself—aim to get faster each day</li>
+                        <li>Goal: Perfect selection in under 2 minutes</li>
+                    </ul>
+
+                    <h5>Exercise 2: Transform Mastery</h5>
+                    <ul>
+                        <li>Place 10 objects in a scene</li>
+                        <li>Practice scaling, rotating, warping each one</li>
+                        <li>Match perspectives to background</li>
+                        <li>Make it look like objects belong in scene</li>
+                    </ul>
+
+                    <h5>Exercise 3: Speed Workflow</h5>
+                    <ul>
+                        <li>Create a simple composition (5+ elements)</li>
+                        <li>Do it ONLY using keyboard shortcuts</li>
+                        <li>No mouse clicking on menus allowed!</li>
+                        <li>Forces you to learn shortcuts</li>
+                    </ul>
+
+                    <h5>Exercise 4: Tool Translation</h5>
+                    <ul>
+                        <li>Pick a tool you know in one program</li>
+                        <li>Open a different program</li>
+                        <li>Find the equivalent tool</li>
+                        <li>Repeat for 10 tools</li>
+                        <li>Builds cross-software fluency</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="background: #fff3e0; margin-top: 1.5rem;">
+                    <h4>⏭️ What's Next?</h4>
+                    <p>Now that you understand essential tools, you're ready for:</p>
+                    <ul>
+                        <li><strong>Brush Fundamentals:</strong> Deep dive into brush dynamics and customization</li>
+                        <li><strong>Layer Techniques:</strong> Advanced layer workflows, blend modes, masks</li>
+                        <li><strong>Color Theory:</strong> Understanding color for digital painting</li>
+                        <li><strong>Painting Techniques:</strong> Actual painting methods and approaches</li>
+                        <li><strong>Workflow Optimization:</strong> Setting up efficient painting workflows</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); color: #1a1a1a; margin-top: 1.5rem;">
+                    <h4 style="color: #1a1a1a; margin-top: 0;">💪 Your Tool Mastery Checklist</h4>
+                    <p>You're ready to move on when you can confidently do ALL of these:</p>
+                    <ul>
+                        <li>☐ Make a complex selection in under 3 minutes</li>
+                        <li>☐ Transform object to match perspective without thinking</li>
+                        <li>☐ Sample colors while painting without switching tools (Alt key)</li>
+                        <li>☐ Align multiple objects perfectly in under 30 seconds</li>
+                        <li>☐ Create smooth gradients with intentional color choices</li>
+                        <li>☐ Use at least 10 keyboard shortcuts fluently</li>
+                        <li>☐ Work non-destructively with layers and masks</li>
+                        <li>☐ Explain any tool's function in a different software</li>
+                        <li>☐ Complete a composite image using 5+ tools</li>
+                        <li>☐ Recognize and avoid the top 10 tool mistakes</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="background: #f3e5f5; margin-top: 1.5rem;">
+                    <h4>🌟 Final Wisdom</h4>
+                    <p><em>"The master has failed more times than the beginner has even tried."</em></p>
+                    <p>Don't be discouraged if tools feel clunky at first. Every professional digital artist struggled with these same tools initially. The difference is they kept practicing until the tools became invisible—pure extensions of their creative intent.</p>
+                    <p><strong>Your mission:</strong> Practice these tools until you stop thinking about them. That's when the real artistry begins!</p>
+                </div>
+            </section>
+
+            <!-- Lesson Navigation -->
+            <nav class="lesson-nav">
+                <a href="interface_fundamentals.html" class="btn btn-secondary">← Previous: Interface Fundamentals</a>
+                <a href="brush_fundamentals.html" class="btn btn-primary">Next Lesson: Brush Fundamentals →</a>
+            </nav>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Universal Digital Art Course. All rights reserved.</p>
+            <p>Made with ❤️ for aspiring digital artists everywhere.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/main.js"></script>
+    <script>
+        // Toggle TOC
+        function toggleTOC() {
+            const tocList = document.getElementById('toc-list');
+            const tocIcon = document.getElementById('toc-toggle-icon');
+            
+            if (tocList.style.maxHeight === '0px' || tocList.style.maxHeight === '') {
+                tocList.style.maxHeight = '900px';
+                tocIcon.style.transform = 'rotate(0deg)';
+            } else {
+                tocList.style.maxHeight = '0px';
+                tocIcon.style.transform = 'rotate(-90deg)';
+            }
+        }
+    </script>
+</body>
+</html>

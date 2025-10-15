@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Universal Digital Artistry - Begin your journey into digital painting with this inspiring introduction to digital art fundamentals">
+    <meta name="author" content="Digital Artistry Course">
+    <title>Welcome to Digital Artistry - Universal Digital Art Course</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-to-main">Skip to main content</a>
+    
+    <!-- Progress indicator -->
+    <div class="progress-indicator" role="progressbar" aria-label="Page scroll progress">
+        <div class="progress-bar"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">🎨 Digital Artistry</a>
+            <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-expanded="false" aria-controls="nav-links">
+                ☰
+            </button>
+            <div class="nav-links" id="nav-links" aria-hidden="false">
+                <a href="index.html">Home</a>
+                <a href="index.html#modules">All Lessons</a>
+                <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#modules">Foundation Module</a></li>
+            <li aria-current="page">Welcome to Digital Artistry</li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <div class="container">
+            <!-- Lesson Header -->
+            <header>
+                <h1>🎨 Welcome to Digital Artistry!</h1>
+                <p class="lead">Welcome, aspiring artist! You're about to embark on an incredible creative journey. Whether you've never held a stylus before or you're coming from traditional art, this course will transform how you create. Let's discover the magic of digital art together!</p>
+                
+                <!-- Learning objectives -->
+                <div class="card">
+                    <h2>🎯 What You'll Discover in This Lesson</h2>
+                    <p>By the end of this welcome lesson, you'll understand:</p>
+                    <ul>
+                        <li>What makes digital art so powerful and unique</li>
+                        <li>Why digital art is accessible to everyone (yes, even you!)</li>
+                        <li>What you'll learn throughout this course</li>
+                        <li>How to approach learning digital art with confidence</li>
+                        <li>What to expect from your creative journey</li>
+                    </ul>
+                </div>
+            </header>
+
+            <!-- Table of Contents -->
+            <nav class="card" aria-label="Table of Contents">
+                <h2 style="cursor: pointer; user-select: none; display: flex; justify-content: space-between; align-items: center;" onclick="toggleTOC()">
+                    <span>📑 Table of Contents</span>
+                    <span id="toc-toggle-icon" style="transition: transform 0.3s;">▼</span>
+                </h2>
+                <ol id="toc-list" style="overflow: hidden; transition: max-height 0.3s ease-out; max-height: 500px; margin: 0; padding-left: 1.5rem;">
+                    <li><a href="#why-digital" class="toc-link">Why Digital Art?</a></li>
+                    <li><a href="#myths" class="toc-link">Breaking the Myths</a></li>
+                    <li><a href="#what-is-digital" class="toc-link">What Is Digital Art?</a></li>
+                    <li><a href="#magic" class="toc-link">The Magic of Digital Creation</a></li>
+                    <li><a href="#course-structure" class="toc-link">Your Learning Journey</a></li>
+                    <li><a href="#mindset" class="toc-link">The Right Mindset</a></li>
+                    <li><a href="#getting-started" class="toc-link">Getting Started Today</a></li>
+                    <li><a href="#next-steps" class="toc-link">What's Next?</a></li>
+                </ol>
+            </nav>
+
+            <!-- Section 1: Why Digital Art? -->
+            <section id="why-digital" class="lesson-section">
+                <h2>Why Digital Art? 🚀</h2>
+                
+                <p>Imagine having an infinite canvas that never runs out of space. A palette with every color imaginable. Brushes that can mimic oil, watercolor, charcoal, or create effects impossible in the physical world. The ability to undo any mistake, experiment fearlessly, and save every version of your work.</p>
+
+                <p><strong>That's digital art.</strong></p>
+
+                <blockquote>
+                    <strong>💭 Think about it:</strong> Traditional artists throughout history dreamed of having perfect control over their medium. Digital art gives you superpowers that Leonardo da Vinci, Van Gogh, and Rembrandt could only dream of. And the best part? You don't need an expensive studio or worry about paint drying!
+                </blockquote>
+
+                <h3>The Digital Art Revolution</h3>
+                
+                <p>We're living in an incredible time. Professional artists use the same tools you'll learn in this course to create:</p>
+
+                <div class="card">
+                    <ul>
+                        <li>🎬 <strong>Movie concept art</strong> - Marvel, Disney, and Pixar films</li>
+                        <li>🎮 <strong>Video game graphics</strong> - Every game you love</li>
+                        <li>📱 <strong>App and web design</strong> - The interfaces you use daily</li>
+                        <li>📚 <strong>Book illustrations</strong> - From children's books to graphic novels</li>
+                        <li>🎨 <strong>Fine art</strong> - Museum-quality digital paintings</li>
+                        <li>📊 <strong>Marketing and advertising</strong> - Billboards, posters, social media</li>
+                        <li>👕 <strong>Product design</strong> - T-shirts, merchandise, packaging</li>
+                    </ul>
+                </div>
+
+                <p>The skills you'll learn here open doors to creative careers and personal expression in ways that were impossible just a few decades ago.</p>
+
+                <div class="mermaid">
+                    graph LR
+                        A[Your Creativity] --> B[Digital Tools]
+                        B --> C[Infinite Possibilities]
+                        C --> D[Art]
+                        C --> E[Design]
+                        C --> F[Illustration]
+                        C --> G[Concept Art]
+                        C --> H[Personal Projects]
+                        
+                        style A fill:#667eea,stroke:#333,stroke-width:2px,color:#fff
+                        style B fill:#764ba2,stroke:#333,stroke-width:2px,color:#fff
+                        style C fill:#f093fb,stroke:#333,stroke-width:2px,color:#fff
+                </div>
+            </section>
+
+            <!-- Section 2: Breaking the Myths -->
+            <section id="myths" class="lesson-section">
+                <h2>Breaking the Myths 💪</h2>
+                
+                <p>Let's destroy some common myths about digital art right now. You might be thinking some of these things, and I'm here to tell you they're absolutely not true!</p>
+
+                <div class="card" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white;">
+                    <h3 style="color: white; margin-top: 0;">🚫 Myth #1: "Digital art is easier than traditional art"</h3>
+                    <p><strong>Reality:</strong> Digital art isn't easier or harder—it's <em>different</em>. You still need to understand fundamentals like color, light, composition, and form. The computer doesn't do the art for you; it's just a different set of tools. Think of it like this: a fancy camera doesn't make you a photographer, and Photoshop doesn't make you an artist. <strong>You</strong> make you an artist.</p>
+                </div>
+
+                <div class="card" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); color: white; margin-top: 1.5rem;">
+                    <h3 style="color: white; margin-top: 0;">🚫 Myth #2: "I can't draw, so I can't do digital art"</h3>
+                    <p><strong>Reality:</strong> Everyone starts as a beginner! Digital art actually has some advantages for beginners: unlimited undo, layers that let you experiment without destroying your work, and the ability to practice without buying expensive supplies. Many successful digital artists started with zero drawing experience. The question isn't whether you <em>can</em> learn—it's whether you <em>will</em> practice.</p>
+                </div>
+
+                <div class="card" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); color: white; margin-top: 1.5rem;">
+                    <h3 style="color: white; margin-top: 0;">🚫 Myth #3: "I need expensive software and equipment"</h3>
+                    <p><strong>Reality:</strong> While professional tools help, you can start learning digital art with free software like Krita and an affordable graphics tablet (or even an iPad with an Apple Pencil). Many successful artists create incredible work with basic tools. This course works with <em>any</em> digital painting software, free or paid.</p>
+                </div>
+
+                <div class="card" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); color: white; margin-top: 1.5rem;">
+                    <h3 style="color: white; margin-top: 0;">🚫 Myth #4: "Digital art isn't 'real' art"</h3>
+                    <p><strong>Reality:</strong> This outdated thinking is like saying photography isn't real art because you're not painting. Digital art requires the same artistic skills, creativity, and vision as any other medium. Museums display digital art, collectors buy it, and studios pay professional rates for it. It's as "real" as oil painting or sculpture—just a different medium.</p>
+                </div>
+
+                <blockquote style="margin-top: 2rem;">
+                    <strong>🌟 Here's the truth:</strong> If you can learn to ride a bike, cook a meal, or play a video game, you can learn digital art. It takes practice, patience, and persistence—but you absolutely <em>can</em> do this. I believe in you, and by the end of this course, you'll believe in yourself too.
+                </blockquote>
+            </section>
+
+            <!-- Section 3: What Is Digital Art? -->
+            <section id="what-is-digital" class="lesson-section">
+                <h2>What Is Digital Art, Really? 🎨</h2>
+                
+                <p>At its core, digital art is creating artwork using digital technology. But that simple definition doesn't capture the magic of what's actually happening.</p>
+
+                <h3>The Beautiful Truth About Digital Art</h3>
+                
+                <p>When you paint digitally, you're not just clicking buttons. You're:</p>
+
+                <div class="card">
+                    <ul>
+                        <li>🖌️ <strong>Making marks</strong> just like traditional artists—but with electromagnetic signals instead of physical paint</li>
+                        <li>🎨 <strong>Mixing colors</strong> based on the same color theory artists have used for centuries</li>
+                        <li>💡 <strong>Thinking about light</strong> the same way Caravaggio did</li>
+                        <li>📐 <strong>Composing images</strong> using principles unchanged since the Renaissance</li>
+                        <li>✨ <strong>Expressing yourself</strong> through visual language, just like any artist in history</li>
+                    </ul>
+                </div>
+
+                <p>The only difference? Your canvas is pixels instead of linen. Your paint is digital instead of oil. Your brush is a stylus instead of horsehair. But the <strong>art</strong>? That's all you.</p>
+
+                <h3>A Quick Analogy</h3>
+                
+                <canvas id="analog-digital-canvas" width="800" height="300" style="max-width: 100%; height: auto; border: 2px solid #ddd; border-radius: 8px; background: white;"></canvas>
+                
+                <script>
+                    const adCanvas = document.getElementById('analog-digital-canvas');
+                    const adCtx = adCanvas.getContext('2d');
+                    
+                    // Handle high DPI
+                    const adScale = window.devicePixelRatio || 1;
+                    adCanvas.width = 800 * adScale;
+                    adCanvas.height = 300 * adScale;
+                    adCtx.scale(adScale, adScale);
+                    
+                    // Traditional Art side
+                    adCtx.fillStyle = '#333';
+                    adCtx.font = 'bold 18px Arial';
+                    adCtx.textAlign = 'center';
+                    adCtx.fillText('Traditional Art', 200, 30);
+                    
+                    // Draw traditional tools
+                    adCtx.fillStyle = '#e74c3c';
+                    adCtx.fillRect(150, 60, 30, 80); // Paintbrush handle
+                    adCtx.beginPath();
+                    adCtx.moveTo(165, 60);
+                    adCtx.lineTo(155, 40);
+                    adCtx.lineTo(175, 40);
+                    adCtx.closePath();
+                    adCtx.fill();
+                    
+                    // Paint palette
+                    adCtx.fillStyle = '#8b4513';
+                    adCtx.beginPath();
+                    adCtx.ellipse(200, 180, 50, 30, 0, 0, Math.PI * 2);
+                    adCtx.fill();
+                    
+                    // Paint blobs
+                    const colors = ['#e74c3c', '#3498db', '#f1c40f'];
+                    colors.forEach((color, i) => {
+                        adCtx.fillStyle = color;
+                        adCtx.beginPath();
+                        adCtx.arc(180 + i * 25, 180, 8, 0, Math.PI * 2);
+                        adCtx.fill();
+                    });
+                    
+                    // Canvas
+                    adCtx.fillStyle = '#ecf0f1';
+                    adCtx.fillRect(140, 220, 80, 60);
+                    adCtx.strokeStyle = '#333';
+                    adCtx.lineWidth = 2;
+                    adCtx.strokeRect(140, 220, 80, 60);
+                    
+                    // Arrow in middle
+                    adCtx.strokeStyle = '#667eea';
+                    adCtx.lineWidth = 3;
+                    adCtx.beginPath();
+                    adCtx.moveTo(300, 150);
+                    adCtx.lineTo(500, 150);
+                    adCtx.stroke();
+                    
+                    // Arrowhead
+                    adCtx.fillStyle = '#667eea';
+                    adCtx.beginPath();
+                    adCtx.moveTo(500, 150);
+                    adCtx.lineTo(490, 145);
+                    adCtx.lineTo(490, 155);
+                    adCtx.closePath();
+                    adCtx.fill();
+                    
+                    // "Same Art" text
+                    adCtx.fillStyle = '#667eea';
+                    adCtx.font = 'bold 16px Arial';
+                    adCtx.fillText('Same Artistic Skills', 400, 140);
+                    adCtx.font = '14px Arial';
+                    adCtx.fillText('Different Tools', 400, 165);
+                    
+                    // Digital Art side
+                    adCtx.fillStyle = '#333';
+                    adCtx.font = 'bold 18px Arial';
+                    adCtx.fillText('Digital Art', 600, 30);
+                    
+                    // Draw tablet
+                    adCtx.fillStyle = '#2c3e50';
+                    adCtx.fillRect(530, 60, 140, 100);
+                    adCtx.fillStyle = '#ecf0f1';
+                    adCtx.fillRect(540, 70, 120, 80);
+                    
+                    // Stylus
+                    adCtx.fillStyle = '#34495e';
+                    adCtx.fillRect(620, 40, 6, 50);
+                    adCtx.beginPath();
+                    adCtx.moveTo(623, 90);
+                    adCtx.lineTo(620, 95);
+                    adCtx.lineTo(626, 95);
+                    adCtx.closePath();
+                    adCtx.fill();
+                    
+                    // Computer screen
+                    adCtx.fillStyle = '#34495e';
+                    adCtx.fillRect(540, 200, 120, 80);
+                    adCtx.fillStyle = '#3498db';
+                    adCtx.fillRect(545, 205, 110, 70);
+                    
+                    // Simple artwork on screen
+                    adCtx.fillStyle = '#f1c40f';
+                    adCtx.beginPath();
+                    adCtx.arc(600, 240, 20, 0, Math.PI * 2);
+                    adCtx.fill();
+                    
+                    // Labels
+                    adCtx.fillStyle = '#666';
+                    adCtx.font = '12px Arial';
+                    adCtx.fillText('Physical Tools', 200, 295);
+                    adCtx.fillText('Digital Tools', 600, 295);
+                </script>
+
+                <p style="text-align: center; color: #666; margin-top: 1rem;"><em>The tools change, but the artistic fundamentals remain the same</em></p>
+
+                <blockquote>
+                    <strong>🎯 Key Insight:</strong> Digital art isn't about replacing traditional art—it's about expanding what's possible. Many artists work in both mediums. The skills you learn here will make you a better artist <em>overall</em>, whether you eventually paint digitally, traditionally, or both.
+                </blockquote>
+            </section>
+
+            <!-- Section 4: The Magic of Digital Creation -->
+            <section id="magic" class="lesson-section">
+                <h2>The Magic of Digital Creation ✨</h2>
+                
+                <p>Alright, let me share some of the incredible things you can do with digital art that would be difficult or impossible with traditional media:</p>
+
+                <h3>Superpowers You'll Unlock</h3>
+
+                <div class="card" style="background: #f8f9fa;">
+                    <h4>⏮️ Infinite Undo</h4>
+                    <p>Made a mistake? Hit undo. Not just once—hundreds of times if needed. This single feature removes the fear of "ruining" your artwork. You can experiment boldly, knowing you can always go back.</p>
+                    
+                    <p><strong>Traditional equivalent:</strong> Imagine if you could rewind time on your canvas. That's essentially what Ctrl+Z gives you!</p>
+                </div>
+
+                <div class="card" style="background: #f8f9fa; margin-top: 1rem;">
+                    <h4>📚 Layers</h4>
+                    <p>Think of layers like transparent sheets of glass stacked on top of each other. You can draw on one sheet without affecting the others. This means you can:</p>
+                    <ul>
+                        <li>Sketch on one layer without worrying about erasing guidelines</li>
+                        <li>Paint the background separately from the foreground</li>
+                        <li>Try different color schemes without starting over</li>
+                        <li>Make adjustments to one part without touching the rest</li>
+                    </ul>
+                    
+                    <p><strong>Traditional equivalent:</strong> It's like having multiple canvases you can see through, rearrange, and edit independently. Something that would cost hundreds of dollars traditionally is just a button click digitally.</p>
+                </div>
+
+                <div class="card" style="background: #f8f9fa; margin-top: 1rem;">
+                    <h4>🎨 Infinite Colors</h4>
+                    <p>Traditional artists need to buy and mix paints. Digital artists have instant access to <strong>16.7 million colors</strong>. Every single shade imaginable, always perfectly mixed, never running out, never drying up.</p>
+                    
+                    <p><strong>The best part?</strong> You can save custom color palettes and reuse them across multiple artworks. No more trying to remember how you mixed that perfect purple!</p>
+                </div>
+
+                <div class="card" style="background: #f8f9fa; margin-top: 1rem;">
+                    <h4>🔄 Non-Destructive Editing</h4>
+                    <p>Want to adjust the lighting? Make colors warmer? Increase contrast? In traditional art, these changes mean repainting. Digitally, you can adjust these things <em>after</em> you've painted, and you can always change them back.</p>
+                    
+                    <p><strong>Traditional equivalent:</strong> Imagine painting a portrait, then being able to magically adjust all the shadows at once, or shift all the colors to be warmer without touching a brush. That's the power of adjustment layers.</p>
+                </div>
+
+                <div class="card" style="background: #f8f9fa; margin-top: 1rem;">
+                    <h4>♾️ Infinite Canvas</h4>
+                    <p>Ran out of space? Just make your canvas bigger! Need to create a massive mural-sized piece? No problem—digital canvases can be as large as you need (your computer's memory is the only limit, and that limit is pretty high).</p>
+                </div>
+
+                <div class="card" style="background: #f8f9fa; margin-top: 1rem;">
+                    <h4>💾 Save Everything</h4>
+                    <p>Save your work at different stages. Come back to it weeks later. Try different versions. Keep your source files forever without needing physical storage space. Your entire portfolio fits on a hard drive the size of your phone.</p>
+                </div>
+
+                <div class="mermaid">
+                    graph TD
+                        A[Your Idea] --> B[Digital Canvas]
+                        B --> C{Explore}
+                        C -->|Try Option 1| D[Version A]
+                        C -->|Try Option 2| E[Version B]
+                        C -->|Try Option 3| F[Version C]
+                        D --> G[Save All Versions]
+                        E --> G
+                        F --> G
+                        G --> H[Pick Your Favorite]
+                        H --> I[Keep Refining]
+                        I --> J[Final Masterpiece]
+                        
+                        style A fill:#667eea,stroke:#333,stroke-width:2px,color:#fff
+                        style J fill:#43e97b,stroke:#333,stroke-width:2px,color:#fff
+                </div>
+
+                <blockquote style="margin-top: 2rem;">
+                    <strong>💡 The Real Magic:</strong> All these features mean one thing—you can focus on <em>creating</em> instead of worrying about mistakes. Digital art gives you the freedom to experiment, play, and discover your style without the fear of wasting expensive materials or "ruining" your work.
+                </blockquote>
+            </section>
+
+            <!-- Section 5: Your Learning Journey -->
+            <section id="course-structure" class="lesson-section">
+                <h2>Your Learning Journey 🗺️</h2>
+                
+                <p>This course is structured to take you from absolute beginner to confident digital artist. Here's how we've organized your journey:</p>
+
+                <div class="card" style="border-left: 4px solid #f5576c;">
+                    <h3>🚀 Module 1: Foundation (4 Lessons)</h3>
+                    <p><strong>Where you are now!</strong> We'll cover the essential concepts that apply to <em>all</em> digital art software:</p>
+                    <ul>
+                        <li>✅ <strong>Welcome to Digital Artistry</strong> (you're here!)</li>
+                        <li>📐 <strong>Understanding Your Digital Canvas</strong> - Resolution, color modes, and file formats</li>
+                        <li>🖥️ <strong>Interface Fundamentals</strong> - Navigation patterns that work everywhere</li>
+                        <li>🛠️ <strong>Essential Digital Tools</strong> - Selection, transform, and universal operations</li>
+                    </ul>
+                    <p><em>After this module, you'll feel comfortable opening any digital painting software!</em></p>
+                </div>
+
+                <div class="card" style="border-left: 4px solid #4facfe; margin-top: 1.5rem;">
+                    <h3>🎨 Module 2: Core Skills (4 Lessons)</h3>
+                    <p>Building your digital painting foundation:</p>
+                    <ul>
+                        <li>🖌️ <strong>Brush Theory & Dynamics</strong> - How digital brushes work and pressure sensitivity</li>
+                        <li>📚 <strong>Layer Workflows</strong> - Mastering the power of layers and blend modes</li>
+                        <li>🌈 <strong>Color Science</strong> - Color theory specifically for digital artists</li>
+                        <li>✂️ <strong>Masking & Selection</strong> - Professional selection techniques</li>
+                    </ul>
+                    <p><em>These are the skills every professional digital artist uses every single day.</em></p>
+                </div>
+
+                <div class="card" style="border-left: 4px solid #43e97b; margin-top: 1.5rem;">
+                    <h3>🖼️ Module 3: Technique (4 Lessons)</h3>
+                    <p>Learning professional workflows:</p>
+                    <ul>
+                        <li>🎯 <strong>Digital Painting Workflow</strong> - From blank canvas to finished artwork</li>
+                        <li>💡 <strong>Lighting & Form</strong> - Understanding and rendering light</li>
+                        <li>🧱 <strong>Texture & Detail</strong> - Creating realistic surface qualities</li>
+                        <li>📁 <strong>File Management</strong> - Organizing and exporting like a pro</li>
+                    </ul>
+                    <p><em>By the end of this module, you'll be creating complete, polished artwork!</em></p>
+                </div>
+
+                <div class="card" style="border-left: 4px solid #f093fb; margin-top: 1.5rem;">
+                    <h3>⚡ Module 4: Advanced Topics (4 Lessons)</h3>
+                    <p>Taking your skills to the next level:</p>
+                    <ul>
+                        <li>⭐ <strong>Advanced Brush Customization</strong> - Creating your own unique brushes</li>
+                        <li>⚡ <strong>Speed Painting Techniques</strong> - Working faster without sacrificing quality</li>
+                        <li>🔄 <strong>Software Comparison</strong> - Understanding different applications</li>
+                        <li>🔧 <strong>Troubleshooting</strong> - Solving common problems</li>
+                    </ul>
+                    <p><em>You'll have professional-level skills applicable to any software!</em></p>
+                </div>
+
+                <h3 style="margin-top: 2rem;">How to Get the Most From This Course</h3>
+
+                <div class="card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+                    <h4 style="color: white; margin-top: 0;">📖 Read Actively</h4>
+                    <p>Don't just skim—really read and think about the concepts. Click on the interactive demos. Try to understand the "why" behind each technique, not just the "how."</p>
+                </div>
+
+                <div class="card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; margin-top: 1rem;">
+                    <h4 style="color: white; margin-top: 0;">✏️ Practice Immediately</h4>
+                    <p>After each lesson, open your digital art software and try what you learned. Even 10-15 minutes of practice is better than just reading. The muscle memory and understanding come from doing.</p>
+                </div>
+
+                <div class="card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; margin-top: 1rem;">
+                    <h4 style="color: white; margin-top: 0;">🔄 Repeat and Review</h4>
+                    <p>Don't be afraid to go back to earlier lessons. Mastery comes from repetition. Each time you review, you'll notice things you missed before and understand concepts more deeply.</p>
+                </div>
+
+                <div class="card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; margin-top: 1rem;">
+                    <h4 style="color: white; margin-top: 0;">🎨 Create Personal Projects</h4>
+                    <p>Apply what you learn to something YOU want to create. The lessons provide the techniques, but your own projects provide the motivation and real learning.</p>
+                </div>
+
+                <div class="card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; margin-top: 1rem;">
+                    <h4 style="color: white; margin-top: 0;">🌱 Be Patient With Yourself</h4>
+                    <p>You're learning a completely new skill set. Some things will click immediately; others might take time. That's completely normal and part of the process. Progress isn't always linear, but it's always happening.</p>
+                </div>
+            </section>
+
+            <!-- Section 6: The Right Mindset -->
+            <section id="mindset" class="lesson-section">
+                <h2>The Right Mindset 🧠</h2>
+                
+                <p>Before we dive into the technical stuff, let's talk about mindset—because honestly, this might be the most important lesson in the entire course.</p>
+
+                <h3>The Growth Mindset for Artists</h3>
+
+                <canvas id="mindset-canvas" width="800" height="400" style="max-width: 100%; height: auto; border: 2px solid #ddd; border-radius: 8px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></canvas>
+                
+                <script>
+                    const msCanvas = document.getElementById('mindset-canvas');
+                    const msCtx = msCanvas.getContext('2d');
+                    
+                    // Handle high DPI
+                    const msScale = window.devicePixelRatio || 1;
+                    msCanvas.width = 800 * msScale;
+                    msCanvas.height = 400 * msScale;
+                    msCtx.scale(msScale, msScale);
+                    
+                    // Title
+                    msCtx.fillStyle = 'white';
+                    msCtx.font = 'bold 24px Arial';
+                    msCtx.textAlign = 'center';
+                    msCtx.fillText('Your Artistic Journey', 400, 40);
+                    
+                    // Draw path
+                    msCtx.strokeStyle = 'rgba(255, 255, 255, 0.5)';
+                    msCtx.lineWidth = 4;
+                    msCtx.setLineDash([10, 5]);
+                    msCtx.beginPath();
+                    msCtx.moveTo(50, 350);
+                    msCtx.quadraticCurveTo(200, 250, 250, 280);
+                    msCtx.quadraticCurveTo(300, 310, 350, 220);
+                    msCtx.quadraticCurveTo(400, 130, 450, 180);
+                    msCtx.quadraticCurveTo(500, 230, 550, 150);
+                    msCtx.quadraticCurveTo(600, 70, 750, 100);
+                    msCtx.stroke();
+                    msCtx.setLineDash([]);
+                    
+                    // Starting point
+                    msCtx.fillStyle = '#43e97b';
+                    msCtx.beginPath();
+                    msCtx.arc(50, 350, 15, 0, Math.PI * 2);
+                    msCtx.fill();
+                    msCtx.fillStyle = 'white';
+                    msCtx.font = 'bold 14px Arial';
+                    msCtx.textAlign = 'left';
+                    msCtx.fillText('Start Here', 70, 355);
+                    msCtx.font = '12px Arial';
+                    msCtx.fillText('(Complete Beginner)', 70, 370);
+                    
+                    // Checkpoint 1
+                    msCtx.fillStyle = '#f1c40f';
+                    msCtx.beginPath();
+                    msCtx.arc(250, 280, 12, 0, Math.PI * 2);
+                    msCtx.fill();
+                    msCtx.fillStyle = 'white';
+                    msCtx.font = '12px Arial';
+                    msCtx.textAlign = 'center';
+                    msCtx.fillText('First Artwork', 250, 310);
+                    
+                    // Checkpoint 2
+                    msCtx.fillStyle = '#e67e22';
+                    msCtx.beginPath();
+                    msCtx.arc(350, 220, 12, 0, Math.PI * 2);
+                    msCtx.fill();
+                    msCtx.fillText('Understanding Basics', 350, 250);
+                    
+                    // Checkpoint 3
+                    msCtx.fillStyle = '#e74c3c';
+                    msCtx.beginPath();
+                    msCtx.arc(450, 180, 12, 0, Math.PI * 2);
+                    msCtx.fill();
+                    msCtx.fillText('Developing Style', 450, 210);
+                    
+                    // Checkpoint 4
+                    msCtx.fillStyle = '#9b59b6';
+                    msCtx.beginPath();
+                    msCtx.arc(550, 150, 12, 0, Math.PI * 2);
+                    msCtx.fill();
+                    msCtx.fillText('Confident Artist', 550, 180);
+                    
+                    // End point (star)
+                    msCtx.fillStyle = '#f093fb';
+                    msCtx.beginPath();
+                    const starX = 750, starY = 100, spikes = 5, outerRadius = 20, innerRadius = 10;
+                    let rot = Math.PI / 2 * 3;
+                    let x = starX;
+                    let y = starY;
+                    const step = Math.PI / spikes;
+                    
+                    msCtx.moveTo(starX, starY - outerRadius);
+                    for (let i = 0; i < spikes; i++) {
+                        x = starX + Math.cos(rot) * outerRadius;
+                        y = starY + Math.sin(rot) * outerRadius;
+                        msCtx.lineTo(x, y);
+                        rot += step;
+                        
+                        x = starX + Math.cos(rot) * innerRadius;
+                        y = starY + Math.sin(rot) * innerRadius;
+                        msCtx.lineTo(x, y);
+                        rot += step;
+                    }
+                    msCtx.lineTo(starX, starY - outerRadius);
+                    msCtx.closePath();
+                    msCtx.fill();
+                    
+                    msCtx.fillStyle = 'white';
+                    msCtx.textAlign = 'right';
+                    msCtx.font = 'bold 14px Arial';
+                    msCtx.fillText('Your Goals', 730, 95);
+                    
+                    // Note at bottom
+                    msCtx.font = 'italic 14px Arial';
+                    msCtx.textAlign = 'center';
+                    msCtx.fillText('Progress is not linear - expect ups and downs!', 400, 385);
+                </script>
+
+                <h3 style="margin-top: 2rem;">Essential Mindset Principles</h3>
+
+                <div class="card">
+                    <h4>1. Embrace Being a Beginner</h4>
+                    <p>Every master artist you admire was once exactly where you are now. They made terrible drawings. They struggled with the same tools you're learning. The difference? They kept going.</p>
+                    
+                    <blockquote>
+                        "Sucking at something is the first step to becoming sorta good at something." — Jake the Dog
+                    </blockquote>
+                    
+                    <p>Give yourself permission to create "bad" art. Every bad piece is a stepping stone to a good one. The only way to get better is to create a lot of work—and most of it won't be great at first. That's not just okay, it's necessary!</p>
+                </div>
+
+                <div class="card" style="margin-top: 1.5rem;">
+                    <h4>2. Focus on Progress, Not Perfection</h4>
+                    <p>Don't compare your beginning to someone else's middle or end. Compare yourself to YOU from last week, last month, last year. That's where you'll see real progress.</p>
+                    
+                    <p>Ask yourself:</p>
+                    <ul>
+                        <li>"Did I learn something new today?" ✅</li>
+                        <li>"Am I a little better than yesterday?" ✅</li>
+                        <li>"Did I practice?" ✅</li>
+                    </ul>
+                    
+                    <p>If you answered yes to any of these, you're winning!</p>
+                </div>
+
+                <div class="card" style="margin-top: 1.5rem;">
+                    <h4>3. Celebrate Small Wins</h4>
+                    <p>Drew your first line? Celebrate! Figured out how to use layers? That's huge! Created something that looks even slightly like what you imagined? You're officially making progress!</p>
+                    
+                    <p>Digital art is built on thousands of small skills. Each one you master is worth celebrating.</p>
+                </div>
+
+                <div class="card" style="margin-top: 1.5rem;">
+                    <h4>4. Mistakes Are Your Teachers</h4>
+                    <p>In traditional art, mistakes can be frustrating because they're permanent. In digital art, mistakes are cheap! Made a weird color choice? Undo. Drew something wonky? Delete and try again. Used the wrong tool? Learn from it and move on.</p>
+                    
+                    <p><strong>The fastest way to learn is to make mistakes quickly and learn from them.</strong> Don't be afraid to experiment and "break" things. You literally cannot break your computer by painting badly!</p>
+                </div>
+
+                <div class="card" style="margin-top: 1.5rem;">
+                    <h4>5. Consistency Beats Intensity</h4>
+                    <p>It's better to practice 15 minutes every day than 3 hours once a week. Your brain builds neural pathways through repetition, not marathons.</p>
+                    
+                    <p><strong>The secret formula:</strong></p>
+                    <ul>
+                        <li>Daily practice > Perfect practice</li>
+                        <li>Small progress > Big plans</li>
+                        <li>Showing up > Natural talent</li>
+                    </ul>
+                </div>
+
+                <blockquote style="margin-top: 2rem;">
+                    <strong>🌟 Remember:</strong> You don't need to be naturally talented to become a great digital artist. You need to be curious, persistent, and willing to practice. Those are choices, not gifts. You can choose to be an artist right now, today, in this moment.
+                </blockquote>
+            </section>
+
+            <!-- Section 7: Getting Started Today -->
+            <section id="getting-started" class="lesson-section">
+                <h2>Getting Started Today 🎯</h2>
+                
+                <p>Alright, enough philosophy—let's talk practical steps! Here's what you should do right now to set yourself up for success:</p>
+
+                <div class="card" style="background: #e8f5e9;">
+                    <h3>Step 1: Choose Your Software</h3>
+                    <p>Don't overthink this! Pick one of these to start:</p>
+                    
+                    <div style="margin: 1rem 0;">
+                        <strong>Free Options (Perfect for Beginners):</strong>
+                        <ul>
+                            <li>🎨 <strong>Krita</strong> - Powerful, free, works on Windows/Mac/Linux. <a href="https://krita.org" target="_blank">Download here</a></li>
+                            <li>🖌️ <strong>GIMP with MyPaint Brushes</strong> - Free alternative to Photoshop</li>
+                            <li>📱 <strong>MediBang Paint</strong> - Free, works on mobile too</li>
+                        </ul>
+                    </div>
+                    
+                    <div style="margin: 1rem 0;">
+                        <strong>Paid Options (If You Have Budget):</strong>
+                        <ul>
+                            <li>🔷 <strong>Adobe Photoshop</strong> - Industry standard ($10-20/month)</li>
+                            <li>📱 <strong>Procreate</strong> - iPad only, one-time $13 purchase</li>
+                            <li>🎨 <strong>Clip Studio Paint</strong> - Great for illustration ($50 one-time or subscription)</li>
+                            <li>⚡ <strong>PaintStorm Studio</strong> - Powerful brush engine ($19 one-time)</li>
+                        </ul>
+                    </div>
+                    
+                    <p><strong>My recommendation for beginners?</strong> Start with Krita. It's free, powerful, and everything in this course applies to it. You can always switch later!</p>
+                </div>
+
+                <div class="card" style="background: #e3f2fd; margin-top: 1.5rem;">
+                    <h3>Step 2: Get a Drawing Tablet (If Possible)</h3>
+                    <p>While you can technically use a mouse, digital art is much more enjoyable with a pressure-sensitive tablet or stylus.</p>
+                    
+                    <div style="margin: 1rem 0;">
+                        <strong>Budget-Friendly Tablets ($30-80):</strong>
+                        <ul>
+                            <li>Wacom One (Small)</li>
+                            <li>Huion H610 Pro</li>
+                            <li>XP-Pen Deco 01</li>
+                        </ul>
+                    </div>
+                    
+                    <div style="margin: 1rem 0;">
+                        <strong>Mid-Range ($100-300):</strong>
+                        <ul>
+                            <li>Wacom Intuos Pro</li>
+                            <li>Huion Kamvas Pro</li>
+                            <li>iPad (9th gen) with Apple Pencil</li>
+                        </ul>
+                    </div>
+                    
+                    <div style="margin: 1rem 0;">
+                        <strong>Premium ($300+):</strong>
+                        <ul>
+                            <li>iPad Pro with Apple Pencil</li>
+                            <li>Wacom Cintiq</li>
+                            <li>Huion Kamvas Display Tablets</li>
+                        </ul>
+                    </div>
+                    
+                    <p><strong>Can't afford a tablet yet?</strong> That's okay! Start learning with a mouse. You can still learn the concepts, practice navigation, and understand the fundamentals. When you get a tablet later, you'll already know the software.</p>
+                </div>
+
+                <div class="card" style="background: #fff3e0; margin-top: 1.5rem;">
+                    <h3>Step 3: Set Up Your Workspace</h3>
+                    <p>Create a comfortable environment for creating:</p>
+                    <ul>
+                        <li>🪑 <strong>Comfortable seating</strong> - You'll be here a while!</li>
+                        <li>💡 <strong>Good lighting</strong> - Prevents eye strain</li>
+                        <li>📱 <strong>Reference images nearby</strong> - Keep inspiration handy</li>
+                        <li>🔇 <strong>Minimize distractions</strong> - Put your phone on silent</li>
+                        <li>🎵 <strong>Optional: Music or podcasts</strong> - Some artists love background audio</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="background: #f3e5f5; margin-top: 1.5rem;">
+                    <h3>Step 4: Create a Practice Schedule</h3>
+                    <p>Decide when you'll practice. Even 15 minutes daily is better than waiting for "enough time."</p>
+                    
+                    <p><strong>Example schedules:</strong></p>
+                    <ul>
+                        <li>🌅 <strong>Morning person:</strong> 20 minutes before work/school</li>
+                        <li>🌆 <strong>Evening person:</strong> 30 minutes after dinner</li>
+                        <li>📅 <strong>Weekend warrior:</strong> 1-2 hours on Saturday & Sunday</li>
+                        <li>🍝 <strong>Lunch break:</strong> 15 minutes while eating</li>
+                    </ul>
+                    
+                    <p>The key is <strong>consistency</strong>. Find a time that works for YOU and protect it!</p>
+                </div>
+
+                <div class="card" style="background: #fce4ec; margin-top: 1.5rem;">
+                    <h3>Step 5: Complete Your First Exercise</h3>
+                    <p>Right after this lesson, open your digital art software and do this simple exercise:</p>
+                    
+                    <div style="background: white; padding: 1rem; border-left: 4px solid #e91e63; margin: 1rem 0;">
+                        <strong>🎯 First Exercise: "Hello, Digital Art!"</strong>
+                        <ol style="list-style-position: inside;">
+                            <li>Open your software and create a new canvas (any size)</li>
+                            <li>Find the brush tool</li>
+                            <li>Choose a color you like</li>
+                            <li>Draw anything—literally anything! Circles, lines, your name, a smiley face</li>
+                            <li>Try different colors</li>
+                            <li>Try different brush sizes</li>
+                            <li>Save your file when you're done</li>
+                        </ol>
+                        
+                        <p style="margin-top: 1rem;"><strong>Goal:</strong> Not to create something beautiful, but to get comfortable touching the tools. That's it!</p>
+                    </div>
+                    
+                    <p>This might seem too simple, but it's important. You're building familiarity with your software. Every expert started exactly here.</p>
+                </div>
+            </section>
+
+            <!-- Section 8: What's Next? -->
+            <section id="next-steps" class="lesson-section">
+                <h2>What's Next? 🚀</h2>
+                
+                <p>Congratulations! You've completed your first lesson. You now understand what digital art is, why it's amazing, and what you'll learn in this course. That's a bigger deal than you might think—you've taken the first step!</p>
+
+                <div class="card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+                    <h3 style="color: white; margin-top: 0;">Your Next Lesson: Understanding Your Digital Canvas</h3>
+                    <p>In the next lesson, we'll dive into the technical foundation of digital art. You'll learn:</p>
+                    <ul>
+                        <li>What resolution really means and why it matters</li>
+                        <li>How to choose the right canvas size for your project</li>
+                        <li>Understanding color modes (RGB, CMYK, etc.)</li>
+                        <li>File formats and when to use each one</li>
+                        <li>Setting up your first "real" project properly</li>
+                    </ul>
+                    <p><strong>This is crucial foundation stuff</strong> that will prevent many headaches later!</p>
+                </div>
+
+                <h3 style="margin-top: 2rem;">Before You Move On...</h3>
+
+                <div class="card">
+                    <h4>✅ Action Checklist</h4>
+                    <p>Make sure you've done these things before continuing:</p>
+                    <ul>
+                        <li>[ ] Downloaded and installed your chosen digital art software</li>
+                        <li>[ ] Set up your drawing tablet (if you have one)</li>
+                        <li>[ ] Completed the "Hello, Digital Art!" exercise</li>
+                        <li>[ ] Decided on your practice schedule</li>
+                        <li>[ ] Set up a comfortable workspace</li>
+                        <li>[ ] Bookmarked this course for easy access</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="background: #e8f5e9; margin-top: 1.5rem;">
+                    <h4>💬 A Final Word of Encouragement</h4>
+                    <p>Learning digital art is a journey, not a destination. There will be days when everything clicks and you feel like a genius. There will also be days when you feel like you'll never get it. Both are normal!</p>
+                    
+                    <p>The artists you admire didn't get there overnight. They practiced, struggled, improved, plateaued, and pushed through. You're starting that same journey now, and I'm honored to be your guide.</p>
+                    
+                    <p><strong>I believe in you.</strong> Not because you're naturally talented (I don't know if you are), but because you showed up. You're here, reading this, ready to learn. That's what matters.</p>
+                    
+                    <p>Now let's create something amazing together! 🎨✨</p>
+                </div>
+
+                <blockquote style="margin-top: 2rem;">
+                    <strong>🎯 Remember:</strong> The goal isn't to become the "best" artist. The goal is to become YOUR best version as an artist. Focus on your own growth, celebrate your progress, and enjoy the creative process. The rest will follow.
+                </blockquote>
+            </section>
+
+            <!-- Lesson Navigation -->
+            <nav class="lesson-nav" aria-label="Lesson Navigation">
+                <a href="index.html" class="prev-lesson">← Back to Course Home</a>
+                <a href="index.html" class="home-link">🏠 Course Home</a>
+                <a href="digital_canvas_basics.html" class="next-lesson">Next: Understanding Your Digital Canvas →</a>
+            </nav>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer style="text-align: center; padding: 2rem; margin-top: 4rem; border-top: 1px solid var(--border-color);">
+        <p>&copy; 2024 Universal Digital Artistry Foundations. Created with 💖 for aspiring digital artists everywhere.</p>
+        <p><small>Remember: Every master was once a beginner. Your journey starts now!</small></p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/clipboard.js"></script>
+    <script src="js/course-enhancements.js"></script>
+    
+    <script>
+        // Toggle Table of Contents
+        function toggleTOC() {
+            const tocList = document.getElementById('toc-list');
+            const tocIcon = document.getElementById('toc-toggle-icon');
+            
+            if (tocList.style.maxHeight === '0px' || tocList.style.maxHeight === '') {
+                tocList.style.maxHeight = '500px';
+                tocIcon.style.transform = 'rotate(0deg)';
+                localStorage.setItem('tocState', 'expanded');
+            } else {
+                tocList.style.maxHeight = '0px';
+                tocIcon.style.transform = 'rotate(-90deg)';
+                localStorage.setItem('tocState', 'collapsed');
+            }
+        }
+        
+        // Initialize TOC state from localStorage
+        document.addEventListener('DOMContentLoaded', () => {
+            const tocState = localStorage.getItem('tocState');
+            if (tocState === 'collapsed') {
+                const tocList = document.getElementById('toc-list');
+                const tocIcon = document.getElementById('toc-toggle-icon');
+                tocList.style.maxHeight = '0px';
+                tocIcon.style.transform = 'rotate(-90deg)';
+            }
+        });
+    </script>
+</body>
+</html>
