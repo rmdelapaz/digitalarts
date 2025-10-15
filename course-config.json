@@ -648,6 +648,383 @@
   },
   
   "lessonDetails": {
+    "painting_workflow": {
+      "fullTitle": "Digital Painting Workflow",
+      "lessonNumber": "3-1",
+      "module": "Technique Module",
+      "status": "complete",
+      "fragments": {
+        "total": 5,
+        "completed": ["a", "b", "c", "d", "e"],
+        "inProgress": null
+      },
+      "contentOutline": [
+        {
+          "section": "The Complete Workflow Overview",
+          "topics": [
+            "The six stages of digital painting",
+            "Stage-by-stage breakdown",
+            "The non-linear reality",
+            "Time investment by stage",
+            "The workflow mindset"
+          ]
+        },
+        {
+          "section": "Stage 1: Planning & Preparation",
+          "topics": [
+            "Why planning matters",
+            "Define your concept",
+            "Gather references",
+            "Canvas setup",
+            "Reference board setup",
+            "Planning stage checklist"
+          ]
+        },
+        {
+          "section": "Stage 2: Initial Sketch & Composition",
+          "topics": [
+            "Purpose of the sketch stage",
+            "Composition fundamentals",
+            "The sketching process",
+            "Common sketch stage mistakes",
+            "Sketching techniques by software",
+            "Sketch completion checklist"
+          ]
+        },
+        {
+          "section": "Stage 3: Value Block-In",
+          "topics": [
+            "Why values matter more than color",
+            "Understanding the value scale",
+            "The value block-in process",
+            "Value painting techniques",
+            "Common value stage mistakes",
+            "The squint test",
+            "Value stage completion checklist"
+          ]
+        },
+        {
+          "section": "Stage 4: Color Application",
+          "topics": [
+            "Color-over-values advantage",
+            "Color application methods",
+            "The color application process",
+            "Color harmony strategies",
+            "Common color stage mistakes",
+            "Software-specific color tips",
+            "Testing your colors",
+            "Color stage completion checklist"
+          ]
+        },
+        {
+          "section": "Stage 5: Rendering & Detail",
+          "topics": [
+            "Understanding rendering",
+            "The focal point strategy",
+            "The rendering process",
+            "Rendering techniques by subject",
+            "Common rendering mistakes",
+            "Professional rendering techniques",
+            "Rendering completion checklist",
+            "Avoiding burnout during rendering"
+          ]
+        },
+        {
+          "section": "Stage 6: Finishing Touches",
+          "topics": [
+            "The purpose of finishing",
+            "The finishing toolkit",
+            "The finishing process",
+            "Knowing when to stop",
+            "Finishing checklist"
+          ]
+        },
+        {
+          "section": "Layer Organization Strategies",
+          "topics": [
+            "Professional layer structure",
+            "Layer naming conventions",
+            "Layer management tips"
+          ]
+        },
+        {
+          "section": "Workflow Variations by Genre",
+          "topics": [
+            "Portrait workflow",
+            "Landscape workflow",
+            "Creature/fantasy workflow",
+            "Concept art workflow",
+            "Stylized/anime workflow"
+          ]
+        },
+        {
+          "section": "Troubleshooting Common Problems",
+          "topics": [
+            "Problem-solution guide",
+            "Flat paintings",
+            "Muddy colors",
+            "Weak focal points",
+            "Lack of energy",
+            "Proportions issues",
+            "Overworking"
+          ]
+        },
+        {
+          "section": "Professional Efficiency Tips",
+          "topics": [
+            "Keyboard shortcuts",
+            "Custom workspaces",
+            "Brush presets",
+            "Reference setup",
+            "Time boxing",
+            "Decision making",
+            "Building speed over time"
+          ]
+        }
+      ],
+      "learningObjectives": [
+        "Understand the complete digital painting process from start to finish",
+        "Plan and prepare canvas and references effectively",
+        "Create strong initial sketches and compositions",
+        "Block in values and establish form efficiently",
+        "Refine details without losing sight of the big picture",
+        "Apply professional finishing techniques",
+        "Organize layers and files for maximum flexibility",
+        "Develop personalized workflow variations",
+        "Troubleshoot common workflow problems",
+        "Work efficiently across any digital painting software"
+      ],
+      "keyTerminology": [
+        "Workflow",
+        "Planning",
+        "Composition",
+        "Value block-in",
+        "Color application",
+        "Rendering",
+        "Finishing",
+        "Focal point",
+        "Detail hierarchy",
+        "Non-destructive workflow",
+        "Layer organization",
+        "Squint test",
+        "Dodge and burn",
+        "Color grading",
+        "Vignette",
+        "Edge quality"
+      ],
+      "exercises": [
+        {
+          "title": "Complete Workflow Practice",
+          "description": "Create one painting following all six stages exactly as taught"
+        },
+        {
+          "title": "Value Study Series",
+          "description": "Complete 5 grayscale paintings focusing only on stages 1-3"
+        },
+        {
+          "title": "Workflow Timing",
+          "description": "Time yourself through each stage, track where you spend most time"
+        },
+        {
+          "title": "Genre Variation",
+          "description": "Apply workflow to portrait, landscape, and creature—note differences"
+        },
+        {
+          "title": "10 Painting Challenge",
+          "description": "Complete 10 paintings using workflow—watch it become automatic"
+        }
+      ],
+      "commonMistakes": [
+        "Skipping planning stage",
+        "Not spending enough time on sketch",
+        "Adding color before values are solid",
+        "Detailing everything equally",
+        "Working too zoomed in during rendering",
+        "Not knowing when to stop",
+        "Poor layer organization",
+        "Rushing through stages"
+      ],
+      "proTips": [
+        "10 minutes planning saves hours of fixing",
+        "Value does 80% of heavy lifting",
+        "80% of detail in 20% of painting (focal point)",
+        "Zoom out every 5-10 minutes during rendering",
+        "Take breaks between stages for fresh perspective",
+        "Done is better than perfect",
+        "Name layers as you create them",
+        "Save versions at each major stage"
+      ]
+    },
+    "lighting_form": {
+      "fullTitle": "Lighting & Form Fundamentals",
+      "lessonNumber": "3-2",
+      "module": "Technique Module",
+      "status": "complete",
+      "fragments": {
+        "total": 4,
+        "completed": ["a", "b", "c", "d"],
+        "inProgress": null
+      },
+      "contentOutline": [
+        {
+          "section": "Understanding Light: The Basics",
+          "topics": [
+            "What is light",
+            "How light behaves",
+            "Local value vs light effect"
+          ]
+        },
+        {
+          "section": "The Form Principle",
+          "topics": [
+            "How we perceive form",
+            "Gradient-to-form relationship",
+            "The five basic forms",
+            "The terminator"
+          ]
+        },
+        {
+          "section": "Components of Light & Shadow",
+          "topics": [
+            "The seven components system",
+            "Light side components",
+            "Shadow side components",
+            "Value hierarchy"
+          ]
+        },
+        {
+          "section": "Types of Light Sources",
+          "topics": [
+            "Hard light vs soft light",
+            "Natural light sources",
+            "Artificial light sources",
+            "Multiple light sources"
+          ]
+        },
+        {
+          "section": "Color Temperature in Lighting",
+          "topics": [
+            "What is color temperature",
+            "Warm light cool shadow principle",
+            "Applying color temperature",
+            "Color temperature mistakes",
+            "Color temperature by mood"
+          ]
+        },
+        {
+          "section": "How Light Interacts with Surfaces",
+          "topics": [
+            "Material properties spectrum",
+            "Common material types",
+            "Subsurface scattering",
+            "Material quick reference"
+          ]
+        },
+        {
+          "section": "Rendering Basic Forms",
+          "topics": [
+            "Rendering a sphere",
+            "Rendering cylinder, cube, cone, plane"
+          ]
+        },
+        {
+          "section": "Using Light for Mood & Atmosphere",
+          "topics": [
+            "Lighting patterns and moods",
+            "Atmospheric effects"
+          ]
+        },
+        {
+          "section": "Common Lighting Mistakes",
+          "topics": [
+            "Top lighting pitfalls",
+            "Solutions for each mistake"
+          ]
+        },
+        {
+          "section": "Training Your Eye to See Light",
+          "topics": [
+            "Observation exercises",
+            "Daily practice routine",
+            "Using photography to study light"
+          ]
+        }
+      ],
+      "learningObjectives": [
+        "Understand how light behaves in the physical world",
+        "Identify and render the core components of light and shadow",
+        "Create convincing three-dimensional form through value",
+        "Work with different types of light sources",
+        "Apply color temperature to lighting",
+        "Render various surface materials accurately",
+        "Use lighting to create mood and atmosphere",
+        "Avoid common lighting mistakes",
+        "See light like an artist in everyday life",
+        "Apply lighting principles across any style or subject"
+      ],
+      "keyTerminology": [
+        "Light",
+        "Form",
+        "Value",
+        "Local value",
+        "Highlight",
+        "Direct light",
+        "Terminator",
+        "Core shadow",
+        "Reflected light",
+        "Cast shadow",
+        "Occlusion shadow",
+        "Hard light",
+        "Soft light",
+        "Color temperature",
+        "Subsurface scattering",
+        "Specular reflection",
+        "Diffuse reflection",
+        "Atmospheric perspective"
+      ],
+      "exercises": [
+        {
+          "title": "Five Basic Forms Study",
+          "description": "Render sphere, cylinder, cube, cone, and plane with proper lighting"
+        },
+        {
+          "title": "Sphere Marathon",
+          "description": "Paint 20 spheres with different light sources and materials"
+        },
+        {
+          "title": "Color Temperature Study",
+          "description": "Paint same object with warm light/cool shadow and cool light/warm shadow"
+        },
+        {
+          "title": "Material Studies",
+          "description": "Paint same sphere as matte, glossy, metal, and glass"
+        },
+        {
+          "title": "Real-World Observation",
+          "description": "Identify all seven light components in 10 real-world objects"
+        }
+      ],
+      "commonMistakes": [
+        "No defined light source",
+        "Reflected light too bright",
+        "Pure black shadows",
+        "Highlights everywhere",
+        "Ignoring cast shadows",
+        "Inconsistent light direction",
+        "Wrong terminator softness",
+        "Ignoring color temperature"
+      ],
+      "proTips": [
+        "Form is created by value transitions, not lines",
+        "The terminator is the most important edge",
+        "Reflected light is always darker than midtones",
+        "Warm light creates cool shadows (and vice versa)",
+        "Paint 20 spheres to master lighting fundamentals",
+        "Observe light in daily life constantly",
+        "Get the terminator right, everything else follows",
+        "Squint to see big value shapes"
+      ]
+    },
     "layer_workflows": {
       "fullTitle": "Layer Workflows & Compositing",
       "lessonNumber": "2-2",

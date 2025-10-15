@@ -1,0 +1,2055 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Master lighting and form fundamentals - Learn how light behaves, how to render realistic shadows, and create convincing three-dimensional forms in your digital artwork across all software">
+    <meta name="author" content="Digital Artistry Course">
+    <title>Lighting & Form Fundamentals - Universal Digital Art Course</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-to-main">Skip to main content</a>
+    
+    <!-- Progress indicator -->
+    <div class="progress-indicator" role="progressbar" aria-label="Page scroll progress">
+        <div class="progress-bar"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">🎨 Digital Artistry</a>
+            <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-expanded="false" aria-controls="nav-links">
+                ☰
+            </button>
+            <div class="nav-links" id="nav-links" aria-hidden="false">
+                <a href="index.html">Home</a>
+                <a href="index.html#modules">All Lessons</a>
+                <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#modules">Technique Module</a></li>
+            <li aria-current="page">Lighting & Form Fundamentals</li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <div class="container">
+            <!-- Lesson Header -->
+            <header>
+                <h1>💡 Lighting & Form Fundamentals</h1>
+                <p class="lead">Welcome to one of the most transformative lessons in digital art! Understanding light isn't just about making things bright or dark—it's the key to creating <strong>believable three-dimensional form</strong> on a flat screen. Master lighting, and suddenly your paintings will have depth, dimension, and life. This lesson will teach you how light actually behaves, how to see it in the world around you, and how to render it convincingly in any style, any subject, any software!</p>
+                
+                <!-- Learning objectives -->
+                <div class="card">
+                    <h2>🎯 What You'll Learn</h2>
+                    <p>By the end of this lesson, you'll be able to:</p>
+                    <ul>
+                        <li>Understand how light behaves in the physical world</li>
+                        <li>Identify and render the core components of light and shadow</li>
+                        <li>Create convincing three-dimensional form through value</li>
+                        <li>Work with different types of light sources and their characteristics</li>
+                        <li>Apply color temperature to lighting for enhanced realism</li>
+                        <li>Render various surface materials accurately</li>
+                        <li>Use lighting to create mood and atmosphere</li>
+                        <li>Avoid common lighting mistakes that make paintings look flat</li>
+                        <li>See light like an artist in everyday life</li>
+                        <li>Apply lighting principles across any painting style or subject</li>
+                    </ul>
+                </div>
+
+                <!-- Universal Approach Card -->
+                <div class="card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+                    <h3 style="color: white; margin-top: 0;">🌍 Universal Light Principles</h3>
+                    <p><strong>Here's the beautiful truth:</strong> Light behaves the same way whether you're painting in Photoshop, Krita, Procreate, or with traditional oils!</p>
+                    <p>The principles you'll learn are <strong>physics-based and universal</strong>—they work everywhere:</p>
+                    <ul style="columns: 2; column-gap: 2rem;">
+                        <li>✅ Digital painting (all software)</li>
+                        <li>✅ Traditional painting</li>
+                        <li>✅ 3D rendering</li>
+                        <li>✅ Photography</li>
+                        <li>✅ Realistic styles</li>
+                        <li>✅ Stylized/cartoon styles</li>
+                        <li>✅ Any subject matter</li>
+                        <li>✅ Any genre</li>
+                    </ul>
+                    <p style="margin-bottom: 0;"><strong>Master lighting once, use it everywhere!</strong> These aren't software tricks—they're fundamental principles of how we see the world.</p>
+                </div>
+
+                <!-- Why Lighting Matters -->
+                <div class="card" style="background: #fff3e0;">
+                    <h3>💡 Why Lighting Changes Everything</h3>
+                    <p>Two artists with identical drawing skills. One understands lighting, one doesn't. The results are night and day:</p>
+                    
+                    <h4 style="color: #d32f2f;">❌ Without Understanding Light</h4>
+                    <ul>
+                        <li>Forms look flat, like paper cutouts</li>
+                        <li>Colors feel disconnected and arbitrary</li>
+                        <li>Objects don't feel like they exist in the same space</li>
+                        <li>Paintings lack atmosphere and mood</li>
+                        <li>Everything looks equally lit—boring and unnatural</li>
+                        <li>Viewer doesn't know where to look—no focal point</li>
+                        <li>Paintings scream "amateur" despite good technique</li>
+                    </ul>
+
+                    <h4 style="color: #2e7d32;">✅ With Lighting Knowledge</h4>
+                    <ul>
+                        <li>Forms pop off the screen with dimension</li>
+                        <li>Colors feel natural and harmonious</li>
+                        <li>Everything exists in believable, unified space</li>
+                        <li>Strong mood and atmosphere in every piece</li>
+                        <li>Strategic lighting guides the eye naturally</li>
+                        <li>Clear focal point through light emphasis</li>
+                        <li>Professional-looking work that commands attention</li>
+                    </ul>
+
+                    <p><strong>The difference?</strong> Not talent. Not expensive software. Just understanding how light works!</p>
+                </div>
+            </header>
+
+            <!-- Table of Contents -->
+            <nav class="card" aria-label="Table of Contents">
+                <h2 style="cursor: pointer; user-select: none; display: flex; justify-content: space-between; align-items: center;" onclick="toggleTOC()">
+                    <span>📑 Table of Contents</span>
+                    <span id="toc-toggle-icon" style="transition: transform 0.3s;">▼</span>
+                </h2>
+                <ol id="toc-list" style="overflow: hidden; transition: max-height 0.3s ease-out; max-height: 1400px; margin: 0; padding-left: 1.5rem;">
+                    <li><a href="#light-basics" class="toc-link">Understanding Light: The Basics</a></li>
+                    <li><a href="#form-principle" class="toc-link">The Form Principle</a></li>
+                    <li><a href="#light-components" class="toc-link">Components of Light & Shadow</a></li>
+                    <li><a href="#light-types" class="toc-link">Types of Light Sources</a></li>
+                    <li><a href="#color-temperature" class="toc-link">Color Temperature in Lighting</a></li>
+                    <li><a href="#surface-materials" class="toc-link">How Light Interacts with Surfaces</a></li>
+                    <li><a href="#rendering-forms" class="toc-link">Rendering Basic Forms</a></li>
+                    <li><a href="#lighting-mood" class="toc-link">Using Light for Mood & Atmosphere</a></li>
+                    <li><a href="#common-mistakes" class="toc-link">Common Lighting Mistakes</a></li>
+                    <li><a href="#seeing-light" class="toc-link">Training Your Eye to See Light</a></li>
+                </ol>
+            </nav>
+
+            <!-- Section 1: Understanding Light - The Basics -->
+            <section id="light-basics" class="lesson-section">
+                <h2>Understanding Light: The Basics 🔦</h2>
+                
+                <p>Before we paint light, we need to understand what it actually is and how it behaves. Don't worry—this isn't a physics lecture! We just need the practical knowledge that makes us better artists.</p>
+
+                <h3>What Is Light?</h3>
+
+                <div class="card" style="background: #e8f5e9;">
+                    <h4>💡 Light in Simple Terms</h4>
+                    
+                    <h5>The Artist's Definition:</h5>
+                    <p><strong>Light is energy that travels in straight lines from a source, bounces off objects, and enters our eyes—allowing us to see.</strong></p>
+
+                    <h5>Why This Matters for Painting:</h5>
+                    <ul>
+                        <li><strong>Travels in straight lines:</strong> Shadows have predictable directions</li>
+                        <li><strong>Comes from a source:</strong> Every painting needs a defined light source</li>
+                        <li><strong>Bounces off objects:</strong> Creates reflected light and color bleeding</li>
+                        <li><strong>How we see:</strong> No light = no visibility (shadows are absence of light)</li>
+                    </ul>
+
+                    <h5>The Two Things Light Does:</h5>
+                    <ol>
+                        <li><strong>Reveals form:</strong> Light hitting surfaces shows us shape and volume</li>
+                        <li><strong>Creates atmosphere:</strong> Quality, color, and direction of light set mood</li>
+                    </ol>
+                </div>
+
+                <h3>How Light Behaves</h3>
+
+                <div class="card">
+                    <h4>📐 The Rules Light Follows</h4>
+                    <p>Light is predictable. It follows simple rules that artists can use:</p>
+
+                    <h5>Rule 1: Light Travels in Straight Lines</h5>
+                    <ul>
+                        <li><strong>What this means:</strong> Light doesn't curve around corners (unless reflected)</li>
+                        <li><strong>Artist application:</strong> Shadows point away from light source in straight lines</li>
+                        <li><strong>Drawing shadows:</strong> Draw line from light source through object edge = shadow direction</li>
+                        <li><strong>Exception:</strong> Atmospheric scattering (why sky glows) and refraction (glass, water)</li>
+                    </ul>
+
+                    <h5>Rule 2: Light Intensity Decreases with Distance</h5>
+                    <ul>
+                        <li><strong>What this means:</strong> Closer to light source = brighter, farther = dimmer</li>
+                        <li><strong>Artist application:</strong> Objects closer to light are more dramatically lit</li>
+                        <li><strong>The law:</strong> Inverse square law (twice the distance = 1/4 the brightness)</li>
+                        <li><strong>Practical use:</strong> Near light source = strong contrast, far from it = softer light</li>
+                    </ul>
+
+                    <h5>Rule 3: Angle of Incidence Equals Angle of Reflection</h5>
+                    <ul>
+                        <li><strong>What this means:</strong> Light bounces off surfaces at same angle it hits</li>
+                        <li><strong>Artist application:</strong> Reflections, highlights, and bounced light are predictable</li>
+                        <li><strong>Think:</strong> Billiard ball hitting cushion—bounces at same angle</li>
+                        <li><strong>Why it matters:</strong> Highlights appear in consistent, logical places</li>
+                    </ul>
+
+                    <h5>Rule 4: Light Can Be Absorbed, Reflected, or Transmitted</h5>
+                    <ul>
+                        <li><strong>Absorbed:</strong> Light energy turns to heat (dark objects absorb more)</li>
+                        <li><strong>Reflected:</strong> Light bounces off surface (what we see as object's color)</li>
+                        <li><strong>Transmitted:</strong> Light passes through (glass, water, thin fabric)</li>
+                        <li><strong>Artist application:</strong> Different materials behave differently with light</li>
+                    </ul>
+                </div>
+
+                <h3>Local Value vs. Light Effect</h3>
+
+                <div class="card" style="background: #e3f2fd;">
+                    <h4>🎨 Understanding Value Components</h4>
+                    <p>Every value you see is a combination of two things:</p>
+
+                    <h5>Local Value (Inherent Value)</h5>
+                    <ul>
+                        <li><strong>Definition:</strong> The natural darkness/lightness of an object's surface</li>
+                        <li><strong>Examples:</strong>
+                            <ul>
+                                <li>Coal is dark (low local value)</li>
+                                <li>Snow is light (high local value)</li>
+                                <li>Red apple is medium local value</li>
+                            </ul>
+                        </li>
+                        <li><strong>Think of it as:</strong> The value something would be in neutral, even lighting</li>
+                        <li><strong>Remains constant:</strong> Doesn't change based on lighting</li>
+                    </ul>
+
+                    <h5>Light Effect (Illumination)</h5>
+                    <ul>
+                        <li><strong>Definition:</strong> How light changes the appearance of that local value</li>
+                        <li><strong>Examples:</strong>
+                            <ul>
+                                <li>Coal in sunlight = dark gray (still darker than surroundings)</li>
+                                <li>Snow in shadow = medium gray (still lighter than surroundings)</li>
+                                <li>Red apple in spotlight = has highlights AND shadows</li>
+                            </ul>
+                        </li>
+                        <li><strong>Think of it as:</strong> The lighting multiplier on local value</li>
+                        <li><strong>Changes constantly:</strong> Based on light source position and intensity</li>
+                    </ul>
+
+                    <h5>The Combination:</h5>
+                    <p><strong>What we paint = Local Value × Light Effect</strong></p>
+                    <ul>
+                        <li>Dark local value + bright light = medium value (dark gray coal in sun)</li>
+                        <li>Light local value + shadow = medium value (white snow in shadow)</li>
+                        <li>Medium local value + bright light = light value (apple highlight)</li>
+                        <li>Medium local value + deep shadow = dark value (apple core shadow)</li>
+                    </ul>
+
+                    <blockquote style="margin-top: 1rem;">
+                        <strong>💡 Pro Principle:</strong> Darks in light are often lighter than lights in shadow! A piece of coal in bright sunlight can be lighter than white paper in deep shadow. This blows beginners' minds but is crucial to understand.
+                    </blockquote>
+                </div>
+
+            </section>
+
+            <!-- Section 2: The Form Principle -->
+            <section id="form-principle" class="lesson-section">
+                <h2>The Form Principle 📦</h2>
+                
+                <p>Here's the secret that makes everything click: <strong>Form is created by value transitions</strong>. Not lines. Not outlines. Value changes from light to dark tell the viewer "this is three-dimensional." Let's understand how.</p>
+
+                <h3>How We Perceive Form</h3>
+
+                <div class="card" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); color: #1a1a1a;">
+                    <h4 style="color: #1a1a1a; margin-top: 0;">🧠 The Brain's 3D Trick</h4>
+                    
+                    <h5 style="color: #1a1a1a;">The Problem:</h5>
+                    <p>Your painting is a flat surface. The viewer's eye sees flat. But we want them to perceive depth!</p>
+
+                    <h5 style="color: #1a1a1a;">The Solution:</h5>
+                    <p><strong>Value gradients = Volume illusion</strong></p>
+                    <ul>
+                        <li>Smooth value transition = curved surface</li>
+                        <li>Abrupt value change = hard edge or plane shift</li>
+                        <li>Consistent value = flat plane facing one direction</li>
+                        <li>Multiple value zones = complex form</li>
+                    </ul>
+
+                    <h5 style="color: #1a1a1a;">Why This Works:</h5>
+                    <p>In the real world, curved surfaces turn away from light gradually, creating smooth value transitions. Your brain is wired to interpret these transitions as "this is round" or "this is angular." We exploit this in painting!</p>
+                </div>
+
+                <h3>The Gradient-to-Form Relationship</h3>
+
+                <div class="card">
+                    <h4>🔄 Value Transitions = Form Types</h4>
+
+                    <h5>Smooth, Gradual Gradient:</h5>
+                    <ul>
+                        <li><strong>Indicates:</strong> Curved, rounded surface (sphere, cylinder, organic forms)</li>
+                        <li><strong>Example:</strong> Skin on face, rounded edge of table, apple, ball</li>
+                        <li><strong>How to paint:</strong> Soft brush, gradual value steps, no hard edges</li>
+                        <li><strong>Width of gradient:</strong> Wide gradient = gentle curve, narrow = sharp curve</li>
+                    </ul>
+
+                    <h5>Abrupt Value Change:</h5>
+                    <ul>
+                        <li><strong>Indicates:</strong> Hard edge, plane change, corner</li>
+                        <li><strong>Example:</strong> Cube edges, building corners, book spine</li>
+                        <li><strong>How to paint:</strong> Sharp value transition, hard brush</li>
+                        <li><strong>Degree of sharpness:</strong> Harder edge = sharper angle</li>
+                    </ul>
+
+                    <h5>Flat, Consistent Value:</h5>
+                    <ul>
+                        <li><strong>Indicates:</strong> Flat plane all facing same direction</li>
+                        <li><strong>Example:</strong> Side of box, wall, table top</li>
+                        <li><strong>How to paint:</strong> Single value across surface</li>
+                        <li><strong>Variations:</strong> Only due to texture, not form</li>
+                    </ul>
+
+                    <h5>Complex, Multiple Transitions:</h5>
+                    <ul>
+                        <li><strong>Indicates:</strong> Complex form with multiple planes and curves</li>
+                        <li><strong>Example:</strong> Face, drapery, muscles, mechanical objects</li>
+                        <li><strong>How to paint:</strong> Combination of gradients and edges</li>
+                        <li><strong>Approach:</strong> Break into simpler forms first</li>
+                    </ul>
+                </div>
+
+                <h3>The Five Basic Forms</h3>
+
+                <div class="card" style="background: #fff3e0;">
+                    <h4>📐 Foundation Forms</h4>
+                    <p>Every complex object can be broken down into five basic forms. Master lighting these five, and you can light anything!</p>
+
+                    <h5>1. Sphere</h5>
+                    <ul>
+                        <li><strong>Characteristic:</strong> Smooth gradient in all directions from highlight</li>
+                        <li><strong>Light pattern:</strong> Circular highlight, gradual to core shadow, soft terminator</li>
+                        <li><strong>Found in:</strong> Eyes, fruits, rounded parts of anatomy, balls</li>
+                        <li><strong>Key insight:</strong> Gradients radiate from lightest point</li>
+                    </ul>
+
+                    <h5>2. Cylinder</h5>
+                    <ul>
+                        <li><strong>Characteristic:</strong> Gradient across width, consistent along length</li>
+                        <li><strong>Light pattern:</strong> Straight highlight line, gradient to sides</li>
+                        <li><strong>Found in:</strong> Arms, legs, tree trunks, columns, bottles</li>
+                        <li><strong>Key insight:</strong> One-directional gradient (perpendicular to cylinder axis)</li>
+                    </ul>
+
+                    <h5>3. Cube</h5>
+                    <ul>
+                        <li><strong>Characteristic:</strong> Distinct value per plane, sharp edges</li>
+                        <li><strong>Light pattern:</strong> Each face is flat value, edges are crisp</li>
+                        <li><strong>Found in:</strong> Buildings, boxes, books, furniture</li>
+                        <li><strong>Key insight:</strong> Three visible planes = three distinct values (typically)</li>
+                    </ul>
+
+                    <h5>4. Cone</h5>
+                    <ul>
+                        <li><strong>Characteristic:</strong> Gradient that tightens toward point</li>
+                        <li><strong>Light pattern:</strong> Highlight at widest point, narrows to darkness</li>
+                        <li><strong>Found in:</strong> Nose, fingers tapering, pine trees, pointed objects</li>
+                        <li><strong>Key insight:</strong> Gradient compression toward point</li>
+                    </ul>
+
+                    <h5>5. Plane</h5>
+                    <ul>
+                        <li><strong>Characteristic:</strong> Flat, consistent value across surface</li>
+                        <li><strong>Light pattern:</strong> One value, maybe slight variation at edges</li>
+                        <li><strong>Found in:</strong> Walls, table tops, ground, sides of objects</li>
+                        <li><strong>Key insight:</strong> Value determined by angle to light, stays consistent</li>
+                    </ul>
+
+                    <h5>Breaking Down Complex Forms:</h5>
+                    <ol>
+                        <li>Look at subject—identify which basic forms it contains</li>
+                        <li>Imagine simple geometry: "This arm is a cylinder, shoulder is a sphere"</li>
+                        <li>Light the simple forms correctly</li>
+                        <li>Add complexity and details on top</li>
+                        <li>Result: Convincing form without overthinking</li>
+                    </ol>
+                </div>
+
+                <h3>The Terminator: Where Light Meets Shadow</h3>
+
+                <div class="card" style="background: #e3f2fd;">
+                    <h4>🌗 Understanding the Shadow Edge</h4>
+
+                    <h5>What Is the Terminator?</h5>
+                    <ul>
+                        <li><strong>Definition:</strong> The line/edge where light transitions to shadow on a form</li>
+                        <li><strong>Not a line:</strong> Actually a zone of transition (though can be sharp)</li>
+                        <li><strong>Most important edge:</strong> Defines the form more than any other element</li>
+                        <li><strong>Other name:</strong> Shadow line, core shadow edge</li>
+                    </ul>
+
+                    <h5>Terminator Characteristics by Form:</h5>
+
+                    <h6><strong>On Rounded Forms (Sphere, Cylinder):</strong></h6>
+                    <ul>
+                        <li>Soft, gradual transition</li>
+                        <li>Can't point to exact "line"—it's a zone</li>
+                        <li>Gets softer with distance from light source</li>
+                        <li>Darkest point is usually just beyond terminator (core shadow)</li>
+                    </ul>
+
+                    <h6><strong>On Angular Forms (Cube, Faceted):</strong></h6>
+                    <ul>
+                        <li>Sharp, crisp edge</li>
+                        <li>Exact line where plane changes</li>
+                        <li>No gradual transition—just plane 1 value, plane 2 value</li>
+                        <li>Terminator = physical edge of form</li>
+                    </ul>
+
+                    <h5>Why the Terminator Matters:</h5>
+                    <ul>
+                        <li><strong>Defines form:</strong> Correct terminator = believable volume</li>
+                        <li><strong>Creates depth:</strong> Separates light side from shadow side</li>
+                        <li><strong>Guides rendering:</strong> Everything light-side of terminator = lit, shadow-side = dark</li>
+                        <li><strong>Common mistake:</strong> Not making terminator soft enough on curved forms</li>
+                    </ul>
+
+                    <blockquote style="margin-top: 1rem;">
+                        <strong>💡 Pro Tip:</strong> The terminator is where the magic happens. Spend extra time getting this right—if the light-to-shadow transition is wrong, nothing else will save the form. Get terminator right, and half your work is done!
+                    </blockquote>
+                </div>
+
+            </section>
+
+            <!-- PART A ENDS HERE -->
+            <!-- PART B STARTS HERE -->
+
+            <!-- Section 3: Components of Light & Shadow -->
+            <section id="light-components" class="lesson-section">
+                <h2>Components of Light & Shadow 🌓</h2>
+                
+                <p>Light and shadow aren't just "bright" and "dark"—they have distinct, identifiable components. Understanding these components is like learning the vocabulary of light. Once you know what to look for, you'll see them everywhere!</p>
+
+                <h3>The Complete Light & Shadow System</h3>
+
+                <div class="card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+                    <h4 style="color: white; margin-top: 0;">🎨 The Seven Components</h4>
+                    <p>Every lit object displays up to seven distinct value zones. Not all are always present, but understanding all seven gives you complete control:</p>
+
+                    <div class="mermaid">
+                        graph LR
+                            A["Light Side"]
+                            B["Highlight"]
+                            C["Direct Light / Halftone"]
+                            D["Terminator / Core Shadow"]
+                            E["Shadow Side"]
+                            F["Reflected Light"]
+                            G["Cast Shadow"]
+                            H["Occlusion Shadow"]
+                            
+                            A --> B
+                            A --> C
+                            A --> D
+                            E --> F
+                            E --> D
+                            G --> H
+                            
+                            style A fill:#f5576c,color:#fff
+                            style B fill:#fff9c4,color:#000
+                            style C fill:#ffe082,color:#000
+                            style D fill:#ff8a65,color:#fff
+                            style E fill:#7e57c2,color:#fff
+                            style F fill:#9575cd,color:#fff
+                            style G fill:#5c6bc0,color:#fff
+                            style H fill:#3949ab,color:#fff
+                    </div>
+                </div>
+
+                <h3>The Light Side Components</h3>
+
+                <div class="card">
+                    <h4>☀️ Where Light Directly Hits</h4>
+
+                    <h5>1. Highlight (Specular Highlight)</h5>
+                    <ul>
+                        <li><strong>What it is:</strong> The brightest point where light reflects directly into viewer's eye</li>
+                        <li><strong>Characteristics:</strong>
+                            <ul>
+                                <li>Brightest value in the entire painting (often near-white)</li>
+                                <li>Small, concentrated area</li>
+                                <li>Sharp edges on shiny surfaces, softer on matte</li>
+                                <li>Takes the color of the light source</li>
+                            </ul>
+                        </li>
+                        <li><strong>Where it appears:</strong> Where angle of light to surface equals angle of surface to viewer</li>
+                        <li><strong>Material dependent:</strong> Strong on shiny/wet/metallic, weak/absent on matte/dry</li>
+                        <li><strong>Common mistake:</strong> Making highlights too large or in wrong position</li>
+                        <li><strong>Pro tip:</strong> Use sparingly—too many highlights = chaos</li>
+                    </ul>
+
+                    <h5>2. Direct Light / Halftone</h5>
+                    <ul>
+                        <li><strong>What it is:</strong> Surfaces directly facing the light source</li>
+                        <li><strong>Characteristics:</strong>
+                            <ul>
+                                <li>Bright, but not as bright as highlight</li>
+                                <li>Shows local color most accurately</li>
+                                <li>Large area—most of the "light side"</li>
+                                <li>Relatively consistent value across similar angles</li>
+                            </ul>
+                        </li>
+                        <li><strong>Value range:</strong> Light-to-medium values (depending on light intensity)</li>
+                        <li><strong>Contains:</strong> Texture, surface details, color variations</li>
+                        <li><strong>Gradation:</strong> Subtle value change as surface angle changes</li>
+                        <li><strong>Pro tip:</strong> This is your "base" light value—everything else is relative</li>
+                    </ul>
+
+                    <h5>3. Terminator / Core Shadow</h5>
+                    <ul>
+                        <li><strong>What it is:</strong> Transition zone where light side meets shadow side</li>
+                        <li><strong>Characteristics:</strong>
+                            <ul>
+                                <li>Often the darkest value on the form (darker than cast shadow!)</li>
+                                <li>Width varies: sharp on angular forms, soft on rounded</li>
+                                <li>Defines the form more than any other component</li>
+                                <li>Gets lighter as surface curves into reflected light</li>
+                            </ul>
+                        </li>
+                        <li><strong>Why it's darkest:</strong> Receives neither direct nor reflected light strongly</li>
+                        <li><strong>On different forms:</strong>
+                            <ul>
+                                <li>Sphere: Curved band, soft edges</li>
+                                <li>Cylinder: Straight line, parallel to axis</li>
+                                <li>Cube: Sharp edge where planes meet</li>
+                            </ul>
+                        </li>
+                        <li><strong>Common mistake:</strong> Making terminator too sharp on organic forms</li>
+                    </ul>
+                </div>
+
+                <h3>The Shadow Side Components</h3>
+
+                <div class="card" style="background: #f3e5f5;">
+                    <h4>🌑 Where Light Doesn't Directly Reach</h4>
+
+                    <h5>4. Core Shadow (Form Shadow)</h5>
+                    <ul>
+                        <li><strong>What it is:</strong> The shadow on the object itself, facing away from light</li>
+                        <li><strong>Characteristics:</strong>
+                            <ul>
+                                <li>Dark, but not completely black</li>
+                                <li>Shows object's local color, just very dark</li>
+                                <li>Transitions from terminator to reflected light</li>
+                                <li>Still part of the form, not cast onto something else</li>
+                            </ul>
+                        </li>
+                        <li><strong>Value:</strong> Medium-dark to dark (but lighter than terminator)</li>
+                        <li><strong>Color note:</strong> Takes color from ambient/reflected light</li>
+                        <li><strong>Edge quality:</strong> Soft transitions within shadow side</li>
+                        <li><strong>Pro tip:</strong> Never pure black—always has some color/value</li>
+                    </ul>
+
+                    <h5>5. Reflected Light</h5>
+                    <ul>
+                        <li><strong>What it is:</strong> Light bouncing from nearby surfaces into shadow area</li>
+                        <li><strong>Characteristics:</strong>
+                            <ul>
+                                <li>Subtle lightening within shadow side</li>
+                                <li>Often at form's edge, where it can "see" surrounding surfaces</li>
+                                <li>Takes color of surface it bounces from</li>
+                                <li>Weaker than any light-side value</li>
+                            </ul>
+                        </li>
+                        <li><strong>Critical rule:</strong> NEVER brighter than midtones in direct light</li>
+                        <li><strong>Common mistake:</strong> Making reflected light too bright—destroys form</li>
+                        <li><strong>When strongest:</strong> Light-colored surroundings, smooth surfaces</li>
+                        <li><strong>When absent:</strong> Dark surroundings, distant from other surfaces</li>
+                        <li><strong>Pro tip:</strong> Subtle reflected light = sophisticated, too much = amateur</li>
+                    </ul>
+
+                    <h5>6. Cast Shadow</h5>
+                    <ul>
+                        <li><strong>What it is:</strong> Shadow projected onto another surface by the object</li>
+                        <li><strong>Characteristics:</strong>
+                            <ul>
+                                <li>Darkest near object (contact point), lighter as it extends</li>
+                                <li>Shape follows object's silhouette and light direction</li>
+                                <li>Edges sharper near object, softer farther away</li>
+                                <li>Can show environment color (blue sky influence, etc.)</li>
+                            </ul>
+                        </li>
+                        <li><strong>Edge sharpness:</strong>
+                            <ul>
+                                <li>Hard light source (sun) = sharp edges</li>
+                                <li>Soft light source (overcast) = soft edges</li>
+                                <li>Distance matters: closer = sharper, farther = softer</li>
+                            </ul>
+                        </li>
+                        <li><strong>Value:</strong> Usually lighter than core shadow</li>
+                        <li><strong>Pro tip:</strong> Cast shadows create spatial relationships between objects</li>
+                    </ul>
+
+                    <h5>7. Occlusion Shadow</h5>
+                    <ul>
+                        <li><strong>What it is:</strong> Super-dark shadow where surfaces meet or overlap</li>
+                        <li><strong>Characteristics:</strong>
+                            <ul>
+                                <li>Darkest darks in painting (closest to black)</li>
+                                <li>Small, concentrated areas</li>
+                                <li>Where light can't penetrate at all</li>
+                                <li>No reflected light can reach</li>
+                            </ul>
+                        </li>
+                        <li><strong>Found:</strong> Creases, cracks, tight spaces, contact points</li>
+                        <li><strong>Examples:</strong>
+                            <ul>
+                                <li>Where sphere touches ground</li>
+                                <li>Corners of rooms</li>
+                                <li>Inside ears, nostrils</li>
+                                <li>Between fingers</li>
+                            </ul>
+                        </li>
+                        <li><strong>Pro tip:</strong> These darkest darks make your lights look lighter—use strategically</li>
+                    </ul>
+                </div>
+
+                <h3>Value Hierarchy Quick Reference</h3>
+
+                <div class="card" style="background: #e8f5e9;">
+                    <h4>📊 From Lightest to Darkest</h4>
+                    <p>Understanding the typical value order helps you paint convincing light:</p>
+
+                    <ol>
+                        <li><strong>Highlight</strong> - Brightest (90-100% white)</li>
+                        <li><strong>Direct Light</strong> - Bright (60-85% depending on local value)</li>
+                        <li><strong>Halftone</strong> - Medium-light (45-65%)</li>
+                        <li><strong>Reflected Light</strong> - Medium (35-50% - always darker than halftones!)</li>
+                        <li><strong>Core Shadow</strong> - Medium-dark (25-45%)</li>
+                        <li><strong>Terminator</strong> - Dark (15-30% - often darkest on form)</li>
+                        <li><strong>Cast Shadow (far)</strong> - Dark (20-35%)</li>
+                        <li><strong>Cast Shadow (near)</strong> - Very dark (10-25%)</li>
+                        <li><strong>Occlusion Shadow</strong> - Darkest (5-15%)</li>
+                    </ol>
+
+                    <p><strong>Important note:</strong> These are guidelines, not rigid rules! Actual values depend on:</p>
+                    <ul>
+                        <li>Object's local value</li>
+                        <li>Light intensity</li>
+                        <li>Environment brightness</li>
+                        <li>Material properties</li>
+                        <li>Artistic style choices</li>
+                    </ul>
+
+                    <blockquote style="margin-top: 1rem;">
+                        <strong>⚡ Critical Principle:</strong> The most common mistake is making reflected light too bright. Remember: reflected light should NEVER be brighter than your midtones/halftones. If it is, you've destroyed the form!
+                    </blockquote>
+                </div>
+
+                <h3>Practical Application Exercise</h3>
+
+                <div class="card" style="background: #fff3e0;">
+                    <h4>🎯 Identifying Components in Practice</h4>
+                    <p>Let's practice identifying these components on a simple sphere:</p>
+
+                    <h5>Step-by-Step Analysis:</h5>
+                    <ol>
+                        <li><strong>Find the highlight:</strong> Brightest point (usually offset from center toward light)</li>
+                        <li><strong>Identify direct light:</strong> Large bright area surrounding highlight</li>
+                        <li><strong>Locate terminator:</strong> Where brightness starts falling off rapidly</li>
+                        <li><strong>Note core shadow:</strong> Dark band beyond terminator</li>
+                        <li><strong>Look for reflected light:</strong> Subtle lightening at shadow edge</li>
+                        <li><strong>Find cast shadow:</strong> Dark shape on ground beneath sphere</li>
+                        <li><strong>Spot occlusion:</strong> Darkest dark where sphere contacts ground</li>
+                    </ol>
+
+                    <h5>Real-World Practice:</h5>
+                    <ul>
+                        <li>Find a simple object near a window</li>
+                        <li>Identify all seven components (or as many as visible)</li>
+                        <li>Sketch it, labeling each component</li>
+                        <li>Do this with 5-10 different objects</li>
+                        <li>Result: You'll start seeing these components everywhere!</li>
+                    </ul>
+                </div>
+
+            </section>
+
+            <!-- Section 4: Types of Light Sources -->
+            <section id="light-types" class="lesson-section">
+                <h2>Types of Light Sources 💡</h2>
+                
+                <p>Not all light is created equal! Different light sources have dramatically different characteristics that affect how you paint them. Understanding these differences lets you recreate any lighting scenario convincingly.</p>
+
+                <h3>Hard Light vs. Soft Light</h3>
+
+                <div class="card">
+                    <h4>🔦 The Fundamental Distinction</h4>
+
+                    <h5>Hard Light (Direct Light)</h5>
+                    <ul>
+                        <li><strong>Characteristic:</strong> Creates sharp, well-defined shadows with crisp edges</li>
+                        <li><strong>Source size:</strong> Small relative to subject (or very far away)</li>
+                        <li><strong>Examples:</strong>
+                            <ul>
+                                <li>Direct sunlight (sun is far, appears small)</li>
+                                <li>Spotlight</li>
+                                <li>Bare light bulb</li>
+                                <li>Camera flash</li>
+                                <li>Distant street lamp</li>
+                            </ul>
+                        </li>
+                        <li><strong>Shadow characteristics:</strong>
+                            <ul>
+                                <li>Sharp terminator on forms</li>
+                                <li>High contrast between light and shadow</li>
+                                <li>Cast shadows have defined edges</li>
+                                <li>Little reflected light (dark shadows)</li>
+                            </ul>
+                        </li>
+                        <li><strong>Mood:</strong> Dramatic, high-contrast, clear, intense</li>
+                        <li><strong>When to use:</strong> Drama, clear forms, graphic look, bright sun</li>
+                    </ul>
+
+                    <h5>Soft Light (Diffused Light)</h5>
+                    <ul>
+                        <li><strong>Characteristic:</strong> Creates gradual, soft shadows with fuzzy edges</li>
+                        <li><strong>Source size:</strong> Large relative to subject</li>
+                        <li><strong>Examples:</strong>
+                            <ul>
+                                <li>Overcast sky (entire sky is light source)</li>
+                                <li>Window with sheer curtains</li>
+                                <li>Softbox/umbrella in photography</li>
+                                <li>Open shade (reflected skylight)</li>
+                                <li>Cloudy day</li>
+                            </ul>
+                        </li>
+                        <li><strong>Shadow characteristics:</strong>
+                            <ul>
+                                <li>Soft, gradual terminator</li>
+                                <li>Lower contrast overall</li>
+                                <li>Cast shadows soft or barely visible</li>
+                                <li>More reflected light (lighter shadows)</li>
+                            </ul>
+                        </li>
+                        <li><strong>Mood:</strong> Gentle, calm, subtle, even, atmospheric</li>
+                        <li><strong>When to use:</strong> Subtlety, soft mood, portraits, overcast scenes</li>
+                    </ul>
+
+                    <h5>The Size-Distance Relationship:</h5>
+                    <p><strong>Small light source or distant = Hard light</strong></p>
+                    <p><strong>Large light source or close = Soft light</strong></p>
+                    <ul>
+                        <li>Sun is huge but far away = hard light</li>
+                        <li>Small lamp close to object = soft light</li>
+                        <li>Entire overcast sky = very soft light</li>
+                        <li>Candle up close = relatively soft light</li>
+                    </ul>
+                </div>
+
+                <h3>Common Light Source Types</h3>
+
+                <div class="card" style="background: #e3f2fd;">
+                    <h4>🌞 Natural Light Sources</h4>
+
+                    <h5>1. Direct Sunlight</h5>
+                    <ul>
+                        <li><strong>Characteristics:</strong> Very hard, intense, warm-colored</li>
+                        <li><strong>Color temperature:</strong> Warm yellow-white (5500K)</li>
+                        <li><strong>Shadow color:</strong> Cool blue (from sky reflection)</li>
+                        <li><strong>Intensity:</strong> Extremely bright—highest contrast scenarios</li>
+                        <li><strong>Time of day affects:</strong>
+                            <ul>
+                                <li>Morning/evening: Very warm (orange-red), long shadows</li>
+                                <li>Midday: Neutral warm, short shadows</li>
+                            </ul>
+                        </li>
+                        <li><strong>Painting tips:</strong> High contrast, warm lights + cool shadows</li>
+                    </ul>
+
+                    <h5>2. Overcast Sky</h5>
+                    <ul>
+                        <li><strong>Characteristics:</strong> Very soft, even, slightly cool</li>
+                        <li><strong>Color temperature:</strong> Cool white-blue</li>
+                        <li><strong>Shadow:</strong> Barely visible cast shadows</li>
+                        <li><strong>Contrast:</strong> Low—subtle value differences</li>
+                        <li><strong>Advantage:</strong> Easy to see form without harsh shadows</li>
+                        <li><strong>Painting tips:</strong> Lower contrast, cool tint overall, soft edges</li>
+                    </ul>
+
+                    <h5>3. Open Shade</h5>
+                    <ul>
+                        <li><strong>What it is:</strong> Shaded area with sky as light source</li>
+                        <li><strong>Characteristics:</strong> Soft, cool-tinted, even</li>
+                        <li><strong>Color:</strong> Blue from sky, can have warm bounced light</li>
+                        <li><strong>Contrast:</strong> Medium—softer than sun, not as flat as overcast</li>
+                        <li><strong>Painting tips:</strong> Cool blue tint, soft gradations</li>
+                    </ul>
+
+                    <h5>4. Golden Hour</h5>
+                    <ul>
+                        <li><strong>When:</strong> Hour after sunrise, hour before sunset</li>
+                        <li><strong>Characteristics:</strong> Very warm, soft-ish, magical quality</li>
+                        <li><strong>Color:</strong> Orange-gold-red, extremely warm</li>
+                        <li><strong>Shadows:</strong> Long, not too hard, blue-purple</li>
+                        <li><strong>Why loved:</strong> Flattering, beautiful, warm glow</li>
+                        <li><strong>Painting tips:</strong> Warm everything, rich colors, atmospheric</li>
+                    </ul>
+
+                    <h5>5. Moonlight</h5>
+                    <ul>
+                        <li><strong>Characteristics:</strong> Cool, dim, mysterious</li>
+                        <li><strong>Color:</strong> Blue-white (reflected sunlight)</li>
+                        <li><strong>Intensity:</strong> Very weak—high value compression</li>
+                        <li><strong>Reality vs. perception:</strong> We see it blue, but it's actually neutral</li>
+                        <li><strong>Painting tips:</strong> Blue tint, low contrast, mysterious mood</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="background: #fff3e0;">
+                    <h4>💡 Artificial Light Sources</h4>
+
+                    <h5>1. Incandescent Bulbs</h5>
+                    <ul>
+                        <li><strong>Characteristics:</strong> Warm, slightly soft</li>
+                        <li><strong>Color:</strong> Yellow-orange (2700-3000K)</li>
+                        <li><strong>Shadow:</strong> Cool by contrast (bluish)</li>
+                        <li><strong>Intensity:</strong> Moderate, falloff with distance</li>
+                        <li><strong>Mood:</strong> Cozy, warm, intimate</li>
+                    </ul>
+
+                    <h5>2. Fluorescent Lights</h5>
+                    <ul>
+                        <li><strong>Characteristics:</strong> Soft, even, slightly cool</li>
+                        <li><strong>Color:</strong> Cool white-green tint (4000-5000K)</li>
+                        <li><strong>Shadow:</strong> Very soft, barely visible</li>
+                        <li><strong>Intensity:</strong> Even, flat</li>
+                        <li><strong>Mood:</strong> Clinical, office-like, neutral</li>
+                    </ul>
+
+                    <h5>3. LED (Modern)</h5>
+                    <ul>
+                        <li><strong>Characteristics:</strong> Variable—can be warm or cool</li>
+                        <li><strong>Color:</strong> Depends on type (2700K-6500K)</li>
+                        <li><strong>Shadow:</strong> Moderate hardness</li>
+                        <li><strong>Intensity:</strong> Bright, efficient</li>
+                        <li><strong>Note:</strong> Can mimic any other light type now</li>
+                    </ul>
+
+                    <h5>4. Candle / Fire</h5>
+                    <ul>
+                        <li><strong>Characteristics:</strong> Very warm, flickering, weak</li>
+                        <li><strong>Color:</strong> Deep orange-yellow-red</li>
+                        <li><strong>Shadow:</strong> Soft, dancing, multiple from flicker</li>
+                        <li><strong>Intensity:</strong> Weak—dramatic falloff</li>
+                        <li><strong>Mood:</strong> Romantic, mysterious, primitive</li>
+                        <li><strong>Painting tips:</strong> Extreme warmth, heavy shadow side</li>
+                    </ul>
+
+                    <h5>5. Screen Glow</h5>
+                    <ul>
+                        <li><strong>Characteristics:</strong> Cool, soft, weak</li>
+                        <li><strong>Color:</strong> Blue-white (screen color)</li>
+                        <li><strong>Shadow:</strong> Very soft</li>
+                        <li><strong>Intensity:</strong> Weak, affects only nearby areas</li>
+                        <li><strong>Mood:</strong> Modern, isolated, nocturnal</li>
+                    </ul>
+                </div>
+
+                <h3>Multiple Light Sources</h3>
+
+                <div class="card" style="background: #f3e5f5;">
+                    <h4>🔦🔦 Complex Lighting Scenarios</h4>
+
+                    <h5>Combining Light Sources:</h5>
+                    <ul>
+                        <li><strong>Reality:</strong> Most scenes have multiple light sources</li>
+                        <li><strong>Primary light:</strong> Strongest source—establishes main shadows</li>
+                        <li><strong>Secondary lights:</strong> Fill in shadows, add interest</li>
+                        <li><strong>Ambient light:</strong> Reflected environmental light</li>
+                    </ul>
+
+                    <h5>Common Combinations:</h5>
+
+                    <h6><strong>Sun + Sky:</strong></h6>
+                    <ul>
+                        <li>Sun = warm primary, hard shadows</li>
+                        <li>Sky = cool fill light in shadows</li>
+                        <li>Creates warm highlights, cool shadows</li>
+                        <li>Most common outdoor scenario</li>
+                    </ul>
+
+                    <h6><strong>Interior Window Light + Indoor Lights:</strong></h6>
+                    <ul>
+                        <li>Window = cool primary (daylight)</li>
+                        <li>Lamps = warm fill (incandescent)</li>
+                        <li>Mixed color temperatures = complex but interesting</li>
+                    </ul>
+
+                    <h6><strong>Stage Lighting (Multiple Spotlights):</strong></h6>
+                    <ul>
+                        <li>Main light (key light)</li>
+                        <li>Fill light (softens shadows)</li>
+                        <li>Rim/back light (separates from background)</li>
+                        <li>Creates dramatic, controlled lighting</li>
+                    </ul>
+
+                    <h5>Painting Multiple Sources:</h5>
+                    <ol>
+                        <li><strong>Choose dominant source:</strong> One light is primary</li>
+                        <li><strong>Paint primary first:</strong> Establish main light/shadow pattern</li>
+                        <li><strong>Add secondary lights:</strong> Lighten shadows, add accents</li>
+                        <li><strong>Don't overdo:</strong> Too many sources = muddy, confusing</li>
+                        <li><strong>Keep hierarchy:</strong> Primary light should dominate clearly</li>
+                    </ol>
+
+                    <blockquote style="margin-top: 1rem;">
+                        <strong>💡 Pro Principle:</strong> When in doubt, simplify. Better to paint one light source well than multiple sources poorly. Complex lighting should serve the story, not show off technical skill.
+                    </blockquote>
+                </div>
+
+            </section>
+
+            <!-- PART B ENDS HERE -->
+            <!-- PART C STARTS HERE -->
+
+            <!-- Section 5: Color Temperature in Lighting -->
+            <section id="color-temperature" class="lesson-section">
+                <h2>Color Temperature in Lighting 🌡️</h2>
+                
+                <p>Light isn't just bright or dark—it has <strong>color</strong>. Understanding color temperature in lighting is what separates amateur work from professional. It's the secret ingredient that makes paintings feel cohesive, realistic, and atmospheric.</p>
+
+                <h3>What Is Color Temperature?</h3>
+
+                <div class="card" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white;">
+                    <h4 style="color: white; margin-top: 0;">🌡️ The Warm-Cool Spectrum</h4>
+                    
+                    <h5 style="color: white;">The Simple Definition:</h5>
+                    <p><strong>Color temperature describes whether light appears warm (yellow-orange-red) or cool (blue-green).</strong></p>
+
+                    <h5 style="color: white;">The Temperature Scale (Kelvin):</h5>
+                    <ul>
+                        <li><strong>Warm light:</strong> Lower numbers (1500K-3500K)
+                            <ul>
+                                <li>1500K: Candle flame (deep orange)</li>
+                                <li>2700K: Incandescent bulb (yellow-orange)</li>
+                                <li>3000K: Warm white LED (soft yellow)</li>
+                            </ul>
+                        </li>
+                        <li><strong>Neutral light:</strong> Middle range (4000K-5500K)
+                            <ul>
+                                <li>4000K: Cool white fluorescent</li>
+                                <li>5000K: Daylight balanced</li>
+                                <li>5500K: Midday sun (neutral)</li>
+                            </ul>
+                        </li>
+                        <li><strong>Cool light:</strong> Higher numbers (6000K-10000K+)
+                            <ul>
+                                <li>6500K: Overcast sky (slightly cool)</li>
+                                <li>8000K: Open shade (blue)</li>
+                                <li>10000K+: Clear blue sky (very blue)</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <h5 style="color: white;">The Counterintuitive Truth:</h5>
+                    <p style="margin-bottom: 0;"><strong>Higher temperature numbers = cooler looking light!</strong> (In Kelvin, hotter fires burn blue, hence the scale. For artists, just remember: low numbers = warm, high numbers = cool.)</p>
+                </div>
+
+                <h3>The Warm Light - Cool Shadow Principle</h3>
+
+                <div class="card">
+                    <h4>🎨 The Most Important Color Temperature Rule</h4>
+                    
+                    <h5>The Principle:</h5>
+                    <p><strong>Warm light creates cool shadows. Cool light creates warm shadows.</strong></p>
+
+                    <h5>Why This Works:</h5>
+                    <ul>
+                        <li><strong>Physics reason:</strong> Shadows receive ambient/reflected light from environment (usually opposite temperature to main light)</li>
+                        <li><strong>Perception reason:</strong> Our eyes see color relatively—warm light makes shadows look cooler by contrast</li>
+                        <li><strong>Artistic reason:</strong> Color contrast creates visual interest and depth</li>
+                    </ul>
+
+                    <h5>Common Scenarios:</h5>
+
+                    <h6><strong>Warm Sunlight + Cool Sky:</strong></h6>
+                    <ul>
+                        <li><strong>Direct sunlight:</strong> Warm yellow-orange (5500K, but feels warm)</li>
+                        <li><strong>Shadow areas:</strong> Cool blue (sky reflection, 8000K+)</li>
+                        <li><strong>Result:</strong> Classic warm/cool contrast—most common in nature</li>
+                        <li><strong>Painting approach:</strong> Add yellow-orange to lit areas, blue to shadows</li>
+                    </ul>
+
+                    <h6><strong>Cool Overcast + Warm Interior:</strong></h6>
+                    <ul>
+                        <li><strong>Window light:</strong> Cool blue-white (6500K+)</li>
+                        <li><strong>Indoor/shadow areas:</strong> Warm from interior lights (2700-3000K)</li>
+                        <li><strong>Result:</strong> Interior scenes feel cozy despite cool window light</li>
+                        <li><strong>Painting approach:</strong> Cool tint on window-lit areas, warm in shadows</li>
+                    </ul>
+
+                    <h6><strong>Golden Hour Sunlight:</strong></h6>
+                    <ul>
+                        <li><strong>Direct sunlight:</strong> Very warm orange-red (2500-3500K)</li>
+                        <li><strong>Shadow areas:</strong> Cool purple-blue (sky is still blue)</li>
+                        <li><strong>Result:</strong> Extreme warm/cool contrast—magical, dramatic</li>
+                        <li><strong>Painting approach:</strong> Push warmth in light, push cool in shadows</li>
+                    </ul>
+
+                    <h6><strong>Candlelight / Firelight:</strong></h6>
+                    <ul>
+                        <li><strong>Direct firelight:</strong> Very warm orange-yellow (1500-2000K)</li>
+                        <li><strong>Shadow areas:</strong> Cool blue-gray (ambient moonlight or darkness)</li>
+                        <li><strong>Result:</strong> Intimate, dramatic, strong color contrast</li>
+                        <li><strong>Painting approach:</strong> Heavy orange in lights, deep cool in shadows</li>
+                    </ul>
+                </div>
+
+                <h3>Applying Color Temperature</h3>
+
+                <div class="card" style="background: #fff3e0;">
+                    <h4>🖌️ Practical Color Temperature Techniques</h4>
+
+                    <h5>Technique 1: Color Shifting in Lights</h5>
+                    <ul>
+                        <li><strong>Base color:</strong> Start with object's local color</li>
+                        <li><strong>In light areas:</strong> Shift hue toward light temperature
+                            <ul>
+                                <li>Warm light: Add yellow/orange</li>
+                                <li>Cool light: Add blue/cyan</li>
+                            </ul>
+                        </li>
+                        <li><strong>Amount:</strong> Subtle shift (10-20% mix), not overpowering</li>
+                        <li><strong>Saturation:</strong> Slightly increase in well-lit areas</li>
+                    </ul>
+
+                    <h5>Technique 2: Color Shifting in Shadows</h5>
+                    <ul>
+                        <li><strong>Base:</strong> Darker version of local color</li>
+                        <li><strong>In shadow areas:</strong> Shift toward opposite of light temperature
+                            <ul>
+                                <li>Warm light = cool shadows (add blue/purple)</li>
+                                <li>Cool light = warm shadows (add orange/red)</li>
+                            </ul>
+                        </li>
+                        <li><strong>Amount:</strong> More pronounced than light shift (20-40%)</li>
+                        <li><strong>Saturation:</strong> Usually desaturate in shadows</li>
+                    </ul>
+
+                    <h5>Technique 3: Reflected Light Color</h5>
+                    <ul>
+                        <li><strong>Color source:</strong> Takes color from whatever it bounces from</li>
+                        <li><strong>Example:</strong> Red table near white object = warm pink reflected light in object's shadow</li>
+                        <li><strong>Intensity:</strong> Very subtle—just a hint of color</li>
+                        <li><strong>Placement:</strong> Shadow side, near reflecting surface</li>
+                    </ul>
+
+                    <h5>Technique 4: Atmospheric Temperature</h5>
+                    <ul>
+                        <li><strong>Concept:</strong> Distance shifts color temperature</li>
+                        <li><strong>Rule:</strong> Distant objects shift toward atmosphere color
+                            <ul>
+                                <li>Daytime: Shift toward blue (atmosphere scattering)</li>
+                                <li>Sunset: Shift toward orange/red</li>
+                                <li>Fog: Shift toward white-gray</li>
+                            </ul>
+                        </li>
+                        <li><strong>Application:</strong> Background cooler/warmer than foreground</li>
+                    </ul>
+
+                    <h5>The Color Temperature Workflow:</h5>
+                    <ol>
+                        <li><strong>Decide light temperature:</strong> What's your main light source?</li>
+                        <li><strong>Determine shadow temperature:</strong> Opposite of light</li>
+                        <li><strong>Paint values first:</strong> Get form right in grayscale</li>
+                        <li><strong>Apply color:</strong> Add temperature shifts to values</li>
+                        <li><strong>Refine:</strong> Adjust intensity of temperature contrast</li>
+                        <li><strong>Test:</strong> Desaturate—does form still work? (It should!)</li>
+                    </ol>
+                </div>
+
+                <h3>Common Color Temperature Mistakes</h3>
+
+                <div class="card" style="background: #ffebee;">
+                    <h4>⚠️ Temperature Pitfalls</h4>
+
+                    <h5>Mistake 1: Ignoring Color Temperature Entirely</h5>
+                    <ul>
+                        <li><strong>Symptom:</strong> Light and shadows are just lighter/darker versions of local color</li>
+                        <li><strong>Result:</strong> Flat, unnatural, lacks depth</li>
+                        <li><strong>Solution:</strong> Always shift temperature between light and shadow</li>
+                    </ul>
+
+                    <h5>Mistake 2: Making Shadows Too Warm with Warm Light</h5>
+                    <ul>
+                        <li><strong>Symptom:</strong> Warm sunlight, warm shadows—everything is orange</li>
+                        <li><strong>Result:</strong> Muddy, monotonous, lacks contrast</li>
+                        <li><strong>Solution:</strong> Remember: warm light = COOL shadows</li>
+                    </ul>
+
+                    <h5>Mistake 3: Extreme Temperature Shifts</h5>
+                    <ul>
+                        <li><strong>Symptom:</strong> Bright orange lights, bright blue shadows</li>
+                        <li><strong>Result:</strong> Garish, artificial, hurts to look at</li>
+                        <li><strong>Solution:</strong> Subtle shifts work better—10-30% color change, not 100%</li>
+                    </ul>
+
+                    <h5>Mistake 4: Same Temperature Throughout Shadow</h5>
+                    <ul>
+                        <li><strong>Symptom:</strong> All shadows are uniform blue (or uniform warm)</li>
+                        <li><strong>Result:</strong> Flat shadow side, lacks reflected light variation</li>
+                        <li><strong>Solution:</strong> Shadows have temperature variations too—reflected lights bring other colors</li>
+                    </ul>
+
+                    <h5>Mistake 5: Forgetting Local Color</h5>
+                    <ul>
+                        <li><strong>Symptom:</strong> Everything becomes just warm or cool, losing object identity</li>
+                        <li><strong>Result:</strong> Objects don't look like themselves anymore</li>
+                        <li><strong>Solution:</strong> Temperature shift modifies local color, doesn't replace it</li>
+                    </ul>
+                </div>
+
+                <h3>Color Temperature by Mood</h3>
+
+                <div class="card" style="background: #e8f5e9;">
+                    <h4>🎭 Using Temperature for Emotional Impact</h4>
+
+                    <h5>Warm-Dominant Scenes:</h5>
+                    <ul>
+                        <li><strong>Mood:</strong> Cozy, energetic, passionate, friendly, nostalgic</li>
+                        <li><strong>Applications:</strong> Sunset scenes, candlelit interiors, fire, romance</li>
+                        <li><strong>How to achieve:</strong>
+                            <ul>
+                                <li>Warm light source (candle, fire, sunset)</li>
+                                <li>Golden/orange color grading overall</li>
+                                <li>Even cool elements have warm undertones</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <h5>Cool-Dominant Scenes:</h5>
+                    <ul>
+                        <li><strong>Mood:</strong> Calm, mysterious, isolated, eerie, technological</li>
+                        <li><strong>Applications:</strong> Night scenes, winter, rain, sci-fi, loneliness</li>
+                        <li><strong>How to achieve:</strong>
+                            <ul>
+                                <li>Cool light source (moonlight, fluorescent, screens)</li>
+                                <li>Blue/cyan color grading</li>
+                                <li>Even warm elements desaturated</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <h5>Balanced Temperature (Neutral):</h5>
+                    <ul>
+                        <li><strong>Mood:</strong> Documentary, realistic, objective, clear</li>
+                        <li><strong>Applications:</strong> Midday scenes, product shots, educational content</li>
+                        <li><strong>How to achieve:</strong>
+                            <ul>
+                                <li>Neutral light source (midday sun, balanced LED)</li>
+                                <li>Minimal color grading</li>
+                                <li>Temperature shifts still present but subtle</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <h5>Contrasting Temperature (High Contrast):</h5>
+                    <ul>
+                        <li><strong>Mood:</strong> Dramatic, dynamic, action, conflict, cinematic</li>
+                        <li><strong>Applications:</strong> Action scenes, dramatic moments, visual interest</li>
+                        <li><strong>How to achieve:</strong>
+                            <ul>
+                                <li>Strong warm light + strong cool shadows</li>
+                                <li>Push temperature shifts more than usual</li>
+                                <li>Example: Orange sunset + blue shadows = maximum drama</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </section>
+
+            <!-- Section 6: How Light Interacts with Surfaces -->
+            <section id="surface-materials" class="lesson-section">
+                <h2>How Light Interacts with Surfaces 💎</h2>
+                
+                <p>Different materials reflect, absorb, and transmit light differently. Understanding these interactions is crucial for painting believable materials—from rough stone to polished chrome.</p>
+
+                <h3>The Material Properties Spectrum</h3>
+
+                <div class="card">
+                    <h4>🔍 Three Key Material Properties</h4>
+
+                    <h5>1. Reflectivity (Specular vs. Diffuse)</h5>
+                    <ul>
+                        <li><strong>Specular reflection:</strong> Light bounces in one direction (mirror-like)
+                            <ul>
+                                <li>Creates sharp, bright highlights</li>
+                                <li>Seen on shiny surfaces</li>
+                                <li>Highlight color = light source color</li>
+                            </ul>
+                        </li>
+                        <li><strong>Diffuse reflection:</strong> Light scatters in all directions
+                            <ul>
+                                <li>Creates soft, broad reflections</li>
+                                <li>Seen on matte surfaces</li>
+                                <li>Color = object's local color</li>
+                            </ul>
+                        </li>
+                        <li><strong>Most materials:</strong> Mix of both (some specular, some diffuse)</li>
+                    </ul>
+
+                    <h5>2. Roughness (Smooth vs. Textured)</h5>
+                    <ul>
+                        <li><strong>Smooth surfaces:</strong>
+                            <ul>
+                                <li>Sharp, concentrated highlights</li>
+                                <li>Clear reflections</li>
+                                <li>Examples: Glass, polished metal, water</li>
+                            </ul>
+                        </li>
+                        <li><strong>Rough surfaces:</strong>
+                            <ul>
+                                <li>Scattered, soft highlights (or none)</li>
+                                <li>No clear reflections</li>
+                                <li>Examples: Fabric, concrete, unfinished wood</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <h5>3. Transparency (Opaque vs. Translucent vs. Transparent)</h5>
+                    <ul>
+                        <li><strong>Opaque:</strong> No light passes through (most objects)
+                            <ul>
+                                <li>Light only on surface</li>
+                                <li>Clear shadow side</li>
+                            </ul>
+                        </li>
+                        <li><strong>Translucent:</strong> Light passes through but scatters
+                            <ul>
+                                <li>Glows when backlit</li>
+                                <li>Examples: Wax, thin fabric, skin</li>
+                            </ul>
+                        </li>
+                        <li><strong>Transparent:</strong> Light passes through clearly
+                            <ul>
+                                <li>Can see through completely</li>
+                                <li>Examples: Glass, clear water, air</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <h3>Common Material Types</h3>
+
+                <div class="card" style="background: #e3f2fd;">
+                    <h4>🎨 How to Paint Different Materials</h4>
+
+                    <h5>Matte/Diffuse Materials (Fabric, Concrete, Unglazed Clay)</h5>
+                    <ul>
+                        <li><strong>Highlights:</strong> Very subtle or absent</li>
+                        <li><strong>Reflection:</strong> Diffuse—no sharp reflections</li>
+                        <li><strong>Shadow terminator:</strong> Soft transition</li>
+                        <li><strong>Core shadow:</strong> Visible, relatively dark</li>
+                        <li><strong>Reflected light:</strong> Subtle but present</li>
+                        <li><strong>Painting approach:</strong>
+                            <ul>
+                                <li>Soft value transitions</li>
+                                <li>No or very minimal highlights</li>
+                                <li>Focus on form through value</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <h5>Semi-Gloss Materials (Skin, Leather, Painted Wood)</h5>
+                    <ul>
+                        <li><strong>Highlights:</strong> Moderate—soft edges but visible</li>
+                        <li><strong>Reflection:</strong> Mix of specular and diffuse</li>
+                        <li><strong>Shadow terminator:</strong> Medium softness</li>
+                        <li><strong>Painting approach:</strong>
+                            <ul>
+                                <li>Soft-edged highlights in light areas</li>
+                                <li>Moderate contrast</li>
+                                <li>Balances form and surface shine</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <h5>Glossy Materials (Polished Wood, Glazed Ceramic, Wet Surfaces)</h5>
+                    <ul>
+                        <li><strong>Highlights:</strong> Strong, relatively sharp</li>
+                        <li><strong>Reflection:</strong> Primarily specular</li>
+                        <li><strong>Appearance:</strong> Looks "wet" or polished</li>
+                        <li><strong>Painting approach:</strong>
+                            <ul>
+                                <li>Sharp, bright highlights</li>
+                                <li>Highlight shape follows form</li>
+                                <li>High contrast between highlight and surrounding</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <h5>Metallic Materials (Chrome, Polished Metal)</h5>
+                    <ul>
+                        <li><strong>Highlights:</strong> Extremely bright, sharp-edged</li>
+                        <li><strong>Reflection:</strong> Pure specular—mirrors environment</li>
+                        <li><strong>Local color:</strong> Minimal—mostly reflections</li>
+                        <li><strong>Key characteristic:</strong> Reflects what's around it</li>
+                        <li><strong>Painting approach:</strong>
+                            <ul>
+                                <li>Very bright highlights (often pure white)</li>
+                                <li>Extreme value contrast</li>
+                                <li>Reflects environment colors strongly</li>
+                                <li>Sharp value transitions</li>
+                                <li>Think: "What would this mirror?"</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <h5>Transparent Materials (Glass, Water)</h5>
+                    <ul>
+                        <li><strong>Characteristics:</strong>
+                            <ul>
+                                <li>Can see through to background</li>
+                                <li>Refracts light (bends)</li>
+                                <li>Strong highlights on surface</li>
+                                <li>May have colored tint</li>
+                            </ul>
+                        </li>
+                        <li><strong>Painting approach:</strong>
+                            <ul>
+                                <li>Paint what's behind, slightly distorted</li>
+                                <li>Add surface reflections (what's in front)</li>
+                                <li>Sharp, bright highlights on surface</li>
+                                <li>Edges often have strong highlights</li>
+                                <li>Slight color tint to material</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <h5>Translucent Materials (Wax, Thin Fabric, Skin)</h5>
+                    <ul>
+                        <li><strong>Characteristics:</strong>
+                            <ul>
+                                <li>Light penetrates surface</li>
+                                <li>Glows when backlit (subsurface scattering)</li>
+                                <li>Shadow side can be surprisingly light</li>
+                                <li>Warm glow in thin areas</li>
+                            </ul>
+                        </li>
+                        <li><strong>Painting approach:</strong>
+                            <ul>
+                                <li>Lighten edges when backlit</li>
+                                <li>Add warm glow in thin/translucent areas</li>
+                                <li>Shadow side lighter than opaque equivalent</li>
+                                <li>Examples: Ear lit from behind, thin curtain with sun</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <h3>Subsurface Scattering</h3>
+
+                <div class="card" style="background: #fff3e0;">
+                    <h4>💡 Light Penetrating Materials</h4>
+
+                    <h5>What Is Subsurface Scattering (SSS)?</h5>
+                    <ul>
+                        <li><strong>Definition:</strong> Light enters material, bounces around inside, exits nearby</li>
+                        <li><strong>Effect:</strong> Soft glow, especially at thin or backlit areas</li>
+                        <li><strong>Where it occurs:</strong> Translucent materials (skin, wax, thin fabric, leaves)</li>
+                    </ul>
+
+                    <h5>Subsurface Scattering in Skin:</h5>
+                    <ul>
+                        <li><strong>Most visible:</strong> Ears, fingers, nose tip when backlit</li>
+                        <li><strong>Color:</strong> Warm red-orange glow (blood beneath surface)</li>
+                        <li><strong>Effect on form:</strong> Softens shadow terminator</li>
+                        <li><strong>Shadow side:</strong> Warmer than you'd expect</li>
+                        <li><strong>Painting approach:</strong>
+                            <ul>
+                                <li>Add warm glow to thin areas (ears, nose)</li>
+                                <li>Soften shadow terminator slightly</li>
+                                <li>Warm up shadow side subtly</li>
+                                <li>Especially strong in backlit situations</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <h5>Other SSS Examples:</h5>
+                    <ul>
+                        <li><strong>Wax candle:</strong> Glows orange-yellow when lit from within</li>
+                        <li><strong>Leaves:</strong> Green glow when sun shines through</li>
+                        <li><strong>Thin fabric:</strong> Warm glow when backlit</li>
+                        <li><strong>Marble:</strong> Slight glow in thin sections</li>
+                    </ul>
+
+                    <blockquote style="margin-top: 1rem;">
+                        <strong>💡 Pro Tip:</strong> Subsurface scattering is what makes skin look alive vs. plastic. It's subtle but crucial for believable portraits. Don't overdo it—a hint of warmth in the right places is all you need.
+                    </blockquote>
+                </div>
+
+                <h3>Material Quick Reference</h3>
+
+                <div class="card">
+                    <h4>📋 Material Rendering Cheat Sheet</h4>
+
+                    <table style="width: 100%;">
+                        <thead>
+                            <tr>
+                                <th style="width: 20%;">Material</th>
+                                <th style="width: 20%;">Highlights</th>
+                                <th style="width: 20%;">Terminator</th>
+                                <th style="width: 20%;">Reflected Light</th>
+                                <th style="width: 20%;">Special Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Matte</strong></td>
+                                <td>None/very soft</td>
+                                <td>Very soft</td>
+                                <td>Subtle</td>
+                                <td>Pure form focus</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Skin</strong></td>
+                                <td>Soft medium</td>
+                                <td>Soft</td>
+                                <td>Warm</td>
+                                <td>SSS glow in thin areas</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Glossy</strong></td>
+                                <td>Sharp bright</td>
+                                <td>Medium</td>
+                                <td>Strong</td>
+                                <td>Looks wet/polished</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Metal</strong></td>
+                                <td>Very sharp, pure white</td>
+                                <td>Sharp</td>
+                                <td>Mirrors environment</td>
+                                <td>Extreme contrast</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Glass</strong></td>
+                                <td>Sharp, edge highlights</td>
+                                <td>N/A (transparent)</td>
+                                <td>Surface reflection</td>
+                                <td>Show what's behind/through</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Fabric</strong></td>
+                                <td>Soft/none</td>
+                                <td>Very soft</td>
+                                <td>Minimal</td>
+                                <td>Texture important</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Wood</strong></td>
+                                <td>Medium (if polished)</td>
+                                <td>Medium</td>
+                                <td>Moderate</td>
+                                <td>Grain texture</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <p style="margin-top: 1rem;"><strong>General rule:</strong> Smoother/shinier = sharper highlights and stronger reflections. Rougher/matte = softer everything and focus on form.</p>
+                </div>
+
+            </section>
+
+            <!-- PART C ENDS HERE -->
+            <!-- PART D STARTS HERE -->
+
+            <!-- Section 7: Rendering Basic Forms -->
+            <section id="rendering-forms" class="lesson-section">
+                <h2>Rendering Basic Forms 🎲</h2>
+                
+                <p>Time to put theory into practice! Let's render the five basic forms with proper lighting. Master these, and you can light anything.</p>
+
+                <h3>Rendering a Sphere</h3>
+
+                <div class="card" style="background: #e8f5e9;">
+                    <h4>⚪ Step-by-Step Sphere Lighting</h4>
+
+                    <h5>Setup:</h5>
+                    <ul>
+                        <li><strong>Light source:</strong> Upper left, 45° angle (classic setup)</li>
+                        <li><strong>Environment:</strong> Light background for context</li>
+                        <li><strong>Goal:</strong> Convincing round form</li>
+                    </ul>
+
+                    <h5>Step 1: Base Value (5 minutes)</h5>
+                    <ul>
+                        <li>Fill sphere with medium local value</li>
+                        <li>No shading yet—just establishing base</li>
+                        <li>Clean, even circle shape</li>
+                    </ul>
+
+                    <h5>Step 2: Terminator Placement (5 minutes)</h5>
+                    <ul>
+                        <li>Determine where light stops hitting directly</li>
+                        <li>Draw/paint curved band from top-right to bottom-left (if light from upper-left)</li>
+                        <li>This band is your core shadow/terminator</li>
+                        <li>Use darkest value here initially</li>
+                    </ul>
+
+                    <h5>Step 3: Light Side Gradient (10 minutes)</h5>
+                    <ul>
+                        <li>From terminator toward light, create smooth gradient</li>
+                        <li>Gradually lighter as you approach light source</li>
+                        <li>Soft brush, low opacity, build up gradually</li>
+                        <li>Smooth, continuous transition—no bands</li>
+                    </ul>
+
+                    <h5>Step 4: Highlight (3 minutes)</h5>
+                    <ul>
+                        <li>Small, bright spot on light side (not at center!)</li>
+                        <li>Offset toward light source</li>
+                        <li>Soft edges on matte sphere, sharp on glossy</li>
+                        <li>Near-white value</li>
+                    </ul>
+
+                    <h5>Step 5: Shadow Side Gradient (10 minutes)</h5>
+                    <ul>
+                        <li>From terminator into shadow, gradually lighten</li>
+                        <li>Add reflected light at edge (subtle!)</li>
+                        <li>Keep reflected light darker than any midtone</li>
+                        <li>Smooth transition from core shadow to reflected light</li>
+                    </ul>
+
+                    <h5>Step 6: Cast Shadow (5 minutes)</h5>
+                    <ul>
+                        <li>Paint shadow on ground beneath sphere</li>
+                        <li>Darkest where sphere contacts ground</li>
+                        <li>Gradually lighter as shadow extends away</li>
+                        <li>Soft edges, oval shape (perspective)</li>
+                    </ul>
+
+                    <h5>Step 7: Occlusion Shadow (2 minutes)</h5>
+                    <ul>
+                        <li>Darken where sphere meets ground</li>
+                        <li>Thin, very dark line</li>
+                        <li>Darkest value in entire painting</li>
+                    </ul>
+
+                    <blockquote style="margin-top: 1rem;">
+                        <strong>💡 Practice tip:</strong> Paint 10 spheres with different light directions. Then paint 10 more with different materials (matte, glossy, metal). This single exercise will teach you more about lighting than reading 100 pages!
+                    </blockquote>
+                </div>
+
+                <h3>Rendering Other Basic Forms</h3>
+
+                <div class="card">
+                    <h4>📦 Quick Guide to Each Form</h4>
+
+                    <h5>Cylinder:</h5>
+                    <ul>
+                        <li><strong>Gradient direction:</strong> Perpendicular to cylinder axis</li>
+                        <li><strong>Along length:</strong> Consistent value (no gradient lengthwise)</li>
+                        <li><strong>Terminator:</strong> Straight line parallel to axis</li>
+                        <li><strong>Highlight:</strong> Straight line on light side</li>
+                        <li><strong>Ends:</strong> Treat as circles if visible (different gradients)</li>
+                        <li><strong>Trick:</strong> Like multiple spheres stacked—same cross-section throughout</li>
+                    </ul>
+
+                    <h5>Cube:</h5>
+                    <ul>
+                        <li><strong>Three planes visible:</strong> Top, front, side (typically)</li>
+                        <li><strong>Each plane:</strong> One flat value (no gradients on plane)</li>
+                        <li><strong>Plane facing light:</strong> Lightest value</li>
+                        <li><strong>Plane perpendicular:</strong> Medium value</li>
+                        <li><strong>Plane away from light:</strong> Darkest value</li>
+                        <li><strong>Edges:</strong> Sharp transitions between planes</li>
+                        <li><strong>Cast shadow:</strong> Geometric shape, sharp edges</li>
+                    </ul>
+
+                    <h5>Cone:</h5>
+                    <ul>
+                        <li><strong>Gradient:</strong> Radiates from point</li>
+                        <li><strong>Base:</strong> Like a circle (gradient)</li>
+                        <li><strong>Sides:</strong> Gradient compresses toward point</li>
+                        <li><strong>Highlight:</strong> Curved line from base toward point</li>
+                        <li><strong>Terminator:</strong> Curved, narrows to point</li>
+                    </ul>
+
+                    <h5>Plane:</h5>
+                    <ul>
+                        <li><strong>Single value:</strong> Based on angle to light</li>
+                        <li><strong>No gradient:</strong> Unless textured</li>
+                        <li><strong>Sharp edges:</strong> Where plane meets another</li>
+                        <li><strong>Cast shadow:</strong> Shows plane orientation clearly</li>
+                    </ul>
+                </div>
+
+            </section>
+
+            <!-- Section 8: Using Light for Mood & Atmosphere -->
+            <section id="lighting-mood" class="lesson-section">
+                <h2>Using Light for Mood & Atmosphere 🎭</h2>
+                
+                <p>Lighting isn't just technical—it's emotional! The same subject lit differently tells completely different stories. Let's explore how to use light for dramatic impact.</p>
+
+                <h3>Lighting Patterns and Their Moods</h3>
+
+                <div class="card" style="background: #f3e5f5;">
+                    <h4>💡 Common Lighting Setups</h4>
+
+                    <h5>High Key Lighting (Bright, Even, Minimal Shadows)</h5>
+                    <ul>
+                        <li><strong>Setup:</strong> Bright light, soft shadows, high overall values</li>
+                        <li><strong>Mood:</strong> Happy, optimistic, innocent, clean, positive</li>
+                        <li><strong>Applications:</strong> Comedy, children's content, beauty, commercial</li>
+                        <li><strong>How to achieve:</strong> Soft light source, bright environment, minimal contrast</li>
+                    </ul>
+
+                    <h5>Low Key Lighting (Dark, Dramatic, Strong Shadows)</h5>
+                    <ul>
+                        <li><strong>Setup:</strong> Hard light, deep shadows, low overall values</li>
+                        <li><strong>Mood:</strong> Dramatic, mysterious, serious, ominous, noir</li>
+                        <li><strong>Applications:</strong> Horror, thriller, dramatic portraits, film noir</li>
+                        <li><strong>How to achieve:</strong> Hard light source, dark environment, high contrast</li>
+                    </ul>
+
+                    <h5>Backlighting (Light Behind Subject)</h5>
+                    <ul>
+                        <li><strong>Setup:</strong> Main light behind subject, facing camera</li>
+                        <li><strong>Effect:</strong> Rim light, silhouette, dramatic outline</li>
+                        <li><strong>Mood:</strong> Epic, mysterious, ethereal, dramatic</li>
+                        <li><strong>Applications:</strong> Heroic shots, sunsets, spiritual/divine scenes</li>
+                        <li><strong>How to paint:</strong> Bright edges, dark center mass, possible silhouette</li>
+                    </ul>
+
+                    <h5>Side Lighting (Light from Side)</h5>
+                    <ul>
+                        <li><strong>Setup:</strong> Light 90° to subject</li>
+                        <li><strong>Effect:</strong> Half in light, half in shadow</li>
+                        <li><strong>Mood:</strong> Dramatic, sculptural, reveals form strongly</li>
+                        <li><strong>Applications:</strong> Portraits, form studies, dramatic scenes</li>
+                        <li><strong>How to paint:</strong> Clear division, strong terminator</li>
+                    </ul>
+
+                    <h5>Top Lighting (Light from Above)</h5>
+                    <ul>
+                        <li><strong>Setup:</strong> Light directly overhead</li>
+                        <li><strong>Effect:</strong> Shadows under forms (eye sockets, nose, chin)</li>
+                        <li><strong>Mood:</strong> Sinister, unnatural, harsh (not flattering)</li>
+                        <li><strong>Applications:</strong> Villains, harsh environments, midday desert</li>
+                        <li><strong>Caution:</strong> Usually unflattering for portraits</li>
+                    </ul>
+
+                    <h5>Under Lighting (Light from Below)</h5>
+                    <ul>
+                        <li><strong>Setup:</strong> Light source below subject</li>
+                        <li><strong>Effect:</strong> Shadows go upward (very unnatural)</li>
+                        <li><strong>Mood:</strong> Spooky, horror, campfire stories, unnatural</li>
+                        <li><strong>Applications:</strong> Horror, supernatural, flashlight-under-chin effect</li>
+                        <li><strong>Why creepy:</strong> Never occurs naturally—brain reads as "wrong"</li>
+                    </ul>
+                </div>
+
+                <h3>Atmospheric Effects</h3>
+
+                <div class="card">
+                    <h4>🌫️ Using Light for Depth and Atmosphere</h4>
+
+                    <h5>Atmospheric Perspective with Light:</h5>
+                    <ul>
+                        <li><strong>Principle:</strong> Distance lightens/cools/desaturates</li>
+                        <li><strong>Foreground:</strong> Full contrast, saturated, detailed</li>
+                        <li><strong>Midground:</strong> Reduced contrast, less saturated</li>
+                        <li><strong>Background:</strong> Minimal contrast, very desaturated, atmospheric color</li>
+                        <li><strong>Effect:</strong> Creates sense of vast distance</li>
+                    </ul>
+
+                    <h5>Light Shafts / God Rays:</h5>
+                    <ul>
+                        <li><strong>What they are:</strong> Visible beams of light through atmosphere</li>
+                        <li><strong>When they occur:</strong> Dust/moisture in air, strong directional light</li>
+                        <li><strong>Mood:</strong> Dramatic, divine, magical, cinematic</li>
+                        <li><strong>How to paint:</strong>
+                            <ul>
+                                <li>Straight or slightly converging beams</li>
+                                <li>Lighter than surrounding air</li>
+                                <li>Soft edges, atmospheric</li>
+                                <li>Use sparingly—very dramatic effect</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <h5>Fog and Mist:</h5>
+                    <ul>
+                        <li><strong>Light behavior:</strong> Scatters, creates glow around sources</li>
+                        <li><strong>Effect:</strong> Softens everything, reduces contrast</li>
+                        <li><strong>Mood:</strong> Mysterious, eerie, soft, romantic</li>
+                        <li><strong>How to paint:</strong>
+                            <li>Reduce contrast with distance more aggressively</li>
+                            <li>Add glow around light sources</li>
+                            <li>Desaturate significantly</li>
+                            <li>Soft edges on everything</li>
+                        </li>
+                    </ul>
+
+                    <h5>Rim Lighting:</h5>
+                    <ul>
+                        <li><strong>What it is:</strong> Bright edge highlighting silhouette</li>
+                        <li><strong>Occurs:</strong> Backlighting, hair, edges of forms</li>
+                        <li><strong>Mood:</strong> Dramatic, separates from background</li>
+                        <li><strong>How to paint:</strong>
+                            <ul>
+                                <li>Bright line along edges facing light</li>
+                                <li>Takes light source color</li>
+                                <li>Can push brighter than realistic for effect</li>
+                                <li>Creates separation and depth</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </section>
+
+            <!-- Section 9: Common Lighting Mistakes -->
+            <section id="common-mistakes" class="lesson-section">
+                <h2>Common Lighting Mistakes ⚠️</h2>
+                
+                <p>Let's identify the most common lighting errors so you can avoid them!</p>
+
+                <div class="card" style="background: #ffebee;">
+                    <h4>🚫 Top Lighting Pitfalls</h4>
+
+                    <h5>1. No Defined Light Source</h5>
+                    <ul>
+                        <li><strong>Symptom:</strong> Everything evenly lit, no consistent shadow direction</li>
+                        <li><strong>Result:</strong> Flat, airless, confusing</li>
+                        <li><strong>Solution:</strong> Choose one dominant light direction before painting</li>
+                    </ul>
+
+                    <h5>2. Reflected Light Too Bright</h5>
+                    <ul>
+                        <li><strong>Symptom:</strong> Shadow side as bright or brighter than midtones</li>
+                        <li><strong>Result:</strong> Destroys form, looks flat</li>
+                        <li><strong>Solution:</strong> Keep reflected light darker than all light-side values</li>
+                    </ul>
+
+                    <h5>3. Black Shadows</h5>
+                    <ul>
+                        <li><strong>Symptom:</strong> Pure black for all shadows</li>
+                        <li><strong>Result:</strong> Dead, lifeless, amateur</li>
+                        <li><strong>Solution:</strong> Shadows have color and value variation</li>
+                    </ul>
+
+                    <h5>4. Highlights Everywhere</h5>
+                    <ul>
+                        <li><strong>Symptom:</strong> Every surface has bright white highlights</li>
+                        <li><strong>Result:</strong> Wet-looking, confusing, no material distinction</li>
+                        <li><strong>Solution:</strong> Only shiny surfaces get strong highlights</li>
+                    </ul>
+
+                    <h5>5. Ignoring Cast Shadows</h5>
+                    <ul>
+                        <li><strong>Symptom:</strong> Objects floating, no shadows on ground/surfaces</li>
+                        <li><strong>Result:</strong> Objects feel weightless, disconnected</li>
+                        <li><strong>Solution:</strong> Always include cast shadows to ground objects</li>
+                    </ul>
+
+                    <h5>6. Inconsistent Light Direction</h5>
+                    <ul>
+                        <li><strong>Symptom:</strong> Different objects lit from different angles</li>
+                        <li><strong>Result:</strong> Objects don't exist in same space</li>
+                        <li><strong>Solution:</strong> All shadows point away from same light source</li>
+                    </ul>
+
+                    <h5>7. Wrong Terminator Softness</h5>
+                    <ul>
+                        <li><strong>Symptom:</strong> Sharp terminator on organic forms, soft on angular</li>
+                        <li><strong>Result:</strong> Forms look wrong, unnatural</li>
+                        <li><strong>Solution:</strong> Match terminator softness to form type</li>
+                    </ul>
+
+                    <h5>8. Same Value Throughout Shadow</h5>
+                    <ul>
+                        <li><strong>Symptom:</strong> Entire shadow side is one flat value</li>
+                        <li><strong>Result:</strong> Loss of form detail in shadows</li>
+                        <li><strong>Solution:</strong> Shadows have value and color variation</li>
+                    </ul>
+                </div>
+
+            </section>
+
+            <!-- Section 10: Training Your Eye to See Light -->
+            <section id="seeing-light" class="lesson-section">
+                <h2>Training Your Eye to See Light 👁️</h2>
+                
+                <p>The final skill: learning to see light in everyday life. This transforms you from someone who "knows lighting theory" to someone who "sees like an artist."</p>
+
+                <div class="card" style="background: #e8f5e9;">
+                    <h4>🔍 Observation Exercises</h4>
+
+                    <h5>Exercise 1: Light Source Hunt</h5>
+                    <ul>
+                        <li><strong>What:</strong> Identify all light sources in your environment</li>
+                        <li><strong>How:</strong> Look around room—window, lamp, screen, etc.</li>
+                        <li><strong>Note:</strong> Which is strongest? What color? Hard or soft?</li>
+                        <li><strong>Benefit:</strong> Builds awareness of multiple sources</li>
+                    </ul>
+
+                    <h5>Exercise 2: Shadow Direction Tracking</h5>
+                    <ul>
+                        <li><strong>What:</strong> Follow shadow directions to find light source</li>
+                        <li><strong>How:</strong> Look at shadows, trace back to source</li>
+                        <li><strong>Practice:</strong> Walk around, check if all shadows consistent</li>
+                        <li><strong>Benefit:</strong> Trains spatial understanding of light</li>
+                    </ul>
+
+                    <h5>Exercise 3: Terminator Spotting</h5>
+                    <ul>
+                        <li><strong>What:</strong> Find terminators on objects around you</li>
+                        <li><strong>How:</strong> Look at rounded objects, identify shadow edge</li>
+                        <li><strong>Note:</strong> How soft? Where exactly? How wide?</li>
+                        <li><strong>Benefit:</strong> Sharpens ability to see form transitions</li>
+                    </ul>
+
+                    <h5>Exercise 4: Reflected Light Discovery</h5>
+                    <ul>
+                        <li><strong>What:</strong> Find reflected light in shadow sides</li>
+                        <li><strong>How:</strong> Look at shadow sides of objects near walls/surfaces</li>
+                        <li><strong>Note:</strong> Color of reflected light? How bright?</li>
+                        <li><strong>Benefit:</strong> Sensitizes eye to subtle bounce light</li>
+                    </ul>
+
+                    <h5>Exercise 5: Color Temperature Comparison</h5>
+                    <ul>
+                        <li><strong>What:</strong> Compare color of light vs. shadow</li>
+                        <li><strong>How:</strong> Look at sunlit area vs. shadow—what colors do you see?</li>
+                        <li><strong>Note:</strong> Warm light + cool shadow? Vice versa?</li>
+                        <li><strong>Benefit:</strong> Trains color temperature awareness</li>
+                    </ul>
+
+                    <h5>Exercise 6: Material Highlight Observation</h5>
+                    <ul>
+                        <li><strong>What:</strong> Compare highlights on different materials</li>
+                        <li><strong>How:</strong> Look at matte vs. glossy vs. metal objects</li>
+                        <li><strong>Note:</strong> Sharpness? Brightness? Size?</li>
+                        <li><strong>Benefit:</strong> Builds material rendering intuition</li>
+                    </ul>
+
+                    <h5>Exercise 7: Squint Studies</h5>
+                    <ul>
+                        <li><strong>What:</strong> Squint at scenes to see big value shapes</li>
+                        <li><strong>How:</strong> Nearly close eyes, simplify to 3-5 values</li>
+                        <li><strong>Note:</strong> What are major light/shadow patterns?</li>
+                        <li><strong>Benefit:</strong> Simplifies complex lighting to essentials</li>
+                    </ul>
+
+                    <h5>Daily Practice Routine:</h5>
+                    <ol>
+                        <li><strong>Morning:</strong> Notice light quality when you wake (soft? harsh?)</li>
+                        <li><strong>Midday:</strong> Observe cast shadows (direction, sharpness)</li>
+                        <li><strong>Evening:</strong> Watch color temperature changes at sunset</li>
+                        <li><strong>Night:</strong> Note artificial light colors and characteristics</li>
+                        <li><strong>Result:</strong> After 2 weeks, you'll see light everywhere!</li>
+                    </ol>
+                </div>
+
+                <div class="card" style="background: #e3f2fd;">
+                    <h4>📸 Using Photography to Study Light</h4>
+
+                    <h5>Photo Reference Best Practices:</h5>
+                    <ul>
+                        <li><strong>Take your own:</strong> You learn by observing while shooting</li>
+                        <li><strong>Study master paintings:</strong> Analyze how artists interpreted light</li>
+                        <li><strong>Black & white mode:</strong> See values without color distraction</li>
+                        <li><strong>Different times of day:</strong> Same subject, different light</li>
+                        <li><strong>Various light sources:</strong> Window, lamp, candle, etc.</li>
+                    </ul>
+
+                    <h5>What to Note in References:</h5>
+                    <ul>
+                        <li>Light source direction and type</li>
+                        <li>Terminator placement and softness</li>
+                        <li>Reflected light presence and color</li>
+                        <li>Shadow color vs. light color</li>
+                        <li>Material highlight characteristics</li>
+                        <li>Overall value structure</li>
+                    </ul>
+                </div>
+
+            </section>
+
+            <!-- Summary Section -->
+            <section class="lesson-section">
+                <h2>Summary: Key Takeaways 📝</h2>
+                
+                <div class="card" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); color: #1a1a1a;">
+                    <h3 style="color: #1a1a1a; margin-top: 0;">🎯 Lighting & Form Essentials</h3>
+
+                    <h4 style="color: #1a1a1a;">The Core Principles:</h4>
+                    <ol>
+                        <li><strong>Form is created by value transitions</strong> - Not lines, not outlines</li>
+                        <li><strong>Light has seven components</strong> - Highlight, direct light, terminator, core shadow, reflected light, cast shadow, occlusion</li>
+                        <li><strong>Warm light = cool shadows</strong> - Color temperature contrast is key</li>
+                        <li><strong>Materials have different reflective properties</strong> - Matte to glossy to metallic</li>
+                        <li><strong>The terminator defines form</strong> - Get this right, everything else follows</li>
+                        <li><strong>Reflected light is always darker than midtones</strong> - Break this rule = destroy form</li>
+                    </ol>
+
+                    <h4 style="color: #1a1a1a;">The Five Basic Forms:</h4>
+                    <ul>
+                        <li><strong>Sphere:</strong> Radial gradients from highlight</li>
+                        <li><strong>Cylinder:</strong> Gradient perpendicular to axis</li>
+                        <li><strong>Cube:</strong> Three distinct plane values</li>
+                        <li><strong>Cone:</strong> Gradient compresses toward point</li>
+                        <li><strong>Plane:</strong> Single value based on angle</li>
+                    </ul>
+
+                    <h4 style="color: #1a1a1a;">Light Source Types:</h4>
+                    <ul>
+                        <li><strong>Hard light:</strong> Sharp shadows, high contrast (sun, spotlight)</li>
+                        <li><strong>Soft light:</strong> Gradual shadows, low contrast (overcast, large source)</li>
+                        <li><strong>Natural:</strong> Sun, sky, moonlight—each has characteristics</li>
+                        <li><strong>Artificial:</strong> Incandescent, fluorescent, LED, fire—different colors</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="background: #e8f5e9; margin-top: 1.5rem;">
+                    <h3>🚀 From Here to Mastery</h3>
+                    
+                    <h4>Essential Practice:</h4>
+                    <ol>
+                        <li><strong>Sphere studies:</strong> Paint 20 spheres with different lighting</li>
+                        <li><strong>Basic forms:</strong> Render all five forms from multiple angles</li>
+                        <li><strong>Material studies:</strong> Paint same object as different materials</li>
+                        <li><strong>Light source studies:</strong> Same subject, 5 different light types</li>
+                        <li><strong>Daily observation:</strong> Identify light components in real life</li>
+                    </ol>
+
+                    <h4>Signs You're Getting It:</h4>
+                    <ul>
+                        <li>✓ You see terminators everywhere in daily life</li>
+                        <li>✓ You notice color temperature automatically</li>
+                        <li>✓ Your paintings have convincing depth</li>
+                        <li>✓ You know where to place highlights without guessing</li>
+                        <li>✓ People ask "how did you make it look so 3D?"</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Additional Resources -->
+            <section class="lesson-section">
+                <h2>Additional Resources 📚</h2>
+                
+                <div class="card">
+                    <h3>Further Learning</h3>
+
+                    <h4>Recommended Books:</h4>
+                    <ul>
+                        <li><strong>Color and Light</strong> by James Gurney - The bible of lighting for artists</li>
+                        <li><strong>How to Render</strong> by Scott Robertson - Technical rendering guide</li>
+                        <li><strong>Light for Visual Artists</strong> by Richard Yot - Understanding light behavior</li>
+                    </ul>
+
+                    <h4>YouTube Channels:</h4>
+                    <ul>
+                        <li><strong>Marco Bucci:</strong> Excellent lighting tutorials</li>
+                        <li><strong>Sinix Design:</strong> Form and lighting fundamentals</li>
+                        <li><strong>Proko:</strong> Figure drawing with lighting focus</li>
+                        <li><strong>Bobby Chiu:</strong> Professional lighting workflows</li>
+                    </ul>
+
+                    <h4>Practice Resources:</h4>
+                    <ul>
+                        <li><strong>Take your own photos</strong> at different times of day</li>
+                        <li><strong>Study master paintings</strong> - analyze lighting choices</li>
+                        <li><strong>3D software</strong> (Blender) - experiment with light placement</li>
+                        <li><strong>Still life setups</strong> - practice with real objects and lamps</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- What's Next -->
+            <section class="lesson-section">
+                <h2>What's Next? 🎯</h2>
+                
+                <div class="card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+                    <h3 style="color: white; margin-top: 0;">Continue Your Journey</h3>
+                    <p>Congratulations on mastering Lighting & Form Fundamentals! This knowledge is foundational—everything you paint from now on will benefit from understanding how light works.</p>
+
+                    <h4 style="color: white;">Up Next in the Course:</h4>
+                    <ul>
+                        <li><strong>Lesson 3-3: Texture & Detail Techniques</strong> - Creating convincing surface textures</li>
+                        <li><strong>Lesson 3-4: File Management & Export</strong> - Professional file organization</li>
+                    </ul>
+
+                    <h4 style="color: white;">Immediate Next Steps:</h4>
+                    <ol>
+                        <li>Paint the five basic forms with proper lighting</li>
+                        <li>Do 5 sphere studies with different light sources</li>
+                        <li>Practice identifying light components in photos</li>
+                        <li>Paint a simple still life focusing only on light/shadow</li>
+                        <li>Observe light throughout your day for one week</li>
+                    </ol>
+
+                    <p style="margin-bottom: 0;"><strong>Remember:</strong> Understanding light is what separates good artists from great ones. Practice seeing light, and your paintings will transform!</p>
+                </div>
+            </section>
+
+            <!-- Lesson Navigation -->
+            <nav class="lesson-nav">
+                <a href="painting_workflow.html" class="lesson-nav-button prev">
+                    <span class="lesson-nav-label">← Previous Lesson</span>
+                    <span class="lesson-nav-title">Digital Painting Workflow</span>
+                </a>
+                <a href="index.html#modules" class="lesson-nav-button">
+                    <span class="lesson-nav-label">📚 All Lessons</span>
+                </a>
+                <a href="texture_detail.html" class="lesson-nav-button next">
+                    <span class="lesson-nav-label">Next Lesson →</span>
+                    <span class="lesson-nav-title">Texture & Detail Techniques</span>
+                </a>
+            </nav>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Digital Artistry Course. All rights reserved.</p>
+            <p>Master digital art skills that work across all major software platforms.</p>
+        </div>
+    </footer>
+
+    <script src="js/clipboard.js"></script>
+    <script src="js/course-enhancements.js"></script>
+    <script>
+    // Toggle Table of Contents
+    function toggleTOC() {
+        const tocList = document.getElementById('toc-list');
+        const tocIcon = document.getElementById('toc-toggle-icon');
+        
+        // Check if it's currently collapsed
+        const isCollapsed = tocList.style.maxHeight === '0px';
+        
+        if (isCollapsed) {
+            // Expand
+            tocList.style.maxHeight = tocList.scrollHeight + 'px';
+            tocIcon.style.transform = 'rotate(180deg)';
+        } else {
+            // Collapse
+            tocList.style.maxHeight = '0px';
+            tocIcon.style.transform = 'rotate(0deg)';
+        }
+    }
+    </script>
+</body>
+</html>
+
